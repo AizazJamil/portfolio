@@ -1,0 +1,52 @@
+@import 'variable/_var';
+@import '_base';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-sizing: -webkit-border-box;
+  box-sizing: -moz-border-box;
+  &:after, &:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: -webkit-border-box;
+    box-sizing: -moz-border-box;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: $font-raleway;
+}
+
+html {
+  font-family: $font-stack;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  font-family: $font-stack;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 800;
+  font-style: normal;
+  font-family: $font-raleway;
+  color: $black-color;
+  text-transform: uppercase;
+  span {
+    color: $red-color;
+  }
+}
+
+p {
+  font-size: 15px;
+  font-family: $font-raleway;
+  font-weight: 300;
+  font-style: normal;
+  color: $black-color;
+}

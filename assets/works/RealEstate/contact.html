@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FRANCHINO Negocios Inmobiliarios</title>
+  <!-- Style Css -->
+  <link rel="stylesheet" href="asset/css/custom.css">
+  <!-- Bootstrap Css -->
+  <link rel="stylesheet" href="asset/css/bootstrap.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="asset/css/font-awesome.min.css" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Chivo:300,400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900" rel="stylesheet">
+  <!-- Swiper Css -->
+  <link rel="stylesheet" href="asset/css/swiper.css">
+  <!-- Animate Css -->
+  <link rel="stylesheet" href="asset/css/animate.css">
+  <!-- jQuery Js -->
+  <script src="asset/js/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+  <!-- Start: Top Bar -->
+  <header class="top-bar">
+    <div class="col-md-12">
+      <div class="container">
+        <div class="text-right">
+          <ul class="top-socials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <!-- <li title=".slideThree">
+              <div class="slideThree">
+                <input type="checkbox" value="None" id="slideThree" name="check" checked />
+                <label for="slideThree"></label>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End: Top Bar -->
+  <!-- Start: Navbar Section -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="asset/images/logo.png" alt=""></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li class=""><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="properties.html">Properties</a></li>
+          <li><a class="active" href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">Our Company</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+  <!-- End: Header Section -->
+  <!-- Start: Banner Section -->
+  <div class="banner" id="banner"></div>
+  <!-- End: Banner Section -->
+  <!-- Contact Detail -->
+  <div class="contact-detail">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- <div class="image-detail">
+            <img src="asset/images/hero-image.jpg" alt="">
+        </div> -->
+        <div class="col-md-6 text-left">
+          <h2>Get <span>in Touch</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia numquam facilis ducimus sit expedita ipsum maxime, sed eos at, ullam, magni nisi. Quibusdam beatae inventore quos recusandae quia ratione enim.</p>
+        </div>
+          <div class="col-md-3 address-detail">
+            <h3>OUR ADDRESS</h3>
+            <p>0123 Orlando Central pkwy ste 100 Orlando FL, USA</p>
+          </div>
+          <div class="col-md-3 contact-info">
+            <h3>CONTACT INFO</h3>
+            <p>(+00) 123 45678, (+000) 123 45678 <br>info@webmail.com</p>
+          </div>
+          <div class="col-md-7 message-detail" style="margin-top: 2em;">
+            <h4>Message Us</h4>
+            <div class="panel-body">
+              <form method="post">
+                <div class="form-group">
+                  <label for="form-contact-name">Your Name<em>*</em></label>
+                  <input type="text" class="form-control" id="form-contact-name" name="form-contact-name" required maxlength="40">
+                </div>
+
+                <div class="form-group">
+                  <label for="form-contact-email">Your Email<em>*</em></label>
+                  <input type="email" class="form-control" id="form-contact-email" name="form-contact-email" required maxlength="50">
+                </div>
+
+                <div class="form-group">
+                  <label for="form-contact-message">Your Message<em>*</em></label>
+                  <textarea class="form-control" id="form-contact-message" rows="8" name="form-contact-message" required maxlength="500" style="max-width: 700px; resize: none;"></textarea>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-success" type="submit" name="contactForm">Send</button>
+
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+
+          <div class="col-md-5 map-detail" style="margin-top: 2em;  ">
+            <h4>Here We Are</h4>
+            <div id="map_container"></div>
+            <div id="map" style="height: 440px"></div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <!-- //Contact Detail -->
+  <!-- Start: Subscribe Section -->
+  <div class="subscribe">
+    <div class="container">
+      <div class="col-md-8">
+        <div class="title-sub">
+          <h4>Are you looking for a House or Customer for your Property sale?</h4>
+          <p>Please click the button for register, we will become your best agent and help you for both.</p>
+        </div>
+      </div>
+      <div class="col-md-4 text-right">
+        <div class="button">
+          <a href="#" class="btn btn-primary sub-button">Register Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End: Subscribe Section -->
+  <!-- Start: Footer Section -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="about">
+            <!-- <h4>About Us</h4> -->
+            <img src="asset/images/logo.png" alt="Logo">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione accusamus sint, officiis inventore ipsam perferendis labore magni reiciendis ipsa, iure in libero amet nemo aspernatur ut obcaecati neque blanditiis accusantium.</p>
+            <ul class="social-list">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="links">
+            <h4>Recent Property</h4>
+            <ul>
+              <li><a href="#">Links 1</a></li>
+              <li><a href="#">Links 2</a></li>
+              <li><a href="#">Links 3</a></li>
+              <li><a href="#">Links 4</a></li>
+              <li><a href="#">Links 5</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="links">
+            <h4>Get in Touch</h4>
+            <div class="address">
+              <h5><i class="fa fa-map-marker"></i> Office Address</h5>
+              <p>1707 Orlando Central pkwy ste 100 Orlando FL, USA</p>
+            </div>
+            <div class="call">
+              <h5><i class="fa fa-phone"></i> Call Us 24/7</h5>
+              <p>1707 Orlando Central pkwy ste 100 Orlando FL, USA</p>
+            </div>
+            <div class="call">
+              <h5><i class="fa fa-envelope-o"></i> Email Address</h5>
+              <p>1707 Orlando Central pkwy ste 100 Orlando FL, USA</p>
+            </div>
+            <!-- <ul>
+            <li><a href="#">Links 1</a></li>
+            <li><a href="#">Links 2</a></li>
+            <li><a href="#">Links 3</a></li>
+            <li><a href="#">Links 4</a></li>
+            <li><a href="#">Links 5</a></li>
+          </ul> -->
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="links">
+            <h4>Usefull Links</h4>
+            <ul>
+              <li><a href="#">Links 1</a></li>
+              <li><a href="#">Links 2</a></li>
+              <li><a href="#">Links 3</a></li>
+              <li><a href="#">Links 4</a></li>
+              <li><a href="#">Links 5</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 text-center copyright">
+      <p>Copyright &copy; 2018. All Right Reserved.</p>
+    </div>
+  </div>
+  <!-- End: Footer Section -->
+  <!-- Back to top -->
+  <a href="#0" class="cd-top">Top</a>
+  <!-- //Back to top -->
+  <!-- Bootstrap Js -->
+  <script src="asset/js/bootstrap.min.js"></script>
+  <script src="asset/jquery.noisy.min"></script>
+  <!-- Backtop Js -->
+  <script src="asset/js/backtop.js"></script>
+
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+  <script>
+    $(document).ready(function() {
+
+      //Google Maps JS
+      //Set Map
+      function initialize() {
+        var myLatlng = new google.maps.LatLng(53.3333, -3.08333);
+        var imagePath = 'http://m.schuepfen.ch/icons/helveticons/black/60/Pin-location.png'
+        var mapOptions = {
+          zoom: 11,
+          center: myLatlng,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+
+        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+        //Callout Content
+        var contentString = 'Some address here..';
+        //Set window width + content
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString,
+          maxWidth: 500
+        });
+
+        //Add Marker
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          icon: imagePath,
+          title: 'image title'
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.open(map, marker);
+        });
+
+        //Resize Function
+        google.maps.event.addDomListener(window, "resize", function() {
+          var center = map.getCenter();
+          google.maps.event.trigger(map, "resize");
+          map.setCenter(center);
+        });
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+    });
+  </script>
+</body>
+
+</html>

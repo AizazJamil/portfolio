@@ -1,0 +1,82 @@
+@import '../variable/_var';
+@import '../modules/_base';
+
+// Top Bar
+.top-bar {
+  background-color: $red-color;
+  width: 100%;
+  height: 35px;
+  .login-btn {
+    background-color: $white-color;
+    // padding: 15px 15px;
+    height: 35px;
+    width: 75px;
+    position: relative;
+    display: block;
+    float: right;
+    line-height: 32px;
+    text-align: center;
+    color: $red-color;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .top-socials {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    li {
+      margin-right: 10px;
+      a {
+        color: $white-color;
+        line-height: 35px;
+        i {
+          font-size: 17px;
+          text-shadow: 0 7px 10px rgba(0, 0, 0, 0.07), 0 4px 4px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+}
+
+// Navbar Section
+.navbar-default {
+  background-color: $white-color !important;
+  border-color: $white-color !important;
+  border-radius: 0 !important;
+  margin: 0;
+  padding: 1.5em 0em;
+  width: 100%;
+  box-shadow: 0 7px 10px rgba(0,0,0,0.07), 0 4px 4px rgba(0,0,0,0.2);
+  .navbar-header {
+    .navbar-brand {
+      // color: $black-color;
+      padding-top: 8px;
+      &:hover {
+        color: $black-color;
+      }
+    }
+  }
+  .navbar-collapse {
+    .navbar-nav {
+      // display: flex;
+      // float: right;
+      // flex-wrap: wrap;
+      // justify-content: flex-end;
+      // width: 100%;
+      li {
+        a {
+          color: $primary-color;
+          @include normal;
+          letter-spacing: 2px;
+          &:hover {
+            color: $red-color;
+          }
+        }
+        .active {
+          color: $red-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+@import '../variable/_var';
+
+// Mixin Base
+@mixin small {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: $font-stack;
+}
+@mixin extrasmaller {
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  font-family: $font-raleway;
+  text-align: left;
+  line-height: 1.8;
+}
+@mixin smaller {
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: $font-raleway;
+}
+@mixin smaller2 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: normal;
+  font-family: $font-raleway;
+}
+@mixin smaller3 {
+  font-size: 1.85rem;
+  font-weight: 600;
+  font-style: normal;
+  font-family: $font-raleway;
+}
+@mixin italic {
+  font-size: 1em;
+  font-weight: 400;
+  font-style: italic;
+  font-family: $font-raleway;
+}
+@mixin small2 {
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: $font-raleway;
+}
+@mixin normal {
+    font-size: 1.50rem;
+    font-weight: 600;
+    font-style: normal;
+    font-family: $font-pt;
+}
+@mixin normal2 {
+    font-size: 1.45rem;
+    font-weight: 300;
+    font-style: normal;
+    font-family: $font-raleway;
+}
+@mixin extnormal {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: $font-montserrat;
+}
+@mixin extra {
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: normal;
+  font-family: $font-stack;
+  text-transform: uppercase;
+}
+@mixin extralarge {
+  font-size: 3rem;
+  font-weight: 300;
+  font-style: normal;
+  font-family: $font-stack;
+}
+@mixin large {
+    font-size: 4.50rem;
+    font-weight: 600;
+    font-style: normal;
+    font-family: $font-stack;
+    text-transform: uppercase;
+}
+@mixin larger {
+  font-size: 6rem;
+  font-weight: 900;
+  font-style: normal;
+  font-family: $font-slack;
+  text-transform: uppercase;
+}
+@mixin larger2 {
+  font-size: 26px;
+  font-weight: 800;
+  font-style: normal;
+  font-family: $font-raleway;
+}
+@mixin primaryfont {
+  font-size: 14px;
+  font-family: $font-slack;
+  font-weight: 700;
+  font-style: normal;
+}

@@ -1,0 +1,36 @@
+// Font variable
+$font-stack: 'Source Sans Pro', sans-serif;
+$font-slack: 'Chivo', sans-serif;
+$font-pt: 'PT Sans', sans-serif;
+$font-raleway: 'Raleway', sans-serif;
+$font-montserrat: 'Montserrat', sans-serif;
+
+// Mixin variable
+@mixin transition($transition) {
+  transition: $transition;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+}
+
+@mixin border-radius($border-radius) {
+  border-radius: $border-radius;
+  -webkit-border-radius: $border-radius;
+  -moz-border-radius: $border-radius;
+  -ms-border-radius: $border-radius;
+}
+
+// Color variable
+$black-color: #000;
+$white-color: #fff;
+$blue-color: #0984e3;
+$primary-color: #525975;
+$secondary-color: rgb(245, 245, 245);
+$light-blue: #00a8ff;
+$dark-color: #2f3640;
+$gray-color: #5a5a5a;
+$red-color: #ef3e32;
+$gray2-color: #818181;
+$black2-color: #1a1a1a;
+$light-color: #bcbcbc;

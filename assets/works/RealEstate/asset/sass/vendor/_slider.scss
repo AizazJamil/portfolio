@@ -1,0 +1,105 @@
+@import '../variable/_var';
+@import '_button';
+
+.slider {
+  max-width: 100%;
+  height: 100vh;
+  margin: 20px auto;
+  position: relative;
+  margin-top: -20px;
+}
+.slide1,.slide2,.slide3,.slide4,.slide5,.slide6,.slide7,.slide8,.slide9 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  .title {
+    position: relative;
+    top: 35%;
+    h1 {
+      color: $white-color;
+      text-shadow: 0 7px 10px rgba(0,0,0,0.07), 0 4px 4px rgba(0,0,0,0.2);
+      @include larger;
+    }
+    p {
+      max-width: 60%;
+      margin: 0 auto;
+      @include normal;
+      color: $white-color;
+    }
+  }
+}
+.slide1 {
+  background: url('../../project-images/1.jpg')no-repeat center;
+      background-size: cover;
+    animation:fade 8s infinite;
+-webkit-animation:fade 8s infinite;
+}
+.slide2 {
+  background: url('../../project-images/2.jpg')no-repeat center;
+      background-size: cover;
+    animation:fade2 8s infinite;
+-webkit-animation:fade2 8s infinite;
+}
+.slide3 {
+    background: url('../../project-images/3.jpg')no-repeat center;
+      background-size: cover;
+    animation:fade3 8s infinite;
+-webkit-animation:fade3 8s infinite;
+}
+.slide4 {
+    background: url('../../project-images/4.jpg')no-repeat center;
+      background-size: cover;
+    animation:fade4 8s infinite;
+-webkit-animation:fade4 8s infinite;
+}
+.slide5 {
+    background: url('../../project-images/5.jpg')no-repeat center;
+      background-size: cover;
+    animation:fade5 8s infinite;
+-webkit-animation:fade5 8s infinite;
+}
+.slide6 {
+    background: url('../../project-images/6.jpg')no-repeat center;
+      background-size: cover;
+    animation:fade6 8s infinite;
+-webkit-animation:fade6 8s infinite;
+}
+.slide7 {
+    background: url('../../project-images/7.jpg')no-repeat center;
+      background-size: cover;
+    animation:fade7 8s infinite;
+-webkit-animation:fade7 8s infinite;
+}
+.slide8 {
+    background: url('../../project-images/8.jpg')no-repeat center;
+      background-size: cover;
+    animation:fade8 8s infinite;
+-webkit-animation:fade8 8s infinite;
+}
+.slide9 {
+    background: url('../../project-images/9.jpg')no-repeat center;
+      background-size: cover;
+    animation:fade9 8s infinite;
+-webkit-animation:fade9 8s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
