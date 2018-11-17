@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bucket</title>
+  <!-- Favicon  -->
+   <link rel="icon" href="images/favicon.png" type="image/png" sizes="57x57">
+  <!-- Css Libraries -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/exo-font.css">
+  <link rel="stylesheet" href="css/lib/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="icons/font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Exo:300,400,500,600,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+  <link href="css/jm.spinner.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.2/croppie.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+  <header class="top-navbar top-nav-fixed">
+    <ul class="top-navbar-nav">
+      <li class="nav-list">
+        <a href="index.html" class="nav-link-item">
+          <img src="images/logo/logo.svg" alt="" class="logo-brand">
+        </a>
+      </li>
+      <li class="nav-list">
+        <form class="form-inline my-lg-0">
+          <div class="from__filter__search">
+            <div class="form__inline">
+              <button class="btn btn-outline-success my-sm-0" type="submit"><img src="images/icons/search-icon.png" alt=""></button>
+              <input class="form-control mr-sm-2" onclick="focus__inline()" type="search" placeholder="Discover">
+            </div>
+          </div>
+          <div class="dropdown__filter">
+            <div class="dropdown__listing__area__filter">
+              <ul class="filter__area">
+                <li><a href="#" class="filter__link">Search History</a></li>
+                <li><a href="#" class="filter__link">Search History</a></li>
+                <li><a href="#" class="filter__link">Search History</a></li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </li>
+      <li class="nav-item dropdown nav-list">
+        <div class="profile-name dropdown-toggle" onclick="navbarDropdown()" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <div class="profile-img ">
+            <img src="images/profile/01.png" alt="" class="img-responsive">
+          </div>
+        </div>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown_profile">
+          <div class="profile-name dropdown-toggle profile_dropdown" id="navbarDropdown_profile" onclick="navbarDropdown_profile()" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="profile-img ">
+              <img src="images/profile/01.png" alt="" class="img-responsive">
+            </div>
+            <span class="profile__title">Name Surename</span>
+            <span class="profile__dot"><i class="fa fa-circle"></i></span>
+          </div>
+          <div class="dropdown-divider dropdown_divider"></div>
+          <div class="profile-name dropdown-toggle profile_dropdown" id="navbarDropdown_profile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="profile-img ">
+              <img src="images/profile/01.png" alt="" class="img-responsive">
+            </div>
+            <span class="profile__title" style="color:white">Name Surename</span>
+            <span class="profile__dot"></span>
+          </div>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#"><b>Account</b></a>
+          <a class="dropdown-item" href="#">Language</a>
+          <a class="dropdown-item" href="#">Setting and Privacy</a>
+          <a class="btn btn-outline" href="login.html">Log Out</a>
+        </div>
+      </li>
+    </ul>
+  </header>
+
+  <!-- Start: Navbar Section Top -->
+  <nav class="navbar navbar-expand-lg navbar-light navigation" role="navigation">
+    <div class="container wrapper">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo/logo.svg" alt="" class="logo-brand">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0">
+          <div class="from__filter__search">
+            <div class="form__inline">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="images/icons/search-icon.png" alt=""></button>
+              <input class="form-control mr-sm-2" onclick="focus__inline()" type="search" placeholder="Discover">
+            </div>
+          </div>
+          <div class="dropdown__filter">
+            <div class="dropdown__listing__area__filter">
+              <ul class="filter__area">
+                <li><a href="#" class="filter__link">Search History</a></li>
+                <li><a href="#" class="filter__link">Search History</a></li>
+                <li><a href="#" class="filter__link">Search History</a></li>
+              </ul>
+            </div>
+          </div>
+        </form>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link active" href="index.html">
+              <span class="nav__item_icon"><img src="images/main-menu/yellow/bucket_svg_iconos-02.svg" class="icon-nav" alt=""></span>
+              <br>
+              <span class="nav__item_title">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jobs.html">
+              <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-01.svg" class="icon-nav" alt=""></span>
+              <span class="nav__item_title">Jobs</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="request.html">
+              <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-03.svg" class="icon-nav" alt=""></span>
+              <span class="nav__item_title">Request</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="wallet.html">
+              <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-04.svg" class="icon-nav" alt=""></span>
+              <span class="nav__item_title">Wallet</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="notification.html">
+              <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-05.svg" class="icon-nav" alt=""></span>
+               <div class="numberCircle">5</div>
+              <span class="nav__item_title">Notifications</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <div class="profile-name dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="profile-img " >
+                <img src="images/profile/01.png" alt="" class="img-responsive">
+              </div>
+              <span class="profile__title">Name Surename</span>
+              <span class="profile__dot"><i class="fa fa-circle"></i></span>
+            </div>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-divider dropdown_divider"></div>
+              <a href="#" class="dropdown-item dropdown__profile__item">
+                <img src="images/profile/02.png" alt="" class="dropdown_profile">
+                <h5 class="name">Name Surename</h5>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><b>Account</b></a>
+              <a class="dropdown-item" href="#">Language</a>
+              <a class="dropdown-item" href="#">Setting and Privacy</a>
+              <a class="btn btn-outline" href="login.html">Log Out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End: Navbar Section Top -->
+
+  <!-- Start: Profile Grid Section -->
+  <div class="profile__view__grid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="profile__background__image__ember">
+            <div class="profile__cover__background cpic" >
+
+              <img src="images/cover__photos.png" alt="" class="cover_photos ">
+              <!-- <button class="btn btn-primary btn-background">Save</button> -->
+              <button type="button" class="btn btn-secondary btn_edit__cover" id='divtohide2'>
+                <div class="edit__icon edit__icon1">
+                  <img src="images/other/bucket_svg_iconos2-07.svg" alt="" class="edit__image">
+                </div>
+                Upload
+              </button>
+            </div>
+            <div class="profile__cover__background" id="demp_pic2" style='display:none;'>
+
+
+            </div>
+            <button class="btn btn-background btn-block saveB" style="margin:8px 10px 5px 0px;display:none;float:right;width:130px;" onclick="revertBack()">Save changes</button>
+            <button class="btn btn-background btn-block saveB" style="display:none;float:right;width:130px;margin-bottom:10px;margin-right:5px" onclick="revertBack()">Cancel</button>
+
+            <div class="edit__button__cover" id="coverphotoDiv">
+              <p class="size_pixel">Recommended picture size: 1200x300px</p>
+              <button class="btn btn-background btn-block" style="margin-bottom:10px">Upload File</button>
+              <input type="file" id="profilepic" style="opacity:0;position: absolute;bottom: 65px;cursor: pointer !important;width: 300px;left: -59px;">
+              <button class="btn btn-background btn-block" onclick="reposition_clicked()">Reposition</button>
+               <!-- data-toggle="modal" data-target="#edit_image__cover" -->
+            </div>
+            <div class="profile__user__image">
+              <div class="profile__border__image" >
+                <div class="edit__button" id="profilephotoDiv1">
+                  <button class="btn btn-background btn-block" style="margin-bottom:10px" >Upload File</button>
+                  <input type="file" id="profilepic" style="opacity:0;position: absolute;top: 15px;cursor: pointer !important;width: 300px;left: -59px;">
+                  <button class="btn btn-background btn-block" onclick="reposition_Modal()" >Reposition</button>
+                </div>
+                <div class="profile__border">
+                  <img src="images/profile/02.png" alt="" class="profile__user">
+                  <div class="edit__icon edit__icon2">
+                    <img src="images/other/bucket_svg_iconos2-07.svg" alt="" class="edit__image" id="profilephotoDiv">
+                  </div>
+                </div>
+              </div>
+              <div class="profile__area__timeline__details profile__edit__timeline">
+                <div class="input__edit">
+                  <div class="profile__top_desc profile__top_desc_edit">
+                    <input type="text" class="form-control surename" value="Name Surename">
+                  </div>
+                  <div class="form-group former__edit">
+                    <input type="text" class="form-control" value="Former Player at Lorem ipsum, Lithuania">
+                  </div>
+                </div>
+                <div class="button__save">
+                  <button class="btn btn-primary btn-outline">Save</button>
+                </div>
+                <div class="button-group button__profile__area button__profile__area_edit">
+                  <button class="btn btn-primary btn-background occupiedB1" onclick="occupiedClick()">Occupied</button>
+                  <button class="btn btn-secondary  occupiedB2" onclick="occupiedClick()" style="color: #000 !important;display:none;">Occupied</button>
+                  <button class="btn btn-secondary freeAgentB1" style="color: #000 !important;" onclick="freeAgentClick()">Free Agent</button>
+                  <button class="btn btn-primary btn-background freeAgentB2" style="display: none;" onclick="freeAgentClick()">Free Agent</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- columns 3 -->
+        <div class="col-md-3">
+          <!-- Light Card -->
+          <div class="card light-card">
+            <div class="button-group">
+              <div class="form-group">
+                <a href="#timeline" id="timeline1" class="btn btn-primary btn-background">Timeline</a>
+              </div>
+              <div class="form-group">
+                <a href="#photos" id="photos1" class="btn btn-primary btn-white">Photos/ Videos</a>
+              </div>
+              <div class="form-group">
+                <a href="#bio" id="bio1" class="btn btn-primary btn-white">Bio</a>
+              </div>
+              <div class="form-group">
+                <a href="#state" id="state1" class="btn btn-primary btn-white">Stats</a>
+              </div>
+              <div class="form-group">
+                <a href="#review" id="review1" class="btn btn-primary btn-white">Expert Reviews</a>
+              </div>
+            </div>
+          </div>
+          <!-- //Light Card -->
+        </div>
+        <!-- //columns 3 -->
+
+        <!-- columns 9 -->
+        <div class="col-md-9">
+          <div class="card feed__review__card" id="review">
+            <div class="feed__view_title">
+              <h4 class="feed__heading">Expert reviews</h4>
+            </div>
+            <div class="col-md-12">
+              <div class="card card__hightlight__gray">
+                <div class="feed__description__profile__title">
+                  <div class="profile__user__area">
+                    <div class="profile__circle">
+                      <img src="images/profile/01.png" alt="" class="profile_photo">
+                    </div>
+                    <div class="profile__heading__area">
+                      <h4 class="user_name">Name Surename</h4>
+                      <br>
+                      <small class="small__title">Free agent</small>
+                      <p class="profile__posting__details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, iusto, quae. Veritatis, magnam, doloribus dolorum, facilis, soluta quidem necessitatibus nobis fugit saepe nam in repellendus. Enim molestiae exercitationem ullam nisi!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card__hightlight__gray">
+                <div class="feed__description__profile__title">
+                  <div class="profile__user__area">
+                    <div class="profile__circle">
+                      <img src="images/profile/01.png" alt="" class="profile_photo">
+                    </div>
+                    <div class="profile__heading__area">
+                      <h4 class="user_name">Name Surename</h4>
+                      <br>
+                      <small class="small__title">Free agent</small>
+                      <p class="profile__posting__details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, iusto, quae. Veritatis, magnam, doloribus dolorum, facilis, soluta quidem necessitatibus nobis fugit saepe nam in repellendus. Enim molestiae exercitationem ullam nisi!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card card__hightlight__gray moreContentE1" style='display:none'>
+                <div class="feed__description__profile__title">
+                  <div class="profile__user__area">
+                    <div class="profile__circle">
+                      <img src="images/profile/01.png" alt="" class="profile_photo">
+                    </div>
+                    <div class="profile__heading__area">
+                      <h4 class="user_name">Name Surename</h4>
+                      <br>
+                      <small class="small__title">Free agent</small>
+                      <p class="profile__posting__details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, iusto, quae. Veritatis, magnam, doloribus dolorum, facilis, soluta quidem necessitatibus nobis fugit saepe nam in repellendus. Enim molestiae exercitationem ullam nisi!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="boxE1 well" style='display:none;margin:0 auto;width:100px'><img src="images/loading.svg" style=" width: 100px;"></div>
+              <div class="button-group">
+                <button class="btn btn-primary btn-background btn-yellow">Add a review</button>
+                <button class="btn btn-primary btn-outline  LoadMoreButtonE1" onclick="EditProfileLoadMoreActivity1()">See All</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card timline__card_view_ember" id="timeline">
+            <div class="slide__timeline__area">
+              <div class="col-md-3">
+                <div class="heading__title">
+                  <h3>Timeline</h3>
+                </div>
+              </div>
+              <div class="col-md-8 text-left">
+                <div class="slide-switcher">
+                  <span class="slide-button sold"></span>
+                  <span class="switch-type sold selected">Latest</span>
+                  <span class="switch-type buy"><i class="fa fa-star-o"></i>Highlights</span>
+                </div>
+              </div>
+            </div>
+            <div class="feed__share__view__actor">
+              <div class="feed_image_view">
+                <img src="images/profile/01.png" alt="" class="feed__share__actor">
+              </div>
+              <div class="feed__view__title">
+                <a href="#" class="feed_share_link">
+                  <h4 class="feed_name">Name Surename</h4>
+                  <span class="feed_share_description">Free agent</span>
+                  <span class="feed_share_date">8 August, 2018</span>
+                  <span class="feed_share_higlight_post"><img src="images/other/bucket_svg_iconos2_Artboard_1v.svg" alt="" class="outline-star">Highlighted Post</span>
+                </a>
+              </div>
+              <div class="feed_share_description_title">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat inventore aliquam dolor nisi architecto rerum, dignissimos reprehenderit nam eaque voluptatem hic blanditiis a, adipisci voluptatum officia impedit facere ipsam. Nulla.
+                </p>
+              </div>
+            </div>
+            <hr class="line-seperator">
+            <div class="feed__share__view__actor">
+              <div class="feed_image_view">
+                <img src="images/profile/01.png" alt="" class="feed__share__actor">
+              </div>
+              <div class="feed__view__title">
+                <a href="#" class="feed_share_link">
+                  <h4 class="feed_name">Name Surename</h4>
+                  <span class="feed_share_description">Free agent</span>
+                  <span class="feed_share_date">8 August, 2018</span>
+                </a>
+              </div>
+              <div class="feed_share_description_title">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat inventore aliquam dolor nisi architecto rerum, dignissimos reprehenderit nam eaque voluptatem hic blanditiis a, adipisci voluptatum officia impedit facere ipsam. Nulla.
+                </p>
+              </div>
+              <div class="feed_share_view_posting">
+                <img src="images/0.jpg" alt="" class="feed_share_post">
+              </div>
+            </div>
+            <hr class="line-seperator">
+            <div class="feed__share__view__actor">
+              <div class="feed_image_view">
+                <img src="images/profile/01.png" alt="" class="feed__share__actor">
+              </div>
+              <div class="feed__view__title">
+                <a href="#" class="feed_share_link">
+                  <h4 class="feed_name">Name Surename</h4>
+                  <span class="feed_share_description">Free agent</span>
+                  <span class="feed_share_date">8 August, 2018</span>
+                  <span class="feed_share_higlight_post"><img src="images/other/bucket_svg_iconos2_Artboard_1v.svg" alt="" class="outline-star">Highlighted Post</span>
+                </a>
+              </div>
+              <div class="feed_share_description_title">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat inventore aliquam dolor nisi architecto rerum, dignissimos reprehenderit nam eaque voluptatem hic blanditiis a, adipisci voluptatum officia impedit facere ipsam. Nulla.
+                </p>
+              </div>
+            </div>
+            <hr class="line-seperator">
+            <div class="feed__share__view__actor moreContentE2" style='display:none'>
+              <div class="feed_image_view">
+                <img src="images/profile/01.png" alt="" class="feed__share__actor">
+              </div>
+              <div class="feed__view__title">
+                <a href="#" class="feed_share_link">
+                  <h4 class="feed_name">Name Surename</h4>
+                  <span class="feed_share_description">Free agent</span>
+                  <span class="feed_share_date">8 August, 2018</span>
+                  <span class="feed_share_higlight_post"><img src="images/other/bucket_svg_iconos2_Artboard_1v.svg" alt="" class="outline-star">Highlighted Post</span>
+                </a>
+              </div>
+              <div class="feed_share_description_title">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat inventore aliquam dolor nisi architecto rerum, dignissimos reprehenderit nam eaque voluptatem hic blanditiis a, adipisci voluptatum officia impedit facere ipsam. Nulla.
+                </p>
+              </div>
+            </div>
+            <hr class="line-seperator moreContentE2" style='display:none'>
+            <div class="boxE2 well" style='display:none;margin:0 auto;width:100px'><img src="images/loading.svg" style=" width: 100px;"></div>
+            <div class="button-group">
+              <button class="btn btn-primary btn-more LoadMoreButtonE2" onclick="EditProfileLoadMoreActivity2()">Load more</button>
+            </div>
+          </div>
+
+          <div class="card card__feed__state" id="state">
+            <div class="feed__share__state">
+              <div class="heading__title">
+                <div class="col-md-4">
+                  <h3>Stats</h3>
+                </div>
+                <div class="col-md-8 text-right">
+                  <div class="button-group">
+                    <button class="btn btn-background edit-background editbutton0" onclick="editExisting()">
+                      <img src="images/other/bucket_svg_iconos2-02.svg" alt="" style="width: 30px">
+                    </button>
+                    <div class="button__edit editexisting" style='display:none'>
+                      <div class="button_underblock">
+                        <button class="btn btn-background">
+                          Edit exiting
+                        </button>
+                      </div>
+                      <div class="button_underblock">
+                        <button class="btn btn-background">
+                          Add new
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide__feed__area">
+
+              </div>
+
+              <div class="team_feed__player">
+                <h2 class="large_title">Season 2017 Span</h2>
+                <p>Name of the team</p>
+              </div>
+
+              <div class="feed_share__table__area">
+                <table class="table__area">
+                  <thead>
+                    <tr>
+                      <th>Summary</th>
+                      <th></th>
+                      <th>Averages</th>
+                    </tr>
+                  </thead>
+                  <tbody class="bold__area__title">
+                    <tr>
+                      <th>31</th>
+                      <th class="gray">G</th>
+                      <th>31</th>
+                    </tr>
+                    <tr>
+                      <th>624</th>
+                      <th class="gray">MIN</th>
+                      <th>624</th>
+                    </tr>
+                    <tr>
+                      <th>31</th>
+                      <th class="gray">G</th>
+                      <th>31</th>
+                    </tr>
+                    <tr>
+                      <th>31</th>
+                      <th class="gray">G</th>
+                      <th>31</th>
+                    </tr>
+                    <tr>
+                      <th>31</th>
+                      <th class="gray">G</th>
+                      <th>31</th>
+                    </tr>
+                    <tr>
+                      <th>31</th>
+                      <th class="gray">G</th>
+                      <th>31</th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="link__area">
+                <h6><i class="fa fa-external-link"></i>Source<a href="#" class="url__link__state">eurobasket.com</a></h6>
+              </div>
+
+              <div class="team_feed__player">
+                <h2 class="large_title">Season 2017 Span</h2>
+                <p>Name of the team</p>
+              </div>
+
+              <div class="feed_share__table__area">
+                <table class="table__area">
+                  <thead>
+                    <tr>
+                      <th>Summary</th>
+                      <th></th>
+                      <th>Averages</th>
+                    </tr>
+                  </thead>
+                  <tbody class="bold__area__title">
+                    <tr>
+                      <th>31</th>
+                      <th class="gray">G</th>
+                      <th>31</th>
+                    </tr>
+                    <tr>
+                      <th>624</th>
+                      <th class="gray">MIN</th>
+                      <th>624</th>
+                    </tr>
+                    <tr>
+                      <th>31</th>
+                      <th class="gray">G</th>
+                      <th>31</th>
+                    </tr>
+                    <tr>
+                      <th>31</th>
+                      <th class="gray">G</th>
+                      <th>31</th>
+                    </tr>
+                    <tr>
+                      <th>31</th>
+                      <th class="gray">G</th>
+                      <th>31</th>
+                    </tr>
+                    <tr>
+                      <th>31</th>
+                      <th class="gray">G</th>
+                      <th>31</th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="link__area">
+                <h6><i class="fa fa-external-link"></i>Source<a href="#" class="url__link__state">eurobasket.com</a></h6>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="card card__feed__bio" id="bio">
+            <div class="feed__share__bio">
+              <div class="heading__title upadte__title__edit">
+                <h3>Bio</h3>
+                <div class="edit_pencil edit_pencil_click">
+                  <button class="btn edit__bio__area"><img src="images/other/bucket_svg_iconos2-02.svg" width="40px" alt="" class="edit__icon"></button>
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea name="" id="" cols="30" rows="3" class="form-control bio__edit__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat at fuga, fugit maxime necessitatibus ea harum voluptatibus quasi esse totam. Ratione earum tempore ducimus perspiciatis repudiandae necessitatibus, aperiam, porro at.</textarea>
+              </div>
+              <div class="feed_share__table__area">
+                <table class="table__area">
+                  <tbody class="bold__area__title">
+                    <tr>
+                      <th>Uniform</th>
+                    </tr>
+                    <tr>
+                      <th>Height</th>
+                    </tr>
+                    <tr>
+                      <th>Position</th>
+                    </tr>
+                    <tr>
+                      <th>Born</th>
+                    </tr>
+                    <tr>
+                      <th>Birthplace</th>
+                    </tr>
+                    <tr>
+                      <th>Weight</th>
+                    </tr>
+                  </tbody>
+                  <tbody class="light__area__title">
+                    <tr>
+                      <th class="edit_option"><input type="text" class="form-control form_area" value="No 9"></th>
+                    </tr>
+                    <tr>
+                      <th class="edit_option">
+                        <select name="" id="" class="form-control">
+                          <option value="">191 cm</option>
+                          <option value="">120 cm</option>
+                          <option value="">200 cm</option>
+                          <option value="">60 cm</option>
+                        </select>
+                    </th>
+                    </tr>
+                    <tr>
+                      <th class="edit_option">
+                        <select name="" id="" class="form-control">
+                          <option value="">Point Guard</option>
+                          <option value="">Point 2</option>
+                          <option value="">Point 3</option>
+                          <option value="">Point 4</option>
+                        </select>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="edit_option">
+                        <input type="date" class="form-control" name="dateofbirth" value="May 25, 1983">
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="edit_option">
+                        <select name="" id="" class="form-control">
+                          <option value="">Mao Paulo</option>
+                          <option value="">Place 2</option>
+                          <option value="">Place 3</option>
+                          <option value="">Place 4</option>
+                        </select>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="edit_option">
+                        <select name="" id="" class="form-control">
+                          <option value="">82kg / 180,4lbs</option>
+                          <option value="">82kg / 180,4lbs</option>
+                          <option value="">82kg / 180,4lbs</option>
+                          <option value="">82kg / 180,4lbs</option>
+                        </select>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="card feed__gallery__card__area" id="photos">
+            <div class="heading__title upadte__title__edit">
+              <h3>Gallery</h3>
+              <div class="edit_pencil editButton" onclick="editButtonPhotos()">
+                <button class="btn edit__gallery__area"><img src="images/other/bucket_svg_iconos2-02.svg" width="30px" alt="" class="edit__icon"></button>
+              </div>
+              <div class="delete__select__area deleteButton" style='display:none'>
+                <button class="btn btn-background">Delete selected</button>
+              </div>
+            </div>
+            <div class="gallery__col__area">
+              <div class="gallery__columns">
+                <h3>Albums</h3>
+                <div class="image__area">
+                  <div class="figure__image__area">
+                    <img src="images/gallery/01.jpg" alt="" class="gallery_photos">
+                    <div>
+                      Photos
+                    </div>
+                  </div>
+                </div>
+                <div class="image__area">
+                  <div class="figure__image__area">
+                    <img src="images/gallery/02.jpg" alt="" class="gallery_photos">
+                    <div class="edit__icon">
+                      <a href="#"><img src="images/other/bucket_svg_iconos2-02.svg" width="40px" alt="" class="edit_icon"></a>
+                    </div>
+                    <div>
+                      <input type="text" class="form-control" value="Videos">
+                    </div>
+                  </div>
+                </div>
+                <div class="image__area">
+                  <div class="figure__image__area">
+                    <img src="images/gallery/03.jpg" alt="" class="gallery_photos">
+                    <div>
+                      Duis tincidunt tortor
+                      <small class="date__area">8 August, 2018</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="image__area moreContentE3" style='display:none'>
+                  <div class="figure__image__area">
+                    <img src="images/gallery/03.jpg" alt="" class="gallery_photos">
+                    <div>
+                      Duis tincidunt tortor
+                      <small class="date__area">8 August, 2018</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="image__area moreContentE3" style='display:none'>
+                  <div class="figure__image__area">
+                    <img src="images/gallery/03.jpg" alt="" class="gallery_photos">
+                    <div>
+                      Duis tincidunt tortor
+                      <small class="date__area">8 August, 2018</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="image__area moreContentE3" style='display:none'>
+                  <div class="figure__image__area">
+                    <img src="images/gallery/03.jpg" alt="" class="gallery_photos">
+                    <div>
+                      Duis tincidunt tortor
+                      <small class="date__area">8 August, 2018</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="image__area moreContentE3" style='display:none'>
+                  <div class="figure__image__area">
+                    <img src="images/gallery/03.jpg" alt="" class="gallery_photos">
+                    <div>
+                      Duis tincidunt tortor
+                      <small class="date__area">8 August, 2018</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="line-seperator">
+              <div class="boxE3 well" style='display:none;margin:0 auto;width:100px'><img src="images/loading.svg" style=" width: 100px;"></div>
+              <div class="button-group">
+                <button class="btn btn-primary btn-outline LoadMoreButtonE3" onclick="EditProfileLoadMoreActivity3()">See All</button>
+              </div>
+            </div>
+            <div class="gallery__col__area">
+              <div class="gallery__columns">
+                <h3>Latest</h3>
+                <div class="image__area">
+                  <div class="figure__image__area">
+                    <img src="images/gallery/01.jpg" alt="" class="gallery_photos">
+                    <div class="edit__option__icon">
+                      <div class="edit_pencil editButton1" onclick="editButtonPhotos1()" style='display:none'>
+                        <button class="btn edit__gallery__area__latest"><img src="images/icons/edit-pencil.png" alt="" class="edit__icon"></button>
+                      </div>
+                      <div class="delete__select__area deleteButton1" style='display:none'>
+                        <button class="btn btn-background">Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="image__area">
+                  <div class="figure__image__area">
+                    <img src="images/gallery/02.jpg" alt="" class="gallery_photos">
+                  </div>
+                </div>
+                <div class="image__area">
+                  <div class="figure__image__area">
+                    <img src="images/gallery/03.jpg" alt="" class="gallery_photos">
+                  </div>
+                </div>
+                <div class="image__area">
+                  <div class="figure__image__area">
+                    <img src="images/gallery/01.jpg" alt="" class="gallery_photos">
+                  </div>
+                </div>
+                <div class="image__area">
+                  <div class="figure__image__area">
+                    <img src="images/gallery/02.jpg" alt="" class="gallery_photos">
+                  </div>
+                </div>
+                <div class="image__area">
+                  <div class="figure__image__area">
+                    <img src="images/gallery/03.jpg" alt="" class="gallery_photos">
+                  </div>
+                </div>
+                <div class="image__area moreContentE4" style='display:none'>
+                  <div class="figure__image__area">
+                    <img src="images/gallery/03.jpg" alt="" class="gallery_photos">
+                  </div>
+                </div>
+                 <div class="image__area moreContentE4" style='display:none'>
+                  <div class="figure__image__area">
+                    <img src="images/gallery/03.jpg" alt="" class="gallery_photos">
+                  </div>
+                </div>
+                 <div class="image__area moreContentE4" style='display:none'>
+                  <div class="figure__image__area">
+                    <img src="images/gallery/03.jpg" alt="" class="gallery_photos">
+                  </div>
+                </div>
+                 <div class="image__area moreContentE4" style='display:none'>
+                  <div class="figure__image__area">
+                    <img src="images/gallery/03.jpg" alt="" class="gallery_photos">
+                  </div>
+                </div>
+                 <div class="image__area moreContentE4" style='display:none'>
+                  <div class="figure__image__area">
+                    <img src="images/gallery/03.jpg" alt="" class="gallery_photos">
+                  </div>
+                </div>
+              </div>
+              <div class="boxE4 well" style='display:none;margin:0 auto;width:100px'><img src="images/loading.svg" style=" width: 100px;"></div>
+              <div class="button-group" style="margin-top: 2rem">
+                <button class="btn btn-primary btn-outline LoadMoreButtonE4" onclick="EditProfileLoadMoreActivity4()">See All</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //columns 8 -->
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="edit_image" tabindex="-1" role="dialog" aria-labelledby="edit__image" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title text-center" id="exampleModalLabel">Profile Picture</h5>
+        </div>
+        <div class="modal-body">
+          <div class="modal__image "  >
+            <div class='upload__profile' id='demp_pic1'>
+
+            </div>
+          </div>
+          <div class="slide-validation">
+            <!-- <img src="http://doudou-ebook.oss-cn-shanghai.aliyuncs.com/sources/time_resize.jpg" alt="" class="slide-background" height="100" width="200"/>
+            <img src="http://doudou-ebook.oss-cn-shanghai.aliyuncs.com/sources/resize_chunk.jpg" alt="" class="slide-drag noselect"/> -->
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-outline" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary btn-background">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="edit_image__cover" tabindex="-1" role="dialog" aria-labelledby="edit__image__cover" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title text-center" id="exampleModalLabel">Profile Picture</h5>
+        </div>
+        <div class="modal-body">
+          <div class="modal__image upload__profile" id='demp_pic' >
+          <!--  <img src="images/cover__photos.png" alt="" class="upload__profile">-->
+          </div>
+
+          <div class="slide-validation">
+            <!-- <img src="http://doudou-ebook.oss-cn-shanghai.aliyuncs.com/sources/time_resize.jpg" alt="" class="slide-background" height="100" width="200"/>
+            <img src="http://doudou-ebook.oss-cn-shanghai.aliyuncs.com/sources/resize_chunk.jpg" alt="" class="slide-drag noselect"/> -->
+          <!--    <div class="dot_small"></div>
+            <div class="slide-action">
+              <div class="slide-dot"></div>
+            </div>
+            <div class="dot_large"></div>-->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-outline" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary btn-background">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- End: Profile Grid Section -->
+
+  <!-- Start: Mobile Bottom Fixed Navbar -->
+  <nav class="bottom-navbar bottom-nav-fixed">
+    <ul class="bottom-nav-items">
+      <li class="nav-bottom-area active">
+        <a href="index.html" class="nav-bottom-link">
+          <span class="nav__item_icon"><img src="images/main-menu/yellow/bucket_svg_iconos-02.svg" class="icon-nav" alt=""></span>
+        </a>
+      </li>
+      <li class="nav-bottom-area">
+        <a href="jobs.html" class="nav-bottom-link">
+          <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-01.svg" class="icon-nav" alt=""></span>
+        </a>
+      </li>
+      <li class="nav-bottom-area">
+        <a href="request.html" class="nav-bottom-link">
+          <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-03.svg" class="icon-nav" alt=""></span>
+        </a>
+      </li>
+      <li class="nav-bottom-area">
+        <a href="wallet.html" class="nav-bottom-link">
+          <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-04.svg" class="icon-nav" alt=""></span>
+        </a>
+      </li>
+      <li class="nav-bottom-area">
+        <a href="notification.html" class="nav-bottom-link">
+          <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-05.svg" class="icon-nav" alt=""></span>
+           <div class="numberCircle">5</div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- End: Mobile Bottom Fixed Navbar -->
+
+
+  <!-- Javascript Libraries -->
+  <script src="js/lib/jquery/jquery.min.js"></script>
+  <script src="js/lib/bootstrap/popper.min.js"></script>
+  <script src="js/lib/bootstrap/bootstrap.min.js"></script>
+  <script src="js/smooth.js"></script>
+  <script src="js/slide.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jm.spinner.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.2/croppie.js"></script>
+  <script src="js/main.js"></script>
+   <script type="text/javascript">
+      $(window).scroll(function() {
+
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 3800) {
+                $("#photos1").removeClass("btn-white");
+                $("#photos1").addClass("btn-background");
+
+                $(".timeline1").removeClass("btn-background");
+                $(".bio1").removeClass("btn-background");
+                $(".state1").removeClass("btn-background");
+                $(".review1").removeClass("btn-background");
+
+                $("#timeline1").addClass("btn-white");
+                $("#bio1").addClass("btn-white");
+                $("#state1").addClass("btn-white");
+                $("#review1").addClass("btn-white");
+
+
+            } else if (scroll >= 3000) {
+                $("#bio1").removeClass("btn-white");
+                $("#bio1").addClass("btn-background");
+
+                $(".timeline1").removeClass("btn-background");
+                $(".photos1").removeClass("btn-background");
+                $(".state1").removeClass("btn-background");
+                $(".review1").removeClass("btn-background");
+
+                $("#timeline1").addClass("btn-white");
+                $("#photos1").addClass("btn-white");
+                $("#state1").addClass("btn-white");
+                $("#review1").addClass("btn-white");
+            }
+            else if (scroll >= 2000 ) {
+                $("#state1").removeClass("btn-white");
+                $("#state1").addClass("btn-background");
+
+                $(".timeline1").removeClass("btn-background");
+                $(".photos1").removeClass("btn-background");
+                $(".bio1").removeClass("btn-background");
+                $(".review1").removeClass("btn-background");
+
+                $("#timeline1").addClass("btn-white");
+                $("#photos1").addClass("btn-white");
+                $("#bio1").addClass("btn-white");
+                $("#review1").addClass("btn-white");
+            }
+            else  if (scroll >= 1000 ) {
+               $("#timeline1").removeClass("btn-white");
+                $("#timeline1").addClass("btn-background");
+
+                $(".photos1").removeClass("btn-background");
+                $(".bio1").removeClass("btn-background");
+                $(".state1").removeClass("btn-background");
+                $(".review1").removeClass("btn-background");
+
+                $("#photos1").addClass("btn-white");
+                $("#bio1").addClass("btn-white");
+                $("#state1").addClass("btn-white");
+                $("#review1").addClass("btn-white");
+
+            }
+            else {
+
+                 $("#review1").removeClass("btn-white");
+                $("#review1").addClass("btn-background");
+
+                $(".photos1").removeClass("btn-background");
+                $(".bio1").removeClass("btn-background");
+                $(".state1").removeClass("btn-background");
+                $(".timeline1").removeClass("btn-background");
+
+                $("#photos1").addClass("btn-white");
+                $("#bio1").addClass("btn-white");
+                $("#state1").addClass("btn-white");
+                $("#timeline1").addClass("btn-white");
+            }
+        });
+
+        window.onload = function(){
+  var divToHide = document.getElementById('coverphotoDiv');
+  var divtohide2 = document.getElementById('divtohide2');
+  var profilephotoDiv = document.getElementById('profilephotoDiv');
+   var profilephotoDiv1 = document.getElementById('profilephotoDiv1');
+  document.onclick = function(e){
+      console.log(e.target.id);
+    if(e.target.id !== 'divToHide' && e.target.id !== 'divtohide2'){
+        console.log('here2');
+      //element clicked wasn't the div; hide the div
+      $("#coverphotoDiv").hide();
+    }
+
+    if(e.target.id !== 'profilephotoDiv' && e.target.id !== 'profilephotoDiv1'){
+
+      //element clicked wasn't the div; hide the div
+      $("#profilephotoDiv1").hide();
+    }
+  }
+}
+  </script>
+</body>
+</html>
