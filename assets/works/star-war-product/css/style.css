@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0;
+}
+
+
+/* Cards */
+
+.card {
+    width: 892px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.card .left-card {
+    width: 480px;
+    height: 553px;
+    background-color: #CC3843;
+    border-radius: 23px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.card .left-card .logo-star {
+    opacity: 0.2;
+    transform: rotate(-90deg) scale(1.2);
+    -webkit-transform: rotate(-90deg) scale(1.2);
+    margin-left: -90px;
+}
+
+.card .right-card {
+    width: 654px;
+    height: 479px;
+    background-color: #0c1f2c;
+    position: absolute;
+    left: -10%;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    border-radius: 23px;
+}
+
+.card .helmet {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.card .personal-info {
+    width: 300px;
+    height: 300px;
+    margin: 50px 0 0 235px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card .personal-info h1 {
+    font-size: 2.30rem;
+    font-weight: 800;
+    color: #fff;
+    line-height: 46px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.card .personal-info h2 {
+    font-size: 2em;
+    font-weight: 300;
+    letter-spacing: 1.6px;
+    margin-bottom: 30px;
+}
+
+.card .right-card .details {
+    height: 145px;
+}
+
+.card .right-card .details .size,
+.card .right-card .details .durability {
+    width: 50%;
+    float: left;
+}
+
+.card .right-card .details .size {
+    border-right: 1px solid #CB1F40;
+    padding: 30px 0;
+}
+
+.card .right-card .details .durability {
+    text-align: center;
+}
+
+.card .right-card .details .durability h4 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.card .right-card .personal-info h3 {
+    width: 80px;
+    height: 80px;
+    font-weight: 300;
+    line-height: 80px;
+    font-size: 16px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.card .right-card .personal-info h3:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #CB1F40;
+    border-top-color: transparent;
+    -webkit-transform: rotate(-45deg) translate(-50%, -50%);
+    transform: rotate(-45deg) translate(-50%, -50%);
+}
+
+.card .right-card .personal-info h4 {
+    font-weight: bold;
+    /* line-height: normal; */
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.card .right-card .personal-info p {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    /* line-height: normal; */
+    text-align: center;
+    font-weight: 300;
+    line-height: 28px;
+    font-size: 14px;
+    border-radius: 50%;
+    -webkit-transition: 0.3s linear;
+    transition: 0.3s linear;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.card .right-card .personal-info p:hover {
+    border: 1px solid #CB1F40;
+}
+
+.card .right-card .personal-info p:nth-of-type(1) {
+    border: 1px solid #CB1F40;
+}
+
+.slider {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    line-height: 70px;
+    text-align: center;
+    margin-left: -30px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+    color: #CB1F40;
+    cursor: pointer;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.slider:hover {
+    background-color: #CB1F40;
+    color: #fff;
+}
+
+.slider:nth-of-type(2) {
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.card .right-card .personal-info button {
+    height: 48px;
+    background: #CB2140;
+    border-radius: 90px;
+    font-weight: 300;
+    line-height: 35px;
+    font-size: 14px;
+    padding: 0 24px;
+    color: #fff;
+    opacity: 1;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.card .right-card .personal-info button:hover {
+    background-color: #fff;
+    color: #CB1F40;
+}
+
+.card .right-card .personal-info i.fav {
+    font-size: 12px;
+    margin: 0 12px 0 24px;
+    color: #CB2140;
+}
+
+.card .right-card .personal-info a {
+    font-size: 11px;
+    color: #fff;
+    opacity: 0.3;
+    text-decoration: none;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.card .right-card .personal-info a:hover {
+    opacity: 1;
+}
