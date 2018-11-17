@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bucket</title>
+  <!-- Favicon  -->
+   <link rel="icon" href="images/favicon.png" type="image/png" sizes="57x57">
+  <!-- Css Libraries -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/exo-font.css">
+  <link rel="stylesheet" href="css/lib/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="icons/font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Exo:300,400,500,600,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+</head>
+<body>
+
+  <header class="top-navbar top-nav-fixed">
+    <ul class="top-navbar-nav">
+      <li class="nav-list">
+        <a href="index.html" class="nav-link-item">
+          <img src="images/logo/logo.svg" alt="" class="logo-brand">
+        </a>
+      </li>
+      <li class="nav-list">
+        <form class="form-inline my-lg-0">
+          <div class="from__filter__search">
+            <div class="form__inline">
+              <button class="btn btn-outline-success my-sm-0" type="submit"><img src="images/icons/search-icon.png" alt=""></button>
+              <input class="form-control mr-sm-2" onclick="focus__inline()" type="search" placeholder="Discover">
+            </div>
+          </div>
+          <div class="dropdown__filter">
+            <div class="dropdown__listing__area__filter">
+              <ul class="filter__area">
+                <li><a href="#" class="filter__link">Search History</a></li>
+                <li><a href="#" class="filter__link">Search History</a></li>
+                <li><a href="#" class="filter__link">Search History</a></li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </li>
+      <li class="nav-item dropdown nav-list">
+        <div class="profile-name dropdown-toggle" onclick="navbarDropdown()" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <div class="profile-img ">
+            <img src="images/profile/01.png" alt="" class="img-responsive">
+          </div>
+        </div>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown_profile">
+          <div class="profile-name dropdown-toggle profile_dropdown" id="navbarDropdown_profile" onclick="navbarDropdown_profile()" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="profile-img ">
+              <img src="images/profile/01.png" alt="" class="img-responsive">
+            </div>
+            <span class="profile__title">Name Surename</span>
+            <span class="profile__dot"><i class="fa fa-circle"></i></span>
+          </div>
+          <div class="dropdown-divider dropdown_divider"></div>
+          <div class="profile-name dropdown-toggle profile_dropdown" id="navbarDropdown_profile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="profile-img ">
+              <img src="images/profile/01.png" alt="" class="img-responsive">
+            </div>
+            <span class="profile__title" style="color:white">Name Surename</span>
+            <span class="profile__dot"></span>
+          </div>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#"><b>Account</b></a>
+          <a class="dropdown-item" href="#">Language</a>
+          <a class="dropdown-item" href="#">Setting and Privacy</a>
+          <a class="btn btn-outline" href="login.html">Log Out</a>
+        </div>
+      </li>
+    </ul>
+  </header>
+
+  <!-- Start: Navbar Section Top -->
+  <nav class="navbar navbar-expand-lg navbar-light navigation" role="navigation">
+    <div class="container wrapper">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo/logo.svg" alt="" class="logo-brand">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0">
+          <div class="from__filter__search">
+            <div class="form__inline">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="images/icons/search-icon.png" alt=""></button>
+              <input class="form-control mr-sm-2" onclick="focus__inline()" type="search" placeholder="Discover">
+            </div>
+          </div>
+          <div class="dropdown__filter">
+            <div class="dropdown__listing__area__filter">
+              <ul class="filter__area">
+                <li><a href="#" class="filter__link">Search History</a></li>
+                <li><a href="#" class="filter__link">Search History</a></li>
+                <li><a href="#" class="filter__link">Search History</a></li>
+              </ul>
+            </div>
+          </div>
+        </form>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-02.svg" class="icon-nav" alt=""></span>
+              <br>
+              <span class="nav__item_title">Home</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link active" href="jobs.html">
+              <span class="nav__item_icon"><img src="images/main-menu/yellow/bucket_svg_iconos-01.svg" class="icon-nav" alt=""></span>
+              <span class="nav__item_title">Jobs</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="request.html">
+              <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-03.svg" class="icon-nav" alt=""></span>
+              <span class="nav__item_title">Request</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="wallet.html">
+              <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-04.svg" class="icon-nav" alt=""></span>
+              <span class="nav__item_title">Wallet</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="notification.html">
+              <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-05.svg" class="icon-nav" alt=""></span>
+               <div class="numberCircle">5</div>
+              <span class="nav__item_title">Notifications</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <div class="profile-name dropdown-toggle" onclick="navbarDropdown()" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <div class="profile-img ">
+                <img src="images/profile/01.png" alt="" class="img-responsive">
+              </div>
+              <span class="profile__title">Name Surename</span>
+              <span class="profile__dot"><i class="fa fa-circle"></i></span>
+            </div>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown_profile">
+              <div class="profile-name dropdown-toggle profile_dropdown" id="navbarDropdown_profile" onclick="navbarDropdown_profile()" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="profile-img ">
+                  <img src="images/profile/01.png" alt="" class="img-responsive">
+                </div>
+                <span class="profile__title">Name Surename</span>
+                <span class="profile__dot"><i class="fa fa-circle"></i></span>
+              </div>
+              <div class="dropdown-divider dropdown_divider"></div>
+              <div class="profile-name dropdown-toggle profile_dropdown" id="navbarDropdown_profile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="profile-img ">
+                  <img src="images/profile/01.png" alt="" class="img-responsive">
+                </div>
+                <span class="profile__title" style="color:white">Name Surename</span>
+                <span class="profile__dot"></span>
+              </div>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><b>Account</b></a>
+              <a class="dropdown-item" href="#">Language</a>
+              <a class="dropdown-item" href="#">Setting and Privacy</a>
+              <a class="btn btn-outline" href="#">Log Out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End: Navbar Section Top -->
+
+  <!-- Start: Profile Area Section -->
+  <div class="profile__area">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 no-padding text-center">
+          <!-- Profile Card -->
+          <div class="card mobileProfileSection" >
+            <div class="profile__img">
+              <img src="images/profile/02.png" alt="" class="img-responsive">
+            </div>
+            <div class="profile__name">
+              <h4>Name Surename</h4>
+              <h6 class="men__player">Player</h6>
+            </div>
+            <div class="rating">
+              <ul class="rating__items">
+                <li class="items__list items__title">Rating <span>4</span>,<span>8</span><span>/</span><span>5</span></li>
+                <li class="items__list"><img src="images/other/bucket_svg_iconos2_Artboard_1v_copy.svg" alt=""></li>
+                <li class="items__list"><img src="images/other/bucket_svg_iconos2_Artboard_1v_copy.svg" alt=""></li>
+                <li class="items__list"><img src="images/other/bucket_svg_iconos2_Artboard_1v_copy.svg" alt=""></li>
+                <li class="items__list"><img src="images/icons/star-half.png" alt=""></li>
+              </ul>
+            </div>
+            <div class="review__area">
+              <h3><span>185</span>Expert reviews</h3>
+              <div class="follower__items">
+                <ul class="fol__item">
+                  <li class="follower__list">
+                    <span>207</span>
+                    <p>Followers</p>
+                  </li>
+                  <li class="line-break"></li>
+                  <li class="follower__list">
+                    <span>170</span>
+                    <p>Following</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="edit">
+                <a href="edit-profile.html">
+                  <img src="images/icons/pencil-icon.PNG" alt="" class="edit-icon">
+                  <span>Edit your Profile</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- //Profile Card -->
+
+        </div>
+        <!-- //columns -->
+
+
+        <div class="col-md-9">
+          <div class="card job__apply__area__feed">
+            <div class="job__top__area">
+              <div class="form-group">
+                <a href="jobs.html" class="btn btn-primary btn-outline">Back to search</a>
+              </div>
+              <div class="job__bookmark">
+                <img style="width: 50px" src="images/other/bucket_svg_iconos2-04.svg" class="bookmark__icon" alt="">
+                <h4> <span>Save</span></h4>
+              </div>
+            </div>
+            <div class="job__description__area">
+              <div class="job__image__area">
+                <img src="images/profile/02.png" alt="" class="profile_images">
+              </div>
+              <div class="job__details_area">
+                <h4 class="job__title__name">Position Lorem Ipsum</h4>
+                <span class="job__club">Club Name</span>
+                <span class="job__location">Location</span>
+                <span class="job__published">Published 8 August, 2018</span>
+                <div class="job__url__link">
+                  <h6 class="url__details">
+                    <!-- <i class="fa fa-square-o"></i> -->
+                    <img src="images/other/bucket_svg_iconos2-03.svg" style="width: 60px" alt="" class="url__icon">
+                    <a href="#" class="url__link" target="_blank">www.loremipsum.com</a>
+                  </h6>
+                </div>
+              </div>
+              <hr class="line-seperator">
+              <div class="job__description__area__title">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eligendi nihil eaque unde illum molestiae et consequatur, hic, neque ipsum magnam nemo odit laborum veniam itaque dolorem quam labore, error! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore fuga eum ad, atque dolores veritatis saepe, dolorem in consequatur modi voluptates, minus autem vitae corporis pariatur. Quibusdam nam ratione, voluptatum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sed eligendi placeat accusamus doloremque non optio autem esse facere officia. Corporis cum dolor eveniet nisi iusto ducimus cupiditate, sequi quae!</p>
+              </div>
+            </div>
+            <div class="button-group">
+              <button class="btn btn-primary btn-block btn-background">Apply</button>
+            </div>
+          </div>
+        </div>
+        <!-- //columns -->
+
+      </div>
+    </div>
+  </div>
+  <!-- End: Profile Area Section -->
+
+  <!-- Start: Mobile Bottom Fixed Navbar -->
+  <nav class="bottom-navbar bottom-nav-fixed">
+    <ul class="bottom-nav-items">
+      <li class="nav-bottom-area active">
+        <a href="index.html" class="nav-bottom-link">
+          <span class="nav__item_icon"><img src="images/main-menu/yellow/bucket_svg_iconos-02.svg" class="icon-nav" alt=""></span>
+        </a>
+      </li>
+      <li class="nav-bottom-area">
+        <a href="jobs.html" class="nav-bottom-link">
+          <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-01.svg" class="icon-nav" alt=""></span>
+        </a>
+      </li>
+      <li class="nav-bottom-area">
+        <a href="request.html" class="nav-bottom-link">
+          <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-03.svg" class="icon-nav" alt=""></span>
+        </a>
+      </li>
+      <li class="nav-bottom-area">
+        <a href="wallet.html" class="nav-bottom-link">
+          <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-04.svg" class="icon-nav" alt=""></span>
+        </a>
+      </li>
+      <li class="nav-bottom-area">
+        <a href="notification.html" class="nav-bottom-link">
+          <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-05.svg" class="icon-nav" alt=""></span>
+           <div class="numberCircle">5</div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- End: Mobile Bottom Fixed Navbar -->
+
+
+  <!-- Javascript Libraries -->
+  <script src="js/lib/jquery/jquery.min.js"></script>
+  <script src="js/lib/bootstrap/bootstrap.min.js"></script>
+  <script src="js/lib/bootstrap/popper.min.js"></script>
+</body>
+</html>
