@@ -1,0 +1,127 @@
+// Checkout Section
+.checkout-section {
+  padding: 3rem 0;
+  margin: 0;
+  width: 100%;
+  .group-con {
+    .sub-total {
+      font-size: 18px;
+      font-family: $font-slack;
+      font-weight: 700;
+      color: $secondary-color;
+      padding-right: 20px;
+    }
+    .total {
+      padding-right: 10px;
+      color: $secondary-color;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  .check-btn {
+    background-color: $orange-color;
+    border-color: $orange-color;
+    color: $primary-color;
+    font-size: 16px;
+    font-family: $font-slack;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    &:hover {
+      background-color: transparent;
+      color: $orange-color;
+      border-color: $orange-color;
+    }
+    &:focus, &:active, &:visited {
+      outline: none;
+      background-color: $orange-color !important;
+      border-color: $orange-color !important;
+      box-shadow: none !important;
+    }
+  }
+  .check-thead {
+    .check-head {
+      @include flexbox();
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      list-style-type: none;
+      background-color: $gray-color;
+      padding: 1.40rem 0;
+      li {
+        font-size: 16px;
+        font-family: $font-slack;
+        font-weight: 700;
+        position: relative;
+        color: $orange-color;
+        width: 200px;
+        text-align: left;
+        padding-left: 1rem;
+        text-transform: uppercase;
+        &:nth-child(2) {
+          width: 200px;
+        }
+        &:nth-child(3) {
+          width: 500px;
+        }
+        &:nth-child(4) {
+          width: 200px;
+        }
+      }
+    }
+  }
+  .check-tbody {
+    .check-body {
+      @include flexbox();
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      width: 100%;
+      align-items: center;
+      // padding: 1.40rem 0;
+      list-style-type: none;
+      border-bottom: 1px solid $gray-color;
+      li {
+        font-size: 20px;
+        font-family: $font-slack;
+        font-weight: 600;
+        position: relative;
+        color: $gray2-color;
+        width: 200px;
+        text-align: left;
+        padding-left: 1rem;
+        img {
+          width: 120px;
+          height: 120px;
+        }
+        .name {
+          font-size: 17px;
+          font-family: $font-slack;
+          font-weight: 600;
+          color: $secondary-color;
+          position: relative;
+        }
+        p {
+          font-size: 15px;
+          font-family: $font-slack;
+          font-weight: 300;
+          color: $secondary-color;
+          position: relative;
+        }
+        .price {
+          font-size: 18px;
+          font-family: $font-slack;
+          font-weight: 700;
+          color: $secondary-color;
+        }
+        &:nth-child(2) {
+          width: 200px;
+        }
+        &:nth-child(3) {
+          width: 500px;
+        }
+        &:nth-child(4) {
+          width: 200px;
+        }
+      }
+    }
+  }
+}

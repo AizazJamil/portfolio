@@ -1,0 +1,357 @@
+// Product Section
+.auction-section {
+  background-color: $primary-color !important;
+  width: 100%;
+}
+.product-section {
+  // max-width: 1250px;
+  // margin: 0 auto;
+  background-color: $gray-color;
+  padding: 3.5rem 0;
+  .heading {
+    h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      font-style: normal;
+      font-family: $font-slack;
+      position: relative;
+      text-align: center;
+      vertical-align: middle;
+    }
+    p {
+      font-family: $font-slack;
+      font-size: 16px;
+      font-weight: 400;
+      font-style: normal;
+      vertical-align: middle;
+      color: $gray2-color;
+    }
+  }
+  .product-details {
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.50rem;
+    .card {
+      margin-right: 1.50rem;
+      border: none;
+      box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      &:hover .filter-image {
+        bottom: 0;
+      }
+      .pro-image {
+        width: 100%;
+        height: 280px;
+        margin-bottom: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .product-cont {
+        padding: 1rem 0;
+        text-align: center;
+        h6 {
+          font-family: $font-slack;
+          font-size: 15px;
+          font-weight: 600;
+          font-style: normal;
+          position: relative;
+          color: $gray2-color;
+        }
+        .dollar {
+          font-size: 1.05rem;
+          font-weight: 600;
+          font-style: normal;
+          font-family: $font-slack;
+          position: relative;
+          text-transform: uppercase;
+          color: $blacklg-color;
+          span {
+            text-decoration: line-through;
+            font-size: 14px;
+            color: $orange-color;
+          }
+        }
+      }
+      .filter-image {
+        position: absolute;
+        background: $orange-color;
+        width: 100%;
+        bottom: -50px;
+      }
+      figcaption {
+        text-align: center;
+        margin-top: -15px;
+        .cart-btn {
+          font-size: 16px;
+          position: relative;
+          color: $gray2-color;
+          // display: block;
+          font-weight: 600;
+          font-family: $font-slack;
+          // padding: .76rem;
+          // width: 40px;
+          // height: 40px;
+          padding: 0 2rem;
+          border-radius: 2px;
+          line-height: 40px;
+          text-align: center;
+          display: inline-block;
+          background-color: $primary-color;
+          border-color: $primary-color;
+          text-transform: uppercase;
+          &:hover {
+            background-color: $orange-color;
+            border-radius: 0;
+            color: $primary-color;
+            border-color: $orange-color;
+          }
+          &:focus {
+            outline: none;
+            background-color: $orange-color;
+            box-shadow: none !important;
+          }
+          &:active {
+            background-color: $orange-color;
+            border-color: $orange-color;
+          }
+        }
+        .icon-btn {
+          background-color: transparent;
+          color: $gray2-color;
+          margin-right: 10px;
+          .fa {
+            font-size: 20px;
+            &:hover {
+              color: $orange-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+[class*=" imghvr-"],
+[class^="imghvr-"] {
+  background-color: $primary-color !important;
+}
+
+[class*=" imghvr-"] figcaption, [class^="imghvr-"] figcaption {
+  top: 350px !important;
+  background-color: $orange-color !important;
+}
+
+
+// Light Section
+.lightsection {
+  background-color: $orange-color;
+  width: 100%;
+  .title {
+    padding: 2rem 0;
+    text-align: center;
+    p {
+      color: $primary-color;
+      text-align: center;
+      font-size: 1.10rem;
+      font-weight: 500;
+      position: relative;
+    }
+  }
+}
+
+
+// Product Details
+.product-details-section {
+  width: 100%;
+  padding: 8rem 0 3rem 0;
+  margin: 0;
+  .product-col {
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    .product-image-sl {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .details-col {
+      .heading {
+        h5 {
+          text-transform: uppercase;
+          color: $orange-color;
+          font-size: 18px;
+          font-weight: 600;
+          font-family: $font-slack;
+          position: relative;
+          text-align: left;
+          vertical-align: middle;
+          line-height: 30px;
+        }
+      }
+      .title {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding-bottom: 20px;
+        h2 {
+          font-size: 35px;
+          font-family: $font-slack;
+          font-weight: 500;
+          color: $blacklg-color;
+          position: relative;
+          vertical-align: middle;
+        }
+        p {
+          line-height: 28px;
+          color: $gray2-color;
+          font-size: 16px;
+          font-family: $font-slack;
+          font-weight: 400;
+          vertical-align: center;
+          position: relative;
+        }
+      }
+      .base-color {
+        margin-top: 1.50rem;
+        h4 {
+          color: $gray2-color;
+          font-size: 16px;
+          font-family: $font-slack;
+          font-weight: 600;
+          position: relative;
+          text-align: left;
+          vertical-align: middle;
+        }
+        .colors-base {
+          list-style: none;
+          padding-top: 6px;
+          li {
+            background-color: $red-color;
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            border: 3px solid $primary-color;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, .4);
+            text-align: center;
+            i {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.pro-cont {
+  @include flexbox();
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-top: 1.50rem;
+  .price {
+    margin-right: 20px;
+    font-size: 1.40rem;
+    font-weight: 600;
+    font-style: normal;
+    font-family: "Raleway", sans-serif;
+    position: relative;
+    text-transform: uppercase;
+    color: #252525;
+    vertical-align: center;
+  }
+  .btn-cart {
+    background-color: $orange-color;
+    border-radius: 3px;
+    border-color: $orange-color;
+    padding: .6rem 1.50rem;
+    .fa {
+      padding-right: 10px;
+    }
+    &:hover {
+      background: $blacklg-color;
+      border-color: $blacklg-color;
+    }
+  }
+}
+
+.pro-bid {
+  margin-top: 1rem;
+  h4 {
+    font-size: 22px;
+    font-family: $font-slack;
+    font-weight: 600;
+    font-style: normal;
+    position: relative;
+    display: block;
+    color: $orange-color;
+    .price-bid {
+      color: $gray2-color;
+      padding-left: 20px;
+      .dollar-sign {
+        color: $gray2-color;
+      }
+    }
+  }
+  .bidvalidate {
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 10px;
+    .form-group {
+      .form-control {
+        &:focus {
+          outline: none !important;
+          box-shadow: none !important;
+          border-color: $orange-color !important;
+        }
+      }
+      .btn {
+        background-color: $orange-color !important;
+        border-color: $orange-color !important;
+        font-size: 16px;
+        font-family: $font-slack;
+        font-weight: 600;
+        color: $primary-color;
+        position: relative;
+        &:focus {
+          box-shadow: none !important;
+        }
+      }
+    }
+
+  }
+}
+
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: $orange-color !important;
+  background-color: #fff;
+  border-color: $orange-color $orange-color #fff !important;
+}
+
+// .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+//   border-color: $primary-color !important;
+// }
+
+.tab-dec {
+  margin-top: 1.50rem;
+}
+
+.nav-tabs .nav-link {
+  text-transform: uppercase !important;
+  color: $gray2-color;
+  font-family: $font-slack;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+}
+
+.tab-content {
+  padding: 15px 0;
+}

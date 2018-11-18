@@ -1,0 +1,269 @@
+// Buyer Section
+.buyer-section {
+  padding: 2rem 0;
+  width: 100%;
+  .nav-list {
+    .link-nav {
+      @include flexbox();
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      list-style-type: none;
+      li {
+        position: relative;
+        margin-right: 10px;
+        .nav-links {
+          font-size: 14px;
+          text-transform: uppercase;
+          font-family: $font-slack;
+          font-weight: 600;
+          color: $blacklg-color;
+          background-color: $primary-color;
+          border-color: $primary-color;
+          position: relative;
+          border-radius: 0;
+          padding: 1rem 2rem;
+          box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+          letter-spacing: 1px;
+          @include transition(0.25s ease);
+          &:hover {
+             color: $primary-color;
+             background-color: $orange-color;
+             z-index: 2;
+             position: relative;
+             @include transition(0.25s ease);
+           }
+           &:hover .fa {
+             color: $primary-color;
+           }
+          .active {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 5px;
+            background: $orange-color;
+            left: 0;
+            z-index: 1;
+            @include transition(0.25s ease);
+          }
+          .fa {
+            color: $orange-color;
+            font-size: 18px;
+            vertical-align: center;
+            padding-right: 10px;
+          }
+          &:focus {
+            outline: none;
+          }
+          &:active {
+            border: none;
+          }
+
+        }
+      }
+    }
+  }
+  .dashboard-area {
+    .card {
+      border-color: $primary-color;
+      .wel-area {
+        font-size: 22px;
+        font-family: $font-slack;
+        font-weight: 700;
+        font-style: normal;
+        position: relative;
+        text-align: left;
+        text-transform: uppercase;
+        color: $blacklg-color;
+        padding-right: 5px;
+      }
+      .name-area {
+        font-size: 25px;
+        font-family: $font-slack;
+        font-weight: 700;
+        font-style: normal;
+        position: relative;
+        text-transform: uppercase;
+        text-align: left;
+        color: $orange-color;
+      }
+      .title-area {
+        font-size: 16px;
+        font-family: $font-slack;
+        font-weight: 400;
+        position: relative;
+        color: $gray4-color;
+        text-align: left;
+        vertical-align: middle;
+        line-height: 25px;
+      }
+    }
+  }
+  .input-area {
+    .card {
+      .area-field {
+        @include flexbox();
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        .form-group {
+          .form-control {
+            &:focus {
+              outline: none;
+              box-shadow: none;
+              border-color: $orange-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.profile-area {
+  @include flexbox();
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  .card {
+    width: 100%;
+    .profile-col {
+      @include flexbox();
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      .profile-image {
+        width: 200px;
+        height: 200px;
+        margin-top: 1rem;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .profile-validate {
+        .form-panel-body {
+          .form-group {
+            position: relative;
+            margin-top: 1rem;
+            margin-bottom: 25px;
+            label {
+              color: #ccc;
+              position: absolute;
+              cursor: text;
+              transform: translateY(-15px);
+              transition: transform 0.3s ease;
+              left: 0;
+              bottom: -15px;
+            }
+            .form-control {
+              border: none;
+              border-bottom: 1px solid #ccc;
+              background-color: transparent;
+              color: $primary-color;
+              border-radius: 0;
+              color: $secondary-color;
+              padding-left: 0;
+              &:focus {
+                outline: none;
+                box-shadow: none;
+                border-bottom: 1px solid $orange-color;
+              }
+            }
+            .save-btn {
+              background-color: $orange-color;
+              color: $primary-color;
+              font-size: 16px;
+              font-family: $font-slack;
+              font-weight: 600;
+              border-radius: 0;
+              text-transform: uppercase;
+              // margin-top: 2rem;
+              border: 2px solid $orange-color;
+              &:hover {
+                background-color: transparent;
+                color: $orange-color;
+                border: 2px solid $orange-color;
+                @include transition(0.25s ease);
+              }
+              &:focus {
+                outline: none;
+                box-shadow: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.address-table, .order-table, .auction-table {
+  // width: 1120px !important;
+}
+
+@media screen and (max-width: 992px) {
+  .address-table, .order-table, .auction-table {
+    width: 100% !important;
+  }
+}
+
+.table {
+  thead {
+    text-align: center;
+  }
+  tbody {
+    tr {
+      td {
+        text-align: center;
+        img {
+          width: 50px !important;
+          height: 50px !important;
+        }
+      }
+    }
+  }
+}
+
+.page-item.active .page-link {
+  background-color: $orange-color !important;
+  color: $primary-color !important;
+  border-color: $orange-color !important;
+}
+
+.form-control-sm {
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: $orange-color !important;
+  }
+}
+
+.address-area .add-btn {
+  background-color: $orange-color;
+  border-color: $orange-color;
+  color: $primary-color;
+  font-size: 15px;
+  font-family: $font-slack;
+  font-weight: 600;
+  font-style: normal;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  @include transition(0.25s ease);
+  &:hover {
+    background-color: transparent;
+    border-color: $orange-color;
+    color: $orange-color;
+    @include transition(0.25s ease);
+  }
+}
+
+.modal-dialog {
+  margin: 8.75rem auto !important;
+}
+
+.modal-content {
+  border-radius: 0 !important;
+
+}

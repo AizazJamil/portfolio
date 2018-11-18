@@ -1,0 +1,31 @@
+// Base Color
+$primary-color: #fff;
+$secondary-color: #000;
+$blacklg-color: #252525;
+$orange-color: #ffa500;
+$gray-color: #f0f0f0;
+$gray2-color: #777777;
+$red-color: #e6303d;
+$opacity1: .4;
+$gray3-color: #f8f9f9;
+$gray4-color: #5d6d7e;
+
+// Base Font
+$font-slack: 'Raleway', sans-serif;
+
+
+// Transition Base
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  transition: $transition;
+}
+
+// Flexbox Base
+@mixin flexbox() {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: flex;
+}

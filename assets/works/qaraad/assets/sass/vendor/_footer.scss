@@ -1,0 +1,81 @@
+// Footer Section
+.footer {
+  background-color: $blacklg-color;
+  padding: 3rem 0;
+  margin: 0;
+  width: 100%;
+  .footer-col {
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    h4 {
+      font-size: 1.20rem;
+      font-weight: 600;
+      font-style: normal;
+      position: relative;
+      color: $primary-color;
+      text-transform: uppercase;
+      line-height: 35px;
+      font-family: $font-slack;
+    }
+    .ft-det {
+      li {
+        position: relative;
+        @include transition(left 0.25s ease);
+        padding-bottom: 5px;
+        a {
+          color: $gray2-color;
+          position: relative;
+          font-family: $font-slack;
+          @include transition(left 0.25s ease);
+          font-size: 15px;
+          font-weight: 400;
+        }
+        p {
+          font-size: 14px;
+          color: $gray2-color;
+          font-family: $font-slack;
+          font-weight: 400;
+          font-style: normal;
+          position: relative;
+          margin-bottom: 2px;
+        }
+      }
+    }
+    .social-list {
+      @include flexbox();
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      width: 100%;
+      list-style-type: none;
+      li {
+        margin-right: 15px;
+        a {
+          i {
+            font-size: 18px;
+            color: $gray2-color;
+            @include transition(0.25s);
+            &:hover {
+              @include transition(0.25s);
+              color: $orange-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ft-copyright {
+  background-color: $secondary-color;
+  padding: 1rem 0;
+  p {
+    color: $primary-color;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: $font-slack;
+    position: relative;
+    text-align: center;
+  }
+}

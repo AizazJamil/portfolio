@@ -1,0 +1,347 @@
+// Navbar Section
+.navbar-expand-lg {
+  margin: 0;
+  padding: 1.25rem 0 !important;
+  background-color: #ccc !important;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  position: fixed !important;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  .navbar-brand {
+    width: 150px;
+    img {
+      width: 100%;
+    }
+  }
+  .navbar-collapse {
+    .navbar-nav {
+      justify-content: flex-end;
+      width: 100%;
+      .nav-item {
+        // text-transform: uppercase;
+        .nav-link {
+          color: $blacklg-color;
+          position: relative;
+          font-size: 16px;
+          font-weight: 600;
+          font-family: $font-slack;
+          @include transition(0.25s ease);
+          &:hover {
+            color: $orange-color;
+            @include transition(0.25s ease);
+          }
+        }
+        .cart-link {
+          color: $orange-color !important;
+          position: relative;
+          // text-align: center;
+          .fa {
+            font-size: 25px;
+          }
+          .badge {
+            right: -6px;
+            top: 0;
+            position: absolute;
+            // width: 18px;
+            // height: 18px;
+            padding: 5px 5px;
+            font-size: 10px;
+            font-family: $font-slack;
+            font-weight: 600;
+            color: $orange-color;
+            border-radius: 50px;
+            display: block;
+            background-color: $primary-color;
+            // line-height: 12px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+          }
+
+        }
+      }
+    }
+  }
+}
+
+.navbar-coll {
+  .navbar-nav {
+    .cart-item {
+      .cart-link {
+        margin-right: 40px;
+        position: relative;
+        .badge {
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: $orange-color;
+          color: $primary-color;
+          height: 15px;
+          width: 15px;
+          border-radius: 50px;
+          font-size: 10px;
+          font-family: Arial;
+          font-weight: 400;
+          line-height: 10px;
+          text-align: center;
+        }
+        .fa {
+          font-size: 1.50rem;
+        }
+      }
+    }
+  }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
+
+$color-background: #F5F5F5;
+$color-main: #FF5252;
+$color-active: #FFF;
+$color-link: #FFF;
+
+$button-height: 27px;
+$button-width: 35px;
+
+
+
+
+.button_container {
+  position: fixed;
+  top: 4.5%;
+  right: 4%;
+  height: $button-height;
+  width: $button-width;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+  z-index: 9999;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &.active {
+    .top {
+      transform: translateY(11px) translateX(0) rotate(45deg);
+      background: $color-active;
+    }
+    .middle {
+      opacity: 0;
+      background: $color-active;
+    }
+
+    .bottom {
+      transform: translateY(-11px) translateX(0) rotate(-45deg);
+      background: $color-active;
+    }
+  }
+
+  span {
+  background: $orange-color;
+  border: none;
+  height: 4px;
+  width: 100%;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition:  all .35s ease;
+  cursor: pointer;
+
+    &:nth-of-type(2) {
+      top: 11px;
+    }
+
+    &:nth-of-type(3) {
+      top: 22px;
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  background: $orange-color;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+
+  &.open {
+    opacity: .9;
+    visibility: visible;
+    height: 100%;
+    z-index: 101;
+
+    li {
+      animation: fadeInRight .5s ease forwards;
+      animation-delay: .35s;
+
+      &:nth-of-type(2) {
+        animation-delay: .4s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: .45s;
+      }
+      &:nth-of-type(4) {
+        animation-delay: .50s;
+      }
+    }
+  }
+  nav {
+    position: relative;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-family: 'Vollkorn', serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    margin-top: 15em;
+
+    li {
+      display: block;
+      height: 25%;
+      height: calc(50% / 4);
+      min-height: 50px;
+      position: relative;
+      opacity: 0;
+
+      a {
+        display: block;
+        position: relative;
+        text-decoration: none;
+        overflow: hidden;
+        font-size: 2rem;
+        color: $primary-color !important;
+        text-align: center;
+
+        &:hover:after,
+         &:focus:after,
+         &:active:after {
+           width: 100%;
+         }
+
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0%;
+          transform: translateX(-50%);
+          height: 3px;
+          background: $color-link;
+          transition: .35s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+// .collapse {
+//   display: block !important;
+// }
+
+/* Search bar (header) */
+
+.searchBarMain {
+	background: #fff;
+	width: 80%;
+	max-width: 350px;
+	margin: 0 auto;
+	height: 42px;
+	margin-top: 22px;
+	border-radius: 2px;
+	box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.14);
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $orange-color !important;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: $orange-color !important;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: $orange-color !important;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: $orange-color !important;
+  }
+}
+
+.searchBarMain i.searchBarSearchIcon {
+	height: 100%;
+	line-height: 42px;
+	float: left;
+	width: 52px;
+	text-align: center;
+	color: rgba(68, 68, 68, 0.5);
+}
+
+.searchBarMain input#searchBarInput {
+	height: 42px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+	background: transparent;
+	width: calc(100% - 52px);
+	outline: none;
+	padding-right: 32px;
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.76);
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+}
+
+.searchBarMain i.clearSearchBarField {
+	position: absolute;
+	right: 12px;
+	top: 11px;
+	color: rgba(0, 0, 0, 0.84);
+	display: none;
+	font-size: 20px;
+}
+
+.searchBarMain i.clearSearchBarField:hover {
+	cursor: pointer;
+}
+
+
+@media screen and (max-width: 992px) {
+  .searchBarMain {
+    position: relative !important;
+    width: 80%;
+  	max-width: 100%;
+  }
+}
