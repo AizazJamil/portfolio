@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Job Seeker</title>
+  <!-- Css Libraries -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/swiper.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,500,600,700,800,900" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="assets/js/jquery.min.js"></script>
+</head>
+<body>
+
+  <!--======================================================================================-->
+  <!--============================== Start: Navbar Section =================================-->
+  <!--======================================================================================-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navigation-expand" role="navigation">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">JobSeeker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="create-job.html">Find Jobs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="create-resume.html">Create Your CV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Professional CV</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li> -->
+          </ul>
+          <ul class="navbar-nav nav-right float-md-right">
+            <li>
+              <a href="login.html" class="btn link-login"><i class=""></i>Login</a>
+            </li>
+            <li>
+              <a href="register.html" class="btn btn-outline-primary link-reg"><i class=""></i>Create an Account</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+  <!--======================================================================================-->
+  <!--============================== End: Navbar Section ===================================-->
+  <!--======================================================================================-->
+
+  <!--======================================================================================-->
+  <!--============================== Start: Header Section =================================-->
+  <!--======================================================================================-->
+  <div class="header-content" id="header">
+    <div class="container">
+      <div class="row">
+        <div class="content">
+          <div class="col-md-12">
+            <div class="title">
+              <h2>Find Job and Network Learn</h2>
+              <p>Join the Middle East's #1 Job Site</p>
+              <div class="input-group title-searchbox">
+                <input class="form-control no-br" placeholder="What type of work do you need?" type="text">
+                <span class="input-group-btn">
+                  <button type="button" class="btn btn-primary banner-btn">Get Started</button>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="mockup-top">
+            <img src="assets/images/background/mockup.png" alt="">
+          </div>
+          <div class="col-md-4 float-md-right">
+            <div class="image">
+              <img src="assets/images/background/mockup2.png" alt="" class="img-responsive">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--======================================================================================-->
+  <!--============================== End: Header Section ===================================-->
+  <!--======================================================================================-->
+
+  <!--======================================================================================-->
+  <!--============================ Start: Availabe Jobs Section ============================-->
+  <!--======================================================================================-->
+  <div class="available-jobs">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="heading">
+            <h2>Available Jobs</h2>
+            <p>37 jobs live - 0 added today.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" >
+            <div class="card-body text-center">
+              <h4 class="card-icon"><i class="fa fa-bullhorn"></i></h4>
+              <h2 class="card-title"><a href="#" class="links">Administration Jobs</a></h2>
+              <p class="card-text">(6 open position)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" >
+            <div class="card-body text-center">
+              <h4 class="card-icon"><i class="fa fa-bullhorn"></i></h4>
+              <h2 class="card-title"><a href="#" class="links">Engineering Jobs</a></h2>
+              <p class="card-text">(2 open position)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" >
+            <div class="card-body text-center">
+              <h4 class="card-icon"><i class="fa fa-bullhorn"></i></h4>
+              <h2 class="card-title"><a href="#" class="links">Managment Jobs</a></h2>
+              <p class="card-text">(2 open position)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" >
+            <div class="card-body text-center">
+              <h4 class="card-icon"><i class="fa fa-bullhorn"></i></h4>
+              <h2 class="card-title"><a href="#" class="links">Marketing PR & Jobs</a></h2>
+              <p class="card-text">(2 open position)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" >
+            <div class="card-body text-center">
+              <h4 class="card-icon"><i class="fa fa-bullhorn"></i></h4>
+              <h2 class="card-title"><a href="#" class="links">Quality Control Jobs</a></h2>
+              <p class="card-text">(2 open position)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" >
+            <div class="card-body text-center">
+              <h4 class="card-icon"><i class="fa fa-bullhorn"></i></h4>
+              <h2 class="card-title"><a href="#" class="links">Sales Jobs</a></h2>
+              <p class="card-text">(2 open position)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" >
+            <div class="card-body text-center">
+              <h4 class="card-icon"><i class="fa fa-bullhorn"></i></h4>
+              <h2 class="card-title"><a href="#" class="links">Secretarial Jobs</a></h2>
+              <p class="card-text">(2 open position)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" >
+            <div class="card-body text-center">
+              <h4 class="card-icon"><i class="fa fa-bullhorn"></i></h4>
+              <h2 class="card-title"><a href="#" class="links">Super Services Jobs</a></h2>
+              <p class="card-text">(2 open position)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" >
+            <div class="card-body text-center">
+              <h4 class="card-icon"><i class="fa fa-bullhorn"></i></h4>
+              <h2 class="card-title"><a href="#" class="links">Customer Service & Call Center Jobs</a></h2>
+              <p class="card-text">(2 open position)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" >
+            <div class="card-body text-center">
+              <h4 class="card-icon"><i class="fa fa-bullhorn"></i></h4>
+              <h2 class="card-title"><a href="#" class="links">Human Rescources & Recruitment Jobs</a></h2>
+              <p class="card-text">(2 open position)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" >
+            <div class="card-body text-center">
+              <h4 class="card-icon"><i class="fa fa-bullhorn"></i></h4>
+              <h2 class="card-title"><a href="#" class="links">Technology Information Jobs</a></h2>
+              <p class="card-text">(2 open position)</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" >
+            <div class="card-body text-center">
+              <h4 class="card-icon"><i class="fa fa-bullhorn"></i></h4>
+              <h2 class="card-title"><a href="#" class="links">Logictics & Transportation Jobs</a></h2>
+              <p class="card-text">(2 open position)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 text-center">
+        <div class="button">
+          <a href="#" class="btn btn-outline-primary btn-value">More Browse Jobs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--======================================================================================-->
+  <!--============================ End: Availabe Jobs Section ==============================-->
+  <!--======================================================================================-->
+
+  <!--======================================================================================-->
+  <!--=============================== Start: Banner Section ================================-->
+  <!--======================================================================================-->
+  <div class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="banner-title">
+            <h4>Make a Difference with Your Online Resume!</h4>
+            <p>Your resume in minutes with GCC Jobs Seeker resume assistant is ready!</p>
+          </div>
+          <div class="button">
+            <a href="#" class="btn btn-outline-primary btn-value">Create an Account</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--======================================================================================-->
+  <!--=============================== End: Banner Section ==================================-->
+  <!--======================================================================================-->
+
+  <!--======================================================================================-->
+  <!--=============================== Start: Hire Section ==================================-->
+  <!--======================================================================================-->
+  <div class="hire-section">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <div class="heading">
+                  <h2>Who's Hiring on GCC.info </h2>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="asset/images/hire/1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/hire/2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/hire/3.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/hire/4.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/hire/5.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/hire/6.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/hire/7.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/hire/8.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/hire/9.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/hire/10.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="col-md-12 text-center button">
+                    <button class="btn btn-outline-primary btn-hire-more btn-value text-center">Is your company hiring? Joun 40,000 employers on GCC</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!--======================================================================================-->
+  <!--================================ End: Hire Section ===================================-->
+  <!--======================================================================================-->
+
+  <!--======================================================================================-->
+  <!--============================== Start: Jobs Through Section ===========================-->
+  <!--======================================================================================-->
+  <div class="jobs-through">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="heading">
+            <h2>Recent Jobs</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="jobs-features">
+            <div class="features">
+              <div class="logo">
+                <img src="assets/images/logos/3.png" alt="Company Logo" class="img-responsive">
+              </div>
+              <div class="company-name">
+                <h4>Web Developer / Designer</h4>
+                <small>Logo Name</small>
+              </div>
+              <div class="location">
+                <h4><i class="fa fa-map-marker"></i>&nbsp;London, United Kingdom</h4>
+              </div>
+              <div class="heart">
+                <span><i class="fa fa-heart-o"></i></span>
+              </div>
+              <div class="time">
+                <figure>Part Time</figure>
+              </div>
+            </div>
+
+            <div class="features">
+              <div class="logo">
+                <img src="assets/images/logos/2.png" alt="Company Logo" class="img-responsive">
+              </div>
+              <div class="company-name">
+                <h4>Civil Engineering</h4>
+                <small>Logo Name</small>
+              </div>
+              <div class="location">
+                <h4><i class="fa fa-map-marker"></i>&nbsp;Islamabad, Pakistan</h4>
+              </div>
+              <div class="heart">
+                <span><i class="fa fa-heart-o"></i></span>
+              </div>
+              <div class="time">
+                <figure>Full Time</figure>
+              </div>
+            </div>
+
+            <div class="features">
+              <div class="logo">
+                <img src="assets/images/logos/1.png" alt="Company Logo" class="img-responsive">
+              </div>
+              <div class="company-name">
+                <h4>Engineering Jobs</h4>
+                <small>Logo Name</small>
+              </div>
+              <div class="location">
+                <h4><i class="fa fa-map-marker"></i>&nbsp;Makkah, Saudia Arabia</h4>
+              </div>
+              <div class="heart">
+                <span><i class="fa fa-heart-o"></i></span>
+              </div>
+              <div class="time">
+                <figure>Part Time</figure>
+              </div>
+            </div>
+            <div class="col-md-12 text-center">
+              <div class="button">
+                <a href="#" class="btn btn-outline-primary btn-value">Load More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--======================================================================================-->
+  <!--============================== End: Jobs Through Section =============================-->
+  <!--======================================================================================-->
+
+  <!--======================================================================================-->
+  <!--============================ Start: Availabe Jobs Section ============================-->
+  <!--======================================================================================-->
+  <div class="top-agencies">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="heading">
+            <h2>Find Jobs by Region</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" >
+            <div class="card-body text-center">
+              <img src="assets/images/country/middle-east.png" alt="" class="img-responsive">
+              <h2 class="card-title"><a href="#" class="links">Middle East</a></h2>
+              <p class="card-text">1 Jobs</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" >
+            <div class="card-body text-center">
+              <img src="assets/images/country/asia.png" alt="" class="img-responsive">
+              <h2 class="card-title"><a href="#" class="links">Asia</a></h2>
+              <p class="card-text">1 Jobs</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" >
+            <div class="card-body text-center">
+              <img src="assets/images/country/europe.png" alt="" class="img-responsive">
+              <h2 class="card-title"><a href="#" class="links">Europe</a></h2>
+              <p class="card-text">1 Jobs</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" >
+            <div class="card-body text-center">
+              <img src="assets/images/country/america.png" alt="" class="img-responsive">
+              <h2 class="card-title"><a href="#" class="links">America</a></h2>
+              <p class="card-text">1 Jobs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 text-center">
+        <div class="button">
+          <a href="#" class="btn btn-outline-primary btn-value">View More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--======================================================================================-->
+  <!--============================ End: Availabe Jobs Section ==============================-->
+  <!--======================================================================================-->
+
+  <!--======================================================================================-->
+  <!--============================ Start: Testimonial Section ==============================-->
+  <!--======================================================================================-->
+  <div class="testimonial-content">
+    <div class="container">
+        <div class="col-md-12 text-center">
+          <div class="heading">
+            <h2>Success Stories</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="main-gallery">
+
+        <div class="gallery-cell">
+          <div class="testimonial">
+              <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">
+            <q class="testimonial-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla."</q>
+            <span class="testimonial-author">Joe Smith, CEO of Cubix</span>
+          </div>
+        </div>
+        <div class="gallery-cell">
+           <div class="testimonial">
+              <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/chexee/128.jpg">
+            <q class="testimonial-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla."</q>
+            <span class="testimonial-author">Lisa Jones, Freelance Web Developer</span>
+          </div>
+        </div>
+        <div class="gallery-cell">
+              <div class="testimonial">
+              <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/andretacuyan/128.jpg">
+            <q class="testimonial-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla."</q>
+            <span class="testimonial-author">Ryan Waltz, Front-End Developer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--======================================================================================-->
+  <!--============================ End: Testimonial Section ================================-->
+  <!--======================================================================================-->
+
+  <!--======================================================================================-->
+  <!--============================= Start: Footer Section ==================================-->
+  <!--======================================================================================-->
+  <footer class="footer">
+			<div class="container">
+
+				<!-- Row Start -->
+				<div class="row">
+
+					<div class="col-md-8 col-sm-8">
+						<div class="row">
+							<div class="col-md-4 col-sm-4">
+								<h4>Featured Job</h4>
+								<ul>
+									<li><a href="#">Browse Jobs</a></li>
+									<li><a href="#">Premium MBA Jobs</a></li>
+									<li><a href="#">Access Database</a></li>
+									<li><a href="#">Manage Responses</a></li>
+									<li><a href="#">Report a Problem</a></li>
+									<li><a href="#">Mobile Site</a></li>
+									<li><a href="#">Jobs by Skill</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<h4>Featured Job</h4>
+								<ul>
+									<li><a href="#">Browse Jobs</a></li>
+									<li><a href="#">Premium MBA Jobs</a></li>
+									<li><a href="#">Access Database</a></li>
+									<li><a href="#">Manage Responses</a></li>
+									<li><a href="#">Report a Problem</a></li>
+									<li><a href="#">Mobile Site</a></li>
+									<li><a href="#">Jobs by Skill</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<h4>Featured Job</h4>
+								<ul>
+									<li><a href="#">Browse Jobs</a></li>
+									<li><a href="#">Premium MBA Jobs</a></li>
+									<li><a href="#">Access Database</a></li>
+									<li><a href="#">Manage Responses</a></li>
+									<li><a href="#">Report a Problem</a></li>
+									<li><a href="#">Mobile Site</a></li>
+									<li><a href="#">Jobs by Skill</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+						<h4>Featured Job</h4>
+						<!-- Newsletter -->
+						<div class="input-group f-input-send">
+							<input type="text" class="form-control" placeholder="Enter Email">
+							<span class="input-group-btn">
+								<button type="button" class="btn btn-default"><i class="fa fa-location-arrow font-20"></i></button>
+							</span>
+						</div>
+
+						<!-- Social Box -->
+						<div class="f-social-box">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook facebook-cl"></i></a></li>
+								<li><a href="#"><i class="fa fa-google google-plus-cl"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter twitter-cl"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest pinterest-cl"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram instagram-cl"></i></a></li>
+							</ul>
+						</div>
+
+						<!-- App Links -->
+						<div class="f-app-box">
+							<ul>
+								<li><a href="#"><i class="fa fa-apple"></i>App Store</a></li>
+								<li><a href="#"><i class="fa fa-android"></i>Play Store</a></li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+
+				<!-- Row Start -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="copyright text-center">
+							<p>&copy; Copyright 2018 GCC JobsSeeker | Powerd By <a href="#" title="Themez Hub">Aizaz Jamil</a></p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</footer>
+  <!--======================================================================================-->
+  <!--=============================== End: Footer Section ==================================-->
+  <!--======================================================================================-->
+
+  <!-- Js Libraries -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.min.js"></script>
+  <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+    <script>
+    var flkty = new Flickity( '.main-gallery', {
+      cellAlign: 'left',
+      contain: true,
+      wrapAround: true,
+      prevNextButtons: false,
+      autoPlay: 5000
+    });
+    </script>
+</body>
+</html>

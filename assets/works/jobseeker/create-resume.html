@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Job Seeker</title>
+  <!-- Css Libraries -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/swiper.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/datedropper.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,500,600,700,800,900" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="assets/js/jquery.min.js"></script>
+</head>
+<body>
+
+  <!--======================================================================================-->
+  <!--============================== Start: Navbar Section =================================-->
+  <!--======================================================================================-->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light navigation-expand" role="navigation">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">JobSeeker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="create-job.html">Find Jobs</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="create-resume.html">Create Your CV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Professional CV</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li> -->
+          </ul>
+          <ul class="navbar-nav nav-right float-md-right">
+            <li>
+              <a href="login.html" class="btn link-login"><i class=""></i>Login</a>
+            </li>
+            <li>
+              <a href="register.html" class="btn btn-outline-primary link-reg"><i class=""></i>Create an Account</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+  <!--======================================================================================-->
+  <!--============================== End: Navbar Section ===================================-->
+  <!--======================================================================================-->
+
+  <!-- ======================= Page Title ===================== -->
+		<div class="page-title">
+			<div class="container">
+				<div class="page-caption">
+					<h2>Create Resume</h2>
+					<p><a href="#" title="Home">Home</a> <i class="ti-arrow-right"></i> Create Resume</p>
+				</div>
+			</div>
+		</div>
+		<!-- ======================= End Page Title ===================== -->
+
+		<!-- ======================== Create Resume ====================== -->
+		<section class="create-resume">
+			<div class="container">
+				<form class="c-form">
+
+					<!-- General Information -->
+					<div class="box">
+						<div class="box-header">
+							<h4>General Information</h4>
+						</div>
+						<div class="box-body">
+							<div class="row">
+
+								<div class="col-sm-4">
+									<label>First Name</label>
+									<input type="text" class="form-control">
+								</div>
+
+								<div class="col-sm-4">
+									<label>Last Name</label>
+									<input type="text" class="form-control">
+								</div>
+
+								<div class="col-sm-4">
+									<label>Email</label>
+									<input type="email" class="form-control">
+								</div>
+
+								<div class="col-sm-4">
+									<label>Phone</label>
+									<input type="text" class="form-control">
+								</div>
+
+								<div class="col-sm-4">
+									<label>Designation</label>
+									<input type="text" class="form-control">
+								</div>
+
+								<div class="col-sm-4">
+									<label>Category</label>
+									<select class="wide form-control">
+										<option data-display="Location">Information Of Technology</option>
+										<option value="1">Hardware</option>
+										<option value="2">Machanical</option>
+									</select>
+								</div>
+
+								<div class="col-sm-4 m-clear">
+									<label>Experience</label>
+									<select class="wide form-control">
+										<option data-display="Experience">0 To 6 Month</option>
+										<option value="1">1 Year</option>
+										<option value="2">2 Year</option>
+									</select>
+								</div>
+
+								<div class="col-sm-4 m-clear">
+									<label>Job Type</label>
+									<select class="wide form-control">
+										<option data-display="Job Type">Full Time</option>
+										<option value="1">Part Time</option>
+										<option value="2">Freelancer</option>
+									</select>
+								</div>
+
+								<div class="col-sm-4 m-clear">
+									<label>Expect Package</label>
+									<select class="wide form-control">
+										<option data-display="Package">2,00000 CTC</option>
+										<option value="1">3,00000 CTC</option>
+										<option value="2">4,00000 CTC</option>
+									</select>
+								</div>
+
+								<div class="col-sm-12 m-clear">
+									<label>Skills</label>
+									<input type="text" class="form-control" placeholder="CSS, Photoshop, Js, Bootstrap">
+								</div>
+
+								<div class="col-sm-12">
+									<label>Career</label>
+									<textarea class="form-control height-120" placeholder="Career"></textarea>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- Personal Detail & Address -->
+					<div class="box">
+						<div class="box-header">
+							<h4>Personal Detail & Address</h4>
+						</div>
+						<div class="box-body">
+							<div class="row">
+
+								<div class="col-sm-4">
+									<label>Birth</label>
+									<input type="text" id="reservation-date" data-lang="en" data-large-mode="true" data-min-year="2017" data-max-year="2020" data-disabled-days="08/17/2017,08/18/2017" data-id="datedropper-0" data-theme="my-style" class="form-control" readonly="">
+								</div>
+
+								<div class="col-sm-4">
+									<label>Address</label>
+									<input type="text" class="form-control">
+								</div>
+
+								<div class="col-sm-4">
+									<label>City</label>
+									<select class="wide form-control">
+										<option data-display="City">Allahabad</option>
+										<option value="1">Faizabad</option>
+										<option value="2">Sultanpur</option>
+										<option value="3" disabled>Pratapgarh</option>
+										<option value="4">Basti</option>
+									</select>
+								</div>
+
+								<div class="col-sm-4 m-clear">
+									<label>State</label>
+									<select class="wide form-control">
+										<option data-display="State">Uttar Pradesh</option>
+										<option value="1">Uttrakhand</option>
+										<option value="2">Chandigarh</option>
+										<option value="3" disabled>Punjab</option>
+									</select>
+								</div>
+
+								<div class="col-sm-4 m-clear">
+									<label>Country</label>
+									<select class="wide form-control">
+										<option data-display="Country">India</option>
+										<option value="1">United Kingdom</option>
+										<option value="2">Austrailia</option>
+										<option value="3" disabled>New ZeLand</option>
+									</select>
+								</div>
+
+								<div class="col-sm-4 m-clear">
+									<label>Zip Code</label>
+									<input type="text" class="form-control">
+								</div>
+
+								<div class="col-sm-4">
+									<label>Father Name</label>
+									<input type="text" class="form-control">
+								</div>
+
+
+								<div class="col-sm-4">
+									<label>Hobbies(With Comma)</label>
+									<input type="text" class="form-control">
+								</div>
+
+
+								<div class="col-sm-4">
+									<label>Strength</label>
+									<input type="text" class="form-control">
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- Add Qualification -->
+					<div class="box">
+						<div class="box-header">
+							<h4>Add Qualification</h4>
+						</div>
+						<div class="box-body">
+
+							<div class="extra-field-box">
+								<div class="multi-box">
+									<div class="dublicat-box mrg-bot-40">
+										<div class="row">
+
+											<div class="col-sm-6">
+												<label>Degree Name</label>
+												<input type="text" class="form-control">
+											</div>
+
+											<div class="col-sm-6">
+												<label>School Name</label>
+												<input type="text" class="form-control">
+											</div>
+
+											<div class="col-sm-6">
+												<label>Date From</label>
+												<input type="text" id="date-from" data-lang="en" data-large-mode="true" data-min-year="2017" data-max-year="2020" data-disabled-days="08/17/2017,08/18/2017" data-id="datedropper-0" data-theme="my-style" class="form-control" readonly="">
+											</div>
+
+											<div class="col-sm-6">
+												<label>Date To</label>
+												<input type="text" id="date-to" data-lang="en" data-large-mode="true" data-min-year="2017" data-max-year="2020" data-disabled-days="08/17/2017,08/18/2017" data-id="datedropper-0" data-theme="my-style" class="form-control" readonly="">
+											</div>
+
+										</div>
+										<button type="button" class="btn remove-field light-gray-btn">Remove</button>
+									</div>
+								</div>
+								<div class="text-center"><button type="button" class="btn add-field theme-btn">Add More</button></div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Add Skills -->
+					<div class="box">
+						<div class="box-header">
+							<h4>Add Skills</h4>
+						</div>
+						<div class="box-body">
+
+							<div class="extra-field-box">
+								<div class="multi-box">
+									<div class="dublicat-box mrg-bot-40">
+										<div class="row">
+
+											<div class="col-sm-6">
+												<label>Employer</label>
+												<input type="text" class="form-control">
+											</div>
+
+											<div class="col-sm-6">
+												<label>Designation</label>
+												<input type="text" class="form-control">
+											</div>
+
+											<div class="col-sm-6">
+												<label>Date From</label>
+												<input type="text" id="e-date-from" data-lang="en" data-large-mode="true" data-min-year="2017" data-max-year="2020" data-disabled-days="08/17/2017,08/18/2017" data-id="datedropper-0" data-theme="my-style" class="form-control" readonly="">
+											</div>
+
+											<div class="col-sm-6">
+												<label>Date To</label>
+												<input type="text" id="e-date-to" data-lang="en" data-large-mode="true" data-min-year="2017" data-max-year="2020" data-disabled-days="08/17/2017,08/18/2017" data-id="datedropper-0" data-theme="my-style" class="form-control" readonly="">
+											</div>
+
+										</div>
+										<button type="button" class="btn remove-field light-gray-btn">Remove</button>
+									</div>
+								</div>
+								<div class="text-center"><button type="button" class="btn add-field theme-btn">Add More</button></div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Social Accounts -->
+					<div class="box">
+						<div class="box-header">
+							<h4>Social Accounts</h4>
+						</div>
+						<div class="box-body">
+							<div class="row">
+
+								<div class="col-sm-4">
+									<label><i class="fa fa-facebook mrg-r-5"></i>Facebook</label>
+									<input type="text" class="form-control">
+								</div>
+
+								<div class="col-sm-4">
+									<label><i class="fa fa-google-plus mrg-r-5"></i>Google +</label>
+									<input type="text" class="form-control">
+								</div>
+
+								<div class="col-sm-4">
+									<label><i class="fa fa-twitter mrg-r-5"></i>Twitter</label>
+									<input type="text" class="form-control">
+								</div>
+
+								<div class="col-sm-4">
+									<label><i class="fa fa-linkedin mrg-r-5"></i>LinkedIn</label>
+									<input type="text" class="form-control">
+								</div>
+
+								<div class="col-sm-4">
+									<label><i class="fa fa-pinterest mrg-r-5"></i>Pinterest</label>
+									<input type="text" class="form-control">
+								</div>
+
+								<div class="col-sm-4">
+									<label><i class="fa fa-instagram mrg-r-5"></i>Instagram</label>
+									<input type="text" class="form-control">
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- Resume Content -->
+					<div class="box">
+						<div class="box-header">
+							<h4>Resume Content</h4>
+						</div>
+						<div class="box-body">
+							<div class="row">
+
+								<div class="col-sm-12">
+									<label>Content</label>
+									<textarea class="form-control height-120 textarea" placeholder="Resume"></textarea>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="text-center">
+						<button type="submit" class="btn btn-m theme-btn">Submit & Exit</button>
+					</div>
+
+				</form>
+			</div>
+		</section>
+
+		<!-- ====================== End create Resume ================ -->
+  <!--============================= Start: Footer Section ==================================-->
+  <!--======================================================================================-->
+  <footer class="footer">
+			<div class="container">
+
+				<!-- Row Start -->
+				<div class="row">
+
+					<div class="col-md-8 col-sm-8">
+						<div class="row">
+							<div class="col-md-4 col-sm-4">
+								<h4>Featured Job</h4>
+								<ul>
+									<li><a href="#">Browse Jobs</a></li>
+									<li><a href="#">Premium MBA Jobs</a></li>
+									<li><a href="#">Access Database</a></li>
+									<li><a href="#">Manage Responses</a></li>
+									<li><a href="#">Report a Problem</a></li>
+									<li><a href="#">Mobile Site</a></li>
+									<li><a href="#">Jobs by Skill</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<h4>Featured Job</h4>
+								<ul>
+									<li><a href="#">Browse Jobs</a></li>
+									<li><a href="#">Premium MBA Jobs</a></li>
+									<li><a href="#">Access Database</a></li>
+									<li><a href="#">Manage Responses</a></li>
+									<li><a href="#">Report a Problem</a></li>
+									<li><a href="#">Mobile Site</a></li>
+									<li><a href="#">Jobs by Skill</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<h4>Featured Job</h4>
+								<ul>
+									<li><a href="#">Browse Jobs</a></li>
+									<li><a href="#">Premium MBA Jobs</a></li>
+									<li><a href="#">Access Database</a></li>
+									<li><a href="#">Manage Responses</a></li>
+									<li><a href="#">Report a Problem</a></li>
+									<li><a href="#">Mobile Site</a></li>
+									<li><a href="#">Jobs by Skill</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+						<h4>Featured Job</h4>
+						<!-- Newsletter -->
+						<div class="input-group f-input-send">
+							<input type="text" class="form-control" placeholder="Enter Email">
+							<span class="input-group-btn">
+								<button type="button" class="btn btn-default"><i class="fa fa-location-arrow font-20"></i></button>
+							</span>
+						</div>
+
+						<!-- Social Box -->
+						<div class="f-social-box">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook facebook-cl"></i></a></li>
+								<li><a href="#"><i class="fa fa-google google-plus-cl"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter twitter-cl"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest pinterest-cl"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram instagram-cl"></i></a></li>
+							</ul>
+						</div>
+
+						<!-- App Links -->
+						<div class="f-app-box">
+							<ul>
+								<li><a href="#"><i class="fa fa-apple"></i>App Store</a></li>
+								<li><a href="#"><i class="fa fa-android"></i>Play Store</a></li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+
+				<!-- Row Start -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="copyright text-center">
+							<p>&copy; Copyright 2018 GCC JobsSeeker | Powerd By <a href="#" title="Themez Hub">Aizaz Jamil</a></p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</footer>
+  <!--======================================================================================-->
+  <!--=============================== End: Footer Section ==================================-->
+  <!--======================================================================================-->
+
+  <!-- Js Libraries -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/swiper.min.js"></script>
+  <script src="assets/js/datedropper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.min.js"></script>
+  <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+    <script>
+    var flkty = new Flickity( '.main-gallery', {
+      cellAlign: 'left',
+      contain: true,
+      wrapAround: true,
+      prevNextButtons: false,
+      autoPlay: 5000
+    });
+    </script>
+    <!-- Date Dropper Script-->
+		<script>
+			$('#reservation-date').dateDropper();
+		</script>
+
+		<script>
+			$('#date-from').dateDropper();
+		</script>
+
+		<script>
+			$('#date-to').dateDropper();
+		</script>
+
+		<script>
+			$('#e-date-from').dateDropper();
+		</script>
+
+		<script>
+			$('#e-date-to').dateDropper();
+		</script>
+</body>
+</html>

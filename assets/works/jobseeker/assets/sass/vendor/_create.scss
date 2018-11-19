@@ -1,0 +1,143 @@
+// Start Page
+.page-title {
+  padding-top: 80px;
+  background-color: var(--color4);
+  background-image: url("../images/background/trans-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 100%;
+  .page-caption {
+    padding: 3em 0;
+    h2 {
+      font-size: 35px;
+      text-align: center;
+      font-family: var(--font-primary);
+      font-weight: 600;
+      position: relative;
+      color: var(--color3);
+    }
+  }
+}
+
+.create-job,
+.create-resume {
+  margin: 4em 0;
+  .c-form {
+    // box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    // padding: 3em 2em;
+    // border-radius: 10px;
+    .box {
+      .box-header {
+        h4 {
+          font-size: 22px;
+          font-family: var(--font-primary);
+          font-weight: 600;
+          color: var(--color3);
+          position: relative;
+          padding-bottom: 1em;
+        }
+      }
+      .box-body {
+        label {
+          font-size: 16px;
+          font-family: var(--font-primary);
+          font-weight: 500;
+          padding-bottom: 10px;
+          color: var(--color3);
+          i {
+            padding-right: 10px;
+          }
+        }
+        .form-control {
+          margin-bottom: 25px;
+          &:focus {
+            box-shadow: none;
+            outline: none;
+            border-color: var(--color7);
+          }
+        }
+      }
+    }
+    .btn-m {
+      background: #8E2DE2;
+      background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+      background: linear-gradient(to right, #4A00E0, #8E2DE2);
+      border-color: #8E2DE2;
+      color: var(--color1);
+      padding: .5em 2em;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: var(--font-primary);
+      line-height: 35px;
+    }
+  }
+}
+
+
+
+.datedropper.my-style {
+	border-radius: 8px;
+	width: 180px;
+}
+
+.table,
+html body .full-width {
+	width: 100%;
+}
+
+div.datedropper.my-style .picker {
+	border-radius: 8px;
+	box-shadow: 0 0 32px 0 rgba(0, 0, 0, .1);
+}
+
+div.datedropper.my-style .pick-l {
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+div.datedropper.my-style .pick-lg-b .pick-sl:before,
+div.datedropper.my-style .pick-lg-h,
+div.datedropper.my-style .pick-m,
+div.datedropper.my-style .pick-submit,
+div.datedropper.my-style:before {
+	background-color: #1cc100;
+}
+
+div.datedropper.my-style .pick-l,
+div.datedropper.my-style .picker,
+div.datedropper.my-style.picker-tiny .pick-m,
+div.datedropper.my-style.picker-tiny:before {
+	background-color: #FFF;
+}
+
+div.datedropper.my-style .pick li span,
+div.datedropper.my-style .pick-btn,
+div.datedropper.my-style .pick-lg-b .pick-wke,
+div.datedropper.my-style .pick-y.pick-jump {
+	color: #1cc100;
+}
+
+div.datedropper.my-style .pick-arw,
+div.datedropper.my-style .pick-l,
+div.datedropper.my-style .picker {
+	color: #3a465e;
+}
+
+div.datedropper.my-style .pick-lg-b .pick-sl,
+div.datedropper.my-style .pick-lg-h,
+div.datedropper.my-style .pick-m,
+div.datedropper.my-style .pick-m .pick-arw,
+div.datedropper.my-style .pick-submit {
+	color: #FFF;
+}
+
+div.datedropper.my-style.picker-tiny .pick-m,
+div.datedropper.my-style.picker-tiny .pick-m .pick-arw {
+	color: #3a465e;
+}
+
+div.datedropper.my-style.picker-lkd .pick-submit {
+	background-color: #FFF;
+	color: #3a465e;
+}
