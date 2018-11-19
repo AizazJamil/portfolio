@@ -1,0 +1,89 @@
+.navbar-expand-lg {
+    margin: 2em 0;
+    padding: 0 1rem !important;
+    width: 100%;
+    background-color: var(--primary-color) !important;
+    align-items: center;
+    .navbar-brand {
+        margin-right: 2.10em;
+        color: var(--white-color) !important;
+        font-size: 1.40em;
+        font-weight: 600;
+        font-family: var(--font-slack);
+    }
+    .navbar-collapse {
+        .navbar-nav {
+            .nav-item {
+                margin-right: 5px;
+                .nav-link {
+                    padding: 1.60em 25px;
+                    color: var(--light-color);
+                    font-size: 17px;
+                    font-weight: 500;
+                    font-family: var(--font-slack);
+                    position: relative;
+                    vertical-align: middle;
+                    @include transition(0.25s ease);
+                    .material-icons {
+                        color: var(--light-color);    
+                    }
+                }
+                &:hover {
+                    background-color: var(--secondary-color);
+                    @include transition(0.25s ease);
+                    .nav-link {
+                        color: var(--white-color);
+                        .material-icons {
+                            color: var(--white-color);
+                        }
+                    }
+                }
+            }
+            .active {
+                .nav-link {
+                    background-color: var(--secondary-color);
+                    padding: 1.60em 25px;
+                    color: var(--white-color);
+                    .material-icons {
+                        color: var(--white-color);
+                    }
+                }
+            }
+        }
+        .navbar-right {
+            .nav-item {
+                margin-right: 0;
+                position: relative;
+                .nav-link {
+                    padding-right: 10px;
+                }
+                &:hover {
+                    background-color: transparent;
+                    .material-icons {
+                        color: var(--light-color);
+                    }
+                }
+                .badge {
+                    position: relative;
+                    .badge-item {
+                        position: absolute;
+                        right: 0;
+                        top: 14px;
+                        background-color: var(--secondary-color);
+                        // padding: 3px;
+                        font-size: 12px;
+                        font-family: var(--font-slack);
+                        font-weight: 600;
+                        color: var(--white-color);
+                        width: 20px;
+                        height: 20px;
+                        display: block;
+                        text-align: center;
+                        line-height: 18px;
+                        @include border-radius(100%);
+                    }
+                }
+            }
+        }
+    }
+}

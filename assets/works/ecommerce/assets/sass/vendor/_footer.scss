@@ -1,0 +1,158 @@
+.footer {
+    margin-top: 3em;
+    padding: 3em 0;
+    background-color: var(--body-color);
+    width: 100%;
+    .heading-ft {
+        h3 {
+            font-size: 18px;
+            font-family: var(--font-slack);
+            font-weight: 600;
+            color: var(--white-color);
+            position: relative;
+            text-align: left;
+            margin-bottom: 2.30em;
+            text-transform: uppercase;
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -15px;
+                height: 2px;
+                width: 10%;
+                background-color: var(--secondary-color);
+            }
+        }
+    }
+    .form-ft {
+        background-color: var(--primary-color);
+        padding: 15px 15px;
+        margin-bottom: 2em;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        .form-group {
+            position: relative;
+            .form-control {
+                border-top: 0;
+                border-right: 0;
+                border-left: 0;
+                border-bottom: 1px solid var(--secondary-color);
+                background-color: transparent;
+                @include border-radius(0);
+                width: 70%;
+            }
+            .btn {
+                background-color: var(--secondary-color);
+                @include border-radius(100px);
+                width: 50px;
+                height: 50px;
+                // line-height: 50px;
+                cursor: pointer;
+                position: absolute;
+                right: 15px;
+                top: 5px;
+                .fa {
+                    color: var(--white-color);
+                }
+            }
+        }
+    }
+    .social-app {
+        list-style-type: none;
+        @include flexbox();
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        li {
+            margin-right: 25px;
+            a {
+                color: var(--light-color);
+                font-size: 25px;
+                text-align: center;
+                @include border-radius(50px);
+                @include transition(0.25s ease);
+                cursor: pointer;
+                &:hover {
+                    color: var(--secondary-color);
+                    @include transition(0.25s ease);
+                }
+            }
+        }
+    }
+    .list-ft {
+        display: block;
+        list-style-type: none;
+        li {
+            margin-bottom: 20px;
+            a {
+                text-decoration: none;
+                color: var(--light-color);
+                font-size: 16px;
+                font-weight: 500;
+                font-family: var(--font-slack);
+                position: relative;
+                text-align: left;
+                @include transition(0.25s ease);
+                &:hover {
+                    color: var(--secondary-color);
+                    @include transition(0.25s ease);
+                }
+            }
+        }
+    }
+    .contact-ft {
+        display: block;
+        list-style-type: none;
+        li {
+            margin-bottom: 20px;
+            color: var(--light-color);
+            font-size: 16px;
+            font-weight: 500;
+            font-family: var(--font-slack);
+            position: relative;
+            text-align: left;
+        }
+    }
+    .footer-btm {
+        margin-top: 20px;
+        border-top: 1px solid var(--light-color);
+        padding-top: 20px;
+        @include flexbox();
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // align-items: center;
+        width: 100%;
+        .social-list {
+            @include flexbox();
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            list-style-type: none;
+            .list-icon {
+                margin-right: 20px;
+                a {
+                    padding-left: 5px;
+                    color: var(--light-color);
+                    font-size: 20px;
+                    text-align: left;
+                    position: relative;
+                    @include transition(0.25s ease);
+                    &:hover {
+                        color: var(--secondary-color);
+                        @include transition(0.25s ease);
+                    }
+                }
+            }
+        }
+        .copyright {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 300;
+            font-family: var(--font-slack);
+            color: var(--light-color);
+            a {
+                text-decoration: none;
+                color: var(--secondary-color);
+                font-weight: 500;
+            }
+        }
+    }
+}
