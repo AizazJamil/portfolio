@@ -1,0 +1,27 @@
+// Font
+$font-sack: 'Open Sans', sans-serif;
+
+// Color
+$primary-color: #000;
+$white-color: #fff;
+$purple-color: #640f6c;
+$blue-color: #0096ff;
+$dark-blue: #006bb6;
+$gray-color: #f2f5f7;
+
+// Transition Base
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+// Flexbox Base
+@mixin flexbox() {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: flex;
+}
