@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bucket</title>
+  <!-- Favicon  -->
+   <link rel="icon" href="images/favicon.png" type="image/png" sizes="57x57">
+  <!-- Css Libraries -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/exo-font.css">
+  <link rel="stylesheet" href="css/lib/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="icons/font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Exo:300,400,500,600,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+  <link href="css/jm.spinner.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <header class="top-navbar top-nav-fixed">
+    <ul class="top-navbar-nav">
+      <li class="nav-list">
+        <a href="index.html" class="nav-link-item">
+          <img src="images/logo/logo.svg" alt="" class="logo-brand">
+        </a>
+      </li>
+      <li class="nav-list">
+        <form class="form-inline my-lg-0">
+          <div class="from__filter__search">
+            <div class="form__inline">
+              <button class="btn btn-outline-success my-sm-0" type="submit"><img src="images/icons/search-icon.png" alt=""></button>
+              <input class="form-control mr-sm-2" onclick="focus__inline()" type="search" placeholder="Discover">
+            </div>
+          </div>
+          <div class="dropdown__filter">
+            <div class="dropdown__listing__area__filter">
+              <ul class="filter__area">
+                <li><a href="#" class="filter__link">Search History</a></li>
+                <li><a href="#" class="filter__link">Search History</a></li>
+                <li><a href="#" class="filter__link">Search History</a></li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </li>
+      <li class="nav-item dropdown nav-list">
+        <div class="profile-name dropdown-toggle" onclick="navbarDropdown()" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <div class="profile-img ">
+            <img src="images/profile/01.png" alt="" class="img-responsive">
+          </div>
+        </div>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown_profile">
+          <div class="profile-name dropdown-toggle profile_dropdown" id="navbarDropdown_profile" onclick="navbarDropdown_profile()" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="profile-img ">
+              <img src="images/profile/01.png" alt="" class="img-responsive">
+            </div>
+            <span class="profile__title">Name Surename</span>
+            <span class="profile__dot"><i class="fa fa-circle"></i></span>
+          </div>
+          <div class="dropdown-divider dropdown_divider"></div>
+          <div class="profile-name dropdown-toggle profile_dropdown" id="navbarDropdown_profile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="profile-img ">
+              <img src="images/profile/01.png" alt="" class="img-responsive">
+            </div>
+            <span class="profile__title" style="color:white">Name Surename</span>
+            <span class="profile__dot"></span>
+          </div>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#"><b>Account</b></a>
+          <a class="dropdown-item" href="#">Language</a>
+          <a class="dropdown-item" href="#">Setting and Privacy</a>
+          <a class="btn btn-outline" href="login.html">Log Out</a>
+        </div>
+      </li>
+    </ul>
+  </header>
+
+  <!-- Start: Navbar Section Top -->
+  <nav class="navbar navbar-expand-lg navbar-light navigation" role="navigation">
+    <div class="wrapper container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo/logo.svg" alt="" class="logo-brand">
+      </a>
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0">
+          <div class="from__filter__search">
+            <div class="form__inline">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="images/icons/search-icon.png" alt=""></button>
+              <input class="form-control mr-sm-2" onclick="focus__inline()" type="search" placeholder="Discover">
+            </div>
+          </div>
+          <div class="dropdown__filter">
+            <div class="dropdown__listing__area__filter">
+              <ul class="filter__area">
+                <li><a href="#" class="filter__link">Search History</a></li>
+                <li><a href="#" class="filter__link">Search History</a></li>
+                <li><a href="#" class="filter__link">Search History</a></li>
+              </ul>
+            </div>
+          </div>
+        </form>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link active" href="index.html">
+              <span class="nav__item_icon"><img src="images/main-menu/yellow/bucket_svg_iconos-02.svg" class="icon-nav" alt=""></span>
+              <br>
+              <span class="nav__item_title">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="jobs.html">
+              <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-01.svg" class="icon-nav" alt=""></span>
+              <span class="nav__item_title">Jobs</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="request.html">
+              <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-03.svg" class="icon-nav" alt=""></span>
+              <span class="nav__item_title">Request</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="wallet.html">
+              <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-04.svg" class="icon-nav" alt=""></span>
+              <span class="nav__item_title">Wallet</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="notification.html">
+              <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-05.svg" class="icon-nav" alt=""></span>
+               <div class="numberCircle">5</div>
+              <span class="nav__item_title">Notifications</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <div class="profile-name dropdown-toggle" onclick="navbarDropdown()" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <div class="profile-img ">
+                <img src="images/profile/01.png" alt="" class="img-responsive">
+              </div>
+              <span class="profile__title">Name Surename</span>
+              <span class="profile__dot"><i class="fa fa-circle"></i></span>
+            </div>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown_profile">
+              <div class="profile-name dropdown-toggle profile_dropdown" id="navbarDropdown_profile" onclick="navbarDropdown_profile()" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="profile-img ">
+                  <img src="images/profile/01.png" alt="" class="img-responsive">
+                </div>
+                <span class="profile__title">Name Surename</span>
+                <span class="profile__dot"><i class="fa fa-circle"></i></span>
+              </div>
+              <div class="dropdown-divider dropdown_divider"></div>
+              <div class="profile-name dropdown-toggle profile_dropdown" id="navbarDropdown_profile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="profile-img ">
+                  <img src="images/profile/01.png" alt="" class="img-responsive">
+                </div>
+                <span class="profile__title" style="color:white">Name Surename</span>
+                <span class="profile__dot"></span>
+              </div>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><b>Account</b></a>
+              <a class="dropdown-item" href="#">Language</a>
+              <a class="dropdown-item" href="#">Setting and Privacy</a>
+              <a class="btn btn-outline" href="login.html">Log Out</a>
+            </div>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="profile-name">
+                <div class="profile-img">
+                  <img src="images/profile/01.png" alt="" class="img-responsive">
+                </div>
+                <span class="profile__title">Name Surename</span>
+                <span class="profile__dot"><i class="fa fa-circle"></i></span>
+              </div>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End: Navbar Section Top -->
+
+  <!-- Start: Profile Area Section -->
+  <div class="profile__area">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 no-padding text-center">
+          <!-- Profile Card -->
+          <div class="card mobileProfileSection">
+            <div class="profile__img">
+              <img src="images/profile/02.png" alt="" class="img-responsive">
+            </div>
+            <div class="profile__name">
+              <h4>Name Surename</h4>
+              <h6 class="men__player">Player</h6>
+            </div>
+            <div class="rating">
+              <ul class="rating__items">
+                <li class="items__list items__title">Rating <span>4</span>,<span>8</span><span>/</span><span>5</span></li>
+                <li class="items__list"><img src="images/other/bucket_svg_iconos2_Artboard_1v_copy.svg" alt=""></li>
+                <li class="items__list"><img src="images/other/bucket_svg_iconos2_Artboard_1v_copy.svg" alt=""></li>
+                <li class="items__list"><img src="images/other/bucket_svg_iconos2_Artboard_1v_copy.svg" alt=""></li>
+                <li class="items__list"><img src="images/icons/star-half.png" alt=""></li>
+              </ul>
+            </div>
+            <div class="review__area">
+              <h3><span>185</span>Expert reviews</h3>
+              <div class="follower__items">
+                <ul class="fol__item">
+                  <li class="follower__list">
+                    <span>207</span>
+                    <p>Followers</p>
+                  </li>
+                  <li class="line-break"></li>
+                  <li class="follower__list">
+                    <span>170</span>
+                    <p>Following</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="edit">
+                <a href="edit-profile.html">
+                  <img src="images/other/bucket_svg_iconos2-02.svg" alt="" class="edit-icon">
+                  <span>Edit your Profile</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- //Profile Card -->
+
+          <!-- Light Card -->
+          <div class="card light-card" id="fixed-wrap">
+            <div class="button-group">
+              <div class="form-group">
+                <a href="profile.html#timeline" class="btn btn-primary btn-background">Timeline</a>
+              </div>
+              <div class="form-group">
+                <a href="profile.html#photos" class="btn btn-primary btn-white">Photos/ Videos</a>
+              </div>
+              <div class="form-group">
+                <a href="profile.html#bio" class="btn btn-primary btn-white">Bio</a>
+              </div>
+              <div class="form-group">
+                <a href="profile.html#state" class="btn btn-primary btn-white">Stats</a>
+              </div>
+              <div class="form-group">
+                <a href="profile.html#review" class="btn btn-primary btn-white">Expert Reviews</a>
+              </div>
+            </div>
+          </div>
+          <!-- //Light Card -->
+
+          <!-- Black Card -->
+          <div class="card black-card no-display" id="fixed-wrap1">
+            <div class="logo">
+              <img src="images/logo/logo.svg" alt="" class="logo" style='width:88px !important;height:97px !important'>
+            </div>
+            <div class="form-group">
+              <a href="#" class="btn btn-primary btn-background">Recommend Bucket</a>
+            </div>
+          </div>
+          <!-- //Black Card -->
+
+        </div>
+        <!-- //columns -->
+
+
+        <div class="col-md-9 paddingM">
+          <div class="card">
+            <div class="timeline__area_home_page">
+              <div class="posting__area">
+                <form action="" method="POST" class="form__posting">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="post" name="post" placeholder="Post Text">
+                    </div>
+
+                    <div class="photos__posting__area">
+                      <div class="form-group">
+                        <textarea name="posting-video" id="" cols="30" rows="2" class="form-control posting__message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore explicabo consectetur accusamus? Maiores id, dolor vitae asperiores!</textarea>
+                      </div>
+                      <!-- Upload  -->
+                      <div id="file-upload-form" class="uploader">
+                        <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+
+                        <label for="file-upload" id="file-drag">
+                          <img id="file-image" src="#" alt="Preview" class="hidden">
+                          <div id="start">
+                            <!-- <i class="fa fa-download" aria-hidden="true"></i> -->
+                            <img src="images/other/bucket_svg_iconos2-07.svg" alt="" class="edit_upload">
+                            <div>Drag file here</div>
+                            <div id="notimage" class="hidden">Please select an image</div>
+                            <span id="file-upload-btn" class="btn btn-primary">Select file</span>
+                          </div>
+                          <div id="response" class="hidden">
+                            <div id="messages"></div>
+                            <progress class="progress" id="file-progress" value="0">
+                              <span>0</span>%
+                            </progress>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="video__posting__area">
+                      <div class="form-group">
+                        <textarea name="posting-video" id="" cols="30" rows="2" class="form-control posting__message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore explicabo consectetur accusamus? Maiores id, dolor vitae asperiores!</textarea>
+                      </div>
+                      <div class="form-group">
+                        <input type="url" class="form-control" name="urllink" placeholder="https://">
+                      </div>
+                      <div class="video__post__area">
+                        <div class="video__image">
+                          <img src="images/videos/01.jpg" alt="" class="video__player">
+                        </div>
+                        <div class="video__title">
+                          <small>youtube.com</small>
+                          <h4>Plays in Basketball History</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi nostrum, atque quos earum aliquid.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="signing__posting__area">
+                      <div class="form-group">
+                        <textarea name="posting-video" id="" cols="30" rows="2" class="form-control posting__message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore explicabo consectetur accusamus? Maiores id, dolor vitae asperiores!</textarea>
+                      </div>
+                      <div class="autocomplate__select">
+                        <h5>Signing with</h5>
+                        <select name="" id="" class="form-control">
+                          <option value="">Name of the team</option>
+                          <option value="">Name of the team</option>
+                          <option value="">Name of the team</option>
+                        </select>
+                      </div>
+                      <div class="profile__signing__columns">
+                        <div class="heading">
+                          <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                        </div>
+                        <div class="columns__team">
+                          <div class="team__player__name">
+                            <img src="images/profile/02.png" alt="" class="player__profile">
+                            <div class="figcaption">
+                              <h5>Name surename</h5>
+                            </div>
+                          </div>
+                          <div class="check__icon">
+                            <img src="images/icons/check-file.png" alt="" class="check-icon">
+
+                          </div>
+                          <div class="team__player__profile">
+                            <img src="images/profile/02.png" alt="" class="player__profile">
+                            <div class="figcaption">
+                              <h5>Name surename</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="bottom__area_card">
+                      <div class="radio__area">
+                        <div class="radio">
+                          <input id="radio-1" name="radio" type="radio" >
+                          <label for="radio-1" onclick="radio1()" class="radio-label radio_label_1">Photo</label>
+                        </div>
+
+                        <div class="radio">
+                          <input id="radio-2" name="radio" type="radio">
+                          <label  for="radio-2" class="radio-label radio_label_2" onclick="radio2()">Video</label>
+                        </div>
+
+                        <div class="radio">
+                          <input id="radio-3" name="radio" type="radio">
+                          <label for="radio-3" class="radio-label" onclick="radio3()">Signing</label>
+                        </div>
+                      </div>
+                      <div class="button-group">
+                        <button class="btn btn-primary btn-background">Post</button>
+                      </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="text-center home_slide__area">
+            <div class="slide-switcher">
+                <span class="slide-button sold"></span>
+                <span class="switch-type sold selected">All</span>
+                <span class="switch-type buy">News</span>
+                <span class="switch-type rent">Followed</span>
+            </div>
+          </div>
+          <div class="card timline__card_view_ember">
+            <div class="feed__share__view__actor">
+              <div class="feed_image_view">
+                <img src="images/profile/01.png" alt="" class="feed__share__actor">
+              </div>
+              <div class="feed__view__title">
+                <a href="#" class="feed_share_link">
+                  <h4 class="feed_name">Name Surename</h4>
+                  <span class="feed_share_description">Free agent</span>
+                  <span class="feed_share_date">8 August, 2018</span>
+                  <span class="feed_share_higlight_post"><img src="images/other/bucket_svg_iconos2_Artboard_1v.svg" alt="" class="outline-star">Highlighted Post</span>
+                </a>
+              </div>
+              <div class="feed_share_description_title">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat inventore aliquam dolor nisi architecto rerum, dignissimos reprehenderit nam eaque voluptatem hic blanditiis a, adipisci voluptatum officia impedit facere ipsam. Nulla.
+                </p>
+              </div>
+            </div>
+            <hr class="line-seperator">
+            <div class="feed__share__view__actor">
+              <div class="feed_image_view">
+                <img src="images/profile/01.png" alt="" class="feed__share__actor">
+              </div>
+              <div class="feed__view__title">
+                <a href="#" class="feed_share_link">
+                  <h4 class="feed_name">Name Surename</h4>
+                  <span class="feed_share_description">Free agent</span>
+                  <span class="feed_share_date">8 August, 2018</span>
+                </a>
+              </div>
+              <div class="feed_share_description_title">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat inventore aliquam dolor nisi architecto rerum, dignissimos reprehenderit nam eaque voluptatem hic blanditiis a, adipisci voluptatum officia impedit facere ipsam. Nulla.
+                </p>
+              </div>
+              <div class="feed_share_view_posting">
+                <img src="images/0.jpg" alt="" class="feed_share_post">
+              </div>
+            </div>
+            <hr class="line-seperator">
+            <div class="feed__share__view__actor">
+              <div class="feed_image_view">
+                <img src="images/profile/01.png" alt="" class="feed__share__actor">
+              </div>
+              <div class="feed__view__title">
+                <a href="#" class="feed_share_link">
+                  <h4 class="feed_name">Name Surename</h4>
+                  <span class="feed_share_description">Free agent</span>
+                  <span class="feed_share_date">8 August, 2018</span>
+                  <span class="feed_share_higlight_post"><img src="images/other/bucket_svg_iconos2_Artboard_1v.svg" alt="" class="outline-star">Highlighted Post</span>
+                </a>
+              </div>
+              <div class="feed_share_description_title">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat inventore aliquam dolor nisi architecto rerum, dignissimos reprehenderit nam eaque voluptatem hic blanditiis a, adipisci voluptatum officia impedit facere ipsam. Nulla.
+                </p>
+              </div>
+            </div>
+            <hr class="line-seperator">
+             <div class="feed__share__view__actor moreContentH" style='display:none'>
+              <div class="feed_image_view">
+                <img src="images/profile/01.png" alt="" class="feed__share__actor">
+              </div>
+              <div class="feed__view__title">
+                <a href="#" class="feed_share_link">
+                  <h4 class="feed_name">Name Surename</h4>
+                  <span class="feed_share_description">Free agent</span>
+                  <span class="feed_share_date">8 August, 2018</span>
+                  <span class="feed_share_higlight_post"><img src="images/other/bucket_svg_iconos2_Artboard_1v.svg" alt="" class="outline-star">Highlighted Post</span>
+                </a>
+              </div>
+              <div class="feed_share_description_title">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat inventore aliquam dolor nisi architecto rerum, dignissimos reprehenderit nam eaque voluptatem hic blanditiis a, adipisci voluptatum officia impedit facere ipsam. Nulla.
+                </p>
+              </div>
+            </div>
+            <hr class="line-seperator moreContentH" style='display:none'>
+             <div class="feed__share__view__actor moreContentH" style='display:none'>
+              <div class="feed_image_view">
+                <img src="images/profile/01.png" alt="" class="feed__share__actor">
+              </div>
+              <div class="feed__view__title">
+                <a href="#" class="feed_share_link">
+                  <h4 class="feed_name">Name Surename</h4>
+                  <span class="feed_share_description">Free agent</span>
+                  <span class="feed_share_date">8 August, 2018</span>
+                  <span class="feed_share_higlight_post"><img src="images/other/bucket_svg_iconos2_Artboard_1v.svg" alt="" class="outline-star">Highlighted Post</span>
+                </a>
+              </div>
+              <div class="feed_share_description_title">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat inventore aliquam dolor nisi architecto rerum, dignissimos reprehenderit nam eaque voluptatem hic blanditiis a, adipisci voluptatum officia impedit facere ipsam. Nulla.
+                </p>
+              </div>
+            </div>
+            <hr class="line-seperator moreContentH" style='display:none;'>
+            <div class="boxH well" style='display:none;margin:0 auto;width:100px'><img src="images/loading.svg" style="width: 100px;"></div>
+            <div class="button-group">
+              <button class="btn btn-primary btn-more LoadMoreButtonH" onclick="HomeLoadMoreActivity()">Load more</button>
+            </div>
+          </div>
+        </div>
+        <!-- //columns -->
+
+      </div>
+    </div>
+  </div>
+  <!-- End: Profile Area Section -->
+
+  <div class="col-md-3 profile__area block">
+  	<!-- Black Card -->
+	  <div class="card black-card" id="fixed-wrap1">
+	    <div class="logo">
+	      <img src="images/logo/logo.svg" alt="" class="logo" style='width:88px !important;height:97px !important'>
+	    </div>
+	    <div class="form-group">
+	      <a href="#" class="btn btn-primary btn-background">Recommend Bucket</a>
+	    </div>
+	  </div>
+	  <!-- //Black Card -->
+  </div>
+
+  <!-- Start: Mobile Bottom Fixed Navbar -->
+  <nav class="bottom-navbar bottom-nav-fixed">
+    <ul class="bottom-nav-items">
+      <li class="nav-bottom-area active">
+        <a href="index.html" class="nav-bottom-link">
+          <span class="nav__item_icon"><img src="images/main-menu/yellow/bucket_svg_iconos-02.svg" class="icon-nav" alt=""></span>
+        </a>
+      </li>
+      <li class="nav-bottom-area">
+        <a href="jobs.html" class="nav-bottom-link">
+          <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-01.svg" class="icon-nav" alt=""></span>
+        </a>
+      </li>
+      <li class="nav-bottom-area">
+        <a href="request.html" class="nav-bottom-link">
+          <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-03.svg" class="icon-nav" alt=""></span>
+        </a>
+      </li>
+      <li class="nav-bottom-area">
+        <a href="wallet.html" class="nav-bottom-link">
+          <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-04.svg" class="icon-nav" alt=""></span>
+        </a>
+      </li>
+      <li class="nav-bottom-area">
+        <a href="notification.html" class="nav-bottom-link">
+          <span class="nav__item_icon"><img src="images/main-menu/white/bucket_svg_iconos-05.svg" class="icon-nav" alt=""></span>
+           <div class="numberCircle">5</div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- End: Mobile Bottom Fixed Navbar -->
+
+
+  <!-- Javascript Libraries -->
+  <script src="js/lib/jquery/jquery.min.js"></script>
+  <script src="js/lib/bootstrap/popper.min.js"></script>
+  <script src="js/lib/bootstrap/bootstrap.min.js"></script>
+  <script src="js/smooth.js"></script>
+  <script src="js/slide.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.2/croppie.js"></script>
+  <script src="js/upload.js"></script>
+  <script src="js/jm.spinner.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
