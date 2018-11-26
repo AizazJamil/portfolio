@@ -1,0 +1,32 @@
+:root {
+    --white-color: #fff;
+    --font-slack: 'Raleway', sans-serif;
+    --main-color: #FA0233;
+    --dark-color: #242732;
+    --primary-color: #0083FF;
+    --light-color: #fafafc;
+    --gray-color: #B2BABB;
+}
+
+@mixin flexbox() {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+}
+
+@mixin transition($transition) {
+    transition: $transition;
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+}
+
+@mixin border-radius($border-radius) {
+    border-radius: $border-radius;
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    -ms-border-radius: $border-radius;
+    -o-border-radius: $border-radius;
+}

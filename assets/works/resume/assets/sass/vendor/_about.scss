@@ -1,0 +1,95 @@
+.about-section {
+    padding: 8em 0;
+    margin: 0;
+    width: 100%;
+    .profile-about {
+        position: relative;
+        img {
+            width: 300px;
+            height: 400px;    
+            @include border-radius(10px);
+        }
+        &:before {
+            content: '';
+            width: 300px;
+            height: 400px;
+            left: 120px;
+            position: absolute;
+            background-color: var(--main-color);
+            @include border-radius(10px);
+            transform: rotate(-25deg);
+            z-index: -1;
+            box-shadow: 2px 3px 40px rgba(0, 0, 0, 0.6);
+        }
+        @media screen and (max-width: $break-small) {
+            width: 100%;
+            height: 100%;
+            &:before {
+                left: 0;
+                display: none;
+            }
+        }
+        @media screen and (max-width: $break-xxlarge) {
+            width: 100%;
+            height: 100%;
+            &:before {
+                left: 0;
+                display: none;
+            }
+        }
+        @media screen and (max-width: $break-xlarge) {
+            width: 100%;
+            height: 100%;
+            &:before {
+                left: 0;
+                display: none;
+            }
+        }
+        @media screen and (max-width: $break-exlarge) {
+            &:before {
+                left: 80px;
+            }
+        }
+    }
+    .about-info {
+        @include flexbox();
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        .about-text {
+            text-align: left;
+            h2 {
+                font-size: 3em;
+                font-weight: 800;
+                font-style: normal;
+                font-family: var(--font-slack);
+                position: relative;
+                text-align: left;
+                display: inline-block;
+                color: var(--dark-color); 
+            }
+            h4 {
+                font-size: 1.25em;
+                font-weight: 600;
+                font-style: normal;
+                font-family: var(--font-slack);
+                position: relative;
+                text-align: left;
+                display: block;
+                color: var(--dark-color); 
+            }
+            p {
+                margin-top: 1em;
+                font-size: 1em;
+                font-weight: 400;
+                font-style: normal;
+                font-family: var(--font-slack);
+                position: relative;
+                text-align: left;
+                display: block;
+                color: var(--dark-color); 
+                line-height: 24px;
+            }
+        }
+    }
+}
