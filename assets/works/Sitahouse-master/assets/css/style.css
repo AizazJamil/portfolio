@@ -1,0 +1,5751 @@
+@charset "UTF-8";
+/*! reeeset.css 0.0.5 - https://github.com/corysimmons/reeeset */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+/*! reeeset.css */
+/* http://www.paulirish.com/2012/box-sizing-border-box-ftw */
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice */
+*,
+:after,
+:before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+/* Reset Normalize margins/padding */
+h1,
+figure,
+fieldset {
+  margin: 0; }
+
+fieldset {
+  padding: 0; }
+
+/* https://css-tricks.com/eliminate-jumps-in-horizontal-centering-by-forcing-a-scroll-bar */
+body {
+  overflow-y: scroll; }
+
+/* Clearfix body */
+body:after {
+  display: table;
+  clear: both;
+  content: ''; }
+
+/* http://unstoppablerobotninja.com/entry/fluid-images */
+audio,
+embed,
+iframe,
+img,
+input,
+object,
+video,
+table {
+  max-width: 100%; }
+
+/* Add generic styles to H5BP .browserupgrade - https://github.com/h5bp/html5-boilerplate/blob/master/dist/index.html#L18-L20 */
+.browserupgrade {
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  background: #333; }
+
+.browserupgrade a {
+  text-decoration: none;
+  color: #1e90ff;
+  font-weight: bold; }
+
+.browserupgrade a:hover {
+  text-decoration: underline; }
+
+/* Basic typography */
+/* https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide */
+html {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.5; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  line-height: 1.25; }
+
+h1 {
+  font-size: 36px;
+  font-size: 2.25rem; }
+
+h2 {
+  font-size: 32px;
+  font-size: 2rem; }
+
+h3 {
+  font-size: 28px;
+  font-size: 1.75rem; }
+
+h4 {
+  font-size: 24px;
+  font-size: 1.5rem; }
+
+h5 {
+  font-size: 20px;
+  font-size: 1.25rem; }
+
+h6 {
+  font-size: 16px;
+  font-size: 1rem; }
+
+p,
+blockquote,
+pre,
+address,
+dl,
+ol,
+ul,
+table {
+  margin-bottom: 16px;
+  margin-bottom: 1rem; }
+
+p:last-of-type {
+  margin-bottom: 0; }
+
+/* Tweaks */
+table {
+  width: 100%; }
+
+html {
+  font-family: "Roboto Slab", serif; }
+
+body {
+  background: white;
+  font-size: responsive 16px 19px; }
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.5em; }
+
+.light {
+  font-weight: 300; }
+
+h1 {
+  font-size: responsive 40px 60px; }
+
+h2 {
+  font-size: responsive 36px 50px;
+  font-weight: 300;
+  position: relative;
+  text-align: center;
+  padding-bottom: .4em;
+  margin-bottom: .4em; }
+  h2:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    background-color: #96323d;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+
+h3 {
+  font-size: responsive 30px 40px; }
+
+h4 {
+  font-size: responsive 24px 30px; }
+
+h5 {
+  font-size: 19px;
+  margin-bottom: .3em; }
+
+.page-wrap {
+  background: white;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); }
+
+.inner {
+  lost-center: 1240px 20px;
+  lost-utility: clearfix; }
+
+i.fa {
+  font-weight: normal !important; }
+
+.sitter-srch-wrap, .about-sitters {
+  padding: 20px 0; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .sitter-srch-wrap, .about-sitters {
+      padding: 30px 0; } }
+  @media only screen and (min-width: 1025px) {
+    .sitter-srch-wrap, .about-sitters {
+      padding: 40px 0; } }
+  @media only screen and (min-width: 1200px) {
+    .sitter-srch-wrap, .about-sitters {
+      padding: 70px 0; } }
+
+.caro-wrap {
+  background: #5c6759;
+  position: relative;
+  padding-bottom: 2px; }
+  .caro-wrap .caro-inner {
+    lost-center: 1400px; }
+  .caro-wrap:after {
+    content: '';
+    width: 100%;
+    height: 13px;
+    background: #96323d;
+    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    bottom: 0;
+    position: absolute;
+    z-index: 1; }
+    @media only screen and (max-width: 767px) {
+      .caro-wrap:after {
+        height: 8px; } }
+
+.main-carousel .carousel-cell {
+  width: 100%;
+  display: block;
+  color: white;
+  text-align: center; }
+
+@media only screen and (max-width: 767px) {
+  .flickity-prev-next-button {
+    width: 20px !important;
+    height: 20px !important; } }
+
+.sitter-srch-wrap {
+  background: url(../images/sitter-srch-bg.png);
+  background-position: center center;
+  background-size: cover;
+  text-align: center; }
+  .sitter-srch-wrap h2 {
+    color: white;
+    font-size: responsive 40px 60px; }
+  .sitter-srch-wrap .sitneeds {
+    font-weight: 300;
+    color: white; }
+
+.sitneeds {
+  font-size: responsive 20px 24px;
+  font-weight: 300; }
+
+.sitneeds-icons {
+  padding: 20px 0; }
+  .sitneeds-icons span {
+    display: inline-block; }
+    .sitneeds-icons span img {
+      padding: 8px 20px; }
+      @media only screen and (max-width: 767px) {
+        .sitneeds-icons span img {
+          width: 80px;
+          height: auto; } }
+
+.about-sitters {
+  background-color: #f4efea;
+  text-align: center; }
+  .about-sitters .big-ctas {
+    lost-utility: clearfix;
+    margin-bottom: 10px; }
+    @media only screen and (min-width: 768px) {
+      .about-sitters .big-ctas {
+        margin-top: 10px; } }
+    .about-sitters .big-ctas a {
+      font-size: responsive 20px 28px;
+      color: #5c6759;
+      text-decoration: none;
+      border-radius: .6em;
+      -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+      background: white;
+      border: solid 1px #ccc;
+      margin-top: .9em;
+      padding-top: .9em;
+      padding-bottom: .8em;
+      lost-column: 1; }
+      @media only screen and (min-width: 481px) {
+        .about-sitters .big-ctas a {
+          lost-column: 1/2; } }
+      @media only screen and (min-width: 1025px) {
+        .about-sitters .big-ctas a:hover {
+          background: #96323d;
+          color: white;
+          border-color: #666;
+          -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4); }
+          .about-sitters .big-ctas a:hover i {
+            color: #738cb3;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.4); } }
+      .about-sitters .big-ctas a i {
+        display: block;
+        font-size: 1.95em;
+        color: #96323d; }
+
+#sitter-srch {
+  lost-utility: clearfix;
+  background: #f4efea;
+  border: solid 1px #ccc;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  padding: 30px; }
+  #sitter-srch h3 {
+    font-size: responsive 24px 36px;
+    color: #96323d; }
+    #sitter-srch h3 i {
+      color: #738cb3; }
+  @media only screen and (min-width: 768px) {
+    #sitter-srch {
+      text-align: left;
+      padding: 30px 0;
+      lost-center: 99.9999% flex; } }
+  #sitter-srch .homesearch-col {
+    position: relative;
+    lost-utility: clearfix; }
+    @media only screen and (min-width: 768px) {
+      #sitter-srch .homesearch-col {
+        lost-column: 1/2 2 0px flex;
+        padding: 0 30px; }
+        #sitter-srch .homesearch-col:first-child {
+          border-right: solid 1px #ccc; } }
+    #sitter-srch .homesearch-col .homesearch-row {
+      margin-bottom: 15px; }
+      @media only screen and (min-width: 768px) {
+        #sitter-srch .homesearch-col .homesearch-row:last-child {
+          margin-bottom: 0; } }
+  @media only screen and (min-width: 1200px) {
+    #sitter-srch #searchbtn {
+      position: absolute;
+      bottom: 0;
+      right: 30px; } }
+
+header {
+  padding: 20px 0 0; }
+
+.logo {
+  width: 5.65em;
+  font-size: responsive 35px 50px;
+  font-range: 320px 1200px;
+  display: block; }
+
+.main-nav .user-wrap {
+  font-weight: 700; }
+
+.main-nav .user-links a {
+  color: #738cb3;
+  margin-right: .8em; }
+  .main-nav .user-links a i {
+    color: #96323d;
+    margin-right: .3em; }
+  .main-nav .user-links a:last-child {
+    margin-right: none; }
+
+.main-nav .login {
+  background: #f4efea;
+  border: solid 1px #ccc;
+  color: #96323d;
+  text-decoration: none;
+  border-radius: 8px; }
+
+.main-nav ul li a {
+  color: #738cb3;
+  font-size: responsive 18px 20px;
+  font-range: 1024px 1400px;
+  text-decoration: none; }
+
+.slogan {
+  color: white;
+  background: #96323d;
+  padding: 10px 0;
+  font-size: responsive 10px 22px;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1; }
+
+@media only screen and (max-width: 1024px) {
+  .main-nav .loginNav {
+    margin-top: 18px; }
+  .main-nav .user-links {
+    lost-utility: clearfix;
+    width: calc(100% - 16px); }
+    .main-nav .user-links .user {
+      float: left;
+      font-size: 16px; }
+    .main-nav .user-links .messages {
+      float: right;
+      font-size: 16px; }
+  .main-nav .login {
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding: 6px 10px;
+    margin: 15px 0; }
+  .main-nav ul {
+    text-align: center; }
+    .main-nav ul li {
+      padding: 6px 0;
+      border-bottom: solid 1px #ccc; }
+      .main-nav ul li a {
+        display: block; } }
+
+@media only screen and (min-width: 1025px) {
+  .logo {
+    float: left; }
+  .main-nav {
+    lost-utility: clearfix;
+    text-align: right;
+    float: right; }
+    .main-nav .user-wrap {
+      margin: 10px 0 20px; }
+    .main-nav .login {
+      padding: 18px;
+      display: inline-block;
+      -webkit-box-shadow: 0 0 10px -6px transparent;
+      box-shadow: 0 0 10px -6px transparent;
+      -webkit-transition: all 150ms;
+      -o-transition: all 150ms;
+      transition: all 150ms;
+      display: inline-block; }
+      .main-nav .login:hover {
+        -webkit-box-shadow: 0 6px 10px -6px rgba(0, 0, 0, 0.8);
+        box-shadow: 0 6px 10px -6px rgba(0, 0, 0, 0.8); }
+    .main-nav .user-links {
+      display: inline-block;
+      margin-right: 20px;
+      border-top: solid 1px #ccc;
+      border-bottom: solid 1px #ccc;
+      padding: 17px 0; }
+      .main-nav .user-links a {
+        margin-right: 20px; }
+        .main-nav .user-links a:last-child {
+          margin-right: 0; }
+        .main-nav .user-links a:hover {
+          color: black; }
+    .main-nav ul li {
+      display: inline-block;
+      padding: 0 10px;
+      border-right: solid 1px #ccc;
+      line-height: 1em; }
+      .main-nav ul li:first-child {
+        padding-left: 0; }
+      .main-nav ul li:last-child {
+        padding-right: 0;
+        border-right: none; }
+      .main-nav ul li a:hover {
+        color: #96323d; } }
+
+#sidebartoggler {
+  position: absolute;
+  top: -100px;
+  left: -9999px; }
+
+.page-wrap {
+  position: relative; }
+
+.main-nav ul {
+  list-style: none; }
+
+@media only screen and (min-width: 1025px) {
+  #menuicon {
+    display: none; } }
+
+@media only screen and (max-width: 1024px) {
+  #menuicon {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    z-index: 3;
+    font-size: 21px;
+    line-height: 0;
+    cursor: pointer; }
+    #menuicon:after {
+      content: '';
+      background: transparent;
+      width: 35px;
+      height: 35px;
+      display: block;
+      position: absolute;
+      z-index: -1;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%; }
+  .main-nav {
+    max-width: 320px;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    -webkit-box-shadow: 0 0 10px transparent;
+    box-shadow: 0 0 10px transparent;
+    position: fixed;
+    top: 0;
+    right: -320px;
+    padding: 15px 20px 20px;
+    -webkit-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    z-index: 2; }
+  #sidebartoggler:checked + .page-wrap {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    scroll: none; }
+    #sidebartoggler:checked + .page-wrap .exit-mob {
+      width: 100%;
+      height: 100vh;
+      background: rgba(255, 255, 255, 0);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2; }
+    #sidebartoggler:checked + .page-wrap .main-nav {
+      right: 0;
+      -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+    #sidebartoggler:checked + .page-wrap #menuicon {
+      position: fixed;
+      top: 17px;
+      right: 20px; } }
+
+footer {
+  background-color: #738cb3;
+  background-image: url(../images/ftr-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 50px 0;
+  position: relative; }
+  footer:before, footer:after {
+    content: '';
+    height: 13px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0; }
+    @media only screen and (max-width: 767px) {
+      footer:before, footer:after {
+        height: 8px; } }
+  footer:before {
+    background: #96323d;
+    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    top: -5px; }
+  footer:after {
+    background: #5c6759;
+    bottom: 0; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    footer {
+      padding: 60px 0; } }
+  @media only screen and (min-width: 1025px) {
+    footer {
+      padding: 70px 0;
+      background-position: top -10vw center !important; } }
+  footer .ftrlogo {
+    margin-bottom: 30px; }
+    footer .ftrlogo a img {
+      max-width: 195px;
+      height: auto;
+      width: 100%; }
+  footer .ftrnav {
+    margin-bottom: 25px;
+    lost-utility: clearfix; }
+    footer .ftrnav li {
+      display: block;
+      font-size: responsive 16px 18px;
+      line-height: 1em;
+      margin-bottom: 8px; }
+      @media only screen and (min-width: 481px) {
+        footer .ftrnav li {
+          display: inline-block;
+          border-right: solid 1px #45546b;
+          padding: 0 .7em 0 .5em; }
+          footer .ftrnav li:last-child {
+            border-right: none; } }
+      footer .ftrnav li a {
+        color: white;
+        text-decoration: none; }
+        footer .ftrnav li a:hover {
+          text-decoration: underline; }
+  footer .ftrsocial li {
+    display: inline-block;
+    font-size: 30px;
+    padding: 0 .25em;
+    margin-bottom: 8px; }
+    footer .ftrsocial li a {
+      color: #45546b; }
+      footer .ftrsocial li a:hover {
+        color: white; }
+  footer .cpyrt {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 11px; }
+
+html {
+  height: 100%; }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+  /* Avoid the IE 10-11 `min-height` bug. */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.page-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+  /* Avoid the IE 10-11 `min-height` bug. */ }
+
+.page-content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  background: white; }
+
+footer {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */ }
+
+.btn {
+  padding: .4em .8em .5em;
+  border-radius: .4em;
+  background-color: #96323d;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  -webkit-box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.3); }
+  @media only screen and (min-width: 1025px) {
+    .btn:hover {
+      background-color: black; } }
+  .btn.blueBtn {
+    background: #738cb3; }
+    @media only screen and (min-width: 1025px) {
+      .btn.blueBtn:hover {
+        background-color: #5c6759; } }
+
+input[type=text], select, textarea {
+  background: white;
+  border: solid 1px #ccc;
+  border-radius: 8px;
+  padding: .4em .8em;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-weight: 300; }
+
+select {
+  padding-right: 2.2em;
+  background: url(../images/caret.svg) right 0.8em top 50% no-repeat #fff;
+  background-size: .6em; }
+
+textarea {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  min-width: 100%; }
+
+label {
+  font-weight: 300; }
+  label.hide {
+    position: absolute;
+    left: -9999px;
+    opacity: 0; }
+
+.daterange {
+  lost-utility: clearfix; }
+  .daterange input {
+    padding-left: 2em; }
+  .daterange .field-wrap {
+    lost-column: 1/2 2 40px;
+    position: relative; }
+    .daterange .field-wrap .calIcon {
+      color: #738cb3;
+      position: absolute;
+      left: .6em;
+      top: .4em; }
+    .daterange .field-wrap:first-child:after {
+      display: inline-block;
+      position: absolute;
+      font-family: "Roboto", sans-serif;
+      font-style: italic;
+      font-weight: 300;
+      content: 'to';
+      top: 50%;
+      right: -1.6em;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+
+input[type=checkbox] {
+  position: absolute;
+  left: -9999px;
+  opacity: 0; }
+  input[type=checkbox] + label {
+    position: relative;
+    padding-left: 1.2em;
+    margin-right: 15px; }
+    input[type=checkbox] + label:before, input[type=checkbox] + label:after {
+      font-family: "FontAwesome";
+      color: #b9c6d9;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    input[type=checkbox] + label:before {
+      content: "";
+      color: #b9c6d9; }
+    input[type=checkbox] + label:after {
+      content: "";
+      font-family: "FontAwesome";
+      color: #96323d;
+      font-size: 1.05em; }
+  input[type=checkbox]:checked + label:before {
+    visibility: hidden; }
+  input[type=checkbox]:checked + label:after {
+    content: "";
+    font-size: 1em; }
+
+input[type=radio] {
+  position: absolute;
+  left: -9999px;
+  opacity: 0; }
+  input[type=radio] + label {
+    position: relative;
+    padding-left: 1.2em;
+    margin-right: 15px; }
+    input[type=radio] + label:before, input[type=radio] + label:after {
+      font-family: "FontAwesome";
+      color: #b9c6d9;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    input[type=radio] + label:before {
+      content: "";
+      color: #b9c6d9; }
+    input[type=radio] + label:after {
+      content: "";
+      font-family: "FontAwesome";
+      color: #96323d;
+      font-size: 1.05em; }
+  input[type=radio]:checked + label:before {
+    visibility: hidden; }
+  input[type=radio]:checked + label:after {
+    content: "";
+    font-size: 1em; }
+
+.singup-header {
+  background-color: #f4efeb;
+  padding: 1.5em 0; }
+  .singup-header p {
+    text-align: center; }
+
+.slogan-inner {
+  text-align: center;
+  background-color: #5c6759;
+  padding: 1em 0; }
+  .slogan-inner .inner {
+    color: #fff; }
+
+.inner-bg {
+  background-color: #738cb3; }
+
+.signup-wrap {
+  text-align: center;
+  background-image: url("../../images/signup-cover.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .signup-wrap .inner h3 {
+    font-size: 40px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    color: #fff;
+    padding-top: 1em; }
+  .signup-wrap .inner ul {
+    list-style-type: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+    .signup-wrap .inner ul li {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: "Roboto Slab", serif;
+      font-style: normal;
+      margin-right: 10px;
+      padding-bottom: 1.4em; }
+
+.signup-wrap-none {
+  background-image: none;
+  margin-bottom: 3em; }
+  .signup-wrap-none .inner h3 {
+    font-size: 40px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    color: #424242;
+    padding-top: 1em; }
+  .signup-wrap-none .inner ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .signup-wrap-none .inner ul li {
+      color: #424242;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: "Roboto Slab", serif;
+      font-style: normal;
+      margin-right: 10px;
+      padding-bottom: 0; }
+  .signup-wrap-none .inner .signup-wrap-btn .handshake-btn {
+    background-color: #5c6759;
+    padding: 1.2em 2em; }
+    .signup-wrap-none .inner .signup-wrap-btn .handshake-btn:hover {
+      background-color: #000; }
+
+.required-sitters {
+  text-align: center;
+  padding-top: 2em;
+  margin-bottom: 4em; }
+  .required-sitters .inner h3 {
+    color: #96323d; }
+  .required-sitters .inner p {
+    color: #424242;
+    font-family: "Roboto Slab", serif;
+    font-style: normal; }
+  .required-sitters .inner .getJobs-title {
+    padding-bottom: 4em; }
+  .required-sitters .inner ul {
+    list-style-type: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+    .required-sitters .inner ul li {
+      margin-right: 15px;
+      color: #5c6759;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: "Roboto Slab", serif;
+      font-style: normal;
+      padding-bottom: 2em; }
+  .required-sitters .inner .signup-button {
+    background-color: #96323d;
+    padding: 1.4em 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Roboto Slab", serif;
+    text-decoration: none;
+    border-radius: 10px; }
+    .required-sitters .inner .signup-button i {
+      margin-right: 8px; }
+    .required-sitters .inner .signup-button:hover {
+      background-color: #000; }
+
+.required-sitter-signup {
+  background-color: #f4efea;
+  margin-bottom: 0; }
+  .required-sitter-signup .btn {
+    padding: .6em 2em;
+    margin-bottom: 5em; }
+
+.line-seperator {
+  border-top: 1px solid #ccc;
+  margin-bottom: 1em; }
+
+input[type="text"],
+select,
+textarea {
+  background: white;
+  border: solid 1px #ccc;
+  border-radius: 8px;
+  padding: .4em .8em;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-weight: 300; }
+
+input[type="password"],
+select,
+textarea {
+  background: white;
+  border: solid 1px #ccc;
+  border-radius: 8px;
+  padding: .4em .8em;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-weight: 300; }
+
+input[type="email"],
+select,
+textarea {
+  background: white;
+  border: solid 1px #ccc;
+  border-radius: 8px;
+  padding: .4em .8em;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-weight: 300; }
+
+input[type="date"] {
+  background: white;
+  border: solid 1px #ccc;
+  border-radius: 8px;
+  padding: .4em .8em;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-weight: 300; }
+
+input[type="tel"] {
+  background: white;
+  border: solid 1px #ccc;
+  border-radius: 8px;
+  padding: .4em .8em;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-weight: 300; }
+
+.signup-form-validate {
+  margin-top: 3em; }
+  .signup-form-validate h3 {
+    font-size: 25px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #5c6759;
+    text-align: left; }
+  .signup-form-validate .form-validate {
+    width: 100%;
+    margin-bottom: 5em; }
+    .signup-form-validate .form-validate .input-group {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex; }
+      .signup-form-validate .form-validate .input-group #firstname {
+        width: 580px;
+        margin-right: 1.5em;
+        margin-bottom: 1.5em; }
+      .signup-form-validate .form-validate .input-group #lastname {
+        width: 580px;
+        margin-bottom: 1.5em; }
+      .signup-form-validate .form-validate .input-group #email {
+        width: 580px;
+        margin-right: 1.5em;
+        margin-bottom: 1.5em; }
+      .signup-form-validate .form-validate .input-group #password-1 {
+        margin-right: 1em;
+        margin-bottom: 1.5em; }
+      .signup-form-validate .form-validate .input-group #password-2 {
+        margin-bottom: 1.5em; }
+      .signup-form-validate .form-validate .input-group #password-create {
+        width: 580px; }
+    .signup-form-validate .form-validate .checkbox-inner {
+      margin-bottom: 2em; }
+      .signup-form-validate .form-validate .checkbox-inner #term-checkbox span {
+        font-size: 12px; }
+    .signup-form-validate .form-validate .button-validate .save-button {
+      background-color: #96323d;
+      padding: 1em 2em;
+      font-size: 16px;
+      text-decoration: none;
+      color: #fff;
+      border-radius: 10px; }
+      .signup-form-validate .form-validate .button-validate .save-button:hover {
+        background-color: #000; }
+
+.signup-form-checkbox {
+  margin-top: 3em; }
+  .signup-form-checkbox h3 {
+    font-size: 25px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #5c6759;
+    text-align: left; }
+    .signup-form-checkbox h3 span {
+      font-weight: 300; }
+  .signup-form-checkbox .form-validate {
+    width: 100%;
+    margin-bottom: 5em; }
+    .signup-form-checkbox .form-validate .input-group {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex; }
+      .signup-form-checkbox .form-validate .input-group #firstname {
+        width: 580px;
+        margin-right: 1.5em;
+        margin-bottom: 1.5em; }
+      .signup-form-checkbox .form-validate .input-group #lastname {
+        width: 580px;
+        margin-bottom: 1.5em; }
+      .signup-form-checkbox .form-validate .input-group #email {
+        width: 580px;
+        margin-right: 1.5em;
+        margin-bottom: 1.5em; }
+      .signup-form-checkbox .form-validate .input-group #password-1 {
+        margin-right: 1em;
+        margin-bottom: 1.5em; }
+      .signup-form-checkbox .form-validate .input-group #password-2 {
+        margin-bottom: 1.5em; }
+    .signup-form-checkbox .form-validate .checkbox-inner {
+      margin-bottom: 2em; }
+      .signup-form-checkbox .form-validate .checkbox-inner #term-checkbox span {
+        font-size: 12px; }
+    .signup-form-checkbox .form-validate .button-validate .save-button {
+      background-color: #96323d;
+      padding: 1em 2em;
+      font-size: 16px;
+      text-decoration: none;
+      color: #fff;
+      border-radius: 10px; }
+      .signup-form-checkbox .form-validate .button-validate .save-button:hover {
+        background-color: #000; }
+
+input[id="income-checkbox"] {
+  position: relative;
+  left: 0;
+  opacity: 1;
+  margin-right: .5em; }
+
+input[id="flexible-checkbox"] {
+  position: relative;
+  left: 0;
+  opacity: 1;
+  margin-right: .5em; }
+
+input[id="fun-checkbox"] {
+  position: relative;
+  left: 0;
+  opacity: 1;
+  margin-right: .5em; }
+
+input[id="looking-checkbox"] {
+  position: relative;
+  left: 0;
+  opacity: 1;
+  margin-right: .5em; }
+
+input[id="sound-checkbox"] {
+  position: relative;
+  left: 0;
+  opacity: 1;
+  margin-right: .5em; }
+
+input[id="temporary-checkbox"] {
+  position: relative;
+  left: 0;
+  opacity: 1;
+  margin-right: .5em; }
+
+.checkbox-inners {
+  margin-bottom: 2em;
+  display: block; }
+  .checkbox-inners #income {
+    margin-right: 20em;
+    margin-bottom: 1em; }
+    .checkbox-inners #income #term-checkbox span {
+      font-size: 12px; }
+  .checkbox-inners #fun {
+    margin-right: 333px; }
+  .checkbox-inners #sound {
+    margin-right: 24.7em; }
+
+.select-inner {
+  position: relative; }
+  .select-inner select {
+    margin-bottom: 2em; }
+
+.select-field select {
+  width: 50% !important; }
+
+#select-inner {
+  background: white;
+  border: solid 1px #ccc;
+  border-radius: 8px;
+  padding: .4em .8em;
+  width: 100%;
+  -webkit-appearance: '\f0d7';
+  -moz-appearance: '\f0d7';
+  appearance: '\f0d7';
+  font-weight: 300;
+  font-family: FontAwesome; }
+
+.history-title {
+  font-size: 15px;
+  position: relative;
+  bottom: 10px; }
+  .history-title .red {
+    color: #c83f44;
+    font-weight: 700; }
+
+.card-box-fields {
+  background-color: transparent !important;
+  border-top-left-radius: none !important;
+  border-top-right-radius: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  margin-bottom: 1em; }
+  .card-box-fields .card-form {
+    margin: 0 !important; }
+    .card-box-fields .card-form #street-address {
+      width: 560px;
+      margin-right: 1.5em; }
+    .card-box-fields .card-form #city {
+      width: 560px; }
+    .card-box-fields .card-form #state-inner {
+      width: 560px !important;
+      margin-right: 1.5em; }
+    .card-box-fields .card-form #code {
+      width: 226px;
+      margin-right: 1.5em; }
+
+.card-box-field {
+  background-color: #f6f2ee !important;
+  -webkit-box-shadow: 0px 1px 4px #5c6759 !important;
+  box-shadow: 0px 1px 4px #5c6759 !important;
+  margin-bottom: 2em;
+  border-radius: 10px; }
+  .card-box-field .form-card input {
+    margin-bottom: 1em; }
+  .card-box-field .form-card .employer {
+    width: 560px;
+    margin-right: 1.5em; }
+  .card-box-field .form-card .location {
+    width: 560px; }
+  .card-box-field .form-card .supervisior {
+    width: 560px;
+    margin-right: 1.5em; }
+  .card-box-field .form-card .phone-number {
+    width: 560px; }
+  .card-box-field .form-card .jobtitle {
+    width: 560px;
+    margin-right: 1.5em; }
+  .card-box-field .form-card #from-datepicker .from-datepicker #from-cal {
+    width: 220px; }
+  .card-box-field .form-card #from-datepicker .from-datepicker .calIcon {
+    color: #738cb3;
+    position: absolute;
+    left: .6em;
+    top: .4em; }
+
+.card-box-inner {
+  background-color: #f6f2ee;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-box-shadow: 0px 1px 4px #5c6759;
+  box-shadow: 0px 1px 4px #5c6759;
+  border-radius: 10px; }
+  .card-box-inner .body-panel {
+    background: #738cb3;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; }
+    .card-box-inner .body-panel h4 {
+      color: #fff;
+      padding: 10px 15px;
+      font-size: 18px;
+      font-weight: 300; }
+  .card-box-inner .form-card {
+    margin-right: 20px;
+    margin-left: 20px; }
+    .card-box-inner .form-card input {
+      margin-bottom: 1em; }
+    .card-box-inner .form-card #street-address {
+      width: 560px;
+      margin-right: 1.5em; }
+    .card-box-inner .form-card #city {
+      width: 560px; }
+    .card-box-inner .form-card #state {
+      width: 300px;
+      margin-right: 1.5em; }
+    .card-box-inner .form-card #code {
+      width: 226px;
+      margin-right: 1.5em; }
+    .card-box-inner .form-card #calendar-1 {
+      width: 220px; }
+    .card-box-inner .form-card #calendar-2 {
+      width: 220px; }
+    .card-box-inner .form-card #employer {
+      width: 560px;
+      margin-right: 1.5em; }
+    .card-box-inner .form-card #location {
+      width: 560px; }
+    .card-box-inner .form-card #supervisior {
+      width: 560px;
+      margin-right: 1.5em; }
+    .card-box-inner .form-card #phone-number {
+      width: 560px; }
+    .card-box-inner .form-card #jobtitle {
+      width: 560px;
+      margin-right: 1.5em; }
+    .card-box-inner .form-card #from-datepicker .from-datepicker #from-cal {
+      width: 220px; }
+    .card-box-inner .form-card #from-datepicker .from-datepicker .calIcon {
+      color: #738cb3;
+      position: absolute;
+      left: .6em;
+      top: .4em; }
+
+.add {
+  margin: 1em 0; }
+  .add a {
+    color: #738cb3; }
+  .add i {
+    color: #96323d; }
+
+.cell-option h4 {
+  font-size: 25px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #5c6759;
+  text-align: left; }
+
+.cell-option p {
+  font-size: 18px;
+  position: relative;
+  bottom: .6em; }
+
+.signup-cell #number {
+  width: 50%;
+  margin-bottom: .8em;
+  margin-top: 1em; }
+
+.field-row {
+  margin-bottom: 3em; }
+
+.signupimageprofile-row {
+  display: inline-block;
+  padding-bottom: 1em; }
+  .signupimageprofile-row .imagefield-wrap .image {
+    background-color: #ccc;
+    padding: 1.5em 1.5em;
+    border-radius: 100px;
+    margin-right: 40px;
+    width: 10%;
+    float: left; }
+    .signupimageprofile-row .imagefield-wrap .image img {
+      width: 100px; }
+  .signupimageprofile-row .imagefield-wrap p {
+    padding-top: .6em; }
+    .signupimageprofile-row .imagefield-wrap p span {
+      color: #2ea466;
+      font-weight: 700; }
+  .signupimageprofile-row .imagefield-wrap .uploadfile-row {
+    margin-top: 10px; }
+    .signupimageprofile-row .imagefield-wrap .uploadfile-row .uploadfile {
+      color: #738cb3; }
+      .signupimageprofile-row .imagefield-wrap .uploadfile-row .uploadfile .fa-upload {
+        color: #96323d; }
+
+.savecontinue-row {
+  margin: 2em 0;
+  margin-bottom: 5em; }
+  .savecontinue-row .savecontinue-field {
+    background-color: #96323d;
+    padding: .8em 3em;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px; }
+    .savecontinue-row .savecontinue-field:hover {
+      background-color: #000; }
+
+.regularday-row {
+  margin-top: 2em; }
+  .regularday-row .emergency-field {
+    margin-bottom: 1.2em; }
+    .regularday-row .emergency-field #contactname {
+      width: 48%;
+      margin-right: 2em; }
+    .regularday-row .emergency-field #contactphonenumber {
+      width: 48%; }
+  .regularday-row h3 {
+    font-size: 25px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #5c6759;
+    text-align: left; }
+    .regularday-row h3 span {
+      font-weight: 300; }
+  .regularday-row p {
+    font-size: 17px;
+    position: relative;
+    bottom: .6em; }
+
+.daysfield {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .daysfield .field-wrap {
+    width: 25%;
+    margin-bottom: 2em; }
+    .daysfield .field-wrap label {
+      position: relative;
+      bottom: 12px; }
+
+.customize-field {
+  background-color: #f6f2ee;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 4px #5c6759;
+  box-shadow: 0px 1px 4px #5c6759;
+  margin-bottom: 2em; }
+  .customize-field .customize-row {
+    padding: 25px 20px; }
+    .customize-field .customize-row .box {
+      background-color: #738cb3;
+      width: 25%;
+      height: 85px;
+      color: white;
+      float: left;
+      margin-right: 20px;
+      border-radius: 10px; }
+      .customize-field .customize-row .box .fa-calendar {
+        font-size: 3em;
+        padding: 10px 10px;
+        float: left;
+        color: #424242; }
+      .customize-field .customize-row .box h4 {
+        font-size: 20px;
+        font-family: "Roboto Slab", serif;
+        font-weight: 500;
+        font-style: normal;
+        position: relative;
+        top: .8em; }
+    .customize-field .customize-row .customizetitle-field {
+      position: relative;
+      top: 5px; }
+      .customize-field .customize-row .customizetitle-field p {
+        line-height: 1.8; }
+
+.selectfield {
+  margin-bottom: 2em; }
+
+.tellcustomer-field {
+  margin-bottom: 2em; }
+
+.messagetext-field {
+  margin-bottom: 2em; }
+  .messagetext-field #messagetext {
+    resize: none; }
+
+.insuranceinformation-field {
+  margin-bottom: 2em; }
+  .insuranceinformation-field #provide01 {
+    width: 31.3%;
+    margin-right: 1.5em; }
+  .insuranceinformation-field #provide02 {
+    width: 31.3%;
+    margin-right: 1.5em; }
+  .insuranceinformation-field #provide03 {
+    width: 31.3%; }
+  .insuranceinformation-field .uploadcopy-btn {
+    margin-top: .8em; }
+    .insuranceinformation-field .uploadcopy-btn #uploadcopy {
+      color: #738cb3;
+      font-weight: 400; }
+      .insuranceinformation-field .uploadcopy-btn #uploadcopy .fa-upload {
+        color: #96323d; }
+
+.backgroundcheck-field .green {
+  color: #2ea466;
+  font-weight: 600; }
+
+.backgroundcheck-field .identification-field select {
+  color: #5c6759; }
+
+.backgroundcheck-field .identification-field #identificaton {
+  width: 100%;
+  margin-bottom: 1em; }
+
+.backgroundcheck-field .identification-field #identificatonnumber {
+  width: 50%;
+  margin-right: 2em;
+  margin-bottom: 1em; }
+
+.backgroundcheck-field .identification-field #idcard {
+  width: 30%;
+  margin-bottom: 1em; }
+
+.backgroundcheck-field .identification-field #security {
+  width: 50%;
+  margin-bottom: 1em; }
+
+.backgroundcheck-field .identification-field #physicalstreet {
+  width: 50%;
+  margin-bottom: 1em; }
+
+.backgroundcheck-field .identification-field #currentcity {
+  width: 50%;
+  margin-bottom: 1em;
+  margin-right: 2em; }
+
+.backgroundcheck-field .identification-field #currentstate {
+  width: 22%;
+  margin-right: 1.2em; }
+
+.backgroundcheck-field .identification-field #currentzipcode {
+  width: 22%; }
+
+.backgroundcheck-field .identification-field .uploadphoto-btn {
+  margin-bottom: 2em; }
+  .backgroundcheck-field .identification-field .uploadphoto-btn #uploadphotoid {
+    color: #738cb3; }
+    .backgroundcheck-field .identification-field .uploadphoto-btn #uploadphotoid .fa-upload {
+      color: #96323d; }
+
+.emergencycontact-field h4 {
+  font-size: 25px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #5c6759;
+  text-align: left; }
+
+.emergencycontact-field .contactiformation-row #contactname {
+  width: 50%;
+  margin-right: 2em; }
+
+.emergencycontact-field .contactiformation-row #contactphone {
+  width: 46.2%; }
+
+.emergencycontact-field .contactiformation-row .savecontinue-row {
+  margin: 2em 0;
+  margin-bottom: 5em; }
+  .emergencycontact-field .contactiformation-row .savecontinue-row .savecontinue-field {
+    background-color: #96323d;
+    padding: .8em 3em;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px; }
+    .emergencycontact-field .contactiformation-row .savecontinue-row .savecontinue-field:hover {
+      background-color: #000; }
+
+.closertitle-field {
+  margin-top: 3em;
+  margin-bottom: 3em; }
+  .closertitle-field h3 {
+    color: #96323d;
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 1; }
+
+@media only screen and (max-width: 992px) {
+  .signup-form-validate .form-validate .input-group {
+    display: block; }
+    .signup-form-validate .form-validate .input-group #firstname {
+      width: 100%; }
+    .signup-form-validate .form-validate .input-group #lastname {
+      width: 100%; }
+    .signup-form-validate .form-validate .input-group #email {
+      width: 100%; }
+    .signup-form-validate .form-validate .input-group #password-1 {
+      width: 100%; }
+    .signup-form-validate .form-validate .input-group #password-2 {
+      width: 100%; } }
+
+@media screen and (max-width: 480px) {
+  .daysfield {
+    display: block; }
+  .insuranceinformation-field #provide01 {
+    width: 100%;
+    margin-bottom: 1em; }
+  .insuranceinformation-field #provide02 {
+    width: 100%;
+    margin-bottom: 1em; }
+  .insuranceinformation-field #provide03 {
+    width: 100%; } }
+
+.heading h3 {
+  font-size: 25px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #5c6759;
+  text-align: left; }
+
+.loginNavWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .loginNavWrap i {
+    color: #96323d; }
+    .loginNavWrap i span {
+      color: #738cb3;
+      font-weight: 700; }
+  .loginNavWrap .admin {
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    color: #738cb3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 2em; }
+  .loginNavWrap .admins {
+    margin-right: 10px; }
+
+.main-nav .help {
+  padding: 18px;
+  display: inline-block;
+  -webkit-box-shadow: 0 0 10px -6px transparent;
+  box-shadow: 0 0 10px -6px transparent;
+  -webkit-transition: all 150ms;
+  -o-transition: all 150ms;
+  transition: all 150ms;
+  display: inline-block;
+  background: #f4efea;
+  border: solid 1px #ccc;
+  color: #738cb3;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-right: -13px; }
+
+.main-nav .help:hover {
+  -webkit-box-shadow: 0 6px 10px -6px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 6px 10px -6px rgba(0, 0, 0, 0.8); }
+
+.dashbtn-lft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .dashbtn-lft .btn {
+    background-color: #738cb3;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+    .dashbtn-lft .btn:hover {
+      background-color: #000; }
+
+.admin-header {
+  background-color: #f4efeb;
+  padding: 1.5em 0; }
+  .admin-header h2 .fa-dashboard {
+    color: #738cb3; }
+  .admin-header h2 .fa-dollar {
+    color: #738cb3; }
+  .admin-header h2 .fa-map-marker {
+    color: #738cb3; }
+  .admin-header h2 .fa-envelope {
+    color: #738cb3; }
+  .admin-header h2 .fa-bullhorn {
+    color: #738cb3; }
+  .admin-header p {
+    text-align: center; }
+
+.inners {
+  width: 80%;
+  margin: 0 auto; }
+
+.admincircleicon-field {
+  margin-top: 2em; }
+  .admincircleicon-field ul {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style-type: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .admincircleicon-field ul li {
+      background-color: #f4efeb;
+      margin-right: 2em;
+      border-radius: 100px;
+      text-align: center;
+      width: 200px;
+      height: 200px;
+      margin-bottom: 2em;
+      -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); }
+      .admincircleicon-field ul li .icon .fa {
+        font-size: 50px;
+        padding-top: 1em;
+        color: #5c6759; }
+      .admincircleicon-field ul li .icontitle {
+        padding-top: 10px; }
+        .admincircleicon-field ul li .icontitle h5 {
+          font-size: 18px;
+          font-weight: 300;
+          font-family: "Roboto Slab", serif; }
+
+.editcustomer-field {
+  margin-top: 2em; }
+  .editcustomer-field h3 {
+    font-size: 25px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #5c6759;
+    text-align: left; }
+  .editcustomer-field .editselect {
+    margin-bottom: 2em; }
+    .editcustomer-field .editselect #active-row {
+      width: 30%; }
+
+.namecustomer-field {
+  margin-bottom: 2em; }
+  .namecustomer-field h3 {
+    font-size: 25px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #5c6759;
+    text-align: left; }
+  .namecustomer-field .cutomername-row {
+    margin-bottom: 2em; }
+    .namecustomer-field .cutomername-row #customernamefirst {
+      width: 48%;
+      margin-right: 2em; }
+    .namecustomer-field .cutomername-row #customernamelast {
+      width: 48%; }
+
+.emailpassword-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 2em; }
+  .emailpassword-field h3 {
+    font-size: 25px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #5c6759;
+    text-align: left; }
+  .emailpassword-field .email-row #emailrow {
+    width: 578px;
+    margin-right: 2em;
+    margin-bottom: 2em; }
+  .emailpassword-field .cutomername-row #createpassword {
+    width: 280px;
+    margin-right: 1em; }
+  .emailpassword-field .cutomername-row #confirmpassword {
+    width: 275px; }
+
+.creditcard-field h3 {
+  font-size: 25px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #5c6759;
+  text-align: left; }
+
+.creditcard-field p {
+  color: #5c6759;
+  position: relative;
+  bottom: 15px; }
+
+.creditcode-field {
+  width: 100%; }
+  .creditcode-field .creditecode-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .creditcode-field .creditecode-row .btn {
+      position: relative;
+      bottom: 10px;
+      background-color: #2ea466;
+      font-weight: 300;
+      font-size: 16px; }
+      .creditcode-field .creditecode-row .btn:hover {
+        background-color: #000; }
+    .creditcode-field .creditecode-row h5 {
+      color: #5c6759;
+      font-family: "Roboto Slab", serif;
+      font-weight: 300;
+      font-style: normal; }
+  .creditcode-field .newcard-field {
+    margin-bottom: 2em; }
+    .creditcode-field .newcard-field .newcard {
+      color: #738cb3; }
+      .creditcode-field .newcard-field .newcard .fa-credit-card {
+        color: #96323d; }
+  .creditcode-field .showbtn-field {
+    margin-bottom: 2em; }
+    .creditcode-field .showbtn-field .btn {
+      background-color: #738cb3; }
+      .creditcode-field .showbtn-field .btn:hover {
+        background-color: #000; }
+    .creditcode-field .showbtn-field #showpastjob {
+      margin-right: 1em; }
+
+.tabnavbar {
+  display: block;
+  -webkit-box-shadow: inset 0 -1px 0 #cccccc;
+  box-shadow: inset 0 -1px 0 #cccccc;
+  text-align: center;
+  margin-bottom: -30px; }
+  .tabnavbar ul {
+    display: block;
+    width: 80%;
+    margin: 0 auto; }
+    .tabnavbar ul li {
+      display: inline-block;
+      width: 24%;
+      text-align: center;
+      height: 50px;
+      line-height: 50px; }
+      .tabnavbar ul li.is-active {
+        background-color: #fff;
+        border-bottom: 1px solid #fff; }
+      .tabnavbar ul li a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #738cb3;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 600;
+        font-family: "Roboto Slab", serif; }
+        .tabnavbar ul li a i {
+          color: #96323d; }
+
+.content .content__item {
+  width: 90%;
+  margin: 40px auto; }
+  .content .content__item h3 {
+    font-size: 25px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #5c6759;
+    text-align: left; }
+  .content .content__item .filter-field {
+    float: left; }
+    .content .content__item .filter-field h5 {
+      font-size: 20px; }
+      .content .content__item .filter-field h5 span {
+        font-weight: 300; }
+    .content .content__item .filter-field .daterange {
+      width: 60%; }
+  .content .content__item .filterkey-field #keywordinclude {
+    width: 51%; }
+  .content .content__item .filterbtn-field #filterclear {
+    background-color: #738cb3; }
+    .content .content__item .filterbtn-field #filterclear:hover {
+      background-color: #000; }
+  .content .content__item .payperiod-field {
+    margin-bottom: 1em; }
+    .content .content__item .payperiod-field #payperiod-row {
+      width: 40%;
+      margin-right: 2em; }
+    .content .content__item .payperiod-field .report {
+      color: #738cb3; }
+      .content .content__item .payperiod-field .report i {
+        color: #96323d; }
+    .content .content__item .payperiod-field #summaryreport {
+      margin-right: 1em; }
+
+.content .unpaidfilter-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 1em; }
+  .content .unpaidfilter-field #clearfilter {
+    background-color: #738cb3; }
+    .content .unpaidfilter-field #clearfilter:hover {
+      background-color: #000; }
+
+.content .paidschedule-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .content .paidschedule-field .unpaidperiod {
+    margin-right: 452px; }
+
+.content .content-items .btn {
+  margin-right: 1em; }
+
+.content .content-items .report {
+  color: #738cb3; }
+  .content .content-items .report i {
+    color: #96323d; }
+
+.content .content-items #summaryreport02 {
+  margin-right: 1em; }
+
+.content .profilepending-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .content .profilepending-field .profile-image {
+    width: 100px;
+    margin-right: 1em; }
+    .content .profilepending-field .profile-image img {
+      height: 80px;
+      width: 100%; }
+  .content .profilepending-field .profile-title .profile-link {
+    color: #738cb3; }
+  .content .profilepending-field .profile-title h6 {
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Roboto Slab", serif;
+    font-style: normal; }
+    .content .profilepending-field .profile-title h6 span {
+      font-weight: 600;
+      color: #96323d; }
+  .content .profilepending-field .profile-title .location {
+    position: relative;
+    bottom: 15px; }
+    .content .profilepending-field .profile-title .location span {
+      color: #424242; }
+  .content .profilepending-field .appliedon-field {
+    display: -webkit-box;
+    position: absolute;
+    right: 60px; }
+    .content .profilepending-field .appliedon-field .reviewbtn {
+      background-color: #2ea466; }
+      .content .profilepending-field .appliedon-field .reviewbtn:hover {
+        background-color: #000; }
+    .content .profilepending-field .appliedon-field .reviewbluebtn {
+      background-color: #738cb3; }
+    .content .profilepending-field .appliedon-field h5 {
+      position: relative;
+      top: 10px;
+      margin-right: 15px;
+      font-weight: 300; }
+      .content .profilepending-field .appliedon-field h5 span {
+        font-weight: 600; }
+
+.content-items {
+  text-align: left; }
+  .content-items table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%; }
+    .content-items table th {
+      font-family: "Roboto Slab", serif;
+      font-size: 18px;
+      font-weight: 600;
+      border-top: 1px solid #dddddd; }
+    .content-items table td {
+      color: #5c6759;
+      font-weight: 300;
+      font-family: "Roboto Slab", serif; }
+      .content-items table td input {
+        width: 40%; }
+    .content-items table td,
+    .content-items table th {
+      border-bottom: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px; }
+
+h2 {
+  margin-bottom: 20px; }
+
+.adminlocation-field {
+  margin-top: 2em;
+  margin-bottom: 4em; }
+  .adminlocation-field .currentlocation-field h3 {
+    font-size: 25px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #5c6759;
+    text-align: left; }
+  .adminlocation-field .currentlocation-field p {
+    position: relative;
+    bottom: 15px;
+    color: #5c6759; }
+  .adminlocation-field .location-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 2em; }
+    .adminlocation-field .location-field h5 {
+      font-size: 18px;
+      font-weight: 600;
+      font-family: "Roboto Slab", serif; }
+      .adminlocation-field .location-field h5 span {
+        font-weight: 300; }
+    .adminlocation-field .location-field #locationname {
+      width: 585px;
+      margin-bottom: 1em; }
+    .adminlocation-field .location-field #zipcodelocation {
+      width: 585px;
+      margin-bottom: 1em; }
+  .adminlocation-field .table-location table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%; }
+    .adminlocation-field .table-location table th {
+      font-family: "Roboto Slab", serif;
+      font-size: 20px;
+      font-weight: 600;
+      font-style: normal; }
+    .adminlocation-field .table-location table td {
+      font-family: "Roboto Slab", serif;
+      font-weight: 300;
+      color: #5c6759; }
+    .adminlocation-field .table-location table td,
+    .adminlocation-field .table-location table th {
+      border-bottom: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px; }
+      .adminlocation-field .table-location table td tr:nth-child(even),
+      .adminlocation-field .table-location table th tr:nth-child(even) {
+        background-color: #dddddd; }
+
+.adminmessage-field {
+  margin-top: 2em;
+  margin-bottom: 4em; }
+  .adminmessage-field .filter-field {
+    float: left; }
+    .adminmessage-field .filter-field h5 {
+      font-size: 20px; }
+      .adminmessage-field .filter-field h5 span {
+        font-weight: 300; }
+    .adminmessage-field .filter-field .daterange {
+      width: 60%; }
+  .adminmessage-field .filterkey-field #keywordincludecity {
+    width: 50%; }
+  .adminmessage-field .filterbtn-field #filterclear {
+    background-color: #738cb3; }
+    .adminmessage-field .filterbtn-field #filterclear:hover {
+      background-color: #000; }
+  .adminmessage-field .messagetitle-field {
+    margin-top: 2em;
+    margin-bottom: -3em; }
+    .adminmessage-field .messagetitle-field .messagefrom {
+      border-top: 1px solid #dddddd;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 1em 0; }
+      .adminmessage-field .messagetitle-field .messagefrom .datemessage {
+        font-size: 18px;
+        font-family: "Roboto Slab", serif;
+        font-weight: 300;
+        font-style: normal;
+        margin-right: 1.8em; }
+      .adminmessage-field .messagetitle-field .messagefrom .frommessage {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: "Roboto Slab", serif;
+        font-style: normal;
+        margin-right: 15px; }
+      .adminmessage-field .messagetitle-field .messagefrom .messagename {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: "Roboto Slab", serif;
+        font-style: normal;
+        width: 20em;
+        color: #738cb3;
+        text-decoration: underline; }
+        .adminmessage-field .messagetitle-field .messagefrom .messagename .smallsb sub {
+          font-size: 10px;
+          text-decoration: none;
+          color: #5c6759;
+          font-family: "Roboto Slab", serif;
+          font-weight: 300; }
+      .adminmessage-field .messagetitle-field .messagefrom .jobstreetlocation {
+        font-style: normal;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 18px; }
+        .adminmessage-field .messagetitle-field .messagefrom .jobstreetlocation .jobtitle {
+          color: #96323d;
+          font-size: 18px;
+          font-weight: 600;
+          font-style: normal;
+          font-family: "Roboto Slab", serif;
+          margin-right: 10px; }
+        .adminmessage-field .messagetitle-field .messagefrom .jobstreetlocation .streetloc {
+          text-decoration: underline;
+          font-size: 18px;
+          font-weight: 600;
+          font-style: normal;
+          font-family: "Roboto Slab", serif;
+          color: #738cb3; }
+    .adminmessage-field .messagetitle-field .messageto {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      bottom: 1.5em; }
+      .adminmessage-field .messagetitle-field .messageto .timeto {
+        font-size: 18px;
+        font-family: "Roboto Slab", serif;
+        font-weight: 300;
+        font-style: normal;
+        margin-right: 1em; }
+      .adminmessage-field .messagetitle-field .messageto .frommessage {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: "Roboto Slab", serif;
+        font-style: normal;
+        margin-right: 36px; }
+      .adminmessage-field .messagetitle-field .messageto .messagename {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: "Roboto Slab", serif;
+        font-style: normal;
+        width: 20em;
+        color: #738cb3;
+        text-decoration: underline; }
+        .adminmessage-field .messagetitle-field .messageto .messagename .smallsb sub {
+          font-size: 10px;
+          text-decoration: none;
+          color: #5c6759;
+          font-family: "Roboto Slab", serif;
+          font-weight: 300; }
+      .adminmessage-field .messagetitle-field .messageto .messagetitle {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        font-style: italic;
+        position: relative;
+        color: #5c6759;
+        width: 38em; }
+
+.admineditjob-field {
+  margin-top: 2em;
+  margin-bottom: 3em; }
+  .admineditjob-field .editjob-field {
+    margin-bottom: 1em; }
+    .admineditjob-field .editjob-field h3 {
+      font-size: 25px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600;
+      font-style: normal;
+      color: #5c6759;
+      text-align: left; }
+      .admineditjob-field .editjob-field h3 span {
+        font-weight: 300; }
+        .admineditjob-field .editjob-field h3 span a {
+          color: #738cb3; }
+    .admineditjob-field .editjob-field .field-wrap label {
+      font-weight: 600;
+      font-family: "Roboto Slab", serif;
+      font-size: 18px; }
+      .admineditjob-field .editjob-field .field-wrap label .editdate {
+        font-weight: 300;
+        margin-right: 10px; }
+      .admineditjob-field .editjob-field .field-wrap label .editjobvoice .fa-file-text-o {
+        color: #96323d; }
+      .admineditjob-field .editjob-field .field-wrap label .editjobvoice a {
+        color: #738cb3; }
+    .admineditjob-field .editjob-field .fa-user-o {
+      color: #96323d; }
+  .admineditjob-field .editfilter-field h3 {
+    font-size: 25px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #5c6759;
+    text-align: left; }
+    .admineditjob-field .editfilter-field h3 .fa-calendar {
+      color: #96323d; }
+    .admineditjob-field .editfilter-field h3 span {
+      font-weight: 300; }
+  .admineditjob-field .editfilter-field .editfilter-row {
+    margin-top: 2em;
+    margin-bottom: 2em; }
+    .admineditjob-field .editfilter-field .editfilter-row .editfilterfield {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 74%;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .admineditjob-field .editfilter-field .editinputfield #mainstreet {
+    width: 100%;
+    margin-bottom: 1em; }
+  .admineditjob-field .editfilter-field .editinputfield #seattle {
+    width: 50%;
+    margin-right: 2em;
+    margin-bottom: 1em; }
+  .admineditjob-field .editfilter-field .editinputfield #block {
+    width: 21%;
+    margin-right: 2em;
+    margin-bottom: 1em; }
+  .admineditjob-field .editfilter-field .editinputfield #codenumber {
+    width: 21.8%;
+    margin-bottom: 1em; }
+  .admineditjob-field .editfilter-field .blockfield {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 74%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 2em; }
+    .admineditjob-field .editfilter-field .blockfield .openblock .fa-clock-o {
+      color: #5c6759; }
+    .admineditjob-field .editfilter-field .blockfield .openblock h4 {
+      font-size: 18px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600; }
+    .admineditjob-field .editfilter-field .blockfield .openblock .timinglink {
+      display: block; }
+      .admineditjob-field .editfilter-field .blockfield .openblock .timinglink a {
+        color: #738cb3;
+        font-size: 18px;
+        font-weight: 300; }
+    .admineditjob-field .editfilter-field .blockfield .completeblock .fa-clock-o {
+      color: #5c6759; }
+    .admineditjob-field .editfilter-field .blockfield .completeblock h4 {
+      font-size: 18px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600; }
+    .admineditjob-field .editfilter-field .blockfield .completeblock .timinglink {
+      display: block; }
+      .admineditjob-field .editfilter-field .blockfield .completeblock .timinglink a {
+        color: #738cb3;
+        font-size: 18px;
+        font-weight: 300; }
+  .admineditjob-field .editpanel-field {
+    margin-top: 2em;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 1em; }
+    .admineditjob-field .editpanel-field .bodypanel {
+      background-color: #738cb3;
+      padding: 10px 1em 1px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px; }
+      .admineditjob-field .editpanel-field .bodypanel h4 {
+        font-weight: 300;
+        font-size: 20px;
+        color: #fff;
+        font-family: "Roboto Slab", serif; }
+    .admineditjob-field .editpanel-field .bodytitle {
+      background-color: #f4efea;
+      padding: 1.2em 1.2em;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+      .admineditjob-field .editpanel-field .bodytitle .image-profile {
+        width: 150px;
+        margin-right: 1em; }
+        .admineditjob-field .editpanel-field .bodytitle .image-profile img {
+          width: 100%;
+          border: 1px solid rgba(92, 103, 89, 0.5); }
+      .admineditjob-field .editpanel-field .bodytitle .nametitle h4 {
+        text-decoration: underline;
+        color: #738cb3; }
+      .admineditjob-field .editpanel-field .bodytitle .nametitle p {
+        font-size: 16px; }
+  .admineditjob-field .jobmessagebtn {
+    margin-bottom: 2em; }
+    .admineditjob-field .jobmessagebtn .jobbtn {
+      color: #738cb3; }
+      .admineditjob-field .jobmessagebtn .jobbtn .fa-envelope-o {
+        color: #96323d; }
+
+.admineditsitter-field {
+  margin-top: 2em;
+  margin-bottom: 4em; }
+  .admineditsitter-field .adminprofilesitter {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .admineditsitter-field .adminprofilesitter .profileeditfield {
+      max-width: 220px;
+      margin-right: 1em; }
+      .admineditsitter-field .adminprofilesitter .profileeditfield .profileimg {
+        width: 100%; }
+    .admineditsitter-field .adminprofilesitter .profiletitle h3 {
+      font-size: 25px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600;
+      font-style: normal;
+      color: #5c6759;
+      text-align: left; }
+    .admineditsitter-field .adminprofilesitter .profiletitle #editsitteropt {
+      width: 100%;
+      margin-bottom: .6em; }
+      .admineditsitter-field .adminprofilesitter .profiletitle #editsitteropt option {
+        color: #5c6759; }
+    .admineditsitter-field .adminprofilesitter .profiletitle .uploadnewbtn a {
+      color: #738cb3; }
+      .admineditsitter-field .adminprofilesitter .profiletitle .uploadnewbtn a .fa-upload {
+        color: #96323d; }
+  .admineditsitter-field .sittername {
+    margin-top: 2em; }
+    .admineditsitter-field .sittername h3 {
+      font-size: 25px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600;
+      font-style: normal;
+      color: #5c6759;
+      text-align: left; }
+    .admineditsitter-field .sittername #firstnamesitter {
+      width: 48%;
+      margin-right: 2em; }
+    .admineditsitter-field .sittername #lastnamesitter {
+      width: 48%; }
+  .admineditsitter-field .sitteremail {
+    margin-top: 2em; }
+    .admineditsitter-field .sitteremail h3 {
+      font-size: 25px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600;
+      font-style: normal;
+      color: #5c6759;
+      text-align: left; }
+  .admineditsitter-field .sitterphysicaladdress {
+    margin-top: 2em; }
+    .admineditsitter-field .sitterphysicaladdress h3 {
+      font-size: 25px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600;
+      font-style: normal;
+      color: #5c6759;
+      text-align: left; }
+    .admineditsitter-field .sitterphysicaladdress #physicaladdress {
+      width: 48%;
+      margin-right: 2em;
+      margin-bottom: 1em; }
+    .admineditsitter-field .sitterphysicaladdress #physicalname {
+      width: 48%;
+      margin-bottom: 1em; }
+    .admineditsitter-field .sitterphysicaladdress #physicaloption {
+      width: 48%;
+      margin-right: 2em; }
+    .admineditsitter-field .sitterphysicaladdress #physicalnumber {
+      width: 20%; }
+  .admineditsitter-field .sittercell {
+    margin-top: 2em;
+    margin-bottom: 2em; }
+    .admineditsitter-field .sittercell h3 {
+      font-size: 25px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600;
+      font-style: normal;
+      color: #5c6759;
+      text-align: left; }
+    .admineditsitter-field .sittercell .resetpassword {
+      position: relative;
+      top: 1em;
+      color: #738cb3; }
+      .admineditsitter-field .sittercell .resetpassword .fa-unlock-alt {
+        color: #96323d; }
+  .admineditsitter-field .sitterbankdeposit h3 {
+    font-size: 25px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #5c6759;
+    text-align: left; }
+  .admineditsitter-field .sitterbankdeposit p {
+    position: relative;
+    bottom: .2em;
+    margin-bottom: 1em; }
+  .admineditsitter-field .sitterbankdeposit #routingnumber {
+    width: 48%;
+    margin-right: 2em;
+    margin-bottom: 2em; }
+  .admineditsitter-field .sitterbankdeposit #accountnumber {
+    width: 48%;
+    margin-bottom: 2em; }
+  .admineditsitter-field .employmentsitter {
+    margin-bottom: 2em; }
+    .admineditsitter-field .employmentsitter h3 {
+      font-size: 25px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600;
+      font-style: normal;
+      color: #5c6759;
+      text-align: left; }
+    .admineditsitter-field .employmentsitter .bodyemployment .bodypanel {
+      background-color: #738cb3;
+      padding: .8em 1em 1px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px; }
+      .admineditsitter-field .employmentsitter .bodyemployment .bodypanel h4 {
+        color: #fff;
+        font-weight: 300;
+        font-family: "Roboto Slab", serif;
+        font-style: normal;
+        font-size: 22px; }
+    .admineditsitter-field .employmentsitter .bodyemployment .bodyfield {
+      padding: 1em 1em;
+      background-color: #f4efeb; }
+      .admineditsitter-field .employmentsitter .bodyemployment .bodyfield .CompanyName {
+        width: 48%;
+        margin-right: 2em;
+        margin-bottom: 1em; }
+      .admineditsitter-field .employmentsitter .bodyemployment .bodyfield .EmployerLocation {
+        width: 48%;
+        margin-bottom: 1em; }
+      .admineditsitter-field .employmentsitter .bodyemployment .bodyfield .EmployerSuperviso {
+        width: 48%;
+        margin-right: 2em;
+        margin-bottom: 1em; }
+      .admineditsitter-field .employmentsitter .bodyemployment .bodyfield .EmployerPhonenumber {
+        width: 48%;
+        margin-bottom: 1em; }
+      .admineditsitter-field .employmentsitter .bodyemployment .bodyfield .EmployerAssistant {
+        width: 48%;
+        margin-bottom: 1em; }
+      .admineditsitter-field .employmentsitter .bodyemployment .bodyfield .daterange {
+        width: 30%;
+        float: right;
+        position: relative;
+        right: 11.2em; }
+        .admineditsitter-field .employmentsitter .bodyemployment .bodyfield .daterange .field-wrap #from {
+          padding: .4em 10px .4em 2em; }
+        .admineditsitter-field .employmentsitter .bodyemployment .bodyfield .daterange .field-wrap #to {
+          padding: .4em 10px .4em 2em; }
+  .admineditsitter-field .sitteremergencycontact {
+    margin-bottom: 2em; }
+    .admineditsitter-field .sitteremergencycontact h3 {
+      font-size: 25px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600;
+      font-style: normal;
+      color: #5c6759;
+      text-align: left; }
+    .admineditsitter-field .sitteremergencycontact #emergencyname {
+      width: 48%;
+      margin-right: 2em; }
+    .admineditsitter-field .sitteremergencycontact #emergencynumber {
+      width: 48%; }
+  .admineditsitter-field .sitterinsuranceinformation {
+    margin-bottom: 2em; }
+    .admineditsitter-field .sitterinsuranceinformation h3 {
+      font-size: 25px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600;
+      font-style: normal;
+      color: #5c6759;
+      text-align: left; }
+    .admineditsitter-field .sitterinsuranceinformation #statefarm {
+      width: 48%;
+      margin-right: 2em;
+      margin-bottom: 1em; }
+    .admineditsitter-field .sitterinsuranceinformation #insurancenumber {
+      width: 48%;
+      margin-bottom: 1em; }
+    .admineditsitter-field .sitterinsuranceinformation #insurancecurrecy {
+      width: 48%;
+      margin-bottom: 1em; }
+    .admineditsitter-field .sitterinsuranceinformation .viewpolicypdf .viewpolicy {
+      color: #738cb3; }
+      .admineditsitter-field .sitterinsuranceinformation .viewpolicypdf .viewpolicy .fa-file-pdf-o {
+        color: #96323d; }
+  .admineditsitter-field .sitterinsbackgroundinformation {
+    margin-bottom: 2em; }
+    .admineditsitter-field .sitterinsbackgroundinformation h3 {
+      font-size: 25px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600;
+      font-style: normal;
+      color: #5c6759;
+      text-align: left; }
+    .admineditsitter-field .sitterinsbackgroundinformation #checkinformationname {
+      margin-bottom: 1em;
+      width: 100%; }
+    .admineditsitter-field .sitterinsbackgroundinformation #informationcode {
+      width: 48%;
+      margin-right: 2em;
+      margin-bottom: 1em; }
+    .admineditsitter-field .sitterinsbackgroundinformation #insuranceoption {
+      width: 25%;
+      margin-bottom: 1em; }
+    .admineditsitter-field .sitterinsbackgroundinformation #informationcodenumber {
+      width: 48%; }
+    .admineditsitter-field .sitterinsbackgroundinformation .viewinformationpdf {
+      margin-top: 1em; }
+      .admineditsitter-field .sitterinsbackgroundinformation .viewinformationpdf a {
+        color: #738cb3;
+        margin-right: 1em; }
+        .admineditsitter-field .sitterinsbackgroundinformation .viewinformationpdf a .fa {
+          color: #96323d; }
+    .admineditsitter-field .sitterinsbackgroundinformation .customizebutton .btn {
+      background-color: #738cb3; }
+      .admineditsitter-field .sitterinsbackgroundinformation .customizebutton .btn:hover {
+        background-color: #000; }
+    .admineditsitter-field .sitterinsbackgroundinformation .customizebtn {
+      margin-bottom: 1em; }
+  .admineditsitter-field .traveldistance h3 {
+    font-size: 25px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #5c6759;
+    text-align: left; }
+  .admineditsitter-field .traveldistance #travelmiles {
+    width: 48%; }
+  .admineditsitter-field .workingpets {
+    margin-top: 2em; }
+    .admineditsitter-field .workingpets h3 {
+      font-size: 25px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600;
+      font-style: normal;
+      color: #5c6759;
+      text-align: left; }
+  .admineditsitter-field .profileparagraph {
+    margin-top: 2em; }
+    .admineditsitter-field .profileparagraph h3 {
+      font-size: 25px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600;
+      font-style: normal;
+      color: #5c6759;
+      text-align: left; }
+    .admineditsitter-field .profileparagraph .paragraph-row {
+      border: 1px solid #dddddd;
+      padding: 1em 0 3em 1em;
+      border-radius: 10px; }
+    .admineditsitter-field .profileparagraph .allchangedbtn {
+      margin-top: 2em; }
+
+@media screen and (max-width: 767px) {
+  .content .paidschedule-field {
+    display: block; }
+    .content .paidschedule-field .unpaidperiod {
+      margin-right: 0; }
+  .adminlocation-field .location-field #locationname {
+    width: 100%;
+    margin-bottom: 1em; }
+  .adminlocation-field .location-field #zipcodelocation {
+    width: 100%;
+    margin-bottom: 1em; }
+  .admineditjob-field .editpanel-field .bodytitle {
+    display: block; } }
+
+.line-seperator {
+  border-top: 1px solid #ccc;
+  margin-bottom: 1em; }
+
+.promotion-wrapper {
+  margin-bottom: 4em;
+  margin-top: 3em; }
+  .promotion-wrapper .promotionform-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+    .promotion-wrapper .promotionform-field .promotion-row {
+      margin-bottom: 1em; }
+      .promotion-wrapper .promotionform-field .promotion-row h6 {
+        font-size: 20px;
+        position: relative;
+        top: 10px; }
+      .promotion-wrapper .promotionform-field .promotion-row #promocode {
+        width: 585px;
+        margin-right: 1.5em; }
+      .promotion-wrapper .promotionform-field .promotion-row #promoselect {
+        width: 585px; }
+      .promotion-wrapper .promotionform-field .promotion-row #amountcode {
+        width: 585px;
+        margin-right: 1.5em; }
+      .promotion-wrapper .promotionform-field .promotion-row .daterange {
+        width: 400px; }
+        .promotion-wrapper .promotionform-field .promotion-row .daterange .field-wrap input {
+          padding-left: 2em; }
+  .promotion-wrapper .promobtn {
+    margin-bottom: 1em; }
+    .promotion-wrapper .promobtn .btn {
+      padding: .6em 2.5em; }
+  .promotion-wrapper .table-promotion {
+    text-align: left; }
+    .promotion-wrapper .table-promotion table tr {
+      border-bottom: 1px solid #dddddd; }
+      .promotion-wrapper .table-promotion table tr td,
+      .promotion-wrapper .table-promotion table tr th {
+        padding: 10px 0; }
+      .promotion-wrapper .table-promotion table tr td {
+        color: #5c6759;
+        font-weight: 300; }
+
+.customer-header {
+  background-color: #f4efeb;
+  padding: 1.5em 0; }
+  .customer-header h2 .fa-dashboard {
+    color: #738cb3; }
+  .customer-header h2 .fa-dollar {
+    color: #738cb3; }
+  .customer-header h2 .fa-map-marker {
+    color: #738cb3; }
+  .customer-header h2 .fa-envelope {
+    color: #738cb3; }
+  .customer-header h2 .fa-bullhorn {
+    color: #738cb3; }
+  .customer-header h2 .fa-envelope-o {
+    color: #738cb3; }
+  .customer-header p {
+    text-align: center; }
+
+.line-seperator {
+  border-top: 1px solid #ccc;
+  margin-bottom: 1em; }
+
+.main-nav .loginNavWrap .admin-link-row {
+  margin-right: 0; }
+  .main-nav .loginNavWrap .admin-link-row i {
+    margin-right: 10px; }
+
+.customer-wrapper {
+  margin-top: 3em;
+  margin-bottom: 5em; }
+  .customer-wrapper .customer-btn {
+    margin-bottom: 2em; }
+    .customer-wrapper .customer-btn .btn {
+      background-color: #738cb3;
+      font-family: "Roboto Slab", serif; }
+      .customer-wrapper .customer-btn .btn:nth-child(1) {
+        margin-right: 10px; }
+      .customer-wrapper .customer-btn .btn:hover {
+        background-color: #000; }
+  .customer-wrapper .customer-field .customer-link .messagelinks {
+    color: #738cb3;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 1.6em;
+    font-style: normal; }
+  .customer-wrapper .customer-field .customer-link p {
+    color: #5c6759;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px; }
+    .customer-wrapper .customer-field .customer-link p a {
+      color: #738cb3; }
+  .customer-wrapper .customerprofiletitle-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin-bottom: 1em; }
+    .customer-wrapper .customerprofiletitle-field .profile-title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      width: 35%; }
+      .customer-wrapper .customerprofiletitle-field .profile-title img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        margin-right: 10px; }
+      .customer-wrapper .customerprofiletitle-field .profile-title .title h5 {
+        text-decoration: underline;
+        color: #738cb3;
+        font-size: 1.2em;
+        font-weight: 500;
+        position: relative;
+        top: 10px; }
+      .customer-wrapper .customerprofiletitle-field .profile-title .title span {
+        font-family: "Roboto Slab", serif;
+        font-size: 14px;
+        color: #5c6759; }
+    .customer-wrapper .customerprofiletitle-field .profileparagraph h4 {
+      font-size: 20px;
+      color: #96323d;
+      position: relative;
+      top: 15px; }
+      .customer-wrapper .customerprofiletitle-field .profileparagraph h4 span {
+        color: #738cb3;
+        text-decoration: underline; }
+    .customer-wrapper .customerprofiletitle-field .profileparagraph p {
+      color: #5c6759; }
+    .customer-wrapper .customerprofiletitle-field .button .btn {
+      font-weight: 400; }
+  .customer-wrapper .customerjob-field {
+    margin-top: 3em; }
+    .customer-wrapper .customerjob-field h3 {
+      color: #738cb3;
+      text-decoration: underline; }
+      .customer-wrapper .customerjob-field h3 i {
+        color: #96323d; }
+    .customer-wrapper .customerjob-field p {
+      color: #5c6759;
+      line-height: 1.5;
+      margin-bottom: 10px; }
+      .customer-wrapper .customerjob-field p span {
+        text-decoration: underline;
+        color: #738cb3; }
+    .customer-wrapper .customerjob-field .table-customer {
+      margin-top: 10px; }
+      .customer-wrapper .customerjob-field .table-customer table {
+        text-align: left; }
+        .customer-wrapper .customerjob-field .table-customer table tbody tr {
+          border-bottom: 1px solid #dddddd; }
+          .customer-wrapper .customerjob-field .table-customer table tbody tr th {
+            color: #000;
+            font-size: 20px; }
+          .customer-wrapper .customerjob-field .table-customer table tbody tr th,
+          .customer-wrapper .customerjob-field .table-customer table tbody tr td {
+            padding: 10px 0; }
+          .customer-wrapper .customerjob-field .table-customer table tbody tr td:nth-child(1) {
+            color: #738cb3;
+            text-decoration: underline; }
+
+.customerblock-btn {
+  margin-bottom: 2em; }
+  .customerblock-btn .btn {
+    background-color: #2ea466; }
+    .customerblock-btn .btn:hover {
+      background-color: #000; }
+
+.jobsbtn {
+  margin-bottom: 2em; }
+  .jobsbtn .btn {
+    background-color: #738cb3; }
+    .jobsbtn .btn:hover {
+      background-color: #000000; }
+    .jobsbtn .btn:nth-child(1) {
+      margin-right: 10px; }
+
+.customersitter-field {
+  margin-top: 3em;
+  margin-bottom: 5em; }
+  .customersitter-field .customerform-field {
+    margin-top: 1em;
+    margin-bottom: 2em; }
+    .customersitter-field .customerform-field #addressinput {
+      width: 100%;
+      margin-bottom: 1em; }
+    .customersitter-field .customerform-field #cityinput {
+      width: 585px;
+      margin-right: 2em; }
+    .customersitter-field .customerform-field #stateinput {
+      width: 22%;
+      margin-right: 2em; }
+    .customersitter-field .customerform-field #codeinput {
+      width: 22%; }
+  .customersitter-field .heading i {
+    color: #96323d; }
+  .customersitter-field .heading span {
+    font-weight: 300; }
+  .customersitter-field .heading .red {
+    color: #c1292f;
+    font-weight: 700; }
+  .customersitter-field .editfilter-field .editfilter-row {
+    margin-top: 2em;
+    margin-bottom: 2em; }
+    .customersitter-field .editfilter-field .editfilter-row .editfilterfield {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 74%;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-bottom: 2em; }
+  .customersitter-field .editfilter-field .editinputfield #mainstreet {
+    width: 100%;
+    margin-bottom: 1em; }
+  .customersitter-field .editfilter-field .editinputfield #seattle {
+    width: 50%;
+    margin-right: 2em;
+    margin-bottom: 1em; }
+  .customersitter-field .editfilter-field .editinputfield #block {
+    width: 21%;
+    margin-right: 2em;
+    margin-bottom: 1em; }
+  .customersitter-field .editfilter-field .editinputfield #codenumber {
+    width: 21.8%;
+    margin-bottom: 1em; }
+  .customersitter-field .editfilter-field .blockfield {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 74%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 2em; }
+    .customersitter-field .editfilter-field .blockfield .openblock .fa-clock-o {
+      color: #5c6759; }
+    .customersitter-field .editfilter-field .blockfield .openblock h4 {
+      font-size: 18px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600; }
+    .customersitter-field .editfilter-field .blockfield .openblock .timinglink {
+      display: block; }
+      .customersitter-field .editfilter-field .blockfield .openblock .timinglink a {
+        color: #738cb3;
+        font-size: 18px;
+        font-weight: 300; }
+    .customersitter-field .editfilter-field .blockfield .completeblock .fa-clock-o {
+      color: #5c6759; }
+    .customersitter-field .editfilter-field .blockfield .completeblock h4 {
+      font-size: 18px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600; }
+    .customersitter-field .editfilter-field .blockfield .completeblock .timinglink {
+      display: block; }
+      .customersitter-field .editfilter-field .blockfield .completeblock .timinglink a {
+        color: #738cb3;
+        font-size: 18px;
+        font-weight: 300; }
+  .customersitter-field .customercheckbox-field .homesearch-row .field-wrap {
+    margin-bottom: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .customersitter-field .customercheckbox-field .homesearch-row .field-wrap #income {
+      margin-bottom: 6px;
+      width: 45%; }
+      .customersitter-field .customercheckbox-field .homesearch-row .field-wrap #income #term-checkbox span {
+        font-size: 12px; }
+    .customersitter-field .customercheckbox-field .homesearch-row .field-wrap #fun {
+      width: 45%; }
+    .customersitter-field .customercheckbox-field .homesearch-row .field-wrap #sound {
+      margin-right: 24.7em; }
+
+.customerjob-field {
+  margin-top: 3em;
+  margin-bottom: 5em; }
+  .customerjob-field .button {
+    margin-bottom: 1.5em; }
+    .customerjob-field .button .btn {
+      background-color: #738cb3;
+      margin-right: 10px; }
+      .customerjob-field .button .btn:hover {
+        background-color: #000; }
+  .customerjob-field .heading span {
+    font-weight: 300; }
+  .customerjob-field .editfilter-field .editfilter-row {
+    margin-top: 2em;
+    margin-bottom: 2em; }
+    .customerjob-field .editfilter-field .editfilter-row .editfilterfield {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 74%;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-bottom: 2em; }
+  .customerjob-field .editfilter-field .editinputfield #mainstreet {
+    width: 100%;
+    margin-bottom: 1em; }
+  .customerjob-field .editfilter-field .editinputfield #seattle {
+    width: 50%;
+    margin-right: 2em;
+    margin-bottom: 1em; }
+  .customerjob-field .editfilter-field .editinputfield #block {
+    width: 21%;
+    margin-right: 2em;
+    margin-bottom: 1em; }
+  .customerjob-field .editfilter-field .editinputfield #codenumber {
+    width: 21.8%;
+    margin-bottom: 1em; }
+  .customerjob-field .editfilter-field .blockfield {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 74%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 2em; }
+    .customerjob-field .editfilter-field .blockfield .openblock .fa-clock-o {
+      color: #5c6759; }
+    .customerjob-field .editfilter-field .blockfield .openblock h4 {
+      font-size: 18px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600; }
+    .customerjob-field .editfilter-field .blockfield .openblock .timinglink {
+      display: block; }
+      .customerjob-field .editfilter-field .blockfield .openblock .timinglink a {
+        color: #738cb3;
+        font-size: 18px;
+        font-weight: 300; }
+    .customerjob-field .editfilter-field .blockfield .completeblock .fa-clock-o {
+      color: #5c6759; }
+    .customerjob-field .editfilter-field .blockfield .completeblock h4 {
+      font-size: 18px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600; }
+    .customerjob-field .editfilter-field .blockfield .completeblock .timinglink {
+      display: block; }
+      .customerjob-field .editfilter-field .blockfield .completeblock .timinglink a {
+        color: #738cb3;
+        font-size: 18px;
+        font-weight: 300; }
+  .customerjob-field .customerfield-row {
+    margin-bottom: 1.5em; }
+    .customerjob-field .customerfield-row .customerjob-col {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .customerjob-field .customerfield-row .customerjob-col .joblocationfield {
+        width: 50%; }
+        .customerjob-field .customerfield-row .customerjob-col .joblocationfield h5 {
+          line-height: 2; }
+          .customerjob-field .customerfield-row .customerjob-col .joblocationfield h5 i {
+            color: #5c6759; }
+        .customerjob-field .customerfield-row .customerjob-col .joblocationfield span {
+          color: #5c6759;
+          font-size: 22px;
+          font-weight: 300;
+          font-family: "Roboto Slab", serif;
+          line-height: 1.5; }
+      .customerjob-field .customerfield-row .customerjob-col .timeblock h5 {
+        line-height: 2; }
+        .customerjob-field .customerfield-row .customerjob-col .timeblock h5 i {
+          color: #5c6759; }
+      .customerjob-field .customerfield-row .customerjob-col .timeblock a {
+        display: block;
+        color: #738cb3; }
+  .customerjob-field .requestfield {
+    margin-top: 2em; }
+    .customerjob-field .requestfield p {
+      position: relative;
+      bottom: 10px; }
+    .customerjob-field .requestfield .radioprofile .field-wrap .profileOne {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 100%;
+      background-color: #f4efea;
+      padding-top: 1em;
+      padding-bottom: 0;
+      padding-left: 2em;
+      padding-right: 4em;
+      border-radius: 10px;
+      border: 2px solid #dddddd;
+      margin-bottom: 1em; }
+      .customerjob-field .requestfield .radioprofile .field-wrap .profileOne label {
+        position: relative;
+        top: 25px; }
+      .customerjob-field .requestfield .radioprofile .field-wrap .profileOne .image {
+        width: 100%;
+        margin-left: 35px; }
+        .customerjob-field .requestfield .radioprofile .field-wrap .profileOne .image img {
+          width: 80px;
+          height: 80px;
+          float: left;
+          margin-right: 1em;
+          border: 1px solid #5c6759; }
+        .customerjob-field .requestfield .radioprofile .field-wrap .profileOne .image h3 a {
+          color: #738cb3;
+          font-size: 18px;
+          font-family: "Roboto Slab", serif;
+          font-weight: 600;
+          font-style: normal;
+          position: relative;
+          bottom: 12px; }
+        .customerjob-field .requestfield .radioprofile .field-wrap .profileOne .image p {
+          position: relative;
+          bottom: 30px; }
+    .customerjob-field .requestfield .radioprofile .field-wrap .profileTwo {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 100%;
+      background-color: #f4efea;
+      padding-top: 1em;
+      padding-bottom: 0;
+      padding-left: 2em;
+      padding-right: 4em;
+      border-radius: 10px;
+      border: 2px solid #dddddd;
+      margin-bottom: 1em; }
+      .customerjob-field .requestfield .radioprofile .field-wrap .profileTwo label {
+        position: relative;
+        top: 25px; }
+      .customerjob-field .requestfield .radioprofile .field-wrap .profileTwo .image {
+        width: 100%;
+        margin-left: 35px; }
+        .customerjob-field .requestfield .radioprofile .field-wrap .profileTwo .image img {
+          width: 80px;
+          height: 80px;
+          float: left;
+          margin-right: 1em;
+          border: 1px solid #5c6759; }
+        .customerjob-field .requestfield .radioprofile .field-wrap .profileTwo .image h3 a {
+          color: #738cb3;
+          font-size: 18px;
+          font-family: "Roboto Slab", serif;
+          font-weight: 600;
+          font-style: normal;
+          position: relative;
+          bottom: 12px; }
+        .customerjob-field .requestfield .radioprofile .field-wrap .profileTwo .image p {
+          position: relative;
+          bottom: 30px; }
+    .customerjob-field .requestfield .radioprofile .field-wrap .clearlink {
+      color: #738cb3; }
+      .customerjob-field .requestfield .radioprofile .field-wrap .clearlink i {
+        color: #96323d; }
+  .customerjob-field .promoinput {
+    margin-top: 2em;
+    margin-bottom: 2em; }
+    .customerjob-field .promoinput .filterfield #pcode {
+      width: 575px; }
+    .customerjob-field .promoinput .btn {
+      margin-top: 1em;
+      background-color: #2ea466; }
+      .customerjob-field .promoinput .btn:hover {
+        background-color: #000; }
+  .customerjob-field .inputfieldlogged {
+    margin-top: 2em; }
+    .customerjob-field .inputfieldlogged input,
+    .customerjob-field .inputfieldlogged select {
+      margin-bottom: 1em; }
+    .customerjob-field .inputfieldlogged #b_add {
+      width: 100%; }
+    .customerjob-field .inputfieldlogged #b_city {
+      width: 575px;
+      margin-right: 2em; }
+    .customerjob-field .inputfieldlogged #b_state {
+      width: 268px;
+      margin-right: 2em; }
+    .customerjob-field .inputfieldlogged #b_code {
+      width: 268px; }
+    .customerjob-field .inputfieldlogged #c_card {
+      width: 100%; }
+    .customerjob-field .inputfieldlogged #c_opt {
+      width: 575px;
+      margin-right: 2em; }
+    .customerjob-field .inputfieldlogged #c_numb {
+      width: 575px; }
+    .customerjob-field .inputfieldlogged .expiredfield {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .customerjob-field .inputfieldlogged .expiredfield .expireddate {
+        margin-right: 2em; }
+        .customerjob-field .inputfieldlogged .expiredfield .expireddate #exp_month {
+          width: 268px;
+          margin-right: 2em; }
+        .customerjob-field .inputfieldlogged .expiredfield .expireddate #exp_year {
+          width: 265px; }
+      .customerjob-field .inputfieldlogged .expiredfield .securityfield #s_cvv {
+        width: 150px; }
+  .customerjob-field .buttonfield {
+    margin-top: 2em; }
+  .customerjob-field .paymentdetailtable {
+    margin-top: 2em; }
+    .customerjob-field .paymentdetailtable table tr th {
+      text-align: left; }
+    .customerjob-field .paymentdetailtable table tr td {
+      text-align: left;
+      font-size: 18px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 300;
+      font-style: normal;
+      position: relative;
+      border-bottom: 1px solid #dddddd;
+      border-top: 1px solid #dddddd;
+      padding: 10px 0;
+      color: #5c6759; }
+      .customerjob-field .paymentdetailtable table tr td:nth-child(2) {
+        text-align: right; }
+      .customerjob-field .paymentdetailtable table tr td .btn {
+        background-color: #2ea466; }
+        .customerjob-field .paymentdetailtable table tr td .btn:hover {
+          background-color: #000; }
+  .customerjob-field .customericon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+    .customerjob-field .customericon h6 {
+      font-size: 15px;
+      font-weight: 300;
+      float: right;
+      width: 12%; }
+      .customerjob-field .customericon h6 i {
+        font-size: 2.5em;
+        margin-right: 5px;
+        float: left; }
+      .customerjob-field .customericon h6 .fa-paw {
+        color: #96323d; }
+      .customerjob-field .customericon h6 .fa-check-square {
+        color: #738cb3; }
+  .customerjob-field .customercard-field {
+    margin-bottom: 2em;
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; }
+    .customerjob-field .customercard-field .bodypanel {
+      background-color: #738cb3;
+      padding: .5em 0 .3em 1em;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px; }
+      .customerjob-field .customercard-field .bodypanel h3 {
+        font-size: 20px;
+        font-weight: 300;
+        font-family: "Roboto Slab", serif;
+        color: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -ms-flex-line-pack: center;
+        align-content: center; }
+    .customerjob-field .customercard-field .bodytitle {
+      background-color: #f4efeb;
+      padding: 1.5em 1.5em;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px; }
+      .customerjob-field .customercard-field .bodytitle .bodyimageprofile {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+        .customerjob-field .customercard-field .bodytitle .bodyimageprofile img {
+          width: 120px;
+          height: 100px;
+          float: left;
+          margin-right: 20px; }
+        .customerjob-field .customercard-field .bodytitle .bodyimageprofile p {
+          float: right;
+          position: relative;
+          bottom: 5px; }
+        .customerjob-field .customercard-field .bodytitle .bodyimageprofile h3 {
+          text-decoration: underline;
+          font-size: 20px;
+          font-family: "Roboto Slab", serif;
+          font-weight: 700;
+          position: relative;
+          color: #738cb3;
+          line-height: 1; }
+    .customerjob-field .customercard-field .bodytitles {
+      padding: 1.5em 1.5em;
+      background-color: #f4efeb;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px; }
+      .customerjob-field .customercard-field .bodytitles .bodyimageprofiles {
+        background-color: white;
+        padding: 1.5em 1.5em;
+        border-radius: 10px;
+        border: 1px solid #dddddd; }
+        .customerjob-field .customercard-field .bodytitles .bodyimageprofiles img {
+          width: 50px;
+          height: 50px;
+          float: left;
+          margin-right: 20px;
+          border-radius: 50px;
+          margin-bottom: 1em; }
+        .customerjob-field .customercard-field .bodytitles .bodyimageprofiles .profilemessageimage {
+          float: none;
+          border-radius: 0;
+          width: 90px;
+          height: 60px;
+          margin-top: 10px;
+          margin-bottom: -10px; }
+        .customerjob-field .customercard-field .bodytitles .bodyimageprofiles span {
+          position: relative; }
+          .customerjob-field .customercard-field .bodytitles .bodyimageprofiles span::before {
+            content: "\f00e";
+            position: absolute;
+            font-family: FontAwesome;
+            color: white;
+            cursor: pointer;
+            bottom: 0;
+            right: 30px; }
+        .customerjob-field .customercard-field .bodytitles .bodyimageprofiles p {
+          position: relative;
+          bottom: 5px;
+          clear: left; }
+        .customerjob-field .customercard-field .bodytitles .bodyimageprofiles h5 {
+          text-decoration: underline;
+          font-size: 20px;
+          font-family: "Roboto Slab", serif;
+          font-weight: 700;
+          position: relative;
+          color: #738cb3;
+          line-height: 1; }
+  .customerjob-field .customermessage-field {
+    margin-bottom: 2em; }
+    .customerjob-field .customermessage-field .heading h3 i {
+      color: #96323d; }
+    .customerjob-field .customermessage-field .heading h3 span {
+      color: #738cb3;
+      text-decoration: underline; }
+    .customerjob-field .customermessage-field #message {
+      resize: none;
+      margin-bottom: 1em; }
+    .customerjob-field .customermessage-field .btn {
+      margin-right: 1em;
+      padding: .5em 1.5em; }
+    .customerjob-field .customermessage-field .uploadlink {
+      color: #738cb3;
+      font-weight: 700; }
+      .customerjob-field .customermessage-field .uploadlink i {
+        color: #96323d; }
+
+.content .content__item .btn {
+  margin-bottom: 1em;
+  background-color: #738cb3; }
+  .content .content__item .btn:hover {
+    background-color: #000; }
+
+.content .content__item p {
+  font-size: 18px;
+  margin-bottom: 1em;
+  position: relative;
+  bottom: 10px; }
+
+.content .content__item .filterbtn-field .filterresults {
+  background-color: #96323d; }
+  .content .content__item .filterbtn-field .filterresults:hover {
+    background-color: #000; }
+
+.content .customer-items table tr td .btn {
+  background-color: #2ea466; }
+
+.content .customer-items table tr td:last-child {
+  text-align: right; }
+
+.content .customer-items table tr td:nth-child(1) {
+  color: #738cb3;
+  text-decoration: underline; }
+
+.content .customer-items table tr td a {
+  font-size: 16px;
+  font-weight: 400; }
+
+.customermessagedash-field {
+  margin-top: 3em;
+  margin-bottom: 5em; }
+  .customermessagedash-field .heading {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .customermessagedash-field .heading .archivemsglink {
+      color: #738cb3;
+      font-size: 18px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600;
+      position: relative; }
+      .customermessagedash-field .heading .archivemsglink .fa-archive {
+        color: #96323d; }
+  .customermessagedash-field .customermessage-content .filter-field {
+    float: left; }
+    .customermessagedash-field .customermessage-content .filter-field h5 span {
+      font-weight: 300; }
+    .customermessagedash-field .customermessage-content .filter-field .daterange {
+      width: 60%;
+      margin-bottom: 1em; }
+  .customermessagedash-field .customermessage-content .filterkey-field #keywordinclude {
+    width: 50%; }
+  .customermessagedash-field .customermessage-content .filterbtn-field {
+    clear: left; }
+    .customermessagedash-field .customermessage-content .filterbtn-field .btn {
+      margin-bottom: 1em; }
+
+.customermsgfield-wrapper .adminmessage-field .currentlocation-field {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .customermsgfield-wrapper .adminmessage-field .currentlocation-field .customerarchivelink {
+    color: #738cb3; }
+    .customermsgfield-wrapper .adminmessage-field .currentlocation-field .customerarchivelink i {
+      color: #96323d; }
+
+.customermsgfield-wrapper .adminmessage-field .filterbtn-field {
+  margin-bottom: 1.5em; }
+
+.customermsgfield-wrapper .customerprofiletitle-field {
+  -webkit-box-align: unset;
+  -ms-flex-align: unset;
+  align-items: unset; }
+  .customermsgfield-wrapper .customerprofiletitle-field .profile-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    width: 28%; }
+  .customermsgfield-wrapper .customerprofiletitle-field .profileparagraph {
+    width: 56%;
+    margin-right: 2em; }
+  .customermsgfield-wrapper .customerprofiletitle-field .button .btn {
+    background-color: #2ea466; }
+    .customermsgfield-wrapper .customerprofiletitle-field .button .btn:hover {
+      background-color: #000; }
+
+.nomatchingcustomer-field {
+  margin-top: 3em;
+  margin-bottom: 5em; }
+  .nomatchingcustomer-field .heading p {
+    position: relative;
+    bottom: 10px; }
+  .nomatchingcustomer-field .inputfield-col {
+    margin-bottom: 1em; }
+    .nomatchingcustomer-field .inputfield-col .email {
+      width: 48%;
+      margin-right: 2em;
+      margin-bottom: 1em; }
+    .nomatchingcustomer-field .inputfield-col .code {
+      width: 48%; }
+
+@media screen and (max-width: 767px) {
+  .nomatchingcustomer-field .inputfield-col .email {
+    width: 100%; }
+  .nomatchingcustomer-field .inputfield-col .code {
+    width: 100%; }
+  .nomatchingcustomer-field .button .btn:hover {
+    background-color: #000; } }
+
+.customerjob-field .congratheading {
+  margin-bottom: 2em; }
+  .customerjob-field .congratheading h4 {
+    font-size: 2em;
+    font-weight: 300;
+    font-family: "Roboto Slab", serif;
+    position: relative;
+    color: #96323d; }
+  .customerjob-field .congratheading p {
+    color: #5c6759; }
+    .customerjob-field .congratheading p .blue-b a {
+      color: #738cb3;
+      text-decoration: underline; }
+
+.customerjob-field .totalfield h4 {
+  color: #000;
+  font-size: 20px; }
+
+.customerjob-field .totalfield h3 {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+  position: relative;
+  color: #5c6759; }
+  .customerjob-field .totalfield h3 span {
+    color: #96323d; }
+
+.customerjob-field .button .btn {
+  background-color: #738cb3; }
+
+.customerjob-field .thanksfield-col .heading h3 {
+  font-size: 35px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  color: #96323d; }
+
+.customerjob-field .thanksfield-col .billed {
+  position: relative;
+  bottom: 8px; }
+  .customerjob-field .thanksfield-col .billed h5 {
+    color: #000;
+    font-weight: 700;
+    font-family: "Roboto Slab", serif;
+    font-size: 18px; }
+    .customerjob-field .thanksfield-col .billed h5 span {
+      color: #738cb3;
+      font-weight: 600;
+      text-decoration: underline; }
+
+.customerjob-field .jobheading {
+  margin-top: 2em; }
+
+.customerjob-field .blockheading h5 {
+  color: #000;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+  position: relative;
+  line-height: 1; }
+
+.customerjob-field .blockheading small {
+  font-size: 18px;
+  position: relative;
+  bottom: 6px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #5c6759; }
+
+.customerjob-field .blockheading h4 {
+  color: #5c6759;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Roboto Slab", serif;
+  position: relative;
+  bottom: 8px; }
+  .customerjob-field .blockheading h4 span {
+    color: #96323d; }
+
+.customersignup-field .congratheading h3 {
+  font-size: 1.8em;
+  font-weight: 300;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  position: relative;
+  color: #96323d; }
+
+.customersignup-field .heading {
+  margin-bottom: 10px; }
+  .customersignup-field .heading p {
+    position: relative;
+    bottom: 15px; }
+    .customersignup-field .heading p a {
+      color: #738cb3;
+      font-weight: 600; }
+
+.customersignup-field .signup-button .sign-up {
+  padding: .6em 1.5em; }
+
+.updateprofile-field {
+  margin-top: 3em;
+  margin-bottom: 5em; }
+  .updateprofile-field .editfilter-field .editfilter-row {
+    margin-top: 2em;
+    margin-bottom: 2em; }
+    .updateprofile-field .editfilter-field .editfilter-row .editfilterfield {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 74%;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-bottom: 2em; }
+  .updateprofile-field .editfilter-field .editinputfield #fname {
+    width: 48%;
+    margin-right: 2em;
+    margin-bottom: 1em; }
+  .updateprofile-field .editfilter-field .editinputfield #lname {
+    width: 48.3%;
+    margin-bottom: 1em; }
+  .updateprofile-field .editfilter-field .editinputfield #email {
+    width: 48%;
+    margin-right: 2em;
+    margin-bottom: 1em; }
+  .updateprofile-field .editfilter-field .editinputfield #newpass {
+    width: 22.5%;
+    margin-right: 2em;
+    margin-bottom: 1em; }
+  .updateprofile-field .editfilter-field .editinputfield #confpass {
+    width: 22.2%;
+    margin-bottom: 1em; }
+
+.managestore-header {
+  background-color: #f4efeb;
+  padding: 1.5em 0; }
+  .managestore-header h2 .fa-dashboard,
+  .managestore-header h2 .fa-dollar,
+  .managestore-header h2 .fa-map-marker,
+  .managestore-header h2 .fa-envelope,
+  .managestore-header h2 .fa-bullhorn,
+  .managestore-header h2 .fa-tags,
+  .managestore-header h2 .fa-shopping-cart,
+  .managestore-header h2 .fa-check-square-o {
+    color: #738cb3; }
+  .managestore-header p {
+    text-align: center; }
+  .managestore-header .navfixed ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: -29px; }
+    .managestore-header .navfixed ul li {
+      margin-right: 2px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px; }
+      .managestore-header .navfixed ul li:nth-child(1) {
+        background: #738cb3; }
+      .managestore-header .navfixed ul li:nth-child(2) {
+        background: #5c6759; }
+      .managestore-header .navfixed ul li:nth-child(3) {
+        background: #96323d; }
+      .managestore-header .navfixed ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0 5em;
+        font-size: 24px;
+        font-family: "Roboto Slab", serif;
+        font-style: normal;
+        font-weight: 500; }
+
+.landingstore-field {
+  border-bottom: 14px solid #424242; }
+
+.blue {
+  border-bottom: 14px solid #738cb3; }
+
+.managestore-items table {
+  border-top: 0; }
+  .managestore-items table tr th {
+    border-bottom: 1px solid #dddddd;
+    border-top: 0;
+    text-align: left; }
+  .managestore-items table tr td input {
+    border-radius: 0; }
+
+.managestore-items .managestoretable table {
+  border-top: 0; }
+  .managestore-items .managestoretable table tr th {
+    border-bottom: 1px solid #dddddd;
+    border-top: 0;
+    text-align: left; }
+    .managestore-items .managestoretable table tr th:nth-child(4) {
+      text-align: center; }
+  .managestore-items .managestoretable table tr td {
+    text-align: left;
+    padding: 10px 0;
+    border-bottom: 1px solid #dddddd;
+    margin-right: 1em; }
+    .managestore-items .managestoretable table tr td:nth-child(1) {
+      width: 280px; }
+    .managestore-items .managestoretable table tr td:nth-child(2) {
+      width: 340px; }
+    .managestore-items .managestoretable table tr td:nth-child(3) {
+      width: 220px; }
+    .managestore-items .managestoretable table tr td:nth-child(4) {
+      text-align: center; }
+    .managestore-items .managestoretable table tr td input {
+      border-radius: 0;
+      text-align: center; }
+      .managestore-items .managestoretable table tr td input:nth-child(1) {
+        width: 260px; }
+      .managestore-items .managestoretable table tr td input:nth-child(2) {
+        width: 300px; }
+      .managestore-items .managestoretable table tr td input:nth-child(3) {
+        width: 200px; }
+
+.managestore-items .manageproducttbl-field table {
+  border-top: 0; }
+  .managestore-items .manageproducttbl-field table tr th {
+    border-bottom: 1px solid #dddddd;
+    border-top: 0;
+    text-align: left; }
+    .managestore-items .manageproducttbl-field table tr th:nth-child(5) {
+      text-align: right; }
+  .managestore-items .manageproducttbl-field table tr td {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "Roboto Slab", serif;
+    color: #5c6759;
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 0; }
+    .managestore-items .manageproducttbl-field table tr td a {
+      color: #738cb3; }
+    .managestore-items .manageproducttbl-field table tr td:nth-child(1) {
+      width: 25%; }
+    .managestore-items .manageproducttbl-field table tr td:nth-child(5) {
+      text-align: right; }
+    .managestore-items .manageproducttbl-field table tr td input {
+      border-radius: 0; }
+
+.managestore-items .editproduct-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .managestore-items .editproduct-input .field-wrap {
+    margin-bottom: 1em; }
+    .managestore-items .editproduct-input .field-wrap #input1 {
+      width: 575px;
+      margin-right: 2em; }
+    .managestore-items .editproduct-input .field-wrap #input2 {
+      width: 575px;
+      margin-right: 2em; }
+    .managestore-items .editproduct-input .field-wrap #input3 {
+      width: 575px;
+      margin-bottom: 1em; }
+    .managestore-items .editproduct-input .field-wrap #input11 {
+      width: 575px;
+      margin-bottom: 1em;
+      margin-right: 2em; }
+    .managestore-items .editproduct-input .field-wrap #input10 {
+      width: 575px; }
+    .managestore-items .editproduct-input .field-wrap #input8 {
+      width: 575px;
+      margin-bottom: 1em;
+      margin-right: 2em; }
+    .managestore-items .editproduct-input .field-wrap #input9 {
+      width: 585px;
+      margin-bottom: 1em; }
+    .managestore-items .editproduct-input .field-wrap .grayclr {
+      color: #5c6759; }
+    .managestore-items .editproduct-input .field-wrap #input5 {
+      width: 100%;
+      margin-bottom: 1em;
+      clear: left; }
+  .managestore-items .editproduct-input .button {
+    margin-bottom: 2em; }
+    .managestore-items .editproduct-input .button .addanotherlink {
+      color: #738cb3; }
+      .managestore-items .editproduct-input .button .addanotherlink i {
+        color: #96323d; }
+
+.managestore-items .messagefield {
+  margin-top: 1em;
+  margin-bottom: 2em; }
+
+.managestore-items .uploadlink {
+  color: #738cb3;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 17px; }
+  .managestore-items .uploadlink .fa-upload {
+    color: #96323d; }
+
+.managestore-items .galleryfield-row {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .managestore-items .galleryfield-row .galleryfield-col {
+    margin-right: 2em; }
+    .managestore-items .galleryfield-row .galleryfield-col .image {
+      width: 180px;
+      height: 180px;
+      margin-bottom: 1em; }
+      .managestore-items .galleryfield-row .galleryfield-col .image img {
+        width: 100%;
+        height: 100%; }
+  .managestore-items .galleryfield-row .select-fields {
+    width: 100%;
+    margin-bottom: 10px; }
+    .managestore-items .galleryfield-row .select-fields select {
+      width: 150px; }
+  .managestore-items .galleryfield-row select {
+    background: white;
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    padding: .4em .8em;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-weight: 300; }
+  .managestore-items .galleryfield-row .removelink {
+    color: #738cb3;
+    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-style: normal;
+    position: relative; }
+    .managestore-items .galleryfield-row .removelink .fa-window-close-o {
+      color: #96323d; }
+
+.managestore-items .managechecked-field .field-wrap {
+  display: grid; }
+  .managestore-items .managechecked-field .field-wrap label {
+    margin-bottom: 10px; }
+
+.managestore-items .managechecked-field .savebtn {
+  margin-top: 1em; }
+  .managestore-items .managechecked-field .savebtn .btn {
+    background-color: #96323d; }
+    .managestore-items .managechecked-field .savebtn .btn:hover {
+      background-color: #000; }
+
+.promos-content {
+  display: block !important;
+  margin-top: 3em;
+  margin-bottom: 5em; }
+  .promos-content .promostable-col table {
+    border-top: 0; }
+    .promos-content .promostable-col table tr {
+      padding: 20px 0; }
+      .promos-content .promostable-col table tr th {
+        text-align: left; }
+      .promos-content .promostable-col table tr td {
+        border-bottom: 1px solid #dddddd;
+        border-top: 0;
+        text-align: left;
+        padding: 8px 0;
+        width: 40%;
+        color: #5c6759;
+        font-weight: 300; }
+        .promos-content .promostable-col table tr td a {
+          color: #738cb3; }
+        .promos-content .promostable-col table tr td:nth-child(1) {
+          width: 30%; }
+        .promos-content .promostable-col table tr td:nth-child(2) {
+          width: 25%; }
+        .promos-content .promostable-col table tr td:nth-child(3) {
+          width: 20%; }
+        .promos-content .promostable-col table tr td:nth-child(4) {
+          width: 20%; }
+  .promos-content .promostable-col .promolink {
+    color: #738cb3;
+    font-size: 20px;
+    font-weight: 700; }
+    .promos-content .promostable-col .promolink i {
+      color: #96323d; }
+  .promos-content .editnewpromos-field .editfield-col {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    margin-bottom: 1.5em; }
+    .promos-content .editnewpromos-field .editfield-col .input-field #code {
+      width: 585px;
+      margin-right: 2em;
+      margin-bottom: 1em; }
+    .promos-content .editnewpromos-field .editfield-col .input-field #amount {
+      width: 585px;
+      margin-right: 2em;
+      margin-bottom: 1em; }
+    .promos-content .editnewpromos-field .editfield-col .input-field #usescust {
+      width: 585px;
+      margin-right: 2em;
+      margin-bottom: 1em; }
+    .promos-content .editnewpromos-field .editfield-col .select-fields #promoselect {
+      width: 268px;
+      margin-right: 2em;
+      margin-bottom: 1em; }
+    .promos-content .editnewpromos-field .editfield-col .select-fields #applyselect {
+      width: 268px;
+      margin-bottom: 1em; }
+    .promos-content .editnewpromos-field .editfield-col .daterange {
+      width: 375px;
+      margin-bottom: 1em; }
+    .promos-content .editnewpromos-field .editfield-col .editfield-wrap {
+      display: grid; }
+      .promos-content .editnewpromos-field .editfield-col .editfield-wrap label {
+        padding-bottom: 10px; }
+
+.order__field {
+  display: block !important;
+  margin: 3em 0 5em 0; }
+  .order__field .heading {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .order__field .heading h3 span {
+      color: #96323d; }
+    .order__field .heading .btn {
+      position: relative;
+      bottom: 10px;
+      background-color: #738cb3; }
+      .order__field .heading .btn:hover {
+        background-color: #000; }
+  .order__field .filterfield .btn {
+    margin-top: 1em;
+    background-color: #738cb3; }
+    .order__field .filterfield .btn:hover {
+      background-color: #000; }
+  .order__field .filterfield .filterbtn {
+    background-color: #96323d;
+    margin-right: 1em;
+    margin-bottom: 1em; }
+    .order__field .filterfield .filterbtn:hover {
+      background-color: #000; }
+  .order__field .ordertable-col table {
+    border-top: 0; }
+    .order__field .ordertable-col table tr {
+      padding: 20px 0; }
+      .order__field .ordertable-col table tr th {
+        text-align: left;
+        font-size: 16px;
+        font-family: "Roboto Slab", serif;
+        font-weight: 600;
+        position: relative;
+        border-bottom: 1px solid #dddddd;
+        padding-bottom: 10px; }
+      .order__field .ordertable-col table tr td {
+        border-bottom: 1px solid #dddddd;
+        border-top: 0;
+        text-align: left;
+        padding: 8px 0;
+        width: 40%;
+        color: #5c6759;
+        font-weight: 300;
+        font-size: 18px; }
+        .order__field .ordertable-col table tr td a {
+          color: #738cb3; }
+        .order__field .ordertable-col table tr td:nth-child(1) {
+          width: 10%; }
+        .order__field .ordertable-col table tr td:nth-child(2) {
+          width: 15%; }
+        .order__field .ordertable-col table tr td:nth-child(3) {
+          width: 20%; }
+        .order__field .ordertable-col table tr td:nth-child(4) {
+          width: 20%; }
+  .order__field .pagination-field ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style-type: none; }
+    .order__field .pagination-field ul li {
+      padding-right: 8px; }
+      .order__field .pagination-field ul li a {
+        color: #000;
+        font-family: "Roboto Slab", serif;
+        font-weight: 600;
+        font-size: 16px;
+        font-style: normal;
+        position: relative;
+        text-decoration: none; }
+      .order__field .pagination-field ul li .next {
+        color: #738cb3;
+        text-decoration: underline; }
+      .order__field .pagination-field ul li .nexticon {
+        color: #96323d;
+        font-size: 20px;
+        text-decoration: none; }
+  .order__field .orderdetails-field .orderdetail-col .content-range {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .order__field .orderdetails-field .orderdetail-col .content-range h6 {
+      font-size: 18px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600;
+      font-style: normal; }
+    .order__field .orderdetails-field .orderdetail-col .content-range .placedtext {
+      width: 550px; }
+  .order__field .orderdetails-field .orderdetail-col .titlebox {
+    background-color: #5c6759; }
+    .order__field .orderdetails-field .orderdetail-col .titlebox h6 {
+      color: #fff;
+      font-size: 16px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600;
+      font-style: normal;
+      padding: 10px 20px; }
+      .order__field .orderdetails-field .orderdetail-col .titlebox h6 span {
+        font-weight: 300; }
+  .order__field .orderdetails-field .orderdetail-col .storehomesearch-row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .order__field .orderdetails-field .orderdetail-col .storehomesearch-row .input-field h5 {
+      color: #5c6759; }
+    .order__field .orderdetails-field .orderdetail-col .storehomesearch-row .input-field #status {
+      width: 580px;
+      margin-right: 2em;
+      margin-bottom: 1em; }
+    .order__field .orderdetails-field .orderdetail-col .storehomesearch-row .input-field #track {
+      width: 580px;
+      margin-bottom: 1em; }
+  .order__field .orderdetails-field .orderdetail-col .content-field {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 1em; }
+    .order__field .orderdetails-field .orderdetail-col .content-field .shipto {
+      width: 585px;
+      margin-right: 2em; }
+      .order__field .orderdetails-field .orderdetail-col .content-field .shipto h5 {
+        font-size: 16px;
+        font-weight: 600;
+        font-style: normal;
+        font-family: "Roboto Slab", serif;
+        position: relative;
+        line-height: 3; }
+      .order__field .orderdetails-field .orderdetail-col .content-field .shipto h6 {
+        color: #5c6759;
+        font-size: 15px;
+        font-weight: 300;
+        font-family: "Roboto Slab", serif;
+        font-style: normal;
+        position: relative;
+        line-height: 0; }
+      .order__field .orderdetails-field .orderdetail-col .content-field .shipto p {
+        color: #5c6759;
+        font-size: 15px;
+        font-weight: 300;
+        font-family: "Roboto Slab", serif;
+        font-style: normal;
+        position: relative;
+        line-height: .1;
+        top: .4px; }
+    .order__field .orderdetails-field .orderdetail-col .content-field .billto h5 {
+      font-size: 16px;
+      font-weight: 600;
+      font-style: normal;
+      font-family: "Roboto Slab", serif;
+      position: relative;
+      line-height: 3; }
+    .order__field .orderdetails-field .orderdetail-col .content-field .billto h6 {
+      color: #5c6759;
+      font-size: 15px;
+      font-weight: 300;
+      font-family: "Roboto Slab", serif;
+      font-style: normal;
+      position: relative;
+      line-height: 0; }
+    .order__field .orderdetails-field .orderdetail-col .content-field .billto p {
+      color: #5c6759;
+      font-size: 15px;
+      font-weight: 300;
+      font-family: "Roboto Slab", serif;
+      font-style: normal;
+      position: relative;
+      line-height: .1;
+      top: .4px; }
+  .order__field .orderdetails-field .orderdetail-col .inputfield {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .order__field .orderdetails-field .orderdetail-col .inputfield #phone {
+      width: 590px;
+      margin-right: 2em;
+      color: #5c6759;
+      font-size: 16px;
+      font-weight: 300;
+      font-family: "Roboto Slab", serif;
+      font-style: normal;
+      position: relative;
+      text-align: left; }
+    .order__field .orderdetails-field .orderdetail-col .inputfield #email {
+      width: 570px;
+      color: #5c6759;
+      font-size: 16px;
+      font-weight: 300;
+      font-family: "Roboto Slab", serif;
+      font-style: normal;
+      position: relative;
+      text-align: left; }
+  .order__field .orderdetails-field .orderdetail-col .tablefield {
+    margin-top: 2em; }
+    .order__field .orderdetails-field .orderdetail-col .tablefield table {
+      border-top: 0; }
+      .order__field .orderdetails-field .orderdetail-col .tablefield table tr {
+        padding: 20px 0; }
+        .order__field .orderdetails-field .orderdetail-col .tablefield table tr th {
+          text-align: left;
+          font-size: 16px;
+          font-family: "Roboto Slab", serif;
+          font-weight: 600;
+          position: relative;
+          border-bottom: 1px solid #dddddd;
+          padding-bottom: 10px; }
+        .order__field .orderdetails-field .orderdetail-col .tablefield table tr td {
+          border-bottom: 1px solid #dddddd;
+          border-top: 0;
+          text-align: left;
+          padding: 8px 0;
+          width: 40%;
+          color: #5c6759;
+          font-weight: 300;
+          font-size: 18px; }
+          .order__field .orderdetails-field .orderdetail-col .tablefield table tr td:nth-child(1) {
+            width: 10%; }
+          .order__field .orderdetails-field .orderdetail-col .tablefield table tr td:nth-child(5) {
+            text-align: right; }
+          .order__field .orderdetails-field .orderdetail-col .tablefield table tr td a {
+            color: #738cb3; }
+  .order__field .orderdetails-field .orderdetail-col .content-row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+    .order__field .orderdetails-field .orderdetail-col .content-row .total-box {
+      background-color: #e4e4e4;
+      padding: 1em 1em;
+      width: 580px;
+      margin-right: 2em;
+      margin-bottom: 2em; }
+      .order__field .orderdetails-field .orderdetail-col .content-row .total-box ul {
+        list-style-type: none; }
+        .order__field .orderdetails-field .orderdetail-col .content-row .total-box ul li h6 {
+          font-family: "Roboto Slab", serif;
+          font-style: normal;
+          font-size: 15px;
+          font-weight: 300;
+          position: relative;
+          line-height: 1;
+          color: #424242; }
+          .order__field .orderdetails-field .orderdetail-col .content-row .total-box ul li h6 span {
+            float: right; }
+        .order__field .orderdetails-field .orderdetail-col .content-row .total-box ul li h5 {
+          font-family: "Roboto Slab", serif;
+          font-style: normal;
+          font-size: 17px;
+          font-weight: 600;
+          position: relative;
+          line-height: 1;
+          color: #000; }
+          .order__field .orderdetails-field .orderdetail-col .content-row .total-box ul li h5 span {
+            float: right;
+            color: #96323d; }
+    .order__field .orderdetails-field .orderdetail-col .content-row .promoapplied-box {
+      background-color: #e4e4e4;
+      padding: 1em 1em;
+      width: 580px;
+      margin-bottom: 2em; }
+      .order__field .orderdetails-field .orderdetail-col .content-row .promoapplied-box h6 {
+        font-size: 18px;
+        font-family: "Roboto Slab", serif;
+        font-weight: 600;
+        font-style: normal;
+        position: relative;
+        text-align: left;
+        line-height: 1;
+        color: #000; }
+      .order__field .orderdetails-field .orderdetail-col .content-row .promoapplied-box h5 {
+        color: #5c6759;
+        font-size: 17px;
+        font-family: "Roboto Slab", serif;
+        font-style: normal;
+        position: relative;
+        line-height: 1;
+        bottom: 10px; }
+
+#modal {
+  width: 800px; }
+  #modal #modal-form {
+    text-align: left; }
+    #modal #modal-form h4 {
+      color: #424242;
+      font-size: 18px;
+      text-align: left;
+      font-weight: 600;
+      margin-bottom: 10px; }
+    #modal #modal-form input,
+    #modal #modal-form select {
+      margin-bottom: 1em; }
+    #modal #modal-form select {
+      width: 50%; }
+  #modal .fancybox-close-small {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    outline: none;
+    background: transparent;
+    z-index: 10;
+    cursor: pointer; }
+    #modal .fancybox-close-small::after {
+      content: "\f2d3";
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      width: 30px;
+      height: 30px;
+      font: 20px/30px Arial, Helvetica Neue, Helvetica, sans-serif;
+      font-weight: normal;
+      color: #96323d;
+      font-weight: 300;
+      font-family: FontAwesome;
+      text-align: center;
+      border-radius: 2px;
+      border-width: 0;
+      -webkit-transition: background .25s;
+      -o-transition: background .25s;
+      transition: background .25s;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      z-index: 2; }
+    #modal .fancybox-close-small:focus {
+      outline: none; }
+
+.productstore-field {
+  margin: 3em 0 5em 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .productstore-field .productcard-col {
+    background-color: #f4efea;
+    -webkit-box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.2);
+    width: 280px;
+    padding: 1em 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border-bottom: 10px solid #738cb3;
+    border-top: 2px solid #e4e4e4;
+    border-right: 2px solid #e4e4e4;
+    border-left: 2px solid #e4e4e4; }
+    .productstore-field .productcard-col .productimage img {
+      border: 2px solid #e4e4e4;
+      height: 200px;
+      width: 100%; }
+    .productstore-field .productcard-col .productpara {
+      margin-bottom: 2em; }
+      .productstore-field .productcard-col .productpara h5 {
+        font-size: 16px;
+        font-family: "Roboto Slab", serif;
+        font-weight: 600;
+        font-style: normal;
+        color: #000;
+        text-align: left; }
+      .productstore-field .productcard-col .productpara p {
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        color: #5c6759;
+        text-align: left; }
+    .productstore-field .productcard-col .dollarsign {
+      margin-bottom: -15px; }
+      .productstore-field .productcard-col .dollarsign h4 {
+        font-size: 22px;
+        font-family: "Roboto Slab", serif;
+        font-weight: 500;
+        font-style: normal;
+        padding: 0;
+        line-height: 1; }
+    .productstore-field .productcard-col .buttonlink {
+      margin-top: 0; }
+      .productstore-field .productcard-col .buttonlink a {
+        font-size: 13px;
+        font-weight: 600;
+        font-style: normal;
+        font-family: "Roboto Slab", serif;
+        margin-right: 7px;
+        text-decoration: none; }
+      .productstore-field .productcard-col .buttonlink .addlink {
+        color: #96323d; }
+      .productstore-field .productcard-col .buttonlink .morelink {
+        color: #738cb3; }
+
+.productapparelstore-field {
+  margin: 3em 0 5em 0;
+  background-color: #f4efea;
+  padding: 1em;
+  -webkit-box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.3); }
+  .productapparelstore-field .productcard-row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: no-wrap;
+    flex-wrap: no-wrap; }
+    .productapparelstore-field .productcard-row .imageproduct {
+      margin-right: 1.5em; }
+      .productapparelstore-field .productcard-row .imageproduct .productimage {
+        width: 620px;
+        height: 400px;
+        margin-bottom: 10px;
+        border: 2px solid #e4e4e4; }
+      .productapparelstore-field .productcard-row .imageproduct .imagegallery ul {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        list-style-type: none; }
+        .productapparelstore-field .productcard-row .imageproduct .imagegallery ul li {
+          width: 70px;
+          margin-right: 10px; }
+          .productapparelstore-field .productcard-row .imageproduct .imagegallery ul li img {
+            border: 2px solid #e4e4e4; }
+    .productapparelstore-field .productcard-row .productcardtext h3 {
+      font-size: 25px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 500;
+      font-style: normal; }
+    .productapparelstore-field .productcard-row .productcardtext .price {
+      color: #000;
+      font-weight: 300;
+      font-size: 20px; }
+      .productapparelstore-field .productcard-row .productcardtext .price span {
+        color: #c1292f;
+        font-weight: 600; }
+    .productapparelstore-field .productcard-row .productcardtext p {
+      line-height: 1.2;
+      color: #000;
+      font-weight: 300;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      font-style: italic;
+      margin-bottom: 10px; }
+    .productapparelstore-field .productcard-row .productcardtext h6 {
+      font-family: "Roboto", sans-serif; }
+    .productapparelstore-field .productcard-row .productcardtext .productselect {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-bottom: 1em; }
+      .productapparelstore-field .productcard-row .productcardtext .productselect .shirtsize #sizes {
+        width: 250px;
+        margin-right: 1.5em; }
+      .productapparelstore-field .productcard-row .productcardtext .productselect .shirtsize h5 {
+        font-size: 15px; }
+      .productapparelstore-field .productcard-row .productcardtext .productselect .shirtcolor #colors {
+        width: 250px; }
+      .productapparelstore-field .productcard-row .productcardtext .productselect .shirtcolor h5 {
+        font-size: 15px; }
+
+.linknavbar ul .active {
+  background-color: white !important; }
+
+.linknavbar ul li.is-active {
+  background-color: transparent !important;
+  border-bottom: none !important; }
+
+.managestore-items {
+  display: block !important; }
+
+.shoppingcart-field {
+  margin: 3em 0 5em 0; }
+  .shoppingcart-field .shopping-col table {
+    border-top: 0; }
+    .shoppingcart-field .shopping-col table tr {
+      padding: 20px 0; }
+      .shoppingcart-field .shopping-col table tr th {
+        text-align: left;
+        font-size: 16px;
+        font-family: "Roboto Slab", serif;
+        font-weight: 600;
+        position: relative;
+        border-bottom: 1px solid #dddddd;
+        padding-bottom: 10px;
+        z-index: 1; }
+      .shoppingcart-field .shopping-col table tr td {
+        border-bottom: 1px solid #dddddd;
+        border-top: 0;
+        text-align: left;
+        padding: 8px 0;
+        width: 40%;
+        color: #5c6759;
+        font-weight: 300;
+        font-size: 18px; }
+        .shoppingcart-field .shopping-col table tr td select {
+          width: 100px; }
+        .shoppingcart-field .shopping-col table tr td:nth-child(1) {
+          width: 75%; }
+        .shoppingcart-field .shopping-col table tr td:nth-child(2) {
+          position: relative;
+          bottom: 42px;
+          width: 10%; }
+        .shoppingcart-field .shopping-col table tr td:nth-child(3) {
+          position: relative;
+          bottom: 30px;
+          width: 20%; }
+        .shoppingcart-field .shopping-col table tr td:nth-child(4) {
+          position: relative;
+          bottom: 42px;
+          width: 10%;
+          font-weight: 600; }
+        .shoppingcart-field .shopping-col table tr td img {
+          width: 110px;
+          height: 100px;
+          position: relative;
+          float: left;
+          margin-right: 2em;
+          border: 2px solid #e4e4e4; }
+        .shoppingcart-field .shopping-col table tr td h6 {
+          color: #738cb3;
+          font-size: 16px;
+          font-family: "Roboto Slab", serif;
+          font-style: normal;
+          position: relative;
+          line-height: 1; }
+        .shoppingcart-field .shopping-col table tr td p strong {
+          font-size: 14px;
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          color: #5c6759;
+          font-weight: 300;
+          position: relative;
+          line-height: 0; }
+        .shoppingcart-field .shopping-col table tr td p .size {
+          bottom: 15px; }
+        .shoppingcart-field .shopping-col table tr td p .color {
+          bottom: 40px; }
+  .shoppingcart-field .content-row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+    .shoppingcart-field .content-row .total-box {
+      background-color: #e4e4e4;
+      padding: 1em 1em;
+      width: 580px;
+      margin-bottom: 1em; }
+      .shoppingcart-field .content-row .total-box ul {
+        list-style-type: none; }
+        .shoppingcart-field .content-row .total-box ul li h6 {
+          font-family: "Roboto Slab", serif;
+          font-style: normal;
+          font-size: 15px;
+          font-weight: 300;
+          position: relative;
+          line-height: 1;
+          color: #424242; }
+          .shoppingcart-field .content-row .total-box ul li h6 span {
+            float: right; }
+        .shoppingcart-field .content-row .total-box ul li h5 {
+          font-family: "Roboto Slab", serif;
+          font-style: normal;
+          font-size: 17px;
+          font-weight: 600;
+          position: relative;
+          line-height: 1;
+          color: #000; }
+          .shoppingcart-field .content-row .total-box ul li h5 span {
+            float: right;
+            color: #96323d; }
+    .shoppingcart-field .content-row .promoapplied-box {
+      background-color: #e4e4e4;
+      padding: 1em 1em;
+      width: 580px;
+      margin-right: 2em;
+      margin-bottom: 1em; }
+      .shoppingcart-field .content-row .promoapplied-box h6 {
+        font-size: 18px;
+        font-family: "Roboto Slab", serif;
+        font-weight: 600;
+        font-style: normal;
+        position: relative;
+        text-align: left;
+        line-height: 1;
+        color: #000; }
+      .shoppingcart-field .content-row .promoapplied-box h5 {
+        color: #5c6759;
+        font-size: 17px;
+        font-family: "Roboto Slab", serif;
+        font-style: normal;
+        position: relative;
+        line-height: 1;
+        bottom: 10px; }
+      .shoppingcart-field .content-row .promoapplied-box .button {
+        margin-top: 1em; }
+        .shoppingcart-field .content-row .promoapplied-box .button .btn {
+          background-color: #738cb3; }
+          .shoppingcart-field .content-row .promoapplied-box .button .btn:hover {
+            background-color: #000; }
+      .shoppingcart-field .content-row .promoapplied-box #procode {
+        width: 50%; }
+    .shoppingcart-field .content-row .right-btn {
+      text-align: right;
+      width: 100%; }
+      .shoppingcart-field .content-row .right-btn .green-btn {
+        background-color: #2ea466;
+        font-size: 14px;
+        margin-bottom: 1em; }
+        .shoppingcart-field .content-row .right-btn .green-btn:hover {
+          background-color: #000; }
+  .shoppingcart-field .shoppingcartinput-field {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .shoppingcart-field .shoppingcartinput-field .shipadd {
+      width: 580px;
+      margin-right: 2em; }
+      .shoppingcart-field .shoppingcartinput-field .shipadd input,
+      .shoppingcart-field .shoppingcartinput-field .shipadd select {
+        margin-bottom: 1em; }
+    .shoppingcart-field .shoppingcartinput-field .billadd {
+      width: 580px; }
+      .shoppingcart-field .shoppingcartinput-field .billadd input,
+      .shoppingcart-field .shoppingcartinput-field .billadd select {
+        margin-bottom: 1em; }
+    .shoppingcart-field .shoppingcartinput-field .expired {
+      width: 580px;
+      margin-right: 2em; }
+      .shoppingcart-field .shoppingcartinput-field .expired #monthslt {
+        width: 270px;
+        margin-right: 2em; }
+      .shoppingcart-field .shoppingcartinput-field .expired #yearslt {
+        width: 265px; }
+      .shoppingcart-field .shoppingcartinput-field .expired input,
+      .shoppingcart-field .shoppingcartinput-field .expired select {
+        margin-bottom: 1em; }
+    .shoppingcart-field .shoppingcartinput-field .securitycd {
+      width: 580px; }
+      .shoppingcart-field .shoppingcartinput-field .securitycd input,
+      .shoppingcart-field .shoppingcartinput-field .securitycd select {
+        margin-bottom: 1em; }
+      .shoppingcart-field .shoppingcartinput-field .securitycd #securitycode {
+        width: 150px; }
+  .shoppingcart-field .heading h5 {
+    color: #424242; }
+  .shoppingcart-field .creditfield {
+    margin-top: 1em; }
+    .shoppingcart-field .creditfield #namecard {
+      width: 580px;
+      margin-right: 2em;
+      margin-bottom: 1em; }
+    .shoppingcart-field .creditfield #cardslt {
+      width: 580px;
+      margin-right: 2em;
+      margin-bottom: 1em; }
+    .shoppingcart-field .creditfield #creditcard {
+      width: 575px;
+      margin-bottom: 1em; }
+  .shoppingcart-field .button {
+    margin-top: 1em; }
+
+.orderreceipt-heading {
+  background-color: #f4efea;
+  padding: 1em 0;
+  text-align: center;
+  border-top: 10px solid #96323d; }
+  .orderreceipt-heading h1 {
+    font-size: 3em;
+    font-weight: 300;
+    font-family: "Roboto Slab", serif; }
+    .orderreceipt-heading h1 .fa-check-square-o {
+      color: #738cb3; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 !important;
+  box-shadow: 0 !important; }
+
+.totals-box {
+  padding: 1em 0;
+  width: 250px;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  float: right; }
+  .totals-box ul {
+    list-style-type: none; }
+    .totals-box ul li h6 {
+      font-family: "Roboto Slab", serif;
+      font-style: normal;
+      font-size: 15px;
+      font-weight: 300;
+      position: relative;
+      line-height: 1;
+      color: #424242; }
+      .totals-box ul li h6 span {
+        float: right; }
+    .totals-box ul li h5 {
+      font-family: "Roboto Slab", serif;
+      font-style: normal;
+      font-size: 17px;
+      font-weight: 600;
+      position: relative;
+      line-height: 1;
+      color: #000; }
+      .totals-box ul li h5 span {
+        float: right;
+        color: #96323d; }
+
+.print-wrap .print {
+  background-color: #738cb3;
+  position: relative;
+  top: 73px;
+  padding: 10px 1.5em; }
+  .print-wrap .print:hover {
+    background-color: #000; }
+
+.copyright {
+  background-color: #e4e4e4;
+  border-top: 0;
+  border-bottom: 0;
+  border: none;
+  padding: 10px 1.5em;
+  text-align: left; }
+  .copyright p {
+    color: #5c6759;
+    opacity: .4; }
+  .copyright::before {
+    content: '';
+    border: none;
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .copyright::after {
+    background: transparent;
+    bottom: 0; }
+
+.jobsavailable-field {
+  display: block !important; }
+
+.jobs-item {
+  display: block !important; }
+  .jobs-item table tr td a {
+    color: #738cb3; }
+  .jobs-item table tr td .button {
+    float: right; }
+    .jobs-item table tr td .button .btn {
+      color: #fff;
+      background-color: #2ea466;
+      padding: 6px 1.5em;
+      font-weight: 300;
+      font-size: 16px;
+      text-transform: uppercase; }
+    .jobs-item table tr td .button .fa-paw {
+      color: #96323d;
+      margin-right: 10px;
+      font-size: 1.4em; }
+      .jobs-item table tr td .button .fa-paw:nth-child(1) {
+        color: #c2c2c2; }
+    .jobs-item table tr td .button .fa-check-square {
+      color: #738cb3;
+      margin-right: 10px;
+      font-size: 1.4em; }
+
+.jobbtn-field {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+  .jobbtn-field .btn {
+    margin-right: 1.5em; }
+  .jobbtn-field .homesearch-row .editfield-wrap {
+    margin-top: 6px; }
+
+.jobsfield-content {
+  display: block !important; }
+  .jobsfield-content .myjobsfield table tr th {
+    text-align: left; }
+  .jobsfield-content .myjobsfield table tr td {
+    text-align: left;
+    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 0;
+    color: #5c6759; }
+    .jobsfield-content .myjobsfield table tr td:nth-child(3) {
+      padding-left: 3.5em; }
+    .jobsfield-content .myjobsfield table tr td:nth-child(4) {
+      text-align: right; }
+    .jobsfield-content .myjobsfield table tr td a {
+      color: #738cb3; }
+    .jobsfield-content .myjobsfield table tr td .fa-highlight {
+      font-size: 1.5em; }
+    .jobsfield-content .myjobsfield table tr td .fa-dark {
+      font-size: 1.5em;
+      color: #96323d; }
+  .jobsfield-content .customericon h4 {
+    margin-right: 1em;
+    font-size: 2em;
+    font-weight: 300;
+    font-family: "Roboto Slab", serif;
+    position: relative;
+    color: #5c6759;
+    bottom: 8px; }
+  .jobsfield-content .customericon h6 .fa-highlight {
+    color: #5c6759; }
+
+.pastjobsfield-content {
+  display: block !important; }
+  .pastjobsfield-content .myjobsfield table tr th {
+    text-align: left; }
+  .pastjobsfield-content .myjobsfield table tr td {
+    text-align: left;
+    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 0;
+    color: #5c6759; }
+    .pastjobsfield-content .myjobsfield table tr td:nth-child(3) {
+      padding-left: 2.5em; }
+    .pastjobsfield-content .myjobsfield table tr td:nth-child(4) {
+      padding-left: 2.5em; }
+    .pastjobsfield-content .myjobsfield table tr td .grn {
+      color: #2ea466; }
+    .pastjobsfield-content .myjobsfield table tr td .rd {
+      color: #96323d; }
+    .pastjobsfield-content .myjobsfield table tr td .fa-highlight {
+      font-size: 1.5em; }
+    .pastjobsfield-content .myjobsfield table tr td .fa-dark {
+      font-size: 1.5em;
+      color: #96323d; }
+  .pastjobsfield-content .customericon h4 {
+    margin-right: 1em;
+    font-size: 2em;
+    font-weight: 300;
+    font-family: "Roboto Slab", serif;
+    position: relative;
+    color: #5c6759;
+    bottom: 8px; }
+  .pastjobsfield-content .customericon h6 .fa-highlight {
+    color: #5c6759; }
+
+.customerjob-field .jobdetail-heading h4 {
+  font-size: 2em;
+  font-weight: 300;
+  font-family: "Roboto Slab", serif;
+  color: #96323d; }
+
+.customerjob-field .jobdetail-heading p {
+  position: relative;
+  bottom: 15px; }
+
+.customerjob-field .heading h3 .blue-text {
+  color: #738cb3;
+  text-decoration: underline; }
+
+.regularday-row {
+  margin-top: 3em;
+  margin-bottom: 5em; }
+  .regularday-row .editfieldaccount-col {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .regularday-row .editfieldaccount-col .sitteremail {
+      width: 100%;
+      margin-right: 2em;
+      margin-bottom: 1em; }
+    .regularday-row .editfieldaccount-col .sitterphysicaladdress {
+      width: 100%;
+      margin-bottom: 1em; }
+      .regularday-row .editfieldaccount-col .sitterphysicaladdress input {
+        margin-bottom: 1em; }
+      .regularday-row .editfieldaccount-col .sitterphysicaladdress #physicaladdress {
+        width: 575px;
+        margin-right: 2em; }
+      .regularday-row .editfieldaccount-col .sitterphysicaladdress #physicalname {
+        width: 575px; }
+      .regularday-row .editfieldaccount-col .sitterphysicaladdress #physicaloption {
+        width: 575px;
+        margin-right: 2em; }
+      .regularday-row .editfieldaccount-col .sitterphysicaladdress #physicalnumber {
+        width: 575px; }
+    .regularday-row .editfieldaccount-col .homesearch-account {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .regularday-row .editfieldaccount-col .homesearch-account .sittercell {
+        width: 575px; }
+        .regularday-row .editfieldaccount-col .homesearch-account .sittercell input {
+          margin-bottom: 1em; }
+        .regularday-row .editfieldaccount-col .homesearch-account .sittercell:nth-child(1) {
+          margin-right: 2em; }
+    .regularday-row .editfieldaccount-col .sitterbankdeposit {
+      margin-bottom: 2em; }
+      .regularday-row .editfieldaccount-col .sitterbankdeposit #routingnumber {
+        width: 575px;
+        margin-right: 2em; }
+      .regularday-row .editfieldaccount-col .sitterbankdeposit input {
+        margin-bottom: 1em; }
+      .regularday-row .editfieldaccount-col .sitterbankdeposit #accountnumber {
+        width: 575px; }
+  .regularday-row .savechanges-row .btn {
+    margin-right: 2em; }
+  .regularday-row .savechanges-row span .fa-power-off {
+    color: #96323d; }
+  .regularday-row .savechanges-row span .turnlink {
+    color: #738cb3; }
+
+.paymentsfield-row {
+  margin-top: 3em;
+  margin-bottom: 5em; }
+  .paymentsfield-row .heading {
+    padding-bottom: 1.3em; }
+    .paymentsfield-row .heading p {
+      color: #5c6759;
+      position: relative;
+      bottom: 10px; }
+  .paymentsfield-row .payfield {
+    padding-bottom: 1.5em; }
+    .paymentsfield-row .payfield #payselect {
+      width: 250px; }
+  .paymentsfield-row .paytable table tr th {
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 8px; }
+    .paymentsfield-row .paytable table tr th:nth-child(6) {
+      text-align: right; }
+  .paymentsfield-row .paytable table tr td {
+    text-align: left;
+    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 0;
+    color: #5c6759; }
+    .paymentsfield-row .paytable table tr td:nth-child(6) {
+      text-align: right; }
+    .paymentsfield-row .paytable table tr td a {
+      color: #738cb3; }
+  .paymentsfield-row .paytable table tr .grn {
+    color: #2ea466; }
+  .paymentsfield-row .paytable table tr .rd {
+    color: #96323d; }
+
+@media only screen and (max-width: 767px) {
+  .customer-wrapper .customerprofiletitle-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin-bottom: 1em; }
+    .customer-wrapper .customerprofiletitle-field .profile-title {
+      display: block;
+      width: 100%;
+      text-align: center; }
+      .customer-wrapper .customerprofiletitle-field .profile-title img {
+        width: 80px;
+        height: 80px; }
+      .customer-wrapper .customerprofiletitle-field .profile-title .title {
+        text-align: center; }
+    .customer-wrapper .customerprofiletitle-field .profileparagraph {
+      text-align: center;
+      width: 100%; }
+    .customer-wrapper .customerprofiletitle-field .button {
+      text-align: center;
+      width: 100%;
+      margin-top: 1em; }
+  .customersitter-field .editfilter-field .editfilter-row .editfilterfield {
+    display: block;
+    width: 100%; }
+  .customersitter-field .editfilter-field .editinputfield {
+    display: block; }
+    .customersitter-field .editfilter-field .editinputfield #mainstreet {
+      width: 100%; }
+    .customersitter-field .editfilter-field .editinputfield #seattle {
+      width: 100%; }
+    .customersitter-field .editfilter-field .editinputfield #block {
+      width: 100%; }
+    .customersitter-field .editfilter-field .editinputfield #codenumber {
+      width: 100%; }
+  .customersitter-field .editfilter-field .blockfield {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 74%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 2em; }
+    .customersitter-field .editfilter-field .blockfield .openblock .fa-clock-o {
+      color: #5c6759; }
+    .customersitter-field .editfilter-field .blockfield .openblock h4 {
+      font-size: 18px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600; }
+    .customersitter-field .editfilter-field .blockfield .openblock .timinglink {
+      display: block; }
+      .customersitter-field .editfilter-field .blockfield .openblock .timinglink a {
+        color: #738cb3;
+        font-size: 18px;
+        font-weight: 300; }
+    .customersitter-field .editfilter-field .blockfield .completeblock .fa-clock-o {
+      color: #5c6759; }
+    .customersitter-field .editfilter-field .blockfield .completeblock h4 {
+      font-size: 18px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 600; }
+    .customersitter-field .editfilter-field .blockfield .completeblock .timinglink {
+      display: block; }
+      .customersitter-field .editfilter-field .blockfield .completeblock .timinglink a {
+        color: #738cb3;
+        font-size: 18px;
+        font-weight: 300; }
+  .customersitter-field .customercheckbox-field .homesearch-row .field-wrap {
+    margin-bottom: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .customersitter-field .customercheckbox-field .homesearch-row .field-wrap #income {
+      margin-bottom: 1em;
+      width: 45%; }
+      .customersitter-field .customercheckbox-field .homesearch-row .field-wrap #income #term-checkbox span {
+        font-size: 12px; }
+    .customersitter-field .customercheckbox-field .homesearch-row .field-wrap #fun {
+      width: 45%; }
+    .customersitter-field .customercheckbox-field .homesearch-row .field-wrap #sound {
+      margin-right: 24.7em; }
+  .customersitter-field .customerform-field #addressinput {
+    width: 100%;
+    margin-bottom: 1em; }
+  .customersitter-field .customerform-field #cityinput {
+    width: 100%;
+    margin-right: 2em;
+    margin-bottom: 1em; }
+  .customersitter-field .customerform-field #stateinput {
+    width: 100%;
+    margin-right: 2em;
+    margin-bottom: 1em; }
+  .customersitter-field .customerform-field #codeinput {
+    width: 100%; }
+  .customerjob-field {
+    margin-top: 3em;
+    margin-bottom: 5em; }
+    .customerjob-field .button {
+      margin-bottom: 1.5em; }
+      .customerjob-field .button .btn {
+        background-color: #738cb3;
+        margin-right: 10px; }
+        .customerjob-field .button .btn:hover {
+          background-color: #000; }
+    .customerjob-field .inputfieldlogged {
+      margin-top: 2em; }
+      .customerjob-field .inputfieldlogged input,
+      .customerjob-field .inputfieldlogged select {
+        margin-bottom: 1em; }
+      .customerjob-field .inputfieldlogged #b_add {
+        width: 100%;
+        position: relative; }
+      .customerjob-field .inputfieldlogged #b_city {
+        width: 100% !important;
+        position: relative; }
+      .customerjob-field .inputfieldlogged #b_state {
+        width: 100% !important;
+        position: relative; }
+      .customerjob-field .inputfieldlogged #b_code {
+        width: 100% !important;
+        position: relative; }
+      .customerjob-field .inputfieldlogged #c_card {
+        width: 100% !important;
+        position: relative; }
+      .customerjob-field .inputfieldlogged #c_opt {
+        width: 100% !important;
+        position: relative; }
+      .customerjob-field .inputfieldlogged #c_numb {
+        width: 100% !important;
+        position: relative; }
+      .customerjob-field .inputfieldlogged .expiredfield .expireddate {
+        margin-right: 2em; }
+        .customerjob-field .inputfieldlogged .expiredfield .expireddate #exp_month {
+          width: 100% !important;
+          margin-right: 2em; }
+        .customerjob-field .inputfieldlogged .expiredfield .expireddate #exp_year {
+          width: 100% !important; }
+      .customerjob-field .inputfieldlogged .expiredfield .securityfield #s_cvv {
+        width: 100% !important; }
+    .customerjob-field .heading span {
+      font-weight: 300; }
+    .customerjob-field .editfilter-field .editfilter-row {
+      margin-top: 2em;
+      margin-bottom: 2em; }
+      .customerjob-field .editfilter-field .editfilter-row .editfilterfield {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 74%;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-bottom: 2em; }
+    .customerjob-field .editfilter-field .editinputfield #mainstreet {
+      width: 100%;
+      margin-bottom: 1em; }
+    .customerjob-field .editfilter-field .editinputfield #seattle {
+      width: 50%;
+      margin-right: 2em;
+      margin-bottom: 1em; }
+    .customerjob-field .editfilter-field .editinputfield #block {
+      width: 21%;
+      margin-right: 2em;
+      margin-bottom: 1em; }
+    .customerjob-field .editfilter-field .editinputfield #codenumber {
+      width: 21.8%;
+      margin-bottom: 1em; }
+    .customerjob-field .editfilter-field .blockfield {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 74%;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-bottom: 2em; }
+      .customerjob-field .editfilter-field .blockfield .openblock .fa-clock-o {
+        color: #5c6759; }
+      .customerjob-field .editfilter-field .blockfield .openblock h4 {
+        font-size: 18px;
+        font-family: "Roboto Slab", serif;
+        font-weight: 600; }
+      .customerjob-field .editfilter-field .blockfield .openblock .timinglink {
+        display: block; }
+        .customerjob-field .editfilter-field .blockfield .openblock .timinglink a {
+          color: #738cb3;
+          font-size: 18px;
+          font-weight: 300; }
+      .customerjob-field .editfilter-field .blockfield .completeblock .fa-clock-o {
+        color: #5c6759; }
+      .customerjob-field .editfilter-field .blockfield .completeblock h4 {
+        font-size: 18px;
+        font-family: "Roboto Slab", serif;
+        font-weight: 600; }
+      .customerjob-field .editfilter-field .blockfield .completeblock .timinglink {
+        display: block; }
+        .customerjob-field .editfilter-field .blockfield .completeblock .timinglink a {
+          color: #738cb3;
+          font-size: 18px;
+          font-weight: 300; }
+    .customerjob-field .customerfield-row .customerjob-col .joblocationfield {
+      width: 100%; }
+    .customerjob-field .requestfield {
+      margin-top: 2em; }
+      .customerjob-field .requestfield p {
+        position: relative;
+        bottom: 10px; }
+      .customerjob-field .requestfield .radioprofile .field-wrap .profileOne {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: #f4efea;
+        padding-top: 1em;
+        padding-bottom: 0;
+        padding-left: 2em;
+        padding-right: 4em;
+        border-radius: 10px;
+        border: 2px solid #dddddd;
+        margin-bottom: 1em; }
+        .customerjob-field .requestfield .radioprofile .field-wrap .profileOne label {
+          position: relative;
+          top: 25px; }
+        .customerjob-field .requestfield .radioprofile .field-wrap .profileOne .image {
+          width: 100%;
+          margin-left: 35px; }
+          .customerjob-field .requestfield .radioprofile .field-wrap .profileOne .image img {
+            width: 80px;
+            height: 80px;
+            float: left;
+            margin-right: 1em;
+            border: 1px solid #5c6759; }
+          .customerjob-field .requestfield .radioprofile .field-wrap .profileOne .image h3 a {
+            color: #738cb3;
+            font-size: 18px;
+            font-family: "Roboto Slab", serif;
+            font-weight: 600;
+            font-style: normal;
+            position: relative;
+            bottom: 12px; }
+          .customerjob-field .requestfield .radioprofile .field-wrap .profileOne .image p {
+            position: relative;
+            bottom: 30px; }
+      .customerjob-field .requestfield .radioprofile .field-wrap .profileTwo {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: #f4efea;
+        padding-top: 1em;
+        padding-bottom: 0;
+        padding-left: 2em;
+        padding-right: 4em;
+        border-radius: 10px;
+        border: 2px solid #dddddd;
+        margin-bottom: 1em; }
+        .customerjob-field .requestfield .radioprofile .field-wrap .profileTwo label {
+          position: relative;
+          top: 25px; }
+        .customerjob-field .requestfield .radioprofile .field-wrap .profileTwo .image {
+          width: 100%;
+          margin-left: 35px; }
+          .customerjob-field .requestfield .radioprofile .field-wrap .profileTwo .image img {
+            width: 80px;
+            height: 80px;
+            float: left;
+            margin-right: 1em;
+            border: 1px solid #5c6759; }
+          .customerjob-field .requestfield .radioprofile .field-wrap .profileTwo .image h3 a {
+            color: #738cb3;
+            font-size: 18px;
+            font-family: "Roboto Slab", serif;
+            font-weight: 600;
+            font-style: normal;
+            position: relative;
+            bottom: 12px; }
+          .customerjob-field .requestfield .radioprofile .field-wrap .profileTwo .image p {
+            position: relative;
+            bottom: 30px; }
+      .customerjob-field .requestfield .radioprofile .field-wrap .clearlink {
+        color: #738cb3; }
+        .customerjob-field .requestfield .radioprofile .field-wrap .clearlink i {
+          color: #96323d; }
+    .customerjob-field .promoinput {
+      margin-top: 2em;
+      margin-bottom: 2em; }
+      .customerjob-field .promoinput .filterfield #pcode {
+        width: 575px; }
+      .customerjob-field .promoinput .btn {
+        margin-top: 1em;
+        background-color: #2ea466; }
+        .customerjob-field .promoinput .btn:hover {
+          background-color: #000; }
+    .customerjob-field .inputfieldlogged {
+      margin-top: 2em; }
+      .customerjob-field .inputfieldlogged input,
+      .customerjob-field .inputfieldlogged select {
+        margin-bottom: 1em; }
+      .customerjob-field .inputfieldlogged #b_add {
+        width: 100%; }
+      .customerjob-field .inputfieldlogged #b_city {
+        width: 575px;
+        margin-right: 2em; }
+      .customerjob-field .inputfieldlogged #b_state {
+        width: 268px;
+        margin-right: 2em; }
+      .customerjob-field .inputfieldlogged #b_code {
+        width: 268px; }
+      .customerjob-field .inputfieldlogged #c_card {
+        width: 100%; }
+      .customerjob-field .inputfieldlogged #c_opt {
+        width: 575px;
+        margin-right: 2em; }
+      .customerjob-field .inputfieldlogged #c_numb {
+        width: 575px; }
+      .customerjob-field .inputfieldlogged .expiredfield {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+        .customerjob-field .inputfieldlogged .expiredfield .expireddate {
+          margin-right: 2em; }
+          .customerjob-field .inputfieldlogged .expiredfield .expireddate #exp_month {
+            width: 268px;
+            margin-right: 2em; }
+          .customerjob-field .inputfieldlogged .expiredfield .expireddate #exp_year {
+            width: 265px; }
+        .customerjob-field .inputfieldlogged .expiredfield .securityfield #s_cvv {
+          width: 150px; }
+    .customerjob-field .buttonfield {
+      margin-top: 2em; }
+    .customerjob-field .paymentdetailtable {
+      margin-top: 2em; }
+      .customerjob-field .paymentdetailtable table tr th {
+        text-align: left; }
+      .customerjob-field .paymentdetailtable table tr td {
+        text-align: left;
+        font-size: 18px;
+        font-family: "Roboto Slab", serif;
+        font-weight: 300;
+        font-style: normal;
+        position: relative;
+        border-bottom: 1px solid #dddddd;
+        border-top: 1px solid #dddddd;
+        padding: 10px 0;
+        color: #5c6759; }
+        .customerjob-field .paymentdetailtable table tr td:nth-child(2) {
+          text-align: right; }
+        .customerjob-field .paymentdetailtable table tr td .btn {
+          background-color: #2ea466; }
+          .customerjob-field .paymentdetailtable table tr td .btn:hover {
+            background-color: #000; }
+    .customerjob-field .customericon {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
+      .customerjob-field .customericon h6 {
+        width: 30%; }
+    .customerjob-field .customercard-field {
+      margin-bottom: 2em;
+      -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px; }
+      .customerjob-field .customercard-field .bodypanel {
+        background-color: #738cb3;
+        padding: .5em 0 .3em 1em;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; }
+        .customerjob-field .customercard-field .bodypanel h3 {
+          font-size: 20px;
+          font-weight: 300;
+          font-family: "Roboto Slab", serif;
+          color: #fff;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
+          justify-content: flex-start;
+          -ms-flex-line-pack: center;
+          align-content: center; }
+      .customerjob-field .customercard-field .bodytitle .bodyimageprofile img {
+        margin-bottom: 1em; }
+  .customermessagedash-field .customermessage-content {
+    display: block; }
+    .customermessagedash-field .customermessage-content .filter-field {
+      width: 100%;
+      float: none; }
+      .customermessagedash-field .customermessage-content .filter-field .daterange {
+        width: 100%;
+        margin-bottom: 2em; }
+    .customermessagedash-field .customermessage-content .filterkey-field #keywordinclude {
+      width: 100%; }
+    .customermessagedash-field .customermessage-content .filterbtn-field {
+      clear: left; }
+      .customermessagedash-field .customermessage-content .filterbtn-field .btn {
+        margin-bottom: 1em; }
+  .updateprofile-field .editfilter-field .editinputfield #fname,
+  .updateprofile-field .editfilter-field .editinputfield #lname,
+  .updateprofile-field .editfilter-field .editinputfield #email,
+  .updateprofile-field .editfilter-field .editinputfield #newpass,
+  .updateprofile-field .editfilter-field .editinputfield #confpass {
+    width: 100%; }
+  .managestore-items .editproduct-input .field-wrap #input1,
+  .managestore-items .editproduct-input .field-wrap #input2,
+  .managestore-items .editproduct-input .field-wrap #input3,
+  .managestore-items .editproduct-input .field-wrap #input4,
+  .managestore-items .editproduct-input .field-wrap #input8,
+  .managestore-items .editproduct-input .field-wrap #input9,
+  .managestore-items .editproduct-input .field-wrap #input10,
+  .managestore-items .editproduct-input .field-wrap #input11 {
+    width: 85vw; }
+  .managestore-items .editproduct-input .field-wrap .grayclr {
+    color: #5c6759; }
+  .managestore-items .editproduct-input .field-wrap #input5 {
+    width: 100%; }
+  .promos-content .editnewpromos-field .editfield-col .input-field #code,
+  .promos-content .editnewpromos-field .editfield-col .input-field #amount,
+  .promos-content .editnewpromos-field .editfield-col .input-field #usescust {
+    width: 85vw; }
+  .promos-content .editnewpromos-field .editfield-col .select-fields #promoselect {
+    width: 85vw; }
+  .promos-content .editnewpromos-field .editfield-col .select-fields #applyselect {
+    width: 85vw; }
+  .promos-content .editnewpromos-field .editfield-col .daterange {
+    width: 85vw; }
+  .order__field .orderdetails-field .orderdetail-col .storehomesearch-row .input-field h5 {
+    color: #5c6759; }
+  .order__field .orderdetails-field .orderdetail-col .storehomesearch-row .input-field #status {
+    width: 85vw; }
+  .order__field .orderdetails-field .orderdetail-col .storehomesearch-row .input-field #track {
+    width: 85vw; }
+  .managestore-header .navfixed ul {
+    margin-bottom: -24px; }
+    .managestore-header .navfixed ul li a {
+      padding: 0 1em;
+      font-size: 12px; }
+  .productapparelstore-field .productcard-row {
+    display: block; }
+    .productapparelstore-field .productcard-row .imageproduct {
+      margin-right: 0; }
+      .productapparelstore-field .productcard-row .imageproduct .productimage {
+        width: 100%;
+        height: 100%; }
+      .productapparelstore-field .productcard-row .imageproduct .imagegallery ul li {
+        width: 50px; }
+  .regularday-row .editfieldaccount-col .sitterphysicaladdress {
+    width: 100%;
+    margin-bottom: 1em; }
+    .regularday-row .editfieldaccount-col .sitterphysicaladdress input {
+      margin-bottom: 1em; }
+    .regularday-row .editfieldaccount-col .sitterphysicaladdress #physicaladdress {
+      width: 100%; }
+    .regularday-row .editfieldaccount-col .sitterphysicaladdress #physicalname {
+      width: 100%; }
+    .regularday-row .editfieldaccount-col .sitterphysicaladdress #physicaloption {
+      width: 100%;
+      margin-bottom: 1em; }
+    .regularday-row .editfieldaccount-col .sitterphysicaladdress #physicalnumber {
+      width: 100%; }
+  .regularday-row .editfieldaccount-col .homesearch-account .sittercell {
+    width: 100%; }
+    .regularday-row .editfieldaccount-col .homesearch-account .sittercell:nth-child(1) {
+      margin-right: 0; }
+  .regularday-row .editfieldaccount-col .sitterbankdeposit {
+    margin-bottom: 2em; }
+    .regularday-row .editfieldaccount-col .sitterbankdeposit #routingnumber {
+      width: 100%;
+      margin-right: 0; }
+    .regularday-row .editfieldaccount-col .sitterbankdeposit #accountnumber {
+      width: 100%; }
+  .regularday-row .savechanges-row {
+    display: block; }
+    .regularday-row .savechanges-row .btn {
+      margin-right: 2em; }
+    .regularday-row .savechanges-row span {
+      display: block;
+      margin-top: 1em; }
+  .content .content__item .filter-field .daterange {
+    width: 100%;
+    margin-bottom: 1em; }
+  .content .content__item .filterkey-field #keywordinclude {
+    width: 100%; }
+  .tabnavbar {
+    margin-bottom: -25px; }
+    .tabnavbar ul {
+      width: 80%; }
+      .tabnavbar ul li {
+        width: 45%; }
+        .tabnavbar ul li a {
+          font-size: 10px; }
+  .adminmessage-field .filter-field .daterange {
+    width: 100%;
+    margin-bottom: 1em; }
+  .adminmessage-field .filterkey-field #keywordincludecity {
+    width: 100%; }
+  .content .profilepending-field {
+    display: block; }
+    .content .profilepending-field .profile-image {
+      width: 100%; }
+      .content .profilepending-field .profile-image img {
+        height: 100%;
+        width: 100%; }
+    .content .profilepending-field .appliedon-field {
+      display: block;
+      position: relative;
+      right: 0; }
+      .content .profilepending-field .appliedon-field h5 {
+        margin-bottom: 1em; }
+  .promotion-wrapper .promotionform-field .promotion-row {
+    width: 100%; }
+    .promotion-wrapper .promotionform-field .promotion-row #promocode {
+      width: 100%; }
+    .promotion-wrapper .promotionform-field .promotion-row #promoselect {
+      width: 100%; }
+    .promotion-wrapper .promotionform-field .promotion-row #amountcode {
+      width: 100%; }
+    .promotion-wrapper .promotionform-field .promotion-row .daterange {
+      width: 100%; }
+  .promotion-wrapper .promobtn .btn:hover {
+    background-color: #000; }
+  .backgroundcheck-field .identification-field input,
+  .backgroundcheck-field .identification-field select {
+    margin-bottom: 1em; }
+  .backgroundcheck-field .identification-field #identificaton {
+    width: 100%; }
+  .backgroundcheck-field .identification-field #identificatonnumber {
+    width: 100%; }
+  .backgroundcheck-field .identification-field #idcard {
+    width: 100%; }
+  .backgroundcheck-field .identification-field #security {
+    width: 100%; }
+  .backgroundcheck-field .identification-field #physicalstreet {
+    width: 100%; }
+  .backgroundcheck-field .identification-field #currentcity {
+    width: 100%; }
+  .backgroundcheck-field .identification-field #currentstate {
+    width: 100%; }
+  .backgroundcheck-field .identification-field #currentzipcode {
+    width: 100%; }
+  .emergencycontact-field .contactiformation-row input {
+    margin-bottom: 1em; }
+  .emergencycontact-field .contactiformation-row #contactname {
+    width: 100%; }
+  .emergencycontact-field .contactiformation-row #contactphone {
+    width: 100%; } }

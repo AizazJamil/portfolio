@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sitahouse.com | ...because you have better things to do with your time.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../../css/style.css"> -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300i,700i" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!--[if lt IE 9]><script src="js/polyfill/html5-shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="https://rawgit.com/romulomachado/simpletabs/master/dist/simpletabs.css">
+</head>
+
+<body>
+    <!--[if IE]><div class="browserupgrade"><p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p></div><![endif]-->
+    <input id="sidebartoggler" type="checkbox">
+    <div class="page-wrap">
+        <label id="menuicon" for="sidebartoggler"> <i class="fa fa-navicon"></i></label>
+        <div class="page-content">
+            <header>
+                <div class="inner">
+                    <a class="logo" href="index.html" alt="Sitahouse.com"> <img src="../images/sitahouse-logo.svg" alt="Sitahouse Logo"></a>
+                    <div class="exit-mob"></div>
+                    <nav class="main-nav" aria-labelledby="mainnavheader">
+                        <div class="user-wrap loginNav loginNavWrap">
+                            <div class="admin-links"></div><a class="admin admin-link-row" href="edit-account-details.html"><i class="fa fa-user-circle-o"> <span>John Sitswell</span></i> <a class="admin admin-link-row" href="messages-dash.html"><i class="fa fa-envelope-o"></i><span>2</span></a></a>
+                            <div class="user-links"></div><a class="login" href="#login">Login <i class="fa fa-sign-in"></i></a>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="available.html">Job</a></li>
+                            <li><a href="payments.html">Payment</a></li>
+                            <li><a href="../manage-store/merchandise.html">Merchandise</a></li>
+                            <li> <a href="#">Help</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="slogan">
+                    <div class="inner">...because you have better things to do with your time. </div>
+                </div>
+            </header>
+            <main>
+                <div class="customer-header">
+                    <h2>Payments</h2>
+                </div>
+                <div class="inner">
+                    <div class="paymentsfield-row">
+                        <div class="heading">
+                            <h3>Your past and upcoming payments are shown below.</h3>
+                            <p>Click a job address to open the job's details. Payments are released every 2 weeks for dates completed. For jobs that span over multiple pay periods, you will be paid based on completed blocks within each pay period. Select
+                                a Pay Period to see completed blocks for that period only.</p>
+                        </div>
+                        <hr class="line-seperator">
+                        <div class="payfield">
+                            <label for=""></label>
+                            <h5>Pay Period</h5>
+                            <select name="" id="payselect">
+                                <option value="">All</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                            </select>
+                        </div>
+                        <hr class="line-seperator">
+                        <div class="paytable">
+                            <table>
+                                <tr>
+                                    <th>Job</th>
+                                    <th>#Blocks</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                    <th>Pay Date</th>
+                                    <th>Period</th>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">123 Main St,<br>Seattle, WA 94555</a></td>
+                                    <td>6</td>
+                                    <td>$330.00</td>
+                                    <td class="rd">Pending</td>
+                                    <td>02/10/2018</td>
+                                    <td>01/28/18 - 02/07/18</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">987 Microsoft Way,<br>Redmond, WA 94555</a></td>
+                                    <td>8</td>
+                                    <td>$460.00</td>
+                                    <td class="grn">Paid</td>
+                                    <td>02/10/2018</td>
+                                    <td>01/28/18 - 02/07/18</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">908 Maples Dr,<br>Issaquah, WA 93444</a></td>
+                                    <td>4</td>
+                                    <td>$240.00</td>
+                                    <td class="grn">Paid</td>
+                                    <td>02/10/2018</td>
+                                    <td>01/28/18 - 02/07/18</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <div class="inner">
+                <div class="ftrlogo">
+                    <a href="index.html"><img src="../images/sitahouse-logo-white.svg" alt="Sitahouse.com"></a>
+                </div>
+                <ul class="ftrnav">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">How it Works</a></li>
+                    <li><a href="">Merchandise</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                <ul class="ftrsocial">
+                    <li><a href="#fb"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#tw"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#ig"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#pint"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+                <p class="cpyrt">Copyright © 2018 Sitahouse.com All rights reserved. </p>
+            </div>
+        </footer>
+    </div>
+    <!--[if lt IE 9]><script src="https://code.jquery.com/jquery-1.12.3.min.js"></script><script src="js/polyfill/ie-love.js"></script><![endif]-->
+    <!--[if gt IE 8]><!-->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <!--<![endif]-->
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://rawgit.com/romulomachado/simpletabs/master/dist/simpletabs.js"></script>
+</body>
+
+</html>

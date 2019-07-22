@@ -1,0 +1,30 @@
+.inner
+    a.logo(href="index.html" alt="Sitahouse.com") 
+        img(src="images/sitahouse-logo.svg", alt="Sitahouse Logo")
+    .exit-mob
+    nav.main-nav(aria-labelledby="mainnavheader")
+        .user-wrap
+            .user-links
+                a.user(href="#profile") 
+                    i.fa.fa-user-circle-o 
+                    span.username Admin
+                //- a.messages(href="" alt="messages count")
+                //-     i.fa.fa-envelope-o
+                //-     span.msgcount 2
+            a.login(href="#logout") Logout #[i.fa.fa-sign-out]
+        
+        ul.navlinks
+            li
+                a(href="admin-dashboard.html") Dashboard
+            li
+                a(href="admin-sitters.html") Sitters
+            li
+                a(href="admin-customers.html") Customers
+            li
+                a(href="admin-jobs.html") Jobs
+            li
+                a(href="admin-promotions.html") Promotions
+            li
+                a(href="admin-payments.html") Payments
+            li 
+                a(href="admin-store.html") Store

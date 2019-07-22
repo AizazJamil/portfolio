@@ -1,0 +1,1326 @@
+// Admin Page Section
+.loginNavWrap {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    i {
+        // font-weight: 700 !important;
+        color: $accent1;
+        span {
+            color: $accent2;
+            font-weight: 700;
+        }
+    }
+    .admin {
+        border-bottom: 1px solid #dddddd;
+        border-top: 1px solid #dddddd;
+        // text-decoration: none;
+        color: $accent2;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-right: 2em;
+    }
+    .admins {
+        margin-right: 10px;
+    }
+}
+
+.main-nav .help {
+    padding: 18px;
+    display: inline-block;
+    -webkit-box-shadow: 0 0 10px -6px transparent;
+    box-shadow: 0 0 10px -6px transparent;
+    -webkit-transition: all 150ms;
+    -o-transition: all 150ms;
+    transition: all 150ms;
+    display: inline-block;
+    background: #f4efea;
+    border: solid 1px #ccc;
+    color: $accent2;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-right: -13px;
+}
+
+.main-nav .help:hover {
+    -webkit-box-shadow: 0 6px 10px -6px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 6px 10px -6px rgba(0, 0, 0, 0.8);
+}
+
+.dashbtn-lft {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    .btn {
+        background-color: $accent2;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        &:hover {
+            background-color: #000;
+        }
+    }
+}
+
+.admin-header {
+    background-color: #f4efeb;
+    padding: 1.5em 0;
+    h2 {
+        .fa-dashboard {
+            color: $accent2;
+        }
+        .fa-dollar {
+            color: $accent2;
+        }
+        .fa-map-marker {
+            color: $accent2;
+        }
+        .fa-envelope {
+            color: $accent2;
+        }
+        .fa-bullhorn {
+            color: $accent2;
+        }
+    }
+    p {
+        text-align: center;
+    }
+}
+
+.inners {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.admincircleicon-field {
+    margin-top: 2em;
+    ul {
+        display: inline-flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        justify-content: center;
+        li {
+            background-color: $accent8;
+            margin-right: 2em;
+            border-radius: 100px;
+            // padding: 2em 1em;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 2em;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+            .icon {
+                .fa {
+                    font-size: 50px;
+                    padding-top: 1em;
+                    color: $accent3;
+                }
+            }
+            .icontitle {
+                padding-top: 10px;
+                h5 {
+                    font-size: 18px;
+                    font-weight: 300;
+                    font-family: $font1;
+                }
+            }
+        }
+    }
+}
+
+.editcustomer-field {
+    margin-top: 2em;
+    h3 {
+        font-size: 25px;
+        font-family: $font1;
+        font-weight: 600;
+        font-style: normal;
+        color: $accent3;
+        text-align: left;
+    }
+    .editselect {
+        margin-bottom: 2em;
+        #active-row {
+            width: 30%;
+        }
+    }
+}
+
+.namecustomer-field {
+    margin-bottom: 2em;
+    h3 {
+        font-size: 25px;
+        font-family: $font1;
+        font-weight: 600;
+        font-style: normal;
+        color: $accent3;
+        text-align: left;
+    }
+    .cutomername-row {
+        margin-bottom: 2em;
+        #customernamefirst {
+            width: 48%;
+            margin-right: 2em;
+        }
+        #customernamelast {
+            width: 48%;
+        }
+    }
+}
+
+.emailpassword-field {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+    h3 {
+        font-size: 25px;
+        font-family: $font1;
+        font-weight: 600;
+        font-style: normal;
+        color: $accent3;
+        text-align: left;
+    }
+    .email-row {
+        #emailrow {
+            width: 578px;
+            margin-right: 2em;
+            margin-bottom: 2em;
+        }
+    }
+    .cutomername-row {
+        #createpassword {
+            width: 280px;
+            margin-right: 1em;
+        }
+        #confirmpassword {
+            width: 275px;
+        }
+    }
+}
+
+.creditcard-field {
+    h3 {
+        font-size: 25px;
+        font-family: $font1;
+        font-weight: 600;
+        font-style: normal;
+        color: $accent3;
+        text-align: left;
+    }
+    p {
+        color: $accent3;
+        position: relative;
+        bottom: 15px;
+    }
+}
+
+.creditcode-field {
+    width: 100%;
+    .creditecode-row {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        .btn {
+            position: relative;
+            bottom: 10px;
+            background-color: $accent7;
+            font-weight: 300;
+            font-size: 16px;
+            &:hover {
+                background-color: #000;
+            }
+        }
+        h5 {
+            color: $accent3;
+            font-family: $font1;
+            font-weight: 300;
+            font-style: normal;
+        }
+    }
+    .newcard-field {
+        margin-bottom: 2em;
+        .newcard {
+            color: $accent2;
+            .fa-credit-card {
+                color: $accent1;
+            }
+        }
+    }
+    .showbtn-field {
+        margin-bottom: 2em;
+        .btn {
+            background-color: $accent2;
+            &:hover {
+                background-color: #000;
+            }
+        }
+        #showpastjob {
+            margin-right: 1em;
+        }
+    }
+}
+
+.tabnavbar {
+    display: block;
+    box-shadow: inset 0 -1px 0 #cccccc;
+    text-align: center;
+    margin-bottom: -30px;
+    ul {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        li {
+            display: inline-block;
+            width: 24%;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            &.is-active {
+                background-color: #fff;
+                border-bottom: 1px solid #fff;
+            }
+            a {
+                width: 100%;
+                height: 100%;
+                display: block;
+                color: $accent2;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: 600;
+                font-family: $font1;
+                i {
+                    color: $accent1;
+                }
+            }
+        }
+    }
+}
+
+.content {
+    .content__item {
+        width: 90%;
+        margin: 40px auto;
+        h3 {
+            font-size: 25px;
+            font-family: $font1;
+            font-weight: 600;
+            font-style: normal;
+            color: $accent3;
+            text-align: left;
+        }
+        .filter-field {
+            float: left;
+            h5 {
+                font-size: 20px;
+                span {
+                    font-weight: 300;
+                }
+            }
+            .daterange {
+                width: 60%;
+                .field-wrap {
+                    #fromfilter {}
+                }
+            }
+        }
+        .filterkey-field {
+            #keywordinclude {
+                width: 51%;
+            }
+        }
+        .filterbtn-field {
+            #filterclear {
+                background-color: $accent2;
+                &:hover {
+                    background-color: #000;
+                }
+            }
+        }
+        .payperiod-field {
+            margin-bottom: 1em;
+            #payperiod-row {
+                width: 40%;
+                margin-right: 2em;
+            }
+            .report {
+                color: $accent2;
+                i {
+                    color: $accent1;
+                }
+            }
+            #summaryreport {
+                margin-right: 1em;
+            }
+        }
+    }
+    .unpaidfilter-field {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 1em;
+        #clearfilter {
+            background-color: $accent2;
+            &:hover {
+                background-color: #000;
+            }
+        }
+    }
+    .paidschedule-field {
+        display: flex;
+        .unpaidperiod {
+            margin-right: 452px;
+        }
+    }
+    .content-items {
+        .btn {
+            margin-right: 1em;
+        }
+        .report {
+            color: $accent2;
+            i {
+                color: $accent1;
+            }
+        }
+        #summaryreport02 {
+            margin-right: 1em;
+        }
+    }
+    .profilepending-field {
+        display: flex;
+        .profile-image {
+            width: 100px;
+            margin-right: 1em;
+            img {
+                height: 80px;
+                width: 100%;
+            }
+        }
+        .profile-title {
+            .profile-link {
+                color: $accent2;
+            }
+            h6 {
+                font-size: 15px;
+                font-weight: 300;
+                font-family: $font1;
+                font-style: normal;
+                span {
+                    font-weight: 600;
+                    color: $accent1;
+                }
+            }
+            .location {
+                position: relative;
+                bottom: 15px;
+                span {
+                    color: $accent5;
+                }
+            }
+        }
+        .appliedon-field {
+            display: -webkit-box;
+            position: absolute;
+            right: 60px;
+            .reviewbtn {
+                background-color: $accent7;
+                &:hover {
+                    background-color: #000;
+                }
+            }
+            .reviewbluebtn {
+                background-color: $accent2;
+            }
+            h5 {
+                position: relative;
+                top: 10px;
+                margin-right: 15px;
+                font-weight: 300;
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.content-items {
+    text-align: left;
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        th {
+            font-family: $font1;
+            font-size: 18px;
+            font-weight: 600;
+            border-top: 1px solid #dddddd;
+        }
+        td {
+            color: $accent3;
+            font-weight: 300;
+            font-family: $font1;
+            input {
+                width: 40%;
+            }
+        }
+        td,
+        th {
+            border-bottom: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            // background-color: #dddddd;
+        }
+    }
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.adminlocation-field {
+    margin-top: 2em;
+    margin-bottom: 4em;
+    .currentlocation-field {
+        h3 {
+            font-size: 25px;
+            font-family: $font1;
+            font-weight: 600;
+            font-style: normal;
+            color: $accent3;
+            text-align: left;
+        }
+        p {
+            position: relative;
+            bottom: 15px;
+            color: $accent3;
+        }
+    }
+    .location-field {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 2em;
+        h5 {
+            font-size: 18px;
+            font-weight: 600;
+            font-family: $font1;
+            span {
+                font-weight: 300;
+            }
+        }
+        #locationname {
+            width: 585px;
+            margin-bottom: 1em;
+        }
+        #zipcodelocation {
+            width: 585px;
+            margin-bottom: 1em;
+        }
+    }
+    .table-location {
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            th {
+                font-family: $font1;
+                font-size: 20px;
+                font-weight: 600;
+                font-style: normal;
+            }
+            td {
+                font-family: $font1;
+                font-weight: 300;
+                color: $accent3;
+            }
+            td,
+            th {
+                border-bottom: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+                tr:nth-child(even) {
+                    background-color: #dddddd;
+                }
+            }
+        }
+    }
+}
+
+.adminmessage-field {
+    margin-top: 2em;
+    margin-bottom: 4em;
+    .filter-field {
+        float: left;
+        h5 {
+            font-size: 20px;
+            span {
+                font-weight: 300;
+            }
+        }
+        .daterange {
+            width: 60%;
+            .field-wrap {
+                #fromfilter {}
+            }
+        }
+    }
+    .filterkey-field {
+        #keywordincludecity {
+            width: 50%;
+        }
+    }
+    .filterbtn-field {
+        #filterclear {
+            background-color: $accent2;
+            &:hover {
+                background-color: #000;
+            }
+        }
+    }
+    .messagetitle-field {
+        margin-top: 2em;
+        margin-bottom: -3em;
+        .messagefrom {
+            border-top: 1px solid #dddddd;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1em 0;
+            .datemessage {
+                font-size: 18px;
+                font-family: $font1;
+                font-weight: 300;
+                font-style: normal;
+                margin-right: 1.8em;
+            }
+            .frommessage {
+                font-size: 18px;
+                font-weight: 600;
+                font-family: $font1;
+                font-style: normal;
+                margin-right: 15px;
+            }
+            .messagename {
+                font-size: 18px;
+                font-weight: 600;
+                font-family: $font1;
+                font-style: normal;
+                // margin-right: 12em;
+                width: 20em;
+                color: $accent2;
+                text-decoration: underline;
+                .smallsb {
+                    sub {
+                        font-size: 10px;
+                        text-decoration: none;
+                        color: $accent3;
+                        font-family: $font1;
+                        font-weight: 300;
+                    }
+                }
+            }
+            .jobstreetlocation {
+                font-style: normal;
+                display: flex;
+                font-size: 18px;
+                .jobtitle {
+                    color: $accent1;
+                    font-size: 18px;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-family: $font1;
+                    margin-right: 10px;
+                }
+                .streetloc {
+                    text-decoration: underline;
+                    font-size: 18px;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-family: $font1;
+                    color: $accent2;
+                }
+            }
+        }
+        .messageto {
+            display: flex;
+            position: relative;
+            bottom: 1.5em;
+            .timeto {
+                font-size: 18px;
+                font-family: $font1;
+                font-weight: 300;
+                font-style: normal;
+                margin-right: 1em;
+            }
+            .frommessage {
+                font-size: 18px;
+                font-weight: 600;
+                font-family: $font1;
+                font-style: normal;
+                margin-right: 36px;
+            }
+            .messagename {
+                font-size: 18px;
+                font-weight: 600;
+                font-family: $font1;
+                font-style: normal;
+                // margin-right: 12em;
+                width: 20em;
+                color: $accent2;
+                text-decoration: underline;
+                .smallsb {
+                    sub {
+                        font-size: 10px;
+                        text-decoration: none;
+                        color: $accent3;
+                        font-family: $font1;
+                        font-weight: 300;
+                    }
+                }
+            }
+            .messagetitle {
+                font-family: $font2;
+                font-weight: 300;
+                font-size: 18px;
+                font-style: italic;
+                position: relative;
+                color: $accent3;
+                width: 38em;
+            }
+        }
+    }
+}
+
+.admineditjob-field {
+    margin-top: 2em;
+    margin-bottom: 3em;
+    .editjob-field {
+        margin-bottom: 1em;
+        h3 {
+            font-size: 25px;
+            font-family: $font1;
+            font-weight: 600;
+            font-style: normal;
+            color: $accent3;
+            text-align: left;
+            span {
+                font-weight: 300;
+                a {
+                    color: $accent2;
+                }
+            }
+        }
+        .field-wrap {
+            label {
+                font-weight: 600;
+                font-family: $font1;
+                font-size: 18px;
+                .editdate {
+                    font-weight: 300;
+                    margin-right: 10px;
+                }
+                .editjobvoice {
+                    .fa-file-text-o {
+                        color: $accent1;
+                    }
+                    a {
+                        color: $accent2;
+                    }
+                }
+            }
+        }
+        .fa-user-o {
+            color: $accent1;
+        }
+    }
+    .editfilter-field {
+        h3 {
+            font-size: 25px;
+            font-family: $font1;
+            font-weight: 600;
+            font-style: normal;
+            color: $accent3;
+            text-align: left;
+            .fa-calendar {
+                color: $accent1;
+            }
+            span {
+                font-weight: 300;
+            }
+        }
+        .editfilter-row {
+            margin-top: 2em;
+            margin-bottom: 2em;
+            .editfilterfield {
+                display: flex;
+                justify-content: space-between;
+                width: 74%;
+                flex-wrap: wrap;
+            }
+        }
+        .editinputfield {
+            #mainstreet {
+                width: 100%;
+                margin-bottom: 1em;
+            }
+            #seattle {
+                width: 50%;
+                margin-right: 2em;
+                margin-bottom: 1em;
+            }
+            #block {
+                width: 21%;
+                margin-right: 2em;
+                margin-bottom: 1em;
+            }
+            #codenumber {
+                width: 21.8%;
+                margin-bottom: 1em;
+            }
+        }
+        .blockfield {
+            display: flex;
+            justify-content: space-between;
+            width: 74%;
+            flex-wrap: wrap;
+            margin-bottom: 2em;
+            .openblock {
+                .fa-clock-o {
+                    color: $accent3;
+                }
+                h4 {
+                    font-size: 18px;
+                    font-family: $font1;
+                    font-weight: 600;
+                }
+                .timinglink {
+                    display: block;
+                    a {
+                        color: $accent2;
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+                }
+            }
+            .completeblock {
+                .fa-clock-o {
+                    color: $accent3;
+                }
+                h4 {
+                    font-size: 18px;
+                    font-family: $font1;
+                    font-weight: 600;
+                }
+                .timinglink {
+                    display: block;
+                    a {
+                        color: $accent2;
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+    .editpanel-field {
+        margin-top: 2em;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-bottom: 1em;
+        .bodypanel {
+            background-color: $accent2;
+            padding: 10px 1em 1px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            h4 {
+                font-weight: 300;
+                font-size: 20px;
+                color: #fff;
+                font-family: $font1;
+            }
+        }
+        .bodytitle {
+            background-color: $accent4;
+            padding: 1.2em 1.2em;
+            display: flex;
+            flex-wrap: nowrap;
+            .image-profile {
+                width: 150px;
+                margin-right: 1em;
+                img {
+                    width: 100%;
+                    border: 1px solid rgba($accent3, 0.5);
+                }
+            }
+            .nametitle {
+                h4 {
+                    text-decoration: underline;
+                    color: $accent2;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .jobmessagebtn {
+        margin-bottom: 2em;
+        .jobbtn {
+            color: $accent2;
+            .fa-envelope-o {
+                color: $accent1;
+            }
+        }
+    }
+}
+
+.admineditsitter-field {
+    margin-top: 2em;
+    margin-bottom: 4em;
+    .adminprofilesitter {
+        width: 100%;
+        display: flex;
+        // justify-content: left;
+        flex-wrap: wrap;
+        .profileeditfield {
+            max-width: 220px;
+            margin-right: 1em;
+            .profileimg {
+                width: 100%;
+            }
+        }
+        .profiletitle {
+            h3 {
+                font-size: 25px;
+                font-family: $font1;
+                font-weight: 600;
+                font-style: normal;
+                color: $accent3;
+                text-align: left;
+            }
+            #editsitteropt {
+                width: 100%;
+                margin-bottom: .6em;
+                option {
+                    color: $accent3;
+                }
+            }
+            .uploadnewbtn {
+                a {
+                    color: $accent2;
+                    .fa-upload {
+                        color: $accent1;
+                    }
+                }
+            }
+        }
+    }
+    .sittername {
+        margin-top: 2em;
+        h3 {
+            font-size: 25px;
+            font-family: $font1;
+            font-weight: 600;
+            font-style: normal;
+            color: $accent3;
+            text-align: left;
+        }
+        #firstnamesitter {
+            width: 48%;
+            margin-right: 2em;
+        }
+        #lastnamesitter {
+            width: 48%;
+            // margin-right: 2em;
+        }
+    }
+    .sitteremail {
+        margin-top: 2em;
+        h3 {
+            font-size: 25px;
+            font-family: $font1;
+            font-weight: 600;
+            font-style: normal;
+            color: $accent3;
+            text-align: left;
+        }
+    }
+    .sitterphysicaladdress {
+        margin-top: 2em;
+        h3 {
+            font-size: 25px;
+            font-family: $font1;
+            font-weight: 600;
+            font-style: normal;
+            color: $accent3;
+            text-align: left;
+        }
+        #physicaladdress {
+            width: 48%;
+            margin-right: 2em;
+            margin-bottom: 1em;
+        }
+        #physicalname {
+            width: 48%;
+            margin-bottom: 1em;
+        }
+        #physicaloption {
+            width: 48%;
+            margin-right: 2em;
+        }
+        #physicalnumber {
+            width: 20%;
+        }
+    }
+    .sittercell {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        h3 {
+            font-size: 25px;
+            font-family: $font1;
+            font-weight: 600;
+            font-style: normal;
+            color: $accent3;
+            text-align: left;
+        }
+        .resetpassword {
+            position: relative;
+            top: 1em;
+            color: $accent2;
+            .fa-unlock-alt {
+                color: $accent1;
+            }
+        }
+    }
+    .sitterbankdeposit {
+        h3 {
+            font-size: 25px;
+            font-family: $font1;
+            font-weight: 600;
+            font-style: normal;
+            color: $accent3;
+            text-align: left;
+        }
+        p {
+            position: relative;
+            bottom: .2em;
+            margin-bottom: 1em;
+        }
+        #routingnumber {
+            width: 48%;
+            margin-right: 2em;
+            margin-bottom: 2em;
+        }
+        #accountnumber {
+            width: 48%;
+            margin-bottom: 2em;
+        }
+    }
+    .employmentsitter {
+        margin-bottom: 2em;
+        h3 {
+            font-size: 25px;
+            font-family: $font1;
+            font-weight: 600;
+            font-style: normal;
+            color: $accent3;
+            text-align: left;
+        }
+        .bodyemployment {
+            .bodypanel {
+                background-color: $accent2;
+                padding: .8em 1em 1px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                h4 {
+                    color: #fff;
+                    font-weight: 300;
+                    font-family: $font1;
+                    font-style: normal;
+                    font-size: 22px;
+                }
+            }
+            .bodyfield {
+                padding: 1em 1em;
+                background-color: $accent8;
+                .CompanyName {
+                    width: 48%;
+                    margin-right: 2em;
+                    margin-bottom: 1em;
+                }
+                .EmployerLocation {
+                    width: 48%;
+                    margin-bottom: 1em;
+                }
+                .EmployerSuperviso {
+                    width: 48%;
+                    margin-right: 2em;
+                    margin-bottom: 1em;
+                }
+                .EmployerPhonenumber {
+                    width: 48%;
+                    margin-bottom: 1em;
+                }
+                .EmployerAssistant {
+                    width: 48%;
+                    margin-bottom: 1em;
+                }
+                .daterange {
+                    width: 30%;
+                    float: right;
+                    position: relative;
+                    right: 11.2em;
+                    .field-wrap {
+                        #from {
+                            padding: .4em 10px .4em 2em;
+                        }
+                        #to {
+                            padding: .4em 10px .4em 2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sitteremergencycontact {
+        margin-bottom: 2em;
+        h3 {
+            font-size: 25px;
+            font-family: $font1;
+            font-weight: 600;
+            font-style: normal;
+            color: $accent3;
+            text-align: left;
+        }
+        #emergencyname {
+            width: 48%;
+            margin-right: 2em;
+        }
+        #emergencynumber {
+            width: 48%;
+        }
+    }
+    .sitterinsuranceinformation {
+        margin-bottom: 2em;
+        h3 {
+            font-size: 25px;
+            font-family: $font1;
+            font-weight: 600;
+            font-style: normal;
+            color: $accent3;
+            text-align: left;
+        }
+        #statefarm {
+            width: 48%;
+            margin-right: 2em;
+            margin-bottom: 1em;
+        }
+        #insurancenumber {
+            width: 48%;
+            margin-bottom: 1em;
+        }
+        #insurancecurrecy {
+            width: 48%;
+            margin-bottom: 1em;
+        }
+        .viewpolicypdf {
+            .viewpolicy {
+                color: $accent2;
+                .fa-file-pdf-o {
+                    color: $accent1;
+                }
+            }
+        }
+    }
+    .sitterinsbackgroundinformation {
+        margin-bottom: 2em;
+        h3 {
+            font-size: 25px;
+            font-family: $font1;
+            font-weight: 600;
+            font-style: normal;
+            color: $accent3;
+            text-align: left;
+        }
+        #checkinformationname {
+            margin-bottom: 1em;
+            width: 100%;
+        }
+        #informationcode {
+            width: 48%;
+            margin-right: 2em;
+            margin-bottom: 1em;
+        }
+        #insuranceoption {
+            width: 25%;
+            margin-bottom: 1em;
+        }
+        #informationcodenumber {
+            width: 48%;
+        }
+        .viewinformationpdf {
+            margin-top: 1em;
+            a {
+                color: $accent2;
+                margin-right: 1em;
+                .fa {
+                    color: $accent1;
+                }
+            }
+        }
+        .customizebutton {
+            .btn {
+                background-color: $accent2;
+                &:hover {
+                    background-color: #000;
+                }
+            }
+        }
+        .customizebtn {
+            margin-bottom: 1em;
+        }
+    }
+    .traveldistance {
+        h3 {
+            font-size: 25px;
+            font-family: $font1;
+            font-weight: 600;
+            font-style: normal;
+            color: $accent3;
+            text-align: left;
+        }
+        #travelmiles {
+            width: 48%;
+        }
+    }
+    .workingpets {
+        margin-top: 2em;
+        h3 {
+            font-size: 25px;
+            font-family: $font1;
+            font-weight: 600;
+            font-style: normal;
+            color: $accent3;
+            text-align: left;
+        }
+    }
+    .profileparagraph {
+        margin-top: 2em;
+        h3 {
+            font-size: 25px;
+            font-family: $font1;
+            font-weight: 600;
+            font-style: normal;
+            color: $accent3;
+            text-align: left;
+        }
+        .paragraph-row {
+            border: 1px solid #dddddd;
+            padding: 1em 0 3em 1em;
+            border-radius: 10px;
+        }
+        .allchangedbtn {
+            margin-top: 2em;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .content {
+        .paidschedule-field {
+            display: block;
+            .unpaidperiod {
+                margin-right: 0;
+            }
+        }
+    }
+    .adminlocation-field {
+        .location-field {
+            #locationname {
+                width: 100%;
+                margin-bottom: 1em;
+            }
+            #zipcodelocation {
+                width: 100%;
+                margin-bottom: 1em;
+            }
+        }
+    }
+    .admineditjob-field {
+        .editpanel-field {
+            .bodytitle {
+                display: block;
+            }
+        }
+    }
+}
+
+.line-seperator {
+    border-top: 1px solid #ccc;
+    margin-bottom: 1em;
+}
+
+.promotion-wrapper {
+    margin-bottom: 4em;
+    margin-top: 3em;
+    .promotionform-field {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .promotion-row {
+            margin-bottom: 1em;
+            h6 {
+                font-size: 20px;
+                position: relative;
+                top: 10px;
+            }
+            #promocode {
+                width: 585px;
+                margin-right: 1.5em;
+            }
+            #promoselect {
+                width: 585px;
+            }
+            #amountcode {
+                width: 585px;
+                margin-right: 1.5em;
+            }
+            .daterange {
+                width: 400px;
+                .field-wrap {
+                    input {
+                        padding-left: 2em;
+                    }
+                }
+            }
+        }
+    }
+    .promobtn {
+        margin-bottom: 1em;
+        .btn {
+            padding: .6em 2.5em;
+        }
+    }
+    .table-promotion {
+        text-align: left;
+        table {
+            tr {
+                border-bottom: 1px solid #dddddd;
+                td,
+                th {
+                    padding: 10px 0;
+                }
+                td {
+                    color: $accent3;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

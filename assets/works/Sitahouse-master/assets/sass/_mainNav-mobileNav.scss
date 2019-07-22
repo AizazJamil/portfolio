@@ -1,0 +1,248 @@
+// ///////////////////////////////////////////////////
+// MAIN NAV STYLES ++++++++++++++++++++++++++++
+header {
+    padding: 20px 0 0;
+}
+.logo {
+    width: 5.65em;
+    font-size: responsive 35px 50px;
+    font-range: 320px 1200px;
+    display: block;
+}
+.main-nav {
+    .user-wrap {
+        font-weight: 700;
+    }
+    .user-links {
+        a {
+            color: $accent2;
+
+            i {
+                color: $accent1;
+                margin-right: .3em;
+            }
+            margin-right: .8em;
+            &:last-child {
+                margin-right: none;
+            }
+        }
+    }
+    .login {
+        background: $accent4;
+        border: solid 1px #ccc;
+        color: $accent1;
+        text-decoration: none;
+        border-radius: 8px;
+    }
+    ul {
+        li {
+            a {
+                color: $accent2;
+                font-size: responsive 18px 20px;
+                font-range: 1024px 1400px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.slogan {
+    color: white;
+    background: $accent1;
+    padding: 10px 0;
+    font-size: responsive 10px 22px;
+    box-shadow: 0 4px 10px rgba(black, .2);
+    position: relative;
+    z-index: 1;
+
+}
+@include padLess {
+    .main-nav {
+        .loginNav {
+            margin-top: 18px;
+        }
+        .user-links {
+            @include cf;
+
+            width: calc(100% - 16px);
+            .user {
+                float: left;
+                font-size: 16px;
+            }
+            .messages {
+                float: right;
+                font-size: 16px;
+            }
+        }
+        .login {
+            text-align: center;
+            width: 100%;
+            display: block;
+            padding: 6px 10px;
+            margin: 15px 0;
+
+        }
+        ul {
+            text-align: center;
+            li {
+                padding: 6px 0;
+                border-bottom: solid 1px #ccc;
+                a {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+@include padPlus {
+    .logo {
+        float: left;
+    }
+    .main-nav {
+        @include cf
+        text-align: right;
+        float: right;
+        .user-wrap {
+            margin: 10px 0 20px;
+        }
+        .login {
+            padding: 18px;
+            display: inline-block;
+            box-shadow: 0 0 10px -6px rgba(black, 0);
+            transition: all 150ms;
+            display: inline-block;
+            // float: right;
+            &:hover {
+                box-shadow: 0 6px 10px -6px rgba(black, .8);
+            }
+        }
+        .user-links {
+            display: inline-block;
+            margin-right: 20px;
+            border-top: solid 1px #ccc;
+            border-bottom: solid 1px #ccc;
+            padding: 17px 0;
+            a {
+                margin-right: 20px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+        ul {
+            li {
+                display: inline-block;
+                padding: 0 10px;
+                border-right: solid 1px #ccc;
+                line-height: 1em;
+                &:first-child {
+                    padding-left: 0;
+
+                }
+                &:last-child {
+                    padding-right: 0;
+                    border-right: none;
+                }
+                a {
+                    &:hover {
+                        color: $accent1;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+// ///////////////////////////////////////////////////
+// MOBILE MENU FUNCTION ++++++++++++++++++++++++++++++
+#sidebartoggler {
+    position: absolute;
+    top: -100px;
+    left: -9999px;
+}
+.page-wrap {
+    position: relative;
+}
+.main-nav {
+    ul {
+        list-style: none;
+    }
+}
+@include padPlus {
+    #menuicon {
+        display: none;
+    }
+}
+@include padLess {
+    #menuicon {
+        position: absolute;
+        top: 17px;
+        right: 20px;
+        z-index: 3;
+        font-size: 21px;
+        line-height: 0;
+        cursor: pointer;
+        &:after {
+            content: '';
+            background: transparent;
+            width: 35px;
+            height: 35px;
+            display: block;
+            position: absolute;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+
+        }
+    }
+    .main-nav {
+        max-width: 320px;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        box-shadow: 0 0 10px rgba(black, 0);
+        position: fixed;
+        top: 0;
+        right: -320px;
+        padding: 15px 20px 20px;
+        transition: all 300ms ease-in-out;
+        overflow: scroll;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        z-index: 2;
+    }
+    #sidebartoggler {
+        &:checked {
+
+            + .page-wrap {
+                .exit-mob {
+                    width: 100%;
+                    height: 100vh;
+                    background: rgba(white, 0);
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    z-index: 2;
+                }
+                margin: 0;
+                height: 100%;
+                overflow: hidden;
+                scroll: none;
+                .main-nav {
+                    right: 0;
+                    box-shadow: 0 0 10px rgba(black, .5);
+                }
+                #menuicon {
+                    position: fixed;
+                    top: 17px;
+                    right: 20px;
+                    // z-index: 1;
+                }
+            }
+        }
+    }
+}

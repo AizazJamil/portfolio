@@ -1,0 +1,254 @@
+@import "bourbon";
+@import "vars";
+@import "../../css/reset/_reeeset.scss";
+// ////////////////////////////////////
+// COMMON STYLES
+html {
+    font-family: $font1;
+}
+
+body {
+    background: white;
+    font-size: responsive 16px 19px;
+}
+
+p {
+    font-family: $font2;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.light {
+    font-weight: 300;
+}
+
+h1 {
+    font-size: responsive 40px 60px;
+}
+
+h2 {
+    font-size: responsive 36px 50px;
+    font-weight: 300;
+    position: relative;
+    text-align: center;
+    padding-bottom: .4em;
+    margin-bottom: .4em;
+    &:after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 50px;
+        height: 3px;
+        bottom: 0;
+        left: 50%;
+        background-color: $accent1;
+        transform: translateX(-50%);
+    }
+}
+
+h3 {
+    font-size: responsive 30px 40px;
+}
+
+h4 {
+    font-size: responsive 24px 30px;
+}
+
+h5 {
+    font-size: 19px;
+    margin-bottom: .3em;
+}
+
+.page-wrap {
+    background: white;
+    box-shadow: 0 0 15px rgba(black, .15);
+}
+
+.inner {
+    lost-center: 1240px 20px;
+    @include cf;
+}
+
+i.fa {
+    font-weight: normal !important;
+}
+
+// ////////////////////////////////////
+// SECTION PADDING STANDARD
+%pad {
+    padding: 20px 0;
+    @include padOnly {
+        padding: 30px 0;
+    }
+    @include padPlus {
+        padding: 40px 0;
+    }
+    @include fullSite {
+        padding: 70px 0;
+    }
+}
+
+// ////////////////////////////////////
+@import "homepage";
+@import "mainNav-mobileNav";
+@import "footer";
+// ////////////////////////////////////
+// BUTTONS
+.btn {
+    padding: .4em .8em .5em;
+    border-radius: .4em;
+    background-color: $accent1;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 .2em .4em rgba(black, .3);
+    @include padPlus {
+        &:hover {
+            background-color: black;
+        }
+    }
+    &.blueBtn {
+        background: $accent2;
+        @include padPlus {
+            &:hover {
+                background-color: $accent3;
+            }
+        }
+    }
+}
+
+// ////////////////////////////////////
+// INPUTS +++++++++++++++++++++++++++++
+%textinput {
+    background: white;
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    padding: .4em .8em;
+    width: 100%;
+    appearance: none;
+    font-weight: 300;
+}
+
+input[type=text] {
+    @extend %textinput;
+    // font-family: $font1;
+}
+
+select {
+    @extend %textinput;
+    // font-family: $font1;
+    padding-right: 2.2em;
+    background: url(../images/caret.svg) right .8em top 50% no-repeat #fff;
+    background-size: .6em;
+}
+
+textarea {
+    @extend %textinput;
+    font-family: $font2;
+    font-style: italic;
+    min-width: 100%;
+    // font-size: 19px;
+}
+
+label {
+    font-weight: 300;
+    &.hide {
+        position: absolute;
+        left: -9999px;
+        opacity: 0;
+    }
+}
+
+.daterange {
+    @include cf;
+    input {
+        padding-left: 2em;
+    }
+    .field-wrap {
+        lost-column: 1/2 2 40px;
+        position: relative;
+        .calIcon {
+            color: $accent2;
+            position: absolute;
+            left: .6em;
+            top: .4em;
+        }
+        &:first-child:after {
+            display: inline-block;
+            position: absolute;
+            font-family: $font2;
+            font-style: italic;
+            font-weight: 300;
+            content: 'to';
+            top: 50%;
+            right: -1.6em;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+// CHECKS AND RADIOS ...................
+@mixin checkradio($sld, $ol, $chk) {
+    // HIDE GENERIC INPUT
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    // ..................
+    +label {
+        position: relative;
+        padding-left: 1.2em;
+        margin-right: 15px;
+        &:before,
+        &:after {
+            font-family: "FontAwesome";
+            color: tint($accent2, 50);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &:before {
+            // SOLID SHAPE
+            content: $sld;
+            color: tint($accent2, 50);
+        }
+        &:after {
+            // OUTLINED SHAPE
+            content: $ol;
+            font-family: "FontAwesome";
+            color: $accent1;
+            font-size: 1.05em;
+        }
+    }
+    &:checked {
+        +label {
+            &:before {
+                visibility: hidden;
+            }
+            &:after {
+                // SELECTED STATE
+                content: $chk;
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+input[type=checkbox] {
+    // checkradio($sld,$ol,$chk)
+    @include checkradio('\f0c8', '\f096', '\f14a');
+}
+
+input[type=radio] {
+    // checkradio($sld,$ol,$chk)
+    @include checkradio('\f111', '\f1db', '\f192');
+}
+
+///////////////////////
+@import "signup";
+@import "admin";
+@import "customer";
+@import "managestore";
+@import "jobssitter";
+@import "mobileNav";

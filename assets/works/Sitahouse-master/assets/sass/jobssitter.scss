@@ -1,0 +1,328 @@
+// Jobs Sitter
+.jobsavailable-field {
+    display: block !important;
+}
+
+.jobs-item {
+    display: block !important;
+    table {
+        tr {
+            td {
+                // &:nth-child(4) {
+                //     text-align: center;
+                // }
+                a {
+                    color: $accent2;
+                }
+                .button {
+                    float: right;
+                    .btn {
+                        color: #fff;
+                        background-color: $accent7;
+                        // float: right;
+                        padding: 6px 1.5em;
+                        font-weight: 300;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                    }
+                    .fa-paw {
+                        color: $accent1;
+                        margin-right: 10px;
+                        font-size: 1.4em;
+                        &:nth-child(1) {
+                            color: #c2c2c2;
+                        }
+                    }
+                    .fa-check-square {
+                        color: $accent2;
+                        margin-right: 10px;
+                        font-size: 1.4em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.jobbtn-field {
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .btn {
+        margin-right: 1.5em;
+    }
+    .homesearch-row {
+        .editfield-wrap {
+            margin-top: 6px;
+        }
+    }
+}
+
+.jobsfield-content {
+    display: block !important;
+    .myjobsfield {
+        table {
+            tr {
+                th {
+                    text-align: left;
+                }
+                td {
+                    text-align: left;
+                    font-size: 18px;
+                    font-family: $font1;
+                    font-weight: 300;
+                    font-style: normal;
+                    position: relative;
+                    border-bottom: 1px solid #dddddd;
+                    padding: 10px 0;
+                    color: $accent3;
+                    &:nth-child(3) {
+                        padding-left: 3.5em;
+                    }
+                    &:nth-child(4) {
+                        text-align: right;
+                    }
+                    a {
+                        color: $accent2;
+                    }
+                    .fa-highlight {
+                        font-size: 1.5em;
+                    }
+                    .fa-dark {
+                        font-size: 1.5em;
+                        color: $accent1;
+                    }
+                }
+            }
+        }
+    }
+    .customericon {
+        h4 {
+            margin-right: 1em;
+            font-size: 2em;
+            font-weight: 300;
+            font-family: $font1;
+            position: relative;
+            color: $accent3;
+            bottom: 8px;
+        }
+        h6 {
+            .fa-highlight {
+                color: $accent3;
+            }
+        }
+    }
+}
+
+.pastjobsfield-content {
+    display: block !important;
+    .myjobsfield {
+        table {
+            tr {
+                th {
+                    text-align: left;
+                }
+                td {
+                    text-align: left;
+                    font-size: 18px;
+                    font-family: $font1;
+                    font-weight: 300;
+                    font-style: normal;
+                    position: relative;
+                    border-bottom: 1px solid #dddddd;
+                    padding: 10px 0;
+                    color: $accent3;
+                    &:nth-child(3) {
+                        padding-left: 2.5em;
+                    }
+                    &:nth-child(4) {
+                        // text-align: right;
+                        padding-left: 2.5em;
+                    }
+                    .grn {
+                        color: $accent7;
+                    }
+                    .rd {
+                        color: $accent1;
+                    }
+                    .fa-highlight {
+                        font-size: 1.5em;
+                    }
+                    .fa-dark {
+                        font-size: 1.5em;
+                        color: $accent1;
+                    }
+                }
+            }
+        }
+    }
+    .customericon {
+        h4 {
+            margin-right: 1em;
+            font-size: 2em;
+            font-weight: 300;
+            font-family: $font1;
+            position: relative;
+            color: $accent3;
+            bottom: 8px;
+        }
+        h6 {
+            .fa-highlight {
+                color: $accent3;
+            }
+        }
+    }
+}
+
+.customerjob-field {
+    .jobdetail-heading {
+        h4 {
+            font-size: 2em;
+            font-weight: 300;
+            font-family: $font1;
+            color: $accent1;
+        }
+        p {
+            position: relative;
+            bottom: 15px;
+        }
+    }
+    .heading {
+        h3 {
+            .blue-text {
+                color: $accent2;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.regularday-row {
+    margin-top: 3em;
+    margin-bottom: 5em;
+    .editfieldaccount-col {
+        // @include flexbox();
+        flex-wrap: wrap;
+        .sitteremail {
+            width: 100%;
+            margin-right: 2em;
+            margin-bottom: 1em;
+        }
+        .sitterphysicaladdress {
+            width: 100%;
+            margin-bottom: 1em;
+            input {
+                margin-bottom: 1em;
+            }
+            #physicaladdress {
+                width: 575px;
+                margin-right: 2em;
+            }
+            #physicalname {
+                width: 575px;
+            }
+            #physicaloption {
+                width: 575px;
+                margin-right: 2em;
+            }
+            #physicalnumber {
+                width: 575px;
+            }
+        }
+        .homesearch-account {
+            @include flexbox();
+            flex-wrap: wrap;
+            .sittercell {
+                width: 575px;
+                input {
+                    margin-bottom: 1em;
+                }
+                &:nth-child(1) {
+                    margin-right: 2em;
+                }
+            }
+        }
+        .sitterbankdeposit {
+            margin-bottom: 2em;
+            #routingnumber {
+                width: 575px;
+                margin-right: 2em;
+            }
+            input {
+                margin-bottom: 1em;
+            }
+            #accountnumber {
+                width: 575px;
+            }
+        }
+    }
+    .savechanges-row {
+        .btn {
+            margin-right: 2em;
+        }
+        span {
+            .fa-power-off {
+                color: $accent1;
+            }
+            .turnlink {
+                color: $accent2;
+            }
+        }
+    }
+}
+
+.paymentsfield-row {
+    margin-top: 3em;
+    margin-bottom: 5em;
+    .heading {
+        padding-bottom: 1.3em;
+        p {
+            color: $accent3;
+            position: relative;
+            bottom: 10px;
+        }
+    }
+    .payfield {
+        padding-bottom: 1.5em;
+        #payselect {
+            width: 250px;
+        }
+    }
+    .paytable {
+        table {
+            tr {
+                th {
+                    text-align: left;
+                    border-bottom: 1px solid #dddddd;
+                    padding-bottom: 8px;
+                    &:nth-child(6) {
+                        text-align: right;
+                    }
+                }
+                td {
+                    text-align: left;
+                    font-size: 18px;
+                    font-family: $font1;
+                    font-weight: 300;
+                    font-style: normal;
+                    position: relative;
+                    border-bottom: 1px solid #dddddd;
+                    padding: 10px 0;
+                    color: $accent3;
+                    &:nth-child(6) {
+                        text-align: right;
+                    }
+                    a {
+                        color: $accent2;
+                    }
+                }
+                .grn {
+                    color: $accent7;
+                }
+                .rd {
+                    color: $accent1;
+                }
+            }
+        }
+    }
+}

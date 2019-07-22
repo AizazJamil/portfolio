@@ -1,0 +1,109 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        title Sitahouse.com | ...because you have better things to do with your time.
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" href="css/style.css")
+        link(href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300i,700i" rel="stylesheet")
+        link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+        link(rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css")
+        <!--[if lt IE 9]><script src="js/polyfill/html5-shiv.js"></script><![endif]-->
+    body
+        <!--[if IE]><div class="browserupgrade"><p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p></div><![endif]-->
+        input#sidebartoggler(type="checkbox")
+        .page-wrap
+            label#menuicon(for="sidebartoggler") 
+                i.fa.fa-navicon
+            .page-content
+                header
+                    include navs/_loginNav.pug
+                    .slogan 
+                        .inner ...because you have better things to do with your time. 
+                                
+                main 
+                    .caro-wrap
+                        .caro-inner
+                            .main-carousel(data-flickity='{ "cellAlign": "left", "wrapAround": true, "adaptiveHeight": true , "pageDots": false, "lazyLoad": true}')
+                                .carousel-cell
+                                    img(src="images/slide-img1.png", alt="We stay when you’re away, so that you don’t have to waste your weekends or paid vacation days on mundane tasks...")
+                                .carousel-cell
+                                    img(src="images/slide-img2.jpg", alt="...tasks like overseeing scheduled repairs on the home...")
+                                .carousel-cell
+                                    img(src="images/slide-img3.jpg", alt="...receiving deliveries...")
+                                    
+                                
+                    .sitter-srch-wrap
+                        .inner
+                            h2 Sitters for All Your Needs:
+                            .sitneeds  Home Warranty Repairs, Delivery Receipts, Home Improvement Projects, Vacant Property Monitoring & Access Management, Insurance Savings & Peace of Mind 
+                            .sitneeds-icons
+                                span
+                                    img(src="images/sitter-needs-icon-1.png", alt="Sitter needs icon")
+                                    img(src="images/sitter-needs-icon-2.png", alt="Sitter needs icon")
+                                span
+                                    img(src="images/sitter-needs-icon-3.png", alt="Sitter needs icon")
+                                    img(src="images/sitter-needs-icon-4.png", alt="Sitter needs icon")
+                                span
+                                    img(src="images/sitter-needs-icon-5.png", alt="Sitter needs icon")
+                                    img(src="images/sitter-needs-icon-6.png", alt="Sitter needs icon")
+                                span
+                                    img(src="images/sitter-needs-icon-7.png", alt="Sitter needs icon")
+                                    img(src="images/sitter-needs-icon-8.png", alt="Sitter needs icon")
+                            form#sitter-srch(action="")
+                                .homesearch-col
+                                    h3 #[i.fa.fa-search] Search for a Sitter
+                                    .homesearch-row
+                                        h5 Location
+                                        .field-wrap
+                                            label.hide(for="searchloc") Location
+                                            input#searchloc(type="text" placeholder="Enter your zip code or address")
+                                    .homesearch-row 
+                                        h5 Pick your Date#[span.light (s)]
+                                        .daterange 
+                                            .field-wrap
+                                                label.hide(for="from") From
+                                                input#from(type="text")
+                                                .calIcon #[i.fa.fa-calendar]
+                                            .field-wrap 
+                                                label.hide(for="to") To
+                                                input#to(type="text")
+                                                .calIcon #[i.fa.fa-calendar]
+                                .homesearch-col 
+                                    .homesearch-row
+                                        h5 Select Time Slot#[span.light (s)]
+                                        .field-wrap 
+                                            input#eightto12(type="checkbox")
+                                            label(for="eightto12") 8AM - 12PM 
+                                            input#twelveto4(type="checkbox")    
+                                            label(for="twelveto4") 12PM - 4PM
+                                    .homesearch-row 
+                                        h5 Are pets in the home?
+                                        .field-wrap 
+                                            input#yespets(type="radio", placeholder="yes" name="petsinhome")
+                                            label(for="yespets") Yes
+                                            input#nopets(type="radio", placeholder="no" name="petsinhome")
+                                            label(for="nopets") No
+                                    .homesearch-row 
+                                        h5 Do you require pet sitting?
+                                        .field-wrap 
+                                            input#yessitting(type="radio", placeholder="yes" name="pets in home")
+                                            label(for="yessitting" name="petsitting") Yes
+                                            input#nositting(type="radio", placeholder="no" name="pets in home")
+                                            label(for="nositting" name="petsitting") No
+                                    a#searchbtn(href="#searchsitters").btn Search
+                    .about-sitters 
+                        .inner 
+                            h2 About Our Sitters
+                            p Sitahouse conducts thorough background checks on all of our house sitting candidates. Our applicants submit their application credentials and we screen for lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            .big-ctas 
+                                a(href="#sitter-srch") #[i.fa.fa-search] Find a Sitter
+                                a(href="sitter-signup.html") #[i.fa.fa-handshake-o] Become a Sitter
+            include _footer.pug
+            
+                            
+        <!--[if lt IE 9]><script src="https://code.jquery.com/jquery-1.12.3.min.js"></script><script src="js/polyfill/ie-love.js"></script><![endif]-->
+        <!--[if gt IE 8]><!--><script src="https://code.jquery.com/jquery-2.2.3.min.js"></script><!--<![endif]-->
+        script(src="js/main.js")
+        script(src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js")

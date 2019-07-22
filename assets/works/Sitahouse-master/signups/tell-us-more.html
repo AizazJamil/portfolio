@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sitahouse.com | ...because you have better things to do with your time.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../../css/style.css"> -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300i,700i" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!--[if lt IE 9]><script src="js/polyfill/html5-shiv.js"></script><![endif]-->
+</head>
+
+<body>
+    <!--[if IE]><div class="browserupgrade"><p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p></div><![endif]-->
+    <input id="sidebartoggler" type="checkbox">
+    <div class="page-wrap">
+        <label id="menuicon" for="sidebartoggler"> <i class="fa fa-navicon"></i></label>
+        <div class="page-content">
+            <header>
+                <div class="inner">
+                    <a class="logo" href="index.html" alt="Sitahouse.com"> <img src="../images/sitahouse-logo.svg" alt="Sitahouse Logo"></a>
+                    <div class="exit-mob"></div>
+                    <nav class="main-nav" aria-labelledby="mainnavheader">
+                        <div class="user-wrap loginNav">
+                            <div class="user-links"></div><a class="login" href="#login">Login <i class="fa fa-sign-in"></i></a>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="../customer/find-a-sitter.html">Search for Sitters</a></li>
+                            <li><a href="welcome.html">Become a Sitter</a></li>
+                            <li><a href="how-it-works.html">How it Works</a></li>
+                            <li><a href="../manage-store/merchandise.html">Merchandise</a></li>
+                            <li> <a href="help.html">Help</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="slogan">
+                    <div class="inner">...because you have better things to do with your time. </div>
+                </div>
+            </header>
+            <main>
+                <div class="singup-header">
+                    <h2>Tell Us More</h2>
+                    <p>Thanks for your interest in joining Sitahouse as a sitter! Ready to start making some money? We need a bit more information to approve you as a sitter</p>
+                </div>
+                <div class="signup-form-checkbox">
+                    <div class="inner">
+                        <h3>Why do you want to become a sitter? <span>(Select all that apply)</span></h3>
+                    </div>
+                    <div class="inner">
+                        <div class="checkbox-inners">
+                            <label id="income" for=""><input type="checkbox" name="vehicle" id="income-checkbox"><span>Good income opportunity</span></label>
+                            <label id="flexible" for=""><input type="checkbox" name="vehicle" id="flexible-checkbox"><span>Flexible Schedule</span></label>
+                            <br>
+                            <label id="fun" for=""><input type="checkbox" name="vehicle" id="fun-checkbox"><span>Supplements my other income</span></label>
+                            <label id="looking" for=""><input type="checkbox" name="vehicle" id="looking-checkbox"><span>Looking to build my Skills as a sitter</span></label>
+                            <br>
+                            <label id="sound" for=""><input type="checkbox" name="vehicle" id="sound-checkbox"><span>Sounds like fun</span></label>
+                            <label id="temporary" for=""><input type="checkbox" name="vehicle" id="temporary-checkbox"><span>I'm looking for temporary income</span></label>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <h3>Which best describes you:</h3>
+                        <form action="" class="select-inner">
+                            <select id="select-inner">
+                                <option value="">-- Select -- </option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="">9</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="inner">
+                        <h3>Where do you live?</h3>
+                        <p class="history-title">(Please Provide <span class="red">5 years</span> of history)</p>
+                    </div>
+                    <div class="inner">
+                        <div class="card-box-inner">
+                            <div class="body-panel">
+                                <h4>Current Residence</h4>
+                            </div>
+                            <form class="form-card">
+                                <label for="">
+                                    <input type="text" name="addres" id="street-address" placeholder="Street Address">
+                                </label>
+                                <label for="">
+                                    <input type="text" name="city" id="city" placeholder="City">
+                                </label>
+                                <label for="">
+                                    <input type="text" name="state" id="state" placeholder="State">
+                                </label>
+                                <label for="">
+                                    <input type="text" name="zipcode" id="code" placeholder="Zip Code">
+                                </label>
+                                <div class="daterange">
+                                    <div class="field-wrap">
+                                        <label class="hide" for="from">From</label>
+                                        <input id="from-calendar" type="text">
+                                        <div class="calIcon"><i class="fa fa-calendar"></i></div>
+                                    </div>
+                                    <div class="field-wrap">
+                                        <label class="hide" for="to">To</label>
+                                        <input id="to-calendar" type="text">
+                                        <div class="calIcon"><i class="fa fa-calendar"></i></div>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="add">
+                            <a href="#"><i class="fa fa-plus-circle"></i> Add Previous Residence</a>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <div class="cell-option">
+                            <h4>What is your cell phone number?</h4>
+                            <P>(We will use this number to contact you for your interview. We will also use this number to notify you of availabe jobs.)</P>
+                        </div>
+                        <div class="signup-cell">
+                            <label for=""></label>
+                            <input type="tel" id="number" placeholder="Your cell number">
+                        </div>
+                        <div class="field-wrap field-row">
+                            <input id="eightto12" type="checkbox">
+                            <label for="eightto12">I agree to receive SMS notifications from Sithouse.com. Message and data rates may apply. I can opt out at any time.</label>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <div class="card-box-inner">
+                            <div class="body-panel">
+                                <h4>Employer 1</h4>
+                            </div>
+                            <form class="form-card">
+                                <label for="">
+                                        <input type="text" name="employer" id="employer" placeholder="Employer Name">
+                                    </label>
+                                <label for="">
+                                        <input type="text" name="location" id="location" placeholder="Location">
+                                    </label>
+                                <label for="">
+                                        <input type="text" name="suoervisior" id="supervisior" placeholder="Supervisior's Name">
+                                    </label>
+                                <label for="">
+                                        <input type="tel" name="phone" id="phone-number" placeholder="Phone Number">
+                                    </label>
+                                <label for="">
+                                            <input type="text" name="job" id="jobtitle" placeholder="Your Job Title">
+                                        </label>
+                                <div class="daterange">
+                                    <div class="field-wrap">
+                                        <label class="hide" for="from">From</label>
+                                        <input id="from-calendar" type="text">
+                                        <div class="calIcon"><i class="fa fa-calendar"></i></div>
+                                    </div>
+                                    <div class="field-wrap">
+                                        <label class="hide" for="to">To</label>
+                                        <input id="to-calendar" type="text">
+                                        <div class="calIcon"><i class="fa fa-calendar"></i></div>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="add">
+                            <a href="#"><i class="fa fa-plus-circle"></i> Add Employer</a>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <div class="upload-row">
+                            <h4>Upload a Profile Picture</h4>
+                        </div>
+                        <hr class="line-seperator">
+                        <div class="signupimageprofile-row">
+                            <div class="imagefield-wrap">
+                                <div class="image">
+                                    <img src="../images/user-silhouette.png" alt="Profile Image">
+                                </div>
+                                <p>Our customers want to see who will be watching their house. We recommend a high-resolution, well-lit smilling face. Please upload a <span class="green">400x400px</span> size photo for optimum dipslay.</p>
+                                <div class="uploadfile-row">
+                                    <a href="#" class="uploadfile"><i class="fa fa-upload"></i> Upload Your File</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="line-seperator">
+                        <div class="savecontinue-row">
+                            <a href="almost-there.html" class="savecontinue-field">Save & Continue</a>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+        <footer>
+            <div class="inner">
+                <div class="ftrlogo">
+                    <a href="index.html"><img src="../images/sitahouse-logo-white.svg" alt="Sitahouse.com"></a>
+                </div>
+                <ul class="ftrnav">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">How it Works</a></li>
+                    <li><a href="">Merchandise</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                <ul class="ftrsocial">
+                    <li><a href="#fb"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#tw"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#ig"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#pint"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+                <p class="cpyrt">Copyright © 2018 Sitahouse.com All rights reserved. </p>
+            </div>
+        </footer>
+    </div>
+    <!--[if lt IE 9]><script src="https://code.jquery.com/jquery-1.12.3.min.js"></script><script src="js/polyfill/ie-love.js"></script><![endif]-->
+    <!--[if gt IE 8]><!-->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <!--<![endif]-->
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>

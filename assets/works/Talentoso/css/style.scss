@@ -1,0 +1,1742 @@
+$primary-color: #021b47;
+$gradient-blue: linear-gradient(to right, #ab8aff 0%, #4aa3f6 100%);
+$gradient-orange: linear-gradient(to right, rgba(243, 108, 131, 1) 0%, rgba(253, 160, 49, 1) 100%);
+$gradient-pink: linear-gradient(to right, rgba(185, 133, 245, 1) 0%, rgba(235, 102, 155, 1) 100%);
+$light-color: #42a5f5;
+$orange-color: #ffa726;
+$pink-color: #f06192;
+$gray-color: #a1a8b6;
+$purple-color: #b388ff;
+$white-color: #fff;
+$hover: #42a5f5;
+$font: 'Work Sans',
+sans-serif;
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    transition: $transition;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: $white-color;
+}
+
+body {
+    font-family: $font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font;
+    color: $primary-color;
+}
+
+p {
+    font-family: $font;
+    color: $primary-color;
+}
+
+a {
+    font-family: $font;
+    text-decoration: none;
+    color: $primary-color;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+b {
+    font-weight: bold;
+}
+
+.container {
+    padding-left: 60px;
+    padding-right: 0;
+    padding-top: 15px;
+    padding-bottom: 0;
+    max-width: 1350px;
+}
+
+
+/*--------------------------------------------------------------------
+                      Navigation Top
+--------------------------------------------------------------------*/
+
+#navigation {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: transparent;
+    .logo-left {
+        float: left;
+        display: block;
+        position: relative;
+        .logo {
+            width: auto;
+            height: auto;
+        }
+    }
+    .navbar-nav {
+        margin: 1em auto;
+        padding: 0;
+        .navbar-list {
+            list-style: none;
+            display: flex;
+            padding: 0 2em 0 0;
+            float: right;
+            li a {
+                font-family: $font;
+                font-weight: 300;
+                font-size: 1.05rem;
+                color: $primary-color;
+                margin-right: 3em;
+                display: block;
+                position: relative;
+                z-index: 1;
+                visibility: visible;
+                @include transition(0.6s ease);
+                &:hover {
+                    color: $hover;
+                    @include transition(0.6s ease);
+                }
+            }
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------------
+                      Header Section
+--------------------------------------------------------------------*/
+
+#header {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: $white-color;
+    .heading {
+        .title {
+            position: relative;
+            width: 50%;
+            padding: 4em 0 0 0;
+            display: block;
+            visibility: visible;
+            z-index: 1;
+            font-family: $font;
+            font-size: 3em;
+            font-weight: bold;
+        }
+        .sub-title {
+            font-size: 1.30rem;
+            font-family: $font;
+            font-weight: 100;
+            color: $primary-color;
+            position: relative;
+            width: 45%;
+            padding: 1em 0 0 0;
+            z-index: 2;
+        }
+        /*------------ button ------------*/
+        .button {
+            width: 15%;
+            height: 3em;
+            position: relative;
+            display: block;
+            // text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: 300% 100%;
+            background-image: linear-gradient(to right, #ab89fe, #48a3f5, #48a3f5, #ab89fe);
+            box-shadow: 0 4px 15px 0 rgba(171, 137, 254, 0.75);
+            @include border-radius(2em);
+            @include transition(all 0.6s ease-in-out);
+            top: 2em;
+            color: $white-color;
+            font-family: $font;
+            font-size: 1rem;
+            font-weight: 700;
+            &:hover {
+                background-position: 100% 0;
+                background-image: linear-gradient(to right, #48a3f5, #ab89fe, #ab89fe, #48a3f5);
+                @include transition(all 0.6s ease-in-out);
+            }
+        }
+        span {
+            display: block;
+            position: relative;
+            bottom: .6em;
+            float: right;
+            width: 83%;
+            padding: 0;
+            margin: 0;
+            color: $primary-color;
+            font-family: $font;
+            font-size: 1rem;
+            font-weight: 500;
+            z-index: 2;
+            a {
+                color: $light-color;
+                font-size: 1.30rem;
+                font-family: $font;
+                font-weight: bold;
+                @include transition(0.6s ease);
+                &:hover {
+                    color: $purple-color;
+                    @include transition(0.6s ease);
+                }
+            }
+        }
+    }
+    .image-right {
+        margin: 0;
+        padding: 0;
+        display: block;
+        // width: 100%;
+        img {
+            max-width: 350px;
+            height: auto;
+            display: block;
+            position: absolute;
+            top: 9.3em;
+            right: 10em;
+            float: right;
+            vertical-align: middle;
+            z-index: 1;
+        }
+        .lines {
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        .line-bg {
+            float: right;
+            .line-row {
+                position: relative;
+                left: 0;
+                float: right;
+                display: flex;
+                top: -15em;
+                .dot-violet {
+                    background-color: $pink-color;
+                    color: $pink-color;
+                    width: 1.2em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    border-radius: 20em;
+                    margin-right: 5em;
+                    left: -20em;
+                    -webkit-animation: rainbowblue 18s ease infinite;
+                    -moz-animation: rainbowblue 18s ease infinite;
+                    -ms-animation: rainbowblue 18s ease infinite;
+                    animation: rainbowblue 18s ease infinite;
+                }
+                .dot-yellow {
+                    background-color: $orange-color;
+                    color: $orange-color;
+                    width: 1.2em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    border-radius: 20em;
+                    margin-right: 1em;
+                    left: -2em;
+                    -webkit-animation: rainbowpink 20s ease infinite;
+                    -moz-animation: rainbowpink 20s ease infinite;
+                    -ms-animation: rainbowpink 20s ease infinite;
+                    animation: rainbowpink 20s ease infinite;
+                }
+                .dot-blue-big {
+                    background-color: $light-color;
+                    color: $light-color;
+                    width: 4em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    border-radius: 20em;
+                    left: -2em;
+                    -webkit-animation: rainbowviolet 22s ease infinite;
+                    -moz-animation: rainbowviolet 22s ease infinite;
+                    -ms-animation: rainbowviolet 22s ease infinite;
+                    animation: rainbowviolet 22s ease infinite;
+                }
+                .dot-violet2a {
+                    background-color: $pink-color;
+                    color: $pink-color;
+                    width: 1.2em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    top: 4em;
+                    border-radius: 20em;
+                    margin-right: 1em;
+                    left: -3em;
+                    -webkit-animation: rainbowblue 18s ease infinite;
+                    -moz-animation: rainbowblue 18s ease infinite;
+                    -ms-animation: rainbowblue 18s ease infinite;
+                    animation: rainbowblue 18s ease infinite;
+                }
+                .dot-blue-big2a {
+                    background-color: $light-color;
+                    color: $light-color;
+                    width: 10em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    border-radius: 20em;
+                    top: 4em;
+                    margin-right: 1em;
+                    left: -3em;
+                    -webkit-animation: rainbowviolet 22s ease infinite;
+                    -moz-animation: rainbowviolet 22s ease infinite;
+                    -ms-animation: rainbowviolet 22s ease infinite;
+                    animation: rainbowviolet 22s ease infinite;
+                }
+                .dot-purple-big2a {
+                    background-color: $purple-color;
+                    color: $purple-color;
+                    width: 10em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    border-radius: 20em;
+                    top: 4em;
+                    margin-right: 3em;
+                    left: 8em;
+                }
+                .dot-orange2a {
+                    background-color: $orange-color;
+                    color: $orange-color;
+                    width: 1.2em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    top: 4em;
+                    border-radius: 20em;
+                    left: 10em;
+                    -webkit-animation: rainbowpink 20s ease infinite;
+                    -moz-animation: rainbowpink 20s ease infinite;
+                    -ms-animation: rainbowpink 20s ease infinite;
+                    animation: rainbowpink 20s ease infinite;
+                }
+                .dot-violet3a {
+                    background-color: $pink-color;
+                    color: $pink-color;
+                    width: 1.2em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    top: 8em;
+                    border-radius: 20em;
+                    margin-right: .7em;
+                    left: 30em;
+                    -webkit-animation: rainbowblue 18s ease infinite;
+                    -moz-animation: rainbowblue 18s ease infinite;
+                    -ms-animation: rainbowblue 18s ease infinite;
+                    animation: rainbowblue 18s ease infinite;
+                }
+                .dot-blue3a {
+                    background-color: $light-color;
+                    color: $light-color;
+                    width: 1.2em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    border-radius: 20em;
+                    top: 8em;
+                    left: 30em;
+                    margin-right: .7em;
+                    -webkit-animation: rainbowviolet 22s ease infinite;
+                    -moz-animation: rainbowviolet 22s ease infinite;
+                    -ms-animation: rainbowviolet 22s ease infinite;
+                    animation: rainbowviolet 22s ease infinite;
+                }
+                .dot-purple-big3a {
+                    background-color: $purple-color;
+                    color: $purple-color;
+                    width: 10em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    border-radius: 20em;
+                    top: 8em;
+                    margin-right: 1em;
+                    left: 30em;
+                    z-index: 2;
+                }
+                .dot-pink-big3a {
+                    background-color: $pink-color;
+                    color: $pink-color;
+                    width: 10em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    border-radius: 20em;
+                    top: 8em;
+                    left: 40em;
+                    margin-right: 3em;
+                    -webkit-animation: rainbowblue 18s ease infinite;
+                    -moz-animation: rainbowblue 18s ease infinite;
+                    -ms-animation: rainbowblue 18s ease infinite;
+                    animation: rainbowblue 18s ease infinite;
+                }
+                .dot-yellow-big4a {
+                    background-color: $orange-color;
+                    color: $orange-color;
+                    width: 8em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    border-radius: 20em;
+                    top: 12em;
+                    margin-right: 1em;
+                    left: -12em;
+                    -webkit-animation: rainbowpink 20s ease infinite;
+                    -moz-animation: rainbowpink 20s ease infinite;
+                    -ms-animation: rainbowpink 20s ease infinite;
+                    animation: rainbowpink 20s ease infinite;
+                }
+                .dot-violet4a {
+                    background-color: $purple-color;
+                    color: $purple-color;
+                    width: 1.2em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    top: 12em;
+                    border-radius: 20em;
+                    margin-right: .7em;
+                    left: -12em;
+                }
+                .dot-blue-big4a {
+                    background-color: $light-color;
+                    color: $light-color;
+                    width: 6em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    border-radius: 20em;
+                    top: 12em;
+                    left: -12em;
+                    margin-right: 3em;
+                    -webkit-animation: rainbowviolet 22s ease infinite;
+                    -moz-animation: rainbowviolet 22s ease infinite;
+                    -ms-animation: rainbowviolet 22s ease infinite;
+                    animation: rainbowviolet 22s ease infinite;
+                }
+                .dot-yellow4a {
+                    background-color: $orange-color;
+                    color: $orange-color;
+                    width: 1.2em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    border-radius: 20em;
+                    top: 12em;
+                    left: -14em;
+                    margin-right: 1em;
+                    z-index: 2;
+                    -webkit-animation: rainbowpink 20s ease infinite;
+                    -moz-animation: rainbowpink 20s ease infinite;
+                    -ms-animation: rainbowpink 20s ease infinite;
+                    animation: rainbowpink 20s ease infinite;
+                }
+                .dot-purple-big4a {
+                    background-color: $purple-color;
+                    color: $purple-color;
+                    width: 6em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    border-radius: 20em;
+                    top: 12em;
+                    left: -14em;
+                    margin-right: 3em;
+                    z-index: 2;
+                }
+                .dot-yellow-big5a {
+                    background-color: $orange-color;
+                    color: $orange-color;
+                    width: 8em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    border-radius: 20em;
+                    top: 16em;
+                    margin-right: .7em;
+                    margin-left: 34em;
+                    z-index: 2;
+                    -webkit-animation: rainbowpink 20s ease infinite;
+                    -moz-animation: rainbowpink 20s ease infinite;
+                    -ms-animation: rainbowpink 20s ease infinite;
+                    animation: rainbowpink 20s ease infinite;
+                }
+                .dot-violet5a {
+                    background-color: $purple-color;
+                    color: $purple-color;
+                    width: 1.2em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    top: 16em;
+                    border-radius: 20em;
+                    margin-right: .7em;
+                    z-index: 2;
+                }
+                .dot-blue-big5a {
+                    background-color: $light-color;
+                    color: $light-color;
+                    width: 6em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    border-radius: 20em;
+                    top: 16em;
+                    z-index: 2;
+                    margin-right: 1em;
+                    -webkit-animation: rainbowviolet 22s ease infinite;
+                    -moz-animation: rainbowviolet 22s ease infinite;
+                    -ms-animation: rainbowviolet 22s ease infinite;
+                    animation: rainbowviolet 22s ease infinite;
+                }
+                .dot-yellow-big5b {
+                    background-color: $orange-color;
+                    color: $orange-color;
+                    width: 8em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    border-radius: 20em;
+                    top: 16em;
+                    z-index: 2;
+                    margin-right: 3em;
+                    -webkit-animation: rainbowpink 20s ease infinite;
+                    -moz-animation: rainbowpink 20s ease infinite;
+                    -ms-animation: rainbowpink 20s ease infinite;
+                    animation: rainbowpink 20s ease infinite;
+                }
+                .dot-pink-big5a {
+                    background-color: $pink-color;
+                    color: $pink-color;
+                    width: 6em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    border-radius: 20em;
+                    top: 16em;
+                    z-index: 2;
+                    margin-right: .7em;
+                    -webkit-animation: rainbowblue 18s ease infinite;
+                    -moz-animation: rainbowblue 18s ease infinite;
+                    -ms-animation: rainbowblue 18s ease infinite;
+                    animation: rainbowblue 18s ease infinite;
+                }
+                .dot-blue5a {
+                    background-color: $light-color;
+                    color: $light-color;
+                    width: 1.2em;
+                    height: 1.2em;
+                    display: flex;
+                    position: relative;
+                    border-radius: 20em;
+                    top: 16em;
+                    z-index: 2;
+                    -webkit-animation: rainbowviolet 22s ease infinite;
+                    -moz-animation: rainbowviolet 22s ease infinite;
+                    -ms-animation: rainbowviolet 22s ease infinite;
+                    animation: rainbowviolet 22s ease infinite;
+                }
+            }
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------------
+                      Who Section
+--------------------------------------------------------------------*/
+
+#who {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: $primary-color;
+    width: 100%;
+    height: 100vh;
+    .who-heading {
+        .title {
+            color: $white-color;
+            font-family: $font;
+            font-size: 2em;
+            font-weight: bold;
+            margin: 0;
+            padding: 6em 0 0 0;
+            position: relative;
+            z-index: 1;
+            visibility: visible;
+            display: block;
+            text-align: left;
+        }
+        .sub-title {
+            margin: 0;
+            padding: 3em 0 0 0;
+            color: $white-color;
+            font-size: .8rem;
+            font-family: $font;
+            font-weight: 100;
+            width: 45%;
+            line-height: 2.5;
+            position: relative;
+            z-index: 1;
+            visibility: visible;
+            display: block;
+            text-align: left;
+            float: left;
+        }
+    }
+    /*------------ button ------------*/
+    .button {
+        width: 15%;
+        height: 3em;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: 300% 100%;
+        background-image: linear-gradient(to right, #f06192, #ffa726, #ffa726, #f06192);
+        box-shadow: 0 4px 15px 0 rgba(243, 108, 131, 0.75);
+        @include border-radius(2em);
+        @include transition(all 0.6s ease-in-out);
+        left: -36em;
+        right: 0;
+        top: 15em;
+        color: $white-color;
+        font-family: $font;
+        font-size: 1rem;
+        font-weight: 700;
+        &:hover {
+            background-position: 100% 0;
+            background-image: linear-gradient(to right, #ffa726, #f06192, #f06192, #ffa726);
+            @include transition(all 0.6s ease-in-out);
+        }
+    }
+    // .right-image {
+    //     img {
+    //         width: 40%;
+    //         height: 40%;
+    //         position: relative;
+    //         bottom: 7em;
+    //         float: left;
+    //         display: block;
+    //         z-index: 1;
+    //         visibility: visible;
+    //         right: 0;
+    //         left: 0;
+    //     }
+    // }
+    .lines {
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    .line-bg {
+        float: left;
+        .line-row {
+            position: relative;
+            left: 10em;
+            float: left;
+            display: flex;
+            top: -3em;
+            .dot-violet {
+                background-color: $pink-color;
+                color: $pink-color;
+                width: 1.2em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                border-radius: 20em;
+                margin-right: 5em;
+                margin-left: 8em;
+                -webkit-animation: rainbowblue 18s ease infinite;
+                -moz-animation: rainbowblue 18s ease infinite;
+                -ms-animation: rainbowblue 18s ease infinite;
+                animation: rainbowblue 18s ease infinite;
+            }
+            .dot-yellow {
+                background-color: $orange-color;
+                color: $orange-color;
+                width: 1.2em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                border-radius: 20em;
+                margin-right: 1em;
+                -webkit-animation: rainbowpink 20s ease infinite;
+                -moz-animation: rainbowpink 20s ease infinite;
+                -ms-animation: rainbowpink 20s ease infinite;
+                animation: rainbowpink 20s ease infinite;
+            }
+            .dot-blue-big {
+                background-color: $light-color;
+                color: $light-color;
+                width: 6em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                border-radius: 20em;
+                -webkit-animation: rainbowviolet 22s ease infinite;
+                -moz-animation: rainbowviolet 22s ease infinite;
+                -ms-animation: rainbowviolet 22s ease infinite;
+                animation: rainbowviolet 22s ease infinite;
+            }
+            .dot-violet2a {
+                background-color: $pink-color;
+                color: $pink-color;
+                width: 1.2em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                top: 4em;
+                border-radius: 20em;
+                margin-right: 1em;
+                margin-left: -25em;
+                -webkit-animation: rainbowblue 18s ease infinite;
+                -moz-animation: rainbowblue 18s ease infinite;
+                -ms-animation: rainbowblue 18s ease infinite;
+                animation: rainbowblue 18s ease infinite;
+            }
+            .dot-blue-big2a {
+                background-color: $light-color;
+                color: $light-color;
+                width: 10em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                border-radius: 20em;
+                top: 4em;
+                margin-right: 1em;
+                -webkit-animation: rainbowviolet 22s ease infinite;
+                -moz-animation: rainbowviolet 22s ease infinite;
+                -ms-animation: rainbowviolet 22s ease infinite;
+                animation: rainbowviolet 22s ease infinite;
+            }
+            .dot-purple-big2a {
+                background-color: $purple-color;
+                color: $purple-color;
+                width: 10em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                border-radius: 20em;
+                top: 4em;
+                margin-right: 3em;
+            }
+            .dot-orange2a {
+                background-color: $orange-color;
+                color: $orange-color;
+                width: 1.2em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                top: 4em;
+                border-radius: 20em;
+                -webkit-animation: rainbowpink 20s ease infinite;
+                -moz-animation: rainbowpink 20s ease infinite;
+                -ms-animation: rainbowpink 20s ease infinite;
+                animation: rainbowpink 20s ease infinite;
+            }
+            .dot-violet3a {
+                background-color: $pink-color;
+                color: $pink-color;
+                width: 1.2em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                top: 8em;
+                border-radius: 20em;
+                margin-right: .7em;
+                margin-left: -28em;
+                -webkit-animation: rainbowblue 18s ease infinite;
+                -moz-animation: rainbowblue 18s ease infinite;
+                -ms-animation: rainbowblue 18s ease infinite;
+                animation: rainbowblue 18s ease infinite;
+            }
+            .dot-blue3a {
+                background-color: $light-color;
+                color: $light-color;
+                width: 1.2em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                border-radius: 20em;
+                top: 8em;
+                margin-right: .7em;
+                -webkit-animation: rainbowviolet 22s ease infinite;
+                -moz-animation: rainbowviolet 22s ease infinite;
+                -ms-animation: rainbowviolet 22s ease infinite;
+                animation: rainbowviolet 22s ease infinite;
+            }
+            .dot-purple-big3a {
+                background-color: $purple-color;
+                color: $purple-color;
+                width: 10em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                border-radius: 20em;
+                top: 8em;
+                margin-right: 1em;
+            }
+            .dot-pink-big3a {
+                background-color: $pink-color;
+                color: $pink-color;
+                width: 10em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                border-radius: 20em;
+                top: 8em;
+                margin-right: 3em;
+                -webkit-animation: rainbowblue 18s ease infinite;
+                -moz-animation: rainbowblue 18s ease infinite;
+                -ms-animation: rainbowblue 18s ease infinite;
+                animation: rainbowblue 18s ease infinite;
+            }
+            .dot-yellow-big4a {
+                background-color: $orange-color;
+                color: $orange-color;
+                width: 8em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                border-radius: 20em;
+                top: 12em;
+                margin-right: 1em;
+                margin-left: -26em;
+                -webkit-animation: rainbowpink 20s ease infinite;
+                -moz-animation: rainbowpink 20s ease infinite;
+                -ms-animation: rainbowpink 20s ease infinite;
+                animation: rainbowpink 20s ease infinite;
+            }
+            .dot-violet4a {
+                background-color: $purple-color;
+                color: $purple-color;
+                width: 1.2em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                top: 12em;
+                border-radius: 20em;
+                margin-right: .7em;
+            }
+            .dot-blue-big4a {
+                background-color: $light-color;
+                color: $light-color;
+                width: 6em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                border-radius: 20em;
+                top: 12em;
+                margin-right: 3em;
+                -webkit-animation: rainbowviolet 22s ease infinite;
+                -moz-animation: rainbowviolet 22s ease infinite;
+                -ms-animation: rainbowviolet 22s ease infinite;
+                animation: rainbowviolet 22s ease infinite;
+            }
+            .dot-yellow4a {
+                background-color: $orange-color;
+                color: $orange-color;
+                width: 1.2em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                border-radius: 20em;
+                top: 12em;
+                margin-right: 1em;
+                -webkit-animation: rainbowpink 20s ease infinite;
+                -moz-animation: rainbowpink 20s ease infinite;
+                -ms-animation: rainbowpink 20s ease infinite;
+                animation: rainbowpink 20s ease infinite;
+            }
+            .dot-purple-big4a {
+                background-color: $purple-color;
+                color: $purple-color;
+                width: 6em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                border-radius: 20em;
+                top: 12em;
+                margin-right: 3em;
+            }
+            .dot-yellow-big5a {
+                background-color: $orange-color;
+                color: $orange-color;
+                width: 8em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                border-radius: 20em;
+                top: 16em;
+                margin-right: .7em;
+                margin-left: -34em;
+                -webkit-animation: rainbowpink 20s ease infinite;
+                -moz-animation: rainbowpink 20s ease infinite;
+                -ms-animation: rainbowpink 20s ease infinite;
+                animation: rainbowpink 20s ease infinite;
+            }
+            .dot-violet5a {
+                background-color: $purple-color;
+                color: $purple-color;
+                width: 1.2em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                top: 16em;
+                border-radius: 20em;
+                margin-right: .7em;
+            }
+            .dot-blue-big5a {
+                background-color: $light-color;
+                color: $light-color;
+                width: 6em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                border-radius: 20em;
+                top: 16em;
+                margin-right: 1em;
+                -webkit-animation: rainbowviolet 22s ease infinite;
+                -moz-animation: rainbowviolet 22s ease infinite;
+                -ms-animation: rainbowviolet 22s ease infinite;
+                animation: rainbowviolet 22s ease infinite;
+            }
+            .dot-yellow-big5b {
+                background-color: $orange-color;
+                color: $orange-color;
+                width: 8em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                border-radius: 20em;
+                top: 16em;
+                margin-right: 3em;
+                -webkit-animation: rainbowpink 20s ease infinite;
+                -moz-animation: rainbowpink 20s ease infinite;
+                -ms-animation: rainbowpink 20s ease infinite;
+                animation: rainbowpink 20s ease infinite;
+            }
+            .dot-pink-big5a {
+                background-color: $pink-color;
+                color: $pink-color;
+                width: 6em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                border-radius: 20em;
+                top: 16em;
+                margin-right: .7em;
+                -webkit-animation: rainbowblue 18s ease infinite;
+                -moz-animation: rainbowblue 18s ease infinite;
+                -ms-animation: rainbowblue 18s ease infinite;
+                animation: rainbowblue 18s ease infinite;
+            }
+            .dot-blue5a {
+                background-color: $light-color;
+                color: $light-color;
+                width: 1.2em;
+                height: 1.2em;
+                display: flex;
+                position: relative;
+                border-radius: 20em;
+                top: 16em;
+                -webkit-animation: rainbowviolet 22s ease infinite;
+                -moz-animation: rainbowviolet 22s ease infinite;
+                -ms-animation: rainbowviolet 22s ease infinite;
+                animation: rainbowviolet 22s ease infinite;
+            }
+        }
+    }
+}
+
+@-webkit-keyframes rainbowblue {
+    0% {
+        background-color: $pink-color;
+    }
+    100% {
+        background-color: $light-color;
+    }
+}
+
+@-moz-keyframes rainbowblue {
+    0% {
+        background-color: $pink-color;
+    }
+    100% {
+        background-color: $light-color;
+    }
+}
+
+@keyframes rainbowblue {
+    0% {
+        background-color: $pink-color;
+    }
+    100% {
+        background-color: $light-color;
+    }
+}
+
+@-webkit-keyframes rainbowpink {
+    0% {
+        background-color: $orange-color;
+    }
+    100% {
+        background-color: $pink-color;
+    }
+}
+
+@-moz-keyframes rainbowpink {
+    0% {
+        background-color: $orange-color;
+    }
+    100% {
+        background-color: $pink-color;
+    }
+}
+
+@keyframes rainbowpink {
+    0% {
+        background-color: $orange-color;
+    }
+    100% {
+        background-color: $pink-color;
+    }
+}
+
+@-webkit-keyframes rainbowviolet {
+    0% {
+        background-color: $light-color;
+    }
+    100% {
+        background-color: $purple-color;
+    }
+}
+
+@-moz-keyframes rainbowviolet {
+    0% {
+        background-color: $light-color;
+    }
+    100% {
+        background-color: $purple-color;
+    }
+}
+
+@keyframes rainbowviolet {
+    0% {
+        background-color: $light-color;
+    }
+    100% {
+        background-color: $purple-color;
+    }
+}
+
+
+/*--------------------------------------------------------------------
+                      flexible hiring section
+--------------------------------------------------------------------*/
+
+#flexible {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-color: $white-color;
+    // position: relative;
+    .flexible-heading {
+        .title {
+            padding: 6em 0;
+            display: flex;
+            justify-content: center;
+            flex-flow: nowrap;
+        }
+    }
+    .left-image-01 {
+        width: 50%;
+        img {
+            width: 100%;
+            position: relative;
+            float: left;
+        }
+    }
+    .right-title-01 {
+        width: 85%;
+        margin: 0;
+        padding: 0;
+        .heading {
+            font-size: 1.20rem;
+            font-family: $font;
+            font-weight: 900;
+            text-align: left;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            padding: 8em 0 0 4em;
+            letter-spacing: 2px;
+            visibility: visible;
+            z-index: 1;
+        }
+        .sub-title {
+            font-size: 1rem;
+            font-family: $font;
+            font-weight: 100;
+            text-align: left;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            position: relative;
+            padding: 1em 0 0 4.7em;
+            line-height: 2;
+            visibility: visible;
+            z-index: 1;
+        }
+        .read-more {
+            color: $pink-color;
+            font-size: 1.10rem;
+            font-family: $font;
+            font-weight: 900;
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-flow: nowrap;
+            z-index: 1;
+            visibility: visible;
+            left: 4.2em;
+            top: 2em;
+            width: 20%;
+            &:before {
+                content: "";
+                height: 27px;
+                width: 27px;
+                display: inline-block;
+                border-radius: 30px;
+                background: $pink-color url(../img/arrow.png) no-repeat center;
+                vertical-align: middle;
+                margin-right: 10px;
+                margin-bottom: 0;
+                @include transition(0.6s ease);
+            }
+        }
+    }
+    .right-image {
+        width: 60%;
+        float: right;
+        img {
+            width: 100%;
+            position: relative;
+            float: right;
+            padding: 10em 0;
+        }
+    }
+    .left-title {
+        width: 35%;
+        margin: 0;
+        padding: 14em 0;
+        float: left;
+        position: absolute;
+        left: 0;
+        right: 0;
+        .heading {
+            font-size: 1.20rem;
+            font-family: $font;
+            font-weight: 900;
+            text-align: left;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            padding: 8em 0 0 4em;
+            letter-spacing: 2px;
+            visibility: visible;
+            z-index: 1;
+        }
+        .sub-title {
+            font-size: 1rem;
+            font-family: $font;
+            font-weight: 100;
+            text-align: left;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            position: relative;
+            padding: 1em 0 0 4.7em;
+            line-height: 2;
+            visibility: visible;
+            z-index: 1;
+        }
+        .read-more {
+            color: $orange-color;
+            font-size: 1.10rem;
+            font-family: $font;
+            font-weight: 900;
+            position: relative;
+            display: block;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-flow: nowrap;
+            z-index: 1;
+            visibility: visible;
+            left: 4.2em;
+            top: 2em;
+            margin: 0;
+            clear: left;
+            width: 30%;
+            &:before {
+                content: "";
+                height: 27px;
+                width: 27px;
+                display: inline-block;
+                border-radius: 30px;
+                background: $orange-color url(../img/arrow.png) no-repeat center;
+                vertical-align: middle;
+                margin-right: 10px;
+                margin-bottom: 4px;
+                @include transition(0.6s ease);
+            }
+        }
+    }
+    .left-image-02 {
+        width: 50%;
+        img {
+            width: 100%;
+            position: relative;
+            float: left;
+            top: 4em;
+        }
+    }
+    .right-title-02 {
+        width: 85%;
+        margin: 0;
+        padding: 45rem 0 0 0;
+        .heading {
+            font-size: 1.20rem;
+            font-family: $font;
+            font-weight: 900;
+            text-align: left;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            padding: 7em 0 0 4em;
+            letter-spacing: 2px;
+            visibility: visible;
+            z-index: 1;
+        }
+        .sub-title {
+            font-size: 1rem;
+            font-family: $font;
+            font-weight: 100;
+            text-align: left;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            position: relative;
+            padding: 1em 0 0 4.7em;
+            line-height: 2;
+            visibility: visible;
+            z-index: 1;
+        }
+        .read-more {
+            color: $purple-color;
+            font-size: 1.10rem;
+            font-family: $font;
+            font-weight: 900;
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-flow: nowrap;
+            z-index: 1;
+            visibility: visible;
+            left: 4.2em;
+            top: 2em;
+            clear: right;
+            width: 15%;
+            &:before {
+                content: "";
+                height: 27px;
+                width: 27px;
+                display: inline-block;
+                border-radius: 30px;
+                background: $purple-color url(../img/arrow.png) no-repeat center;
+                vertical-align: middle;
+                margin-right: 10px;
+                margin-bottom: 4px;
+                @include transition(0.6s ease);
+            }
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------------
+                      our blog
+--------------------------------------------------------------------*/
+
+#blog {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    .blog-heading {
+        .title {
+            width: 100%;
+            color: $primary-color;
+            font-family: $font;
+            font-size: 2em;
+            font-weight: 900;
+            position: relative;
+            padding: 4em 0;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            flex-flow: nowrap;
+        }
+    }
+    .blog-manager {
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+        float: center;
+        position: absolute;
+        left: 8em;
+        .blog_01 {
+            width: 30%;
+            img {
+                width: 60%;
+                position: relative;
+                display: block;
+                border-radius: 50%;
+                border: 8px solid $pink-color;
+                display: flex;
+                justify-content: center;
+                @include transition(0.6s ease);
+                &:hover {
+                    border-color: $purple-color;
+                    @include transition(0.6s ease);
+                }
+            }
+            span {
+                color: $gray-color;
+                font-family: $font;
+                font-size: 1.12rem;
+                font-weight: 600;
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                flex-flow: wrap;
+                text-align: center;
+                padding: 2em 0;
+            }
+            h3 {
+                color: $primary-color;
+                font-size: 1.30rem;
+                font-family: $font;
+                font-weight: 800;
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                flex-flow: wrap;
+                text-align: center;
+                position: relative;
+                padding: 0;
+            }
+            .read-more {
+                color: $orange-color;
+                font-size: 1.10rem;
+                font-family: $font;
+                font-weight: 900;
+                position: relative;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-flow: nowrap;
+                z-index: 1;
+                visibility: visible;
+                left: 3.5em;
+                top: 2em;
+                clear: right;
+                width: 26%;
+            }
+        }
+        .blog_02 {
+            width: 30%;
+            img {
+                width: 60%;
+                position: relative;
+                display: block;
+                border-radius: 50%;
+                border: 8px solid $light-color;
+                @include transition(0.6s ease);
+                &:hover {
+                    border-color: $pink-color;
+                    @include transition(0.6s ease);
+                }
+            }
+            span {
+                color: $gray-color;
+                font-family: $font;
+                font-size: 1.12rem;
+                font-weight: 600;
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                flex-flow: wrap;
+                text-align: center;
+                padding: 2em 0;
+            }
+            h3 {
+                color: $primary-color;
+                font-size: 1.30rem;
+                font-family: $font;
+                font-weight: 800;
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                flex-flow: wrap;
+                text-align: center;
+                position: relative;
+                padding: 0;
+            }
+            .read-more {
+                color: $light-color;
+                font-size: 1.10rem;
+                font-family: $font;
+                font-weight: 900;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                // align-items: flex-start;
+                flex-flow: nowrap;
+                z-index: 1;
+                visibility: visible;
+                left: 3.5em;
+                top: 2em;
+                clear: right;
+                width: 26%;
+                text-align: center;
+            }
+        }
+        .blog_03 {
+            width: 30%;
+            img {
+                width: 60%;
+                position: relative;
+                display: block;
+                border-radius: 50%;
+                border: 8px solid $purple-color;
+                @include transition(0.6s ease);
+                &:hover {
+                    border-color: $orange-color;
+                    @include transition(0.6s ease);
+                }
+            }
+            span {
+                color: $gray-color;
+                font-family: $font;
+                font-size: 1.12rem;
+                font-weight: 600;
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                flex-flow: wrap;
+                text-align: center;
+                padding: 2em 0;
+            }
+            h3 {
+                color: $primary-color;
+                font-size: 1.30rem;
+                font-family: $font;
+                font-weight: 800;
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                flex-flow: wrap;
+                text-align: center;
+                position: relative;
+                padding: 0;
+            }
+            .read-more {
+                color: $pink-color;
+                font-size: 1.10rem;
+                font-family: $font;
+                font-weight: 900;
+                position: relative;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-flow: nowrap;
+                z-index: 1;
+                visibility: visible;
+                left: 3.5em;
+                top: 2em;
+                clear: right;
+                width: 26%;
+            }
+        }
+    }
+    .button-blog {
+        /*------------ button ------------*/
+        .button {
+            width: 15%;
+            height: 3em;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: 300% 100%;
+            background-image: linear-gradient(to right, #b388ff, #f06192, #f06192, #b388ff);
+            box-shadow: 0 4px 15px 0 rgba(243, 108, 131, 0.75);
+            @include border-radius(2em);
+            @include transition(all 0.6s ease-in-out);
+            left: 40%;
+            right: 0;
+            top: 35em;
+            color: $white-color;
+            font-family: $font;
+            font-size: 1rem;
+            font-weight: 700;
+            &:hover {
+                background-position: 100% 0;
+                background-image: linear-gradient(to right, #f06192, #b388ff, #f06192, #b388ff);
+                @include transition(all 0.6s ease-in-out);
+            }
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------------
+                      contact us
+--------------------------------------------------------------------*/
+
+#contact {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: $primary-color;
+    height: 100vh;
+    width: 100%;
+    top: 40em;
+    .contact-form {
+        // margin: 10em 0;
+        width: 40%;
+        .heading {
+            margin: 0;
+            padding: 4em 0 0 0;
+            color: $white-color;
+            font-size: 2em;
+            font-family: $font;
+            font-weight: 900;
+            position: relative;
+            display: block;
+        }
+        .sub-title {
+            margin: 0;
+            padding: 2em 0 0 0;
+            color: $white-color;
+            font-size: 1rem;
+            font-family: $font;
+            font-weight: 100;
+            position: relative;
+            display: block;
+            line-height: 2;
+        }
+        .social {
+            // margin-left: 8em;
+            margin-top: 2em;
+            float: left;
+            position: relative;
+            li {
+                list-style: none;
+                margin-top: 1em;
+                a {
+                    color: $white-color;
+                    position: relative;
+                    font-family: $font;
+                    font-size: 1.45rem;
+                    font-weight: 400;
+                    display: block;
+                    i {
+                        color: $white-color;
+                        margin-right: 1em;
+                    }
+                }
+            }
+        }
+    }
+    .photo {
+        float: left;
+        width: 50%;
+        position: relative;
+        top: -38em;
+        img {
+            width: 100%;
+            // height: 100%;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            right: 0;
+            left: 20em;
+            float: right;
+            display: block;
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------------
+                      footer
+--------------------------------------------------------------------*/
+
+#footer {
+    margin: 40em 0 0 0;
+    padding: 0;
+    position: absolute;
+    background-color: $white-color;
+    width: 100%;
+    .socials {
+        display: flex;
+        justify-content: flex-start;
+        position: absolute;
+        top: -2em;
+        li {
+            list-style: none;
+            margin-right: 1em;
+            a {
+                color: $white-color;
+                .fa-linkedin {
+                    color: $white-color;
+                    background-color: $light-color;
+                    font-size: 2em;
+                    width: 2em;
+                    height: 2em;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include transition(0.6s ease);
+                    &:hover {
+                        background-color: $pink-color;
+                        @include transition(0.6s ease);
+                    }
+                }
+                .fa-facebook {
+                    color: $white-color;
+                    background-color: $pink-color;
+                    font-size: 2em;
+                    width: 2em;
+                    height: 2em;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include transition(0.6s ease);
+                    &:hover {
+                        background-color: $orange-color;
+                        @include transition(0.6s ease);
+                    }
+                }
+                .fa-instagram {
+                    color: $white-color;
+                    background-color: $purple-color;
+                    font-size: 2em;
+                    width: 2em;
+                    height: 2em;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include transition(0.6s ease);
+                    &:hover {
+                        background-color: $pink-color;
+                        @include transition(0.6s ease);
+                    }
+                }
+            }
+        }
+    }
+    .footer-nav {
+        display: flex;
+        height: 10em;
+        width: 100%;
+        p {
+            width: 15%;
+            float: left;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 1.20rem;
+            font-family: $font;
+            font-weight: 100;
+            position: relative;
+        }
+        .navbar-footer {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: row;
+            width: 85%;
+            li {
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 2em;
+                a {
+                    float: right;
+                    font-size: 1.20rem;
+                    font-family: $font;
+                    font-weight: 100;
+                    position: relative;
+                    z-index: 1;
+                    visibility: visible;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sitahouse.com | ...because you have better things to do with your time.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- <link rel="stylesheet" href="../../css/style.css"> -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/admin.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300i,700i" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!--[if lt IE 9]><script src="js/polyfill/html5-shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="https://rawgit.com/romulomachado/simpletabs/master/dist/simpletabs.css">
+</head>
+
+<body>
+    <!--[if IE]><div class="browserupgrade"><p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p></div><![endif]-->
+    <input id="sidebartoggler" type="checkbox">
+    <div class="page-wrap">
+        <label id="menuicon" for="sidebartoggler"> <i class="fa fa-navicon"></i></label>
+        <div class="page-content">
+            <header>
+                <div class="inner">
+                    <a class="logo" href="index.html" alt="Sitahouse.com"> <img src="../../images/sitahouse-logo.svg" alt="Sitahouse Logo"></a>
+                    <div class="exit-mob"></div>
+                    <nav class="main-nav" aria-labelledby="mainnavheader">
+                        <div class="user-wrap loginNav">
+                            <div class="user-links"></div><a class="login" href="#login">Login <i class="fa fa-sign-in"></i></a>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="find-a-sitter.html">Search for Sitters</a></li>
+                            <li><a href="sitter-signup.html">Become a Sitter</a></li>
+                            <li><a href="how-it-works.html">How it Works</a></li>
+                            <li><a href="merchandise.html">Merchandise</a></li>
+                            <li> <a href="help.html">Help</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="slogan">
+                    <div class="inner">...because you have better things to do with your time. </div>
+                </div>
+            </header>
+            <main>
+                <div class="admin-header">
+                    <h2>Edit Sitter Details</h2>
+                    <p>Edit the Sitter's details below to modify their account.</p>
+                </div>
+                <div class="inner">
+                    <div class="admineditsitter-field">
+                        <div class="adminprofilesitter">
+                            <div class="profileeditfield">
+                                <img src="../../images/profile-04.jpg" alt="Profile Image" class="profileimg">
+                            </div>
+                            <div class="profiletitle">
+                                <h3>Account Status</h3>
+                                <select name="" id="editsitteropt">
+                                    <option value="">Active</option>
+                                    <option value="">UnActive</option>
+                                    <option value="">None</option>
+                                </select>
+                                <div class="uploadnewbtn">
+                                    <a href="#" class="uploadprofileedit"><i class="fa fa-upload"></i> Upload New Photo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sittername">
+                            <h3>Sitter Name</h3>
+                            <label for=""></label>
+                            <input type="text" name="firstname" id="firstnamesitter" placeholder="John">
+                            <label for=""></label>
+                            <input type="text" name="lastname" id="lastnamesitter" placeholder="Sitswell">
+                        </div>
+                        <div class="sitteremail">
+                            <h3>Email Address</h3>
+                            <label for=""></label>
+                            <input type="email" name="emailaddresssitter" id="emailaddresssitter" placeholder="johnsitswell@gmail.com">
+                        </div>
+                        <div class="sitterphysicaladdress">
+                            <h3>Physical Address</h3>
+                            <label for=""></label>
+                            <input type="text" name="physicaladdress" id="physicaladdress" placeholder="1234 Main St.">
+                            <label for=""></label>
+                            <input type="text" name="physicalname" id="physicalname" placeholder="San Diego">
+                            <select name="" id="physicaloption">
+                                <option name="">CA</option>
+                                <option name="">WA</option>
+                                <option name="">MA</option>
+                            </select>
+                            <label for=""></label>
+                            <input type="text" name="physicalnumber" id="physicalnumber" placeholder="12345">
+                        </div>
+                        <div class="sittercell">
+                            <h3>Cell Phone Number</h3>
+                            <label for=""></label>
+                            <input type="email" name="sitterphonenumber" id="sitterphonenumber" placeholder="707-555-1234">
+                            <a href="#" class="resetpassword"><i class="fa fa-unlock-alt"></i> Reset Password</a>
+                        </div>
+                        <div class="sitterbankdeposit">
+                            <h3>Edit Bank Deposit Details</h3>
+                            <p>To update your deposit account, enter your new routing and account information.</p>
+                            <label for=""></label>
+                            <input type="text" name="routingnumber" id="routingnumber" placeholder="Routing Number">
+                            <label for=""></label>
+                            <input type="text" name="accountnumber" id="accountnumber" placeholder="Account Number">
+                        </div>
+                        <div class="employmentsitter">
+                            <h3>Employment History</h3>
+                            <div class="bodyemployment">
+                                <div class="bodypanel">
+                                    <h4>Employer 1</h4>
+                                </div>
+                                <div class="bodyfield">
+                                    <label for=""></label>
+                                    <input type="text" name="companyname" class="CompanyName" placeholder="Some Company Name, Inc.">
+                                    <label for=""></label>
+                                    <input type="text" name="employerlocation" class="EmployerLocation" placeholder="Location">
+                                    <label for=""></label>
+                                    <input type="text" name="employersuperviso" class="EmployerSuperviso" placeholder="Dean Superviso">
+                                    <label for=""></label>
+                                    <input type="text" name="employerphonenumber" class="EmployerPhonenumber" placeholder="Phone Number">
+                                    <label for=""></label>
+                                    <input type="text" name="employerassistant" class="EmployerAssistant" placeholder="Assistant Manager">
+                                    <div class="daterange">
+                                        <div class="field-wrap">
+                                            <label class="hide" for="from">From</label>
+                                            <input id="from" type="text" placeholder="11/15/18">
+                                            <div class="calIcon"><i class="fa fa-calendar"></i></div>
+                                        </div>
+                                        <div class="field-wrap">
+                                            <label class="hide" for="to">To</label>
+                                            <input id="to" type="text" placeholder="02/01/18">
+                                            <div class="calIcon"><i class="fa fa-calendar"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employmentsitter">
+                            <h3>Employment History</h3>
+                            <div class="bodyemployment">
+                                <div class="bodypanel">
+                                    <h4>Employer 2</h4>
+                                </div>
+                                <div class="bodyfield">
+                                    <label for=""></label>
+                                    <input type="text" name="companyname" class="CompanyName" placeholder="Some Company Name, Inc.">
+                                    <label for=""></label>
+                                    <input type="text" name="employerlocation" class="EmployerLocation" placeholder="Location">
+                                    <label for=""></label>
+                                    <input type="text" name="employersuperviso" class="EmployerSuperviso" placeholder="Dean Superviso">
+                                    <label for=""></label>
+                                    <input type="text" name="employerphonenumber" class="EmployerPhonenumber" placeholder="Phone Number">
+                                    <label for=""></label>
+                                    <input type="text" name="employerassistant" class="EmployerAssistant" placeholder="Assistant Manager">
+                                    <div class="daterange">
+                                        <div class="field-wrap">
+                                            <label class="hide" for="from">From</label>
+                                            <input id="from" type="text" placeholder="11/15/18">
+                                            <div class="calIcon"><i class="fa fa-calendar"></i></div>
+                                        </div>
+                                        <div class="field-wrap">
+                                            <label class="hide" for="to">To</label>
+                                            <input id="to" type="text" placeholder="02/01/18">
+                                            <div class="calIcon"><i class="fa fa-calendar"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employmentsitter">
+                            <h3>Employment History</h3>
+                            <div class="bodyemployment">
+                                <div class="bodypanel">
+                                    <h4>Employer 3</h4>
+                                </div>
+                                <div class="bodyfield">
+                                    <label for=""></label>
+                                    <input type="text" name="companyname" class="CompanyName" placeholder="Some Company Name, Inc.">
+                                    <label for=""></label>
+                                    <input type="text" name="employerlocation" class="EmployerLocation" placeholder="Location">
+                                    <label for=""></label>
+                                    <input type="text" name="employersuperviso" class="EmployerSuperviso" placeholder="Dean Superviso">
+                                    <label for=""></label>
+                                    <input type="text" name="employerphonenumber" class="EmployerPhonenumber" placeholder="Phone Number">
+                                    <label for=""></label>
+                                    <input type="text" name="employerassistant" class="EmployerAssistant" placeholder="Assistant Manager">
+                                    <div class="daterange">
+                                        <div class="field-wrap">
+                                            <label class="hide" for="from">From</label>
+                                            <input id="from" type="text" placeholder="11/15/18">
+                                            <div class="calIcon"><i class="fa fa-calendar"></i></div>
+                                        </div>
+                                        <div class="field-wrap">
+                                            <label class="hide" for="to">To</label>
+                                            <input id="to" type="text" placeholder="02/01/18">
+                                            <div class="calIcon"><i class="fa fa-calendar"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sitteremergencycontact">
+                            <h3>Emergency Contact</h3>
+                            <label for=""></label>
+                            <input type="text" name="emergencyname" id="emergencyname" placeholder="Jane Flemming">
+                            <label for=""></label>
+                            <input type="text" name="emergencynumber" id="emergencynumber" placeholder="Account Number">
+                        </div>
+                        <div class="sitterinsuranceinformation">
+                            <h3>Sitter Insurance Information</h3>
+                            <label for=""></label>
+                            <input type="text" name="statefarm" id="statefarm" placeholder="State Farm">
+                            <label for=""></label>
+                            <input type="text" name="insurancenumber" id="insurancenumber" placeholder="1234567">
+                            <label for=""></label>
+                            <input type="text" name="insurancecurrecy" id="insurancecurrecy" placeholder="$100,000">
+                            <div class="viewpolicypdf">
+                                <a href="#" class="viewpolicy"><i class="fa fa-file-pdf-o"></i> View Policy</a>
+                            </div>
+                        </div>
+                        <div class="sitterinsbackgroundinformation">
+                            <h3>Background Check Information</h3>
+                            <label for=""></label>
+                            <input type="text" name="checkinformationname" id="checkinformationname" placeholder="Johnathan James Sitswell">
+                            <label for=""></label>
+                            <input type="text" name="informationcode" id="informationcode" placeholder="##########">
+                            <select name="" id="insuranceoption">
+                                    <option name="">CA</option>
+                                    <option name="">WA</option>
+                                    <option name="">MA</option>
+                                </select>
+                            <label for=""></label>
+                            <input type="text" name="informationcodenumber" id="informationcodenumber" placeholder="###-###-7890">
+                            <div class="viewinformationpdf">
+                                <a href="#" class="sensitivefield"><i class="fa fa-eye"></i> Show Sensitive Fields</a>
+                                <a href="#" class="viewphotoid"><i class="fa fa-id-card-o"></i> View Photo ID</a>
+                            </div>
+                            <div class="regularday-row">
+                                <h3>Edit Availability</h3>
+                                <div class="daysfield">
+                                    <div class="field-wrap">
+                                        <h4>Sunday</h4>
+                                        <input id="sunday01" type="checkbox">
+                                        <label for="sunday01">AM</label>
+                                        <input id="sunday02" type="checkbox">
+                                        <label for="sunday02">PM</label>
+                                    </div>
+                                    <div class="field-wrap">
+                                        <h4>Monday</h4>
+                                        <input id="monday01" type="checkbox">
+                                        <label for="monday01">AM</label>
+                                        <input id="monday02" type="checkbox">
+                                        <label for="monday02">PM</label>
+                                    </div>
+                                    <div class="field-wrap">
+                                        <h4>Tuesday</h4>
+                                        <input id="tuesday01" type="checkbox">
+                                        <label for="tuesday01">AM</label>
+                                        <input id="tuesday02" type="checkbox">
+                                        <label for="tuesday02">PM</label>
+                                    </div>
+                                    <div class="field-wrap">
+                                        <h4>Wednesday</h4>
+                                        <input id="wednesday01" type="checkbox">
+                                        <label for="wednesday01">AM</label>
+                                        <input id="wednesday02" type="checkbox">
+                                        <label for="wednesday02">PM</label>
+                                    </div>
+                                    <div class="field-wrap">
+                                        <h4>Thursday</h4>
+                                        <input id="thursday01" type="checkbox">
+                                        <label for="thursday01">AM</label>
+                                        <input id="thursday02" type="checkbox">
+                                        <label for="thursday02">PM</label>
+                                    </div>
+                                    <div class="field-wrap">
+                                        <h4>Friday</h4>
+                                        <input id="friday01" type="checkbox">
+                                        <label for="friday01">AM</label>
+                                        <input id="friday02" type="checkbox">
+                                        <label for="friday02">PM</label>
+                                    </div>
+                                    <div class="field-wrap">
+                                        <h4>Saturday</h4>
+                                        <input id="saturday01" type="checkbox">
+                                        <label for="saturday01">AM</label>
+                                        <input id="saturday02" type="checkbox">
+                                        <label for="saturday02">PM</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="customizebutton customizebtn">
+                                <a href="#" class="btn"><i class="fa fa-calendar"></i> View Customize availability</a>
+                            </div>
+                            <p>Green is available, red is unavailable, yellow means already booked for a Sitahouse job.</p>
+                        </div>
+                        <div class="profileparagraph">
+                            <h3>Profile Paragraph</h3>
+                            <div class="paragraph-row">
+                                <p>I am a very reliable house sitter. I am able to work several days a week and some additional bonus days. My background in security has helped me be a successful sitter and I have stopped some thieves at the properties where
+                                    I have worked.</p>
+                            </div>
+                            <div class="allchangedbtn">
+                                <a href="#" class="btn">Save All Changes</a>
+                            </div>
+                        </div>
+                    </div>
+
+            </main>
+            </div>
+            <footer>
+                <div class="inner">
+                    <div class="ftrlogo">
+                        <a href="index.html"><img src="../../images/sitahouse-logo-white.svg" alt="Sitahouse.com"></a>
+                    </div>
+                    <ul class="ftrnav">
+                        <li><a href="">About</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">How it Works</a></li>
+                        <li><a href="">Merchandise</a></li>
+                        <li><a href="">Help</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                    <ul class="ftrsocial">
+                        <li><a href="#fb"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#tw"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#ig"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#pint"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                    <p class="cpyrt">Copyright © 2018 Sitahouse.com All rights reserved. </p>
+                </div>
+            </footer>
+        </div>
+        <!--[if lt IE 9]><script src="https://code.jquery.com/jquery-1.12.3.min.js"></script><script src="js/polyfill/ie-love.js"></script><![endif]-->
+        <!--[if gt IE 8]><!-->
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+        <!--<![endif]-->
+        <script src="js/main.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="https://rawgit.com/romulomachado/simpletabs/master/dist/simpletabs.js"></script>
+</body>
+
+</html>

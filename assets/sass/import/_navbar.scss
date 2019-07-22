@@ -1,0 +1,92 @@
+.navbar-inner {
+    // background-color: var(--primary-color);
+    // box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding: em(25px) 0;
+    width: 100%;
+    position: relative;
+    z-index: 9999;
+    @media screen and (max-width: 800px) {
+        background-color: #000 !important;
+    }
+    .navbar-toggler {
+        border: none;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border: none;
+        }
+        .fa {
+            color: var(--white-color);
+        }
+    }
+    
+    .navbar-brand {
+        color: var(--white-color);
+        font-size: em(25px);
+        font-family: var(--font-regular);
+        font-weight: 700;
+        font-style: normal;
+        vertical-align: middle;
+        text-transform: lowercase;
+        position: relative;
+        z-index: 10;
+        .light {
+            font-weight: 400;
+            font-family: var(--font-regular);
+        }
+        .logo_icon {
+            // position: relative;
+            // overflow: hidden;
+            width: 40px;
+            height: 40px;
+            @include border-radius(6px);
+            @include position(absolute, 0, null, 0, -25px);
+            background-color: var(--yellow-color);
+            z-index: -1;
+            transform: rotate(45deg);
+            overflow: hidden;
+            // &:before {
+            //     content: '';
+            // }
+            &:before {
+                content: '';
+                width: 40px;
+                height: 60px;
+                @include border-radius(10px);
+                @include position(absolute, 25px, null, null, -5px);
+                background-color: var(--lightgreen-color);
+                transform: translate(-30%, -10%);
+            }
+        }
+    }
+
+    .navbar-collapse {
+        .navbar-nav {
+            width: 100%;
+            justify-content: flex-end;
+            .nav-item {
+                margin-right: em(45px);
+                &:last-of-type {
+                    margin-right: 0;
+                }
+                .nav-link {
+                    color: var(--white-color);
+                    font-size: em(18px);
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    font-family: var(--font-regular);
+                    position: relative;
+                    text-decoration: none;
+                    cursor: pointer;
+                    visibility: visible;
+                    @include transition(0.25s all ease-in-out);
+                    &:hover {
+                        color: var(--red-color);
+                        @include transition(0.25s all ease-in-out);
+                    }
+                }
+            }
+        }
+    }
+}

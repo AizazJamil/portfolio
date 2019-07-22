@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sitahouse.com | ...because you have better things to do with your time.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../../css/style.css"> -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- <link rel="stylesheet" href="../assets/css/admin.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300i,700i" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!--[if lt IE 9]><script src="js/polyfill/html5-shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="https://rawgit.com/romulomachado/simpletabs/master/dist/simpletabs.css">
+</head>
+
+<body>
+    <!--[if IE]><div class="browserupgrade"><p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p></div><![endif]-->
+    <input id="sidebartoggler" type="checkbox">
+    <div class="page-wrap">
+        <label id="menuicon" for="sidebartoggler"> <i class="fa fa-navicon"></i></label>
+        <div class="page-content">
+            <header>
+                <div class="inner">
+                    <a class="logo" href="index.html" alt="Sitahouse.com"> <img src="../images/sitahouse-logo.svg" alt="Sitahouse Logo"></a>
+                    <div class="exit-mob"></div>
+                    <nav class="main-nav" aria-labelledby="mainnavheader">
+                        <div class="user-wrap loginNav loginNavWrap">
+                            <div class="user-links"></div><a class="login" href="#login">Login <i class="fa fa-sign-in"></i></a>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="../customer/find-a-sitter.html">Search for Sitters</a></li>
+                            <li><a href="welcome.html">Become a Sitter</a></li>
+                            <li><a href="how-it-works.html">How it Works</a></li>
+                            <li><a href="../manage-store/merchandise.html">Merchandise</a></li>
+                            <li> <a href="help.html">Help</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="slogan">
+                    <div class="inner">...because you have better things to do with your time. </div>
+                </div>
+            </header>
+            <main>
+                <div class="admin-header">
+                    <h2>No Available Sitters</h2>
+                </div>
+                <div class="inner">
+                    <div class="customersitter-field">
+                        <div class="heading">
+                            <h3><span class="red">Uh Oh!</span> It looks like we have sitters in your area, but none are available for all of the dates you've selected.</h3>
+                            <p>If you have a lot of days in a row, it will be harder to match a single sitter for you job. Try breaking your job into several date bundle for improved results. You can edit your job below.</p>
+                        </div>
+                        <div class="customerform-field">
+                            <label for=""></label>
+                            <input type="text" name="" class="input-field" id="addressinput" placeholder="1234 Main St.">
+                            <label for=""></label>
+                            <input type="text" name="" class="input-field" id="cityinput" placeholder="Seattle">
+                            <label for=""></label>
+                            <select name="" id="stateinput">
+                                <option value="">WA</option>
+                                <option value="">MA</option>
+                                <option value="">CA</option>
+                            </select>
+                            <label for=""></label>
+                            <input type="text" name="" class="input-field" id="codeinput" placeholder="98765">
+                        </div>
+                        <div class="heading">
+                            <h3>Click on the calendar to select the dates and time blocks you need a siter: <i class="fa fa-calendar"></i></h3>
+                        </div>
+                        <div class="editfilter-field">
+                            <!-- <h3>Click on the calendar to update any remaining dates on the job.</h3> -->
+                            <div class="editfilter-row">
+                                <div class="heading">
+                                    <h3>Pet/House Sitting</h3>
+                                </div>
+                                <div class="editfilterfield">
+                                    <div class="homesearch-row">
+                                        <h5>Are pets in the home?</h5>
+                                        <div class="field-wrap">
+                                            <input id="yespets" type="radio" placeholder="yes" name="petsinhome">
+                                            <label for="yespets">Yes</label>
+                                            <input id="nopets" type="radio" placeholder="no" name="petsinhome">
+                                            <label for="nopets">No</label>
+                                        </div>
+                                    </div>
+                                    <div class="homesearch-row">
+                                        <h5>Do you require pet sitting?</h5>
+                                        <div class="field-wrap">
+                                            <input id="yessitting" type="radio" placeholder="yes" name="pets in home">
+                                            <label for="yessitting" name="petsitting">Yes</label>
+                                            <input id="nositting" type="radio" placeholder="no" name="pets in home">
+                                            <label for="nositting" name="petsitting">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="heading">
+                                    <h3>What kind of sitting job do you need? <span>(select all that apply)</span></h3>
+                                </div>
+                                <div class="customercheckbox-field">
+                                    <div class="homesearch-row">
+                                        <div class="field-wrap">
+                                            <input id="eightto12" type="checkbox">
+                                            <label id="income" for="eightto12">Delivery Receiving</label>
+                                            <input id="twelveto4" type="checkbox" id="flexible-checkbox">
+                                            <label id="flexible" for="twelveto4">Overseeing a service provider (handyman, cleaner, ect)</label>
+                                            <input id="twelveto13" type="checkbox" id="fun-checkbox">
+                                            <label id="fun" for="twelveto13">General security of home</label>
+                                            <input id="twelveto14" type="checkbox" id="looking-checkbox">
+                                            <label id="looking" for="twelveto14">Property Access Management</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="findbtn">
+                                    <a href="#" class="btn">Find Sitter</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+        <footer>
+            <div class="inner">
+                <div class="ftrlogo">
+                    <a href="index.html"><img src="../images/sitahouse-logo-white.svg" alt="Sitahouse.com"></a>
+                </div>
+                <ul class="ftrnav">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">How it Works</a></li>
+                    <li><a href="">Merchandise</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                <ul class="ftrsocial">
+                    <li><a href="#fb"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#tw"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#ig"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#pint"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+                <p class="cpyrt">Copyright © 2018 Sitahouse.com All rights reserved. </p>
+            </div>
+        </footer>
+    </div>
+    <!--[if lt IE 9]><script src="https://code.jquery.com/jquery-1.12.3.min.js"></script><script src="js/polyfill/ie-love.js"></script><![endif]-->
+    <!--[if gt IE 8]><!-->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <!--<![endif]-->
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://rawgit.com/romulomachado/simpletabs/master/dist/simpletabs.js"></script>
+</body>
+
+</html>

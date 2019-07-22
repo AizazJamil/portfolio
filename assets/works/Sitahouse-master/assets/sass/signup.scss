@@ -1,0 +1,981 @@
+// Signup Page Section
+.singup-header {
+    background-color: #f4efeb;
+    padding: 1.5em 0;
+    p {
+        text-align: center;
+    }
+}
+
+.slogan-inner {
+    text-align: center;
+    background-color: #5c6759;
+    padding: 1em 0;
+    .inner {
+        color: #fff;
+    }
+}
+
+.inner-bg {
+    background-color: $accent2;
+}
+
+.signup-wrap {
+    text-align: center;
+    background-image: url('../../images/signup-cover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .inner {
+        h3 {
+            font-size: 40px;
+            font-family: $font1;
+            font-weight: 300;
+            color: #fff;
+            padding-top: 1em;
+        }
+        ul {
+            list-style-type: none;
+            display: inline-flex;
+            li {
+                color: #fff;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: $font1;
+                font-style: normal;
+                margin-right: 10px;
+                padding-bottom: 1.4em;
+            }
+        }
+    }
+}
+
+.signup-wrap-none {
+    background-image: none;
+    margin-bottom: 3em;
+    .inner {
+        h3 {
+            font-size: 40px;
+            font-family: $font1;
+            font-weight: 300;
+            color: $accent5;
+            padding-top: 1em;
+        }
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            width: 100%;
+            justify-content: center;
+            li {
+                color: $accent5;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: $font1;
+                font-style: normal;
+                margin-right: 10px;
+                padding-bottom: 0;
+            }
+        }
+        .signup-wrap-btn {
+            .handshake-btn {
+                background-color: $accent3;
+                padding: 1.2em 2em;
+                &:hover {
+                    background-color: #000;
+                }
+            }
+        }
+    }
+}
+
+.required-sitters {
+    text-align: center;
+    padding-top: 2em;
+    margin-bottom: 4em;
+    .inner {
+        h3 {
+            color: $accent1;
+        }
+        p {
+            color: $accent5;
+            font-family: $font1;
+            font-style: normal;
+        }
+        .getJobs-title {
+            padding-bottom: 4em;
+        }
+        ul {
+            list-style-type: none;
+            display: inline-flex;
+            li {
+                margin-right: 15px;
+                color: $accent3;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: $font1;
+                font-style: normal;
+                padding-bottom: 2em;
+            }
+        }
+        .signup-button {
+            background-color: $accent1;
+            padding: 1.4em 2em;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: $font1;
+            text-decoration: none;
+            border-radius: 10px;
+            i {
+                margin-right: 8px;
+            }
+            &:hover {
+                background-color: #000;
+            }
+        }
+    }
+}
+
+.required-sitter-signup {
+    background-color: $accent4;
+    margin-bottom: 0;
+    .btn {
+        padding: .6em 2em;
+        margin-bottom: 5em;
+    }
+}
+
+.line-seperator {
+    border-top: 1px solid #ccc;
+    margin-bottom: 1em;
+}
+
+input[type="text"],
+select,
+textarea {
+    background: white;
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    padding: .4em .8em;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-weight: 300;
+}
+
+input[type="password"],
+select,
+textarea {
+    background: white;
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    padding: .4em .8em;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-weight: 300;
+}
+
+input[type="email"],
+select,
+textarea {
+    background: white;
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    padding: .4em .8em;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-weight: 300;
+}
+
+input[type="date"] {
+    background: white;
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    padding: .4em .8em;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-weight: 300;
+}
+
+input[type="tel"] {
+    background: white;
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    padding: .4em .8em;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-weight: 300;
+}
+
+.signup-form-validate {
+    margin-top: 3em;
+    h3 {
+        font-size: 25px;
+        font-family: $font1;
+        font-weight: 600;
+        font-style: normal;
+        color: $accent3;
+        text-align: left;
+    }
+    .form-validate {
+        width: 100%;
+        margin-bottom: 5em;
+        .input-group {
+            display: inline-flex;
+            #firstname {
+                width: 580px;
+                margin-right: 1.5em;
+                margin-bottom: 1.5em;
+            }
+            #lastname {
+                width: 580px;
+                margin-bottom: 1.5em;
+            }
+            #email {
+                width: 580px;
+                margin-right: 1.5em;
+                margin-bottom: 1.5em;
+            }
+            #password-1 {
+                margin-right: 1em;
+                margin-bottom: 1.5em;
+            }
+            #password-2 {
+                margin-bottom: 1.5em;
+            }
+            #password-create {
+                width: 580px;
+            }
+        }
+        .checkbox-inner {
+            margin-bottom: 2em;
+            #term-checkbox {
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+        .button-validate {
+            .save-button {
+                background-color: $accent1;
+                padding: 1em 2em;
+                font-size: 16px;
+                text-decoration: none;
+                color: #fff;
+                border-radius: 10px;
+                &:hover {
+                    background-color: #000;
+                }
+            }
+        }
+    }
+}
+
+// input[id="term-checkbox"] {
+//     position: relative;
+//     left: 0;
+//     opacity: 1;
+//     margin-right: .5em;
+// }
+// input[id="age-checkbox"] {
+//     position: relative;
+//     left: 0;
+//     opacity: 1;
+//     margin-right: .5em;
+// }
+.signup-form-checkbox {
+    margin-top: 3em;
+    h3 {
+        font-size: 25px;
+        font-family: $font1;
+        font-weight: 600;
+        font-style: normal;
+        color: $accent3;
+        text-align: left;
+        span {
+            font-weight: 300;
+        }
+    }
+    .form-validate {
+        width: 100%;
+        margin-bottom: 5em;
+        .input-group {
+            display: inline-flex;
+            #firstname {
+                width: 580px;
+                margin-right: 1.5em;
+                margin-bottom: 1.5em;
+            }
+            #lastname {
+                width: 580px;
+                margin-bottom: 1.5em;
+            }
+            #email {
+                width: 580px;
+                margin-right: 1.5em;
+                margin-bottom: 1.5em;
+            }
+            #password-1 {
+                margin-right: 1em;
+                margin-bottom: 1.5em;
+            }
+            #password-2 {
+                margin-bottom: 1.5em;
+            }
+        }
+        .checkbox-inner {
+            margin-bottom: 2em;
+            #term-checkbox {
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+        .button-validate {
+            .save-button {
+                background-color: $accent1;
+                padding: 1em 2em;
+                font-size: 16px;
+                text-decoration: none;
+                color: #fff;
+                border-radius: 10px;
+                &:hover {
+                    background-color: #000;
+                }
+            }
+        }
+    }
+}
+
+input[id="income-checkbox"] {
+    position: relative;
+    left: 0;
+    opacity: 1;
+    margin-right: .5em;
+}
+
+input[id="flexible-checkbox"] {
+    position: relative;
+    left: 0;
+    opacity: 1;
+    margin-right: .5em;
+}
+
+input[id="fun-checkbox"] {
+    position: relative;
+    left: 0;
+    opacity: 1;
+    margin-right: .5em;
+}
+
+input[id="looking-checkbox"] {
+    position: relative;
+    left: 0;
+    opacity: 1;
+    margin-right: .5em;
+}
+
+input[id="sound-checkbox"] {
+    position: relative;
+    left: 0;
+    opacity: 1;
+    margin-right: .5em;
+}
+
+input[id="temporary-checkbox"] {
+    position: relative;
+    left: 0;
+    opacity: 1;
+    margin-right: .5em;
+}
+
+.checkbox-inners {
+    margin-bottom: 2em;
+    display: block;
+    #income {
+        margin-right: 20em;
+        margin-bottom: 1em;
+        #term-checkbox {
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+    #fun {
+        margin-right: 333px;
+    }
+    #sound {
+        margin-right: 24.7em;
+    }
+}
+
+.select-inner {
+    position: relative;
+    select {
+        margin-bottom: 2em;
+    }
+}
+
+.select-field {
+    select {
+        width: 50% !important;
+    }
+}
+
+#select-inner {
+    background: white;
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    padding: .4em .8em;
+    width: 100%;
+    -webkit-appearance: '\f0d7';
+    -moz-appearance: '\f0d7';
+    appearance: '\f0d7';
+    font-weight: 300;
+    font-family: FontAwesome;
+}
+
+.history-title {
+    font-size: 15px;
+    position: relative;
+    bottom: 10px;
+    .red {
+        color: #c83f44;
+        font-weight: 700;
+    }
+}
+
+.card-box-fields {
+    background-color: transparent !important;
+    border-top-left-radius: none !important;
+    border-top-right-radius: none !important;
+    box-shadow: none !important;
+    margin-bottom: 1em;
+    .card-form {
+        margin: 0 !important;
+        #street-address {
+            width: 560px;
+            margin-right: 1.5em;
+        }
+        #city {
+            width: 560px;
+        }
+        #state-inner {
+            width: 560px !important;
+            margin-right: 1.5em;
+        }
+        #code {
+            width: 226px;
+            margin-right: 1.5em;
+        }
+    }
+}
+
+.card-box-field {
+    background-color: $accent6 !important;
+    box-shadow: 0px 1px 4px $accent3 !important;
+    margin-bottom: 2em;
+    border-radius: 10px;
+    .form-card {
+        input {
+            margin-bottom: 1em;
+        }
+        .employer {
+            width: 560px;
+            margin-right: 1.5em;
+        }
+        .location {
+            width: 560px;
+        }
+        .supervisior {
+            width: 560px;
+            margin-right: 1.5em;
+        }
+        .phone-number {
+            width: 560px;
+        }
+        .jobtitle {
+            width: 560px;
+            margin-right: 1.5em;
+        }
+        #from-datepicker {
+            .from-datepicker {
+                #from-cal {
+                    width: 220px;
+                }
+                .calIcon {
+                    color: #738cb3;
+                    position: absolute;
+                    left: .6em;
+                    top: .4em;
+                }
+            }
+        }
+    }
+}
+
+.card-box-inner {
+    // border: 1px solid black;
+    background-color: $accent6;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 1px 4px $accent3;
+    border-radius: 10px;
+    .body-panel {
+        background: $accent2;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        h4 {
+            color: #fff;
+            padding: 10px 15px;
+            font-size: 18px;
+            font-weight: 300;
+        }
+    }
+    .form-card {
+        margin-right: 20px;
+        margin-left: 20px;
+        input {
+            margin-bottom: 1em;
+        }
+        #street-address {
+            width: 560px;
+            margin-right: 1.5em;
+        }
+        #city {
+            width: 560px;
+        }
+        #state {
+            width: 300px;
+            margin-right: 1.5em;
+        }
+        #code {
+            width: 226px;
+            margin-right: 1.5em;
+        }
+        #calendar-1 {
+            width: 220px;
+        }
+        #calendar-2 {
+            width: 220px;
+        }
+        #employer {
+            width: 560px;
+            margin-right: 1.5em;
+        }
+        #location {
+            width: 560px;
+        }
+        #supervisior {
+            width: 560px;
+            margin-right: 1.5em;
+        }
+        #phone-number {
+            width: 560px;
+        }
+        #jobtitle {
+            width: 560px;
+            margin-right: 1.5em;
+        }
+        #from-datepicker {
+            .from-datepicker {
+                #from-cal {
+                    width: 220px;
+                }
+                .calIcon {
+                    color: #738cb3;
+                    position: absolute;
+                    left: .6em;
+                    top: .4em;
+                }
+            }
+        }
+    }
+}
+
+.add {
+    margin: 1em 0;
+    a {
+        color: $accent2;
+    }
+    i {
+        color: $accent1;
+    }
+}
+
+.cell-option {
+    h4 {
+        font-size: 25px;
+        font-family: "Roboto Slab", serif;
+        font-weight: 600;
+        font-style: normal;
+        color: #5c6759;
+        text-align: left;
+    }
+    p {
+        font-size: 18px;
+        position: relative;
+        bottom: .6em;
+    }
+}
+
+.signup-cell {
+    #number {
+        width: 50%;
+        margin-bottom: .8em;
+        margin-top: 1em;
+    }
+}
+
+.field-row {
+    margin-bottom: 3em;
+}
+
+.signupimageprofile-row {
+    display: inline-block;
+    padding-bottom: 1em;
+    .imagefield-wrap {
+        // display: inline-flex;
+        .image {
+            background-color: #ccc;
+            padding: 1.5em 1.5em;
+            // height: 100px;
+            // width: 100px;
+            border-radius: 100px;
+            margin-right: 40px;
+            width: 10%;
+            float: left;
+            img {
+                width: 100px;
+            }
+        }
+        p {
+            padding-top: .6em;
+            span {
+                color: $accent7;
+                font-weight: 700;
+            }
+        }
+        .uploadfile-row {
+            margin-top: 10px;
+            .uploadfile {
+                color: $accent2;
+                .fa-upload {
+                    color: $accent1;
+                }
+            }
+        }
+    }
+}
+
+.savecontinue-row {
+    margin: 2em 0;
+    margin-bottom: 5em;
+    .savecontinue-field {
+        background-color: $accent1;
+        padding: .8em 3em;
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 10px;
+        &:hover {
+            background-color: #000;
+        }
+    }
+}
+
+.regularday-row {
+    margin-top: 2em;
+    .emergency-field {
+        margin-bottom: 1.2em;
+        #contactname {
+            width: 48%;
+            margin-right: 2em;
+        }
+        #contactphonenumber {
+            width: 48%;
+        }
+    }
+    h3 {
+        font-size: 25px;
+        font-family: "Roboto Slab", serif;
+        font-weight: 600;
+        font-style: normal;
+        color: #5c6759;
+        text-align: left;
+        span {
+            font-weight: 300;
+        }
+    }
+    p {
+        font-size: 17px;
+        position: relative;
+        bottom: .6em;
+    }
+}
+
+.daysfield {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    flex-wrap: wrap;
+    .field-wrap {
+        width: 25%;
+        margin-bottom: 2em;
+        label {
+            position: relative;
+            bottom: 12px;
+        }
+    }
+}
+
+.customize-field {
+    background-color: #f6f2ee;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px #5c6759;
+    margin-bottom: 2em;
+    .customize-row {
+        padding: 25px 20px;
+        .box {
+            background-color: $accent2;
+            width: 25%;
+            height: 85px;
+            color: white;
+            float: left;
+            margin-right: 20px;
+            border-radius: 10px;
+            .fa-calendar {
+                font-size: 3em;
+                padding: 10px 10px;
+                float: left;
+                color: $accent5;
+            }
+            h4 {
+                font-size: 20px;
+                font-family: $font1;
+                font-weight: 500;
+                font-style: normal;
+                position: relative;
+                top: .8em;
+            }
+        }
+        .customizetitle-field {
+            position: relative;
+            top: 5px;
+            p {
+                line-height: 1.8;
+            }
+        }
+    }
+}
+
+.selectfield {
+    margin-bottom: 2em;
+}
+
+.tellcustomer-field {
+    margin-bottom: 2em;
+}
+
+.messagetext-field {
+    margin-bottom: 2em;
+    #messagetext {
+        resize: none;
+    }
+}
+
+.insuranceinformation-field {
+    margin-bottom: 2em;
+    #provide01 {
+        width: 31.3%;
+        margin-right: 1.5em;
+    }
+    #provide02 {
+        width: 31.3%;
+        margin-right: 1.5em;
+    }
+    #provide03 {
+        width: 31.3%;
+    }
+    .uploadcopy-btn {
+        margin-top: .8em;
+        #uploadcopy {
+            color: $accent2;
+            font-weight: 400;
+            .fa-upload {
+                color: $accent1;
+            }
+        }
+    }
+}
+
+.backgroundcheck-field {
+    .green {
+        color: $accent7;
+        font-weight: 600;
+    }
+    .identification-field {
+        select {
+            color: $accent3;
+        }
+        #identificaton {
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        #identificatonnumber {
+            width: 50%;
+            margin-right: 2em;
+            margin-bottom: 1em;
+        }
+        #idcard {
+            width: 30%;
+            margin-bottom: 1em;
+        }
+        #security {
+            width: 50%;
+            margin-bottom: 1em;
+        }
+        #physicalstreet {
+            width: 50%;
+            margin-bottom: 1em;
+        }
+        #currentcity {
+            width: 50%;
+            margin-bottom: 1em;
+            margin-right: 2em;
+        }
+        #currentstate {
+            width: 22%;
+            margin-right: 1.2em;
+        }
+        #currentzipcode {
+            width: 22%;
+        }
+        .uploadphoto-btn {
+            margin-bottom: 2em;
+            #uploadphotoid {
+                color: $accent2;
+                .fa-upload {
+                    color: $accent1;
+                }
+            }
+        }
+    }
+}
+
+.emergencycontact-field {
+    h4 {
+        font-size: 25px;
+        font-family: "Roboto Slab", serif;
+        font-weight: 600;
+        font-style: normal;
+        color: #5c6759;
+        text-align: left;
+    }
+    .contactiformation-row {
+        #contactname {
+            width: 50%;
+            margin-right: 2em;
+        }
+        #contactphone {
+            width: 46.2%;
+        }
+        .savecontinue-row {
+            margin: 2em 0;
+            margin-bottom: 5em;
+            .savecontinue-field {
+                background-color: $accent1;
+                padding: .8em 3em;
+                text-decoration: none;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 600;
+                border-radius: 10px;
+                &:hover {
+                    background-color: #000;
+                }
+            }
+        }
+    }
+}
+
+.closertitle-field {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    h3 {
+        color: $accent1;
+        font-family: $font1;
+        font-weight: 300;
+        font-size: 35px;
+        line-height: 1;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .signup-form-validate {
+        .form-validate {
+            .input-group {
+                display: block;
+                #firstname {
+                    width: 100%;
+                }
+                #lastname {
+                    width: 100%;
+                }
+                #email {
+                    width: 100%;
+                }
+                #password-1 {
+                    width: 100%;
+                }
+                #password-2 {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .daysfield {
+        display: block;
+    }
+    .insuranceinformation-field {
+        #provide01 {
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        #provide02 {
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        #provide03 {
+            width: 100%;
+        }
+    }
+}
+
+.heading {
+    h3 {
+        font-size: 25px;
+        font-family: "Roboto Slab", serif;
+        font-weight: 600;
+        font-style: normal;
+        color: #5c6759;
+        text-align: left;
+    }
+}

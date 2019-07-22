@@ -1,0 +1,98 @@
+// 300,400,700
+$font1: 'Roboto Slab',
+serif;
+// 300i,700i
+$font2: 'Roboto',
+sans-serif;
+// COLORS /////////
+$accent1: #96323d;
+$accent2: #738cb3;
+$accent3: #5c6759;
+$accent4: #f4efea;
+$accent5: #424242;
+$accent6: #f6f2ee;
+$accent7: #2ea466;
+$accent8: #f4efeb;
+$accent9: #c1292f;
+$accent10: #e4e4e4;
+// CLEARFIX /////////
+// Any div containting floats
+@mixin cf {
+    lost-utility: clearfix;
+}
+
+// BREAKPOINTS /////////
+@mixin small {
+    @media only screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin smallPlus {
+    @media only screen and (min-width: 481px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin sixHPlus {
+    @media only screen and (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin pad {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin padOnly {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin midPadPlus {
+    @media only screen and (min-width: 900px) {
+        @content;
+    }
+}
+
+@mixin padLess {
+    @media only screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin padPlus {
+    @media only screen and (min-width: 1025px) {
+        @content;
+    }
+}
+
+@mixin fullSite {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+// COlor Base
+$bgc:#4c607c;
+$tabc:#b2bbc0;
+$fontc:#596165;
+$tabfontc:white;
+$tabwidth:650px;
+// Mixin Flexbox
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sitahouse.com | ...because you have better things to do with your time.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../../css/style.css"> -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300i,700i" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!--[if lt IE 9]><script src="js/polyfill/html5-shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="https://rawgit.com/romulomachado/simpletabs/master/dist/simpletabs.css">
+</head>
+
+<body>
+    <!--[if IE]><div class="browserupgrade"><p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p></div><![endif]-->
+    <input id="sidebartoggler" type="checkbox">
+    <div class="page-wrap">
+        <label id="menuicon" for="sidebartoggler"> <i class="fa fa-navicon"></i></label>
+        <div class="page-content">
+            <header>
+                <div class="inner">
+                    <a class="logo" href="index.html" alt="Sitahouse.com"> <img src="../images/sitahouse-logo.svg" alt="Sitahouse Logo"></a>
+                    <div class="exit-mob"></div>
+                    <nav class="main-nav" aria-labelledby="mainnavheader">
+                        <div class="user-wrap loginNav loginNavWrap">
+                            <div class="admin-links"></div><a class="admin admin-link-row" href="edit-account-details.html"><i class="fa fa-user-circle-o"> <span>John Sitswell</span></i> <a class="admin admin-link-row" href="messages-dash.html"><i class="fa fa-envelope-o"></i><span>2</span></a></a>
+                            <div class="user-links"></div><a class="login" href="#login">Login <i class="fa fa-sign-in"></i></a>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="available.html">Job</a></li>
+                            <li><a href="payments.html">Payment</a></li>
+                            <li><a href="../manage-store/merchandise.html">Merchandise</a></li>
+                            <li> <a href="#">Help</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="slogan">
+                    <div class="inner">...because you have better things to do with your time. </div>
+                </div>
+            </header>
+            <main>
+                <div class="admin-header">
+                    <h2>Jobs</h2>
+
+
+                    <nav class="tabnavbar linknavbar">
+                        <ul>
+                            <li>
+                                <a class="tab__link" href="available.html"><i class="fa fa-list-ul"></i> Available</a>
+                            </li>
+                            <li>
+                                <a class="tab__link active" href="myjobs.html"><i class="fa fa-check-square-o"></i> My Jobs</a>
+                            </li>
+                            <li>
+                                <a class="tab__link" href="pastjobs.html"><i class="fa fa-undo"></i> Past Jobs</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <section class="content">
+                    <div class="content__item jobsfield-content customerjob-field">
+                        <div class="heading">
+                            <h3>Your current jobs are shown below.</h3>
+                            <p>These are jobs in progress or upcoming. Click the location for job details.</p>
+                        </div>
+                        <hr class="line-seperator">
+                        <div class="customericon">
+                            <h4>Key:</h4>
+                            <h6>
+                                <i class="fa fa-paw"></i>
+                                <span>Pet/House</span><br><span>Sitting Job</span>
+                            </h6>
+                            <h6><i class="fa fa-paw fa-highlight"></i>
+                                <span>Customer</span><br><span>requested</span>
+                            </h6>
+                        </div>
+                        <hr class="line-seperator">
+                        <div class="myjobsfield">
+                            <table>
+                                <tr>
+                                    <th>Location</th>
+                                    <th>Date Blocks</th>
+                                    <th>Remaining Blocks</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td><a href="jobdetail.html">Seattle, WA 12345</a></td>
+                                    <td>01/10/18 AM & PM</td>
+                                    <td>2</td>
+                                    <td><i class="fa fa-paw fa-highlight"></i></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="jobdetail.html">Issaquah, WA 12345</a></td>
+                                    <td>01/12/18 AM</td>
+                                    <td>1</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="jobdetail.html">Redmond, WA 12345</a></td>
+                                    <td>01/13/18 AM</td>
+                                    <td>1</td>
+                                    <td><i class="fa fa-paw fa-dark"></i></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <div class="inner">
+                <div class="ftrlogo">
+                    <a href="index.html"><img src="../images/sitahouse-logo-white.svg" alt="Sitahouse.com"></a>
+                </div>
+                <ul class="ftrnav">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">How it Works</a></li>
+                    <li><a href="">Merchandise</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                <ul class="ftrsocial">
+                    <li><a href="#fb"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#tw"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#ig"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#pint"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+                <p class="cpyrt">Copyright © 2018 Sitahouse.com All rights reserved. </p>
+            </div>
+        </footer>
+    </div>
+    <!--[if lt IE 9]><script src="https://code.jquery.com/jquery-1.12.3.min.js"></script><script src="js/polyfill/ie-love.js"></script><![endif]-->
+    <!--[if gt IE 8]><!-->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <!--<![endif]-->
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://rawgit.com/romulomachado/simpletabs/master/dist/simpletabs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+footer {
+    background-color: $accent2;
+    background-image: url(../images/ftr-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+    &:before, &:after {
+        content: '';
+        height: 13px;
+        @include phone {
+            height: 8px;
+        }
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+    }
+    &:before {
+        background: $accent1;
+        box-shadow: 0 4px 10px rgba(black, .2);
+        top: -5px;
+    }
+    &:after {
+        background: $accent3;
+        bottom: 0;
+    }
+    @include padOnly {
+        padding: 60px 0;
+    }
+    @include padPlus {
+        padding: 70px 0;
+        background-position: top -10vw center !important;
+    }
+    .ftrlogo {
+        margin-bottom: 30px;
+        a {
+            img {
+                max-width: 195px;
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+    .ftrnav {
+        margin-bottom: 25px;
+        @include cf;
+        li {
+            display: block;
+            font-size: responsive 16px 18px;
+            line-height: 1em;
+            margin-bottom: 8px;
+            @include smallPlus {
+                display: inline-block;
+                border-right: solid 1px shade($accent2, 40);
+                padding: 0 .7em 0 .5em;
+                &:last-child {
+                    border-right: none;
+                }
+            }
+            a {
+                color: white;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .ftrsocial {
+        li {
+            display: inline-block;
+            font-size: 30px;
+            padding: 0 .25em;
+            margin-bottom: 8px;
+
+            a {
+                color: shade($accent2, 40);
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+    .cpyrt {
+        color: rgba(white, .5);
+        font-size: 11px;
+    }
+}
+
+
+// ////////////////////////////////////
+// STICKY FOOTER
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.page-wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+}
+.page-content {
+  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  // padding: 20px;
+  background: white;
+}
+footer {
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  // padding: 20px;
+}

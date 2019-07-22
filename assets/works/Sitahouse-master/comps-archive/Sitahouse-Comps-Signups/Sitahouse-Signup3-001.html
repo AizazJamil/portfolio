@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sitahouse.com | ...because you have better things to do with your time.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- <link rel="stylesheet" href="../../css/style.css"> -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300i,700i" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!--[if lt IE 9]><script src="js/polyfill/html5-shiv.js"></script><![endif]-->
+</head>
+
+<body>
+    <!--[if IE]><div class="browserupgrade"><p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p></div><![endif]-->
+    <input id="sidebartoggler" type="checkbox">
+    <div class="page-wrap">
+        <label id="menuicon" for="sidebartoggler"> <i class="fa fa-navicon"></i></label>
+        <div class="page-content">
+            <header>
+                <div class="inner">
+                    <a class="logo" href="index.html" alt="Sitahouse.com"> <img src="../../images/sitahouse-logo.svg" alt="Sitahouse Logo"></a>
+                    <div class="exit-mob"></div>
+                    <nav class="main-nav" aria-labelledby="mainnavheader">
+                        <div class="user-wrap loginNav">
+                            <div class="user-links"></div><a class="login" href="#login">Login <i class="fa fa-sign-in"></i></a>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="find-a-sitter.html">Search for Sitters</a></li>
+                            <li><a href="sitter-signup.html">Become a Sitter</a></li>
+                            <li><a href="how-it-works.html">How it Works</a></li>
+                            <li><a href="merchandise.html">Merchandise</a></li>
+                            <li> <a href="help.html">Help</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="slogan">
+                    <div class="inner">...because you have better things to do with your time. </div>
+                </div>
+            </header>
+            <main>
+                <div class="singup-header">
+                    <h2>Almost There</h2>
+                </div>
+                <div class="regularday-row">
+                    <div class="inner">
+                        <div class="heading">
+                            <h3>Please Enter an Emergency Contact</h3>
+                        </div>
+                        <div class="emergency-field">
+                            <label for=""></label>
+                            <input type="text" id="contactname" placeholder="Contact Name">
+                            <label for=""></label>
+                            <input type="text" id="contactphonenumber" placeholder="Contact Phone Number">
+                        </div>
+                        <h3>What time blocks are you regularly available to work? <span>(select all that apply)</span></h3>
+                        <p>AM refers to 8:00am-12:00pm. PM refers to 12:00pm-4:00pm</p>
+                    </div>
+                    <div class="inner">
+                        <div class="daysfield">
+                            <div class="field-wrap">
+                                <h4>Monday</h4>
+                                <input id="monday01" type="checkbox">
+                                <label for="monday01">AM</label>
+                                <input id="monday02" type="checkbox">
+                                <label for="monday02">PM</label>
+                            </div>
+                            <div class="field-wrap">
+                                <h4>Tuesday</h4>
+                                <input id="tuesday01" type="checkbox">
+                                <label for="tuesday01">AM</label>
+                                <input id="tuesday02" type="checkbox">
+                                <label for="tuesday02">PM</label>
+                            </div>
+                            <div class="field-wrap">
+                                <h4>Wednesday</h4>
+                                <input id="wednesday01" type="checkbox">
+                                <label for="wednesday01">AM</label>
+                                <input id="wednesday02" type="checkbox">
+                                <label for="wednesday02">PM</label>
+                            </div>
+                            <div class="field-wrap">
+                                <h4>Thursday</h4>
+                                <input id="thursday01" type="checkbox">
+                                <label for="thursday01">AM</label>
+                                <input id="thursday02" type="checkbox">
+                                <label for="thursday02">PM</label>
+                            </div>
+                            <div class="field-wrap">
+                                <h4>Friday</h4>
+                                <input id="friday01" type="checkbox">
+                                <label for="friday01">AM</label>
+                                <input id="friday02" type="checkbox">
+                                <label for="friday02">PM</label>
+                            </div>
+                            <div class="field-wrap">
+                                <h4>Saturday</h4>
+                                <input id="saturday01" type="checkbox">
+                                <label for="saturday01">AM</label>
+                                <input id="saturday02" type="checkbox">
+                                <label for="saturday02">PM</label>
+                            </div>
+                            <div class="field-wrap">
+                                <h4>Sunday</h4>
+                                <input id="sunday01" type="checkbox">
+                                <label for="sunday01">AM</label>
+                                <input id="sunday02" type="checkbox">
+                                <label for="sunday02">PM</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <div class="customize-field">
+                            <div class="customize-row">
+                                <div class="box">
+                                    <i class="fa fa-calendar"></i>
+                                    <h4>CUSTOMIZE YOUR AVAILABILITY <i class="fa fa-angle-double-right"></i></h4>
+                                </div>
+                                <div class="customizetitle-field">
+                                    <p>Based on your general settings, we've updated the calendar to show your standard availability. Use the calendar to customize dates and times select the days you are available and unavailable. Green is available, red
+                                        is unavailable, yellow means you are already booked for a Sitahouse job.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <div class="traveljob-field">
+                            <h3>How far are you willing to travel for a job?</h3>
+                        </div>
+                        <div class="selectfield">
+                            <select name="" id="selectfield">
+                                <option value="">--Select--</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <div class="traveljob-field">
+                            <h3>Tell our customers why they can trust you in their home while they are away.</h3>
+                            <p>This will show on your profile. Tell people why you would make an excellent sitter for their house.</p>
+                        </div>
+                        <div class="messagetext-field">
+                            <textarea name="message" id="messagetext" cols="30" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <div class="insurance-field">
+                            <h3>Please provide your insurance information.</h3>
+                            <p>We require our sitters to be self-insured or bonded with a minimum of $###### in what kind of insurance. Don't have the gift insurance yet? You can save your profile information and add this later, but we won't be able to match
+                                you for jobs until this is received.</p>
+                        </div>
+                        <div class="insuranceinformation-field">
+                            <label for="">
+                                <input type="text" id="provide01" placeholder="Who is your insurance provider?">
+                            </label>
+                            <label for="">
+                                <input type="text" id="provide02" placeholder="What is your policy number?">
+                            </label>
+                            <label for="">
+                                <input type="text" id="provide03" placeholder="What is your coverage amount?">
+                            </label>
+                            <div class="uploadcopy-btn">
+                                <a href="#" id="uploadcopy"><i class="fa fa-upload"></i> Upload a copy of your policy</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="inner">
+                        <div class="backgroundcheck-field">
+                            <h3>Background Check Information</h3>
+                            <p>Background Check Information While we do require a social security number for the background check, this information will not be stored in you profile. <span class="green">We use the highest level of date encryption to help protect and secure your personal information.</span></p>
+                            <div class="identification-field">
+                                <label for="">
+                                    <input type="text" id="identificaton" placeholder="Provide your full name as it appears on your identification">
+                                </label>
+                                <label for="">
+                                    <input type="text" id="identificatonnumber" placeholder="Enter your state identification number">
+                                </label>
+                                <label for="">
+                                    <select name="" id="idcard">
+                                        <option value="">ID Card State</option>
+                                        <option value="">ID Card State 1</option>
+                                        <option value="">ID Card State 2</option>
+                                    </select>
+                                </label>
+                                <label for="">
+                                    <input type="text" id="security" placeholder="Enter your social security number">
+                                </label>
+                                <label for="">
+                                    <input type="text" id="physicalstreet" placeholder="Current Physical Street Address">
+                                </label>
+                                <label for="">
+                                    <input type="text" id="currentcity" placeholder="Current City">
+                                </label>
+                                <label for="">
+                                    <select name="" id="currentstate">
+                                            <option value="">Current State</option>
+                                            <option value="">Current State 1</option>
+                                            <option value="">Current State 2</option>
+                                        </select>
+                                </label>
+                                <label for="">
+                                    <input type="text" id="currentzipcode" placeholder="Current Zip Code">
+                                </label>
+                                <div class="uploadphoto-btn">
+                                    <a href="#" id="uploadphotoid"><i class="fa fa-upload"></i> Upload a copy of your photo ID</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+        <footer>
+            <div class="inner">
+                <div class="ftrlogo">
+                    <a href="index.html"><img src="../../images/sitahouse-logo-white.svg" alt="Sitahouse.com"></a>
+                </div>
+                <ul class="ftrnav">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">How it Works</a></li>
+                    <li><a href="">Merchandise</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                <ul class="ftrsocial">
+                    <li><a href="#fb"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#tw"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#ig"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#pint"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+                <p class="cpyrt">Copyright © 2018 Sitahouse.com All rights reserved. </p>
+            </div>
+        </footer>
+    </div>
+    <!--[if lt IE 9]><script src="https://code.jquery.com/jquery-1.12.3.min.js"></script><script src="js/polyfill/ie-love.js"></script><![endif]-->
+    <!--[if gt IE 8]><!-->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <!--<![endif]-->
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>

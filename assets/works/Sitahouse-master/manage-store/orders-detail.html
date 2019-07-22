@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sitahouse.com | ...because you have better things to do with your time.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../../css/style.css"> -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300i,700i" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!--[if lt IE 9]><script src="js/polyfill/html5-shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="https://rawgit.com/romulomachado/simpletabs/master/dist/simpletabs.css">
+    <!-- FancyBox Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+</head>
+
+<body>
+    <!--[if IE]><div class="browserupgrade"><p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p></div><![endif]-->
+    <input id="sidebartoggler" type="checkbox">
+    <div class="page-wrap">
+        <label id="menuicon" for="sidebartoggler"> <i class="fa fa-navicon"></i></label>
+        <div class="page-content">
+            <header>
+                <div class="inner">
+                    <a class="logo" href="index.html" alt="Sitahouse.com"> <img src="../images/sitahouse-logo.svg" alt="Sitahouse Logo"></a>
+                    <div class="exit-mob"></div>
+                    <nav class="main-nav" aria-labelledby="mainnavheader">
+                        <div class="user-wrap loginNav loginNavWrap">
+                            <div class="admin-links"></div><a class="admin admin-link-row" href="#admin"><i class="fa fa-user-circle-o"> <span>Admin</span></i></a>
+                            <div class="user-links"></div><a class="login" href="#login">Login <i class="fa fa-sign-in"></i></a>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="find-a-sitter.html">Search for Sitters</a></li>
+                            <li><a href="sitter-signup.html">Become a Sitter</a></li>
+                            <li><a href="how-it-works.html">How it Works</a></li>
+                            <li><a href="merchandise.html">Merchandise</a></li>
+                            <li> <a href="help.html">Help</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="slogan">
+                    <div class="inner">...because you have better things to do with your time. </div>
+                </div>
+            </header>
+            <main>
+                <div class="managestore-header">
+                    <h2><i class="fa fa-tags"></i> Manage Store</h2>
+                    <nav class="tabnavbar linknavbar">
+                        <ul>
+                            <li class="active">
+                                <a class="tab__link" href="manage-orders.html"><i class="fa fa-files-o"></i> Orders</a>
+                            </li>
+                            <li>
+                                <a class="tab__link" href="manage-categories.html"><i class="fa fa-list-ul"></i> Categories</a>
+                            </li>
+                            <li>
+                                <a class="tab__link" href="manage-products.html"><i class="fa fa-shopping-bag"></i> Products</a>
+                            </li>
+                            <li>
+                                <a class="tab__link" href="manage-promos.html"><i class="fa fa-bullhorn"></i> Promos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <section class="content inner">
+                    <div class="order__field">
+                        <div class="heading">
+                            <h3>
+                                Order # <span>1001234</span>
+                            </h3>
+                            <a href="#" class="btn"><i class="fa fa-print"></i> Print Packlist</a>
+                        </div>
+                        <hr class="line-seperator">
+                        <div class="orderdetails-field">
+                            <div class="orderdetail-col">
+                                <div class="content-range">
+                                    <h6 class="placedtext">Placed: Febraury 25, 2018</h6>
+                                    <h6>Payment Method: Visa</h6>
+                                </div>
+                                <div class="titlebox">
+                                    <h6>Ship Date: <span>Febraury 26, 2018</span></h6>
+                                </div>
+                                <div class="storehomesearch-row">
+                                    <div class="input-field">
+                                        <label for=""></label>
+                                        <h5>Status</h5>
+                                        <select name="" id="status">
+                                                    <option value="">Skipped</option>
+                                                    <option value="">Select 1</option>
+                                                    <option value="">Select 2</option>
+                                                </select>
+                                    </div>
+                                    <div class="input-field">
+                                        <label for=""></label>
+                                        <h5>Track #</h5>
+                                        <input type="text" name="" id="track" placeholder="abc1234567890">
+                                    </div>
+                                </div>
+                                <div class="content-field">
+                                    <div class="shipto">
+                                        <h5>SHIP TO:</h5>
+                                        <h6>John Doe</h6>
+                                        <p>12345 Main St.</p>
+                                        <p>Somecity, CA 98765</p>
+                                    </div>
+                                    <div class="billto">
+                                        <h5>BILL TO:</h5>
+                                        <h6>John Doe</h6>
+                                        <p>12345 Main St.</p>
+                                        <p>Somecity, CA 98765</p>
+                                    </div>
+                                </div>
+                                <div class="inputfield">
+                                    <div class="phone">
+                                        <label for=""></label>
+                                        <h5>Phone</h5>
+                                        <h6 id="phone">555-555-5432</h6>
+                                    </div>
+                                    <div class="email">
+                                        <label for=""></label>
+                                        <h5>Email</h5>
+                                        <h6 id="email">johndoe@gmail.com</h6>
+                                    </div>
+                                </div>
+                                <div class="tablefield">
+                                    <table>
+                                        <tr>
+                                            <th>SKU</th>
+                                            <th>Product Name</th>
+                                            <th>Varient</th>
+                                            <th>Price</th>
+                                            <th>Qty</th>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">1234</a></td>
+                                            <td>Sita Shirt</td>
+                                            <td>Red, Small</td>
+                                            <td>$9.99</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">1235</a></td>
+                                            <td>Lockbox 1</td>
+                                            <td>Security</td>
+                                            <td>$14.99</td>
+                                            <td>2</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="content-row">
+                                    <div class="total-box">
+                                        <ul>
+                                            <li>
+                                                <h6>Subtotal: <span>$64.95</span></h6>
+                                            </li>
+                                            <li>
+                                                <h6>Discount: <span>$5.00</span></h6>
+                                            </li>
+                                            <li>
+                                                <h6>Tax: <span>$4.65</span></h6>
+                                            </li>
+                                            <li>
+                                                <h6>Shipping: <span>$0.00</span></h6>
+                                            </li>
+                                            <hr class="line-seperator">
+                                            <li>
+                                                <h5>Total: <span>$64.60</span></h5>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="promoapplied-box">
+                                        <h6>Promo applied:</h6>
+                                        <h5>SPRING</h5>
+                                    </div>
+                                    <a href="order-receipt.html" class="btn">Save Updates</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <div class="inner">
+                <div class="ftrlogo">
+                    <a href="index.html"><img src="../images/sitahouse-logo-white.svg" alt="Sitahouse.com"></a>
+                </div>
+                <ul class="ftrnav">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">How it Works</a></li>
+                    <li><a href="">Merchandise</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                <ul class="ftrsocial">
+                    <li><a href="#fb"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#tw"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#ig"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#pint"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+                <p class="cpyrt">Copyright © 2018 Sitahouse.com All rights reserved. </p>
+            </div>
+        </footer>
+    </div>
+    <!--[if lt IE 9]><script src="https://code.jquery.com/jquery-1.12.3.min.js"></script><script src="js/polyfill/ie-love.js"></script><![endif]-->
+    <!--[if gt IE 8]><!-->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <!--<![endif]-->
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://rawgit.com/romulomachado/simpletabs/master/dist/simpletabs.js"></script>
+    <!-- FancyBox Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+    <script>
+        $('[data-fancybox="modal"]').fancybox({
+            afterClose: function() {
+                $('#show').show()
+            }
+        });
+
+        $('#modal-form').on('submit', function() {
+            $.fancybox.close();
+
+            return false;
+        });
+    </script>
+</body>
+
+</html>

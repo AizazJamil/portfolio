@@ -1,0 +1,112 @@
+.main-content {
+    padding: em(120px) 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    @include position(absolute, 0, null, null, null);
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+
+    .text {
+        h2 {
+            font-size: em(60px);
+            color: var(--white-color);
+            font-family: var(--font-regular);
+            font-weight: 700;
+            z-index: 10;
+            overflow: hidden;
+            @media screen and (max-width: 767px) {
+                font-size: 40px;
+            }
+
+            @media screen and (max-width: 600px) {
+                font-size: 30px;
+            }
+
+            @media screen and (max-width: 414px) {
+                font-size: 24px;
+            }
+
+            @media screen and (max-width: 350px) {
+                font-size: 20px;
+            }
+            span {
+                display: block;
+                position: relative;
+                z-index: 10;
+                overflow: hidden;
+                height: 80px;
+                
+                     @media screen and (max-width: 767px) {
+                         height: 60px;
+                     }
+
+                     @media screen and (max-width: 600px) {
+                         height: 55px;
+                     }
+
+                     @media screen and (max-width: 414px) {
+                         height: 50px;
+                     }
+
+                     @media screen and (max-width: 350px) {
+                         height: 20px;
+                     }
+            }
+
+            .say_hello {
+                color: var(--red-color);
+                z-index: 10;
+                position: relative;
+                line-height: 80px;
+                @media screen and (max-width: 767px) {
+                    height: 60px;
+                }
+
+                @media screen and (max-width: 600px) {
+                    height: 55px;
+                    margin-bottom: 20px;
+                }
+
+                @media screen and (max-width: 414px) {
+                    height: 40px;
+                }
+
+                @media screen and (max-width: 350px) {
+                    height: 30px;
+                }
+                &:before {
+                    content: '';
+                    @include position(absolute, null, null, 14px, 0px);
+                    background-color: rgba(255, 255, 255, 1);
+                    width: 90px;
+                    height: 10px;
+                    z-index: -1;
+
+                    @media screen and (max-width: 600px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .button-group {
+        margin-top: em(40px);
+        .btn {
+            background-color: var(--red-color);
+            padding: em(12px) em(30px);
+            font-size: em(20px);
+            font-weight: 600;
+            font-family: var(--font-regular);
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            color: var(--white-color);
+            @include border-radius(0);
+        }
+    }
+}

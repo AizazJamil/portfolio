@@ -1,0 +1,866 @@
+$break-extrasmall: 320px;
+$break-large: 1200px;
+$break-small: 420px;
+$break-medium: 767px;
+@media only screen and (max-width: $break-medium) {
+    .customer-wrapper {
+        .customerprofiletitle-field {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            margin-bottom: 1em;
+            .profile-title {
+                display: block;
+                width: 100%;
+                text-align: center;
+                img {
+                    width: 80px;
+                    height: 80px;
+                }
+                .title {
+                    text-align: center;
+                }
+            }
+            .profileparagraph {
+                text-align: center;
+                width: 100%;
+            }
+            .button {
+                text-align: center;
+                width: 100%;
+                margin-top: 1em;
+            }
+        }
+    }
+    .customersitter-field {
+        .editfilter-field {
+            .editfilter-row {
+                .editfilterfield {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            .editinputfield {
+                display: block;
+                #mainstreet {
+                    width: 100%;
+                }
+                #seattle {
+                    width: 100%;
+                }
+                #block {
+                    width: 100%;
+                }
+                #codenumber {
+                    width: 100%;
+                }
+            }
+            .blockfield {
+                display: flex;
+                justify-content: space-between;
+                width: 74%;
+                flex-wrap: wrap;
+                margin-bottom: 2em;
+                .openblock {
+                    .fa-clock-o {
+                        color: $accent3;
+                    }
+                    h4 {
+                        font-size: 18px;
+                        font-family: $font1;
+                        font-weight: 600;
+                    }
+                    .timinglink {
+                        display: block;
+                        a {
+                            color: $accent2;
+                            font-size: 18px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+                .completeblock {
+                    .fa-clock-o {
+                        color: $accent3;
+                    }
+                    h4 {
+                        font-size: 18px;
+                        font-family: $font1;
+                        font-weight: 600;
+                    }
+                    .timinglink {
+                        display: block;
+                        a {
+                            color: $accent2;
+                            font-size: 18px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+        .customercheckbox-field {
+            .homesearch-row {
+                .field-wrap {
+                    margin-bottom: 2em;
+                    // display: block;
+                    display: flex;
+                    // justify-content: space-between;
+                    flex-wrap: wrap;
+                    #income {
+                        // margin-right: 20em;
+                        margin-bottom: 1em;
+                        width: 45%;
+                        #term-checkbox {
+                            span {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    #fun {
+                        // margin-right: 333px;
+                        width: 45%;
+                    }
+                    #sound {
+                        margin-right: 24.7em;
+                    }
+                }
+            }
+        }
+    }
+    .customersitter-field {
+        .customerform-field {
+            #addressinput {
+                width: 100%;
+                margin-bottom: 1em;
+            }
+            #cityinput {
+                width: 100%;
+                margin-right: 2em;
+                margin-bottom: 1em;
+            }
+            #stateinput {
+                width: 100%;
+                margin-right: 2em;
+                margin-bottom: 1em;
+            }
+            #codeinput {
+                width: 100%;
+            }
+        }
+    }
+    .customerjob-field {
+        margin-top: 3em;
+        margin-bottom: 5em;
+        .button {
+            margin-bottom: 1.5em;
+            .btn {
+                background-color: $accent2;
+                margin-right: 10px;
+                &:hover {
+                    background-color: #000;
+                }
+            }
+        }
+        .inputfieldlogged {
+            margin-top: 2em;
+            input,
+            select {
+                margin-bottom: 1em;
+            }
+            #b_add {
+                width: 100%;
+                position: relative;
+            }
+            #b_city {
+                width: 100% !important;
+                position: relative;
+            }
+            #b_state {
+                width: 100% !important;
+                position: relative;
+            }
+            #b_code {
+                width: 100% !important;
+                position: relative;
+            }
+            #c_card {
+                width: 100% !important;
+                position: relative;
+            }
+            #c_opt {
+                width: 100% !important;
+                position: relative;
+            }
+            #c_numb {
+                width: 100% !important;
+                position: relative;
+            }
+            .expiredfield {
+                .expireddate {
+                    margin-right: 2em;
+                    #exp_month {
+                        width: 100% !important;
+                        margin-right: 2em;
+                    }
+                    #exp_year {
+                        width: 100% !important;
+                    }
+                }
+                .securityfield {
+                    #s_cvv {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+        .heading {
+            span {
+                font-weight: 300;
+            }
+        }
+        .editfilter-field {
+            .editfilter-row {
+                margin-top: 2em;
+                margin-bottom: 2em;
+                .editfilterfield {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 74%;
+                    flex-wrap: wrap;
+                    margin-bottom: 2em;
+                }
+            }
+            .editinputfield {
+                #mainstreet {
+                    width: 100%;
+                    margin-bottom: 1em;
+                }
+                #seattle {
+                    width: 50%;
+                    margin-right: 2em;
+                    margin-bottom: 1em;
+                }
+                #block {
+                    width: 21%;
+                    margin-right: 2em;
+                    margin-bottom: 1em;
+                }
+                #codenumber {
+                    width: 21.8%;
+                    margin-bottom: 1em;
+                }
+            }
+            .blockfield {
+                display: flex;
+                justify-content: space-between;
+                width: 74%;
+                flex-wrap: wrap;
+                margin-bottom: 2em;
+                .openblock {
+                    .fa-clock-o {
+                        color: $accent3;
+                    }
+                    h4 {
+                        font-size: 18px;
+                        font-family: $font1;
+                        font-weight: 600;
+                    }
+                    .timinglink {
+                        display: block;
+                        a {
+                            color: $accent2;
+                            font-size: 18px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+                .completeblock {
+                    .fa-clock-o {
+                        color: $accent3;
+                    }
+                    h4 {
+                        font-size: 18px;
+                        font-family: $font1;
+                        font-weight: 600;
+                    }
+                    .timinglink {
+                        display: block;
+                        a {
+                            color: $accent2;
+                            font-size: 18px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+        .customerfield-row {
+            .customerjob-col {
+                .joblocationfield {
+                    width: 100%;
+                }
+            }
+        }
+        .requestfield {
+            margin-top: 2em;
+            p {
+                position: relative;
+                bottom: 10px;
+            }
+            .radioprofile {
+                .field-wrap {
+                    .profileOne {
+                        @include flexbox();
+                        flex-wrap: wrap;
+                        width: 100%;
+                        background-color: $accent4;
+                        padding-top: 1em;
+                        padding-bottom: 0;
+                        padding-left: 2em;
+                        padding-right: 4em;
+                        border-radius: 10px;
+                        border: 2px solid #dddddd;
+                        margin-bottom: 1em;
+                        label {
+                            position: relative;
+                            top: 25px;
+                        }
+                        .image {
+                            width: 100%;
+                            margin-left: 35px;
+                            img {
+                                width: 80px;
+                                height: 80px;
+                                float: left;
+                                margin-right: 1em;
+                                border: 1px solid $accent3;
+                            }
+                            h3 {
+                                a {
+                                    color: $accent2;
+                                    font-size: 18px;
+                                    font-family: $font1;
+                                    font-weight: 600;
+                                    font-style: normal;
+                                    position: relative;
+                                    bottom: 12px;
+                                }
+                            }
+                            p {
+                                position: relative;
+                                bottom: 30px;
+                            }
+                        }
+                    }
+                    .profileTwo {
+                        @include flexbox();
+                        flex-wrap: wrap;
+                        width: 100%;
+                        background-color: $accent4;
+                        padding-top: 1em;
+                        padding-bottom: 0;
+                        padding-left: 2em;
+                        padding-right: 4em;
+                        border-radius: 10px;
+                        border: 2px solid #dddddd;
+                        margin-bottom: 1em;
+                        label {
+                            position: relative;
+                            top: 25px;
+                        }
+                        .image {
+                            width: 100%;
+                            margin-left: 35px;
+                            img {
+                                width: 80px;
+                                height: 80px;
+                                float: left;
+                                margin-right: 1em;
+                                border: 1px solid $accent3;
+                            }
+                            h3 {
+                                a {
+                                    color: $accent2;
+                                    font-size: 18px;
+                                    font-family: $font1;
+                                    font-weight: 600;
+                                    font-style: normal;
+                                    position: relative;
+                                    bottom: 12px;
+                                }
+                            }
+                            p {
+                                position: relative;
+                                bottom: 30px;
+                            }
+                        }
+                    }
+                    .clearlink {
+                        color: $accent2;
+                        i {
+                            color: $accent1;
+                        }
+                    }
+                }
+            }
+        }
+        .promoinput {
+            margin-top: 2em;
+            margin-bottom: 2em;
+            .filterfield {
+                #pcode {
+                    width: 575px;
+                }
+            }
+            .btn {
+                margin-top: 1em;
+                background-color: $accent7;
+                &:hover {
+                    background-color: #000;
+                }
+            }
+        }
+        .inputfieldlogged {
+            margin-top: 2em;
+            input,
+            select {
+                margin-bottom: 1em;
+            }
+            #b_add {
+                width: 100%;
+            }
+            #b_city {
+                width: 575px;
+                margin-right: 2em;
+            }
+            #b_state {
+                width: 268px;
+                margin-right: 2em;
+            }
+            #b_code {
+                width: 268px;
+                // margin-right: 2em;
+            }
+            #c_card {
+                width: 100%;
+            }
+            #c_opt {
+                width: 575px;
+                margin-right: 2em;
+            }
+            #c_numb {
+                width: 575px;
+                // margin-right: 2em;
+            }
+            .expiredfield {
+                @include flexbox();
+                flex-wrap: wrap;
+                .expireddate {
+                    margin-right: 2em;
+                    #exp_month {
+                        width: 268px;
+                        margin-right: 2em;
+                    }
+                    #exp_year {
+                        width: 265px;
+                    }
+                }
+                .securityfield {
+                    #s_cvv {
+                        width: 150px;
+                    }
+                }
+            }
+        }
+        .buttonfield {
+            margin-top: 2em;
+        }
+        .paymentdetailtable {
+            margin-top: 2em;
+            table {
+                tr {
+                    th {
+                        text-align: left;
+                    }
+                    td {
+                        text-align: left;
+                        font-size: 18px;
+                        font-family: $font1;
+                        font-weight: 300;
+                        font-style: normal;
+                        position: relative;
+                        border-bottom: 1px solid #dddddd;
+                        border-top: 1px solid #dddddd;
+                        padding: 10px 0;
+                        color: $accent3;
+                        &:nth-child(2) {
+                            text-align: right;
+                        }
+                        .btn {
+                            background-color: $accent7;
+                            &:hover {
+                                background-color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .customericon {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            h6 {
+                width: 30%;
+            }
+        }
+        .customercard-field {
+            margin-bottom: 2em;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            .bodypanel {
+                background-color: $accent2;
+                // padding: .4em 1em;
+                padding: .5em 0 .3em 1em;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                h3 {
+                    font-size: 20px;
+                    font-weight: 300;
+                    font-family: $font1;
+                    color: #fff;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-content: center;
+                }
+            }
+            .bodytitle {
+                .bodyimageprofile {
+                    img {
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+        }
+    }
+    .customermessagedash-field {
+        .customermessage-content {
+            display: block;
+            .filter-field {
+                width: 100%;
+                float: none;
+                .daterange {
+                    width: 100%;
+                    margin-bottom: 2em;
+                }
+            }
+            .filterkey-field {
+                #keywordinclude {
+                    width: 100%;
+                }
+            }
+            .filterbtn-field {
+                clear: left;
+                .btn {
+                    margin-bottom: 1em;
+                }
+            }
+        }
+    }
+    .updateprofile-field {
+        .editfilter-field {
+            .editinputfield {
+                #fname,
+                #lname,
+                #email,
+                #newpass,
+                #confpass {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .managestore-items {
+        .editproduct-input {
+            .field-wrap {
+                #input1,
+                #input2,
+                #input3,
+                #input4,
+                #input8,
+                #input9,
+                #input10,
+                #input11 {
+                    width: 85vw;
+                }
+                .grayclr {
+                    color: $accent3;
+                }
+                #input5 {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .promos-content {
+        .editnewpromos-field {
+            .editfield-col {
+                .input-field {
+                    #code,
+                    #amount,
+                    #usescust {
+                        width: 85vw;
+                    }
+                }
+                .select-fields {
+                    #promoselect {
+                        width: 85vw;
+                    }
+                    #applyselect {
+                        width: 85vw;
+                    }
+                }
+                .daterange {
+                    width: 85vw;
+                }
+            }
+        }
+    }
+    .order__field {
+        .orderdetails-field {
+            .orderdetail-col {
+                .storehomesearch-row {
+                    .input-field {
+                        h5 {
+                            color: $accent3;
+                        }
+                        #status {
+                            width: 85vw;
+                        }
+                        #track {
+                            width: 85vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .managestore-header {
+        .navfixed {
+            ul {
+                margin-bottom: -24px;
+                li {
+                    a {
+                        padding: 0 1em;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .productapparelstore-field {
+        .productcard-row {
+            display: block;
+            .imageproduct {
+                margin-right: 0;
+                .productimage {
+                    width: 100%;
+                    height: 100%;
+                }
+                .imagegallery {
+                    ul {
+                        li {
+                            width: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .regularday-row {
+        .editfieldaccount-col {
+            .sitterphysicaladdress {
+                width: 100%;
+                margin-bottom: 1em;
+                input {
+                    margin-bottom: 1em;
+                }
+                #physicaladdress {
+                    width: 100%;
+                }
+                #physicalname {
+                    width: 100%;
+                }
+                #physicaloption {
+                    width: 100%;
+                    margin-bottom: 1em;
+                }
+                #physicalnumber {
+                    width: 100%;
+                }
+            }
+            .homesearch-account {
+                .sittercell {
+                    width: 100%;
+                    &:nth-child(1) {
+                        margin-right: 0;
+                    }
+                }
+            }
+            .sitterbankdeposit {
+                margin-bottom: 2em;
+                #routingnumber {
+                    width: 100%;
+                    margin-right: 0;
+                }
+                #accountnumber {
+                    width: 100%;
+                }
+            }
+        }
+        .savechanges-row {
+            display: block;
+            .btn {
+                margin-right: 2em;
+            }
+            span {
+                display: block;
+                margin-top: 1em;
+            }
+        }
+    }
+    .content {
+        .content__item {
+            .filter-field {
+                .daterange {
+                    width: 100%;
+                    margin-bottom: 1em;
+                }
+            }
+            .filterkey-field {
+                #keywordinclude {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .tabnavbar {
+        margin-bottom: -25px;
+        ul {
+            width: 80%;
+            li {
+                width: 45%;
+                a {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .adminmessage-field {
+        .filter-field {
+            .daterange {
+                width: 100%;
+                margin-bottom: 1em;
+            }
+        }
+        .filterkey-field {
+            #keywordincludecity {
+                width: 100%;
+            }
+        }
+    }
+    .content {
+        .profilepending-field {
+            display: block;
+            .profile-image {
+                width: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .appliedon-field {
+                display: block;
+                position: relative;
+                right: 0;
+                h5 {
+                    margin-bottom: 1em;
+                }
+            }
+        }
+    }
+    .promotion-wrapper {
+        .promotionform-field {
+            .promotion-row {
+                width: 100%;
+                #promocode {
+                    width: 100%;
+                }
+                #promoselect {
+                    width: 100%;
+                }
+                #amountcode {
+                    width: 100%;
+                }
+                .daterange {
+                    width: 100%;
+                }
+            }
+        }
+        .promobtn {
+            .btn {
+                &:hover {
+                    background-color: #000;
+                }
+            }
+        }
+    }
+    .backgroundcheck-field {
+        .identification-field {
+            input,
+            select {
+                margin-bottom: 1em;
+            }
+            #identificaton {
+                width: 100%;
+            }
+            #identificatonnumber {
+                width: 100%;
+            }
+            #idcard {
+                width: 100%;
+            }
+            #security {
+                width: 100%;
+            }
+            #physicalstreet {
+                width: 100%;
+            }
+            #currentcity {
+                width: 100%;
+            }
+            #currentstate {
+                width: 100%;
+            }
+            #currentzipcode {
+                width: 100%;
+            }
+        }
+    }
+    .emergencycontact-field {
+        .contactiformation-row {
+            input {
+                margin-bottom: 1em;
+            }
+            #contactname {
+                width: 100%;
+                // margin-right: 2em;
+            }
+            #contactphone {
+                width: 100%;
+            }
+        }
+    }
+}

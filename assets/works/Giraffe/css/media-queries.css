@@ -1,0 +1,1815 @@
+/* Device 320px & 480px */
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	.navbar .navbar-header .navbar-brand {
+		position: relative;
+		left: 30px;
+	}
+	
+	.navbar .navbar-header .navbar-toggle {
+		left: -20px;
+		position: relative;
+	}
+
+	.navbar {
+		width: 320px;
+	}
+
+	.girafi-section {
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	.girafi-section {
+		background-image: url('../img/top-background.png');
+		height: 750px;
+		display: block;
+		position: relative;
+		background-size: cover;
+		width: 100%;
+	}
+
+	#girafi-animal {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#girafi-cloud-1 {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#girafi-cloud-2 {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#ballon-orange {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#ballon-blue {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	.girafi-section .heading .fancy-heading {
+		display: block;
+		font-size: 25px;
+		font-family: OpenSans-Light;
+		font-weight: 400;
+		color: #333333;
+		position: relative;
+		z-index: 1;
+		line-height: 41.5px;
+		visibility: visible;
+		text-align: left;
+		top: 650px;
+	}
+
+	.girafi-section .heading p {
+		color: #7f868c;
+		font-size: 18px;
+		font-family: OpenSans-Light;
+		font-weight: 300;
+		line-height: 31.5px;
+		visibility: visible;
+		position: relative;
+		top: 650px;
+}
+	/* Button */
+
+	.button .btn-01 {
+		position: relative;
+		top: 610px;
+		left: 8%;
+	}
+
+	.button .btn-02 {
+		position: relative;
+		top: 620px;
+		left: 8%;
+	}
+
+	/* tusted Section */
+
+	.trusted-by .trust {
+		text-align: center;
+		position: relative;
+		left: 40%;
+		top: 60px;
+		z-index: 1;
+		clear: both;
+	}
+
+	.trusted-by .list-logo {
+		text-align: center;
+		display: inline-block;
+		position: relative;
+		right: 22%;
+		top: -30px;
+	}
+
+	/* how works section */
+
+	.how-works .girafi-animal-2 {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		right: 150px;
+		top: -100px;
+		z-index: 10;
+	}
+
+	#user-1 {
+		position: relative;
+		left: -650px;
+		top: 222px;
+		width: 12%;
+		height: 12%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-2 {
+		position: relative;
+		left: -650px;
+		top: 140px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-3 {
+		position: relative;
+		left: -520px;
+		top: 100px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-4 {
+		position: relative;
+		left: -490px;
+		top: 50px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-5 {
+		position: relative;
+		left: -550px;
+		top: 20px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	.how-works .heading {
+		position: relative;
+		top: 20px;
+	}
+
+	.how-works .heading .mini-heading {
+		text-align: center;
+		position: relative;
+		left: 0;
+		right: 0;
+	}
+
+	.how-works .heading .fancy-heading {
+		text-align: left;
+		position: relative;
+		left: 0;
+		right: 0;
+		font-size: 20px;
+		top: 10px;
+	}
+
+	.beta-access .beta-access-input {
+		width: 200px;
+    	height: 20px;
+    	border-radius: 50px;
+	}
+
+	.beta-access input-group {
+    	margin: 20px auto;
+    	width: 100%;
+	}	
+	.beta-access .text {
+    	width: 58%;
+    	height: 40px;
+    	border-top-right-radius: 0;
+    	border-bottom-right-radius: 0;
+    	color: #000;
+    	font-size: 12px;
+    	border-top-left-radius: 50px;
+    	border-bottom-left-radius: 50px;
+    	padding: 16px;
+    	padding-left: 30px;
+    	border: 2px solid #e5f2ff;
+	}
+
+	.text:focus {
+		outline: none;
+	}
+
+	button.btn-lg {
+    	width: 40%;
+    	height: 40px;
+    	line-height: 20px;
+    	border-top-left-radius: 0;
+    	border-bottom-left-radius: 0;
+    	border-radius: 50px;
+    	margin: 0 0 0 0;
+    	background-color: #0084ff;
+    	border: 1px solid transparent;
+    	position: relative;
+    	left: -12px;
+    	right: 0;
+    	font-size: 11px;
+	}
+
+	button:focus {
+		outline: none;
+	}
+
+	button.btn-lg:hover {
+		background-color: #2d4f76;
+		border-color: #2d4f76;
+	}
+
+}
+
+/* Device 320px & 568px */
+
+@media screen and (min-device-width: 320px) and (max-device-width: 568px) {
+	/* Navbar Section */
+	.navbar .navbar-header .navbar-brand {
+		position: relative;
+		left: 30px;
+	}
+	
+	.navbar .navbar-header .navbar-toggle {
+		left: -70px;
+		position: relative;
+	}
+
+	.navbar {
+		width: 375px;
+	}
+
+	girafi-section {
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	.girafi-section {
+		background-image: url('../img/top-background.png');
+		height: 750px;
+		display: block;
+		position: relative;
+		width: 100%;
+		background-size: cover;
+	}
+
+	#girafi-animal {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#girafi-cloud-1 {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#girafi-cloud-2 {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#ballon-orange {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#ballon-blue {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	.girafi-section .heading .fancy-heading {
+		display: block;
+		font-size: 25px;
+		font-family: OpenSans-Light;
+		font-weight: 400;
+		color: #333333;
+		position: relative;
+		z-index: 1;
+		line-height: 41.5px;
+		visibility: visible;
+		text-align: left;
+		top: 650px;
+	}
+
+	.girafi-section .heading p {
+		color: #7f868c;
+		font-size: 18px;
+		font-family: OpenSans-Light;
+		font-weight: 300;
+		line-height: 31.5px;
+		visibility: visible;
+		position: relative;
+		top: 650px;
+	}
+
+	/* Button */
+
+	.button .btn-01 {
+		position: relative;
+		top: 610px;
+		left: 10%;
+	}
+
+	.button .btn-02 {
+		position: relative;
+		top: 620px;
+		left: 10%;
+	}
+
+	.how-works .girafi-animal-2 {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		right: 150px;
+		top: -100px;
+		z-index: 10;
+		display: none;
+	}
+
+	#user-1 {
+		position: relative;
+		left: -650px;
+		top: 222px;
+		width: 12%;
+		height: 12%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-2 {
+		position: relative;
+		left: -650px;
+		top: 140px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-3 {
+		position: relative;
+		left: -520px;
+		top: 100px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-4 {
+		position: relative;
+		left: -490px;
+		top: 50px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-5 {
+		position: relative;
+		left: -550px;
+		top: 20px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	.how-works .heading {
+		position: relative;
+		top: 20px;
+	}
+
+	.how-works .heading .mini-heading {
+		text-align: center;
+		position: relative;
+		left: 0;
+		right: 0;
+	}
+
+	.how-works .heading .fancy-heading {
+		text-align: left;
+		position: relative;
+		left: 0;
+		right: 0;
+		font-size: 20px;
+		top: 10px;
+	}
+
+	.beta-access .beta-access-input {
+		width: 200px;
+    	height: 20px;
+    	border-radius: 50px;
+	}
+
+	.beta-access input-group {
+    	margin: 20px auto;
+    	width: 100%;
+	}	
+	.beta-access .text {
+    	width: 58%;
+    	height: 40px;
+    	border-top-right-radius: 0;
+    	border-bottom-right-radius: 0;
+    	color: #000;
+    	font-size: 12px;
+    	border-top-left-radius: 50px;
+    	border-bottom-left-radius: 50px;
+    	padding: 16px;
+    	padding-left: 30px;
+    	border: 2px solid #e5f2ff;
+	}
+
+	.text:focus {
+		outline: none;
+	}
+
+	button.btn-lg {
+    	width: 40%;
+    	height: 40px;
+    	line-height: 20px;
+    	border-top-left-radius: 0;
+    	border-bottom-left-radius: 0;
+    	border-radius: 50px;
+    	margin: 0 0 0 0;
+    	background-color: #0084ff;
+    	border: 1px solid transparent;
+    	position: relative;
+    	left: -16px;
+    	right: 0;
+    	font-size: 13px;
+	}
+
+	button:focus {
+		outline: none;
+	}
+
+	button.btn-lg:hover {
+		background-color: #2d4f76;
+		border-color: #2d4f76;
+	}
+}
+
+/*  Device 375px & 667px */
+
+@media screen and (min-device-width: 375px) and (max-device-width: 667px) {
+	/* Navbar Section */
+	.navbar .navbar-header .navbar-brand {
+		position: relative;
+		left: 30px;
+	}
+	
+	.navbar .navbar-header .navbar-toggle {
+		left: -10px;
+		position: relative;
+	}
+
+	.navbar {
+		width: 375px;
+	}
+
+	girafi-section {
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	.girafi-section {
+		background-image: url('../img/top-background.png');
+		height: 700px;
+		display: block;
+		position: relative;
+	}
+
+	/* tusted Section */
+
+	.trusted-by .trust {
+		text-align: center;
+		position: relative;
+		left: 40%;
+		top: 60px;
+		z-index: 1;
+		clear: both;
+	}
+
+	.trusted-by .list-logo {
+		text-align: center;
+		display: inline-block;
+		position: relative;
+		right: 2%;
+		top: -30px;
+	}
+
+	#girafi-animal {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#girafi-cloud-1 {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#girafi-cloud-2 {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#ballon-orange {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#ballon-blue {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	.girafi-section .heading .fancy-heading {
+		display: block;
+		font-size: 25px;
+		font-family: OpenSans-Light;
+		font-weight: 400;
+		color: #333333;
+		position: relative;
+		z-index: 1;
+		line-height: 41.5px;
+		visibility: visible;
+		text-align: left;
+		top: 650px;
+	}
+
+	.girafi-section .heading p {
+		color: #7f868c;
+		font-size: 18px;
+		font-family: OpenSans-Light;
+		font-weight: 300;
+		line-height: 31.5px;
+		visibility: visible;
+		position: relative;
+		top: 650px;
+	}
+
+	/* Button */
+
+	.button .btn-01 {
+		position: relative;
+		top: 610px;
+		left: 16%;
+	}
+
+	.button .btn-02 {
+		position: relative;
+		top: 620px;
+		left: 16%;
+	}
+
+	.how-works .girafi-animal-2 {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		right: 150px;
+		top: -100px;
+		z-index: 10;
+		display: none;
+	}
+
+	#user-1 {
+		position: relative;
+		left: -650px;
+		top: 222px;
+		width: 12%;
+		height: 12%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-2 {
+		position: relative;
+		left: -650px;
+		top: 140px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-3 {
+		position: relative;
+		left: -520px;
+		top: 100px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-4 {
+		position: relative;
+		left: -490px;
+		top: 50px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-5 {
+		position: relative;
+		left: -550px;
+		top: 20px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	/* How Works Section */
+
+	.how-works .heading {
+		position: relative;
+		top: 20px;
+	}
+
+	.how-works .heading .mini-heading {
+		text-align: center;
+		position: relative;
+		left: 0;
+		right: 0;
+	}
+
+	.how-works .heading .fancy-heading {
+		text-align: left;
+		position: relative;
+		left: 0;
+		right: 0;
+		font-size: 22px;
+		top: 10px;
+	}
+
+	.beta-access .beta-access-input {
+		width: 200px;
+    	height: 20px;
+    	border-radius: 50px;
+	}
+
+	.beta-access input-group {
+    	margin: 20px auto;
+    	width: 100%;
+	}	
+	.beta-access .text {
+    	width: 58%;
+    	height: 40px;
+    	border-top-right-radius: 0;
+    	border-bottom-right-radius: 0;
+    	color: #000;
+    	font-size: 12px;
+    	border-top-left-radius: 50px;
+    	border-bottom-left-radius: 50px;
+    	padding: 16px;
+    	padding-left: 30px;
+    	border: 2px solid #e5f2ff;
+	}
+
+	.text:focus {
+		outline: none;
+	}
+
+	button.btn-lg {
+    	width: 40%;
+    	height: 40px;
+    	line-height: 20px;
+    	border-top-left-radius: 0;
+    	border-bottom-left-radius: 0;
+    	border-radius: 50px;
+    	margin: 0 0 0 0;
+    	background-color: #0084ff;
+    	border: 1px solid transparent;
+    	position: relative;
+    	left: -16px;
+    	right: 0;
+    	font-size: 13px;
+	}
+
+	button:focus {
+		outline: none;
+	}
+
+	button.btn-lg:hover {
+		background-color: #2d4f76;
+		border-color: #2d4f76;
+	}
+}
+
+/* Device 414px & 736px */
+
+@media screen and (min-device-width: 414px) and (max-device-width: 736px) {
+	/* Navbar Section */
+	.navbar .navbar-header .navbar-brand {
+		position: relative;
+		left: 30px;
+	}
+	
+	.navbar .navbar-header .navbar-toggle {
+		left: -50px;
+		position: relative;
+	}
+
+	.navbar {
+		width: 445px;
+	}
+
+	girafi-section {
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	.girafi-section {
+		background-image: url('../img/top-background.png');
+		height: 660px;
+		display: block;
+		position: relative;
+		width: 100%;
+		background-size: cover;
+	}
+
+	/* tusted Section */
+
+	.trusted-by .trust {
+		text-align: center;
+		position: relative;
+		left: 40%;
+		top: 60px;
+		z-index: 1;
+		clear: both;
+	}
+
+	.trusted-by .list-logo {
+		text-align: center;
+		display: inline-block;
+		position: relative;
+		right: -4%;
+		top: -30px;
+	}
+
+	#girafi-animal {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#girafi-cloud-1 {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#girafi-cloud-2 {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#ballon-orange {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#ballon-blue {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	.girafi-section .heading .fancy-heading {
+		display: block;
+		font-size: 30px;
+		font-family: OpenSans-Light;
+		font-weight: 400;
+		color: #333333;
+		position: relative;
+		z-index: 1;
+		line-height: 41.5px;
+		visibility: visible;
+		text-align: left;
+		top: 650px;
+	}
+
+	.girafi-section .heading p {
+		color: #7f868c;
+		font-size: 18px;
+		font-family: OpenSans-Light;
+		font-weight: 300;
+		line-height: 31.5px;
+		visibility: visible;
+		position: relative;
+		top: 650px;
+	}
+
+	/* Button */
+
+	.button .btn-01 {
+		position: relative;
+		top: 610px;
+		left: 20%;
+	}
+
+	.button .btn-02 {
+		position: relative;
+		top: 620px;
+		left: 20%;
+	}
+
+	.how-works .girafi-animal-2 {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		right: 150px;
+		top: -100px;
+		z-index: 10;
+		display: none;
+	}
+
+	#user-1 {
+		position: relative;
+		left: -650px;
+		top: 222px;
+		width: 12%;
+		height: 12%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-2 {
+		position: relative;
+		left: -650px;
+		top: 140px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-3 {
+		position: relative;
+		left: -520px;
+		top: 100px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-4 {
+		position: relative;
+		left: -490px;
+		top: 50px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-5 {
+		position: relative;
+		left: -550px;
+		top: 20px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	/* How Works Section */
+
+	.how-works .heading {
+		position: relative;
+		top: 20px;
+	}
+
+	.how-works .heading .mini-heading {
+		text-align: center;
+		position: relative;
+		left: 0;
+		right: 0;
+	}
+
+	.how-works .heading .fancy-heading {
+		text-align: left;
+		position: relative;
+		left: 0;
+		right: 0;
+		font-size: 22px;
+		top: 10px;
+	}
+
+	.beta-access .beta-access-input {
+		width: 200px;
+    	height: 20px;
+    	border-radius: 50px;
+	}
+
+	.beta-access input-group {
+    	margin: 20px auto;
+    	width: 100%;
+	}	
+	.beta-access .text {
+    	width: 58%;
+    	height: 40px;
+    	border-top-right-radius: 0;
+    	border-bottom-right-radius: 0;
+    	color: #000;
+    	font-size: 12px;
+    	border-top-left-radius: 50px;
+    	border-bottom-left-radius: 50px;
+    	padding: 16px;
+    	padding-left: 30px;
+    	border: 2px solid #e5f2ff;
+	}
+
+	.text:focus {
+		outline: none;
+	}
+
+	button.btn-lg {
+    	width: 40%;
+    	height: 40px;
+    	line-height: 20px;
+    	border-top-left-radius: 0;
+    	border-bottom-left-radius: 0;
+    	border-radius: 50px;
+    	margin: 0 0 0 0;
+    	background-color: #0084ff;
+    	border: 1px solid transparent;
+    	position: relative;
+    	left: -16px;
+    	right: 0;
+    	font-size: 13px;
+	}
+
+	button:focus {
+		outline: none;
+	}
+
+	button.btn-lg:hover {
+		background-color: #2d4f76;
+		border-color: #2d4f76;
+	}
+}
+
+/* Device 360px & 640px */
+
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
+	/* Navbar Section */
+	.navbar .navbar-header .navbar-brand {
+		position: relative;
+		left: 30px;
+	}
+	
+	.navbar .navbar-header .navbar-toggle {
+		left: -20px;
+		position: relative;
+	}
+
+	.navbar {
+		width: 415px;
+	}
+
+	girafi-section {
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	.girafi-section {
+		background-image: url('../img/top-background.png');
+		height: 710px;
+		display: block;
+		position: relative;
+		width: 100%;
+		background-size: cover;
+	}
+
+	/* tusted Section */
+
+	.trusted-by .trust {
+		text-align: center;
+		position: relative;
+		left: 40%;
+		top: 60px;
+		z-index: 1;
+		clear: both;
+	}
+
+	.trusted-by .list-logo {
+		text-align: center;
+		display: inline-block;
+		position: relative;
+		right: 7%;
+		top: -30px;
+	}
+
+	#girafi-animal {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#girafi-cloud-1 {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#girafi-cloud-2 {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#ballon-orange {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#ballon-blue {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	.girafi-section .heading .fancy-heading {
+		display: block;
+		font-size: 30px;
+		font-family: OpenSans-Light;
+		font-weight: 400;
+		color: #333333;
+		position: relative;
+		z-index: 1;
+		line-height: 41.5px;
+		visibility: visible;
+		text-align: left;
+		top: 650px;
+	}
+
+	.girafi-section .heading p {
+		color: #7f868c;
+		font-size: 18px;
+		font-family: OpenSans-Light;
+		font-weight: 300;
+		line-height: 31.5px;
+		visibility: visible;
+		position: relative;
+		top: 650px;
+	}
+
+	/* Button */
+
+	.button .btn-01 {
+		position: relative;
+		top: 610px;
+		left: 20%;
+	}
+
+	.button .btn-02 {
+		position: relative;
+		top: 620px;
+		left: 20%;
+	}
+
+	.how-works .girafi-animal-2 {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		right: 150px;
+		top: -100px;
+		z-index: 10;
+		display: none;
+	}
+
+	#user-1 {
+		position: relative;
+		left: -650px;
+		top: 222px;
+		width: 12%;
+		height: 12%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-2 {
+		position: relative;
+		left: -650px;
+		top: 140px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-3 {
+		position: relative;
+		left: -520px;
+		top: 100px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-4 {
+		position: relative;
+		left: -490px;
+		top: 50px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-5 {
+		position: relative;
+		left: -550px;
+		top: 20px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	/* How Works Section */
+
+	.how-works .heading {
+		position: relative;
+		top: 20px;
+	}
+
+	.how-works .heading .mini-heading {
+		text-align: center;
+		position: relative;
+		left: 0;
+		right: 0;
+	}
+
+	.how-works .heading .fancy-heading {
+		text-align: left;
+		position: relative;
+		left: 0;
+		right: 0;
+		font-size: 22px;
+		top: 10px;
+	}
+
+	.beta-access .beta-access-input {
+		width: 200px;
+    	height: 20px;
+    	border-radius: 50px;
+	}
+
+	.beta-access input-group {
+    	margin: 20px auto;
+    	width: 100%;
+	}	
+	.beta-access .text {
+    	width: 58%;
+    	height: 40px;
+    	border-top-right-radius: 0;
+    	border-bottom-right-radius: 0;
+    	color: #000;
+    	font-size: 15px;
+    	border-top-left-radius: 50px;
+    	border-bottom-left-radius: 50px;
+    	padding: 16px;
+    	padding-left: 30px;
+    	border: 2px solid #e5f2ff;
+	}
+
+	.text:focus {
+		outline: none;
+	}
+
+	button.btn-lg {
+    	width: 40%;
+    	height: 40px;
+    	line-height: 20px;
+    	border-top-left-radius: 0;
+    	border-bottom-left-radius: 0;
+    	border-radius: 50px;
+    	margin: 0 0 0 0;
+    	background-color: #0084ff;
+    	border: 1px solid transparent;
+    	position: relative;
+    	left: -16px;
+    	right: 0;
+    	font-size: 15px;
+	}
+
+	button:focus {
+		outline: none;
+	}
+
+	button.btn-lg:hover {
+		background-color: #2d4f76;
+		border-color: #2d4f76;
+	}
+}
+
+/* Device 414px & 736px */
+
+@media screen and (min-device-width: 414px) and (max-device-width: 736px) {
+	/* Navbar Section */
+	.navbar .navbar-header .navbar-brand {
+		position: relative;
+		left: 30px;
+	}
+	
+	.navbar .navbar-header .navbar-toggle {
+		left: -20px;
+		position: relative;
+	}
+
+	.navbar {
+		width: 415px;
+	}
+
+	girafi-section {
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	.girafi-section {
+		background-image: url('../img/top-background.png');
+		height: 710px;
+		display: block;
+		position: relative;
+		width: 100%;
+		background-size: cover;
+	}
+
+	/* tusted Section */
+
+	.trusted-by .trust {
+		text-align: center;
+		position: relative;
+		left: 40%;
+		top: 60px;
+		z-index: 1;
+		clear: both;
+	}
+
+	.trusted-by .list-logo {
+		text-align: center;
+		display: inline-block;
+		position: relative;
+		right: -3%;
+		top: -30px;
+	}
+
+	#girafi-animal {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#girafi-cloud-1 {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#girafi-cloud-2 {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#ballon-orange {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#ballon-blue {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	.girafi-section .heading .fancy-heading {
+		display: block;
+		font-size: 30px;
+		font-family: OpenSans-Light;
+		font-weight: 400;
+		color: #333333;
+		position: relative;
+		z-index: 1;
+		line-height: 41.5px;
+		visibility: visible;
+		text-align: left;
+		top: 650px;
+	}
+
+	.girafi-section .heading p {
+		color: #7f868c;
+		font-size: 18px;
+		font-family: OpenSans-Light;
+		font-weight: 300;
+		line-height: 31.5px;
+		visibility: visible;
+		position: relative;
+		top: 650px;
+	}
+
+	/* Button */
+
+	.button .btn-01 {
+		position: relative;
+		top: 610px;
+		left: 20%;
+	}
+
+	.button .btn-02 {
+		position: relative;
+		top: 620px;
+		left: 20%;
+	}
+
+	.how-works .girafi-animal-2 {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		right: 150px;
+		top: -100px;
+		z-index: 10;
+		display: none;
+	}
+
+	#user-1 {
+		position: relative;
+		left: -650px;
+		top: 222px;
+		width: 12%;
+		height: 12%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-2 {
+		position: relative;
+		left: -650px;
+		top: 140px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-3 {
+		position: relative;
+		left: -520px;
+		top: 100px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-4 {
+		position: relative;
+		left: -490px;
+		top: 50px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-5 {
+		position: relative;
+		left: -550px;
+		top: 20px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	/* How Works Section */
+
+	.how-works .heading {
+		position: relative;
+		top: 20px;
+	}
+
+	.how-works .heading .mini-heading {
+		text-align: center;
+		position: relative;
+		left: 0;
+		right: 0;
+	}
+
+	.how-works .heading .fancy-heading {
+		text-align: left;
+		position: relative;
+		left: 0;
+		right: 0;
+		font-size: 22px;
+		top: 10px;
+	}
+
+	.beta-access .beta-access-input {
+		width: 200px;
+    	height: 20px;
+    	border-radius: 50px;
+	}
+
+	.beta-access input-group {
+    	margin: 20px auto;
+    	width: 100%;
+	}	
+	.beta-access .text {
+    	width: 58%;
+    	height: 40px;
+    	border-top-right-radius: 0;
+    	border-bottom-right-radius: 0;
+    	color: #000;
+    	font-size: 15px;
+    	border-top-left-radius: 50px;
+    	border-bottom-left-radius: 50px;
+    	padding: 16px;
+    	padding-left: 30px;
+    	border: 2px solid #e5f2ff;
+	}
+
+	.text:focus {
+		outline: none;
+	}
+
+	button.btn-lg {
+    	width: 40%;
+    	height: 40px;
+    	line-height: 20px;
+    	border-top-left-radius: 0;
+    	border-bottom-left-radius: 0;
+    	border-radius: 50px;
+    	margin: 0 0 0 0;
+    	background-color: #0084ff;
+    	border: 1px solid transparent;
+    	position: relative;
+    	left: -16px;
+    	right: 0;
+    	font-size: 15px;
+	}
+
+	button:focus {
+		outline: none;
+	}
+
+	button.btn-lg:hover {
+		background-color: #2d4f76;
+		border-color: #2d4f76;
+	}
+}
+
+/* Device 320px & 533 */
+
+@media screen and (min-device-width: 320px) and (max-device-width: 533px) {
+	/* Navbar Section */
+	.navbar .navbar-header .navbar-brand {
+		position: relative;
+		left: 30px;
+	}
+	
+	.navbar .navbar-header .navbar-toggle {
+		left: -20px;
+		position: relative;
+	}
+
+	.navbar {
+		width: 325px;
+	}
+
+	girafi-section {
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	.girafi-section {
+		background-image: url('../img/top-background.png');
+		height: 710px;
+		display: block;
+		position: relative;
+		width: 100%;
+		background-size: cover;
+	}
+
+	/* tusted Section */
+
+	.trusted-by .trust {
+		text-align: center;
+		position: relative;
+		left: 40%;
+		top: 60px;
+		z-index: 1;
+		clear: both;
+	}
+
+	.trusted-by .list-logo {
+		text-align: center;
+		display: inline-block;
+		position: relative;
+		right: 15%;
+		top: -30px;
+	}
+
+	#girafi-animal {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#girafi-cloud-1 {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#girafi-cloud-2 {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#ballon-orange {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	#ballon-blue {
+		display: none;
+		left: 0;
+		right: 0;
+		position: relative;
+	}
+
+	.girafi-section .heading .fancy-heading {
+		display: block;
+		font-size: 30px;
+		font-family: OpenSans-Light;
+		font-weight: 400;
+		color: #333333;
+		position: relative;
+		z-index: 1;
+		line-height: 41.5px;
+		visibility: visible;
+		text-align: left;
+		top: 650px;
+	}
+
+	.girafi-section .heading p {
+		color: #7f868c;
+		font-size: 18px;
+		font-family: OpenSans-Light;
+		font-weight: 300;
+		line-height: 31.5px;
+		visibility: visible;
+		position: relative;
+		top: 650px;
+	}
+
+	/* Button */
+
+	.button .btn-01 {
+		position: relative;
+		top: 610px;
+		left: 10%;
+	}
+
+	.button .btn-02 {
+		position: relative;
+		top: 620px;
+		left: 10%;
+	}
+
+	.how-works .girafi-animal-2 {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		right: 150px;
+		top: -100px;
+		z-index: 10;
+		display: none;
+	}
+
+	#user-1 {
+		position: relative;
+		left: -650px;
+		top: 222px;
+		width: 12%;
+		height: 12%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-2 {
+		position: relative;
+		left: -650px;
+		top: 140px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-3 {
+		position: relative;
+		left: -520px;
+		top: 100px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-4 {
+		position: relative;
+		left: -490px;
+		top: 50px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	#user-5 {
+		position: relative;
+		left: -550px;
+		top: 20px;
+		width: 20%;
+		height: 20%;
+		z-index: 1;
+		display: none;
+	}
+
+	/* How Works Section */
+
+	.how-works .heading {
+		position: relative;
+		top: 20px;
+	}
+
+	.how-works .heading .mini-heading {
+		text-align: center;
+		position: relative;
+		left: 0;
+		right: 0;
+	}
+
+	.how-works .heading .fancy-heading {
+		text-align: left;
+		position: relative;
+		left: 0;
+		right: 0;
+		font-size: 22px;
+		top: 10px;
+	}
+
+	.beta-access .beta-access-input {
+		width: 200px;
+    	height: 20px;
+    	border-radius: 50px;
+	}
+
+	.beta-access input-group {
+    	margin: 20px auto;
+    	width: 100%;
+	}	
+	.beta-access .text {
+    	width: 58%;
+    	height: 40px;
+    	border-top-right-radius: 0;
+    	border-bottom-right-radius: 0;
+    	color: #000;
+    	font-size: 13px;
+    	border-top-left-radius: 50px;
+    	border-bottom-left-radius: 50px;
+    	padding: 16px;
+    	padding-left: 30px;
+    	border: 2px solid #e5f2ff;
+	}
+
+	.text:focus {
+		outline: none;
+	}
+
+	button.btn-lg {
+    	width: 40%;
+    	height: 40px;
+    	line-height: 20px;
+    	border-top-left-radius: 0;
+    	border-bottom-left-radius: 0;
+    	border-radius: 50px;
+    	margin: 0 0 0 0;
+    	background-color: #0084ff;
+    	border: 1px solid transparent;
+    	position: relative;
+    	left: -16px;
+    	right: 0;
+    	font-size: 13px;
+	}
+
+	button:focus {
+		outline: none;
+	}
+
+	button.btn-lg:hover {
+		background-color: #2d4f76;
+		border-color: #2d4f76;
+	}
+}

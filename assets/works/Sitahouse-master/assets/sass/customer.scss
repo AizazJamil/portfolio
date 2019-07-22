@@ -1,0 +1,1194 @@
+// Customer Section Page
+.customer-header {
+    background-color: #f4efeb;
+    padding: 1.5em 0;
+    h2 {
+        .fa-dashboard {
+            color: $accent2;
+        }
+        .fa-dollar {
+            color: $accent2;
+        }
+        .fa-map-marker {
+            color: $accent2;
+        }
+        .fa-envelope {
+            color: $accent2;
+        }
+        .fa-bullhorn {
+            color: $accent2;
+        }
+        .fa-envelope-o {
+            color: $accent2;
+        }
+    }
+    p {
+        text-align: center;
+    }
+}
+
+.line-seperator {
+    border-top: 1px solid #ccc;
+    margin-bottom: 1em;
+}
+
+.main-nav {
+    .loginNavWrap {
+        .admin-link-row {
+            margin-right: 0;
+            i {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.customer-wrapper {
+    margin-top: 3em;
+    margin-bottom: 5em;
+    .customer-btn {
+        margin-bottom: 2em;
+        .btn {
+            background-color: $accent2;
+            font-family: $font1;
+            &:nth-child(1) {
+                margin-right: 10px;
+            }
+            &:hover {
+                background-color: #000;
+            }
+        }
+    }
+    .customer-field {
+        .customer-link {
+            .messagelinks {
+                color: $accent2;
+                font-family: $font1;
+                font-weight: 700;
+                font-size: 1.6em;
+                font-style: normal;
+            }
+            p {
+                color: $accent3;
+                font-family: $font2;
+                // font-size: 15px;
+                margin-bottom: 10px;
+                a {
+                    color: $accent2;
+                }
+            }
+        }
+    }
+    .customerprofiletitle-field {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        margin-bottom: 1em;
+        .profile-title {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            width: 35%;
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50px;
+                margin-right: 10px;
+            }
+            .title {
+                h5 {
+                    text-decoration: underline;
+                    color: $accent2;
+                    font-size: 1.2em;
+                    font-weight: 500;
+                    position: relative;
+                    top: 10px;
+                }
+                span {
+                    font-family: $font1;
+                    font-size: 14px;
+                    color: $accent3;
+                }
+            }
+        }
+        .profileparagraph {
+            h4 {
+                font-size: 20px;
+                color: $accent1;
+                position: relative;
+                top: 15px;
+                span {
+                    color: $accent2;
+                    text-decoration: underline;
+                }
+            }
+            p {
+                color: $accent3;
+            }
+        }
+        .button {
+            .btn {
+                font-weight: 400;
+            }
+        }
+    }
+    .customerjob-field {
+        margin-top: 3em;
+        h3 {
+            color: $accent2;
+            text-decoration: underline;
+            i {
+                color: $accent1;
+            }
+        }
+        p {
+            color: $accent3;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            span {
+                text-decoration: underline;
+                color: $accent2;
+            }
+        }
+        .table-customer {
+            margin-top: 10px;
+            table {
+                text-align: left;
+                tbody {
+                    tr {
+                        border-bottom: 1px solid #dddddd;
+                        th {
+                            color: #000;
+                            font-size: 20px;
+                        }
+                        th,
+                        td {
+                            padding: 10px 0;
+                        }
+                        td:nth-child(1) {
+                            color: $accent2;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.customerblock-btn {
+    margin-bottom: 2em;
+    .btn {
+        background-color: $accent7;
+        &:hover {
+            background-color: #000;
+        }
+    }
+}
+
+.jobsbtn {
+    margin-bottom: 2em;
+    .btn {
+        background-color: $accent2;
+        &:hover {
+            background-color: #000000;
+        }
+        &:nth-child(1) {
+            margin-right: 10px;
+        }
+    }
+}
+
+.customersitter-field {
+    margin-top: 3em;
+    margin-bottom: 5em;
+    .customerform-field {
+        margin-top: 1em;
+        margin-bottom: 2em;
+        #addressinput {
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        #cityinput {
+            width: 585px;
+            margin-right: 2em;
+        }
+        #stateinput {
+            width: 22%;
+            margin-right: 2em;
+        }
+        #codeinput {
+            width: 22%;
+        }
+    }
+    .heading {
+        i {
+            color: $accent1;
+        }
+        span {
+            font-weight: 300;
+        }
+        .red {
+            color: $accent9;
+            font-weight: 700;
+        }
+    }
+    .editfilter-field {
+        .editfilter-row {
+            margin-top: 2em;
+            margin-bottom: 2em;
+            .editfilterfield {
+                display: flex;
+                justify-content: space-between;
+                width: 74%;
+                flex-wrap: wrap;
+                margin-bottom: 2em;
+            }
+        }
+        .editinputfield {
+            #mainstreet {
+                width: 100%;
+                margin-bottom: 1em;
+            }
+            #seattle {
+                width: 50%;
+                margin-right: 2em;
+                margin-bottom: 1em;
+            }
+            #block {
+                width: 21%;
+                margin-right: 2em;
+                margin-bottom: 1em;
+            }
+            #codenumber {
+                width: 21.8%;
+                margin-bottom: 1em;
+            }
+        }
+        .blockfield {
+            display: flex;
+            justify-content: space-between;
+            width: 74%;
+            flex-wrap: wrap;
+            margin-bottom: 2em;
+            .openblock {
+                .fa-clock-o {
+                    color: $accent3;
+                }
+                h4 {
+                    font-size: 18px;
+                    font-family: $font1;
+                    font-weight: 600;
+                }
+                .timinglink {
+                    display: block;
+                    a {
+                        color: $accent2;
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+                }
+            }
+            .completeblock {
+                .fa-clock-o {
+                    color: $accent3;
+                }
+                h4 {
+                    font-size: 18px;
+                    font-family: $font1;
+                    font-weight: 600;
+                }
+                .timinglink {
+                    display: block;
+                    a {
+                        color: $accent2;
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+    .customercheckbox-field {
+        .homesearch-row {
+            .field-wrap {
+                margin-bottom: 2em;
+                // display: block;
+                display: flex;
+                // justify-content: space-between;
+                flex-wrap: wrap;
+                #income {
+                    // margin-right: 20em;
+                    margin-bottom: 6px;
+                    width: 45%;
+                    #term-checkbox {
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+                #fun {
+                    // margin-right: 333px;
+                    width: 45%;
+                }
+                #sound {
+                    margin-right: 24.7em;
+                }
+            }
+        }
+    }
+}
+
+.customerjob-field {
+    margin-top: 3em;
+    margin-bottom: 5em;
+    .button {
+        margin-bottom: 1.5em;
+        .btn {
+            background-color: $accent2;
+            margin-right: 10px;
+            &:hover {
+                background-color: #000;
+            }
+        }
+    }
+    .heading {
+        span {
+            font-weight: 300;
+        }
+    }
+    .editfilter-field {
+        .editfilter-row {
+            margin-top: 2em;
+            margin-bottom: 2em;
+            .editfilterfield {
+                display: flex;
+                justify-content: space-between;
+                width: 74%;
+                flex-wrap: wrap;
+                margin-bottom: 2em;
+            }
+        }
+        .editinputfield {
+            #mainstreet {
+                width: 100%;
+                margin-bottom: 1em;
+            }
+            #seattle {
+                width: 50%;
+                margin-right: 2em;
+                margin-bottom: 1em;
+            }
+            #block {
+                width: 21%;
+                margin-right: 2em;
+                margin-bottom: 1em;
+            }
+            #codenumber {
+                width: 21.8%;
+                margin-bottom: 1em;
+            }
+        }
+        .blockfield {
+            display: flex;
+            justify-content: space-between;
+            width: 74%;
+            flex-wrap: wrap;
+            margin-bottom: 2em;
+            .openblock {
+                .fa-clock-o {
+                    color: $accent3;
+                }
+                h4 {
+                    font-size: 18px;
+                    font-family: $font1;
+                    font-weight: 600;
+                }
+                .timinglink {
+                    display: block;
+                    a {
+                        color: $accent2;
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+                }
+            }
+            .completeblock {
+                .fa-clock-o {
+                    color: $accent3;
+                }
+                h4 {
+                    font-size: 18px;
+                    font-family: $font1;
+                    font-weight: 600;
+                }
+                .timinglink {
+                    display: block;
+                    a {
+                        color: $accent2;
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+    .customerfield-row {
+        margin-bottom: 1.5em;
+        .customerjob-col {
+            @include flexbox();
+            flex-wrap: wrap;
+            .joblocationfield {
+                width: 50%;
+                h5 {
+                    line-height: 2;
+                    i {
+                        color: $accent3;
+                    }
+                }
+                span {
+                    color: $accent3;
+                    font-size: 22px;
+                    font-weight: 300;
+                    font-family: $font1;
+                    line-height: 1.5;
+                }
+            }
+            .timeblock {
+                h5 {
+                    line-height: 2;
+                    i {
+                        color: $accent3;
+                    }
+                }
+                a {
+                    display: block;
+                    color: $accent2;
+                }
+            }
+        }
+    }
+    .requestfield {
+        margin-top: 2em;
+        p {
+            position: relative;
+            bottom: 10px;
+        }
+        .radioprofile {
+            .field-wrap {
+                .profileOne {
+                    @include flexbox();
+                    flex-wrap: wrap;
+                    width: 100%;
+                    background-color: $accent4;
+                    padding-top: 1em;
+                    padding-bottom: 0;
+                    padding-left: 2em;
+                    padding-right: 4em;
+                    border-radius: 10px;
+                    border: 2px solid #dddddd;
+                    margin-bottom: 1em;
+                    label {
+                        position: relative;
+                        top: 25px;
+                    }
+                    .image {
+                        width: 100%;
+                        margin-left: 35px;
+                        img {
+                            width: 80px;
+                            height: 80px;
+                            float: left;
+                            margin-right: 1em;
+                            border: 1px solid $accent3;
+                        }
+                        h3 {
+                            a {
+                                color: $accent2;
+                                font-size: 18px;
+                                font-family: $font1;
+                                font-weight: 600;
+                                font-style: normal;
+                                position: relative;
+                                bottom: 12px;
+                            }
+                        }
+                        p {
+                            position: relative;
+                            bottom: 30px;
+                        }
+                    }
+                }
+                .profileTwo {
+                    @include flexbox();
+                    flex-wrap: wrap;
+                    width: 100%;
+                    background-color: $accent4;
+                    padding-top: 1em;
+                    padding-bottom: 0;
+                    padding-left: 2em;
+                    padding-right: 4em;
+                    border-radius: 10px;
+                    border: 2px solid #dddddd;
+                    margin-bottom: 1em;
+                    label {
+                        position: relative;
+                        top: 25px;
+                    }
+                    .image {
+                        width: 100%;
+                        margin-left: 35px;
+                        img {
+                            width: 80px;
+                            height: 80px;
+                            float: left;
+                            margin-right: 1em;
+                            border: 1px solid $accent3;
+                        }
+                        h3 {
+                            a {
+                                color: $accent2;
+                                font-size: 18px;
+                                font-family: $font1;
+                                font-weight: 600;
+                                font-style: normal;
+                                position: relative;
+                                bottom: 12px;
+                            }
+                        }
+                        p {
+                            position: relative;
+                            bottom: 30px;
+                        }
+                    }
+                }
+                .clearlink {
+                    color: $accent2;
+                    i {
+                        color: $accent1;
+                    }
+                }
+            }
+        }
+    }
+    .promoinput {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        .filterfield {
+            #pcode {
+                width: 575px;
+            }
+        }
+        .btn {
+            margin-top: 1em;
+            background-color: $accent7;
+            &:hover {
+                background-color: #000;
+            }
+        }
+    }
+    .inputfieldlogged {
+        margin-top: 2em;
+        input,
+        select {
+            margin-bottom: 1em;
+        }
+        #b_add {
+            width: 100%;
+        }
+        #b_city {
+            width: 575px;
+            margin-right: 2em;
+        }
+        #b_state {
+            width: 268px;
+            margin-right: 2em;
+        }
+        #b_code {
+            width: 268px;
+            // margin-right: 2em;
+        }
+        #c_card {
+            width: 100%;
+        }
+        #c_opt {
+            width: 575px;
+            margin-right: 2em;
+        }
+        #c_numb {
+            width: 575px;
+            // margin-right: 2em;
+        }
+        .expiredfield {
+            @include flexbox();
+            flex-wrap: wrap;
+            .expireddate {
+                margin-right: 2em;
+                #exp_month {
+                    width: 268px;
+                    margin-right: 2em;
+                }
+                #exp_year {
+                    width: 265px;
+                }
+            }
+            .securityfield {
+                #s_cvv {
+                    width: 150px;
+                }
+            }
+        }
+    }
+    .buttonfield {
+        margin-top: 2em;
+    }
+    .paymentdetailtable {
+        margin-top: 2em;
+        table {
+            tr {
+                th {
+                    text-align: left;
+                }
+                td {
+                    text-align: left;
+                    font-size: 18px;
+                    font-family: $font1;
+                    font-weight: 300;
+                    font-style: normal;
+                    position: relative;
+                    border-bottom: 1px solid #dddddd;
+                    border-top: 1px solid #dddddd;
+                    padding: 10px 0;
+                    color: $accent3;
+                    &:nth-child(2) {
+                        text-align: right;
+                    }
+                    .btn {
+                        background-color: $accent7;
+                        &:hover {
+                            background-color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .customericon {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        h6 {
+            font-size: 15px;
+            font-weight: 300;
+            float: right;
+            width: 12%;
+            i {
+                font-size: 2.5em;
+                margin-right: 5px;
+                float: left;
+            }
+            .fa-paw {
+                color: $accent1;
+            }
+            .fa-check-square {
+                color: $accent2;
+            }
+        }
+    }
+    .customercard-field {
+        margin-bottom: 2em;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        .bodypanel {
+            background-color: $accent2;
+            // padding: .4em 1em;
+            padding: .5em 0 .3em 1em;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            h3 {
+                font-size: 20px;
+                font-weight: 300;
+                font-family: $font1;
+                color: #fff;
+                display: flex;
+                justify-content: flex-start;
+                align-content: center;
+            }
+        }
+        .bodytitle {
+            background-color: $accent8;
+            padding: 1.5em 1.5em;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            .bodyimageprofile {
+                @include flexbox();
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                img {
+                    width: 120px;
+                    height: 100px;
+                    float: left;
+                    margin-right: 20px;
+                }
+                p {
+                    float: right;
+                    position: relative;
+                    bottom: 5px;
+                }
+                h3 {
+                    text-decoration: underline;
+                    font-size: 20px;
+                    font-family: $font1;
+                    font-weight: 700;
+                    position: relative;
+                    color: $accent2;
+                    line-height: 1;
+                }
+            }
+        }
+        .bodytitles {
+            padding: 1.5em 1.5em;
+            background-color: $accent8;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            .bodyimageprofiles {
+                background-color: white;
+                padding: 1.5em 1.5em;
+                border-radius: 10px;
+                border: 1px solid #dddddd;
+                img {
+                    width: 50px;
+                    height: 50px;
+                    float: left;
+                    margin-right: 20px;
+                    border-radius: 50px;
+                    margin-bottom: 1em;
+                }
+                .profilemessageimage {
+                    float: none;
+                    border-radius: 0;
+                    width: 90px;
+                    height: 60px;
+                    margin-top: 10px;
+                    margin-bottom: -10px;
+                }
+                span {
+                    position: relative;
+                    &::before {
+                        content: "\f00e";
+                        position: absolute;
+                        font-family: FontAwesome;
+                        color: white;
+                        cursor: pointer;
+                        bottom: 0;
+                        right: 30px;
+                    }
+                }
+                p {
+                    position: relative;
+                    bottom: 5px;
+                    clear: left;
+                }
+                h5 {
+                    text-decoration: underline;
+                    font-size: 20px;
+                    font-family: $font1;
+                    font-weight: 700;
+                    position: relative;
+                    color: $accent2;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+    .customermessage-field {
+        margin-bottom: 2em;
+        .heading {
+            h3 {
+                i {
+                    color: $accent1;
+                }
+                span {
+                    color: $accent2;
+                    text-decoration: underline;
+                }
+            }
+        }
+        #message {
+            resize: none;
+            margin-bottom: 1em;
+        }
+        .btn {
+            margin-right: 1em;
+            padding: .5em 1.5em;
+        }
+        .uploadlink {
+            color: $accent2;
+            font-weight: 700;
+            i {
+                color: $accent1;
+            }
+        }
+    }
+}
+
+.content {
+    .content__item {
+        .btn {
+            margin-bottom: 1em;
+            background-color: $accent2;
+            &:hover {
+                background-color: #000;
+            }
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 1em;
+            position: relative;
+            bottom: 10px;
+        }
+        .filterbtn-field {
+            .filterresults {
+                background-color: $accent1;
+                &:hover {
+                    background-color: #000;
+                }
+            }
+        }
+    }
+    .customer-items {
+        table {
+            tr {
+                td {
+                    .btn {
+                        background-color: $accent7;
+                    }
+                    &:last-child() {
+                        text-align: right;
+                    }
+                    &:nth-child(1) {
+                        color: $accent2;
+                        text-decoration: underline;
+                    }
+                    a {
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.customermessagedash-field {
+    margin-top: 3em;
+    margin-bottom: 5em;
+    .heading {
+        @include flexbox();
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .archivemsglink {
+            color: $accent2;
+            font-size: 18px;
+            font-family: $font1;
+            font-weight: 600;
+            position: relative;
+            .fa-archive {
+                color: $accent1;
+            }
+        }
+    }
+    .customermessage-content {
+        // @include flexbox();
+        // flex-wrap: wrap;
+        // justify-content: space-between;
+        .filter-field {
+            // width: 50%;
+            float: left;
+            h5 {
+                span {
+                    font-weight: 300;
+                }
+            }
+            .daterange {
+                width: 60%;
+                margin-bottom: 1em;
+            }
+        }
+        .filterkey-field {
+            #keywordinclude {
+                width: 50%;
+            }
+        }
+        .filterbtn-field {
+            clear: left;
+            .btn {
+                margin-bottom: 1em;
+            }
+        }
+    }
+}
+
+.customermsgfield-wrapper {
+    .adminmessage-field {
+        .currentlocation-field {
+            @include flexbox();
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .customerarchivelink {
+                color: $accent2;
+                i {
+                    color: $accent1;
+                }
+            }
+        }
+        .filterbtn-field {
+            margin-bottom: 1.5em;
+        }
+    }
+    .customerprofiletitle-field {
+        align-items: unset;
+        .profile-title {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-align: end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+            align-content: flex-start;
+            width: 28%;
+        }
+        .profileparagraph {
+            width: 56%;
+            margin-right: 2em;
+        }
+        .button {
+            .btn {
+                background-color: $accent7;
+                &:hover {
+                    background-color: #000;
+                }
+            }
+        }
+    }
+}
+
+.nomatchingcustomer-field {
+    margin-top: 3em;
+    margin-bottom: 5em;
+    .heading {
+        p {
+            position: relative;
+            bottom: 10px;
+        }
+    }
+    .inputfield-col {
+        margin-bottom: 1em;
+        .email {
+            width: 48%;
+            margin-right: 2em;
+            margin-bottom: 1em;
+        }
+        .code {
+            width: 48%;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nomatchingcustomer-field {
+        .inputfield-col {
+            .email {
+                width: 100%;
+            }
+            .code {
+                width: 100%;
+            }
+        }
+        .button {
+            .btn {
+                &:hover {
+                    background-color: #000;
+                }
+            }
+        }
+    }
+}
+
+.customerjob-field {
+    .congratheading {
+        margin-bottom: 2em;
+        h4 {
+            font-size: 2em;
+            font-weight: 300;
+            font-family: $font1;
+            position: relative;
+            color: $accent1;
+        }
+        p {
+            color: $accent3;
+            .blue-b {
+                a {
+                    color: $accent2;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .totalfield {
+        h4 {
+            color: #000;
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 25px;
+            font-weight: 500;
+            font-family: $font1;
+            position: relative;
+            color: $accent3;
+            span {
+                color: $accent1;
+            }
+        }
+    }
+    .button {
+        .btn {
+            background-color: $accent2;
+        }
+    }
+    .thanksfield-col {
+        .heading {
+            h3 {
+                font-size: 35px;
+                font-family: $font1;
+                font-weight: 300;
+                color: $accent1;
+            }
+        }
+        .billed {
+            position: relative;
+            bottom: 8px;
+            h5 {
+                color: #000;
+                font-weight: 700;
+                font-family: $font1;
+                font-size: 18px;
+                span {
+                    color: $accent2;
+                    font-weight: 600;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .jobheading {
+        margin-top: 2em;
+    }
+    .blockheading {
+        h5 {
+            color: #000;
+            font-size: 17px;
+            font-weight: 700;
+            font-family: $font1;
+            position: relative;
+            line-height: 1;
+        }
+        small {
+            font-size: 18px;
+            position: relative;
+            bottom: 6px;
+            font-family: $font1;
+            font-weight: 300;
+            font-style: normal;
+            color: $accent3;
+        }
+        h4 {
+            color: $accent3;
+            font-size: 30px;
+            font-weight: 400;
+            font-family: $font1;
+            position: relative;
+            bottom: 8px;
+            span {
+                color: $accent1;
+            }
+        }
+    }
+}
+
+.customersignup-field {
+    .congratheading {
+        h3 {
+            font-size: 1.8em;
+            font-weight: 300;
+            font-family: $font1;
+            font-style: normal;
+            position: relative;
+            color: $accent1;
+        }
+    }
+    .heading {
+        margin-bottom: 10px;
+        p {
+            position: relative;
+            bottom: 15px;
+            a {
+                color: $accent2;
+                font-weight: 600;
+            }
+        }
+    }
+    .signup-button {
+        .sign-up {
+            padding: .6em 1.5em
+        }
+    }
+}
+
+.updateprofile-field {
+    margin-top: 3em;
+    margin-bottom: 5em;
+    .editfilter-field {
+        .editfilter-row {
+            margin-top: 2em;
+            margin-bottom: 2em;
+            .editfilterfield {
+                display: flex;
+                justify-content: space-between;
+                width: 74%;
+                flex-wrap: wrap;
+                margin-bottom: 2em;
+            }
+        }
+        .editinputfield {
+            #fname {
+                width: 48%;
+                margin-right: 2em;
+                margin-bottom: 1em;
+            }
+            #lname {
+                width: 48.3%;
+                // margin-right: 2em;
+                margin-bottom: 1em;
+            }
+            #email {
+                width: 48%;
+                margin-right: 2em;
+                margin-bottom: 1em;
+            }
+            #newpass {
+                width: 22.5%;
+                margin-right: 2em;
+                margin-bottom: 1em;
+            }
+            #confpass {
+                width: 22.2%;
+                // margin-right: 2em;
+                margin-bottom: 1em;
+            }
+        }
+    }
+}

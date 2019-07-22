@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sitahouse.com | ...because you have better things to do with your time.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../../css/style.css"> -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- <link rel="stylesheet" href="../assets/css/admin.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300i,700i" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!--[if lt IE 9]><script src="js/polyfill/html5-shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="https://rawgit.com/romulomachado/simpletabs/master/dist/simpletabs.css">
+</head>
+
+<body>
+    <!--[if IE]><div class="browserupgrade"><p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p></div><![endif]-->
+    <input id="sidebartoggler" type="checkbox">
+    <div class="page-wrap">
+        <label id="menuicon" for="sidebartoggler"> <i class="fa fa-navicon"></i></label>
+        <div class="page-content">
+            <header>
+                <div class="inner">
+                    <a class="logo" href="index.html" alt="Sitahouse.com"> <img src="../images/sitahouse-logo.svg" alt="Sitahouse Logo"></a>
+                    <div class="exit-mob"></div>
+                    <nav class="main-nav" aria-labelledby="mainnavheader">
+                        <div class="user-wrap loginNav loginNavWrap">
+                            <div class="admin-links"></div><a class="admin admin-link-row" href="#admin"><i class="fa fa-user-circle-o"> <span>Pattrick Sullivan</span></i> <i class="fa fa-envelope-o"> <span>2</span></i></a>
+                            <div class="user-links"></div><a class="login" href="#login">Login <i class="fa fa-sign-in"></i></a>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="dashboard.html">Dashboard</a></li>
+                            <li><a href="jobs.html">Jobs</a></li>
+                            <li><a href="find-a-sitter.html">Find a Sitter</a></li>
+                            <li><a href="../manage-store/merchandise.html">Merchandise</a></li>
+                            <li> <a href="help.html">Help</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="slogan">
+                    <div class="inner">...because you have better things to do with your time. </div>
+                </div>
+            </header>
+            <main>
+                <div class="admin-header">
+                    <h2>We Found Sitters</h2>
+                </div>
+                <div class="inner">
+                    <div class="customerjob-field">
+                        <div class="congratheading">
+                            <h4>Congratulations! We've matched sitters for your job! Complete your payment information to secure a sitter for your job.</h4>
+                            <p>Don't worry - if your needs change, you can cancel up until the day before for a full refund! See our <b class="blue-b"><a href="#">Refunds and Cancellations</a></b> page for full details.</p>
+                        </div>
+                        <div class="heading">
+                            <h3>Your Job Details:</h3>
+                        </div>
+                        <hr class="line-seperator">
+                        <div class="customerfield-row">
+                            <div class="customerjob-col">
+                                <div class="joblocationfield">
+                                    <h5><i class="fa fa-map-marker"></i> Job Location:</h5>
+                                    <span>1234 Park Place Blvd.
+                                                <br>
+                                                Seattle, Washington 12345
+                                            </span>
+                                </div>
+                                <div class="timeblock">
+                                    <h5><i class="fa fa-clock-o"></i> Time Blocks:</h5>
+                                    <a href="#" class="customerlinktimeblock">Jan 10, 2018 8:00AM - 12:00PM</a>
+                                    <a href="#" class="customerlinktimeblock">Jan 10, 2018 12:00AM - 4:00PM</a>
+                                    <a href="#" class="customerlinktimeblock">Jan 10, 2018 8:00AM - 12:00PM</a>
+                                    <a href="#" class="customerlinktimeblock">Jan 10, 2018 12:00AM - 4:00PM</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="line-seperator">
+                        <div class="totalfield">
+                            <h4>4 blocks x $55</h4>
+                            <h3>Job Total: <span>$220</span></h3>
+                        </div>
+                        <hr class="line-seperator">
+                        <div class="button">
+                            <a href="#" class="btn"><i class="fa fa-calendar"></i> Etid Dates</a>
+                        </div>
+                        <div class="editfilter-field">
+                            <div class="editfilter-row">
+                                <div class="heading">
+                                    <h3>Pet/House Sitting</h3>
+                                </div>
+                                <div class="editfilterfield">
+                                    <div class="homesearch-row">
+                                        <h5>Are pets in the home?</h5>
+                                        <div class="field-wrap">
+                                            <input id="yespets" type="radio" placeholder="yes" name="petsinhome">
+                                            <label for="yespets">Yes</label>
+                                            <input id="nopets" type="radio" placeholder="no" name="petsinhome">
+                                            <label for="nopets">No</label>
+                                        </div>
+                                    </div>
+                                    <div class="homesearch-row">
+                                        <h5>Do you require pet sitting?</h5>
+                                        <div class="field-wrap">
+                                            <input id="yessitting" type="radio" placeholder="yes" name="pets in home">
+                                            <label for="yessitting" name="petsitting">Yes</label>
+                                            <input id="nositting" type="radio" placeholder="no" name="pets in home">
+                                            <label for="nositting" name="petsitting">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="editfilter-field">
+                            <div class="heading">
+                                <h3>How will the sitter gain property access?<span>(please select)</span></h3>
+                            </div>
+                            <div class="editfilterfield">
+                                <div class="homesearch-row">
+                                    <div class="field-wrap">
+                                        <input id="accessradio1" type="radio" placeholder="yes" name="accessradio">
+                                        <label for="accessradio1">A representative will provide the sitter with access (face to face).</label>
+                                        <br>
+                                        <input id="accessradio2" type="radio" placeholder="no" name="accessradio">
+                                        <label for="accessradio2">A lockbox will suplly the key.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="requestfield">
+                            <div class="heading">
+                                <h3>Request Past Sitter</h3>
+                                <p>These sitter are available for your job and have been hired by you before. If you would like to re-hire a sitter for this job, please select one from the list below. If after ### hours the have not confirmed your job, we
+                                    will open it up to other sitters to ensure your job is successfully matched. Or leave your selection unchecked and we will match a sitter for you!</p>
+                            </div>
+                            <div class="radioprofile">
+                                <div class="field-wrap">
+                                    <div class="profileOne">
+                                        <input id="profileradio1" type="radio" placeholder="" name="profileradio">
+                                        <label for="profileradio1"></label>
+                                        <div class="image">
+                                            <img src="../images/profile-04.jpg" alt="Profile Image">
+                                            <h3><a href="#">John Sitswell</a></h3>
+                                            <p>I've worked in security for more than 20 years. I will ensure your home and belongings are supervised while you're away.</p>
+                                        </div>
+                                    </div>
+                                    <div class="profileTwo">
+                                        <input id="profileradio2" type="radio" placeholder="" name="profileradio">
+                                        <label for="profileradio2"></label>
+                                        <div class="image">
+                                            <img src="../images/profile-02.jpg" alt="Profile Image">
+                                            <h3><a href="#">Jane B</a></h3>
+                                            <p>I've worked in security for more than 20 years. I will ensure your home and belongings are supervised while you're away.</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="clearlink"><i class="fa fa-close"></i> Clear Selection</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promoinput">
+                            <div class="heading">
+                                <h3>Have a promo code?</h3>
+                            </div>
+                            <div class="filterfield">
+                                <label for=""></label>
+                                <input type="text" name="promocode" id="pcode" placeholder="Enter Promo Code">
+                            </div>
+                            <a href="#" class="btn"><i class="fa fa-arrow-circle-o-right"></i> Submit Code</a>
+                        </div>
+                        <div class="editfilter-field">
+                            <div class="heading">
+                                <h3>How will the sitter gain property access? <span>(please select)</span></h3>
+                            </div>
+                            <div class="editfilterfield">
+                                <div class="homesearch-row">
+                                    <div class="field-wrap">
+                                        <input id="accessradio4" type="radio" placeholder="yes" name="accessradio">
+                                        <label for="accessradio4">A representative will provide the sitter with access (face to face).</label>
+                                        <br>
+                                        <input id="accessradio5" type="radio" placeholder="no" name="accessradio">
+                                        <label for="accessradio5">A lockbox will suplly the key.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="paymentdetailtable">
+                            <div class="heading">
+                                <h3>Payment Details</h3>
+                            </div>
+                            <table>
+                                <tr>
+                                    <th>Stored Credit Cards</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>#### #### #### 1234</p>
+                                    </td>
+                                    <td><a href="#" class="btn"><i class="fa fa-check"></i> Use this card</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>#### #### #### 1235</p>
+                                    </td>
+                                    <td><a href="#" class="btn"><i class="fa fa-check"></i> Use this card</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="inputfieldlogged">
+                            <div class="billaddress">
+                                <label for=""></label>
+                                <h5>Billing Address</h5>
+                                <input type="text" name="" id="b_add" placeholder="Billing Address">
+                                <label for=""></label>
+                                <input type="text" name="" id="b_city" placeholder="Billing City">
+                                <label for=""></label>
+                                <select name="" id="b_state">
+                                    <option value="">Billing State</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                                <label for=""></label>
+                                <input type="text" name="" id="b_code" placeholder="Billing Zip Code">
+                            </div>
+                            <div class="creditefield">
+                                <label for=""></label>
+                                <h5>Credit Card Information</h5>
+                                <input type="text" name="" id="c_card" placeholder="Name on the Card">
+                                <label for=""></label>
+                                <select name="" id="c_opt">
+                                    <option value="">Type of Credit Card</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                                <label for=""></label>
+                                <input type="text" name="" id="c_numb" placeholder="Credit Car Number">
+                                <div class="expiredfield">
+                                    <div class="expireddate">
+                                        <label for=""></label>
+                                        <h5>Expiration Date</h5>
+                                        <select name="" id="exp_month">
+                                            <option value="">Month</option>
+                                            <option value="">Jan</option>
+                                            <option value="">Feb</option>
+                                        </select>
+                                        <select name="" id="exp_year">
+                                            <option value="">Year</option>
+                                            <option value="">2018</option>
+                                            <option value="">2019</option>
+                                        </select>
+                                    </div>
+                                    <div class="securityfield">
+                                        <label for=""></label>
+                                        <h5>Security Code</h5>
+                                        <input type="text" name="" id="s_cvv" placeholder="CVV">
+                                    </div>
+                                </div>
+                                <div class="homesearch-row">
+                                    <div class="field-wrap">
+                                        <input id="remember" type="checkbox">
+                                        <label for="remember">Remember this card for futur bookings.</label>
+                                    </div>
+                                </div>
+                                <div class="buttonfield">
+                                    <a href="#" class="btn">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+        <footer>
+            <div class="inner">
+                <div class="ftrlogo">
+                    <a href="index.html"><img src="../images/sitahouse-logo-white.svg" alt="Sitahouse.com"></a>
+                </div>
+                <ul class="ftrnav">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">How it Works</a></li>
+                    <li><a href="">Merchandise</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                <ul class="ftrsocial">
+                    <li><a href="#fb"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#tw"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#ig"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#pint"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+                <p class="cpyrt">Copyright © 2018 Sitahouse.com All rights reserved. </p>
+            </div>
+        </footer>
+    </div>
+    <!--[if lt IE 9]><script src="https://code.jquery.com/jquery-1.12.3.min.js"></script><script src="js/polyfill/ie-love.js"></script><![endif]-->
+    <!--[if gt IE 8]><!-->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <!--<![endif]-->
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://rawgit.com/romulomachado/simpletabs/master/dist/simpletabs.js"></script>
+</body>
+
+</html>

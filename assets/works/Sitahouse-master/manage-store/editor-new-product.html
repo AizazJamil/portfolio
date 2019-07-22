@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sitahouse.com | ...because you have better things to do with your time.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../../css/style.css"> -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300i,700i" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!--[if lt IE 9]><script src="js/polyfill/html5-shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="https://rawgit.com/romulomachado/simpletabs/master/dist/simpletabs.css">
+    <!-- FancyBox Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+</head>
+
+<body>
+    <!--[if IE]><div class="browserupgrade"><p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p></div><![endif]-->
+    <input id="sidebartoggler" type="checkbox">
+    <div class="page-wrap">
+        <label id="menuicon" for="sidebartoggler"> <i class="fa fa-navicon"></i></label>
+        <div class="page-content">
+            <header>
+                <div class="inner">
+                    <a class="logo" href="index.html" alt="Sitahouse.com"> <img src="../images/sitahouse-logo.svg" alt="Sitahouse Logo"></a>
+                    <div class="exit-mob"></div>
+                    <nav class="main-nav" aria-labelledby="mainnavheader">
+                        <div class="user-wrap loginNav loginNavWrap">
+                            <div class="admin-links"></div><a class="admin admin-link-row" href="#admin"><i class="fa fa-user-circle-o"> <span>Admin</span></i></a>
+                            <div class="user-links"></div><a class="login" href="#login">Login <i class="fa fa-sign-in"></i></a>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="../admin/dashboard.html">Dashboard</a></li>
+                            <li><a href="../sitter/available.html">Sitters</a></li>
+                            <li><a href="../customer/dashboard.html">Customers</a></li>
+                            <li><a href="../customer/jobs.html">Jobs</a></li>
+                            <li> <a href="../admin/promotion.html">Promotions</a></li>
+                            <li> <a href="../sitter/payments.html">Payments</a></li>
+                            <li> <a href="#">Store</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="slogan">
+                    <div class="inner">...because you have better things to do with your time. </div>
+                </div>
+            </header>
+            <main>
+                <div class="managestore-header">
+                    <h2><i class="fa fa-tags"></i> Manage Store</h2>
+                    <nav class="tabnavbar linknavbar">
+                        <ul>
+                            <li>
+                                <a class="tab__link" href="manage-orders.html"><i class="fa fa-files-o"></i> Orders</a>
+                            </li>
+                            <li>
+                                <a class="tab__link" href="manage-categories.html"><i class="fa fa-list-ul"></i> Categories</a>
+                            </li>
+                            <li class="active">
+                                <a class="tab__link" href="manage-products.html"><i class="fa fa-shopping-bag"></i> Products</a>
+                            </li>
+                            <li>
+                                <a class="tab__link" href="manage-promos.html"><i class="fa fa-bullhorn"></i> Promos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <section class="content">
+                    <div class="content__item managestore-items" data-content="products">
+                        <div class="heading">
+                            <h3>Edit Product</h3>
+                        </div>
+                        <p>
+                            Edit product information by overwriting the information. Click "save" to save all changes made. For a new product, an entry is required for all fields.
+                        </p>
+                        <hr class="line-seperator">
+                        <div class="editproduct-input">
+                            <div class="field-wrap">
+                                <label for=""></label>
+                                <h5>Product Name:</h5>
+                                <input type="text" name="" id="input1" placeholder="Lockbox 1" class="input-group">
+                            </div>
+                            <div class="homesearch-row">
+                                <h5>Do you require pet sitting?</h5>
+                                <div class="field-wrap">
+                                    <input id="yessitting" type="radio" placeholder="yes" name="pets in home">
+                                    <label for="yessitting" name="petsitting">Yes</label>
+                                    <input id="nositting" type="radio" placeholder="no" name="pets in home">
+                                    <label for="nositting" name="petsitting">No</label>
+                                </div>
+                            </div>
+                            <div class="field-wrap">
+                                <label for=""></label>
+                                <h5>Varient Option Label 1:</h5>
+                                <input type="text" name="" id="input11" placeholder="Color" class="input-group">
+                            </div>
+                            <div class="field-wrap">
+                                <label for=""></label>
+                                <h5>Option <span>(comma seperated)</span></h5>
+                                <input type="text" name="" id="input10" placeholder="Red, Gray, Green" class="input-group">
+
+                            </div>
+                            <div class="field-wrap">
+                                <label for=""></label>
+                                <h5>Varient Option Label 2:</h5>
+                                <input type="text" name="" id="input8" placeholder="Color" class="input-group">
+                            </div>
+                            <div class="field-wrap">
+                                <label for=""></label>
+                                <h5>Option <span>(comma seperated)</span></h5>
+                                <input type="text" name="" id="input9" placeholder="S, M, L, XL, XXL" class="input-group">
+                            </div>
+                            <div class="button">
+                                <a href="#" class="addanotherlink"><i class="fa fa-plus-circle"></i> Add Another Variant</a>
+                            </div>
+                        </div>
+                        <div class="field-wrap">
+                            <label for=""></label>
+                            <h5>Short Description</h5>
+                            <input type="text" name="" id="input5" placeholder="Lockbox 1 is the first version of a lockbo that we have for sale." class="input-group">
+                        </div>
+                        <div class="field-wrap messagefield">
+                            <label for=""></label>
+                            <h5>Short Description</h5>
+                            <textarea name="message" id="input6" cols="30" rows="5">Lockbox 1 is the first version of a lockbo that we have for sale. It is a great value for the price and it can hold up to 20 keys in it. The code can be reset as often as needed. </textarea>
+                        </div>
+                        <div class="heading">
+                            <h3>Images</h3>
+                            <p>Order position 1 is the main product image. Click "remove" to delete a photo.</p>
+                        </div>
+                        <hr class="line-seperator">
+                        <a href="#" class="uploadlink"><i class="fa fa-upload"></i> Upload New Photo</a>
+                        <div class="galleryfield-row">
+                            <!-- Image 1 -->
+                            <div class="galleryfield-col">
+                                <div class="image">
+                                    <img src="../images/gallery/05.jpg" alt="Gallery 01">
+                                </div>
+                                <div class="select-fields">
+                                    <label for=""></label>
+                                    <select name="" id="">
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                        <option value="">5</option>
+                                    </select>
+                                </div>
+                                <a href="#" class="removelink"><i class="fa fa-window-close-o"></i> Remove</a>
+                            </div>
+                            <!-- Image 2 -->
+                            <div class="galleryfield-col">
+                                <div class="image">
+                                    <img src="../images/gallery/05.jpg" alt="Gallery 01">
+                                </div>
+                                <div class="select-fields">
+                                    <label for=""></label>
+                                    <select name="" id="">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                        </select>
+                                </div>
+                                <a href="#" class="removelink"><i class="fa fa-window-close-o"></i> Remove</a>
+                            </div>
+                            <!-- Image 3 -->
+                            <div class="galleryfield-col">
+                                <div class="image">
+                                    <img src="../images/gallery/05.jpg" alt="Gallery 01">
+                                </div>
+                                <div class="select-fields">
+                                    <label for=""></label>
+                                    <select name="" id="">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                            </select>
+                                </div>
+                                <a href="#" class="removelink"><i class="fa fa-window-close-o"></i> Remove</a>
+                            </div>
+                            <!-- Image 4 -->
+                            <div class="galleryfield-col">
+                                <div class="image">
+                                    <img src="../images/gallery/05.jpg" alt="Gallery 01">
+                                </div>
+                                <div class="select-fields">
+                                    <label for=""></label>
+                                    <select name="" id="">
+                                        
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                    <option value="">3</option>
+                                                    <option value="">4</option>
+                                                    <option value="">5</option>
+                                                </select>
+                                </div>
+                                <a href="#" class="removelink"><i class="fa fa-window-close-o"></i> Remove</a>
+                            </div>
+                        </div>
+                        <div class="managestoretable">
+                            <table>
+                                <tr>
+                                    <th>Variants</th>
+                                    <th>SKU</th>
+                                    <th>Inventory</th>
+                                    <th>Active?</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="sizes" id="" placeholder="Red,S"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="shirt-rs"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="2"></td>
+                                    <td>
+                                        <div class="field-wrap">
+                                            <input id="check1" type="checkbox">
+                                            <label for="check1"></label>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="sizes" id="" placeholder="Red,M"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="shirt-rm"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="0"></td>
+                                    <td>
+                                        <div class="field-wrap">
+                                            <input id="check2" type="checkbox">
+                                            <label for="check2"></label>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="sizes" id="" placeholder="Red,L"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="shirt-rl"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="1"></td>
+                                    <td>
+                                        <div class="field-wrap">
+                                            <input id="check3" type="checkbox">
+                                            <label for="check3"></label>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="sizes" id="" placeholder="Red,XL"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="shirt-rx"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="1"></td>
+                                    <td>
+                                        <div class="field-wrap">
+                                            <input id="check4" type="checkbox">
+                                            <label for="check4"></label>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="sizes" id="" placeholder="Red,XXL"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="shirt-rxx"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="4"></td>
+                                    <td>
+                                        <div class="field-wrap">
+                                            <input id="check5" type="checkbox">
+                                            <label for="check5"></label>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="sizes" id="" placeholder="Gray,S"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="shirt-gys"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="8"></td>
+                                    <td>
+                                        <div class="field-wrap">
+                                            <input id="check6" type="checkbox">
+                                            <label for="check6"></label>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="sizes" id="" placeholder="Gray,M"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="shirt-gym"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="2"></td>
+                                    <td>
+                                        <div class="field-wrap">
+                                            <input id="check7" type="checkbox">
+                                            <label for="check7"></label>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="sizes" id="" placeholder="Gray,L"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="shirt-gyl"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="1"></td>
+                                    <td>
+                                        <div class="field-wrap">
+                                            <input id="check8" type="checkbox">
+                                            <label for="check8"></label>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="sizes" id="" placeholder="Gray,XL"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="shirt-gyx"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="0"></td>
+                                    <td>
+                                        <div class="field-wrap">
+                                            <input id="check9" type="checkbox">
+                                            <label for="check9"></label>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="sizes" id="" placeholder="Gray,XXL"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="shirt-gyxx"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="1"></td>
+                                    <td>
+                                        <div class="field-wrap">
+                                            <input id="check10" type="checkbox">
+                                            <label for="check10"></label>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="sizes" id="" placeholder="Green,S"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="shirt-gns"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="1"></td>
+                                    <td>
+                                        <div class="field-wrap">
+                                            <input id="check11" type="checkbox">
+                                            <label for="check11"></label>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="sizes" id="" placeholder="Green,M"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="shirt-gnm"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="1"></td>
+                                    <td>
+                                        <div class="field-wrap">
+                                            <input id="check12" type="checkbox">
+                                            <label for="check12"></label>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="sizes" id="" placeholder="Green,L"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="shirt-gnl"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="3"></td>
+                                    <td>
+                                        <div class="field-wrap">
+                                            <input id="check13" type="checkbox">
+                                            <label for="check13"></label>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="sizes" id="" placeholder="Green,XL"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="shirt-gnx"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="1"></td>
+                                    <td>
+                                        <div class="field-wrap">
+                                            <input id="check14" type="checkbox">
+                                            <label for="check14"></label>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="sizes" id="" placeholder="Green,XXL"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="shirt-gnxx"></td>
+                                    <td><input type="text" name="sizes" id="" placeholder="2"></td>
+                                    <td>
+                                        <div class="field-wrap">
+                                            <input id="check15" type="checkbox">
+                                            <label for="check15"></label>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="heading">
+                            <h3>Select product categories</h3>
+                        </div>
+                        <div class="managechecked-field">
+                            <div class="homesearch-row">
+                                <div class="field-wrap">
+                                    <input id="apparel" type="checkbox">
+                                    <label for="apparel">Apparel</label>
+                                    <input id="stuff" type="checkbox">
+                                    <label for="stuff">Fun Stuff</label>
+                                    <input id="security" type="checkbox">
+                                    <label for="security">Security</label>
+                                </div>
+                            </div>
+                            <div class="savebtn">
+                                <a href="#" class="btn">Save Changes</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <div class="inner">
+                <div class="ftrlogo">
+                    <a href="index.html"><img src="../images/sitahouse-logo-white.svg" alt="Sitahouse.com"></a>
+                </div>
+                <ul class="ftrnav">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">How it Works</a></li>
+                    <li><a href="">Merchandise</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                <ul class="ftrsocial">
+                    <li><a href="#fb"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#tw"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#ig"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#pint"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+                <p class="cpyrt">Copyright © 2018 Sitahouse.com All rights reserved. </p>
+            </div>
+        </footer>
+    </div>
+    <!--[if lt IE 9]><script src="https://code.jquery.com/jquery-1.12.3.min.js"></script><script src="js/polyfill/ie-love.js"></script><![endif]-->
+    <!--[if gt IE 8]><!-->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <!--<![endif]-->
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://rawgit.com/romulomachado/simpletabs/master/dist/simpletabs.js"></script>
+    <!-- FancyBox Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+</body>
+
+</html>
