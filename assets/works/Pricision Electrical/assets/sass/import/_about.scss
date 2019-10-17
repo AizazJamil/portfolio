@@ -1,0 +1,238 @@
+.about {
+  &--section {
+    padding: 80px 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    display: block;
+  }
+
+  &--inner {
+    background-color: var(--white-color);
+    padding: em(40px) 0 em(60px) em(60px);
+    width: 100%;
+    position: relative;
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      padding: em(40px) 30px;
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      padding: em(40px) em(20px);
+    }
+    .heading {
+      margin-bottom: 50px;
+      h2 {
+        font-size: em(35px);
+        font-family: var(--font-gilroyBold);
+        font-weight: 700;
+        color: var(--darkblue-color);
+        text-align: left;
+        text-transform: uppercase;
+        position: relative;
+        display: block;
+        @media screen and (min-width: 320px) and (max-width: 500px) {
+          font-size: 20px;
+        }
+        &:before {
+          content: '';
+          background-color: var(--primary-color);
+          @include position(absolute, null, null, -20px, 0);
+          width: 25px;
+          height: 4px;
+
+        }
+      }
+    }
+
+    .left--inner {
+      h6 {
+        font-size: em(20px);
+        font-family: var(--font-gilroy);
+        font-weight: 300;
+        position: relative;
+        text-align: left;
+        color: var(--darkblue-color);
+        line-height: 32px;
+        span {
+          font-weight: 700;
+          font-family: var(--font-gilroyBold);
+        }
+      }
+
+      p {
+        font-size: em(15px);
+        font-weight: 600;
+        font-family: var(--font-gilroy);
+        position: relative;
+        display: block;
+        width: 100%;
+        visibility: visible;
+        text-align: left;
+        color: #7d7d7d;
+        margin: 30px 0;
+        @media screen and (min-width: 1600px) and (max-width: 2400px) {
+          font-size: em(17px);
+        }
+      }
+
+      .button {
+        @include flexbox();
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        width: 100%;
+
+        p {
+          margin-right: 60px;
+          width: auto;
+          font-size: em(16px);
+          font-weight: 600;
+          font-family: var(--font-gilroy);
+          position: relative;
+          display: block;
+          visibility: visible;
+          text-align: left;
+          color: #7d7d7d;
+        }
+
+        .btn {
+          background-color: var(--darkblue-color);
+          font-size: em(15px);
+          font-family: var(--font-gilroy);
+          font-weight: 600;
+          color: var(--white-color);
+          position: relative;
+          text-align: center;
+          padding: 10px 40px;
+          @include border-radius(0);
+          text-transform: uppercase;
+          @include transition(0.25s ease);
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+          &:hover {
+            background-color: var(--primary-color);
+            @include transition(0.25s ease);
+          }
+        }
+      }
+    }
+
+    .right-image {
+      img {
+        width: 100%;
+        @media screen and (min-width: 320px) and (max-width: 1100px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &--inner--flex {
+    background-color: var(--primary-color);
+    padding: em(100px) em(60px);
+    position: relative;
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-top: 35px solid white;
+      @include position(absolute, 0, null, null, 50%);
+      transform: translateX(-50%);
+    }
+
+
+    .heading {
+      margin-bottom: 40px;
+      h2 {
+        font-size: em(40px);
+        font-weight: 700;
+        font-family: var(--font-gilroyBold);
+        text-align: left;
+        position: relative;
+        text-align: left;
+        color: var(--white-color);
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        @media screen and (min-width: 991px) and (max-width: 1024px) {
+          font-size: 30px;
+        }
+        &:before {
+          content: '';
+          background-color: var(--dark-color);
+          @include position(absolute, null, null, -20px, 0);
+          width: 25px;
+          height: 4px;
+
+        }
+      }
+
+    }
+    .text {
+      p {
+        font-size: 15px;
+        font-family: var(--font-gilroy);
+        font-weight: 400;
+        position: relative;
+        text-align: justify;
+        color: var(--white-color);
+        line-height: 24px;
+        span {
+          font-weight: 700;
+          font-family: var(--font-gilroyBold);
+        }
+        @media screen and (min-width: 1600px) and (max-width: 2400px) {
+          font-size: em(17px);
+        }
+      }
+    }
+
+    .block--inner {
+      position: relative;
+      .block--list {
+        list-style-type: none;
+        display: block;
+
+        li {
+          background-color: var(--lightblue-color);
+          padding: em(12px) em(20px) em(12px) em(90px);
+          font-size: 15px;
+          font-family: var(--font-gilroy);
+          font-weight: 600;
+          position: relative;
+          text-align: left;
+          margin-bottom: 10px;
+          overflow: hidden;
+          color: var(--white-color);
+          @include transition(0.25s ease);
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+          &:hover {
+            background-color: var(--white-color);
+            color: var(--dark-color);
+            @include transition(0.25s ease);
+            cursor: pointer;
+          }
+
+          .counter {
+            @include position(absolute, -10px, null, 0, -28px);
+            background-color: #225cdf;
+            font-size: em(22px);
+            color: var(--white-color);
+            width: 85px;
+            height: 65px;
+            line-height: 65px;
+            text-align: center;
+            @include border-radius(100px);
+            padding-left: 20px;
+          }
+        }
+      }
+
+    }
+  }
+}

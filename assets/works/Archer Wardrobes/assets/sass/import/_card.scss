@@ -1,0 +1,104 @@
+.card--section {
+  margin: 0;
+  background-image: url('../images/cover-bg.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: em(150px) 0 em(60px) 0;
+
+  .card-inner {
+    position: relative;
+    img {
+      width: 100%;
+      position: relative;
+    }
+    .inner-text {
+      @include position(absolute, 50%, 20px, null, null);
+      transform: translateY(-50%);
+      // @media screen and (min-width: 1700px) and (max-width: 2400px) {
+      //   width: 76%;
+      // }
+      @media screen and (min-width: 1800px) {
+        right: 40px;
+      }
+      @media screen and (min-width: 1600px) and (max-width: 1699px) {
+        right: 70px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 990px) {
+        right: 80px;
+      }
+      h3 {
+        font-size: em(26px);
+        font-family: var(--font-gilroyBold);
+        font-weight: 600;
+        position: relative;
+        color: var(--white-color);
+        text-align: left;
+        display: block;
+        line-height: 35px;
+        @media screen and (min-width: 1800px) {
+          font-size: 34px;
+        }
+        // @media screen and (min-width: 1600px) and (max-width: 1699px) {
+        //   right: 90px;
+        // }
+        @media screen and (min-width: 351px) and (max-width: 767px) {
+          font-size: 18px;
+          line-height: 25px;
+        }
+        @media screen and (min-width: 375px) and (max-width: 413px) {
+          font-size: 16px;
+          line-height: 22px;
+        }
+        @media screen and (min-width: 320px) and (max-width: 350px) {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+      .pl-inner {
+        padding-left: 40px;
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+          padding-left: 110px;
+        }
+      }
+      .btn {
+        @include border-radius(2px);
+        font-size: 15px;
+        font-family: 500;
+        font-family: var(--font-proxima);
+        text-transform: none;
+        padding: 10px 8px;
+        margin-top: 20px;
+        @media screen and (min-width: 1800px) {
+          font-size: 17px;
+          padding: 12px 30px;
+        }
+        @media screen and (max-width: 1700px) {
+          font-size: 16px;
+        }
+        @media screen and (min-width: 1600px) and (max-width: 1699px) {
+          padding: 10px 15px;
+        }
+        @media screen and (min-width: 351px) and (max-width: 767px) {
+          font-size: 12px;
+        }
+        @media screen and (min-width: 375px) and (max-width: 414px) {
+          font-size: 9px;
+        }
+        @media screen and (min-width: 320px) and (max-width: 350px) {
+          font-size: 8px;
+          padding: 8px;
+        }
+      }
+      .btn-started {
+        padding: 10px 30px;
+      }
+      .btn-l {
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+          margin-left: 90px;
+        }
+      }
+    }
+  }
+}

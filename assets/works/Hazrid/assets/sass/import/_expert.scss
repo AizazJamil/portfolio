@@ -1,0 +1,87 @@
+.expert {
+  &--section {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    display: block;
+  }
+
+  &--inline {
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    width: 100%;
+
+    h2 {
+      font-size: em(32px);
+      font-family: var(--font-secondary-extraBold);
+      font-weight: 800;
+      position: relative;
+      text-align: left;
+      color: var(--white-color);
+      display: block;
+      position: relative;
+      width: 30%;
+      @media screen and (min-width: 320px) and (max-width: 600px) {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+    }
+
+    .inline--icon {
+      @include flexbox();
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 70%;
+      @media screen and (min-width: 320px) and (max-width: 600px) {
+        // margin-bottom: 20px;
+        justify-content: center;
+        width: 100%;
+      }
+      .icon--list {
+        color: var(--white-color);
+        @media screen and (min-width: 992px) and (max-width: 1050px) {
+          margin-bottom: 20px;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+        @media screen and (min-width: 767px) and (max-width: 991px) {
+          margin-bottom: 20px;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+        @media screen and (min-width: 320px) and (max-width: 600px) {
+          margin-bottom: 20px;
+          width: 100%;
+          justify-content: center;
+          text-align: center;
+        }
+        .img {
+          margin-right: 30px;
+        }
+        .text {
+          font-size: em(16px);
+          font-family: var(--font-secondary-extraBold);
+          font-weight: 800;
+          position: relative;
+          text-align: left;
+          color: var(--white-color);
+          display: inline-block;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.choose-section {
+  background-color: var(--primary-color);
+  z-index: 100px;
+  padding: 60px 0;
+  position: relative;
+  width: 100%;
+  .choose-content {
+    h2 {
+      font-size: 25px;
+      font-weight: 800;
+      font-family: var(--font-slack);
+      position: relative;
+      text-align: left;
+      color: var(--dark-color);
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      font-family: var(--font-slack);
+      font-style: normal;
+      position: relative;
+      color: var(--dark-color);
+      text-align: left;
+      line-height: 32px;
+      @media screen and (min-width: 950px) and (max-width: 1024px) {
+        font-size: 14px;
+      }
+    }
+  }
+  .choose-list {
+    margin-top: 35px;
+    padding: 0;
+    list-style-type: none;
+    display: block;
+    .item {
+      margin-bottom: 8px;
+      position: relative;
+      @include transition(0.25s all ease-in-out);
+      .item-icon {
+        @include position(absolute, 7px, null, 0, -15px);
+        opacity: 0;
+        @include transition(0.25s all ease-in-out);
+      }
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      &:hover {
+        color: var(--secondary-color);
+        text-decoration: underline;
+        .item-link {
+          color: var(--secondary-color);
+          text-decoration: underline;
+          @include transition(0.25s all ease-in-out);
+        }
+        .box {
+          opacity: 1;
+          @include transition(0.25s all ease-in-out);
+        }
+        .item-icon {
+          @include transition(0.25s all ease-in-out);
+          opacity: 1;
+        }
+      }
+      .item-link {
+        color: var(--dark-color);
+        font-size: 17px;
+        font-weight: 700;
+        position: relative;
+        display: block;
+        text-decoration: none;
+        text-align: left;
+        @include transition(0.25s all ease-in-out);
+        @media screen and (min-width: 950px) and (max-width: 1024px) {
+          font-size: 13px;
+        }
+      }
+      .box {
+        @include position(absolute, 0, -20px, 0, null);
+        // padding: 10px 15px;
+        border: none;
+        height: 30px;
+        line-height: 30px;
+        width: 70px;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        display: block;
+        background-color: var(--secondary-color);
+        color: var(--white-color);
+        opacity: 0;
+        cursor: pointer;
+        @include transition(0.25s all ease-in-out);
+        @media screen and (max-width: 767px) {
+          @include position(absolute, 0, 0, 0, null);
+        }
+      }
+    }
+  }
+}

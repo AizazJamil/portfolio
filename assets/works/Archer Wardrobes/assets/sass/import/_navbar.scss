@@ -1,0 +1,167 @@
+.navigation-navbar {
+  margin: 0;
+  padding: 2px 0 !important;
+  width: 100%;
+  background-color: #fff !important;
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  border: none;
+  &:after {
+    content: '';
+    background-color: var(--dark-color);
+    width: 75%;
+    @include position(absolute, 0, -30px, 0, null);
+    height: 100%;
+    z-index: -1;
+    transform: skew(-25deg);
+    @media screen and (min-width: 1700px) and (max-width: 2400px) {
+      width: 76%;
+    }
+    @media screen and (min-width: 1600px) and (max-width: 1699px) {
+      width: 78%;
+    }
+    @media screen and (min-width: 768px) and (max-width: 990px) {
+      display: none;
+    }
+    @media screen and (max-width: 767px) {
+      background-color: transparent;
+    }
+  }
+  @media screen and (min-width: 1600px) and (max-width: 2400px) {
+    padding: 2px 0 !important;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    z-index: 9999;
+  }
+  .navbar-toggler {
+    background-color: var(--red-color);
+  }
+  .navbar-brand {
+    // margin-right: 80px;
+    @media screen and (min-width: 768px) and (max-width: 1220px) {
+      margin-right: 0px;
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      margin-right: 0;
+    }
+    img {
+      width: 95%;
+      @media screen and (min-width: 1600px) and (max-width: 2400px) {
+        width: 100%;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1220px) {
+        width: 200px;
+      }
+      @media screen and (max-width: 600px) {
+        width: 160px;
+      }
+    }
+  }
+  .navbar-collapse {
+    width: 100%;
+    justify-content: flex-end;
+    @media screen and (min-width: 320px) and (max-width: 990px) {
+      padding-left: 30px;
+    }
+    .d-e1204 {
+      @media screen and (min-width: 991px) and (max-width: 1219px) {
+        justify-content: flex-end !important;
+      }
+    }
+    .navbar-nav {
+      width: 100%;
+      justify-content: space-around;
+      @media screen and (min-width: 1600px) and (max-width: 2400px) {
+        margin-left: 100px;
+      }
+      @media screen and (min-width: 1366px) and (max-width: 1599px) {
+        margin-left: 50px;
+      }
+      .d-n1204 {
+        @media screen and (min-width: 991px) and (max-width: 1219px) {
+          display: none !important;
+        }
+      }
+
+      .nav-item {
+        @media screen and (min-width: 320px) and (max-width: 990px) {
+          margin-bottom: 20px;
+        }
+        .inline-item {
+          @include flexbox();
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          position: relative;
+          @media screen and (min-width: 320px) and (max-width: 990px) {
+            justify-content: flex-start;
+            align-items: center;
+          }
+          img {
+            margin-right: 6px;
+          }
+          .lg {
+            font-size: em(14px);
+            font-weight: 600;
+            font-family: var(--font-proximaBold);
+            font-style: normal;
+            position: relative;
+            display: block;
+            color: var(--white-color);
+            text-transform: uppercase;
+            @media screen and (min-width: 1600px) and (max-width: 2400px) {
+              font-size: em(16px);
+            }
+            @media screen and (min-width: 320px) and (max-width: 990px) {
+              color: var(--dark-color);
+            }
+            @media screen and (min-width: 320px) and (max-width: 374px) {
+              font-size: 12px;
+            }
+          }
+          .sm {
+            font-size: 13px;
+            font-weight: 300;
+            font-family: var(--font-proxima);
+            text-align: left;
+            position: relative;
+            color: var(--white-color);
+            @media screen and (min-width: 1600px) and (max-width: 2400px) {
+              font-size: 14px;
+            }
+          }
+        }
+        .nav-btn {
+          @include border-radius(0);
+          transform: skew(-25deg);
+          color: var(--white-color);
+          padding: 8px 35px;
+          span {
+            font-family: var(--font-proxima);
+            font-weight: 500;
+            font-size: em(20px);
+            transform: skew(25deg);
+            display: inline-block;
+            @media screen and (min-width: 1600px) and (max-width: 2400px) {
+              font-size: em(24px);
+            }
+            b {
+              font-family: var(--font-proximaExtraBold);
+              font-weight: 700;
+            }
+            @media screen and (min-width: 320px) and (max-width: 374px) {
+              font-size: 20px;
+            }
+          }
+          img {
+            margin-right: 6px;
+            transform: skew(25deg);
+          }
+        }
+      }
+    }
+  }
+}

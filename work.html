@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/images/favion.webp" type="image/x-icon">
     <title>Aizaz Jamil | Portfolio</title>
     <!-- CSS LIBRARIES -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -15,7 +16,49 @@
 
 <body>
     <!-- START: NAVBAR SECTION FIXED -->
-    <nav class="navbar navbar-expand-lg navbar-inner">
+    <!-- overlay -->
+    <div class="navigation-menu" id="overlayNavigation">
+        <div class="navigation-bg one"></div>
+        <div class="navigation-bg two"></div>
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="col-md-6 offset-md-5 navigation-wrapper">
+                    <div class="nav-inner">
+                        <ul class="list-inline">
+                            <li class="nav-item">
+                                <a class="nav-link" href="work.html">Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="service.html">Service</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //overlay -->
+
+    <nav class="navbar navbar-expand-lg fixed-top top-nav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="bold">Aizaz </span><span
+                    class="light">Jamil</span></a>
+
+            <button class="menu-toggler" type="button" data-target="#overlayNavigation">
+                <div class="d-inline-flex navbar-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-inner">
         <div class="container">
             <a class="navbar-brand" href="index.html"><span class="bold">Aizaz </span><span
                     class="light">Jamil</span></a>
@@ -35,13 +78,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="service.html">Service</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li> -->
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
     <!-- END: NAVBAR SECTION FIXED -->
 
     <!-- START: WORK SECTION -->
@@ -58,7 +98,7 @@
                         </h2>
                     </div>
                 </div>
-                <div class="work--xd">
+                <div class="work--xd" id="portfolio">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="work--inner">
@@ -145,19 +185,100 @@
                         </div>
                         <div class="col-md-6">
                             <div class="work--inner">
-                                <img src="assets/images/works/11.png" alt="" class="work--img img-fluid">
+                                <img src="assets/images/works/img-01.jpg" alt="" class="work--img img-fluid">
                                 <div class="link-project">
-                                    <small class="sm-text">Ecommerce</small>
-                                    <a href="assets/works/ecommerce/index.html" target="_blank" class="link--inner">Ecommerce</a>
+                                    <small class="sm-text">Landing</small>
+                                    <a href="assets/works/NestBuild/index.html" target="_blank" class="link--inner">NestBuild</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="work--inner">
-                                <img src="assets/images/works/12.png" alt="" class="work--img img-fluid">
+                                <img src="assets/images/works/img-02.jpg" alt="" class="work--img img-fluid">
                                 <div class="link-project">
-                                    <small class="sm-text">JobSeeker</small>
-                                    <a href="assets/works/jobseeker/index.html" target="_blank" class="link--inner">JobTemplate</a>
+                                    <small class="sm-text">Landing</small>
+                                    <a href="assets/works/Revive-Pipe/index.html" target="_blank" class="link--inner">Revive a Pipe</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="work--inner">
+                                <img src="assets/images/works/img-03.jpg" alt="" class="work--img img-fluid">
+                                <div class="link-project">
+                                    <small class="sm-text">Landing</small>
+                                    <a href="assets/works/Pricision Electrical/index.html" target="_blank" class="link--inner">Electrical & Plumbing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="work--inner">
+                                <img src="assets/images/works/img-04.jpg" alt="" class="work--img img-fluid">
+                                <div class="link-project">
+                                    <small class="sm-text">Landing</small>
+                                    <a href="assets/works/InIdeas/index.html" target="_blank" class="link--inner">inIdeas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="work--inner">
+                                <img src="assets/images/works/img-05.jpg" alt="" class="work--img img-fluid">
+                                <div class="link-project">
+                                    <small class="sm-text">Landing</small>
+                                    <a href="assets/works/Hazrid/index.html" target="_blank" class="link--inner">Hazrid</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="work--inner">
+                                <img src="assets/images/works/img-06.jpg" alt="" class="work--img img-fluid">
+                                <div class="link-project">
+                                    <small class="sm-text">Landing</small>
+                                    <a href="assets/works/True Blue/index.html" target="_blank" class="link--inner">True Blue</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="work--inner">
+                                <img src="assets/images/works/img-07.png" alt="" class="work--img img-fluid">
+                                <div class="link-project">
+                                    <small class="sm-text">Landing</small>
+                                    <a href="assets/works/Furniture Removalist/index.html" target="_blank" class="link--inner">Removalist Sydney</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="work--inner">
+                                <img src="assets/images/works/img-08.jpg" alt="" class="work--img img-fluid">
+                                <div class="link-project">
+                                    <small class="sm-text">Landing</small>
+                                    <a href="assets/works/portfolio/index.html" target="_blank" class="link--inner">Portfolio</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="work--inner">
+                                <img src="assets/images/works/img-09.jpg" alt="" class="work--img img-fluid">
+                                <div class="link-project">
+                                    <small class="sm-text">Landing</small>
+                                    <a href="assets/works/H2-Pro-Plumbing/index.html" target="_blank" class="link--inner">H2-Pro Plumbing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="work--inner">
+                                <img src="assets/images/works/img-10.jpg" alt="" class="work--img img-fluid">
+                                <div class="link-project">
+                                    <small class="sm-text">Landing</small>
+                                    <a href="assets/works/Archer Wardrobes/index.html" target="_blank" class="link--inner">Archer Wardrobes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="work--inner">
+                                <img src="assets/images/works/img-11.jpg" alt="" class="work--img img-fluid">
+                                <div class="link-project">
+                                    <small class="sm-text">Landing</small>
+                                    <a href="assets/works/Water Damage/index.html" target="_blank" class="link--inner">Water Damage</a>
                                 </div>
                             </div>
                         </div>
@@ -203,15 +324,12 @@
     </footer>
     <!-- END: FOOTER SECTION -->
 
-
-
     <!-- JAVASCRIPT LIBRARIES -->
     <script src="assets/js/jquery/jquery-1.9.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <!-- <script src="assets/js/TweenMax.min.js"></script> -->
-    <script src="asseets/js/app.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/animation.js"></script>
 </body>
 
 </html>

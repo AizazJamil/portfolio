@@ -1,0 +1,48 @@
+.about--section {
+  padding: em(80px) 0;
+  margin: 0;
+  display: block;
+  position: relative;
+  width: 100%;
+
+  .text--inner {
+    h2 {
+      font-size: em(34px);
+      font-family: var(--font-bold);
+      font-weight: 700;
+      color: var(--dark-color);
+      text-align: left;
+      position: relative;
+      display: block;
+      margin-bottom: 40px;
+      line-height: 50px;
+      @media screen and (min-width: 1700px) {
+        font-size: em(36px);
+      }
+    }
+    p {
+      font-size: em(16px);
+      font-family: var(--font-regular);
+      font-weight: 300;
+      color: #5d5d5d;
+      text-align: left;
+      position: relative;
+      display: block;
+      line-height: 30px;
+      margin-bottom: 40px;
+      @media screen and (min-width: 1700px) {
+        font-size: em(18px);
+      }
+    }
+
+    .btn {
+      text-transform: none;
+      font-size: 16px;
+      padding: 12px 40px;
+
+      &:hover {
+        color: var(--white-color);
+      }
+    }
+  }
+}

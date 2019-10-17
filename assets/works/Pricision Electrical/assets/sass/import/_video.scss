@@ -1,0 +1,120 @@
+.video--section {
+  padding: em(100px) 0;
+  width: 100%;
+  position: relative;
+  width: 100%;
+
+  .left--inner {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .button-video {
+      @include position(absolute, 50%, null, null, 50%);
+      transform: translate(-50%, -50%);
+      a {
+        text-decoration: none;
+
+        img {
+          width: 80px;
+        }
+      }
+    }
+  }
+
+  .right--inner {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    h4 {
+      font-size: em(32px);
+      font-weight: 500;
+      font-family: var(--font-gilroy);
+      text-align: center;
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        margin-top: 25px;
+      }
+      span {
+        display: inline-block;
+        font-weight: 700;
+        font-family: var(--font-gilroyBold);
+      }
+    }
+
+    .image {
+      img {
+        width: 160px;
+        margin-right: 10px;
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .client--columns {
+    margin-top: em(80px);
+
+    .client--card {
+      background-color: var(--white-color);
+      border-bottom: 10px solid var(--lightblue-color);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      margin-bottom: 30px;
+
+      .top-col {
+        padding: 13px 0;
+        text-align: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        @include flexbox();
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        .logo--client {
+          width: 50px;
+          height: 50px;
+          margin-right: 14px;
+        }
+        .right {
+          text-align: left;
+          h6 {
+            margin-bottom: -2px;
+            // line-height: 0;
+            font-size: em(12px);
+            font-family: var(--font-gilroy);
+            font-weight: 600;
+            color: var(--dark-color);
+            text-transform: uppercase;
+            display: block;
+          }
+        }
+      }
+
+      .text--inner {
+        padding: 40px 25px 15px 25px;
+        text-align: center;
+        h3 {
+          font-size: em(18px);
+          font-family: var(--font-gilroy);
+          font-weight: 600;
+          text-align: center;
+          position: relative;
+          display: block;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: em(15px);
+          font-family: var(--font-gilroy);
+          font-weight: 400;
+          text-align: center;
+          position: relative;
+          display: block;
+          line-height: 22px;
+          @media screen and (min-width: 1600px) and (max-width: 2400px) {
+            font-size: em(17px);
+          }
+        }
+      }
+    }
+  }
+}

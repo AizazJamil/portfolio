@@ -1,0 +1,189 @@
+.material--section {
+  // background-color: var(--dark-color);
+  margin-top: -100px;
+  position: relative;
+  @media screen and (min-width: 1700px) {
+    margin-top: -60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: -110px;
+  }
+  &:before {
+    content: '';
+    background-image: url('../images/black-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    @include position(absolute, 0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+  }
+
+  .material--rounded {
+    background-color: var(--white-color);
+    @include border-radius(100px);
+    padding: em(30px);
+    z-index: 10;
+    position: relative;
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      @include border-radius(10px);
+    }
+
+    h3 {
+      font-size: em(22px);
+      font-weight: 600;
+      font-family: var(--font-bold);
+      color: var(--dark-color);
+      position: relative;
+      display: inline-block;
+      @media screen and (min-width: 1700px) {
+        font-size: em(24px);
+      }
+    }
+    p {
+      font-size: em(15px);
+      font-weight: 400;
+      font-family: var(--font-regular);
+      position: relative;
+      display: inline-block;
+      color: var(--dark-color);
+      @media screen and (min-width: 1700px) {
+        font-size: em(16px);
+      }
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-top: 10px;
+      }
+    }
+    .btn {
+      text-transform: none;
+      font-size: 16px;
+      padding: em(10px) em(20px);
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .material--inner {
+    margin-top: 80px;
+    .heading {
+      margin-bottom: 30px;
+      h2 {
+        font-size: 40px;
+        font-family: var(--font-bold);
+        font-weight: 700;
+        color: var(--white-color);
+        text-align: center;
+        position: relative;
+        display: block;
+        text-transform: uppercase;
+        @media screen and (min-width: 1700px) {
+          font-size: em(48px);
+        }
+      }
+      p {
+        font-size: 20px;
+        font-family: var(--font-regular);
+        font-weight: 300;
+        color: var(--white-color);
+        text-align: center;
+        position: relative;
+        display: block;
+        @media screen and (min-width: 1700px) {
+          font-size: em(24px);
+        }
+      }
+    }
+
+    .material--img {
+      display: grid;
+      grid-template-columns: var(--hex-width) var(--hex-width) var(--hex-width) var(--hex-width);
+      grid-auto-rows: calc(var(--hex-width) - 28.87px/2);
+      grid-gap: var(--hex-between) var(--hex-between);
+      padding-bottom: var(--hex-border);
+      justify-content: center;
+      width: 115%;
+
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 100%;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        display: block;
+        text-align: center;
+        width: 100%;
+      }
+
+      .mat {
+        align-items: center;
+        // background-color: var(--color-hex-default);
+        cursor: pointer;
+        display: flex;
+        fill: white;
+        height: var(--hex-height);
+        justify-content: center;
+        margin: var(--hex-border) 0;
+        position: relative;
+        transition: var(--hex-transition);
+        width: var(--hex-width);
+        margin-bottom: 90px;
+
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+          width: 100%;
+          margin-bottom: 100px;
+        }
+      }
+
+      .mat-03 {
+        margin-top: 165px;
+        margin-left: -102px;
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+          margin-top: 0;
+          margin-left: 0;
+        }
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+          margin-top: 0;
+          margin-left: 0;
+        }
+      }
+
+      .mat:nth-child(8n + 5),
+      .mat:nth-child(8n + 6),
+      .mat:nth-child(8n + 7),
+      .mat:nth-child(8n + 8) {
+        margin-left: -105px;
+        margin-top: -25px;
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+          margin-left: 0;
+          margin-top: 0;
+        }
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+          margin-left: 0;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+
+// https://codepen.io/ericornelissen/pen/vWbWKv

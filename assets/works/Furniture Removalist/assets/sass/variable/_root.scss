@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url('../proxima-nova/ProximaNova-Regular.ttf');
+}
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('../proxima-nova/ProximaNova-Bold.ttf');
+}
+@font-face {
+  font-family: 'ProximaNova-Medium';
+  src: url('../proxima-nova/ProximaNova-Medium.ttf');
+}
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url('../proxima-nova/ProximaNova-Light.ttf');
+}
+@font-face {
+  font-family: 'ProximaNova-Black';
+  src: url('../proxima-nova/ProximaNova-Black.ttf');
+}
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url('../proxima-nova/ProximaNova-Semibold.ttf');
+}
+@font-face {
+  font-family: 'PermanentMarker';
+  src: url('../permanent-marker/PermanentMarker.ttf');
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('../raleway/Raleway-Regular.ttf');
+}
+
+
+
+:root {
+  --pro-regular: 'ProximaNova-Regular', sans-serif;
+  --pro-medium: 'ProximaNova-Medium', sans-serif;
+  --pro-black: 'ProximaNova-Black', sans-serif;
+  --pro-bold: 'ProximaNova-Bold', sans-serif;
+  --pro-light: 'ProximaNova-Light', sans-serif;
+  --pro-light: 'ProximaNova-Light', sans-serif;
+  --per-regular: 'PermanentMarker', sans-serif;
+  --rl-regular: 'Raleway';
+  --primary-color: #d9991d;
+  --secondary-color: #0c8c4f;
+  --dark-color: #000000;
+  --white-color: #fff;
+  --blue-color: #0297ba;
+  --orange-color: #f97e2b;
+  --darkorange-color: #f05024;
+  --medorange-color: #f66e28;
+  --gray-color: #ecf4f6;
+  --graydk-color: #939598;
+  --red-color: #e9242a;
+  --purple-color: #4a87fa;
+  --green-color: #073f2c;
+  --dkblue-color: #233043;
+}

@@ -1,0 +1,131 @@
+.perfect--section {
+  background-image: url('../images/purple-bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+  width: 100%;
+  position: relative;
+  padding: em(60px) 0;
+  height: 400px;
+
+  @media screen and (min-width: 1200px) and (max-width: 1500px) {
+    height: 330px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: auto;
+    background-size: cover;
+    padding-bottom: 150px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    height: auto;
+    background-size: cover;
+    padding-bottom: 150px;
+  }
+
+  .inline--innner {
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    width: 100%;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      justify-content: center;
+    }
+
+    .left--inner {
+      margin-right: 20px;
+      @media screen and (min-width: 1700px) {
+        margin-right: 50px;
+      }
+      h2 {
+        font-size: em(70px);
+        font-weight: bolder;
+        font-family: var(--font-extrabold);
+        color: var(--white-color);
+        text-align: left;
+        position: relative;
+        text-transform: uppercase;
+        margin-bottom: -10px;
+        @media screen and (min-width: 1700px) {
+          font-size: em(84px);
+        }
+      }
+      .small-txt {
+        font-size: em(44px);
+        font-weight: 500;
+        font-family: var(--font-regular);
+        color: var(--white-color);
+        text-align: left;
+        position: relative;
+        @media screen and (min-width: 1700px) {
+          font-size: em(52px);
+        }
+      }
+    }
+
+    .right--inner {
+      @include flexbox();
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      list-style-type: none;
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .inner--list {
+        background-color: #312664;
+        padding: 15px 22px;
+        @include border-radius(5px);
+        min-height: 145px;
+        text-align: center;
+        margin-right: 20px;
+        @include transition(0.25s ease);
+
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+          margin-top: 30px;
+        }
+
+        &:hover {
+          background-color: #051536;
+          @include transition(0.25s ease);
+        }
+        &:last-of-type {
+          margin-right: 0;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+          width: 40%;
+          margin-bottom: 20px;
+          min-height: 160px;
+        }
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+          width: 100%;
+          margin-bottom: 20px;
+          min-height: 160px;
+        }
+        @media screen and (min-width: 1700px) {
+          min-width: 150px;
+        }
+        .text {
+          margin-top: 8px;
+          font-size: em(16px);
+          font-family: var(--font-regular);
+          font-weight: 500;
+          color: var(--white-color);
+          text-align: center;
+          position: relative;
+          text-align: center;
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

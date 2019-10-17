@@ -1,0 +1,94 @@
+.choose--section {
+  background-image: url('../images/bottom-banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  padding: em(80px) 0;
+  .container-fluid {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  .text--inner {
+    h2 {
+      font-size: em(40px);
+      font-family: var(--font-gilroyBold);
+      font-weight: 700;
+      color: var(--white-color);
+      position: relative;
+      text-align: left;
+      display: block;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: em(15.6px);
+      font-family: var(--font-gilroy);
+      font-weight: 400;
+      text-align: left;
+      position: relative;
+      display: block;
+      color: var(--white-color);
+      line-height: 24px;
+      @media screen and (min-width: 1600px) and (max-width: 2400px) {
+        font-size: em(19.6px);
+        line-height: 27px;
+
+      }
+    }
+    .text--bottom {
+      line-height: 28px;
+      font-size: em(15px);
+      @media screen and (min-width: 1600px) and (max-width: 2400px) {
+        font-size: em(19.6px);
+        line-height: 40px;
+
+      }
+    }
+    .text--bottom {
+      margin-top: 30px;
+    }
+    .quote {
+      margin-top: 25px;
+      font-size: em(22px);
+      font-family: var(--font-georgiaItalic);
+      font-weight: 500;
+      color: var(--primary-color);
+      text-align: left;
+      font-style: italic;
+      position: relative;
+      left: -20px;
+      line-height: 35px;
+      margin-bottom: -10px;
+      @media screen and (min-width: 320px) and (max-width: 500px) {
+        left: 0;
+      }
+    }
+    .button-inner {
+      margin-top: em(30px);
+      .btn {
+        font-size: em(14px);
+        font-family: var(--font-gilroy);
+        font-weight: 600;
+        color: var(--white-color);
+        text-align: center;
+        padding: 10px 40px;
+        text-transform: uppercase;
+        display: inline-block;
+        position: relative;
+        @include border-radius(2px);
+        @media screen and (min-width: 320px) and (max-width: 500px) {
+          margin-bottom: 15px;
+        }
+      }
+
+      .btn-outline {
+        border: 2px solid var(--primary-color);
+        margin-right: 30px;
+      }
+      .btn-primary {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+      }
+    }
+  }
+}

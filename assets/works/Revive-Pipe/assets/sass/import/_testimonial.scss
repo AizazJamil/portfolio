@@ -1,0 +1,137 @@
+.testimonial--section {
+  padding: em(80px) 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  display: block;
+  background-color: var(--lightgray-color);
+  .heading {
+    text-align: center;
+    h2 {
+      font-size: em(50px);
+      font-weight: 700;
+      font-family: var(--font-slack);
+      position: relative;
+      color: var(--dark-color);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    p {
+      font-size: em(25px);
+      font-family: var(--font-slack);
+      font-weight: 400;
+      position: relative;
+      font-weight: 500;
+      color: #959595;
+    }
+  }
+
+  .inline--inner--icon {
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    .icon--inner {
+      border-right: 1px solid #ccc;
+      padding: 20px 50px;
+      @media screen and (min-width: 1200px) and (max-width: 1400px) {
+        padding: 20px 30px;
+      }
+      @media screen and (min-width: 992px) and (max-width: 1199px) {
+        padding: 20px 20px;
+      }
+      @media screen and (max-width: 767px) {
+        border-right: 0;
+      }
+      &:last-of-type {
+        border-right: 0;
+      }
+      img {
+        float: left;
+      }
+      .inner--right {
+        float: right;
+        margin-left: 15px;
+
+        h6 {
+          font-size: em(18px);
+          font-family: var(--font-slack);
+          font-weight: 600;
+          color: var(--dark-color);
+          display: block;
+          position: relative;
+        }
+      }
+    }
+  }
+
+  .testimonial--card {
+    background-color: #181818;
+    @include border-radius(0);
+    padding: em(40px) em(30px);
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 600px) {
+      margin-bottom: 20px;
+    }
+    .profile {
+      position: relative;
+      margin-bottom: 40px;
+      h5 {
+        background-color: var(--dark-color);
+        @include border-radius(100px);
+        padding: 12px 30px;
+        @include position(absolute, 0, 0, null, null);
+        color: var(--pink-color);
+        font-size: em(14px);
+        font-weight: 400;
+        font-family: var(--font-slack);
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+          font-size: 10px;
+          padding: 12px 20px;
+        }
+      }
+    }
+    .profile--about {
+      .name {
+        font-size: 30px;
+        font-family: var(--font-slack);
+        font-weight: 700;
+        color: var(--white-color);
+        text-align: left;
+        position: relative;
+        display: block;
+        margin-bottom: 20px;
+      }
+      p {
+        margin-top: 15px;
+        font-family: var(--font-slack);
+        text-align: left;
+        font-size: em(17px);
+        font-style: normal;
+        font-weight: 400;
+        color: var(--pink-color);
+        line-height: 35px;
+        min-height: 180px;
+      }
+      .btn {
+        background-color: var(--white-color);
+        padding: em(13px) em(45px);
+        color: var(--pink-color);
+        font-family: var(--font-slack);
+        font-weight: 600;
+        font-size: em(16px);
+        text-align: center;
+        position: relative;
+        @include border-radius(100px);
+        margin-top: 60px;
+      }
+    }
+  }
+}

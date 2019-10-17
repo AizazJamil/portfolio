@@ -1,0 +1,21 @@
+.footer {
+    background: #000;
+    width: 100%;
+    -webkit-clip-path: polygon(0% 21%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 21%, 100% 0, 100% 100%, 0% 100%);
+    margin-top: -170px;
+    z-index: -1;
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 30px;
+
+    p {
+    	color: var(--white-color);
+    	font-size: em(14px);
+    	font-family: var(--font-raleway);
+    	font-weight: 500;
+    	position: relative;
+    	text-align: center;
+    	line-height: 24px;
+    }
+}

@@ -1,0 +1,203 @@
+.about--inner--section {
+  background-color: var(--red-color);
+  margin-top: -180px;
+  z-index: 1;
+  position: relative;
+  .about--content {
+    padding: em(280px) 0 em(80px) 0;
+    z-index: 100;
+    position: relative;
+
+    .about--inner--text {
+      h5 {
+        font-size: em(30px);
+        font-family: var(--font-slack);
+        font-weight: 600;
+        font-style: normal;
+        position: relative;
+        text-align: left;
+        color: var(--dark-color);
+      }
+      h2 {
+        font-size: em(90px);
+        font-weight: bold;
+        font-family: var(--font-slack-bold);
+        text-align: left;
+        position: relative;
+        display: block;
+        text-transform: uppercase;
+        color: var(--dark-color);
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+          font-size: 50px;
+        }
+      }
+      .text-par {
+        margin-top: 30px;
+        p {
+          font-size: 20px;
+          font-family: var(--font-slack);
+          text-align: left;
+          position: relative;
+          color: var(--white-color);
+          font-style: italic;
+        }
+
+        .list--item {
+          li {
+            color: var(--white-color);
+            p {
+              font-style: normal;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .right--about--inner {
+      padding-top: 40px;
+      h5 {
+        font-size: em(22px);
+        font-family: var(--font-slack);
+        font-weight: 500;
+        position: relative;
+        color: var(--white-color);
+        text-align: left;
+        display: block;
+        margin-bottom: 30px;
+        .blck {
+          color: var(--dark-color);
+          font-family: var(--font-slack-bold);
+          font-weight: 800;
+          display: inline-block;
+        }
+      }
+      .box--grid {
+        @include flexbox();
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+        position: relative;
+        img {
+          &:nth-child(2) {
+            position: relative;
+            left: 30px;
+            top: 20px;
+          }
+          &:nth-child(3) {
+            position: relative;
+            top: 10px;
+            left: 85px;
+          }
+          &:nth-child(4) {
+            position: relative;
+            left: 110px;
+            bottom: 60px;
+          }
+          @media screen and (min-width: 1200px) and (max-width: 1400px) {
+            &:nth-child(1) {
+              position: relative;
+              left: 30px;
+              top: 20px;
+              width: 220px;
+            }
+            &:nth-child(2) {
+              position: relative;
+              left: 50px;
+              top: 40px;
+              width: 160px;
+            }
+            &:nth-child(3) {
+              position: relative;
+              left: 100px;
+              top: 30px;
+              width: 160px;
+            }
+            &:nth-child(4) {
+              position: relative;
+              left: 110px;
+              top: -30px;
+              width: 220px;
+            }
+          }
+          @media screen and (min-width: 1025px) and (max-width: 1199px) {
+            &:nth-child(1) {
+              position: relative;
+              left: 30px;
+              top: 20px;
+              width: 40%;
+            }
+            &:nth-child(2) {
+              position: relative;
+              left: 50px;
+              top: 40px;
+              width: 35%;
+            }
+            &:nth-child(3) {
+              position: relative;
+              left: 80px;
+              top: 30px;
+              width: 35%;
+            }
+            &:nth-child(4) {
+              position: relative;
+              left: 100px;
+              top: 10px;
+              width: 40%;
+            }
+          }
+          @media screen and (min-width: 768px) and (max-width: 1024px) {
+            &:nth-child(1) {
+              width: 45%;
+            }
+            &:nth-child(2) {
+              position: relative;
+              left: 30px;
+              top: 20px;
+            }
+            &:nth-child(3) {
+              position: relative;
+              top: 10px;
+              left: 85px;
+            }
+            &:nth-child(4) {
+              position: relative;
+              left: 110px;
+              bottom: 60px;
+              width: 45%;
+            }
+          }
+          @media screen and (max-width: 600px) {
+            width: 100%;
+            margin-bottom: 20px;
+            &:nth-child(1) {
+              position: relative;
+              left: 0;
+              top: 0;
+              width: 100%;
+            }
+            &:nth-child(2) {
+              position: relative;
+              left: 0;
+              top: 0;
+              width: 100%;
+            }
+            &:nth-child(3) {
+              position: relative;
+              left: 0;
+              top: 0;
+              width: 100%;
+            }
+            &:nth-child(4) {
+              position: relative;
+              left: 0;
+              top: 0;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.subscribe--section {
+    padding: em(40px) 0;
+    width: 100%;
+    position: relative;
+    display: block;
+    margin: 0;
+    background-color: var(--secondary-color);
+
+    .left-inner {
+        h5 {
+            font-size: 18px;
+            font-weight: 500;
+            font-family: var(--font-regular);
+            text-align: left;
+            position: relative;
+            display: block;
+            color: var(--white-color);
+
+            @media screen and (max-width: 600px) {
+                text-align: center;
+            }
+        }
+
+        h2 {
+            font-size: 35px;
+            font-weight: 700;
+            font-family: var(--font-regular);
+            text-align: left;
+            position: relative;
+            display: block;
+            color: var(--white-color);
+            text-transform: capitalize;
+            margin: 0;
+
+            @media screen and (max-width: 600px) {
+                text-align: center;
+            }
+        }
+    }
+
+    .right-inner {
+        @media screen and (max-width: 600px) {
+            text-align: center;
+        }
+
+        .btn {
+            padding: em(10px) em(35px);
+            color: var(--white-color);
+            font-size: em(16px);
+            font-weight: 600;
+            font-family: var(--font-primary);
+            text-align: center;
+            display: inline-block;
+            @include border-radius(0);
+            border-width: 2px;
+
+            img {
+                padding-right: 10px;
+            }
+        }
+
+        .btn-bg {
+            background-color: var(--primary-color);
+            border-color: var(--white-color);
+            margin-right: 10px;
+
+            @media screen and (max-width: 992px) {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            @media screen and (max-width: 767px) {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        .btn-outline {
+            border-color: var(--white-color);
+            background-color: transparent;
+        }
+    }
+}

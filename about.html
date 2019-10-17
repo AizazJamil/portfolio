@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/images/favion.webp" type="image/x-icon">
     <title>Aizaz Jamil | Portfolio</title>
     <!-- CSS LIBRARIES -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -15,7 +16,51 @@
 
 <body>
     <!-- START: NAVBAR SECTION FIXED -->
-    <nav class="navbar navbar-expand-lg navbar-inner">
+
+    <div class="navigation-menu" id="overlayNavigation">
+        <div class="navigation-bg one"></div>
+        <div class="navigation-bg two"></div>
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="col-md-6 offset-md-5 navigation-wrapper">
+                    <div class="nav-inner">
+                        <ul class="list-inline">
+                            <li class="nav-item">
+                                <a class="nav-link" href="work.html">Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="service.html">Service</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //overlay -->
+
+    <nav class="navbar navbar-expand-lg fixed-top top-nav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="bold">Aizaz </span><span
+                    class="light">Jamil</span></a>
+
+            <button class="menu-toggler" type="button" data-target="#overlayNavigation">
+                <div class="d-inline-flex navbar-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+
+
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-inner">
         <div class="container">
             <a class="navbar-brand" href="index.html"><span class="bold">Aizaz </span><span
                     class="light">Jamil</span></a>
@@ -35,13 +80,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="service.html">Service</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li> -->
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
     <!-- END: NAVBAR SECTION FIXED -->
 
     <!-- START: WORK SECTION -->
@@ -124,9 +166,9 @@
     <script src="assets/js/jquery/jquery-1.9.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <!-- <script src="assets/js/TweenMax.min.js"></script> -->
-    <script src="asseets/js/app.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/animation.js"></script>
 </body>
 
 </html>

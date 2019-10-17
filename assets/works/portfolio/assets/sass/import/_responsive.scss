@@ -1,0 +1,49 @@
+@media screen and (max-width: 767px) {
+	.navbar-light .navbar-toggler-icon {
+	    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)") !important;
+
+	}
+
+
+	.navbar_Navigation {
+		padding-right: 30px !important;
+		padding-left: 30px !important;
+		.navbar-toggler {
+			border: none;
+			padding: 0;
+			&:focus {
+				outline: none;
+				box-shadow: none;
+				border: none;
+			}
+		}
+		.navbar-collapse {
+			.navbar-nav {
+				.nav-item {
+					margin-right: 0;
+					.nav-link {
+						text-align: left;
+						padding: em(14px) 0;
+					}
+				}
+			}
+		}
+	}
+
+	.scrolled {
+		.navbar-toggler {
+			.hamburger {
+				.line {
+					background-color: var(--regular-color);
+				}
+			}
+		}
+	}
+
+	.contact-area {
+		.card {
+			padding: em(50px) em(10px);
+		}
+	}
+
+}

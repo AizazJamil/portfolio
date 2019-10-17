@@ -1,0 +1,95 @@
+.form--section {
+  position: relative;
+  margin-top: -300px;
+  padding: 0;
+  width: 100%;
+
+  .image-left {
+    position: relative;
+    .google--map {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: white;
+      a {
+        color: var(--white-color);
+        font-size: em(16px);
+        font-family: var(--font-gilroy);
+        font-weight: 400;
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        img {
+          margin-right: 10px;
+          vertical-align: middle;
+        }
+      }
+    }
+    .form--background {
+      width: 100%;
+      height: 100%;
+    }
+    .ab--img {
+      @include position(absolute, null, -35px, 0px, null);
+      z-index: 10;
+      width: 280px;
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        @include position(absolute, null, 0, 0, null);
+      }
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        right: 0;
+        width: 50%;
+      }
+    }
+  }
+
+  .form--inner {
+    background-color: var(--primary-color);
+    padding: 20px 30px;
+    width: 100%;
+
+    h2 {
+      text-align: center;
+      font-family: var(--font-gilroy);
+      font-weight: 900;
+      font-size: 30px;
+      color: var(--white-color);
+      display: block;
+      margin-bottom: 20px;
+      position: relative;
+      visibility: visible;
+    }
+
+    .form-group {
+      .form-control {
+        background-color: var(--white-color);
+        color: var(--dark-color);
+        padding: 12px 15px;
+        @include border-radius(0);
+        border: none;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+          border: none;
+        }
+      }
+    }
+
+    .button-group {
+      .btn {
+        background-color: var(--lightblue-color);
+        color: var(--white-color);
+        text-transform: uppercase;
+        font-size: em(16px);
+        font-family: var(--font-gilroy);
+        font-weight: 500;
+        text-align: center;
+        position: relative;
+        display: block;
+        visibility: visible;
+        padding: 15px;
+        @include border-radius(0);
+      }
+    }
+  }
+}

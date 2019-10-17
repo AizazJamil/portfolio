@@ -1,0 +1,216 @@
+.banner-section {
+  background-image: url('../images/video2.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  @include flexbox();
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  .ribbon-one {
+    background-color: var(--lightbl-color);
+    width: 100%;
+    @include position(absolute, -5%, 0, null, -10%);
+    // height: 100px;
+    padding: em(20px) 140px;
+    transform: rotate(-25deg);
+    z-index: 10;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    @media screen and (max-width: 1140px) {
+      display: none;
+    }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    .ribbon-rd {
+      @include position(absolute, 100%, 45%, null, null);
+      background-color: var(--secondary-color);
+      text-align: center;
+      @include flexbox();
+      flex-wrap: no-wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 200px;
+      padding: em(10px) em(30px);
+
+      .list {
+        @include flexbox();
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        list-style-type: none;
+        margin: 0;
+        position: relative;
+        bottom: 5px;
+      }
+      h2 {
+        font-size: em(35px);
+        font-weight: 700;
+        font-family: var(--font-regular);
+        text-align: left;
+        margin-bottom: 0;
+        margin-right: 5px;
+      }
+      h4 {
+        text-align: left;
+        font-weight: 600;
+        font-family: var(--font-regular);
+        font-size: em(18px);
+        position: relative;
+        top: 5px;
+      }
+    }
+    h2 {
+      font-size: em(30px);
+      font-family: var(--font-regular);
+      font-weight: 600;
+      color: var(--white-color);
+      text-align: left;
+      position: relative;
+      display: block;
+      margin-bottom: 0;
+    }
+    h4 {
+      font-size: em(25px);
+      font-family: var(--font-regular);
+      font-weight: 600;
+      color: var(--white-color);
+      text-align: right;
+      position: relative;
+      display: block;
+      margin-bottom: 0;
+      width: 340px;
+    }
+    .rt-inner {
+      @include position(absolute, 3%, 60%, null, null);
+      img {
+        width: auto;
+        height: auto;
+        @media screen and (min-width: 1366px) {
+          width: 100px;
+        }
+      }
+      @media screen and (min-width: 1366px) {
+        right: 55%;
+      }
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
+    }
+  }
+  .ribbon-two {
+    background-color: var(--primary-color);
+    width: 100%;
+    @include position(absolute, 72%, 0, null, -20%);
+    // height: 100px;
+    padding: em(20px) 140px;
+    transform: rotate(25deg);
+    // z-index: 1;
+    @media screen and (max-width: 1140px) {
+      display: none;
+    }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    .silver {
+      position: absolute;
+      top: -50%;
+      left: 20%;
+      z-index: 100;
+      @media screen and (min-width: 1366px) {
+        top: -40%;
+        left: 22%;
+        width: 200px;
+      }
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
+    }
+    h2 {
+      font-size: em(30px);
+      font-family: var(--font-regular);
+      font-weight: 600;
+      color: var(--white-color);
+      text-align: center;
+      position: relative;
+      display: block;
+      margin-bottom: 0;
+      @media screen and (min-width: 1366px) {
+        font-size: em(26px);
+      }
+    }
+    h4 {
+      font-size: em(25px);
+      font-family: var(--font-regular);
+      font-weight: 600;
+      color: var(--white-color);
+      text-align: center;
+      position: relative;
+      display: block;
+      margin-bottom: 0;
+      // width: 340px;
+      @media screen and (min-width: 1366px) {
+        font-size: em(22px);
+      }
+    }
+    .rt-inner {
+      @include position(absolute, 3%, 60%, null, null);
+      img {
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+  .banner-heading {
+    h5 {
+      font-size: em(25px);
+      font-family: var(--font-regular);
+      font-weight: 600;
+      color: var(--primary-color);
+      text-align: center;
+      display: block;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: em(40px);
+      font-family: var(--font-regular);
+      font-weight: 700;
+      color: var(--secondary-color);
+      text-align: center;
+      display: block;
+      text-transform: uppercase;
+    }
+    h4 {
+      font-size: em(30px);
+      font-family: var(--font-regular);
+      font-weight: 700;
+      color: var(--primary-color);
+      text-align: center;
+      display: block;
+      text-transform: uppercase;
+      font-style: italic;
+      // border: 2px solid var(--white-color);
+      // text-shadow: 2px 2px 2px rgba(255, 255, 255, 1);
+      text-shadow:
+         2px  2px     #fff,
+        -2px  2px     #fff,
+         2px -2px     #fff,
+        -2px -2px     #fff,
+         2px  2px 5px #555;
+      span {
+        font-size: em(45px);
+        display: inline-block;
+        font-style: normal;
+        vertical-align: top;
+      }
+      sup {
+        font-size: 30px;
+        // display: inline-block;
+      }
+    }
+  }
+}

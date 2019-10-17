@@ -1,0 +1,185 @@
+.client--section {
+  padding: em(50px) 0;
+  margin: 0;
+  width: 100%;
+  display: block;
+  position: relative;
+  background-color: var(--white-color);
+
+  .container {
+    @media (min-width: 1200px) {
+      max-width: 1400px !important;
+    }
+  }
+
+  .inline--inner {
+    margin-bottom: 80px;
+    .inner--client--fix {
+      @include flexbox();
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      list-style-type: none;
+
+      li {
+        @media screen and (min-width: 991px) and (max-width: 1024px) {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 33.333333%;
+          flex: 0 0 33.333333%;
+          max-width: 33.333333%;
+          margin-bottom: 30px;
+          text-align: center;
+        }
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+          margin-bottom: 25px;
+        }
+        @media screen and (min-width: 320px) and (max-width: 500px) {
+          width: 100%;
+          margin-bottom: 25px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .heading {
+    h2 {
+      font-size: em(42px);
+      font-family: var(--font-gilroyBold);
+      font-weight: 600;
+      color: var(--dark-color);
+      text-align: left;
+      text-transform: uppercase;
+      line-height: 60px;
+      @media screen and (min-width: 991px) and (max-width: 1024px) {
+        font-size:  em(30px);
+        line-height: 50px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        font-size:  em(35px);
+        line-height: 50px;
+      }
+      @media screen and (min-width: 320px) and (max-width: 500px) {
+        line-height: 30px;
+        font-size: em(22px);
+      }
+    }
+  }
+
+  .text--inner {
+    h6 {
+      font-size: em(17px);
+      font-family: var(--font-gilroyExtraBold);
+      font-weight: 600;
+      color: var(--lightblue-color);
+      text-align: left;
+      position: relative;
+      display: block;
+      @media screen and (min-width: 1600px) and (max-width: 2400px) {
+        font-size: em(19px);
+      }
+    }
+
+    p {
+      font-size: em(15px);
+      font-family: var(--font-gilroy);
+      font-weight: 600;
+      color: #2b3641;
+      text-align: left;
+      position: relative;
+      display: block;
+      @media screen and (min-width: 1600px) and (max-width: 2400px) {
+        font-size: em(18px);
+      }
+    }
+  }
+
+  .box--inner {
+    background-color: var(--primary-color);
+    padding: em(20px);
+    margin-top: 80px;
+
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    @media screen and (min-width: 320px) and (max-width: 500px) {
+      justify-content: center;
+    }
+
+    img {
+      margin-right: 10px;
+    }
+    h5 {
+      font-size: 18px;
+      font-family: var(--font-gilroyBold);
+      font-weight: 600;
+      color: var(--white-color);
+      text-align: left;
+      position: relative;
+      display: inline-block;
+      text-transform: uppercase;
+      margin: 0;
+      letter-spacing: 1.2px;
+      @media screen and (min-width: 320px) and (max-width: 500px) {
+        margin: 20px 0;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      font-family: var(--font-gilroy);
+      font-weight: 400;
+      color: var(--white-color);
+      text-align: left;
+      position: relative;
+      display: inline-block;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      margin-right: 30px;
+      letter-spacing: 1.2px;
+      @media screen and (max-width: 767px) {
+        margin-right: 0;
+      }
+      @media screen and (min-width: 320px) and (max-width: 500px) {
+        margin: 0 0 20px 0;
+      }
+    }
+
+    .btn {
+      padding: em(10px) em(40px);
+      font-size: em(16px);
+      font-family: var(--font-gilroy);
+      font-weight: 600;
+      position: relative;
+      text-align: center;
+      visibility: visible;
+      display: inline-block;
+      text-transform: uppercase;
+      @include border-radius(0);
+      @media screen and (min-width: 991px) and (max-width: 1024px) {
+        margin-top: 20px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        margin-top: 20px;
+      }
+      @media screen and (min-width: 320px) and (max-width: 500px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .btn-blue {
+      background-color: var(--lightblue-color);
+      color: var(--white-color);
+      margin-right: 10px;
+    }
+
+    .btn-white {
+      background-color: var(--white-color);
+      color: var(--dark-color);
+    }
+  }
+}

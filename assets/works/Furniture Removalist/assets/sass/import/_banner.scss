@@ -1,0 +1,160 @@
+.banner-section {
+  background-image: url('../images/cover.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 50px 0;
+  // height: 700px;
+  .left-banner {
+    .top-img {
+      img {
+        margin-right: 35px;
+        &:last-of-type {
+          margin-right: 0;
+        }
+        @media screen and (max-width: 600px) {
+          width: 30%;
+          margin-right: 15px;
+        }
+        @media screen and (max-width: 414px) {
+          width: 25%;
+          margin-right: 15px;
+        }
+        @media screen and (max-width: 375px) {
+          width: 100%;
+          margin-right: 15px;
+        }
+      }
+    }
+    .content-banner {
+      margin-top: em(30px);
+      h2 {
+        font-size: em(48px);
+        font-weight: 700;
+        font-family: var(--rl-regular);
+        text-align: left;
+        position: relative;
+        display: block;
+        color: var(--white-color);
+      }
+      p {
+        font-size: em(18px);
+        font-weight: 400;
+        font-family: var(--rl-regular);
+        text-align: left;
+        position: relative;
+        display: block;
+        color: var(--white-color);
+      }
+      @media screen and (max-width: 767px) {
+        .stretch-card {
+          align-items: flex-start;
+          // justify-content:
+        }
+      }
+      .img-btm {
+        width: 100%;
+        @media screen and (max-width: 767px) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .form-wrapper {
+    background-color: var(--white-color);
+    padding: em(20px);
+    .form-banner {
+      .heading-form {
+        font-size: em(28px);
+        font-weight: 700;
+        font-family: var(--rl-regular);
+        color: var(--dark-color);
+        text-align: left;
+        position: relative;
+        display: block;
+        letter-spacing: 1.2px;
+      }
+      .step {
+        font-size: em(15px);
+        font-family: var(--rl-regular);
+        font-style: normal;
+        position: relative;
+        display: inline-block;
+        background-color: var(--orange-color);
+        color: var(--white-color);
+        @include border-radius(100px);
+        padding: em(6px) em(30px);
+        margin-top: 30px;
+      }
+
+      .form-button {
+        .btn {
+          background-color: var(--orange-color);
+          color: var(--white-color);
+          font-size: em(18px);
+          font-weight: 600;
+          font-family: var(--rl-regular);
+          text-align: center;
+          padding: em(12px) 0;
+          @include border-radius(3px);
+          position: relative;
+          @media screen and (max-width: 450px) {
+            font-size: em(14px);
+          }
+        }
+      }
+
+      .privacy-text {
+        font-size: em(14px);
+        font-weight: 500;
+        font-family: var(--pro-medium);
+        text-align: center;
+        position: relative;
+        margin-top: 20px;
+        vertical-align: middle;
+        color: var(--graydk-color);
+        img {
+          padding-right: 5px;
+          position: relative;
+          bottom: 2px;
+          vertical-align: middle;
+        }
+      }
+
+      .form-group {
+        background-color: var(--gray-color);
+        padding: em(10px) em(15px);
+        @include border-radius(4px);
+        position: relative;
+        margin-top: em(20px);
+        .form-control {
+          background-color: transparent;
+          border: none;
+          font-size: 16px;
+          font-family: var(--rl-regular);
+          font-style: normal;
+          position: relative;
+          text-align: left;
+          text-indent: 10px;
+          &:focus {
+            border: none;
+            outline: none;
+            box-shadow: none;
+          }
+        }
+        .icon {
+          @include position(absolute, 50%, null, 0, null);
+          transform: translateY(-50%);
+        }
+        .rotate {
+          img {
+            transform: rotate(360deg) !important;
+          }
+        }
+      }
+    }
+  }
+}

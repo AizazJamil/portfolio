@@ -1,0 +1,101 @@
+.banner {
+  &--section {
+    background-image: url('../images/banner--cover.png');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 640px;
+    padding: 160px 0;
+    @media screen and (min-width: 1367px) and (max-width: 2400px) {
+      padding: 200px 0;
+      height: 800px;
+    }
+    @media screen and (min-width: 375px) and (max-width: 600px) {
+      height: 680px;
+    }
+    @media screen and (min-width: 320px) and (max-width: 374px) {
+      height: 750px;
+    }
+    @media screen and (min-width: 992px) and (max-width: 1050px) {
+      height: 700px;
+    }
+  }
+
+  &--left {
+    h2 {
+      font-size: em(52px);
+      font-family: var(--font-secondary-extraBold);
+      font-weight: bolder;
+      color: var(--secondary-color);
+      line-height: 50px;
+      position: relative;
+      display: block;
+      margin-bottom: 20px;
+      @media screen and (min-width: 320px) and (max-width: 450px) {
+        font-size: em(30px);
+        line-height: 30px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      font-family: var(--font-secondary);
+      font-weight: 500;
+      position: relative;
+      text-align: left;
+      color: var(--white-color);
+      display: block;
+    }
+
+    .inline {
+      &--banner--logo {
+        @include flexbox();
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+        position: relative;
+        list-style-type: none;
+        padding: 0;
+        margin: 30px 0 50px 0;
+        .list--logo {
+          margin-right: 30px;
+          &:last-of-type {
+            margin-right: 0;
+          }
+          img {
+            width: 150px;
+            @media screen and (min-width: 1367px) and (max-width: 2400px) {
+              width: 200px;
+            }
+          }
+        }
+      }
+      &--image {
+        @include flexbox();
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+        position: relative;
+        list-style-type: none;
+        padding: 0;
+        margin: 30px 0 50px 0;
+        .list {
+          margin-right: 30px;
+          &:last-of-type {
+            margin-right: 0;
+          }
+          img {
+            width: 200px;
+            @media screen and (min-width: 1367px) and (max-width: 2400px) {
+              width: 250px;
+            }
+            @media screen and (min-width: 320px) and (max-width: 450px) {
+              width: 150px;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

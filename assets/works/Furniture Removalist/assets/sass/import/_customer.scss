@@ -1,0 +1,90 @@
+.customer-section {
+  width: 100%;
+  padding: 60px 0;
+  margin: 0;
+  background-color: var(--blue-color);
+  .heading {
+    margin-bottom: 50px;
+    h2 {
+      font-size: em(40px);
+      font-weight: 700;
+      font-family: var(--rl-regular);
+      text-align: center;
+      position: relative;
+      display: block;
+      color: var(--white-color);
+      text-transform: capitalize;
+    }
+  }
+  .inline-area {
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    .box-area {
+      background-color: var(--white-color);
+      width: 260px;
+      text-align: center;
+      @include flexbox();
+      flex-wrap: wrap;
+      justify-content: center;
+      // flex-direction: row;
+      align-items: flex-start;
+      height: 240px;
+      // width: 100%;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+      @media screen and (max-width: 992px) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        // height: 240px;
+        margin-bottom: 30px;
+      }
+      .bg {
+        font-size: em(16px);
+        font-weight: 600;
+        font-family: var(--rl-regular);
+        text-align: center;
+        position: relative;
+        color: var(--white-color);
+        padding: 8px 0;
+        display: block;
+        width: 100%;
+      }
+      .bg-red {
+        background-color: var(--red-color);
+        width: 100%;
+      }
+      .bg-purple {
+        background-color: var(--purple-color);
+      }
+      .bg-orange {
+        background-color: var(--orange-color);
+      }
+      .bg-green {
+        background-color: var(--green-color);
+      }
+      .bg-dkblue {
+        background-color: var(--dkblue-color);
+      }
+      .imgLogo {
+        width: 100%;
+        display: block;
+        text-align: center;
+        height: 70px;
+        margin-bottom: 30px;
+        line-height: 100px;
+        .logo-img {
+          width: 150px;
+        }
+      }
+    }
+  }
+
+}

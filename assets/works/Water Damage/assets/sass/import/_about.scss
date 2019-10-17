@@ -1,0 +1,128 @@
+.touch--section {
+  background-color: var(--darker-color);
+  padding: em(30px) 0;
+  .touch--inner {
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+
+    p {
+      font-size: 22px;
+      font-family: var(--font-proximaThin);
+      font-weight: 300;
+      color: var(--white-color);
+      margin-right: 40px;
+
+      .bold {
+        font-family: var(--font-proximaBold);
+        font-weight: 700;
+      }
+    }
+
+    .button-group {
+      @media screen and (min-width: 415px) and (max-width: 767px) {
+        margin-top: 30px;
+      }
+      @media screen and (min-width: 320px) and (max-width: 414px) {
+        margin-top: 30px;
+      }
+      .btn {
+        @include border-radius(2px);
+        margin-right: 20px;
+        text-transform: none;
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.about--section {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#336de5+0,0640b6+100 */
+  background: rgb(51,109,229); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(51,109,229,1) 0%, rgba(6,64,182,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(51,109,229,1) 0%,rgba(6,64,182,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(51,109,229,1) 0%,rgba(6,64,182,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#336de5', endColorstr='#0640b6',GradientType=0 ); /* IE6-9 */
+  padding: em(60px) 0;
+
+  .about--img {
+    img {
+      width: 90%;
+    }
+  }
+
+  .col-md-12 {
+    @media screen and (min-width: 991px) and (max-width: 1199px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  .about-text {
+    h2 {
+      font-size: em(42px);
+      font-family: var(--font-montserratExtraBold);
+      font-weight: bold;
+      color: var(--primary-color);
+      position: relative;
+      text-align: left;
+      display: block;
+      margin-bottom: 20px;
+      @media screen and (min-width: 415px) and (max-width: 767px) {
+        font-size: em(35px);
+      }
+      @media screen and (min-width: 320px) and (max-width: 414px) {
+        font-size: em(26px);
+      }
+    }
+    h5 {
+      font-size: em(28px);
+      font-family: var(--font-montserratSemiBold);
+      font-weight: bold;
+      color: var(--white-color);
+      position: relative;
+      text-align: left;
+      display: block;
+      margin-bottom: 20px;
+      @media screen and (min-width: 415px) and (max-width: 767px) {
+        font-size: em(23px);
+      }
+      @media screen and (min-width: 320px) and (max-width: 414px) {
+        font-size: em(21px);
+      }
+    }
+    p {
+      font-size: em(15.3px);
+      font-family: var(--font-proxima);
+      font-weight: 400;
+      color: var(--white-color);
+      position: relative;
+      text-align: left;
+      display: block;
+      margin-bottom: 20px;
+      @media screen and (min-width: 415px) and (max-width: 767px) {
+        font-size: em(15px);
+      }
+      @media screen and (min-width: 320px) and (max-width: 414px) {
+        font-size: em(14px);
+      }
+    }
+
+    .link-btn {
+      color: var(--primary-color);
+      text-align: left;
+      position: relative;
+      display: block;
+      font-size: 16px;
+      font-family: var(--font-proxima);
+      font-weight: 500;
+      text-decoration: underline;
+    }
+  }
+}

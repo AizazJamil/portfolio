@@ -1,0 +1,39 @@
+.our-service {
+  width: 100%;
+  padding: 60px 0;
+  margin: 0;
+  background-color: var(--gray-color);
+  .heading {
+    margin-bottom: 50px;
+    h2 {
+      font-size: em(45px);
+      font-weight: 700;
+      font-family: var(--rl-regular);
+      text-align: center;
+      position: relative;
+      display: block;
+      color: var(--dark-color);
+      text-transform: uppercase;
+    }
+  }
+  .card {
+    width: 100%;
+    @include border-radius(4px);
+    border: none;
+    .card-img {
+      img {
+        width: 100%;
+      }
+    }
+    .card-body {
+      h2 {
+        font-size: em(22px);
+        font-weight: 600;
+        font-family: var(--rl-regular);
+        text-align: center;
+        position: relative;
+        color: var(--dark-color);
+      }
+    }
+  }
+}

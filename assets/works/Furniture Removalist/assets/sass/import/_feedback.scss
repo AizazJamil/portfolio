@@ -1,0 +1,58 @@
+.client-feedback {
+  padding: em(60px) 0;
+  background-color: var(--gray-color);
+  width: 100%;
+  margin: 0;
+  position: relative;
+  .card {
+    background-color: var(--white-color);
+    border: none;
+    @include border-radius(4px);
+    padding: em(40px) em(30px);
+    @media screen and (max-width: 992px) {
+      margin-bottom: 30px;
+    }
+    .card-body {
+      padding: 0;
+      margin: 0;
+      h2 {
+        margin: 25px 0;
+        font-size: em(22px);
+        font-weight: 600;
+        font-family: var(--rl-regular);
+        text-align: left;
+        position: relative;
+        display: block;
+        color: var(--dark-color);
+      }
+      .rate-pro {
+        margin-bottom: 20px;
+      }
+      .text {
+        // max-height: 300px;
+        min-height: 280px;
+        p {
+          font-size: em(16px);
+          font-weight: var(--graydk-color);
+          font-family: var(--rl-regular);
+          text-align: left;
+          line-height: 24px;
+          display: block;
+          position: relative;
+        }
+      }
+      .btn {
+        background-color: var(--orange-color);
+        text-align: center;
+        color: var(--white-color);
+        font-size: em(14px);
+        font-weight: 600;
+        font-family: var(--rl-regular);
+        text-transform: uppercase;
+        position: relative;
+        padding: em(14px) em(35px);
+        @include border-radius(0);
+      }
+    }
+  }
+}

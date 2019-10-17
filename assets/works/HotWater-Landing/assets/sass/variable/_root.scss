@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('../fonts/Gilroy/Gilroy-Regular.ttf');
+}
+
+
+:root {
+  --font-regular: 'Gilroy-Regular'
+  // --font-primary: 'Open Sans', sans-serif;
+  // --font-secondary: 'Montserrat', sans-serif;
+  --primary-color: #78cfff;
+  --secondary-color: #ff950a;
+  --white-color: #fff;
+  --dark-color: #000;
+  --lightrd-color: #ff0000;
+  --lightbl-color: #025a96;
+  --darkbl-color: #3da5ff;
+  --lightgray-color: #f2f4f8;
+}

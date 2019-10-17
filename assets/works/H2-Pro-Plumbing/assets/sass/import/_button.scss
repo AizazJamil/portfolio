@@ -1,0 +1,71 @@
+.btn-blue {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: em(15px) em(35px);
+  @include border-radius(100px);
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  color: var(--white-color);
+  font-size: em(17px);
+  font-weight: 400;
+  font-family: var(--font-gilroy);
+  font-style: normal;
+  text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+.btn-green {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  padding: em(15px) em(35px);
+  @include border-radius(100px);
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  color: var(--white-color);
+  font-size: em(17px);
+  font-weight: 400;
+  font-family: var(--font-gilroy);
+  font-style: normal;
+  text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+.btn-white {
+  background-color: var(--white-color);
+  border-color: var(--white-color);
+  padding: em(15px) em(60px);
+  @include border-radius(100px);
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  color: var(--primary-color);
+  font-size: em(17px);
+  font-weight: 600;
+  font-family: var(--font-gilroy);
+  font-style: normal;
+  text-transform: capitalize;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}

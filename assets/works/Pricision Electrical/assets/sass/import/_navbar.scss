@@ -1,0 +1,166 @@
+.navigation-navbar {
+  margin: 0;
+  padding: 10px 0 !important;
+  width: 100%;
+  background-color: transparent;
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  border: none;
+  @media screen and (min-width: 1600px) and (max-width: 2400px) {
+    padding: 30px 0 !important;
+  }
+  .navbar-toggler {
+    background-color: var(--red-color);
+  }
+  .navbar-brand {
+    margin-right: 80px;
+    @media screen and (min-width: 768px) and (max-width: 1220px) {
+      margin-right: 0px;
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      margin-right: 0;
+    }
+    img {
+      width: 300px;
+      @media screen and (min-width: 1600px) and (max-width: 2400px) {
+        width: 400px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1220px) {
+        width: 200px;
+      }
+      @media screen and (max-width: 600px) {
+        width: 160px;
+      }
+    }
+  }
+  .navbar-collapse {
+    .navbar-nav {
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      // border-left: 1px solid var(--white-color);
+      position: relative;
+      padding-left: 50px;
+      @media screen and (max-width: 767px) {
+        padding-left: 0;
+      }
+      .nav-item {
+        .nav-number {
+          background-color: var(--primary-color);
+          border: none;
+          padding: 10px 40px;
+          color: var(--white-color);
+          font-size: 20px;
+          font-family: var(--font-gilroy);
+          font-weight: 600;
+          text-align: center;
+          @media screen and (min-width: 1600px) and (max-width: 2400px) {
+            font-size: em(30px);
+          }
+          @media screen and (min-width: 991px) and (max-width: 1024px) {
+            padding: 10px 10px;
+            font-size: 14px;
+          }
+
+          img {
+            width: 15px;
+            @media screen and (min-width: 1600px) and (max-width: 2400px) {
+              width: 25px;
+            }
+          }
+        }
+        .number--bottom {
+          font-size: 12px;
+          font-family: var(--font-gilroy);
+          font-weight: 600;
+          color: var(--white-color);
+          position: relative;
+          display: block;
+          text-align: center;
+          margin-top: 6px;
+          @media screen and (min-width: 1600px) and (max-width: 2400px) {
+            font-size: em(16px);
+          }
+        }
+        a {
+          @include flexbox();
+          flex-wrap: nowrap;
+          justify-content: flex-start;
+          align-items: flex-end;
+          .lt-nav{
+            margin-right: 15px;
+            .fix-cost {
+              width: 70px;
+            }
+            .fix-day {
+              width: 50px;
+            }
+          }
+          .rt-nav {
+            small {
+              font-size: em(13px);
+              font-weight: 600;
+              font-family: var(--font-gilroy);
+              display: block;
+              margin-bottom: 0;
+            }
+            .dark-cl {
+              color: var(--white-color);
+              font-size: em(20px);
+              @media screen and (min-width: 1600px) and (max-width: 2400px) {
+                font-size: em(25px);
+              }
+            }
+            .white-cl {
+              color: var(--white-color);
+              font-weight: 300;
+              font-size: 12px;
+              font-family: var(--font-gilroy);
+              font-weight: 600;
+              @media screen and (min-width: 1600px) and (max-width: 2400px) {
+                font-size: em(16px);
+              }
+
+              img {
+                margin-right: 6px;
+                margin-left: 6px;
+                vertical-align: middle;
+                position: relative;
+                bottom: 1px;
+              }
+
+              .black {
+                color: var(--dark-color);
+              }
+            }
+          }
+
+          .img {
+            margin-right: 15px;
+          }
+
+          .text-nav {
+            small {
+              font-size: em(16px);
+              font-weight: 600;
+              font-family: var(--font-slack);
+              color: var(--dark-color);
+              line-height: 10px;
+            }
+            p {
+              margin: 0;
+              font-size: 12px;
+              font-weight: 600;
+              font-family: var(--font-secondary);
+              color: var(--dark-color);
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

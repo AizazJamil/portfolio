@@ -1,0 +1,290 @@
+.services--section {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#05abe0+0,225ddf+100 */
+  background: #05abe0; /* Old browsers */
+  background: -moz-linear-gradient(left,  #05abe0 0%, #225ddf 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #05abe0 0%,#225ddf 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #05abe0 0%,#225ddf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#225ddf',GradientType=1 ); /* IE6-9 */
+  padding: em(80px) 0;
+
+  .container {
+    @media (min-width: 1200px) {
+      max-width: 1350px !important;
+    }
+  }
+
+  .heading {
+    h2 {
+      font-size: em(35px);
+      font-family: var(--font-gilroy);
+      font-weight: 600;
+      font-style: normal;
+      position: relative;
+      text-align: center;
+      color: var(--white-color);
+      letter-spacing: 1.2px;
+    }
+  }
+
+  .inline--nav {
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    list-style-type: none;
+    margin-bottom: 30px;
+
+    .line {
+      margin-right: 20px;
+      margin-left: 20px;
+      position: relative;
+      @media screen and (min-width: 320px) and (max-width: 500px) {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 0;
+      }
+      &:before {
+        content: '';
+        @include position(absolute, -12px, null, 0, 0);
+        background-color: var(--white-color);
+        height: 30px;
+        width: 2px;
+        @media screen and (min-width: 320px) and (max-width: 500px) {
+          height: 2px;
+          width: 30px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    .nav-link {
+      a {
+        font-size: em(25px);
+        font-family: var(--font-gilroy);
+        font-weight: 500;
+        color: var(--white-color);
+        text-decoration: none;
+        @include transition(0.25s ease);
+        &:hover {
+          font-family: var(--font-gilroyBold);
+          font-weight: 700;
+          color: var(--primary-color);
+          @include transition(0.25s ease);
+        }
+      }
+    }
+
+    .active--link {
+      a {
+        font-family: var(--font-gilroyBold);
+        font-weight: 700;
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .col-lg-3 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+    }
+  }
+  @media screen and (min-width: 991px) and (max-width: 1024px) {
+    .col-lg-3 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+    }
+  }
+
+  .card--service {
+    width: 100%;
+    background-color: #225cdf;
+    padding: 20px 0 0 20px;
+    // max-height: 270px;
+    height: 270px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+    &:hover {
+      cursor: pointer;
+      .circle-plus {
+        opacity: 1;
+        @include transition(0.25s ease);
+      }
+      .image {
+        img {
+          opacity: 1;
+          @include transition(0.25s ease);
+        }
+      }
+    }
+    .circle-plus {
+      background-color: var(--primary-color);
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      @include border-radius(100px);
+      position: absolute;
+      right: -10px;
+      top: -10px;
+      z-index: 0;
+      cursor: pointer;
+      opacity: 0;
+      @include transition(0.25s ease);
+      span {
+        font-size: em(45px);
+        color: var(--white-color);
+        font-family: var(--font-gilroy);
+        font-weight: 400;
+        padding: 0;
+      }
+    }
+    .text {
+      h3 {
+        font-size: em(22px);
+        font-family: var(--font-gilroyBold);
+        font-weight: 600;
+        position: relative;
+        text-align: left;
+        display: block;
+        color: var(--white-color);
+        visibility: visible;
+        cursor: text;
+        @media screen and (min-width: 1600px) and (max-width: 2400px) {
+          font-size: em(24px);
+        }
+      }
+
+      a {
+        color: #7f77bd;
+        font-size: em(14px);
+        font-family: var(--font-gilroy);
+        font-weight: 600;
+        text-align: left;
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        img {
+          margin-left: 5px;
+        }
+      }
+    }
+    .image {
+      .img-01 {
+        width: 70%;
+        position: relative;
+        top: -15px;
+        left: 30px;
+        opacity: 0.1;
+        @include transition(0.25s ease);
+      }
+      .img-02 {
+        width: 70%;
+        position: relative;
+        top: 15px;
+        left: 30px;
+        opacity: 0.1;
+        @include transition(0.25s ease);
+      }
+      .img-03 {
+        width: 45%;
+        position: relative;
+        top: 10px;
+        left: 120px;
+        opacity: 0.1;
+        @include transition(0.25s ease);
+      }
+      .img-04 {
+        width: 35%;
+        position: relative;
+        top: 10px;
+        left: 150px;
+        opacity: 0.1;
+        @include transition(0.25s ease);
+      }
+      .img-05 {
+        width: 75%;
+        position: relative;
+        top: 40px;
+        left: 80px;
+        opacity: 0.1;
+        @include transition(0.25s ease);
+      }
+      .img-06 {
+        width: 45%;
+        position: relative;
+        top: 8px;
+        left: 100px;
+        opacity: 0.1;
+        @include transition(0.25s ease);
+      }
+      .img-07 {
+        width: 45%;
+        position: relative;
+        top: 8px;
+        left: 100px;
+        opacity: 0.1;
+        @include transition(0.25s ease);
+      }
+      .img-08 {
+        width: 50%;
+        position: relative;
+        top: 7px;
+        left: 100px;
+        opacity: 0.1;
+        @include transition(0.25s ease);
+      }
+      .img-09 {
+        width: 90%;
+        position: relative;
+        top: -70px;
+        left: 20px;
+        opacity: 0.1;
+        @include transition(0.25s ease);
+      }
+      .img-10 {
+        width: 80%;
+        position: relative;
+        top: 0px;
+        left: 100px;
+        opacity: 0.1;
+        @include transition(0.25s ease);
+      }
+      .img-11 {
+        width: 70%;
+        position: relative;
+        top: 14px;
+        left: 40px;
+        opacity: 0.1;
+        @include transition(0.25s ease);
+      }
+      .img-12 {
+        width: 90%;
+        position: relative;
+        top: 30px;
+        left: -30px;
+        opacity: 0.1;
+        @include transition(0.25s ease);
+      }
+    }
+  }
+
+  .display--inner--plumbing {
+    display: block;
+  }
+
+  .display--inner--electrical {
+    display: none;
+  }
+
+}

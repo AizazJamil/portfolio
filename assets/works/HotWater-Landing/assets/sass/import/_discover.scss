@@ -1,0 +1,614 @@
+.product {
+  &--section {
+    margin: 0;
+    padding: em(80px) 0;
+    width: 100%;
+    position: relative;
+    display: block;
+    background-color: var(--lightgray-color);
+    @media screen and (min-width: 1101px) and (max-width: 1199px) {
+      padding: em(80px) em(30px);
+    }
+    @media screen and (min-width: 992px) and (max-width: 1100px) {
+      padding: em(80px) em(20px);
+    }
+    @media screen and (min-width: 320px) and (max-width: 991px) {
+      padding: em(80px) em(20px);
+    }
+  }
+
+  &-discover {
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    background-color: var(--white-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: em(25px) em(45px);
+    margin-bottom: em(80px);
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: em(18px);
+      font-weight: 400;
+      font-family: var(--font-regular);
+      text-align: left;
+      position: relative;
+      color: var(--dark-color);
+    }
+    .btn {
+      background-color: var(--secondary-color);
+      font-size: em(16px);
+      font-weight: 600;
+      font-family: var(--font-regular);
+      text-align: center;
+      display: inline-block;
+      @include border-radius(100px);
+      color: var(--white-color);
+      padding: em(12px) em(70px);
+      @media screen and (min-width: 320px) and (max-width: 450px) {
+        padding: 10px 30px;
+      }
+    }
+  }
+
+  &--inner {
+    @media screen and (min-width: 1450px) and (max-width: 2400px) {
+      .card {
+        // border: none;
+        padding: em(30px);
+        height: 450px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 40px;
+        .card--body {
+          h2 {
+            font-size: em(32px);
+            font-weight: 600;
+            font-family: var(--font-regular);
+            text-align: left;
+            position: relative;
+            display: block;
+            color: var(--primary-color);
+          }
+          a {
+            font-size: em(17px);
+            font-weight: 400;
+            font-family: var(--font-regular);
+            text-align: left;
+            position: relative;
+            display: block;
+            // color: #7f77bd;
+            color: #a2a4ad;
+            vertical-align: middle;
+          }
+          .product--image {
+            .pr-img {
+              width: 100%;
+              position: absolute;
+              bottom: -18px;
+              right: 0px;
+            }
+            .gas-image {
+              width: 50%;
+              position: absolute;
+              left: 45%;
+              bottom: -60px;
+            }
+            .electric-image {
+              width: 75%;
+              top: -20px;
+              left: 30%;
+            }
+            .plumber-image {
+              width: 100%;
+              left: -30px;
+              bottom: -60px;
+            }
+            .plumber-image1 {
+              width: 100%;
+              position: absolute;
+              right: -100px;
+              transform: rotate(15deg);
+              bottom: -130px;
+            }
+            .plumber-image2 {
+              width: 100%;
+              position: relative;
+              right: 0px;
+              bottom: 0px;
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1200px) and (max-width: 1449px) {
+      .card {
+        // border: none;
+        padding: em(30px);
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 40px;
+        .card--body {
+          h2 {
+            font-size: em(32px);
+            font-weight: 600;
+            font-family: var(--font-regular);
+            text-align: left;
+            position: relative;
+            display: block;
+            color: var(--primary-color);
+          }
+          a {
+            font-size: em(17px);
+            font-weight: 400;
+            font-family: var(--font-regular);
+            text-align: left;
+            position: relative;
+            display: block;
+            // color: #7f77bd;
+            color: #a2a4ad;
+            vertical-align: middle;
+          }
+          .product--image {
+            .pr-img {
+              width: 380px;
+              position: relative;
+              top: -22px;
+              right: 10px;
+            }
+            .gas-image {
+              width: 170px;
+              position: relative;
+              left: 200px;
+              top: 0px;
+            }
+            .electric-image {
+              width: 300px;
+              top: -180px;
+              left: 130px;
+            }
+            .plumber-image {
+              width: 470px;
+              left: -130px;
+              top: 10px;
+            }
+            .plumber-image1 {
+              width: 390px;
+              position: relative;
+              top: -52px;
+              right: -110px;
+              transform: rotate(15deg);
+            }
+            .plumber-image2 {
+              width: 330px;
+              position: relative;
+              top: -52px;
+              right: -50px;
+
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 1101px) and (max-width: 1199px) {
+      .card {
+        // border: none;
+        padding: em(30px);
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 40px;
+        .card--body {
+          h2 {
+            font-size: 20px;
+            font-weight: 600;
+            font-family: var(--font-regular);
+            text-align: left;
+            position: relative;
+            display: block;
+            color: var(--primary-color);
+          }
+          a {
+            font-size: em(17px);
+            font-weight: 400;
+            font-family: var(--font-regular);
+            text-align: left;
+            position: relative;
+            display: block;
+            // color: #7f77bd;
+            color: #a2a4ad;
+            vertical-align: middle;
+          }
+          .product--image {
+            .pr-img {
+              width: 120%;
+              position: relative;
+              top: 38px;
+              right: 25px;
+            }
+            .gas-image {
+              width: 170px;
+              position: relative;
+              left: 70px;
+              top: 30px;
+            }
+            .electric-image {
+              width: 250px;
+              top: -60px;
+              left: 30px;
+            }
+            .plumber-image {
+              width: 380px;
+              left: -140px;
+              top: 70px;
+            }
+            .plumber-image1 {
+              width: 390px;
+              position: relative;
+              top: 10px;
+              right: 0px;
+              transform: rotate(15deg);
+            }
+            .plumber-image2 {
+              width: 220px;
+              position: relative;
+              top: 28px;
+              right: -10px;
+
+            }
+          }
+        }
+      }
+    }
+    @media (min-width: 992px) and (max-width: 1100px) {
+      .col-md-6 {
+        flex: 0 0 50% !important;
+        max-width: 50%;
+      }
+      .card {
+        // border: none;
+        padding: em(30px);
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 40px;
+        .card--body {
+          h2 {
+            font-size: em(25px);
+            font-weight: 600;
+            font-family: var(--font-regular);
+            text-align: left;
+            position: relative;
+            display: block;
+            color: var(--primary-color);
+          }
+          a {
+            font-size: em(17px);
+            font-weight: 400;
+            font-family: var(--font-regular);
+            text-align: left;
+            position: relative;
+            display: block;
+            // color: #7f77bd;
+            color: #a2a4ad;
+            vertical-align: middle;
+          }
+          .product--image {
+            .pr-img {
+              width: 100%;
+              position: absolute;
+              top: 170px;
+              right: 0px;
+            }
+            .gas-image {
+              width: 50%;
+              position: absolute;
+              left: 50%;
+              bottom: 0;
+              transform: translateX(-50%);
+            }
+            .electric-image {
+              width: 80%;
+              top: 70px;
+              left: 50%;
+              position: absolute;
+              transform: translateX(-50%);
+            }
+            .plumber-image {
+              width: 100%;
+              left: -20px;
+              top: 200px;
+
+            }
+            .plumber-image1 {
+              width: 130%;
+              position: absolute;
+              top: 150px;
+              transform: translateX(-30%) rotate(15deg);
+              left: 50%;
+            }
+            .plumber-image2 {
+              idth: 100%;
+              position: relative;
+              top: 10px;
+              left: 50%;
+              transform: translateX(-50%);
+
+            }
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      .card {
+        // border: none;
+        padding: em(30px);
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 40px;
+        .card--body {
+          h2 {
+            font-size: em(32px);
+            font-weight: 600;
+            font-family: var(--font-regular);
+            text-align: left;
+            position: relative;
+            display: block;
+            color: var(--primary-color);
+          }
+          a {
+            font-size: em(17px);
+            font-weight: 400;
+            font-family: var(--font-regular);
+            text-align: left;
+            position: relative;
+            display: block;
+            // color: #7f77bd;
+            color: #a2a4ad;
+            vertical-align: middle;
+          }
+          .product--image {
+            .pr-img {
+              width: 100%;
+              position: absolute;
+              top: 148px;
+              right: 0px;
+            }
+            .gas-image {
+              width: 50%;
+              position: absolute;
+              left: 50%;
+              bottom: 0;
+              transform: translateX(-50%);
+            }
+            .electric-image {
+              width: 80%;
+              top: 70px;
+              left: 50%;
+              position: absolute;
+              transform: translateX(-50%);
+            }
+            .plumber-image {
+              width: 100%;
+              left: -20px;
+              top: 200px;
+
+            }
+            .plumber-image1 {
+              width: 130%;
+              position: absolute;
+              top: 100px;
+              transform: translateX(-30%) rotate(15deg);
+              left: 50%;
+            }
+            .plumber-image2 {
+              idth: 100%;
+              position: relative;
+              top: 10px;
+              left: 50%;
+              transform: translateX(-50%);
+
+            }
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 451px) and (max-width: 767px) {
+      .card {
+        // border: none;
+        padding: em(30px);
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 40px;
+        .card--body {
+          h2 {
+            font-size: em(32px);
+            font-weight: 600;
+            font-family: var(--font-regular);
+            text-align: left;
+            position: relative;
+            display: block;
+            color: var(--primary-color);
+            @media screen and (min-width: 320px) and (max-width: 450px) {
+              font-size: em(25px);
+            }
+          }
+          a {
+            font-size: em(17px);
+            font-weight: 400;
+            font-family: var(--font-regular);
+            text-align: left;
+            position: relative;
+            display: block;
+            // color: #7f77bd;
+            color: #a2a4ad;
+            vertical-align: middle;
+          }
+          .product--image {
+            .pr-img {
+              width: 80%;
+              position: absolute;
+              top: 108px;
+              right: 50px;
+            }
+            .gas-image {
+              width: 40%;
+              position: absolute;
+              left: 50%;
+              bottom: 0;
+              transform: translateX(-20%);
+            }
+            .electric-image {
+              width: 50%;
+              top: 30px;
+              left: 50%;
+              position: absolute;
+              transform: translateX(-10%);
+            }
+            .plumber-image {
+              width: 100%;
+              left: -20px;
+              top: 90px;
+
+            }
+            .plumber-image1 {
+              width: 80%;
+              position: absolute;
+              top: 100px;
+              transform: translateX(-30%) rotate(15deg);
+              left: 50%;
+            }
+            .plumber-image2 {
+              width: 50%;
+              position: relative;
+              top: 10px;
+              left: 50%;
+              transform: translateX(-50%);
+
+            }
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 320px) and (max-width: 450px) {
+      .card {
+        // border: none;
+        padding: em(30px);
+        height: 350px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 40px;
+        .card--body {
+          h2 {
+            font-size: em(32px);
+            font-weight: 600;
+            font-family: var(--font-regular);
+            text-align: left;
+            position: relative;
+            display: block;
+            color: var(--primary-color);
+            @media screen and (min-width: 320px) and (max-width: 450px) {
+              font-size: em(25px);
+            }
+          }
+          a {
+            font-size: em(17px);
+            font-weight: 400;
+            font-family: var(--font-regular);
+            text-align: left;
+            position: relative;
+            display: block;
+            // color: #7f77bd;
+            color: #a2a4ad;
+            vertical-align: middle;
+          }
+          .product--image {
+            .pr-img {
+              width: 100%;
+              position: absolute;
+              top: 148px;
+              right: 0px;
+            }
+            .gas-image {
+              width: 50%;
+              position: absolute;
+              left: 50%;
+              bottom: 0;
+              transform: translateX(-50%);
+            }
+            .electric-image {
+              width: 80%;
+              top: 70px;
+              left: 50%;
+              position: absolute;
+              transform: translateX(-50%);
+            }
+            .plumber-image {
+              width: 100%;
+              left: -20px;
+              top: 200px;
+
+            }
+            .plumber-image1 {
+              width: 130%;
+              position: absolute;
+              top: 100px;
+              transform: translateX(-30%) rotate(15deg);
+              left: 50%;
+            }
+            .plumber-image2 {
+              width: 100%;
+              position: relative;
+              top: 10px;
+              left: 50%;
+              transform: translateX(-50%);
+
+            }
+          }
+        }
+      }
+    }
+    .bg-blue {
+      border: none;
+      padding: em(30px);
+      background-color: var(--primary-color);
+      .card--body {
+        h2 {
+          font-size: em(32px);
+          font-weight: 600;
+          font-family: var(--font-regular);
+          text-align: left;
+          position: relative;
+          display: block;
+          color: var(--white-color);
+        }
+        a {
+          font-size: em(17px);
+          font-weight: 400;
+          font-family: var(--font-regular);
+          text-align: left;
+          position: relative;
+          display: block;
+          color: #7f77bd;
+          vertical-align: middle;
+        }
+        .plus {
+          @include position(absolute, -10px, -10px, null, null);
+          background-color: var(--secondary-color);
+          width: 90px;
+          height: 90px;
+          line-height: 90px;
+          text-align: center;
+          @include border-radius(100px);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('../fonts/Gilroy/Gilroy-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('../fonts/Gilroy/Gilroy-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Gilroy-ExtraBold';
+  src: url('../fonts/Gilroy/Gilroy-ExtraBold.otf');
+}
+
+@font-face {
+  font-family: 'Georgia-Italic';
+  src: url('../fonts/georgia/georgiaz.ttf');
+}
+
+
+
+
+:root {
+  --font-gilroy: 'Gilroy-Regular';
+  --font-gilroyBold: 'Gilroy-Bold';
+  --font-gilroyExtraBold: 'Gilroy-ExtraBold';
+  --primary-color: #161a69;
+  --secondary-color: #a7cc21;
+  --dark-color: #000;
+  --white-color: #fff;
+  --darking-color: #1f1e1e;
+  --gray-color: #b6b6b6;
+  --lightgray-color: #f8f8f8;
+  --yellow-color: #fed100;
+}

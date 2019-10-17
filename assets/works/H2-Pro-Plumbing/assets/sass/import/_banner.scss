@@ -1,0 +1,168 @@
+.banner {
+  &--section {
+    padding: em(160px) 0 em(80px) 0;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    display: inline-block;
+    background-image: url('../images/banner.png');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin-top: -55px;
+    z-index: 100;
+
+    @media screen and (min-width: 1200px) and (max-width: 1400px) {
+      background-position: left;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      background-position: left;
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      background-position: left;
+    }
+
+    .col-lg-7 {
+      @media screen and (min-width: 991px) and (max-width: 1199px) {
+        flex: 0 0 92% !important;
+        max-width: 92% !important;
+      }
+    }
+  }
+
+
+
+  &--area {
+    @media screen and (min-width: 1700px) {
+      padding-right: 80px;
+    }
+    h2 {
+      font-size: em(60px);
+      font-weight: 800;
+      font-family: var(--font-gilroyExtraBold);
+      font-style: normal;
+      position: relative;
+      text-align: left;
+      display: block;
+      color: var(--white-color);
+      margin-bottom: 20px;
+      @media screen and (min-width: 1200px) and (max-width: 1699px) {
+        font-size: em(50px);
+      }
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-size: em(50px);
+      }
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        font-size: 30px;
+      }
+    }
+
+    p {
+      font-size: em(16px);
+      font-weight: 400;
+      font-family: var(--font-gilroy);
+      text-align: left;
+      position: relative;
+      display: block;
+      color: var(--white-color);
+      line-height: 30px;
+      margin-bottom: 20px;
+      padding-right: 220px;
+      @media screen and (min-width: 1200px) and (max-width: 1699px) {
+        font-size: em(14px);
+        padding-right: 140px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        padding-right: 0;
+      }
+      @media screen and (max-width: 767px) {
+        padding-right: 0;
+      }
+    }
+
+    .col-button {
+      @include flexbox();
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      margin-bottom: 40px;
+
+      img {
+        margin-left: 20px;
+      }
+    }
+
+    .col-area {
+      @include flexbox();
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .inner {
+        @include flexbox();
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        flex: 0 0 50%;
+        max-width: 100%;
+        @media screen and (min-width: 991px) and (max-width: 1199px) {
+          flex: 0 0 40%;
+        }
+
+        @media screen and (max-width: 767px) {
+          flex-wrap: wrap;
+          justify-content: center;
+          flex: 0 0 100%;
+          max-width: 100%;
+          margin-bottom: 20px;
+        }
+
+        @media screen and (min-width: 1700px) {
+          flex: 0 0 40%;
+        }
+
+        .text {
+          margin-left: 20px;
+        }
+
+        h5 {
+          font-size: em(18px);
+          font-family: var(--font-gilroyBold);
+          font-weight: 600;
+          font-style: normal;
+          position: relative;
+          text-align: left;
+          color: var(--white-color);
+          text-transform: capitalize;
+          @media screen and (min-width: 1200px) and (max-width: 1699px) {
+            font-size: em(16px);
+          }
+          @media screen and (max-width: 767px) {
+            text-align: center;
+            margin-top: 20px;
+          }
+        }
+
+        p {
+          font-size: em(13px);
+          font-weight: 400;
+          font-family: var(--font-gilroy);
+          text-align: left;
+          position: relative;
+          display: block;
+          color: var(--white-color);
+          line-height: 22px;
+          margin-bottom: 0;
+          padding-right: 0;
+          @media screen and (min-width: 1200px) and (max-width: 1699px) {
+            font-size: em(13px);
+          }
+          @media screen and (max-width: 767px) {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

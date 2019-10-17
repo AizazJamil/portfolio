@@ -1,0 +1,78 @@
+.booking {
+  &--section {
+    background-color: var(--gray-color);
+    padding: em(30px) 0;
+    margin: 0;
+    position: relative;
+    display: block;
+
+    .heading {
+      @media screen and (min-width: 767px) and (max-width: 991px) {
+        margin-bottom: 30px;
+      }
+      h2 {
+        font-size: em(40px);
+        font-family: var(--font-secondary-extraBold);
+        font-weight: 900;
+        color: var(--primary-color);
+        text-transform: uppercase;
+        display: block;
+        position: relative;
+        visibility: visible;
+        margin: 0;
+        span {
+          display: inline-block;
+          color: var(--secondary-color);
+        }
+
+      }
+      p {
+        margin: 0;
+        padding: 0;
+        font-size: em(14px);
+        font-family: var(--font-secondary);
+        font-weight: 700;
+        position: relative;
+        display: block;
+        color: var(--secondary-color);
+        text-align: left;
+        text-transform: uppercase;
+      }
+    }
+
+    .form--content {
+      width: 100%;
+      .form-group {
+        .form-control {
+          background-color: var(--white-color);
+          @include border-radius(0);
+          padding: em(10px);
+          color: var(--secondary-color);
+          text-align: left;
+          position: relative;
+          border: none;
+          height: auto;
+          &:focus {
+            outline: none;
+            box-shadow: none;
+            border: none;
+          }
+        }
+      }
+      .button-group {
+        .btn {
+          background-color: var(--primary-color);
+          text-align: center;
+          position: relative;
+          color: var(--white-color);
+          @include border-radius(0);
+          padding: 10px;
+          font-weight: 600;
+          font-family: var(--font-secondary);
+          text-transform: uppercase;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

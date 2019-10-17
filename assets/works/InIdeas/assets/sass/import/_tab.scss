@@ -1,0 +1,234 @@
+.vertical--section {
+  padding: em(80px) 0;
+  width: 100%;
+  position: relative;
+  display: block;
+  .nav-pills {
+
+    .nav-link {
+      margin-bottom: 30px;
+      background-color: #fdfdfd !important;
+      border: 1px solid #ccc !important;
+      @include border-radius(0);
+      text-align: center;
+      padding: em(15px) 30px;
+      @include transition(0.25s ease);
+      &:hover {
+        box-shadow: 0 4px 45px rgba(0, 0, 0, 0.1);
+        @include transition(0.25s ease);
+      }
+      h4 {
+        margin-bottom: 0;
+        font-size: em(20px);
+        font-family: var(--font-gilroyBold);
+        font-weight: 700;
+        color: var(--dark-color);
+        text-align: center;
+        position: relative;
+      }
+      small {
+        margin-bottom: 0;
+        font-size: em(13px);
+        font-family: var(--font-gilroy);
+        font-weight: 400;
+        color: var(--dark-color);
+        text-align: center;
+        position: relative;
+      }
+    }
+    .active {
+      background-color: var(--white-color) !important;
+      box-shadow: 0 4px 45px rgba(0, 0, 0, 0.1);
+      border: 0 !important;
+      border-left: 5px solid var(--primary-color) !important;
+    }
+  }
+  .tab--inner {
+    background-image: url('../images/bottom-nav-img.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    @media screen and (min-width: 320px) and (max-width: 500px) {
+      height: auto;
+      padding-bottom: 30px;
+    }
+    .tab-content {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      .tab-pane {
+        .box {
+          background-color: var(--white-color);
+          text-align: left;
+          padding: em(30px) em(30px);
+          border-bottom: 3px solid var(--primary-color);
+          display: inline-block;
+          width: 400px;
+          margin-top: 80px;
+          margin-left: 50px;
+          @media screen and (min-width: 320px) and (max-width: 500px) {
+            width: auto;
+            margin-top: 70px;
+            margin-left: 25px;
+          }
+          h4 {
+            font-size: em(25px);
+            font-family: var(--font-gilroyBold);
+            font-weight: 700;
+            color: var(--dark-color);
+            text-align: left;
+            position: relative;
+            display: block;
+            margin: 0;
+
+            @media screen and (min-width: 320px) and (max-width: 500px) {
+              font-size: em(18px);
+            }
+          }
+        }
+        .text {
+          margin-top: 30px;
+          padding-left: 30px;
+          padding-right: 120px;
+          @media screen and (min-width: 320px) and (max-width: 500px) {
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+          h6 {
+            font-size: 15px;
+            font-family: var(--font-gilroy);
+            font-weight: 600;
+            color: var(--white-color);
+            text-align: left;
+            position: relative;
+            line-height: 22px;
+          }
+        }
+
+        .inner--text {
+          padding-left: 30px;
+          padding-right: 0px;
+          margin-top: 30px;
+
+          .block--list {
+            @include flexbox();
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            position: relative;
+            .hover--img {
+              opacity: 0;
+            }
+            img {
+              // float: left;
+              margin-right: 20px;
+              position: relative;
+              top: 12px;
+              width: 15px;
+              height: 12px;
+              // position: absolute;
+              @include transition(0.25 ease);
+            }
+            .inline--text {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              position: relative;
+              cursor: pointer;
+              .text-list {
+                margin-bottom: 10px;
+                @include flexbox();
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 0;
+                margin: 0;
+                position: relative;
+                &:hover {
+                  @include transition(0.25 ease);
+                  .hover--img {
+                    opacity: 1;
+                    position: absolute;
+                    z-index: 1;
+                    top: 12px;
+                    @include transition(0.25 ease);
+                  }
+                }
+                .img--list {
+                  width: 35px;
+                  img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    @include transition(0.25 ease);
+                  }
+                }
+              }
+            }
+            p {
+              font-size: em(14px);
+              font-family: var(--font-gilroy);
+              font-weight: 500;
+              position: relative;
+              text-align: left;
+              line-height: 38px;
+              color: var(--white-color);
+              visibility: visible;
+              display: block;
+              margin: 0;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sub {
+    margin-top: 60px;
+    background: var(--white-color);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+    padding: em(25px) em(30px);
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    p {
+      font-size: em(16px);
+      font-family: var(--font-gilroy);
+      font-weight: 600;
+      color: var(--dark-color);
+      opacity: 0.5;
+      text-align: right;
+      position: relative;
+      margin-bottom: 0;
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        font-size: em(14px);
+      }
+    }
+    .btn {
+      font-size: em(14px);
+      font-family: var(--font-gilroy);
+      font-weight: 600;
+      color: var(--white-color);
+      text-align: center;
+      padding: 10px 50px;
+      text-transform: uppercase;
+      display: inline-block;
+      position: relative;
+      @include border-radius(0);
+      background-color: var(--dark-color);
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+      @media screen and (max-width: 767px) {
+        margin-top: 25px;
+      }
+    }
+  }
+}

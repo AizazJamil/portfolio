@@ -1,0 +1,225 @@
+.outline--section {
+  // padding: em(40px) 0;
+  margin: 0;
+  background-color: var(--primary-color);
+  width: 100%;
+  position: relative;
+  height: 450px;
+  @media screen and (max-width: 1200px) {
+    height: auto;
+  }
+  @media screen and (max-width: 992px) {
+    padding: em(40px) 0 0 0;
+    height: auto;
+  }
+  @media screen and (max-width: 767px) {
+    height: auto;
+  }
+  .inline--area--box {
+    .inline--inner {
+      @include flexbox();
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: row;
+      position: relative;
+      list-style-type: none;
+      // height: 300px;
+      .inner-list {
+        // width: 100px;
+        overflow: hidden;
+        position: relative;
+        width: 220px;
+        transform: skewX(-16deg);
+        height: 450px;
+        // padding: em()
+        @include transition(0.25s ease);
+        @media screen and (min-width: 1920px) {
+          width: 16.5%;
+        }
+        @media screen and (max-width: 1200px) {
+          width: 50%;
+          transform: skewX(0);
+        }
+        @media screen and (max-width: 992px) {
+          width: 100%;
+          transform: skewX(0);
+        }
+        @media screen and (max-width: 767px) {
+          width: 100%;
+          transform: skewX(0);
+          height: auto;
+          margin-bottom: 30px;
+        }
+        &:hover {
+          transform: scale(1.2) skewX(-16deg);
+          z-index: 2;
+          cursor: pointer;
+          @include transition(0.25s ease);
+          @media screen and (max-width: 1200px) {
+            transform: skewX(0);
+          }
+          @media screen and (max-width: 992px) {
+            width: 100%;
+            transform: skewX(0);
+          }
+          @media screen and (max-width: 767px) {
+            width: 100%;
+            transform: skewX(0);
+          }
+          &:after {
+            content: '';
+            background-color: var(--white-color);
+            opacity: 0.7;
+          }
+          .text {
+            border-right: none;
+            .text-ab {
+              @include position(absolute, 50%, null, null, null);
+              @include transition(0.25s ease);
+              h2 {
+                // top: 20%;
+                transform: skewX(16deg);
+                @include transition(0.25s ease);
+                color: var(--primary-color);
+                @media screen and (max-width: 1200px) {
+                  transform: skewX(0);
+                }
+                @media screen and (max-width: 992px) {
+                  width: 100%;
+                  transform: skewX(0);
+                }
+                @media screen and (max-width: 767px) {
+                  width: 100%;
+                  transform: skewX(0);
+                }
+              }
+              .animate {
+                transform: translateY(0);
+                @include transition(0.25s ease);
+                p {
+                  // transform: translateY(-30%);
+                  @include transition(0.25s ease);
+                  color: var(--primary-color);
+                }
+              }
+            }
+          }
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          @include position(absolute, 0, 0, 0, 0);
+          z-index: -1;
+        }
+        // &:before {
+        //   content: '';
+        //   background-image: url('../images/brick-cleaning.png');
+        //   background-size: cover;
+        //   background-repeat: no-repeat;
+        //   background-position: 70% 50%;
+        //   width: 100%;
+        //   height: 100vh;
+        //   @include position(absolute, 0, 0, 0, 0);
+        // }
+        &:after {
+          content: '';
+          background-color: var(--darkbl-color);
+          opacity: 0.9;
+          // background-image: url('../images/brick-cleaning.png');
+          // background-size: 100%;
+          // background-repeat: no-repeat;
+          // background-position: top left;
+          width: 100vw;
+          height: 100vh;
+          @include position(absolute, 0, 0, 0, 0);
+        }
+        .text {
+          z-index: 10;
+          position: relative;
+          height: 450px;
+          text-align: center;
+          border-right: 2px dashed #fff;
+          @media screen and (max-width: 1200px) {
+            top: 10%;
+            border-right: none;
+            // width: 50%;
+          }
+          @media screen and (max-width: 992px) {
+            top: 10%;
+            border-right: none;
+          }
+          @media screen and (max-width: 992px) {
+            width: 100%;
+          }
+          @media screen and (max-width: 767px) {
+            width: 100%;
+          }
+          .text-ab {
+            @include position(absolute, 80%, null, null, null);
+            transform: translateY(-50%);
+            padding-right: 15px;
+            padding-left: 15px;
+            @include transition(0.25s ease);
+            @media screen and (max-width: 1200px) {
+              top: 50%;
+            }
+            @media screen and (max-width: 992px) {
+              top: 60%;
+            }
+            h2 {
+              transform: skewX(16deg);
+              width: 100%;
+              font-size: em(26px);
+              font-family: var(--font-regular);
+              font-weight: 600;
+              color: var(--white-color);
+              text-align: center;
+              @include transition(0.25s ease);
+              @media screen and (max-width: 1200px) {
+                transform: skewX(0);
+              }
+              @media screen and (max-width: 767px) {
+                width: 100%;
+                transform: skewX(0);
+              }
+            }
+            .animate {
+              transform: translateY(500%);
+              position: relative;
+              display: inline-block;
+              @include transition(0.25s ease);
+              p {
+                // transform: skewX(-10deg);
+                // display: none;
+                // @include position(absolute, 50%, null, null, null);
+                color: var(--white-color);
+                @include transition(0.25s ease);
+                font-size: em(14px);
+                font-weight: 400;
+                font-family: var(--font-regular);
+              }
+              .book-btn {
+                background-color: var(--lightrd-color);
+                padding: em(10px) em(30px);
+                font-size: em(14px);
+                font-weight: 500;
+                font-family: var(--font-regular);
+                text-transform: uppercase;
+                position: relative;
+                color: var(--white-color);
+                transform: skewX(16deg);
+                // transform: translateY(100%) skewX(16deg);
+                @include border-radius(100px);
+                // @include position(absolute, 100%, null, null, null);
+                @media screen and (max-width: 1200px) {
+                  transform: skewX(0);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('../fonts/Gilroy/Gilroy-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url('../fonts/Raleway/Raleway-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway-ExtraBold';
+  src: url('../fonts/Raleway/Raleway-ExtraBold.ttf');
+}
+
+
+:root {
+  --font-regular: 'Gilroy-Regular';
+  --font-slack: 'Raleway-Regular';
+  --font-slack-bold: 'Raleway-ExtraBold';
+  // --font-primary: 'Open Sans', sans-serif;
+  // --font-secondary: 'Montserrat', sans-serif;
+  --primary-color: #78cfff;
+  --secondary-color: #ff950a;
+  --white-color: #fff;
+  --dark-color: #000;
+  --lightrd-color: #ff0000;
+  --lightbl-color: #025a96;
+  --darkbl-color: #3da5ff;
+  --lightgray-color: #f2f4f8;
+  --yellow-color: #f7a303;
+  --red-color: #e81d24;
+  --pink-color: #b78dc2;
+}

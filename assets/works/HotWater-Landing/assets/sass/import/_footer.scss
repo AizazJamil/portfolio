@@ -1,0 +1,230 @@
+.footer {
+  background-image: url('../images/Shape.png');
+  background-size: 180%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  display: block;
+  background-color: var(--lightgray-color);
+  padding: 140px 0 0 0;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    background-size: cover;
+  }
+  @media screen and (min-width: 320px) and (max-width: 450px) {
+    padding: 200px 0 0 0;
+  }
+  .image--inner {
+    img {
+      position: relative;
+      bottom: 80px;
+      width: 100%;
+
+      @media screen and (min-width: 451px) and (max-width: 767px) {
+        bottom: 0;
+      }
+      @media screen and (min-width: 320px) and (max-width: 450px) {
+        bottom: 0;
+      }
+    }
+  }
+  .ft--inner {
+    h2 {
+      font-size: em(40px);
+      font-weight: 600;
+      font-family: var(--font-regular);
+      text-align: left;
+      position: relative;
+      display: block;
+      color: var(--white-color);
+      margin-bottom: 40px;
+    }
+
+    .button-group {
+      position: relative;
+      @media screen and (min-width: 320px) and (max-width: 991px) {
+        margin-bottom: 30px;
+      }
+      .btn {
+        background-color: var(--secondary-color);
+        font-size: em(16px);
+        font-weight: 600;
+        font-family: var(--font-regular);
+        text-align: center;
+        display: inline-block;
+        @include border-radius(100px);
+        color: var(--white-color);
+        padding: em(12px) em(70px);
+        margin-top: 60px;
+      }
+    }
+
+    .inline--inner {
+      @include flexbox();
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      margin: 0;
+      list-style: none;
+      @media screen and (min-width: 320px) and (max-width: 450px) {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      img {
+        margin-right: 25px;
+        @media screen and (min-width: 320px) and (max-width: 450px) {
+          margin-bottom: 10px;
+          margin-right: 0;
+        }
+      }
+      .inner--diplay {
+        h4 {
+          font-size: em(20px);
+          font-weight: 600;
+          font-family: var(--font-regular);
+          text-align: left;
+          color: var(--white-color);
+          position: relative;
+        }
+
+        .inline--list {
+          @include flexbox();
+          flex-wrap: nowrap;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          position: relative;
+          margin: 0;
+          list-style: none;
+          li {
+            margin-right: 10px;
+            img {
+              margin-right: 0;
+            }
+            p {
+              font-size: em(14px);
+              font-family: var(--font-regular);
+              font-weight: 300;
+              text-align: left;
+              position: relative;
+              display: inline-block;
+              color: var(--dark-color);
+              margin: 0;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bottom--ft--inner {
+    padding: em(30px) 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    .logo-ft {
+      text-align: center;
+      .center--logo--ft {
+        width: 100%;
+        @media screen and (min-width: 320px) and (max-width: 450px) {
+          margin-bottom: 20px;
+          width: 50%;
+        }
+      }
+    }
+    .inline--ft {
+      @include flexbox();
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: flex-start;
+      align-items: center;
+      position: relative;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        padding-right: 25px;
+      }
+      .list--ft {
+        @media screen and (min-width: 320px) and (max-width: 450px) {
+          margin-bottom: 25px;
+          width: 100%;
+          text-align: center;
+        }
+        a {
+          font-size: em(15px);
+          font-family: var(--font-regular);
+          font-weight: 400;
+          color: var(--white-color);
+          position: relative;
+          display: inline-block;
+          visibility: visible;
+        }
+      }
+      .line {
+        position: relative;
+        &:before {
+          content: '';
+          background-color: var(--white-color);
+          opacity: 0.5;
+          @include position(absolute, 0, null, null, 0);
+          transform: translateY(-50%);
+          width: 1px;
+          height: 20px;
+          @media screen and (min-width: 320px) and (max-width: 450px) {
+            display: none;
+          }
+        }
+      }
+    }
+    .bottom-ft {
+      .inline-ft {
+        @media screen and (min-width: 320px) and (max-width: 991px) {
+          margin-bottom: 30px;
+        }
+        @include flexbox();
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-items: center;
+        position: relative;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+          padding-right: 25px;
+        }
+        .list-ft {
+          font-size: em(15px);
+          font-family: var(--font-regular);
+          font-weight: 400;
+          color: var(--white-color);
+          position: relative;
+          display: inline-block;
+          visibility: visible;
+          @media screen and (min-width: 320px) and (max-width: 450px) {
+            width: 100%;
+            margin-bottom: 25px;
+            text-align: center;
+          }
+        }
+        .line {
+          position: relative;
+          &:before {
+            content: '';
+            background-color: var(--white-color);
+            opacity: 0.5;
+            @include position(absolute, 0, null, null, 0);
+            transform: translateY(-50%);
+            width: 1px;
+            height: 20px;
+            @media screen and (min-width: 320px) and (max-width: 450px) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

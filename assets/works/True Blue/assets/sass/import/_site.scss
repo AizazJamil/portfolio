@@ -1,0 +1,195 @@
+.site-section {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  // overflow: hidden;
+  height: 700px;
+  // &:before {
+  //   content: '';
+  //   background-image: url('../images/bg-main.png');
+  //   background-repeat: no-repeat;
+  //   background-position: top center;
+  //   background-size: contain;
+  //   @include position(absolute, -100px, null, 0, -100px);
+  //   height: 800px;
+  //   width: 1000px;
+  // }
+  @media screen and (min-width: 768px) and (max-width: 1300px) {
+    .col-lg-8 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    height: auto;
+  }
+  .bg-img {
+    width: 800px;
+    z-index: -1;
+    // height: 800px;
+    @include position(absolute, -270px, null, 0, -180px);
+    @media screen and (min-width: 950px) and (max-width: 1024px) {
+      width: 710px;
+      top: -190px;
+      left: -180px;
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1300px) {
+      display: none;
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      display: none;
+    }
+    @media screen and (min-width: 768px) and (max-width: 900px) {
+      display: none;
+    }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .site-content {
+    padding: 80px 20px;
+    .heading {
+      margin-bottom: 40px;
+      width: 90%;
+      text-align: center;
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        width: 100%;
+      }
+      h2 {
+        font-size: 40px;
+        font-weight: 900;
+        font-family: var(--font-slack);
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        @media screen and (max-width: 450px) {
+          font-size: 30px;
+        }
+      }
+      h5 {
+        font-size: 18px;
+        font-weight: 500;
+        font-family: var(--font-slack);
+        position: relative;
+        text-transform: uppercase;
+        text-align: center;
+        .bold {
+          font-weight: 900;
+        }
+        @media screen and (max-width: 450px) {
+          font-size: 16px;
+        }
+      }
+
+    }
+
+    .content-col {
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: var(--font-slack);
+        font-style: normal;
+        position: relative;
+        color: var(--dark-color);
+        text-align: center;
+        line-height: 32px;
+
+      }
+      .col-md-3 {
+        margin-right: 30px;
+        &:last-of-type {
+          margin-right: 0;
+        }
+        @media screen and (max-width: 767px) {
+          margin-right: 0;
+        }
+      }
+      .service-col {
+        text-align: center;
+        .rounded-img {
+          .circle {
+            @include flexbox();
+            justify-content: center;
+            flex-wrap: wrap;
+            @include border-radius(100px);
+            border: 4px solid var(--primary-color);
+            padding: 30px;
+            display: inline-block;
+            // width: 100px;
+
+            img {
+              width: 60px;
+            }
+          }
+        }
+        .title {
+          text-align: center;
+          margin-top: 10px;
+          h4 {
+            font-size: em(25px);
+            font-weight: 900;
+            position: relative;
+            color: var(--secondary-color);
+            font-family: var(--font-slack);
+            text-align: center;
+            margin-bottom: 0;
+          }
+          p {
+            font-size: em(16px);
+            font-weight: 500;
+            font-family: var(--font-slack);
+            position: relative;
+            text-align: center;
+            display: block;
+            color: var(--secondary-color);
+            @media screen and (min-width: 950px) and (max-width: 1024px) {
+              font-size: em(12px);
+            }
+          }
+        }
+      }
+    }
+    .car-img {
+      position: relative;
+      z-index: 100;
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+      .car-second {
+        width: 65%;
+        @include position(absolute, 0, 0, null, null);
+        transform: translate(-30px, 16px);
+        @media screen and (min-width: 1025px) and (max-width: 1300px) {
+          transform: translate(100px, 14px);
+        }
+        @media screen and (min-width: 950px) and (max-width: 1024px) {
+          @include position(absolute, -14px, 100px, null, null);
+          transform: translate(100px, 14px);
+        }
+      }
+      .car-first {
+        width: 80%;
+        @include position(absolute, 0, 0, null, null);
+        // transform: translate(-330px, -85px);
+        @media screen and (min-width: 1201px) and (max-width: 1300px) {
+          // transform: translate(-320px, -85px);
+          transform: translate(-250px, -15px);
+          width: 630px;
+        }
+        transform: translate(-70px, -45px);
+        @media screen and (min-width: 1025px) and (max-width: 1200px) {
+          // transform: translate(-320px, -85px);
+          transform: translate(-130px, -45px);
+          width: 630px;
+        }
+        @media screen and (min-width: 950px) and (max-width: 1024px) {
+          @include position(absolute, 0, 0, null, null);
+          // transform: translate(-320px, -85px);
+          transform: translate(-70px, -45px);
+        }
+      }
+    }
+  }
+}

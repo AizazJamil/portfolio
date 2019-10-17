@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('../fonts/Open_Sans/OpenSans-Bold.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-ExtraBold';
+  src: url('../fonts/Open_Sans/OpenSans-ExtraBold.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: url('../fonts/Open_Sans/OpenSans-Semibold.ttf');
+}
+
+
+
+
+:root {
+  --font-regular: 'OpenSans-Regular';
+  --font-bold: 'OpenSans-Bold';
+  --font-extrabold: 'OpenSans-ExtraBold';
+  --font-semibold: 'OpenSans-SemiBold';
+  --primary-color: #38296b;
+  --secondary-color: #0e8676;
+  --dark-color: #000;
+  --white-color: #fff;
+  --darking-color: #1f1e1e;
+  --gray-color: #898989;
+  --lightgray-color: #f8f8f8;
+  --yellow-color: #fed100;
+  --lightPurple-color: #645a85;
+
+  --hex-width: 200px;
+  --hex-between: 10px;
+
+  /* Other hexagon dimentions */
+  --hex-height: calc(var(--hex-width) / 1.73 /* sqrt(3) */);
+  --hex-margin: calc(var(--hex-width) / 2);
+  --hex-border: calc(var(--hex-margin) / 1.73 /* sqrt(3) */);
+  --hex-transition: all .2s ease;
+}

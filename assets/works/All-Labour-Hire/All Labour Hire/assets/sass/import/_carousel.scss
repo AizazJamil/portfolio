@@ -1,0 +1,83 @@
+.our-differnce-section {
+  background-image: url('../images/middle-banner.png');
+  height: 350px;
+  width: 100%;
+  padding: 0;
+  margin: 150px 0;
+  // margin-bottom: 150px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-clip: border-box;
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    height: 100%;
+  }
+  @media screen and (max-width: 767px) {
+    height: 100%;
+  }
+  .rounded--inner {
+    background-color: rgba(2, 54, 114, 0.9);
+    @include border-radius(100%);
+    padding: em(60px) em(80px);
+    text-align: center;
+    transform: translateY(-15%);
+    @media screen and (max-width: 414px) {
+      padding: em(30px) em(40px);
+    }
+    h2 {
+      font-size: em(40px);
+      font-weight: 700;
+      font-family: var(--font-regular);
+      text-align: center;
+      position: relative;
+      color: var(--white-color);
+      display: block;
+      text-transform: capitalize;
+      margin-bottom: 30px;
+      @media screen and (max-width: 414px) {
+        font-size: 20px;
+      }
+    }
+    p {
+      font-size: em(16px);
+      font-weight: 500;
+      font-family: var(--font-regular);
+      text-align: center;
+      position: relative;
+      line-height: 26px;
+      font-style: normal;
+      display: block;
+      color: var(--white-color);
+      @media screen and (max-width: 414px) {
+        font-size: 14px;
+      }
+    }
+    a {
+      color: #ffc301;
+      font-weight: 700;
+      text-decoration: underline;
+      margin-bottom: 10px;
+      display: block;
+    }
+  }
+  .center--inner {
+    transform: translateY(-15%);
+    @media screen and (max-width: 767px) {
+      transform: translateY(0);
+      text-align: center;
+    }
+  }
+  .text-inner {
+    padding: em(90px) 0;
+    p {
+      font-size: em(18px);
+      font-weight: 600;
+      font-family: var(--font-regular);
+      text-align: left;
+      font-style: italic;
+      color: var(--primary-color);
+      line-height: 35px;
+    }
+  }
+}

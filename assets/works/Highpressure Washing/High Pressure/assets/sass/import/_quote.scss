@@ -1,0 +1,95 @@
+.quote-section {
+  padding: em(60px) 0;
+  width: 100%;
+  margin: 0;
+  background-color: var(--white-color);
+  position: relative;
+  &:before {
+    content: '';
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 100px;
+    @include position(absolute, 50%, 0, null, 0);
+    transform: transalteX(-60%);
+  }
+  .arrow--right {
+    width: 100px;
+    position: absolute;
+    top: 32%;
+    left: 5%;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  .heading {
+    text-align: center;
+    h2 {
+      font-family: var(--font-regular);
+      font-size: em(40px);
+      font-weight: 700;
+      color: var(--primary-color);
+      text-transform: uppercase;
+      span {
+        display: inline-block;
+        font-size: 80px;
+        position: relative;
+        color: var(--secondary-color);
+      }
+    }
+  }
+  .form--wrapper {
+    background-color: var(--lightbl-color);
+    padding: em(35px);
+    border: 2px solid var(--white-color);
+    @include border-radius(10px);
+    .form-field {
+      @include flexbox();
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-end;
+      .form-group {
+        .file-control {
+          background-color: transparent !important;
+          padding: em(8px) 0 !important;
+          color: var(--white-color);
+        }
+        .form-control {
+          background-color: var(--white-color);
+          @include border-radius(0);
+          padding: em(10px) em(15px);
+          border: none;
+          height: 100%;
+          &:focus {
+            outline: none;
+            box-shadow: none;
+            border: none;
+          }
+        }
+      }
+      .button-group {
+        .btn {
+          background-color: var(--lightrd-color);
+          border-top: 2px solid var(--white-color);
+          border-left: 0;
+          border-right: 2px solid var(--white-color);
+          border-bottom: 0;
+          display: block;
+          width: 100%;
+          text-transform: uppercase;
+          font-size: em(16px);
+          font-family: var(--font-regular);
+          text-transform: uppercase;
+          text-align: center;
+          font-weight: 400;
+          padding: em(10px) 0;
+          color: var(--white-color);
+          @include border-radius(0);
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,218 @@
+.navigation-navbar {
+  margin: 0;
+  padding: 10px 0 !important;
+  width: 100%;
+  background-color: #fff !important;
+  position: relative !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  border: none;
+  @media screen and (min-width: 1600px) and (max-width: 2400px) {
+    padding: 30px 0 !important;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    z-index: 9999;
+  }
+  .navbar-toggler {
+    background-color: var(--red-color);
+  }
+  .navbar-brand {
+    // margin-right: 80px;
+    @media screen and (min-width: 768px) and (max-width: 1220px) {
+      margin-right: 0px;
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      margin-right: 0;
+    }
+    img {
+      width: 250px;
+      @media screen and (min-width: 768px) and (max-width: 1220px) {
+        width: 200px;
+      }
+      @media screen and (max-width: 600px) {
+        width: 160px;
+      }
+    }
+  }
+  .navbar-collapse {
+    .right--nav {
+      justify-content: flex-end !important;
+      align-items: flex-start !important;
+    }
+    .nav-btn {
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        display: block !important;
+        width: 100% !important;
+      }
+    }
+    .navbar-nav {
+      width: 100%;
+      justify-content: flex-start;
+      align-items: center;
+      // border-left: 1px solid var(--white-color);
+      position: relative;
+      padding-left: 0;
+      padding-right: 10px;
+      width: 100%;
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        align-items: start;
+      }
+      @media screen and (max-width: 767px) {
+        padding-left: 0;
+      }
+      .nav-item {
+        margin-right: 40px;
+        @media screen and (min-width: 991px) and (max-width: 1199px) {
+          margin-right: 10px;
+          width: 50%;
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+          margin-right: 0;
+          width: 50%;
+        }
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+          width: 100%;
+        }
+        &:last-of-type {
+          margin-right: 0;
+        }
+        .btn-green {
+          width: 200px;
+          font-weight: 600;
+          color: var(--white-color);
+          padding-top: 20px;
+          padding-bottom: 20px;
+          img {
+            margin-right: 15px;
+            vertical-align: middle;
+          }
+          @media screen and (min-width: 768px) and (max-width: 1199px) {
+            display: block;
+            width: 100%;
+          }
+        }
+        .form-nav {
+          .form-group {
+            position: relative;
+            .form-control {
+              background-color: var(--lightgray-color);
+              padding: em(24px) em(20px);
+              @include border-radius(100px);
+              right: 160px;
+              position: relative;
+              border: none;
+              font-size: em(14px);
+              &:focus {
+                outline: none;
+                box-shadow: none;
+                border: none;
+              }
+              @media screen and (min-width: 1024px) and (max-width: 1199px) {
+                right: 180px;
+              }
+              @media screen and (min-width: 768px) and (max-width: 1023px) {
+                right: 0;
+              }
+              @media screen and (min-width: 320px) and (max-width: 767px) {
+                right: 0;
+              }
+            }
+            .btn {
+              text-transform: none;
+              position: absolute;
+              right: -20px;
+              top: 0;
+              bottom: 0;
+              img {
+                width: 15px;
+                margin-right: 7px;
+              }
+              @media screen and (min-width: 768px) and (max-width: 1199px) {
+                right: 0;
+              }
+              @media screen and (min-width: 320px) and (max-width: 767px) {
+                padding: 15px auto;
+              }
+            }
+          }
+        }
+        .nav-ab {
+          position: relative;
+          @media screen and (min-width: 991px) and (max-width: 1199px) {
+            display: none;
+          }
+          img {
+            @media screen and (min-width: 768px) and (max-width: 1199px) {
+              width: 100%;
+            }
+            @media screen and (min-width: 991px) and (max-width: 1199px) {
+              width: 140%;
+            }
+          }
+          span {
+            position: absolute;
+            left: 40%;
+            top: 50%;
+            transform: translateY(-60%);
+            font-size: em(16px);
+            font-family: var(--font-gilroy);
+            font-weight: 600;
+            color: var(--primary-color);
+            display: inline-block;
+            @media screen and (min-width: 991px) and (max-width: 1199px) {
+              left: 44%;
+              font-size: 13px;
+            }
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+              left: 30%;
+            }
+          }
+        }
+        .nav-number {
+          background-color: transparent;
+          border: none;
+          padding: 12px 50px;
+          color: var(--white-color);
+          font-size: 40px;
+          font-family: var(--font-gilroyBold);
+          font-weight: 800;
+          text-align: center;
+          @media screen and (min-width: 991px) and (max-width: 1024px) {
+            padding: 10px 30px;
+            font-size: 14px;
+          }
+
+          img {
+            width: 30px;
+          }
+        }
+        .number--bottom {
+          font-size: 12px;
+          font-family: var(--font-gilroy);
+          font-weight: 600;
+          color: var(--white-color);
+          position: relative;
+          display: block;
+          text-align: center;
+          margin-top: 6px;
+        }
+        p {
+          font-size: 15px;
+          font-family: var(--font-gilroy);
+          font-weight: 600;
+          color: var(--white-color);
+          text-align: left;
+          position: relative;
+          margin: 0;
+          position: relative;
+          display: block;
+        }
+      }
+    }
+  }
+}

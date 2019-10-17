@@ -1,0 +1,173 @@
+.navigation-navbar {
+  margin: 0;
+  padding: 10px 0 !important;
+  width: 100%;
+  background-color: transparent !important;
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  border: none;
+  @media screen and (min-width: 1600px) and (max-width: 2400px) {
+    padding: 30px 0 !important;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    z-index: 9999;
+  }
+  .navbar-toggler {
+    background-color: var(--red-color);
+  }
+  .navbar-brand {
+    // margin-right: 80px;
+    @media screen and (min-width: 768px) and (max-width: 1220px) {
+      margin-right: 0px;
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      margin-right: 0;
+    }
+    img {
+      width: 80%;
+      @media screen and (min-width: 1200px) and (max-width: 1300px) {
+        width: 60%;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1220px) {
+        width: 60%;
+      }
+      @media screen and (max-width: 600px) {
+        width: 160px;
+      }
+    }
+  }
+  .navbar-collapse {
+    .navbar-nav {
+      width: 100%;
+      justify-content: flex-start;
+      align-items: center;
+      // border-left: 1px solid var(--white-color);
+      position: relative;
+      padding-left: 0;
+      padding-right: 10px;
+      width: 100%;
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        align-items: start;
+      }
+      @media screen and (max-width: 767px) {
+        padding-left: 0;
+      }
+      .nav-item {
+        margin-right: 40px;
+
+        @media screen and (min-width: 991px) and (max-width: 1199px) {
+          margin-right: 10px;
+          width: auto;
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+          margin-right: 0;
+          width: auto;
+        }
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+          width: 100%;
+        }
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        .nav-link {
+          img {
+            float: left;
+            vertical-align: middle;
+            width: 25%;
+            margin-right: 7px;
+            @media screen and (min-width: 991px) and (max-width: 1024px) {
+              width: 18%;
+            }
+          }
+
+          h6 {
+            float: right;
+            vertical-align: middle;
+            margin-bottom: 0;
+            margin-top: 10px;
+            @media screen and (min-width: 991px) and (max-width: 1024px) {
+              margin-top: 0;
+            }
+
+            span {
+              display: block;
+            }
+
+            .lg {
+              font-size: 24px;
+              font-weight: 600;
+              color: var(--primary-color);
+              font-family: var(--font-bold);
+              text-align: left;
+              @media screen and (min-width: 991px) and (max-width: 1024px) {
+                font-size: 20px;
+              }
+            }
+
+            .sm {
+              font-size: 16px;
+              font-weight: 400;
+              color: var(--primary-color);
+              font-family: var(--font-regular);
+              text-align: left;
+              @media screen and (min-width: 768px) and (max-width: 1199px) {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+        .nav-text {
+          @media screen and (min-width: 991px) and (max-width: 1199px) {
+            display: none;
+          }
+          h4 {
+            font-size: em(20px);
+            font-weight: 600;
+            font-family: var(--font-bold);
+            position: relative;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+          }
+          .inline {
+            @include flexbox();
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            list-style-type: none;
+
+            li {
+              font-size: 15px;
+              font-weight: 600;
+              font-family: var(--font-bold);
+              color: var(--secondary-color);
+              margin-right: 10px;
+              &:last-of-type {
+                margin-right: 0;
+              }
+
+
+              @media screen and (min-width: 991px) and (max-width: 1024px) {
+                font-size: 13px;
+              }
+
+              img {
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+
+
+      }
+    }
+  }
+}

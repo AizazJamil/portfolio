@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'Raleway-Regular';
+	src: url('../fonts/Raleway/Raleway-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Raleway-Bold', sans-serif;
+	src: url('../fonts/Raleway/Raleway-Bold.ttf');
+}
+
+
+@import 'vendor/_mixin';
+
+@import 'vendor/_root';
+
+@import 'import/_body';
+
+@import 'import/_navbar';
+
+@import 'import/_slider';
+
+@import 'import/_about';
+
+@import 'import/_service';
+
+@import 'import/_team';
+
+@import 'import/_contact';
+
+@import 'import/_footer';
+
+@import 'import/_responsive';

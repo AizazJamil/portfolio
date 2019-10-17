@@ -1,0 +1,26 @@
+.product--section {
+  padding: em(80px) 0 em(40px) 0;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  display: block;
+
+  .card {
+    @include border-radius(0);
+    border: none;
+    padding: 0;
+
+    .card-title {
+      padding: 30px 0;
+      h4 {
+        font-size: em(24px);
+        font-family: var(--font-gilroyBold);
+        font-weight: 600;
+        font-style: normal;
+        position: relative;
+        text-align: center;
+        display: block;
+      }
+    }
+  }
+}

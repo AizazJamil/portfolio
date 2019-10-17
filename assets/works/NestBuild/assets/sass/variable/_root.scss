@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url('../fonts/Raleway/Raleway-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway-ExtraBold';
+  src: url('../fonts/Raleway/Raleway-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Velocista';
+  src: url('../fonts/velocista/Velocista-Demo-FFP.ttf');
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('../fonts/Gilroy/Gilroy-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('../fonts/Gilroy/Gilroy-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Gilroy-ExtraBold';
+  src: url('../fonts/Gilroy/Gilroy-ExtraBold.otf');
+}
+
+
+
+
+:root {
+  --font-gilroy: 'Gilroy-Regular';
+  --font-gilroyBold: 'Gilroy-Bold';
+  --font-gilroyExtraBold: 'Gilroy-ExtraBold';
+  --font-regular: 'OpenSans-Regular';
+  --font-slack: 'Montserrat-Regular';
+  --font-primary: 'Velocista-Regular';
+  --font-secondary: 'Raleway-Regular';
+  --font-secondary-extraBold: 'Raleway-ExtraBold';
+  --primary-color: #2ad08d;
+  --secondary-color: #ffb400;
+  --dark-color: #000;
+  --white-color: #fff;
+  --darking-color: #1f1e1e;
+  --gray-color: #f7f8fd;
+}

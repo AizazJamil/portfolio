@@ -1,0 +1,42 @@
+.services-area {
+	padding: em(100px) 0;
+	margin: 0;
+	width: 100%;
+	position: relative;
+	background-color: var(--light-color);
+
+	.service-box {
+		margin-top: em(30px);
+		border: none;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		padding: em(20px) em(20px);
+		.card-body {
+			text-align: center;
+			.card-icon {
+				img {
+					width: 200px;
+					height: 130px;
+				}
+			}
+			.card-heading {
+				margin-top: em(20px);
+				font-size: em(18px);
+				font-family: var(--font-raleway);
+				font-weight: 700;
+				color: var(--black-color);
+				text-align: center;
+				text-transform: uppercase;
+			}
+
+			.title-sm {
+				font-size: em(15px);
+				font-family: var(--font-raleway);
+				font-weight: 400;
+				color: var(--dark-color);
+				margin-top: em(10px);
+				line-height: 24px;
+				text-align: center;
+			}
+		}
+	}
+}

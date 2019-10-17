@@ -1,0 +1,515 @@
+.rating-content-section {
+  padding: em(80px) 0;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  display: block;
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
+  .heading {
+    text-align: center;
+    h5 {
+      font-size: em(24px);
+      font-family: var(--font-regular);
+      font-weight: 700;
+      color: var(--lightbl-color);
+      text-align: center;
+      position: relative;
+      display: block;
+      width: 100%;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: em(40px);
+      font-family: var(--font-regular);
+      font-weight: 700;
+      color: var(--lightrd-color);
+      text-align: center;
+      position: relative;
+      display: block;
+      width: 100%;
+      text-transform: uppercase;
+      @media screen and (max-width: 550px) {
+        font-size: em(20px);
+      }
+    }
+    .callus {
+      background-color: var(--primary-color);
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      @include border-radius(100px);
+      font-size: em(16px);
+      font-family: var(--font-regular);
+      font-weight: 400;
+      text-transform: capitalize;
+      padding: em(10px) em(40px);
+      color: var(--white-color);
+      margin-bottom: 30px;
+      margin-top: 10px;
+      text-decoration: none;
+      @include transition(0.25s all ease);
+      img {
+        margin-right: 5px;
+        vertical-align: top;
+      }
+      &:hover {
+        background-color: var(--lightrd-color);
+        @include transition(0.25s all ease);
+      }
+    }
+    h6 {
+      font-size: em(16px);
+      font-family: var(--font-regular);
+      font-weight: 700;
+      font-style: normal;
+      position: relative;
+      text-align: center;
+      display: block;
+      color: var(--primary-color);
+      text-transform: uppercase;
+    }
+    p {
+      max-width: 550px;
+      margin: 0 auto;
+      font-size: em(16px);
+      font-family: var(--font-regular);
+      font-weight: 500;
+      font-style: normal;
+      position: relative;
+      text-align: center;
+      display: block;
+      color: var(--primary-color);
+      line-height: 25px;
+      // text-transform: uppercase;
+      @media screen and (max-width: 767px) {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .rate--profile {
+    position: relative;
+    text-align: center;
+    margin-top: em(100px);
+    &:hover {
+      .rounde--img {
+        .hidden {
+          &:before {
+            opacity: 1;
+            @include transition(0.22s ease);
+          }
+        }
+      }
+      .text {
+        cursor: pointer;
+        &:before {
+          background-image: url('../images/shape-red.png');
+        }
+        // h4 {
+        //   @include transition(0.22s ease);
+        //   background-color: var(--secondary-color);
+        // }
+      }
+    }
+    // img {
+    //   // width: 235px;
+    //   // height: 270px;
+    //   width: 100%;
+    //   position: relative;
+    //   display: inline-block;
+    //   &:before {
+    //     content: '';
+    //     width: 240px;
+    //     height: 280px;
+    //     @include position(absolute, 0, 0, 0, 0);
+    //     border: 2px solid var(--secondary-color);
+    //     @include border-radius(100px);
+    //     background-color: var(--secondary-color);
+    //   }
+    // }
+    .rounde--img {
+      .circle {
+        overflow: hidden;
+        @media screen and (max-width: 1250px) {
+          overflow: visible;
+          img {
+            width: 100%;
+          }
+        }
+        img {
+          @media screen and (max-width: 767px) {
+            width: 90%;
+          }
+        }
+      }
+      .hidden {
+
+        &:before {
+          content: '';
+          @include position(absolute, -4%, 0, 0, 15.5px);
+          width: 90%;
+          height: 107%;
+          background-color: transparent;
+          border: 3px solid var(--secondary-color);
+          @include border-radius(100%);
+          opacity: 0;
+          @include transition(0.22s ease);
+          @media screen and (max-width: 1250px) {
+            width: 105%;
+            left: -2%;
+            // top: 0;
+          }
+          @media screen and (max-width: 992px) {
+            width: 105%;
+            left: -2%;
+            // top: 0;
+          }
+          @media screen and (max-width: 767) {
+            width: 100%;
+            left: 0;
+            // top: 0;
+          }
+        }
+        .ab-men {
+          @include position(absolute, 0, 0, 0, null);
+          width: 50%;
+          transform: translate(-10%, -10%);
+          @media screen and (max-width: 1250px) {
+            width: 165px;
+            transform: translate(14px, -30px);
+          }
+          @media screen and (max-width: 1200px) {
+            width: 133px;
+            transform: translate(7px, -33px);
+          }
+          @media screen and (max-width: 1050px) {
+            width: 120px;
+            transform: translate(3px, -10px);
+          }
+          @media screen and (max-width: 767px) {
+            transform: translate(-10px, -10px);
+          }
+          @media screen and (max-width: 579px) {
+            width: 50%;
+          }
+          @media screen and (max-width: 550px) {
+            width: 50%;
+          }
+          @media screen and (max-width: 450px) {
+            transform: translate(-10px, -10px);
+            width: 50%;
+          }
+        }
+        .men02 {
+          width: 70%;
+          transform: translate(0, -10%);
+          @media screen and (max-width: 1250px) {
+            width: 230px;
+            transform: translate(27px, -20px);
+          }
+          @media screen and (max-width: 1200px) {
+            width: 185px;
+            transform: translate(26px, -20px);
+          }
+          @media screen and (max-width: 1050px) {
+            width: 190px;
+            transform: translate(30px, -22px);
+          }
+          @media screen and (max-width: 767px) {
+            width: 78%;
+            transform: translate(12px, -24px);
+          }
+          @media screen and (max-width: 579px) {
+            width: 80%;
+            transform: translate(36px, -44px);
+          }
+          @media screen and (max-width: 450px) {
+            width: 78%;
+            transform: translate(16px, -22px);
+          }
+        }
+        .men03 {
+          width: 55%;
+          transform: translate(-10%, -10%);
+          @media screen and (max-width: 1250px) {
+            width: 185px;
+            transform: translate(11px, -42px);
+          }
+          @media screen and (max-width: 1200px) {
+            width: 140px;
+            transform: translate(9px, -28px);
+          }
+          @media screen and (max-width: 1050px) {
+            width: 150px;
+            transform: translate(12px, -35px);
+          }
+          @media screen and (max-width: 1050px) {
+            width: 150px;
+            transform: translate(0px, -35px);
+          }
+          @media screen and (max-width: 579px) {
+            width: 60%;
+            transform: translate(-6px, -61px);
+          }
+          @media screen and (max-width: 550px) {
+            width: 62%;
+            transform: translate(-3px, -60px);
+          }
+          @media screen and (max-width: 450px) {
+            width: 60%;
+            transform: translate(-5px, -45px);
+          }
+        }
+        .men04 {
+          width: 75%;
+          transform: translate(4%, -10%);
+          clip: rect(0px, 180px, 250px, 0px);
+          border-bottom-right-radius: 80%;
+          @media screen and (max-width: 1250px) {
+            width: 255px;
+            transform: translate(32px, -32px);
+            clip: rect(0px, 220px, 300px, 0px);
+          }
+          @media screen and (max-width: 1200px) {
+            width: 190px;
+            transform: translate(26px, -20px);
+            clip: rect(0px, 180px, 230px, 0px);
+          }
+          @media screen and (max-width: 1050px) {
+            width: 190px;
+            transform: translate(39px, -30px);
+          }
+          @media screen and (min-width: 768px) and (max-width: 991px) {
+            width: 87%;
+            transform: translate(32px, -20px);
+          }
+          @media screen and (max-width: 767px) {
+            width: 80%;
+            transform: translate(20px, -23px);
+            clip: rect(0px, 350px, 500px, 0px);
+            border-bottom-right-radius: 80%;
+          }
+          @media screen and (max-width: 579px) {
+            width: 77%;
+            transform: translate(25px, -40px);
+            clip: rect(0px, 350px, 500px, 0px);
+            border-bottom-right-radius: 70%;
+          }
+          @media screen and (max-width: 550px) {
+            width: 72%;
+            transform: translate(20px, 0px);
+            clip: rect(0px, 350px, 400px, 0px);
+            border-bottom-right-radius: 80%;
+          }
+          // @media screen and (max-width: 767px) {
+          //   width: 70%;
+          //   transform: translate(12px, 7px);
+          //   clip: rect(0px, 350px, 500px, 0px);
+          //   border-bottom-right-radius: 80%;
+          // }
+        }
+        .men05 {
+          width: 59%;
+          transform: translate(-10%, -10%);
+          @media screen and (max-width: 1250px) {
+            width: 190px;
+            transform: translate(9px, -26px);
+          }
+          @media screen and (max-width: 1200px) {
+            width: 150px;
+            transform: translate(10px, -24px);
+            clip: rect(0px, 180px, 230px, 0px);
+          }
+          @media screen and (max-width: 1050px) {
+            width: 150px;
+            transform: translate(10px, -24px);
+          }
+          @media screen and (max-width: 767px) {
+            transform: translate(-5px, -20px);
+          }
+          @media screen and (max-width: 579px) {
+            clip: rect(0px, 300px, 500px, 0px);
+            width: 60%;
+          }
+          @media screen and (max-width: 550px) {
+            transform: translate(-15px, 18px);
+            clip: rect(0px, 230px, 400px, 0px);
+          }
+          @media screen and (max-width: 450px) {
+            width: 60%;
+            transform: translate(-6px, -12px);
+          }
+        }
+        .men06 {
+          width: 45%;
+          transform: translate(-8%, -10%);
+          clip: rect(0px,120px,250px,0px);
+          border-bottom-right-radius: 80%;
+          @media screen and (max-width: 1250px) {
+            width: 155px;
+            transform: translate(21px, -46px);
+            clip: rect(0px, 180px, 380px, 0px);
+          }
+          @media screen and (max-width: 1200px) {
+            width: 115px;
+            transform: translate(13px, -24px);
+            clip: rect(0px, 180px, 230px, 0px);
+          }
+          @media screen and (max-width: 1050px) {
+            width: 130px;
+            transform: translate(13px, -46px);
+          }
+          @media screen and (min-width: 768px) and (max-width: 991px) {
+            width: 130px;
+            transform: translate(11px, -26px);
+          }
+          @media screen and (max-width: 767px) {
+            width: 45%;
+            transform: translate(10px, -12px);
+            clip: rect(0px, 250px, 450px, 0px);
+            border-bottom-right-radius: 90%;
+          }
+        }
+        .men07 {
+          width: 65%;
+          transform: translate(12%, -12%);
+          clip: rect(0px, 180px, 250px, 0px);
+          border-bottom-right-radius: 100%;
+          @media screen and (max-width: 1250px) {
+            width: 225px;
+            transform: translate(62px, -50px);
+          }
+          @media screen and (max-width: 1200px) {
+            width: 173px;
+            transform: translate(47px, -41px);
+          }
+          @media screen and (max-width: 1050px) {
+            width: 173px;
+            transform: translate(47px, -41px);
+          }
+          @media screen and (max-width: 767px) {
+            width: 68%;
+            transform: translate(26px, -29px);
+            clip: rect(0px, 250px, 350px, 0px);
+            border-bottom-right-radius: 100%;
+          }
+          @media screen and (max-width: 579px) {
+            width: 68%;
+            transform: translate(56px, -59px);
+            clip: rect(0px, 250px, 350px, 0px);
+            border-bottom-right-radius: 100%;
+
+          }
+          @media screen and (max-width: 550px) {
+            width: 70%;
+            transform: translate(56px, -62px);
+            clip: rect(0px, 250px, 350px, 0px);
+            border-bottom-right-radius: 100%;
+          }
+          @media screen and (max-width: 450px) {
+            width: 69%;
+            transform: translate(34px, -38px);
+            clip: rect(0px, 250px, 350px, 0px);
+            border-bottom-right-radius: 100%;
+          }
+          @media screen and (max-width: 420px) {
+            width: 69%;
+            transform: translate(44px, -48px);
+            clip: rect(0px, 250px, 350px, 0px);
+            border-bottom-right-radius: 100%;
+          }
+          @media screen and (max-width: 380px) {
+            width: 69%;
+            transform: translate(38px, -48px);
+            clip: rect(0px, 250px, 350px, 0px);
+            border-bottom-right-radius: 100%;
+          }
+        }
+        .men08 {
+          width: 55%;
+          transform: translate(-10%, -12%);
+          clip: rect(0px, 180px, 220px, 0px);
+          border-bottom-right-radius: 100%;
+          @media screen and (max-width: 1250px) {
+            width: 175px;
+            transform: translate(4px, -46px);
+            clip: rect(0px, 180px, 300px, 0px);
+          }
+          @media screen and (max-width: 1200px) {
+            width: 135px;
+            transform: translate(3px, -34px);
+            clip: rect(0px, 180px, 230px, 0px);
+          }
+          @media screen and (max-width: 1050px) {
+            width: 155px;
+            transform: translate(19px, -41px);
+          }
+          @media screen and (max-width: 767px) {
+            width: 155px;
+            transform: translate(-1px, -42px);
+          }
+          @media screen and (max-width: 579px) {
+            width: 60%;
+            transform: translate(-16px, -77px);
+            clip: rect(0px, 230px, 500px, 0px);
+          }
+          @media screen and (max-width: 550px) {
+            clip: rect(0px, 200px, 410px, 0px);
+            width: 60%;
+            transform: translate(-10px, -71px);
+          }
+          @media screen and (max-width: 450px) {
+            width: 65%;
+            transform: translate(7px, -47px);
+            clip: rect(0px, 220px, 240px, 0px);
+          }
+          @media screen and (max-width: 420px) {
+            width: 65%;
+            transform: translate(5px, -67px);
+            clip: rect(0px, 220px, 340px, 0px);
+          }
+          @media screen and (max-width: 380px) {
+            width: 65%;
+            transform: translate(2px, -56px);
+            clip: rect(0px, 220px, 240px, 0px);
+          }
+        }
+      }
+    }
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      right: 0;
+      width: 100%;
+      transform: translateY(50%);
+      &:before {
+        content: '';
+        width: 100%;
+        background-image: url('../images/skew-rect.png');
+        height: 100%;
+        @include position(absolute, 0, 0, 0, 0);
+        // padding: em()
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+      }
+      h4 {
+        padding: em(14px) 0;
+        // background-color: var(--lightbl-color);
+        text-align: center;
+        font-size: em(14px);
+        font-family: var(--font-regular);
+        text-align: center;
+        position: relative;
+        color: var(--white-color);
+        display: block;
+        text-transform: capitalize;
+        margin: 0;
+      }
+    }
+  }
+}

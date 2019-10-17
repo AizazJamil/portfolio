@@ -1,0 +1,272 @@
+.form--section {
+  padding: 0;
+  margin: 0;
+  .box--content {
+    background-color: var(--white-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    @include border-radius(10px);
+    margin-top: -440px;
+    z-index: 10;
+    position: relative;
+    @media screen and (min-width: 1366px) and (max-width: 1400px) {
+      margin-top: -400px;
+    }
+    @media screen and (min-width: 415px) and (max-width: 767px) {
+      margin-top: -380px;
+    }
+    @media screen and (min-width: 320px) and (max-width: 350px) {
+      margin-top: -400px;
+    }
+    .col-md-6 {
+      &:nth-child(1) {
+        margin-left: 60px;
+        margin-right: 16px;
+        @media screen and (min-width: 320px) and (max-width: 1199px) {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+      &:nth-child(2) {
+        margin-right: 16px;
+        @media screen and (min-width: 320px) and (max-width: 1199px) {
+          margin-right: 0;
+        }
+      }
+      @media screen and (min-width: 991px) and (max-width: 1199px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+        width: 50%;
+      }
+    }
+    .col-md-12 {
+      @media screen and (min-width: 991px) and (max-width: 1199px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    .row {
+      justify-content: flex-start;
+    }
+    .light--inner {
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f3f4f5+1,caccd6+100 */
+      background: rgb(243,244,245); /* Old browsers */
+      background: -moz-linear-gradient(top,  rgba(243,244,245,1) 1%, rgba(202,204,214,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  rgba(243,244,245,1) 1%,rgba(202,204,214,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  rgba(243,244,245,1) 1%,rgba(202,204,214,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f4f5', endColorstr='#caccd6',GradientType=0 ); /* IE6-9 */
+
+    }
+
+    .dark--inner {
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#316ce4+2,0640b6+100 */
+      background: rgb(49,108,228); /* Old browsers */
+      background: -moz-linear-gradient(top,  rgba(49,108,228,1) 2%, rgba(6,64,182,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  rgba(49,108,228,1) 2%,rgba(6,64,182,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  rgba(49,108,228,1) 2%,rgba(6,64,182,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#316ce4', endColorstr='#0640b6',GradientType=0 ); /* IE6-9 */
+
+      h4 {
+        font-size: em(22px) !important;
+        font-family: var(--font-proxima);
+        font-weight: 400;
+        position: relative;
+        color: var(--white-color) !important;
+        text-align: center;
+        display: block;
+        .bold {
+          font-family: var(--font-proximaExtraBold);
+          font-weight: 800;
+        }
+      }
+
+      .list-item {
+        .item {
+          span {
+            color: #9293dd !important;
+          }
+        }
+      }
+
+    }
+
+    .box--inner {
+      @include border-radius(10px);
+      padding: em(50px) em(40px);
+      text-align: center;
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 30px;
+      }
+
+      @media screen and (min-width: 415px) and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+      @media screen and (min-width: 320px) and (max-width: 414px) {
+        margin-bottom: 30px;
+      }
+      @media screen and (min-width: 320px) and (max-width: 350px) {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+
+      .rounded--img {
+        margin-bottom: 30px;
+      }
+
+      h4 {
+        font-size: em(21px);
+        font-family: var(--font-proxima);
+        font-weight: 400;
+        position: relative;
+        color: var(--darker-color);
+        text-align: center;
+        display: block;
+        .bold {
+          font-family: var(--font-proximaExtraBold);
+          font-weight: 800;
+        }
+      }
+
+      .list-item {
+        margin-top: 30px;
+        list-style-type: none;
+        @include flexbox();
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+
+        .item {
+          margin-bottom: 45px;
+          span {
+            margin-bottom: 0;
+            font-size: 16px;
+            font-family: var(--font-proxima);
+            font-weight: 400;
+            position: relative;
+            text-align: left;
+            color: #737373;
+            @media screen and (min-width: 1366px) and (max-width: 1400px) {
+              font-size: em(15px);
+            }
+            @media screen and (min-width: 320px) and (max-width: 350px) {
+              font-size: em(14px);
+            }
+          }
+
+          img {
+            vertical-align: middle;
+            margin-right: 12px;
+
+            @media screen and (min-width: 415px) and (max-width: 767px) {
+              width: auto;
+            }
+            @media screen and (min-width: 320px) and (max-width: 414px) {
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .form--inner {
+      background-color: var(--darker-color);
+      padding: em(50px) em(60px);
+      @include border-radius(10px);
+      @media screen and (min-width: 415px) and (max-width: 767px) {
+        padding: 50px 30px;
+      }
+      @media screen and (min-width: 320px) and (max-width: 414px) {
+        padding: 50px 30px;
+      }
+
+      h2 {
+        font-size: em(42px);
+        font-family: var(--font-montserratExtraBold);
+        font-weight: bold;
+        font-style: normal;
+        position: relative;
+        display: block;
+        color: var(--white-color);
+        text-align: center;
+        margin-bottom: 25px;
+        @media screen and (min-width: 415px) and (max-width: 767px) {
+          font-size: em(35px);
+        }
+        @media screen and (min-width: 320px) and (max-width: 414px) {
+          font-size: em(28px);
+        }
+      }
+
+      .form-group {
+        position: relative;
+        .form-control {
+          @include border-radius(10px);
+          padding: em(25px) em(20px);
+          text-indent: 25px;
+          color: #b3b3b3;
+          font-weight: 600;
+          font-size: em(13px);
+          font-family: var(--font-montserratRegular);
+
+          &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: #b3b3b3;
+          }
+          &::-moz-placeholder { /* Firefox 19+ */
+            color: #b3b3b3;
+          }
+          &:-ms-input-placeholder { /* IE 10+ */
+            color: #b3b3b3;
+          }
+          &:-moz-placeholder { /* Firefox 18- */
+            color: #b3b3b3;
+          }
+        }
+
+        .form-controller {
+          text-indent: 0;
+        }
+
+        .icon {
+          @include position(absolute, 50%, null, null, 20px);
+          transform: translateY(-50%);
+        }
+      }
+
+      .button-group {
+        .btn {
+          color: var(--darker-color);
+          @include border-radius(10px);
+          text-transform: none;
+          font-family: var(--font-montserratBold);
+          font-weight: 600;
+        }
+      }
+
+      .inline--mcfee {
+        @include flexbox();
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+
+        img {
+          display: inline-block;
+          padding-right: 20px;
+          border-right: 1px solid #ababab;
+        }
+
+        p {
+          margin-left: 20px;
+          margin-bottom: 0;
+          font-size: var(--font-gilroyRegular);
+          font-size: em(12px);
+          color: #ababab;
+        }
+      }
+    }
+  }
+}

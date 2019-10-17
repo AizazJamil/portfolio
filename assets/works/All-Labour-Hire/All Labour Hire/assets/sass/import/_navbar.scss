@@ -1,0 +1,97 @@
+.navbar-navigation {
+  background-color: transparent;
+  width: 100%;
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  padding: em(25px) 0 !important;
+  transform: translateY(50%);
+  z-index: 9999;
+  @media screen and (max-width: 992px) {
+    position: relative !important;
+    background-color: var(--white-color);
+    transform: translateY(0%);
+  }
+  .navbar-toggler {
+    z-index: 101;
+  }
+  .navbar-brand {
+    margin-right: 70px;
+    img {
+      @media screen and (max-width: 1140px) {
+        width: 230px;
+        margin-right: 0px;
+      }
+      @media screen and (max-width: 1024px) {
+        width: 300px;
+        margin-right: 20px;
+      }
+      @media screen and (max-width: 767px) {
+        width: 300px;
+      }
+      @media screen and (max-width: 579px) {
+        width: 250px;
+      }
+      @media screen and (max-width: 475px) {
+        width: 200px;
+      }
+      @media screen and (max-width: 414px) {
+        width: 170px;
+      }
+      @media screen and (max-width: 375px) {
+        width: 130px;
+      }
+    }
+  }
+  .navbar-collapse {
+    .navbar-nav {
+      align-items: center;
+      justify-content: space-between !important;
+      width: 100%;
+      .nav-item {
+        margin-right: 10px;
+        z-index: 101;
+        &:last-of-type {
+          margin-right: 0;
+        }
+        .nav-link {
+          text-align: center;
+          span {
+            display: block;
+            width: 100%;
+            font-size: em(16px);
+            font-family: var(--font-secondary);
+            font-weight: 500;
+            color: var(--primary-color);
+            text-align: center;
+            margin-top: 6px;
+          }
+          img {
+            // width: 50px;
+            height: 36px;
+          }
+        }
+        .button-link {
+          background-color: var(--primary-color);
+          text-align: center;
+          font-size: em(16px);
+          font-weight: 500;
+          font-family: var(--font-secondary);
+          font-style: normal;
+          text-transform: uppercase;
+          color: var(--white-color);
+          @include border-radius(4px);
+          padding: em(8px) em(25px);
+          img {
+            width: 15px;
+            height: 15px;
+            margin-left: 10px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+}
