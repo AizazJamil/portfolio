@@ -1,0 +1,104 @@
+.review--section {
+  margin: 0;
+  padding: em(60px) 0;
+  width: 100%;
+  position: relative;
+  display: block;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  &:before {
+    content: '';
+    background-image: url('../images/square.png');
+    // background-size:
+    @include position(absolute, 20%, null, null, -270px);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+
+    @media screen and (min-width: 320px) and (max-width: 991px) {
+      display: none;
+    }
+  }
+  .review-logo {
+    img {
+      width: 90%;
+    }
+  }
+  .review-text {
+    h1 {
+      font-size: em(48px);
+      font-weight: 700;
+      font-family: var(--font-bold);
+      font-style: normal;
+      position: relative;
+      color: #142149;
+      display: block;
+      visibility: visible;
+    }
+
+    .swiper-container {
+      height: 350px;
+      .swiper-pagination {
+        left: 0 !important;
+        text-align: left !important;
+      }
+      .swiper-wrapper {
+        .swiper-slide {
+          .review-slide {
+            .quote {
+              @include flexbox();
+              flex-wrap: wrap;
+              justify-content: flex-start;
+              align-items: center;
+
+              .text {
+                margin-left: 15px;
+                margin-right: 35px;
+                color: var(--primary-color);
+                font-size: em(22px);
+                font-family: var(--font-regular);
+                font-weight: 500;
+                position: relative;
+              }
+
+              .star {
+                ul {
+                  @include flexbox();
+                  flex-wrap: wrap;
+                  justify-content: flex-start;
+                  align-items: center;
+                  flex-direction: row;
+                  list-style-type: none;
+                  li {
+                    margin-right: 5px;
+                  }
+                }
+              }
+            }
+
+            .title {
+              margin-top: 40px;
+              p, span {
+                font-size: em(22px);
+                font-family: var(--font-regular);
+                font-weight: 400;
+                color: #9b9fad;
+                position: relative;
+                text-align: left;
+                display: block;
+                margin-bottom: 30px;
+                line-height: 36px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: var(--primary-color) !important;
+      @include border-radius(2px !important);
+    }
+  }
+}

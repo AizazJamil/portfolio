@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url('../fonts/Proxima_nova/ProximaNova-Regular.otf');
+}
+@font-face {
+  font-family: 'Proxima-Nova-Bold';
+  src: url('../fonts/Proxima_nova/Proxima-Nova-Bold.otf');
+}
+@font-face {
+  font-family: 'Proxima-Nova-Black';
+  src: url('../fonts/Proxima_nova/Proxima-Nova-Black.otf');
+}
+@font-face {
+  font-family: 'Proxima-Nova-Extrabold';
+  src: url('../fonts/Proxima_nova/Proxima-Nova-Extrabold.otf');
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat/Montserrat-Bold.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-Black';
+  src: url('../fonts/Montserrat/Montserrat-Black.ttf');
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('../fonts/Roboto/Roboto-Medium.ttf');
+}
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('../fonts/Roboto/Roboto-Light.ttf');
+}
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url('../fonts/Roboto/Roboto-Black.ttf');
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/Roboto/Roboto-Bold.ttf');
+}
+@font-face {
+  font-family: 'Roboto-SemiBold';
+  src: url('../fonts/Roboto/Roboto-SemiBold.ttf');
+}
+
+
+
+
+
+:root {
+  --font-regular: 'ProximaNova-Regular';
+  --font-medium: 'Montserrat-Medium';
+  --font-SemiBold: 'Montserrat-SemiBold';
+  --font-bold: 'Proxima-Nova-Bold';
+  --font-Extrabold: 'Proxima-Nova-Extrabold';
+  --font-Black: 'Proxima-Nova-Black';
+  --font-RobRegular: 'Roboto-Regular';
+  --font-RobMedium: 'Roboto-Medium';
+  --font-RobLight: 'Roboto-Light';
+  --font-RobBold: 'Roboto-Bold';
+  --font-RobSemiBold: 'Roboto-SemiBold';
+  --font-RobBlack: 'Roboto-Black';
+  --primary-color: #ff5722;
+  --secondary-color: #093e6d;
+  --lightprimary-color: #bd176e;
+  --darker-color: #000d15;
+  --dark-color: #231f20;
+  --white-color: #fff;
+  --darking-color: #242424;
+  --gray-color: #b6b6b6;
+  --lightgray-color: #f8f8f8;
+  --yellow-color: #fed100;
+  --black-color: #010101;
+}

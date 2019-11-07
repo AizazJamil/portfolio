@@ -1,0 +1,65 @@
+.appointment--section {
+  background-color: var(--black-color);
+  width: 100%;
+  padding: em(50px) 0;
+  margin: 0;
+
+  .info-inline {
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    .info-appoint {
+      @include flexbox();
+      align-items: center;
+      justify-content: space-between;
+      @media screen and (min-width: 320px) and (max-width: 600px) {
+        display: block;
+        text-align: center;
+      }
+      h2 {
+        color: var(--white-color);
+        text-align: left;
+        position: relative;
+        font-size: em(28px);
+        font-family: var(--font-bold);
+        font-weight: 600;
+        display: inline-block;
+        margin-right: 25px;
+        @media screen and (min-width: 320px) and (max-width: 600px) {
+          text-align: center;
+        }
+      }
+      p {
+        font-size: em(20px);
+        font-family: var(--font-regular);
+        font-weight: 300;
+        color: var(--primary-color);
+        text-align: left;
+        position: relative;
+        display: inline-block;
+        @media screen and (min-width: 320px) and (max-width: 600px) {
+          text-align: center;
+        }
+      }
+    }
+    .info-button {
+      @media screen and (min-width: 320px) and (max-width: 600px) {
+        margin-top: 30px;
+      }
+      .btn {
+        background-color: var(--primary-color);
+        font-family: var(--font-regular);
+        font-weight: 500;
+        font-size: em(16px);
+        text-align: center;
+        position: relative;
+        color: var(--white-color);
+        @include border-radius(0);
+        padding: em(14px) em(45px);
+      }
+    }
+  }
+}

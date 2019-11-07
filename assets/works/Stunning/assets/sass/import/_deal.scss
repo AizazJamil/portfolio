@@ -1,0 +1,173 @@
+.deal--section {
+  padding: em(80px) 0;
+  margin: 0;
+  position: relative;
+  display: block;
+  width: 100%;
+  background-image: url('../images/bg-isnide.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  .heading {
+    margin-bottom: 60px;
+    h2 {
+      font-size: em(36px);
+      font-family: var(--font-bold);
+      font-weight: 600;
+      text-align: center;
+      position: relative;
+      color: var(--white-color);
+      visibility: visible;
+    }
+  }
+
+  .display-img {
+    @include position(absolute, null, null, 10px, 0);
+    img {
+      width: 82%;
+      position: relative;
+      z-index: 10;
+      @media screen and (min-width: 1700px) {
+        width: 750px;
+      }
+      @media screen and (min-width: 1350px) and (max-width: 1400px) {
+        width: 74%;
+      }
+      @media screen and (min-width: 320px) and (max-width: 1349px) {
+        display: none;
+      }
+    }
+  }
+
+  .deal-info {
+    width: 100%;
+
+    .deal-image {
+      width: 100%;
+      img {
+        width: 100%;
+        height: 280px;
+      }
+    }
+    .deal-text {
+      @include position(absolute, 20px, null, null, 20px);
+      padding: em(20px) em(25px);
+
+      h2 {
+        font-size: em(40px);
+        font-family: var(--font-bold);
+        font-weight: bold;
+        text-align: left;
+        position: relative;
+        color: var(--black-color);
+        display: block;
+      }
+
+      h4 {
+        font-size: em(20px);
+        font-family: var(--font-bold);
+        font-weight: 600;
+        text-align: left;
+        position: relative;
+        color: var(--black-color);
+        span {
+          display: block;
+        }
+      }
+
+      p {
+        font-size: em(13.5px);
+        font-weight: 400;
+        font-family: var(--font-regular);
+        font-style: normal;
+        position: relative;
+        text-align: left;
+        color: #9b9fad;
+        margin-bottom: 25px;
+        margin-top: 15px;
+      }
+
+      .btn {
+        background-color: var(--black-color);
+        color: var(--white-color);
+        font-size: em(12.05px);
+        font-family: var(--font-regular);
+        font-weight: 500;
+        text-align: center;
+        padding: em(14px) em(35px);
+        @include border-radius(0);
+        border-color: var(--black-color);
+        &:hover {
+          background-color: var(--primary-color);
+          border-color: var(--primary-color);
+
+          .deal-count {
+            color: var(--primary-color);
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .info--display {
+    background-color: rgba(0, 0, 0, 1);
+    padding: em(50px) em(50px) em(50px) em(70px);
+    margin-top: 150px;
+    color: var(--white-color);
+    @media screen and (min-width: 320px) and (max-width: 600px) {
+      padding: em(50px) em(20px);
+    }
+    h2 {
+      font-size: em(32px);
+      font-weight: 600;
+      font-family: var(--font-regular);
+      text-align: left;
+      position: relative;
+      color: var(--white-color);
+      display: block;
+      visibility: visible;
+      margin-bottom: 30px;
+      @media screen and (min-width: 320px) and (max-width: 600px) {
+        font-size: em(22px);
+      }
+    }
+    p {
+      font-size: em(18px);
+      font-weight: 300;
+      font-family: var(--font-regular);
+      text-align: left;
+      position: relative;
+      color: var(--white-color);
+      display: block;
+      visibility: visible;
+      margin-bottom: 30px;
+      line-height: 30px;
+    }
+
+    .button {
+      margin-top: 30px;
+
+      .btn {
+        padding: em(14px) em(35px);
+        @include border-radius(0);
+        font-family: var(--font-regular);
+        font-size: em(16px);
+        font-weight: 500;
+      }
+
+      .btn-default {
+        background-color: transparent;
+        color: var(--white-color);
+        margin-right: 40px;
+      }
+
+      .btn-primary {
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        position: relative;
+        border-color: var(--primary-color);
+      }
+    }
+  }
+}
