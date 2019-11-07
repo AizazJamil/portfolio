@@ -30,5 +30,27 @@
             margin-bottom: 20px;
             color: #ddd;
         }
+
+        .button {
+            .resume-btn {
+                background-color: var(--red-color);
+                border-color: var(--red-color);
+                padding: em(12px) em(30px);
+                font-size: em(20px);
+                font-weight: 600;
+                font-family: var(--font-regular);
+                position: relative;
+                display: inline-block;
+                text-align: center;
+                vertical-align: middle;
+                color: var(--white-color);
+                @include border-radius(0);
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+                    border-color: var(--red-color);
+                }
+            }
+        }
     }
 }
