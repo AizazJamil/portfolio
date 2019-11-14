@@ -1,0 +1,110 @@
+.product--offer {
+  padding: 0 0 40px 0;
+  margin-top: -60px;
+  position: relative;
+  display: block;
+  width: 100%;
+  z-index: 100;
+  @media screen and (min-width: 320px) and (max-width: 1100px) {
+    margin-top: 30px;
+  }
+  .heading {
+    text-align: center;
+    margin-bottom: 50px;
+    h2 {
+      font-size: em(45px);
+      font-weight: bold;
+      font-family: var(--font-gilroyExtraBold);
+      position: relative;
+      color: var(--primary-color);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: em(23px);
+      font-family: var(--font-regular);
+      font-weight: 400;
+      position: relative;
+      text-align: center;
+      color: #777777;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  }
+
+  .product-inner {
+    border-bottom: 8px solid var(--primary-color);
+    background-color: #f9f9f9;
+    margin-bottom: 30px;
+    .image {
+      img {
+        width: 100%;
+      }
+    }
+
+    .text {
+      padding: em(20px);
+      h4 {
+        font-size: em(25px);
+        font-family: var(--font-gilroyExtraBold);
+        font-weight: bold;
+        position: relative;
+        text-align: left;
+        color: var(--primary-color);
+        display: block;
+        visibility: visible;
+        margin-bottom: 5px;
+      }
+      p {
+        font-size: em(16px);
+        font-family: var(--font-regular);
+        font-weight: 400;
+        position: relative;
+        text-align: left;
+        color: #656565;
+        display: block;
+        visibility: visible;
+        line-height: 24px;
+
+        @media screen and (min-width: 1700px) {
+          font-size: em(20px);
+        }
+      }
+    }
+  }
+}
+
+
+// Red background inner code here
+.red-bg-inner {
+  background-image: url('../images/red-bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: scroll;
+  background-size: cover;
+  width: 100%;
+  padding: em(40px) 0;
+
+  .text--inner {
+    h2 {
+      font-size: em(31px);
+      font-family: var(--font-gilroyExtraBold);
+      font-weight: bold;
+      color: var(--white-color);
+
+      span {
+        display: block;
+      }
+    }
+    p {
+      font-size: em(25px);
+      font-family: var(--font-regular);
+      font-weight: 400;
+      color: var(--white-color);
+
+      span {
+        display: block;
+      }
+    }
+  }
+}
