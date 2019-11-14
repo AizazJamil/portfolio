@@ -1,0 +1,108 @@
+.frequently--section {
+  padding: em(80px) 0;
+  margin: 0;
+  display: block;
+  position: relative;
+  width: 100%;
+
+  .heading {
+    margin-bottom: 40px;
+    h2 {
+      font-size: em(48px);
+      font-family: var(--font-Extrabold);
+      font-weight: bolder;
+      font-style: normal;
+      position: relative;
+      color: var(--black-color);
+      text-align: center;
+      display: block;
+      visibility: visible;
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        font-size: 25px;
+      }
+    }
+  }
+
+  .nav-info {
+    .flex-column {
+      @media screen and (min-width: 320px) and (max-width: 1024px) {
+        margin-bottom: 40px;
+      }
+      .active {
+        background-color: var(--secondary-color) !important;
+        color: var(--white-color) !important;
+      }
+
+      .nav-link {
+        font-size: em(16px);
+        font-family: var(--font-medium);
+        font-weight: 500;
+        color: #999999;
+        text-align: left;
+        background-color: #e6e6e6;
+        padding: em(15px) em(20px);
+        margin-top: 35px;
+        height: 100px;
+        // line-height: 80px;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        // flex-direction: column;
+        align-items: center;
+        vertical-align: middle;
+        font-style: italic;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: 2px solid var(--white-color);
+
+        span {
+          line-height: 30px;
+          display: inline-block;
+        }
+      }
+    }
+
+    .tab-content {
+      background-color: #e6e6e6;
+      padding: em(30px);
+
+      .tab-pane {
+        .info-nav {
+          .img {
+            margin-bottom: 35px;
+            @media screen and (min-width: 320px) and (max-width: 1024px) {
+              margin-top: 50px;
+            }
+            img {
+              width: 100%;
+            }
+          }
+          p {
+            font-size: em(16px);
+            font-family: var(--font-regular);
+            font-weight: 400;
+            position: relative;
+            text-align: left;
+            line-height: 32px;
+            color: var(--black-color);
+            visibility: visible;
+            margin-bottom: 30px;
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+          }
+          h6 {
+            font-size: em(16px);
+            font-family: var(--font-bold);
+            font-weight: 600;
+            position: relative;
+            text-align: left;
+            color: var(--black-color);
+            visibility: visible;
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}

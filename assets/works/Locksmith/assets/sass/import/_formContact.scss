@@ -1,0 +1,84 @@
+.form-inline-info {
+  padding: em(50px) 0;
+  margin: 0;
+  background-color: var(--gray-color);
+  width: 100%;
+  position: relative;
+  display: block;
+  .heading {
+    margin-bottom: 15px;
+    h2 {
+      font-size: em(36px);
+      font-family: var(--font-bold);
+      font-weight: bold;
+      position: relative;
+      text-align: left;
+      color: var(--black-color);
+
+      .uppercase {
+        font-weight: bolder;
+        font-family: var(--font-Extrabold);
+        font-style: normal;
+        position: relative;
+        font-style: italic;
+      }
+    }
+  }
+  .inline-form-wrapper {
+    .form-inline {
+      @include flexbox();
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        flex-wrap: wrap;
+      }
+      .form-group {
+        flex: 0 0 20%;
+        padding-right: 10px;
+        position: relative;
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+          flex: 0 0 100%;
+        }
+        .form-control {
+          width: 100%;
+          padding-left: 35px;
+          font-size: em(13px);
+          font-family: var(--font-regular);
+          font-weight: 400;
+          color: #252525;
+          line-height: 23px;
+          border-color: var(--white-color);
+          @include border-radius(3px);
+          &:focus {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid #005bab;
+          }
+        }
+        .icon {
+          @include position(absolute, 50%, null, null, 5%);
+          transform: translateY(-50%);
+        }
+
+        .btn {
+          background-color: var(--secondary-color);
+          border-color: var(--secondary-color);
+          font-size: em(16px);
+          font-weight: 600;
+          font-family: var(--font-bold);
+          text-align: center;
+          position: relative;
+          text-transform: uppercase;
+          color: var(--black-color);
+          @include border-radius(3px);
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,153 @@
+.company--section {
+  padding: em(100px) 0;
+  margin: 0;
+  position: relative;
+  display: block;
+  width: 100%;
+  background-image: url('../images/grayscale-cover.png');
+  background-size: 100%;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  height: 750px;
+
+  @media screen and (min-width: 1700px) {
+    height: 850px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    height: auto;
+  }
+
+  .col-lg-6 {
+    @media screen and (min-width: 992px) and (max-width: 1100px) {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+    }
+  }
+
+  .heading {
+    h2 {
+      font-size: em(48px);
+      font-family: var(--font-bold);
+      font-weight: bold;
+      color: var(--black-color);
+      text-align: center;
+      position: relative;
+      display: block;
+
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        font-size: em(25px);
+      }
+    }
+  }
+
+  .information-inner {
+    margin-top: 280px;
+    @media screen and (min-width: 1700px) {
+      margin-top: 350px;
+    }
+    @media screen and (min-width: 992px) and (max-width: 1100px) {
+      margin-top: 100px;
+    }
+    @media screen and (min-width: 320px) and (max-width: 991px) {
+      margin-top: 30px;
+    }
+    .left-info {
+      @include flexbox();
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      flex-direction: row;
+
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .img-comp {
+        margin-right: 20px;
+      }
+
+      .text {
+        h4, h1, p {
+          margin: 0;
+        }
+
+        h4 {
+          font-size: em(28px);
+          font-weight: bold;
+          font-family: var(--font-bold);
+          position: relative;
+          text-align: left;
+          color: var(--black-color);
+          display: block;
+          visibility: visible;
+          text-transform: uppercase;
+          @media screen and (min-width: 320px) and (max-width: 767px) {
+            text-align: center;
+            font-size: em(22px);
+            margin-bottom: 10px;
+          }
+        }
+
+        h1 {
+          font-size: em(42px);
+          font-weight: bold;
+          font-family: var(--font-bold);
+          position: relative;
+          text-align: left;
+          color: var(--secondary-color);
+          display: block;
+          visibility: visible;
+          @media screen and (min-width: 1700px) {
+            font-size: em(43px);
+          }
+          @media screen and (min-width: 320px) and (max-width: 767px) {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 20px;
+          }
+        }
+
+        p {
+          font-size: em(18px);
+          font-weight: 600;
+          font-family: var(--font-SemiBold);
+          font-style: italic;
+          position: relative;
+          text-align: left;
+          color: var(--black-color);
+          display: block;
+          visibility: visible;
+          @media screen and (min-width: 320px) and (max-width: 767px) {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .right-info {
+      p {
+        font-size: em(16px);
+        font-weight: 400;
+        font-family: var(--font-SemiBold);
+        font-style: normal;
+        position: relative;
+        text-align: left;
+        color: #505050;
+        display: block;
+        visibility: visible;
+        line-height: 32px;
+
+        @media screen and (min-width: 1700px) {
+          font-size: 17.2px;
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
