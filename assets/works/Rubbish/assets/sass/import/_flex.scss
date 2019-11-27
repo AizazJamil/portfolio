@@ -1,0 +1,96 @@
+.flex-inner--section {
+  background-color: var(--primary-color);
+  width: 100%;
+  padding: 60px 0 0 0;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 300px;
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    height: auto;
+    padding: 60px 0;
+  }
+
+  .col-lg-6 {
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 991px) {
+    height: auto;
+    padding: 80px 0;
+
+  }
+
+  .inner--flex {
+    @include flexbox();
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    flex-direction: row;
+    position: relative;
+    padding-right: 50px;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-right: 0;
+      margin-bottom: 40px;
+    }
+
+    .image {
+      margin-right: 40px;
+      img {
+        height: auto;
+      }
+      @media screen and (min-width: 320px) and (max-width: 991px) {
+        width: 100%;
+        margin-bottom: 20px;
+        img {
+          width: 100%;
+        }
+
+      }
+    }
+
+    .text {
+      h3 {
+        font-size: 32px;
+        font-family: var(--font-bold);
+        font-weight: bold;
+        text-align: left;
+        position: relative;
+        color: var(--black-color);
+        display: block;
+        letter-spacing: -1px;
+        margin-bottom: 40px;
+        &:before {
+          content: '';
+          background-color: var(--black-color);
+          width: 30px;
+          height: 4px;
+          @include position(absolute, null, null, -20px, 0);
+        }
+
+        span {
+          display: block;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        font-family: var(--font-regular);
+        font-weight: 400;
+        text-align: left;
+        position: relative;
+        color: var(--black-color);
+        display: block;
+        line-height: 22px;
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+}

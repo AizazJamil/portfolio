@@ -1,0 +1,52 @@
+.work--section {
+  padding: 60px 0 100px 0;
+  background-image: url('../images/green-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  display: block;
+
+  .heading {
+    margin-bottom: 40px;
+    h2 {
+      font-size: em(62px);
+      font-family: var(--font-gilroyExtraBold);
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      color: var(--white-color);
+      display: block;
+      visibility: visible;
+      @media screen and (min-width: 1700px) {
+        font-size: em(72px);
+      }
+      @media screen and (min-width: 451px) and (max-width: 767px) {
+        font-size: 60px;
+      }
+      @media screen and (min-width: 320px) and (max-width: 450px) {
+        font-size: 50px;
+      }
+    }
+
+    p {
+      font-size: em(31px);
+      font-family: var(--font-gilroyMedium);
+      font-weight: 400;
+      color: var(--white-color);
+      text-align: center;
+      position: relative;
+      display: block;
+      visibility: visible;
+      span {
+        display: block;
+      }
+      @media screen and (min-width: 451px) and (max-width: 767px) {
+        font-size: 25px;
+      }
+      @media screen and (min-width: 320px) and (max-width: 450px) {
+        font-size: 22px;
+      }
+    }
+  }
+}

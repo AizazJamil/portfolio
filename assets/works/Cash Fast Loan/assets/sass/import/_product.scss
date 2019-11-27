@@ -1,0 +1,181 @@
+.product--section {
+  background-color: var(--dark-color);
+  width: 100%;
+  padding: 80px 0;
+  margin: 0;
+  display: block;
+  position: relative;
+
+  .heading {
+    h2 {
+      font-size: em(70px);
+      font-weight: bold;
+      font-family: var(--font-Extrabold);
+      color: var(--white-color);
+      position: relative;
+      display: block;
+      text-align: center;
+      margin-bottom: 20px;
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        font-size: em(40px);
+      }
+    }
+
+    p {
+      font-size: em(20px);
+      font-family: var(--font-regular);
+      font-weight: normal;
+      position: relative;
+      text-align: center;
+      position: relative;
+      color: var(--white-color);
+      visibility: visible;
+    }
+
+    .button-group {
+      text-align: center;
+      margin: 60px 0;
+
+      .btn {
+        border-color: var(--primary-color);
+        @include border-radius(0);
+        color: var(--white-color);
+        font-size: 16px;
+        font-family: var(--font-SemiBold);
+        font-weight: 500;
+        font-style: normal;
+        position: relative;
+        display: inline-block;
+        padding: em(12px) em(60px);
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+          margin-bottom: 20px;
+        }
+      }
+
+      .btn-outline {
+        background-color: transparent;
+        margin-right: 20px;
+        @media screen and (max-width: 767px) {
+          margin-right: 0;
+        }
+      }
+
+      .btn-dark {
+        background-color: var(--primary-color);
+      }
+    }
+  }
+
+  .list-items-inline {
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    list-style-type: none;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) and (max-width: 1100px) {
+      justify-content: flex-start;
+    }
+    @media screen and (min-width: 320px) and (max-width: 600px) {
+      justify-content: flex-start;
+    }
+
+    .list {
+      @media screen and (min-width: 768px) and (max-width: 1100px) {
+        flex: 0 0 33.333%;
+      }
+      @media screen and (min-width: 402px) and (max-width: 767px) {
+        flex: 0 0 50%;
+      }
+      @media screen and (min-width: 320px) and (max-width: 401px) {
+        flex: 0 0 100%;
+      }
+      .img {
+        vertical-align: middle;
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .text {
+        font-size: em(18px);
+        font-family: var(--font-SemiBold);
+        font-weight: 500;
+        color: var(--white-color);
+        text-align: left;
+        position: relative;
+        display: inline-block;
+        visibility: visible;
+      }
+    }
+  }
+
+  .product-inner {
+    width: 100%;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+    .image {
+      img {
+        width: 100%;
+      }
+    }
+
+    .text {
+      margin-top: 25px;
+      h4 {
+        font-size: em(21px);
+        font-weight: bold;
+        font-family: var(--font-bold);
+        text-align: left;
+        position: relative;
+        color: var(--white-color);
+        display: block;
+        margin-bottom: 40px;
+        &:before {
+          content: '';
+          background-color: var(--primary-color);
+          width: 35px;
+          height: 3px;
+          @include border-radius(0);
+          @include position(absolute, null, null, -14px, 0);
+        }
+      }
+      .list {
+        list-style-type: none;
+        display: block;
+        li {
+          margin-bottom: 10px;
+          @media screen and (min-width: 992px) and (max-width: 1100px) {
+            @include flexbox();
+            flex-wrap: nowrap;
+          }
+          @media screen and (min-width: 320px) and (max-width: 767px) {
+            @include flexbox();
+            flex-wrap: nowrap;
+          }
+          .icon {
+            img {
+              vertical-align: middle;
+              margin-right: 10px;
+            }
+          }
+          .text-list {
+            color: var(--white-color);
+            font-size: 16px;
+            font-family: var(--font-regular);
+            font-weight: 400;
+            position: relative;
+            display: inline-block;
+            text-align: left;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

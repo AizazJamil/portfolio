@@ -1,0 +1,116 @@
+.rate--section {
+  padding-top: 140px;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.polygon--bg {
+  background-image: url('../images/polygon-bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  padding-bottom: 300px;
+  margin-top: -230px;
+
+  @media screen and (min-width: 768px) and (max-width: 1100px) {
+    margin-top: -150px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-top: -70px;
+  }
+
+  .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .slider-context {
+    .swiper-container {
+      height: 330px;
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        height: 500px;
+      }
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background: var(--white-color);
+      }
+      .swiper-pagination-bullet-active {
+        background-color: var(--white-color) !important;
+      }
+      .swiper-wrapper {
+        .swiper-slide {
+          .slide-info {
+            background-color: var(--white-color);
+            padding: em(35px) em(50px);
+            min-height: 260px;
+            @media screen and (min-width: 1700px) {
+              width: 100%;
+            }
+            .inline-profile {
+              @include flexbox();
+              flex-wrap: wrap;
+              justify-content: space-between;
+              align-items: center;
+              position: relative;
+              width: 100%;
+              margin-bottom: 20px;
+
+              .left {
+                width: 60%;
+                @include flexbox();
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: center;
+                img {
+                  position: relative;
+                  margin-right: 20px;
+                }
+
+                .name {
+                  font-size: em(24px);
+                  font-family: var(--font-bold);
+                  font-weight: bold;
+                  text-align: left;
+                  position: relative;
+                  letter-spacing: -1px;
+                }
+              }
+
+              .right {
+                h5 {
+                  color: #b4b4b4;
+                  font-size: 14px;
+                  font-family: var(--font-regular);
+                  font-weight: 400;
+                  position: relative;
+                }
+              }
+            }
+
+            .rate-star {
+              margin-bottom: 20px;
+              list-style-type: none;
+            }
+
+            .title {
+              p {
+                font-size: em(18px);
+                font-family: var(--font-regular);
+                font-weight: 400;
+                text-align: left;
+                color: var(--black-color);
+                position: relative;
+                line-height: 28px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

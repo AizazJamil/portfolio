@@ -1,0 +1,118 @@
+.about--section {
+  padding: 80px 0;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  display: block;
+  background-image: url('../images/bg-cover.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  .heading {
+    h2 {
+      font-size: em(53px);
+      font-family: var(--font-bold);
+      font-weight: bolder;
+      position: relative;
+      text-align: left;
+      display: block;
+      margin-bottom: 40px;
+      span {
+        display: block;
+      }
+      .text-dark {
+        color: var(--black-color) !important;
+      }
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        font-size: em(40px);
+      }
+    }
+  }
+
+  .about-info {
+    background-color: var(--white-color);
+    .text {
+      padding: em(40px) em(50px);
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        padding: em(40px) em(20px);
+      }
+      h4 {
+        font-size: em(28px);
+        font-family: var(--font-bold);
+        font-weight: bold;
+        text-align: left;
+        position: relative;
+        color: var(--black-color);
+        visibility: visible;
+        display: block;
+        margin-bottom: 50px;
+        span {
+          display: block;
+        }
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+          font-size: em(20px);
+        }
+        &:before {
+          content: '';
+          background-color: var(--yellow-color);
+          width: 35px;
+          height: 4px;
+          @include position(absolute, null, null, -25px, 0);
+        }
+      }
+      p {
+        font-size: em(16px);
+        font-family: var(--font-regular);
+        font-weight: 400;
+        color: #959595;
+        text-align: left;
+        position: relative;
+        line-height: 30px;
+        margin-bottom: 20px;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .bg-context {
+      background-color: var(--primary-color);
+      padding: em(40px) em(50px);
+      a {
+        float: left;
+        background-color: var(--black-color);
+        border-color: var(--black-color);
+        padding: em(14px) em(50px);
+        @include border-radius(0);
+        font-size: 16px;
+        font-family: var(--font-bold);
+        font-weight: bold;
+        font-style: normal;
+        position: relative;
+        color: var(--white-color);
+        text-align: center;
+        margin-right: 60px;
+        @media screen and (min-width: 992px) and (max-width: 1100px) {
+          float: none;
+          margin-bottom: 20px;
+        }
+      }
+      p {
+        font-size: em(18px);
+        font-weight: 400;
+        font-family: var(--font-regular);
+        color: var(--black-color);
+        text-align: left;
+        line-height: 28px;
+
+        .bold {
+          font-family: var(--font-bold);
+          font-weight: bold;
+        }
+        .block {
+          display: block;
+        }
+      }
+    }
+  }
+}

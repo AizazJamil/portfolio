@@ -1,0 +1,270 @@
+.banner--section {
+  background-image: url('../images/banner-cover.png');
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+  // height: 720px;
+  padding: 60px 0 80px 0;
+  z-index: 1;
+  border: none;
+  position: relative;
+
+  .banner-img {
+    @include position(absolute, 0, 0, null, null);
+    transform: translate(10%, -15px);
+
+    @media screen and (min-width: 1700px) {
+      transform: translate(0%, -8px);
+    }
+
+    @media screen and (min-width: 1300px) and (max-width: 1450px) {
+      transform: translate(30%, -15px);
+    }
+
+    @media screen and (max-width: 1100px) {
+      display: none;
+    }
+
+    img {
+      width: 90%;
+      height: 1140px;
+      @media screen and (min-width: 1700px) {
+        width: 100%;
+      }
+      @media screen and (min-width: 1300px) and (max-width: 1450px) {
+        width: 70%;
+      }
+    }
+  }
+
+  .col-lg-5 {
+    @media screen and (min-width: 992px) and (max-width: 1315px) {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+    }
+  }
+
+  .discount {
+    @include position(absolute, 7%, -26px, null, null);
+    @media screen and (min-width: 1700px) {
+      top: 15%;
+      right: 90px;
+    }
+    @media screen and (min-width: 320px) and (max-width: 1100px) {
+      display: none;
+    }
+    img {
+      width: 88%;
+      @media screen and (min-width: 1700px) {
+
+        width: 100%;
+      }
+    }
+
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 1024px) {
+    background-position: left;
+  }
+
+  .col-lg-6 {
+    @media screen and (min-width: 992px) and (max-width: 1024px) {
+      flex: 0 0 60% !important;
+      max-width: 60% !important;
+    }
+  }
+  .col-lg-3 {
+    @media screen and (min-width: 992px) and (max-width: 1024px) {
+      flex: 0 0 30% !important;
+      max-width: 30% !important;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 1023px) {
+    .d-no {
+      display: none;
+    }
+  }
+
+  .banner--info {
+    .large-text {
+      font-size: em(53px);
+      font-family: var(--font-bold);
+      font-weight: bolder;
+      position: relative;
+      // color: var(--white-color);
+      text-align: left;
+      display: block;
+      margin-bottom: 40px;
+      span {
+        display: block;
+      }
+
+      .text-black {
+        color: var(--black-color);
+      }
+
+      .text-gray {
+        color: #656565;
+      }
+
+      @media screen and (min-width: 1300px) and (max-width: 1450px) {
+        font-size: 49px;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1100px) {
+        font-size: em(45px);
+      }
+
+      @media screen and (min-width: 1700px){
+        font-size: em(53px);
+      }
+
+      @media screen and (min-width: 320px) and (max-width: 450px) {
+        font-size: em(30px);
+      }
+    }
+
+    .form-contact {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      .head {
+        background-color: var(--black-color);
+        text-align: center;
+        padding: 10px 30px;
+        h3 {
+          font-size: em(28px);
+          font-family: var(--font-SemiBold);
+          font-weight: 500;
+          color: var(--primary-color);
+          text-align: center;
+          position: relative;
+          display: block;
+          visibility: visible;
+        }
+        p {
+          font-size: em(20px);
+          font-family: var(--font-SemiBold);
+          font-weight: 500;
+          font-style: italic;
+          color: var(--white-color);
+          text-align: center;
+          position: relative;
+          display: block;
+          visibility: visible;
+        }
+      }
+      .form-field {
+        padding: em(20px) em(40px);
+        .inner {
+          margin-bottom: 20px;
+          h5 {
+            color: #959595;
+            font-size: em(16px);
+            font-family: var(--font-medium);
+            font-weight: 500;
+            text-align: center;
+            position: relative;
+            display: block;
+            visibility: visible;
+          }
+        }
+
+        .inline-group {
+          @include flexbox();
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+          position: relative;
+          width: 100%;
+          .left-group {
+            h4 {
+              font-size: 14px;
+              font-weight: bold;
+              font-family: var(--font-bold);
+              text-align: left;
+              color: var(--black-color);
+              position: relative;
+              visibility: visible;
+            }
+            p {
+              font-size: 14px;
+              font-weight: 300;
+              font-family: var(--font-regular);
+              text-align: left;
+              color: #808080;
+              position: relative;
+              visibility: visible;
+            }
+          }
+          .right-group {
+            width: 40%;
+          }
+        }
+
+        .form-group {
+          position: relative;
+          .form-control {
+            padding: em(12px) em(20px) em(12px) em(60px);
+            @include border-radius(0);
+            resize: none;
+            &:focus {
+              outline: none;
+              box-shadow: none;
+              border-color: var(--yellow-color);
+            }
+          }
+          .icon {
+            @include position(absolute, 50%, null, null, 20px);
+            transform: translateY(-50%);
+          }
+          .last-icon {
+            top: 26px !important;
+          }
+
+          .btn {
+            margin-top: 30px;
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            padding: 14px 30px;
+            text-align: center;
+            display: block;
+            width: 100%;
+            position: relative;
+            color: var(--black-color);
+            font-size: 18px;
+            font-family: var(--font-Extrabold);
+            font-weight: bold;
+            text-transform: uppercase;
+            @include border-radius(2px);
+            &:focus {
+              outline: none;
+              box-shadow: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .right-banner {
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    flex-flow: row;
+    width: 100%;
+    @media screen and (min-width: 320px) and (max-width: 1100px) {
+      flex-flow: row;
+      margin-top: 40px;
+    }
+    > div {
+      margin-right: 10px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}

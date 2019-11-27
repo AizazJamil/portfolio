@@ -1,0 +1,196 @@
+.flex-inner--section {
+  margin-top: -350px;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 150px;
+
+  @media screen and (min-width: 320px) and (max-width: 600px) {
+    margin-top: -200px;
+  }
+
+  .select-info {
+    background-color: var(--secondary-color);
+    padding: em(15px) em(30px);
+    text-align: center;
+    position: relative;
+    width: 100%;
+
+    h4 {
+      font-size: em(16px);
+      font-weight: var(--font-gilroyMedium);
+      font-weight: 500;
+      color: var(--white-color);
+      position: relative;
+      text-align: center;
+      visibility: visible;
+    }
+  }
+
+  .inner--flex {
+    background-color: var(--primary-color);
+    padding: em(30px) 40px;
+    text-align: center;
+    min-height: 570px;
+    max-height: 570px;
+
+    @media screen and (min-width: 320px) and (max-width: 991px) {
+      min-height: 100%;
+      max-height: 100%;
+    }
+
+    .text {
+      .large-text {
+        font-size: em(80px);
+        font-family: var(--font-gilroyExtraBold);
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+        color: var(--white-color);
+        visibility: visible;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 767px) {
+          font-size: em(40px);
+        }
+      }
+
+      p {
+        font-size: em(16px);
+        font-family: var(--font-gilroyMedium);
+        font-weight: 400;
+        color: var(--white-color);
+        text-align: center;
+        position: relative;
+        visibility: visible;
+      }
+
+      .divider {
+        background-color: #1bac77;
+        border-color: #1bac77;
+        max-width: 400px;
+        margin:25px auto;
+      }
+    }
+
+    .inline {
+      @include flexbox();
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      position: relative;
+      width: 100%;
+      margin-bottom: 20px;
+
+      .inner {
+        @media screen and (max-width: 767px) {
+          margin-bottom: 20px;
+        }
+        h5 {
+          .icon {
+            margin-right: 10px;
+            img {
+              vertical-align: middle;
+            }
+          }
+          .text {
+            font-size: 16px;
+            font-family: var(--font-gilroyBold);
+            font-weight: bold;
+            text-align: left;
+            position: relative;
+            color: var(--white-color);
+            visibility: visible;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .button-group {
+      @include flexbox();
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-bottom: 20px;
+
+      h2 {
+        margin-right: 20px;
+        .large {
+          font-size: em(45px);
+          font-weight: bold;
+          font-family: var(--font-gilroyExtraBold);
+          font-style: normal;
+          display: block;
+          text-align: right;
+          position: relative;
+          color: var(--white-color);
+        }
+        .small {
+          text-align: right;
+          width: 100%;
+          display: block;
+          margin-top: -6px;
+          font-size: 12px;
+          font-family: var(--font-gilroyMedium);
+          font-weight: 300;
+          color: var(--white-color);
+          position: relative;
+        }
+      }
+
+      .btn {
+        background-color: var(--secondary-color);
+        padding: em(16px) em(26px);
+        font-size: 13px;
+        font-family: var(--font-gilroyMedium);
+        font-weight: 400;
+        color: var(--white-color);
+        @include border-radius(0);
+        color: var(--white-color);
+
+        img {
+          vertical-align: middle;
+          height: 10px;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+
+  .white-info {
+    background-color: #f4f4f4 !important;
+    h4 {
+      color: #f4f4f4 !important;
+    }
+  }
+  .green-flex {
+    background-color: #f8f8f8 !important;
+
+    .text {
+      h2, p {
+        color: var(--primary-color) !important;
+      }
+    }
+    .inline {
+      .inner {
+        h5 {
+          .text {
+            color: var(--primary-color) !important;
+          }
+        }
+      }
+    }
+
+    .button-group {
+      .text {
+        h2 {
+          span {
+            color: var(--primary-color) !important;
+          }
+        }
+      }
+    }
+  }
+
+}
