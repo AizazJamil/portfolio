@@ -44,11 +44,18 @@ time, mark, audio, video {
   background: transparent;
 }
 
+#safari {
+  background-color: #000;
+}
+
 body {
   background-color: var(--black-color);
   font-family: var(--font-regular);
   height: 100%;
   width: 100%;
+}
+body #safari {
+  background-color: #000;
 }
 
 html, body {
