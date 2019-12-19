@@ -1,0 +1,270 @@
+.contact-form {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 100px;
+  width: 100%;
+  position: relative;
+
+  &:before {
+    content: '';
+    background-image: url('../images/brushleft-bg.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 20%;
+    @include position(absolute, -16%, null, 0, -8%);
+    z-index: 21;
+
+    @media screen and (min-width: 1700px) {
+      left: -4%;
+      height: 24%;
+      width: 30%;
+    }
+
+    @media screen and (min-width: 1301px) and (max-width: 1400px) {
+      left: -12%;
+    }
+
+    @media screen and (max-width: 1300px) {
+      display: none;
+    }
+  }
+
+  .bg-left {
+    &:before {
+      content: '';
+      background-image: url('../images/brush-bg.png');
+      background-position: top center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 65%;
+      height: 100%;
+      @include position(absolute, -10%, null, null, -15%);
+
+      @media screen and (min-width: 1700px) {
+        // left: -15%;
+        left: -14%;
+        top: -17%;
+        width: 50%;
+      }
+
+      @media screen and (max-width: 1300px) {
+        display: none;
+      }
+    }
+  }
+  .bg-right {
+    &:before {
+      content: '';
+      background-image: url('../images/circle-bg.png');
+      background-position: top center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 40%;
+      height: 60%;
+      @include position(absolute, 35%, 0, null, null);
+
+      @media screen and (min-width: 1700px) {
+        top: 28%;
+        right: 0;
+        width: 33%;
+
+      }
+
+      @media screen and (max-width: 1300px) {
+        display: none;
+      }
+    }
+  }
+
+
+  .form-inner {
+    background-image: url('../images/contact-bg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    padding: 80px 180px;
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-top: -230px;
+    z-index: 20;
+
+
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      margin-top: -60px;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      margin-top: -60px;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 1200px) {
+      padding: 80px 30px;
+    }
+
+    .head {
+      font-size: em(40px);
+      font-weight: 500;
+      font-family: var(--font-medium);
+      text-align: center;
+      position: relative;
+      color: var(--white-color);
+      margin-bottom: 20px;
+      display: block;
+      visibility: visible;
+    }
+
+    .form-inline {
+      .form-group {
+        width: 100%;
+
+        .form-control {
+          width: 100%;
+          @include border-radius(100px);
+          margin-bottom: 22px;
+          padding: em(14px) em(25px);
+          background-color: #d0dcd8;
+          border-color: #d0dcd8;
+          color: #97aba9;
+
+          &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: #97aba9;
+          }
+          &::-moz-placeholder { /* Firefox 19+ */
+            color: #97aba9;
+          }
+          &:-ms-input-placeholder { /* IE 10+ */
+            color: #97aba9;
+          }
+          &:-moz-placeholder { /* Firefox 18- */
+            color: #97aba9;
+          }
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+
+        .btn {
+          background-color: var(--primary-color);
+          border-color: var(--primary-color);
+          width: 100%;
+          position: relative;
+          font-size: em(18px);
+          font-weight: 600;
+          font-family: var(--font-bold);
+          text-align: center;
+          display: block;
+          padding: em(14px) em(30px);
+          @include border-radius(100px);
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .inline--col {
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-top: 40px;
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+
+    @media screen and (min-width: 320px) and (max-width: 1200px) {
+      max-width: 100%;
+      justify-content: center;
+    }
+
+    .col-flex {
+      margin-right: 60px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .heading {
+    margin-top: 80px;
+    position: relative;
+    margin-bottom: 80px;
+    &:before {
+      content: '';
+      background-color: #d0dcd8;
+      @include position(absolute, -30px, null, null, 50%);
+      transform: translateX(-50%);
+      width: 300px;
+      height: 6px;
+
+    }
+    h5 {
+      font-family: var(--font-bold);
+      font-weight: bold;
+      font-size: em(24px);
+      text-align: center;
+      position: relative;
+      visibility: visible;
+      color: #657473;
+      display: block;
+      text-transform: uppercase;
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        font-size: em(20px);
+      }
+    }
+    h2 {
+      font-family: var(--font-bold);
+      font-weight: bold;
+      font-size: em(48px);
+      text-align: center;
+      position: relative;
+      visibility: visible;
+      color: var(--text-dark);
+      display: block;
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        font-size: em(35px);
+      }
+    }
+  }
+
+  .content-wrapper {
+    max-width: 1330px;
+    margin: 0 auto;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      max-width: 100%;
+    }
+    .left-inner {
+      .title {
+        padding-right: 80px;
+        // padding-left: 30px;
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+          padding-right: 20px;
+          padding-left: 20px;
+        }
+        p {
+          font-size: 16px;
+          font-family: var(--font-regular);
+          font-weight: 400;
+          text-align: left;
+          position: relative;
+          color: #657473;
+          display: block;
+          margin-bottom: 30px;
+          line-height: 32px;
+        }
+      }
+    }
+  }
+}

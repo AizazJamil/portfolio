@@ -1,0 +1,131 @@
+.contactBottom-section {
+  margin: 0;
+  padding: 60px 0;
+  width: 100%;
+  position: relative;
+  display: block;
+  background-image: url('../images/bottom-bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  .contactBottom-info {
+    width: 100%;
+    padding: 80px 50px;
+    text-align: center;
+
+    .head {
+      font-size: 30px;
+      font-family: var(--font-Montbold);
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      font-family: var(--font-Robregular);
+      font-style: italic;
+      font-weight: 400;
+      position: relative;
+      text-align: center;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      padding: 12px 80px;
+      @include border-radius(4px);
+      font-size: 12.02px;
+      font-family: var(--font-Montsemibold);
+      font-weight: 600;
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+
+      &:hover {
+        background-color: var(--dark-color);
+        border-color: var(--dark-color);
+        color: var(--white-color);
+      }
+    }
+  }
+
+  .white-background {
+    background-color: var(--white-color);
+
+    .head {
+      color: var(--secondary-color);
+    }
+    p {
+      color: var(--secondary-color);
+    }
+
+    .btn {
+      background-color: var(--secondary-color);
+      border-color: var(--secondary-color);
+    }
+  }
+
+  .orange-background {
+    background-color: var(--primary-color);
+
+    .head {
+      color: var(--white-color);
+    }
+    p {
+      color: var(--white-color);
+    }
+    .btn {
+      background-color: var(--white-color);
+      border-color: var(--white-color);
+      color: var(--secondary-color);
+    }
+  }
+}
+
+
+// Bottom context
+.recieve-section {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  padding: 0;
+
+  .recieveLogo-context {
+    padding: 20px 0;
+  }
+
+  .reciveText-context {
+    background-color: var(--secondary-color);
+    padding: 20px 0;
+    text-align: center;
+
+    h4 {
+      font-size: 24.12px;
+      font-weight: bold;
+      font-family: var(--font-Montbold);
+      text-align: center;
+      position: relative;
+      display: block;
+      visibility: visible;
+      text-transform: uppercase;
+
+      .white {
+        color: var(--white-color);
+      }
+
+      .orange {
+        color: var(--primary-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,156 @@
+.banner-section {
+  margin: 0;
+  padding: 250px 0 40px 0;
+  width: 100%;
+  position: relative;
+  background-image: url('../images/banner-cover.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  .banner-info {
+    .banner-head {
+      h2 {
+        font-size: em(48px);
+        font-family: var(--open-semibold);
+        font-weight: 500;
+        color: var(--white-color);
+        position: relative;
+        text-align: center;
+        visibility: visible;
+        display: block;
+      }
+    }
+
+    .banner-free {
+      margin-bottom: 30px;
+      h1 {
+        font-size: em(60px);
+        font-weight: bold;
+        font-family: var(--open-bold);
+        font-style: italic;
+        text-align: center;
+        position: relative;
+        color: var(--white-color);
+        text-transform: uppercase;
+        margin-bottom: 0;
+        width: 100%;
+
+        &:before {
+          content: '';
+          background-color: var(--white-color);
+          width: 42%;
+          @include position(absolute, 50%, null, null, 0);
+          height: 2px;
+
+          @media screen and (max-width: 767px) {
+            display: none;
+          }
+        }
+
+        &:after {
+          content: '';
+          background-color: var(--white-color);
+          width: 42%;
+          @include position(absolute, 50%, 0, null, null);
+          height: 2px;
+
+          @media screen and (max-width: 767px) {
+            display: none;
+          }
+        }
+      }
+
+      h5 {
+        .large {
+          font-size: em(35px);
+          font-family: var(--open-bold);
+          font-weight: bold;
+          font-style: italic;
+          text-align: center;
+          position: relative;
+          display: block;
+          visibility: visible;
+          color: #008ed6;
+          margin-bottom: 10px;
+        }
+        .small {
+          font-size: em(24px);
+          font-family: var(--open-regular);
+          font-weight: light;
+          font-style: italic;
+          text-align: center;
+          position: relative;
+          display: block;
+          visibility: visible;
+          color: var(--white-color);
+        }
+      }
+    }
+
+    .banner-form {
+      .form-inline {
+        justify-content: space-between;
+
+        .form-group {
+          width: 19%;
+          @media screen and (max-width: 767px) {
+            width: 100%;
+          }
+          .form-control {
+            border: 1px solid var(--primary-color);
+            width: 100%;
+            font-size: em(12px);
+            font-family: var(--open-regular);
+            color: #515151;
+            padding: 10px 15px;
+
+          }
+        }
+
+        .button-group {
+          width: 100%;
+          display: block;
+          text-align: center;
+          margin-top: 40px;
+
+          .btn {
+            background-color: var(--primary-color);
+            border: 2px solid var(--white-color);
+            @include border-radius(6px);
+            padding: 10px 50px;
+            text-transform: uppercase;
+            font-family: var(--open-semibold);
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--white-color);
+
+            &:focus {
+              outline: none;
+              box-shadow: none;
+            }
+          }
+
+        }
+      }
+    }
+
+    .banner-inlineCircle {
+      @include flexbox();
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 60px;
+
+      @media screen and (min-width: 320px) and (max-width: 600px) {
+        justify-content: center;
+      }
+
+      .circle {
+        @media screen and (min-width: 320px) and (max-width: 1023px) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

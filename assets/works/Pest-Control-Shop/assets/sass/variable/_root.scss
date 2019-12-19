@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('../fonts/Montserrat/Montserrat-Medium.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat/Montserrat-Bold.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('../fonts/Montserrat/Montserrat-Light.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-Black';
+  src: url('../fonts/Montserrat/Montserrat-Black.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-ExtraBold';
+  src: url('../fonts/Montserrat/Montserrat-ExtraBold.ttf');
+}
+
+// Roboto Font
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('../fonts/Roboto/Roboto-Medium.ttf');
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/Roboto/Roboto-Bold.ttf');
+}
+
+// Quatro Font
+@font-face {
+  font-family: 'Quatro', sans-serif;
+  src: url('../fonts/Quatro/Quatro.ttf');
+}
+
+// Permanent_Marker Font
+@font-face {
+  font-family: 'PermanentMarker-Regular';
+  src: url('../fonts/Permanent_Marker/PermanentMarker-Regular.ttf');
+}
+
+// MyRiad Font
+@font-face {
+  font-family: 'MYRIADPRO-REGULAR';
+  src: url('../fonts/Myriad/MYRIADPRO-REGULAR.OTF');
+}
+
+
+
+:root {
+  // font-family Montserrat
+  --font-Montregular: 'Montserrat-Regular';
+  --font-Montmedium: 'Montserrat-Medium';
+  --font-Montlight: 'Montserrat-Light';
+  --font-Montblack: 'Montserrat-Black';
+  --font-Montbold: 'Montserrat-Bold';
+  --font-Montsemibold: 'Montserrat-SemiBold';
+  --font-MontExbold: 'Montserrat-ExtraBold';
+
+  // font-family Roboto
+  --font-Robregular: 'Roboto-Regular';
+  --font-Robmedium: 'Roboto-Medium';
+  --font-Robbold: 'Roboto-Bold';
+
+  // font-family Quatro
+  --font-quatro: 'Quatro', sans-serif;
+
+  // font-family PermanentMarker
+  --font-per: 'PermanentMarker-Regular';
+
+  // font-family MYRIADPRO
+  --font-myriad: 'MYRIADPRO-REGULAR';
+
+  // Color variable
+  --primary-color: #f3753a;
+  --secondary-color: #374782;
+  --white-color: #fff;
+  --black-color: #000;
+  --darkblue-color: #07162c;
+  --gray-color: #959595;
+  --dark-color: #111111;
+  --darking-color: #111419;
+  --text-dark: #1f1f1f;
+}

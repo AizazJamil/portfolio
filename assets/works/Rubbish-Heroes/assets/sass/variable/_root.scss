@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('../fonts/Roboto/Roboto-Medium.ttf');
+}
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('../fonts/Roboto/Roboto-Light.ttf');
+}
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url('../fonts/Roboto/Roboto-Black.ttf');
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/Roboto/Roboto-Bold.ttf');
+}
+@font-face {
+  font-family: 'Roboto-SemiBold';
+  src: url('../fonts/Roboto/Roboto-SemiBold.ttf');
+}
+
+
+
+
+:root {
+  // font-family variable
+  --font-regular: 'Roboto-Regular';
+  --font-medium: 'Roboto-Medium';
+  --font-light: 'Roboto-Light';
+  --font-black: 'Roboto-Black';
+  --font-bold: 'Roboto-Bold';
+  --font-semibold: 'Roboto-SemiBold';
+
+  // Color variable
+  --primary-color: #1456d0;
+  --secondary-color: #e71836;
+  --white-color: #fff;
+  --black-color: #000;
+  --darkblue-color: #07162c;
+  --gray-color: #959595;
+}

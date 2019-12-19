@@ -1,0 +1,115 @@
+.productDeal-section {
+  margin: 0;
+  padding: 60px 0 10px 0;
+  width: 100%;
+  position: relative;
+  display: block;
+
+  .col-lg-4 {
+    @media screen and (min-width: 991px) and (max-width: 1200px) {
+      flex: 0 0 50% !important;
+      max-width: 50%;
+    }
+  }
+
+  .product-deal {
+    margin-bottom: 50px;
+    .product-image {
+      width: 100%;
+      height: 238px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .product-info {
+      border: 1px solid #ebebeb;
+      .product-dollar {
+        @include flexbox();
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        padding: 0;
+        border-bottom: 1px solid #ebebeb;
+
+        .left {
+          display: inline-block;
+          width: 70%;
+          border-right: 1px solid #ebebeb;
+          padding: 12px 10px;
+
+          img {
+            vertical-align: middle;
+            height: auto;
+            width: auto;
+          }
+          strong {
+            font-size: 16px;
+            font-family: var(--font-Montsemibold);
+            font-weight: 500;
+            color: var(--primary-color);
+            position: relative;
+            text-align: left;
+            color: #252525;
+            vertical-align: middle;
+            padding-left: 5px;
+          }
+          .f-12 {
+            font-size: 11px;
+          }
+        }
+
+        .right {
+          padding: 12px 10px;
+          text-align: center;
+          width: 30%;
+          strong {
+            font-size: 18px;
+            font-family: var(--font-Montbold);
+            font-weight: bold;
+            text-align: center;
+
+            sup {
+              font-size: 12px;
+              padding-right: 5px;
+            }
+          }
+        }
+      }
+
+      .product-claim {
+        @include flexbox();
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        padding: 5px 20px;
+
+        .right {
+          strong {
+            padding-right: 15px;
+            margin: 0;
+            font-size: 12px;
+            font-weight: 400;
+            color: #959595;
+            text-transform: uppercase;
+            font-family: var(--font-myriad);
+            letter-spacing: 1px;
+
+            a {
+              text-decoration: none;
+              color: #959595;
+            }
+          }
+
+          img {
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+}

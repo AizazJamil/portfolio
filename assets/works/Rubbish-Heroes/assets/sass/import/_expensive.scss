@@ -1,0 +1,75 @@
+.expensive--section {
+  background-image: url('../images/heroes-bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  margin-top: 80px;
+  // padding: 200px 0;
+  @include flexbox();
+  justify-content: flex-start;
+  align-items: center;
+  height: 700px;
+
+  @media screen and (min-width: 320px) and (max-width: 1200px) {
+    background-position: left;
+  }
+
+  @media screen and (min-width: 1700px) {
+    height: 820px;
+  }
+
+  .head-inner {
+    margin-top: 100px;
+    h2 {
+      font-size: em(60px);
+      font-family: var(--font-bold);
+      font-weight: bold;
+      text-align: left;
+      position: relative;
+      color: var(--white-color);
+      margin-bottom: 40px;
+      @media screen and (min-width: 320px) and (max-width: 600px) {
+        font-size: 35px;
+      }
+      @media screen and (min-width: 1024px) and (max-width: 1200px) {
+        font-size: em(50px);
+      }
+
+      span {
+        display: block;
+      }
+    }
+
+    .btn {
+      padding: em(14px) em(40px);
+      @include border-radius(3px);
+      font-size: em(16px);
+      font-weight: 500;
+      font-family: var(--font-medium);
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      color: var(--white-color);
+      &:hover {
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
+      }
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    .btn-danger {
+      background-color: var(--secondary-color);
+      border-color: var(--secondary-color);
+      margin-right: 15px;
+    }
+    .btn-primary {
+      background-color: var(--darkblue-color);
+      border-color: var(--darkblue-color);
+    }
+  }
+}

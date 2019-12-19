@@ -1,0 +1,31 @@
+// Open Sans
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url('../fonts/Open_Sans/OpenSans-Semibold.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('../fonts/Open_Sans/OpenSans-Bold.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-ExtraBold';
+  src: url('../fonts/Open_Sans/OpenSans-ExtraBold.ttf');
+}
+
+
+:root {
+  // font-family Open Sans
+  --open-regular: 'OpenSans-Regular';
+  --open-semibold: 'OpenSans-Semibold';
+  --open-bold: 'OpenSans-Bold';
+  --open-extrabold: 'OpenSans-ExtraBold';
+
+  // Color variable
+  --primary-color: #008ed6;
+  --white-color: #fff;
+  --black-color: #000;
+}

@@ -1,0 +1,58 @@
+.contact-call--section {
+  padding: em(100px) 0;
+  margin: 0;
+  margin-top: -8px;
+  width: 100%;
+  position: relative;
+  background-image: url('../images/dot-bg.png');
+
+  .head {
+    font-size: em(48px);
+    font-family: var(--font-black);
+    font-weight: bold;
+    text-align: center;
+    color: var(--text-dark);
+    position: relative;
+    visibility: visible;
+    display: block;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      font-size: em(32px);
+    }
+  }
+
+  .button {
+    text-align: center;
+    margin-top: 30px;
+
+    .btn {
+      padding: 12px 40px;
+      @include border-radius(100px);
+      font-size: 18px;
+      font-family: var(--font-medium);
+      font-weight: 400;
+      font-style: normal;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    .btn-dark {
+      background-color: var(--primary-color);
+      border: 2px solid var(--primary-color);
+      color: var(--white-color);
+      margin-right: 20px;
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      border: 2px solid var(--primary-color);
+      color: var(--primary-color);
+    }
+  }
+}

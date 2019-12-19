@@ -1,0 +1,42 @@
+.specialOffer-section {
+  margin: 0;
+  padding: 80px 0;
+  width: 100%;
+  position: relative;
+  display: block;
+  background-image: url('../images/blur-bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  .heading {
+    text-align: center;
+    h2 {
+      font-family: var(--font-per);
+      font-weight: bold;
+      font-size: em(50px);
+      text-align: center;
+      position: relative;
+      display: block;
+      margin-bottom: 50px;
+    }
+  }
+
+  .context {
+    position: relative;
+    margin-bottom: 20px;
+    &:hover {
+      cursor: pointer;
+      @include transition(0.25s ease);
+      .imghover {
+        display: block;
+        @include transition(0.25s ease);
+      }
+    }
+    .imghover {
+      @include position(absolute, 0, 0, 0, 0);
+      display: none;
+      @include transition(0.25s ease);
+    }
+  }
+}

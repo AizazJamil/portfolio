@@ -1,0 +1,165 @@
+.customer--section {
+  background-color: var(--secondary-color);
+  width: 100%;
+  position: relative;
+  padding: em(80px) 0 0 0;
+  height: 820px;
+  overflow: hidden;
+
+  .col-lg-5 {
+    @media screen and (min-width: 1024px) and (max-width: 1200px) {
+      flex: 100% !important;
+      max-width: 100% !important;
+      padding-left: 30px !important;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    height: auto;
+    padding: 80px 0;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    height: auto;
+    padding: 80px 0;
+  }
+
+  .heading {
+    margin-bottom: 70px;
+    h2 {
+      font-size: em(60px);
+      font-family: var(--font-bold);
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+      color: var(--white-color);
+      display: block;
+      width: 100%;
+      @media screen and (min-width: 320px) and (max-width: 600px) {
+        font-size: 35px;
+      }
+    }
+  }
+
+  .left-content {
+    img {
+      width: 100%;
+    }
+  }
+
+  .right-slider {
+    margin-top: -620px;
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      margin-top: 40px;
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      margin-top: 40px;
+    }
+    .swiper-container {
+      height: 320px;
+      .swiper-button-next,
+      .swiper-button-prev {
+        &:after {
+          display: none;
+        }
+      }
+      .swiper-button-prev {
+        left: auto !important;
+        right: 40px !important;
+        bottom: 0 !important;
+        top: auto !important;
+        img {
+          transform: rotate(-180deg);
+        }
+      }
+      .swiper-button-next {
+        left: auto !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        top: auto !important;
+      }
+      .swiper-pagination {
+        text-align: left !important;
+      }
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: var(--white-color);
+        opacity: 0.4;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: var(--white-color) !important;
+        opacity: 1;
+      }
+      .swiper-wrapper {
+        .swiper-slide {
+          .slide-inner {
+            .profile--inliner {
+              @include flexbox();
+              flex-wrap: wrap;
+              justify-content: space-between;
+              align-content: center;
+              position: relative;
+              margin-bottom: 60px;
+
+              .left {
+                img {
+                  float: left;
+                  margin-right: 30px;
+                  vertical-align: middle;
+                }
+
+                .name-inline {
+                  @include flexbox();
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  align-items: center;
+                  list-style-type: none;
+                  li {
+                    margin-right: 20px;
+
+                    span {
+                      font-size: 20px;
+                      position: relative;
+                      vertical-align: middle;
+                      color: var(--white-color);
+                    }
+
+                    .bold {
+                      font-weight: bold;
+                      font-family: var(--font-bold);
+                    }
+
+                    .light {
+                      font-weight: 300;
+                      font-family: var(--font-light);
+                    }
+                  }
+
+                  .line {
+                    position: relative;
+                    height: 14px;
+                    width: 2px;
+                    background-color: rgba(255, 255, 255, 0.5);
+                  }
+                }
+              }
+            }
+
+            .title {
+              p {
+                font-size: 20px;
+                font-family: var(--font-light);
+                font-weight: 300;
+                text-align: left;
+                position: relative;
+                line-height: 32px;
+                color: var(--white-color);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

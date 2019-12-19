@@ -1,0 +1,65 @@
+.customer {
+  &-section {
+    width: 100%;
+    position: relative;
+    display: block;
+    padding: 80px 0;
+  }
+
+  &-card {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    @include border-radius(0);
+    margin-top: 80px;
+  }
+
+  &-info {
+    text-align: center;
+    padding: em(50px);
+
+    .quote {
+      margin-bottom: 25px;
+
+      margin-top: -88px;
+    }
+
+    .head {
+      font-size: 18px;
+      font-family: var(--open-semibold);
+      font-weight: 500;
+      color: var(--black-color);
+      text-align: center;
+      position: relative;
+      visibility: visible;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    strong {
+      font-size: 16px;
+      font-family: var(--open-regular);
+      font-style: italic;
+      font-weight: 400;
+      color: var(--black-color);
+      text-align: center;
+      position: relative;
+      display: block;
+      visibility: visible;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 17px;
+      font-family: var(--open-regular);
+      font-weight: 400;
+      text-align: center;
+      position: relative;
+      display: block;
+      color: var(--black-color);
+      line-height: 22px;
+
+      span {
+        display: block;
+      }
+    }
+  }
+}
