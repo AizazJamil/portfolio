@@ -1,16 +1,14 @@
-@import 'variable/mixin';
-@import 'variable/root';
+// Mixin Variable
+@import './veriables/mixin';
 
-@import 'import/body';
+// Variable Root
+@import './veriables/root';
 
-@import 'import/navbar';
+// Body
+@import './imports/body';
 
-@import 'import/header';
+// Left
+@import './imports/left';
 
-@import 'import/about';
-
-@import 'import/service';
-
-@import 'import/work';
-
-@import 'import/footer';
+// Right
+@import './imports/right';

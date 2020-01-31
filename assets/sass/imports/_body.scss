@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: -webkit-border-box;
+    box-sizing: -ms-border-box;
+
+    &:before, &:after {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       box-sizing: -webkit-border-box;
+       box-sizing: -ms-border-box;
+    }
+}
+
+
+.btn {
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+abbr,
+address,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+canvas,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+samp,
+section,
+small,
+span,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    // font-family: var(--ubuntu-regular) !important;
+    font-family: Gothic A1,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif;
+    overflow-x: hidden;
+    background-color: var(--black-color);
+    // height: 1000px;
+    cursor: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: "";
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: middle;
+    background: transparent;
+    text-decoration: none;
+    cursor: none !important;
+
+    &:hover {
+      cursor: none;
+    }
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+::-webkit-selection {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+::-moz-selection {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+::selection {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+.stretch-card {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    -webkit-justify-content: stretch;
+    justify-content: stretch;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1300px !important;
+    }
+}
+
+.heading {
+    // @include flexbox();
+    // justify-content: center;
+    margin-bottom: 40px;
+
+    h2 {
+        font-size: 100px;
+        // font-size: calc(100px + (23000vw - 115000px)/1900);
+        font-family: 'Work Sans', sans-serif;
+        font-weight: bolder;
+        color: var(--white-color);
+        position: relative;
+        display: block;
+        visibility: visible;
+        line-height: 110px;
+
+        @media screen and (min-width: 1025px) and (max-width: 1200px) {
+          font-size: 60px;
+          line-height: 60px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+          font-size: 60px;
+          line-height: 60px;
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 767px) {
+          font-size: 60px;
+          line-height: 60px;
+        }
+
+        @media screen and (min-width: 451px) and (max-width: 600px) {
+          font-size: 60px;
+          line-height: 60px;
+        }
+        @media screen and (min-width: 320px) and (max-width: 450px) {
+          font-size: 30px;
+          line-height: 30px;
+        }
+
+        span {
+            display: block;
+        }
+
+        .head-one {
+            text-align: right;
+        }
+
+        .head-two {
+            text-align: left;
+        }
+    }
+}
+
+.text-down {
+  color: #949495;
+}
+
+.mt80 {
+  margin-top: 80px;
+  @media screen and (max-width: 600px) {
+    margin-top: 0;
+  }
+}
+
+.mt-80 {
+  margin-top: -80px;
+  @media screen and (max-width: 600px) {
+    margin-top: 0;
+  }
+}
+
+.mt-60 {
+  margin-top: -60px;
+  @media screen and (max-width: 600px) {
+    margin-top: 0;
+  }
+}
+
+.mh-0 {
+  min-height: 0 !important;
+}
+
+.sticky-position {
+  position: sticky !important;
+  top: 60px !important;
+}
+
+.background-transparent {
+  background-color: transparent !important;
+}
+
+
+body .cursor {
+  pointer-events: none;
+}
+body .cursor__ball {
+  position: fixed;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  z-index: 1000;
+}
+body .cursor__ball circle {
+  fill: #f7f8fa;
+}
+
+.svg-txt-filled {
+  fill: #000;
+  stroke: #000;
+  stroke-width: 2px;
+}
+
+.svg-txt-stroked {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+}
+
+.circle-cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  border-radius: 50%;
+
+  &--outer {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    z-index: 12000;
+    opacity: 0.5;
+  }
+
+  &--inner {
+    width: 5px;
+    height: 5px;
+    left: -2.5px;
+    top: -2.5px;
+    z-index: 11000;
+    background: #fff;
+  }
+}
