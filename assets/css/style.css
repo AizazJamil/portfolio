@@ -778,7 +778,8 @@ body .cursor__ball circle {
 }
 .right-content .experience-body .nav-pills .active {
   background-color: transparent;
-  border-left: 2px solid var(--white-color);
+  color: var(--green-color);
+  border-left: 2px solid var(--green-color);
 }
 .right-content .experience-body .tab-content .tab-pane .head-pane {
   font-size: 15px;
@@ -793,6 +794,7 @@ body .cursor__ball circle {
 }
 .right-content .experience-body .tab-content .tab-pane .head-pane .lg_title {
   font-size: 13px;
+  color: var(--green-color);
 }
 .right-content .experience-body .tab-content .tab-pane .head-pane .nr_title {
   margin-bottom: 6px;

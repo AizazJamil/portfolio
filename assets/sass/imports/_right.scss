@@ -157,7 +157,8 @@
 
       .active {
         background-color: transparent;
-        border-left: 2px solid var(--white-color);
+        color: var(--green-color);
+        border-left: 2px solid var(--green-color);
       }
     }
 
@@ -177,6 +178,7 @@
 
           .lg_title {
             font-size: 13px;
+            color: var(--green-color);
           }
 
           .nr_title {
