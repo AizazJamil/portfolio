@@ -23,6 +23,7 @@
   --white-color: #ffffff;
   --black-color: #000000;
   --dark-color: #222222;
+  --green-color: #05DE99;
   --darking-color: #0B0C10;
   --purple-color: #4b3fd4;
   --blueDark-color: #1084fa;
@@ -234,18 +235,18 @@ select {
 }
 
 ::-webkit-selection {
-  background-color: var(--white-color);
-  color: var(--black-color);
+  background-color: var(--green-color);
+  color: var(--white-color);
 }
 
 ::-moz-selection {
-  background-color: var(--white-color);
-  color: var(--black-color);
+  background-color: var(--green-color);
+  color: var(--white-color);
 }
 
 ::selection {
-  background-color: var(--white-color);
-  color: var(--black-color);
+  background-color: var(--green-color);
+  color: var(--white-color);
 }
 
 .stretch-card {
@@ -725,11 +726,12 @@ body .cursor__ball circle {
 }
 .right-content .project_items .items_list .btn {
   background-color: transparent;
-  padding: 0;
+  border: 1px solid var(--green-color);
+  padding: 12px 30px;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
-  color: var(--white-color);
+  color: var(--green-color);
   text-transform: uppercase;
 }
 .right-content .project_items .thumbnail-girafi:hover {
@@ -861,7 +863,7 @@ body .cursor__ball circle {
   content: "▹";
   position: absolute;
   left: 0px;
-  color: #949495;
+  color: var(--green-color);
 }
 
 .contact-content {
@@ -947,9 +949,17 @@ body .cursor__ball circle {
 }
 
 .fixed_social {
-  position: absolute;
-  bottom: 1%;
+  position: relative;
   left: 0;
+  margin-top: 30px;
+}
+.fixed_social h5 {
+  color: var(--white-color);
+  text-align: left;
+  position: relative;
+  font-size: 25px;
+  font-weight: lighter;
+  margin-bottom: 15px;
 }
 @media screen and (max-width: 1200px) {
   .fixed_social {
@@ -997,6 +1007,7 @@ body .cursor__ball circle {
   position: relative;
   display: block;
   text-decoration: none;
+  color: var(--white-color);
 }
 @media screen and (max-width: 600px) {
   .fixed_social ul li a {
@@ -1007,7 +1018,7 @@ body .cursor__ball circle {
   content: "";
   width: 100%;
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #fff;
   position: absolute;
   right: 0;
   bottom: 2px;

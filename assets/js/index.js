@@ -287,11 +287,11 @@ $(window).scroll(function() {
 }).scroll();
 
 // Nicescroll
-$("body").niceScroll({
-  cursorcolor:"black",
-  cursorborder: "1px solid black",
-  cursorwidth:"4px"
-});
+// $("body").niceScroll({
+//   cursorcolor:"black",
+//   cursorborder: "1px solid black",
+//   cursorwidth:"4px"
+// });
 
 
 // key function

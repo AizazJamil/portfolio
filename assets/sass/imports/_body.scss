@@ -205,18 +205,18 @@ select {
 }
 
 ::-webkit-selection {
-    background-color: var(--white-color);
-    color: var(--black-color);
+    background-color: var(--green-color);
+    color: var(--white-color);
 }
 
 ::-moz-selection {
-    background-color: var(--white-color);
-    color: var(--black-color);
+    background-color: var(--green-color);
+    color: var(--white-color);
 }
 
 ::selection {
-    background-color: var(--white-color);
-    color: var(--black-color);
+    background-color: var(--green-color);
+    color: var(--white-color);
 }
 
 .stretch-card {
