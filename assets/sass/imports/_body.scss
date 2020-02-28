@@ -107,7 +107,8 @@ body {
     padding: 0;
     width: 100%;
     // font-family: var(--ubuntu-regular) !important;
-    font-family: Gothic A1,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif;
+    // font-family: Gothic A1,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif;
+    font-family: var(--ibm-regular);
     overflow-x: hidden;
     background-color: var(--black-color);
     // height: 1000px;
@@ -242,7 +243,8 @@ select {
     h2 {
         font-size: 100px;
         // font-size: calc(100px + (23000vw - 115000px)/1900);
-        font-family: 'Work Sans', sans-serif;
+        // font-family: 'Work Sans', sans-serif;
+        font-family: var(--ibm-bold);
         font-weight: bolder;
         color: var(--white-color);
         position: relative;
@@ -289,7 +291,7 @@ select {
 }
 
 .text-down {
-  color: #949495;
+  color: #708090;
 }
 
 .mt80 {

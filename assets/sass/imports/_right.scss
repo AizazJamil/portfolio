@@ -87,8 +87,9 @@
 
         .project_link {
           color: var(--white-color);
-          font-size: 30px;
-          line-height: 32px;
+          font-family: var(--ibm-medium);
+          font-size: 26px;
+          line-height: 32px; 
           font-weight: 500;
           text-transform: upper;
           // text-transform: uppercase;
@@ -97,12 +98,13 @@
 
         .btn {
           background-color: transparent;
-          border: 1px solid var(--green-color);
+          // background-image: linear-gradient(135deg, #81FBB8 10%, #28C76F 100%);
+          border: 1px solid var(--white-color);
           padding: 12px 30px;
           font-size: 14px;
           font-weight: bold;
           text-align: center;
-          color: var(--green-color);
+          color: var(--white-color);
           text-transform: uppercase;
         }
       }
@@ -193,7 +195,7 @@
           font-weight: 500;
           margin-bottom: 10px;
           display: inline-block;
-          color: #949495;
+          color: #708090;
         }
 
         .exp-list {
@@ -206,7 +208,7 @@
             position: relative;
             text-align: left;
             padding-left: 15px;
-            color: #949495;
+            color: #708090;
             &:last-of-type {
               margin-bottom: 0;
             }
@@ -242,7 +244,7 @@
         max-width: 400px;
 
         li {
-          color: #949495;
+          color: #708090;
           font-size: em(14px);
           text-align: left;
           position: relative;

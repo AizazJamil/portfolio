@@ -15,11 +15,26 @@
   font-family: "Ubuntu-Medium";
   src: url("../fonts/Ubuntu/Ubuntu-Medium.ttf");
 }
+@font-face {
+  font-family: "IBMPlexMono-Regular";
+  src: url("../fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf");
+}
+@font-face {
+  font-family: "IBMPlexMono-Bold";
+  src: url("../fonts/IBM_Plex_Mono/IBMPlexMono-Bold.ttf");
+}
+@font-face {
+  font-family: "IBMPlexMono-Medium";
+  src: url("../fonts/IBM_Plex_Mono/IBMPlexMono-Medium.ttf");
+}
 :root {
   --ubuntu-regular: "Ubuntu-Regular";
   --ubuntu-medium: "Ubuntu-Medium";
   --ubuntu-light: "Ubuntu-Light";
   --ubuntu-bold: "Ubuntu-Bold";
+  --ibm-regular: "IBMPlexMono-Regular";
+  --ibm-bold: "IBMPlexMono-bold";
+  --ibm-medium: "IBMPlexMono-Medium";
   --white-color: #ffffff;
   --black-color: #000000;
   --dark-color: #222222;
@@ -139,7 +154,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: Gothic A1, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif;
+  font-family: var(--ibm-regular);
   overflow-x: hidden;
   background-color: var(--black-color);
   cursor: none;
@@ -268,7 +283,7 @@ select {
 }
 .heading h2 {
   font-size: 100px;
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--ibm-bold);
   font-weight: bolder;
   color: var(--white-color);
   position: relative;
@@ -317,7 +332,7 @@ select {
 }
 
 .text-down {
-  color: #949495;
+  color: #708090;
 }
 
 .mt80 {
@@ -424,41 +439,18 @@ body .cursor__ball circle {
   position: fixed;
   top: 30px;
   left: 30px;
-  padding: 10px 14px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
-  border-radius: 100px;
-  overflow: hidden;
   z-index: 9999;
+}
+.back_homepage a .back_icon {
+  position: relative;
+  bottom: 4px;
+  font-size: 20px;
 }
 @media screen and (max-width: 600px) {
   .back_homepage a {
     left: 15px;
     position: relative;
   }
-}
-.back_homepage a:before {
-  content: "";
-  border: 1px solid var(--white-color);
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
-  border-radius: 100px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 45px;
-  height: 100%;
-  -webkit-transition: 0.25s ease-in-out;
-  -moz-transition: 0.25s ease-in-out;
-  -ms-transition: 0.25s ease-in-out;
-  -o-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
 }
 .back_homepage a .icon {
   padding-right: 10px;
@@ -472,7 +464,7 @@ body .cursor__ball circle {
   transition: 0.25s ease-in-out;
 }
 .back_homepage a .text {
-  opacity: 0;
+  opacity: 1;
 }
 .back_homepage a:hover:before {
   width: 100%;
@@ -508,7 +500,7 @@ body .cursor__ball circle {
 .left-content .head {
   font-size: 3.75em;
   font-weight: bold;
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--ibm-bold);
   position: relative;
   display: block;
   margin-bottom: 20px;
@@ -718,7 +710,8 @@ body .cursor__ball circle {
 }
 .right-content .project_items .items_list .project_link {
   color: var(--white-color);
-  font-size: 30px;
+  font-family: var(--ibm-medium);
+  font-size: 26px;
   line-height: 32px;
   font-weight: 500;
   text-transform: upper;
@@ -726,12 +719,12 @@ body .cursor__ball circle {
 }
 .right-content .project_items .items_list .btn {
   background-color: transparent;
-  border: 1px solid var(--green-color);
+  border: 1px solid var(--white-color);
   padding: 12px 30px;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
-  color: var(--green-color);
+  color: var(--white-color);
   text-transform: uppercase;
 }
 .right-content .project_items .thumbnail-girafi:hover {
@@ -806,7 +799,7 @@ body .cursor__ball circle {
   font-weight: 500;
   margin-bottom: 10px;
   display: inline-block;
-  color: #949495;
+  color: #708090;
 }
 .right-content .experience-body .tab-content .tab-pane .exp-list {
   display: block;
@@ -819,7 +812,7 @@ body .cursor__ball circle {
   position: relative;
   text-align: left;
   padding-left: 15px;
-  color: #949495;
+  color: #708090;
 }
 .right-content .experience-body .tab-content .tab-pane .exp-list .item:last-of-type {
   margin-bottom: 0;
@@ -853,7 +846,7 @@ body .cursor__ball circle {
   max-width: 400px;
 }
 .right-content .experience-body .skills_content .skill_list li {
-  color: #949495;
+  color: #708090;
   font-size: 0.875em;
   text-align: left;
   position: relative;

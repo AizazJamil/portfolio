@@ -15,12 +15,30 @@
     src: url("../fonts/Ubuntu/Ubuntu-Medium.ttf");
 }
 
+@font-face {
+    font-family: 'IBMPlexMono-Regular';
+    src: url('../fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexMono-Bold';
+    src: url('../fonts/IBM_Plex_Mono/IBMPlexMono-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexMono-Medium';
+    src: url('../fonts/IBM_Plex_Mono/IBMPlexMono-Medium.ttf');
+}
+
 :root {
     // Font Ubuntu
     --ubuntu-regular: 'Ubuntu-Regular';
     --ubuntu-medium: 'Ubuntu-Medium';
     --ubuntu-light: 'Ubuntu-Light';
     --ubuntu-bold: 'Ubuntu-Bold';
+    --ibm-regular: 'IBMPlexMono-Regular';
+    --ibm-bold: 'IBMPlexMono-bold';
+    --ibm-medium: 'IBMPlexMono-Medium';
     // Color Variable
     --white-color: #ffffff;
     --black-color: #000000;
