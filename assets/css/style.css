@@ -1140,6 +1140,7 @@ body .cursor__ball circle {
   height: 100vh;
   position: fixed;
   z-index: 900;
+  overflow: hidden;
   top: 0;
   background: #000000;
   transition: opacity 0.3s linear;

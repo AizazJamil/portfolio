@@ -52,6 +52,28 @@
   <div class="circle-cursor circle-cursor--inner"></div>
 <div class="circle-cursor circle-cursor--outer"></div>
 
+<div class="page-loader-wrapper">
+  <div class="page-loader">
+    <div class="percent-wrap">
+      <div class="percentage-count" data-count="100">
+        0
+      </div>
+      <div class="after">
+        %
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="global-intro">
+  <div class="global-intro__top">
+    Portfolio of Developer
+  </div>
+  <div class="global-intro__bottom">
+    Aizaz Jamil
+  </div>
+</div>
+
   <section class="main-personal">
     <div class="back_homepage">
       <a href="./" class="hoverable">
@@ -614,5 +636,73 @@
     <!-- <script src="assets/js/jScrollability.min.js"></script> -->
     <!-- <script src="assets/js/jQuery.scrollSpeed.js"></script> -->
     <!-- <script src="assets/js/app.js"></script> -->
+
+    <!-- JAVASCRIPT LIBRARIES -->
+    <!-- <script src="assets/js/jquery/jquery-1.9.1.min.js"></script> -->
+    <script src="assets/js/jQuery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/jquery.nicescroll.min.js"></script> -->
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <!-- <script src="assets/js/animations/ScrollMagic.js"></script> -->
+    <!-- <script src="assets/js/animations/animation.gsap.min.js"></script> -->
+    <!-- <script src="assets/js/animations/debug.addIndicators.min.js"></script> -->
+    <!-- <script src="assets/js/animations/gsap.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.0.2/typeit.min.js"></script> -->
+    <!-- <script src="assets/js/jScrollability.min.js"></script> -->
+    <!-- <script src="assets/js/jQuery.scrollSpeed.js"></script> -->
+    <!-- <script src="assets/js/app.js"></script> -->
+
+    <script>
+      const itemsWrapper = document.getElementById('items-wrap');
+
+      const configurator = createDemoConfigurator({
+        activation: {
+          type: "corners",
+          props: {
+            topLeft: true
+          }
+        },
+        transformation: {
+          type: "simplex",
+          props: {
+            seed: "0",
+            amplitudeX: 0.2,
+            amplitudeY: 0.2,
+            frequencyX: 0.3,
+            frequencyY: 0.3
+          }
+        },
+        seed: 0,
+        duration: 1.75,
+        easings: {
+          toFullscreen: Linear.easeOut,
+          toGrid: Linear.easeOut
+        }
+
+      })
+      imagesLoaded(document.querySelectorAll("img"), instance => {
+        document.body.classList.remove("loading");
+        let images = [];
+        for (var i = 0, imageSet = {}; i < instance.elements.length; i++) {
+          let image = {
+            element: instance.elements[i],
+            image: instance.images[i].isLoaded ? instance.images[i].img : null
+          };
+          if (i % 2 === 0) {
+            imageSet = {};
+            imageSet.small = image;
+          }
+
+          if (i % 2 === 1) {
+            imageSet.large = image;
+            images.push(imageSet);
+          }
+        }
+        configurator.effect.createTextures(images);
+      });
+    </script>
 </body>
 </html>
