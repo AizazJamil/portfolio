@@ -1,0 +1,111 @@
+
+
+/* line 223, sass/common/_general.scss */
+.page-loader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 900;
+  top: 0;
+  background: #000000;
+  transition: opacity 0.3s linear;
+}
+/* line 232, sass/common/_general.scss */
+.page-loader.remove-loader {
+  opacity: 0;
+}
+
+/* line 237, sass/common/_general.scss */
+.loader-cirlce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 2px;
+  margin-left: 1px;
+}
+
+/* line 247, sass/common/_general.scss */
+.progress {
+  transform: rotate(-90deg);
+  transition: opacity 0.1s linear;
+}
+/* line 251, sass/common/_general.scss */
+.progress.hide-progress {
+  opacity: 0;
+}
+
+/* line 256, sass/common/_general.scss */
+.progress__value {
+  stroke-dasharray: 339.292;
+  stroke-dashoffset: 339.292;
+  animation: progress 3.5s linear forwards;
+}
+
+@keyframes progress {
+  from {
+    stroke-dashoffset: 339.292;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+/* line 272, sass/common/_general.scss */
+.percent-wrap {
+  position: absolute;
+  bottom: 70px;
+  left: 70px;
+  height: 50px;
+  overflow-y: hidden;
+  display: flex;
+  font-weight: 900;
+}
+
+/* line 283, sass/common/_general.scss */
+.percentage-count {
+  font-size: 45px;
+  font-weight: 900;
+  position: relative;
+}
+
+/* line 289, sass/common/_general.scss */
+.after {
+  font-size: 45px;
+}
+
+/* line 293, sass/common/_general.scss */
+.global-intro {
+  position: absolute;
+  right: 70px;
+  bottom: 70px;
+  z-index: 900;
+  height: auto;
+  max-height: 33px;
+}
+/* line 301, sass/common/_general.scss */
+.global-intro__top {
+  font-size: 13.2px;
+  text-transform: uppercase;
+  color: #fff;
+}
+/* line 306, sass/common/_general.scss */
+.global-intro__bottom {
+  font-size: 19px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+}
+@media (max-width: 610px) {
+  /* line 293, sass/common/_general.scss */
+  .global-intro {
+    display: none;
+  }
+}
+
+.percentage-count,
+.after {
+  color: #fff;
+  font-family: var(--ibm-bold);
+  font-weight: bold;
+}
