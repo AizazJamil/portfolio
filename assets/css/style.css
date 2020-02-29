@@ -158,6 +158,12 @@ body {
   overflow-x: hidden;
   background-color: var(--black-color);
   cursor: none;
+  overflow: hidden;
+}
+
+body.scroll-body {
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 article,
