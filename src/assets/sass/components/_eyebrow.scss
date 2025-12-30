@@ -1,9 +1,0 @@
-@use "../utilities/import" as *;
-
-.eyebrow {
-  p {
-    text-transform: uppercase;
-    @include font(13px, 400, 100%, normal);
-    margin: 0;
-  }
-}
