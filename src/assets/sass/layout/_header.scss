@@ -1,6 +1,0 @@
-@use "../utilities/border" as *;
-
-.site-header {
-    position: relative;
-    @include border-radius(10px);
-}
