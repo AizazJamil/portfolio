@@ -1,0 +1,46 @@
+@use "../abstracts/variables" as *;
+
+@mixin container($max-breakpoint: null) {
+  width: 100%;
+  padding-inline: 0;
+  margin-inline: auto;
+  // Skip max-widths if fluid
+  @if $max-breakpoint != fluid {
+    $breakpoint-reached: false;
+
+    @each $breakpoint, $max-width in $container-max-widths {
+      @if $breakpoint-reached == false {
+        $min-width: null;
+
+        @if $breakpoint == sm {
+          $min-width: $breakpoint-sm;
+        } @else if $breakpoint == md {
+          $min-width: $breakpoint-md;
+        } @else if $breakpoint == lg {
+          $min-width: $breakpoint-lg;
+        } @else if $breakpoint == xl {
+          $min-width: $breakpoint-xl;
+        } @else if $breakpoint == xxl {
+          $min-width: $breakpoint-xxl;
+        }
+
+        @media (min-width: $min-width) {
+          max-width: $max-width;
+        }
+
+        // Stop the loop once we reach the given breakpoint
+        @if $breakpoint == $max-breakpoint {
+          $breakpoint-reached: true;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  @include container(lg);
+}
+
+.container--fluid {
+  @include container(fluid);
+}

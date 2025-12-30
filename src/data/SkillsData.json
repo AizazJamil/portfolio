@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "title": "Frontend Development",
+    "text": [
+      "HTML",
+      "CSS3",
+      "Sass/Scss",
+      "JavaScript (ES6)",
+      "React",
+      "Redux",
+      "Typescript"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Styling & UI Libraries",
+    "text": [
+      "Bootstrap",
+      "Tailwind CSS",
+      "Material UI",
+      "Semantic UI",
+      "GSAP",
+      "PrimeNG"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Tools & Platforms",
+    "text": [
+      "Git",
+      "Webflow",
+      "Webflow CMS",
+      "Gulp.js",
+      "Jira",
+      "Trello",
+      "Slack",
+      "Figma (for design handoff)",
+      "VS Code",
+      "Cursor AI",
+      "ChatGPT"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Backend",
+    "text": ["Node.js", "Express"]
+  },
+  {
+    "id": 5,
+    "title": "Other",
+    "text": ["SEO Optimization", "jQuery (legacy projects)"]
+  },
+  {
+    "id": 5,
+    "title": "Currently Learning",
+    "text": [
+      "Next.js (React-based framework for SSR & routing)",
+      "Advanced TypeScript patterns in React",
+      "Component-driven development (Storybook)"
+    ]
+  }
+]

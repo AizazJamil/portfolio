@@ -1,0 +1,10 @@
+@use "../abstracts/flexbox" as *;
+
+.main__layout {
+  @include flexbox(column, space-between, flex-start, wrap);
+  min-height: 100vh;
+}
+
+.main__wrapper {
+  width: 100%;
+}
