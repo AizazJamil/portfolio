@@ -1,0 +1,131 @@
+// ------------------------------------
+// Helper Classes and Utilities
+// ------------------------------------
+
+// Spacing helpers (margin and padding shortcuts)
+.m-0 {
+  margin: 0 !important;
+}
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.ml-0 {
+  margin-left: 0 !important;
+}
+.mr-0 {
+  margin-right: 0 !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+.pt-0 {
+  padding-top: 0 !important;
+}
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+.pl-0 {
+  padding-left: 0 !important;
+}
+.pr-0 {
+  padding-right: 0 !important;
+}
+
+// Text alignment helpers
+.text-center {
+  text-align: center !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+
+// Display helpers
+.d-block {
+  display: block !important;
+}
+.d-inline-block {
+  display: inline-block !important;
+}
+.d-inline {
+  display: inline !important;
+}
+.d-none {
+  display: none !important;
+}
+
+// Flexbox helpers
+.flex {
+  display: flex !important;
+}
+.flex-row {
+  flex-direction: row !important;
+}
+.flex-column {
+  flex-direction: column !important;
+}
+.justify-center {
+  justify-content: center !important;
+}
+.justify-between {
+  justify-content: space-between !important;
+}
+.align-center {
+  align-items: center !important;
+}
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+
+// Visibility helpers
+.visible {
+  visibility: visible !important;
+}
+.invisible {
+  visibility: hidden !important;
+}
+
+// Overflow helpers
+.overflow-hidden {
+  overflow: hidden !important;
+}
+.overflow-auto {
+  overflow: auto !important;
+}
+
+// Z-index helpers
+.z-top {
+  z-index: 9999 !important;
+}
+.z-middle {
+  z-index: 500 !important;
+}
+.z-back {
+  z-index: 0 !important;
+}
+
+// Clearfix helper
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// Screen reader only text (for accessibility)
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}

@@ -1,0 +1,117 @@
+@use "../utilities/import" as *;
+
+.skills {
+  padding: 144px 40px 80px;
+  position: relative;
+  width: 100%;
+  display: block;
+
+  @media (max-width: 767.98px) {
+    padding: 64px 24px 64px;
+  }
+
+  h5 {
+    // font-family: $font-family-primary;
+    @include font(18px, 500, 150%, normal);
+    margin-bottom: 10px;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 1px;
+      background-color: rgb(78, 81, 87);
+      margin-right: 10px;
+      vertical-align: middle;
+      position: relative;
+      top: -2px;
+    }
+  }
+
+  p {
+    margin: 0;
+    @include font(16px, 400, 28px, normal);
+    color: rgb(183, 187, 199);
+    color: $color-dark-muted;
+    // margin-top: 15px;
+
+    &.bold {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 34px;
+      color: theme-color("white");
+    }
+  }
+
+  &__inner {
+    @include flexbox(column, flex-start, flex-start, wrap);
+    gap: 20px;
+  }
+
+  &__wrap {
+    position: relative;
+    @include flexbox(row, flex-start, flex-start, wrap);
+    gap: 120px;
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      gap: 40px;
+    }
+
+    @media (max-width: 767.98px) {
+      gap: 64px;
+      flex-direction: column;
+    }
+  }
+
+  &__right {
+    flex: 1 1 0;
+    @include flexbox(row, flex-start, flex-start, wrap);
+    gap: 36px;
+  }
+
+  &__left {
+    max-width: 280px;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      position: sticky;
+      top: 40px;
+    }
+
+    .eyebrow {
+      margin-top: 8px;
+    }
+  }
+
+  &__item {
+    @include flexbox(column, flex-start, flex-start, wrap);
+    gap: 20px;
+    width: 100%;
+
+    &:not(:last-of-type) {
+      padding-bottom: 60px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    &-text {
+      margin: 0;
+      @include font(16px, 400, 28px, normal);
+      color: rgb(183, 187, 199);
+      color: $color-dark-muted;
+      //   margin-top: 15px;
+    }
+  }
+
+  &__designation {
+    @include font(18px, 400, 150%, normal);
+    margin: 0;
+  }
+
+  &__status {
+    @include font(16px, 400, 150%, normal);
+    margin: 0;
+    color: $color-dark-muted;
+    @include flexbox(row, flex-start, flex-start, wrap);
+    gap: 5px;
+  }
+}

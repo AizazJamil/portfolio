@@ -1,0 +1,40 @@
+@use "../utilities/import" as *;
+
+.navbar {
+  position: relative;
+  width: 100%;
+  display: block;
+  padding: 2rem 1.5rem;
+
+  &__wrap {
+    @include flexbox(row, space-between, center, wrap);
+  }
+
+  &__time-text {
+    @extend %fs-12-normal;
+    text-transform: uppercase;
+    color: $color-dark-text;
+  }
+
+  &__logo {
+    @include font(1rem, 400, normal, normal);
+    font-family: $font-family-primary;
+
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+
+    a {
+      color: $color-dark-text;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  &__menu-button {
+    background: transparent;
+    padding: 0;
+    color: $color-dark-text;
+    display: inline-block;
+  }
+}

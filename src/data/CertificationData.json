@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "JavaScript - Udemy",
+    "link": "https://www.udemy.com/certificate/UC-e1d3a5d2-f823-4ebe-97c4-0d2dda397dde/"
+  },
+  {
+    "id": 2,
+    "title": "React & Next.js - Udemy",
+    "link": "https://www.udemy.com/certificate/UC-8f140ad6-7dde-4bdf-a434-81cc482ee70f/"
+  },
+  {
+    "id": 3,
+    "title": "Node.js - Udemy",
+    "link": "https://www.udemy.com/certificate/UC-f6d29492-70e1-42a3-a9b0-90e1f857acba/"
+  },
+  {
+    "id": 4,
+    "title": "Next.js (App Router, SSR, Routing)",
+    "status": "In Progress",
+    "link": "#"
+  }
+]
